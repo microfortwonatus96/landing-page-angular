@@ -1,16 +1,28 @@
 <nav id="nav">
     <ul>
         <li><div class="logo">Rantai.tech</div></li>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Overview</li>
-        <li>Features</li>
-        <li>Contact</li>
+        <li (click)="jumpto('header')">Home</li>
+        <li (click)="jumpto('about')">About Us</li>
+        <li (click)="jumpto('overview')">Overview</li>
+        <li (click)="jumpto('features')">Features</li>
+        <li (click)="jumpto('email')">Contact</li>
     </ul>
 
     <div id="mobile">
         <div class="logo">Rantai.tech</div>
-        <div>burger</div>
+        <div id="burger_menu" (click)="changeDisplay('wrapper')">
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <div id="wrapper">
+            <a (click)="jumpto('header')">Home</a>
+            <a (click)="jumpto('about')">About Us</a>
+            <a (click)="jumpto('overview')">Overview</a>
+            <a (click)="jumpto('features')">Features</a>
+            <a (click)="jumpto('contactus')">Contact</a>
+          </div>
+        </div>
     </div>
 </nav>
 
@@ -25,7 +37,7 @@
         in Indonesia.
       </h2>
       <h3>Get your own way to productivity!</h3>
-      <button type="button">Download</button>
+      <button type="button" (click)="redirect()">Download</button>
     </div>
 </header>
 
@@ -148,6 +160,15 @@
               <li></li>
             </ul>
           </div>
+        </div>
+
+        <div id="mobile_sosmed_icon">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
         <div class="terms_and_policy">
           <a href="#">Terms of user</a> |

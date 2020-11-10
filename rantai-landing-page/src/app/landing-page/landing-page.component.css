@@ -14,22 +14,24 @@
 }
 
 #nav > ul {
-  width: 70%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1%;
-  /* padding: 50px 0 50px 150px; */
-  padding-left: 50px;
-  padding-top: 10px;
+  padding: 10px 50px 10px 50px;
 }
 
 #nav > ul > li {
   list-style: none;
   font-weight: normal;
-  font-size: 23px;
+  font-size: 1.5em;
+}
+
+#nav > ul > li:hover {
+  cursor: pointer;
 }
 
 #nav > ul > li .logo {
@@ -38,7 +40,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 26px;
+  font-size: 1.6em;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -99,14 +101,14 @@
 }
 
 #header-content > h1 {
-  font-size: 60px;
+  font-size: 3.9em;
   font-weight: bold;
   letter-spacing: 3.42px;
   line-height: calc(82 / 60);
 }
 
 #header-content > h2 {
-  font-size: 23px;
+  font-size: 1.5em;
   font-weight: 400;
   margin-top: 20px;
   padding-right: 200px;
@@ -115,7 +117,7 @@
 }
 
 #header-content > h3 {
-  font-size: 30px;
+  font-size: 1.9em;
   margin-top: 90px;
   font-weight: 400;
   letter-spacing: 1.71px;
@@ -128,7 +130,7 @@
   width: 180px;
   background-color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.1em;
   letter-spacing: 1.03px;
   line-height: calc(24 / 18);
   cursor: pointer;
@@ -169,7 +171,7 @@
 
 #demo > h1 {
   font-weight: normal;
-  font-size: 25px;
+  font-size: 1.5em;
 }
 
 #demo > button {
@@ -180,7 +182,7 @@
   color: white;
   border-radius: 50px;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 1.2em;
   letter-spacing: 0.38px;
   cursor: pointer;
   outline: none;
@@ -277,7 +279,8 @@
   align-items: center;
   justify-content: baseline;
   gap: 60px;
-  padding: 50px 0;
+  /* padding: 50px 0; */
+  padding: 70px 0px 30px 0px;
 }
 
 .container-overview > div {
@@ -333,13 +336,21 @@
 
 #features {
   gap: 40px;
-  min-height: 100vh;
-  height: fit-content;
+  /* min-height: 100vh; */
+  height: 310px;
+}
+
+#aboutus {
+  height: 310px;
+}
+
+#contactus {
+  height: 310px;
 }
 
 #features > p {
-  font-size: 28px;
-  width: 70%;
+  font-size: 0.9em;
+  /* width: 70%; */
 }
 
 #features-container {
@@ -361,6 +372,11 @@
 
 /* MEDIA 1440x900 */
 @media screen and (max-width: 1440px) {
+
+  #header-content > h1 {
+    font-size: 3.3em;
+  }
+
   #about-desc > h1 {
     letter-spacing: 1px;
     margin-bottom: 30px;
@@ -369,7 +385,7 @@
   #about > div > button {
     height: 50px;
     width: 240px;
-    font-size: 14px;
+    font-size: 0.9em;
     margin-top: 30px;
   }
 
@@ -389,38 +405,129 @@
   #about-desc {
     padding-right: 50px;
   }
+
+  #header-content > h1 {
+    font-size: 2.9em;
+  }
 }
 
 /* MEDIA 1280x800 */
 @media screen and (max-width: 1280px) {
   #nav > ul {
-    width: 768px;
+    /* width: 768px; */
     gap: 20px;
-    padding: 10px 0 10px 20px;
+    padding: 10px 20px 10px 20px;
   }
 
   #nav > ul > li {
-    font-size: 16px;
+    font-size: 1em;
   }
 
   #nav > ul > li .logo {
     margin-right: 40px;
-    font-size: 20px;
+    font-size: 1.2em;
+  }
+
+  /* #header-content > h1 {
+    font-size: 2.9em;
+  } */
+
+  #header-content > h3 {
+    margin-top: 40px;
+    /* width: 80%; */
   }
 }
 
 /* MEDIA 1024x768 */
 @media screen and (max-width: 1024px) {
+
+  #header {
+    padding-left: 120px;
+  }
+  #header-content > h1 {
+    font-size: 2.2em;
+  }
+
+  #header-content {
+    position: absolute;
+  }
+
+  #header-content > h3 {
+    width: 80%;
+  }
+
   #nav > ul {
     display: none;
   }
 
-  #nav > #mobile{
+  #nav > #mobile {
       display: flex;
       width: 100%;
       justify-content: space-between;
       align-items: center;
       height: 100%;
+  }
+
+  #nav > #mobile > .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #nav > #mobile > .logo::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px 0px 20px;
+    
+    background-image: url("../../assets/images/background-header-logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #nav > #mobile > #burger_menu {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    float: left;
+    width: fit-content;
+  }
+
+  #nav > #mobile > #burger_menu > span {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 30px 2px 0px;
+  }
+
+  #wrapper {
+    display: none;
+    position: absolute;
+    width: 50%;
+    margin-top: 40px;
+    margin-left: -40px;
+  }
+
+  #wrapper a {
+    color: white;
+    background-color:#064b9f;
+    padding: 12px 0px 16px 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  #burger_menu:active #wrapper {
+    display: unset;
+  }
+
+  #sosmed_icon {
+    display: unset;
+  }
+
+  #mobile_sosmed_icon {
+    display: none;
   }
 
   #demo {
@@ -431,13 +538,13 @@
   }
 
   #demo > h1 {
-    font-size: 20px;
+    font-size: 1.2em;
   }
 
   #demo > button {
     width: 240px;
     height: 40px;
-    font-size: 14px;
+    font-size: 0.9em;
     letter-spacing: 0.12px;
   }
 
@@ -472,11 +579,11 @@
 
   #about-desc > p {
     text-align: left;
-    font-size: 14px;
+    font-size: 0.9em;
   }
 
   #about-desc > button {
-    font-size: 14px;
+    font-size: 0.9em;
   }
 
   .container-overview {
@@ -486,27 +593,91 @@
   .container-overview > h1 {
     width: 100%;
     padding: 30px;
-    font-size: 25px;
+    font-size: 1.5em;
+  }
+
+  #footer > .section-2 {
+    padding: 0px 50px;
+    gap: 50px!important;  
   }
 }
 
 /* MEDIA 768 */
 @media screen and (max-width: 768px) {
-    #nav > ul:not(.logo .logo::before) {
+    /* #nav > ul:not(.logo .logo::before) {
         display: none;
+    } */
+
+    /* #nav > #mobile > .logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
+
+    #nav > #mobile > .logo::before {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 0px 10px 0px 20px;
+      
+      background-image: url("../../assets/images/background-header-logo.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #nav > #mobile > #burger_menu {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      float: left;
+      width: fit-content;
+    }
+
+    #nav > #mobile > #burger_menu > span {
+      width: 35px;
+      height: 3px;
+      background-color: white;
+      margin: 2px 30px 2px 0px;
+    }
+
+    #wrapper {
+      display: none;
+      position: absolute;
+      width: 20%;
+      margin-top: 40px;
+      margin-left: -40px;
+    }
+
+    #wrapper a {
+      color: white;
+      background-color:#064b9f;
+      padding: 12px 0px 16px 10px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    #burger_menu:active #wrapper {
+      display: unset;
+    } */
+
+    #mobile > #wrapper > a:nth-child(4) {
+      display: none;
+    }
+
     .section-1 > h1 {
-        display: none;
+      display: none;
     }
 
     .section-1 > p {
-        margin: 0px 10px 0px 0px;
+      margin: 0px 10px 0px 0px;
     }
 
     #footer > .section-2 {
         flex-direction: column;
         justify-content: unset!important;
-        gap: 10px!important;
+        gap: 40px!important;
         padding-top: 40px;
     }
 
@@ -519,8 +690,8 @@
     }
 
     .section-2 > #aboutus > p,
-    .section-2 > #contactus > p {
-        margin-top: 35px;
+    .section-2 > #contactus > #email {
+        margin-top: 25px;
     }
 
     #header:before {
@@ -538,7 +709,7 @@
 
     #header > #header-content > h1 {
         padding-right: 0px;
-        font-size: 40px;
+        font-size: 2.5em;
     }
     
     #header > #header-content > h2 {
@@ -551,6 +722,77 @@
     #header > #header-content > h3 {
         display: none;
     }
+
+    #sosmed_icon {
+      display: none;
+    }
+
+    #aboutus {
+      height: fit-content;
+    }
+
+    #contactus {
+      height: fit-content;
+    }
+
+    #mobile_sosmed_icon {
+      display: unset!important;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+
+    #mobile_sosmed_icon > ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      justify-content: space-between;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+
+    #mobile_sosmed_icon > ul > li:after {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 25px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-y: center;
+    }
+
+    #mobile_sosmed_icon > ul > li:nth-child(1) {
+      background-image: url("../../assets/images/twitter.svg");
+      background-repeat: no-repeat;
+    }
+
+    #mobile_sosmed_icon > ul > li:nth-child(2) {
+      background-image: url("../../assets/images/instagram.svg");
+      background-repeat: no-repeat;
+    }
+
+    #mobile_sosmed_icon > ul > li:nth-child(3) {
+      background-image: url("../../assets/images/linkedin.svg");
+      background-repeat: no-repeat;
+    }
+
+    #mobile_sosmed_icon > ul > li:nth-child(4) {
+      background-image: url("../../assets/images/facebook.svg");
+      background-repeat: no-repeat;
+    }
+}
+
+/* MEDIA 640 */
+@media screen and (max-width: 640px) {
+  #mobile_sosmed_icon > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 #footer {
@@ -713,11 +955,11 @@
 }
 
 .desc > h1 {
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 .desc > p {
-  font-size: 14px;
+  font-size: 0.9em;
 }
 
 .section-2 > div:nth-child(2) > p,
@@ -745,7 +987,7 @@
 #email {
   margin-top: 40px;
   list-style: none;
-  font-size: 14px;
+  font-size: 0.9em;
 }
 
 #email > li {
@@ -767,6 +1009,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: center;
+  background-position-x: center;
 }
 
 #email > li:nth-child(1):before {
@@ -778,6 +1021,14 @@
 }
 #email > li:nth-child(3):before {
   background-image: url("../../assets/images/location.svg");
+}
+
+#email > li > p {
+  margin-left: 8px;
+}
+
+#mobile_sosmed_icon {
+  display: none;
 }
 
 #sosmed_icon > ul {
@@ -805,6 +1056,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: center;
+}
+
+#sosmed_icon > ul > li:hover {
+  cursor: pointer;
 }
 
 #sosmed_icon > ul > li:nth-child(1):after {
@@ -835,11 +1090,12 @@
   -ms-flex-align: end;
   align-items: flex-end;
   padding-bottom: 50px;
+  margin-top: 20px;
 }
 
 .terms_and_policy > a {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 0.9em;
   color: #677294;
   font-family: "Poppins", sans-serif;
 }
