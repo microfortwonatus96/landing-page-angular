@@ -18,14 +18,13 @@
       <span></span>
       <span></span>
       <span></span>
-          <div id="wrapper">
-            <a (click)="jumpto('header')">Home</a>
-            <a (click)="jumpto('about')">About Us</a>
-            <a (click)="jumpto('overview')">Overview</a>
-            <a (click)="jumpto('feature')">Feature</a>
-            <a (click)="jumpto('contactus')">Contact</a>
-          </div>
-        </div>
+
+      <div id="wrapper" [class.display]="show">
+        <a (click)="jumpto('header')">Home</a>
+        <a (click)="jumpto('about')">About Us</a>
+        <a (click)="jumpto('overview')">Overview</a>
+        <a (click)="jumpto('contactus')">Contact</a>
+      </div>
     </div>
   </div>
 </nav>
