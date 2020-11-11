@@ -1,19 +1,22 @@
 #nav {
   width: 100%;
-  height: 60px;
+  height: 100px;
   position: sticky;
   top: 0;
   z-index: 1;
   font-family: "Open Sans", sans-serif;
   color: white;
   background-color: #064b9f;
+  display: flex;
 }
 
-#nav > #mobile{
-    display: none;
+#nav > #mobile {
+  display: none;
+  position: relative;
 }
 
-#nav > ul {
+#nav > ul,
+#menu {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,7 +27,13 @@
   padding: 5px 50px 10px 50px;
 }
 
-#nav > ul > li {
+#menu {
+  min-width: 800px;
+  width: fit-content;
+}
+
+#nav > ul > li,
+#menu > li {
   list-style: none;
   font-weight: normal;
   font-size: 1.3em;
@@ -378,7 +387,6 @@
 
 /* MEDIA 1440x900 */
 @media screen and (max-width: 1440px) {
-
   #header-content > h1 {
     font-size: 3.3em;
   }
@@ -443,10 +451,6 @@
     padding-top: 0px;
   }
 
-  /* #header-content > h1 {
-    font-size: 2.9em;
-  } */
-
   #header-content > h3 {
     margin-top: 40px;
     width: 80%;
@@ -455,7 +459,6 @@
 
 /* MEDIA 1024x768 */
 @media screen and (max-width: 1024px) {
-
   #header {
     padding-left: 120px;
   }
@@ -476,11 +479,11 @@
   }
 
   #nav > #mobile {
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      align-items: center;
-      height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
   }
 
   #nav > #mobile > .logo {
@@ -495,7 +498,7 @@
     width: 40px;
     height: 40px;
     margin: 0px 10px 0px 20px;
-    
+
     background-image: url("../../assets/images/background-header-logo.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -507,6 +510,7 @@
     overflow: hidden;
     float: left;
     width: fit-content;
+    cursor: pointer;
   }
 
   #nav > #mobile > #burger_menu > span {
@@ -517,24 +521,24 @@
   }
 
   #wrapper {
-    display: none;
     position: absolute;
-    width: 50%;
-    margin-top: 40px;
-    margin-left: -40px;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    overflow: hidden;
+  }
+
+  .display {
+    display: none;
   }
 
   #wrapper a {
     color: white;
-    background-color:#064b9f;
+    background-color: #064b9f;
     padding: 12px 0px 16px 10px;
     display: flex;
     flex-direction: column;
-    text-align: left;
-  }
-
-  #burger_menu:active #wrapper {
-    display: unset;
+    text-align: center;
   }
 
   #header:before {
@@ -656,8 +660,8 @@
 
   #footer > .section-2 {
     flex-direction: column;
-    justify-content: unset!important;
-    gap: 40px!important;
+    justify-content: unset !important;
+    gap: 40px !important;
     padding-top: 40px;
   }
 
@@ -672,7 +676,7 @@
 
   #footer > .section-2 {
     padding: 0px 50px;
-    gap: 50px!important;  
+    gap: 50px !important;
   }
 
   .section-2 > #logo {
@@ -680,7 +684,7 @@
   }
 
   .section-2 > #features {
-      display: none;
+    display: none;
   }
 
   #sosmed_icon {
@@ -696,7 +700,7 @@
   }
 
   #mobile_sosmed_icon {
-    display: unset!important;
+    display: unset !important;
     margin-bottom: 10px;
     margin-top: 15px;
   }
@@ -744,11 +748,11 @@
 
 /* MEDIA 768 */
 @media screen and (max-width: 768px) {
-    /* #nav > ul:not(.logo .logo::before) {
+  /* #nav > ul:not(.logo .logo::before) {
         display: none;
     } */
 
-    /* #nav > #mobile > .logo {
+  /* #nav > #mobile > .logo {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -760,7 +764,7 @@
       width: 40px;
       height: 40px;
       margin: 0px 10px 0px 20px;
-      
+
       background-image: url("../../assets/images/background-header-logo.svg");
       background-size: contain;
       background-repeat: no-repeat;
@@ -802,30 +806,30 @@
       display: unset;
     } */
 
-    #mobile > #wrapper > a:nth-child(4) {
-      display: none;
-    }
+  #mobile > #wrapper > a:nth-child(4) {
+    display: none;
+  }
 
-    .section-1 > h1 {
-      display: none;
-    }
+  .section-1 > h1 {
+    display: none;
+  }
 
-    .section-1 > p {
-      margin: 0px 10px 0px 0px;
-    }
+  .section-1 > p {
+    margin: 0px 10px 0px 0px;
+  }
 
     /* #header:before {
         display: none;
     }
 
-    #header {
-        padding-left: 0px;
-        text-align: center;
-    }
+  #header {
+    padding-left: 0px;
+    text-align: center;
+  }
 
-    #header > #header-content {
-        width: 100%;
-    }
+  #header > #header-content {
+    width: 100%;
+  }
 
     #header > #header-content > h1 {
         padding-right: 0px;
@@ -839,9 +843,16 @@
         display: flex;
     } */
 
-    #header > #header-content > h3 {
-        display: none;
-    }
+  #header > #header-content > h2 {
+    margin: 15px 0px 0px;
+    padding: 0px 25% 0px 25%;
+    width: 100%;
+    display: flex;
+  }
+
+  #header > #header-content > h3 {
+    display: none;
+  }
 }
 
 /* MEDIA 640 */
@@ -1172,7 +1183,7 @@
   font-weight: 300;
 }
 
-/* 
-  RESPONSIVE 
-  ====================================== 
+/*
+  RESPONSIVE
+  ======================================
 */
