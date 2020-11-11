@@ -21,13 +21,13 @@
   justify-content: space-between;
   align-items: center;
   gap: 1%;
-  padding: 10px 50px 10px 50px;
+  padding: 5px 50px 10px 50px;
 }
 
 #nav > ul > li {
   list-style: none;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 #nav > ul > li:hover {
@@ -44,6 +44,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding-top: 3px;
 }
 
 #nav > ul > li .logo::before {
@@ -407,12 +408,16 @@
   }
 
   #header-content > h1 {
-    font-size: 2.9em;
+    font-size: 2.7em;
   }
 }
 
 /* MEDIA 1280x800 */
 @media screen and (max-width: 1280px) {
+  #nav {
+    height: 60px;
+  }
+
   #nav > ul {
     /* width: 768px; */
     gap: 20px;
@@ -426,6 +431,7 @@
   #nav > ul > li .logo {
     margin-right: 40px;
     font-size: 1.2em;
+    padding-top: 0px;
   }
 
   /* #header-content > h1 {
@@ -597,8 +603,90 @@
   }
 
   #footer > .section-2 {
+    flex-direction: column;
+    justify-content: unset!important;
+    gap: 40px!important;
+    padding-top: 40px;
+  }
+
+  .section-2 > #aboutus {
+    margin-top: 20%;
+  }
+
+  .section-2 > #aboutus > p,
+  .section-2 > #contactus > #email {
+    margin-top: 25px;
+  }
+
+  #footer > .section-2 {
     padding: 0px 50px;
     gap: 50px!important;  
+  }
+
+  .section-2 > #logo {
+    display: none;
+  }
+
+  .section-2 > #features {
+      display: none;
+  }
+
+  #sosmed_icon {
+    display: none;
+  }
+
+  #aboutus {
+    height: fit-content;
+  }
+
+  #contactus {
+    height: fit-content;
+  }
+
+  #mobile_sosmed_icon {
+    display: unset!important;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  #mobile_sosmed_icon > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  #mobile_sosmed_icon > ul > li:after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+
+  #mobile_sosmed_icon > ul > li:nth-child(1) {
+    background-image: url("../../assets/images/twitter.svg");
+    background-repeat: no-repeat;
+  }
+
+  #mobile_sosmed_icon > ul > li:nth-child(2) {
+    background-image: url("../../assets/images/instagram.svg");
+    background-repeat: no-repeat;
+  }
+
+  #mobile_sosmed_icon > ul > li:nth-child(3) {
+    background-image: url("../../assets/images/linkedin.svg");
+    background-repeat: no-repeat;
+  }
+
+  #mobile_sosmed_icon > ul > li:nth-child(4) {
+    background-image: url("../../assets/images/facebook.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -674,26 +762,6 @@
       margin: 0px 10px 0px 0px;
     }
 
-    #footer > .section-2 {
-        flex-direction: column;
-        justify-content: unset!important;
-        gap: 40px!important;
-        padding-top: 40px;
-    }
-
-    .section-2 > #logo {
-        display: none;
-    }
-
-    .section-2 > #features {
-        display: none;
-    }
-
-    .section-2 > #aboutus > p,
-    .section-2 > #contactus > #email {
-        margin-top: 25px;
-    }
-
     #header:before {
         display: none;
     }
@@ -721,64 +789,6 @@
 
     #header > #header-content > h3 {
         display: none;
-    }
-
-    #sosmed_icon {
-      display: none;
-    }
-
-    #aboutus {
-      height: fit-content;
-    }
-
-    #contactus {
-      height: fit-content;
-    }
-
-    #mobile_sosmed_icon {
-      display: unset!important;
-      margin-bottom: 10px;
-      margin-top: 15px;
-    }
-
-    #mobile_sosmed_icon > ul {
-      list-style: none;
-      display: flex;
-      flex-direction: row;
-      width: 50%;
-      justify-content: space-between;
-      margin-left: 25%;
-      margin-right: 25%;
-    }
-
-    #mobile_sosmed_icon > ul > li:after {
-      content: "";
-      display: inline-block;
-      width: 30px;
-      height: 25px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position-y: center;
-    }
-
-    #mobile_sosmed_icon > ul > li:nth-child(1) {
-      background-image: url("../../assets/images/twitter.svg");
-      background-repeat: no-repeat;
-    }
-
-    #mobile_sosmed_icon > ul > li:nth-child(2) {
-      background-image: url("../../assets/images/instagram.svg");
-      background-repeat: no-repeat;
-    }
-
-    #mobile_sosmed_icon > ul > li:nth-child(3) {
-      background-image: url("../../assets/images/linkedin.svg");
-      background-repeat: no-repeat;
-    }
-
-    #mobile_sosmed_icon > ul > li:nth-child(4) {
-      background-image: url("../../assets/images/facebook.svg");
-      background-repeat: no-repeat;
     }
 }
 
