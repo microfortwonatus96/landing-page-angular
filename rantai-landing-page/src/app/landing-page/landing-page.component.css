@@ -542,29 +542,29 @@
   }
 
   #header:before {
-        display: none;
-    }
+      display: none;
+  }
 
-    #header {
-        padding-left: 0px;
-        text-align: center;
-    }
+  #header {
+      padding-left: 0px;
+      text-align: center;
+  }
 
-    #header > #header-content {
-        width: 100%;
-    }
+  #header > #header-content {
+      width: 100%;
+  }
 
-    #header > #header-content > h1 {
-        padding-right: 0px;
-        font-size: 2.5em;
-    }
-    
-    #header > #header-content > h2 {
-        margin: 15px 0px 0px;
-        padding: 0px 25% 0px 25%;
-        width: 100%;
-        display: flex;
-    }
+  #header > #header-content > h1 {
+      padding-right: 0px;
+      font-size: 2.5em;
+  }
+  
+  #header > #header-content > h2 {
+      margin: 15px 0px 0px;
+      padding: 0px 25% 0px 25%;
+      width: 100%;
+      display: flex;
+  }
 
   #sosmed_icon {
     display: unset;
@@ -656,6 +656,10 @@
   
   #feature-container > div > img {
     width: 30%;
+  }
+
+  #feature .container-img{
+    width: 100%;
   }
 
   #footer > .section-2 {
