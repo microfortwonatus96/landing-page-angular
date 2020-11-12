@@ -872,6 +872,18 @@
   }
 }
 
+/* MEDIA 400 */
+@media screen and (max-width: 400px) {
+  
+  #overview .container-img {
+    gap: 0px;
+  }
+
+  #overview .container-img > div > img {
+    width: 80%;
+  }
+}
+
 #footer {
   display: -webkit-box;
   display: -ms-flexbox;
