@@ -323,13 +323,6 @@
   background-color: white;
 }
 
-/* .container-overview > h1,
-.container-overview > p {
-  text-align: center;
-  width: 50%;
-  font-size: 2em;
-} */
-
 #overview > div, #feature > div {
   overflow-x: auto;
   overflow-y: hidden;
@@ -752,63 +745,6 @@
 
 /* MEDIA 768 */
 @media screen and (max-width: 768px) {
-  /* #nav > ul:not(.logo .logo::before) {
-        display: none;
-    } */
-
-  /* #nav > #mobile > .logo {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    }
-
-    #nav > #mobile > .logo::before {
-      content: "";
-      display: block;
-      width: 40px;
-      height: 40px;
-      margin: 0px 10px 0px 20px;
-
-      background-image: url("../../assets/images/background-header-logo.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-
-    #nav > #mobile > #burger_menu {
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      float: left;
-      width: fit-content;
-    }
-
-    #nav > #mobile > #burger_menu > span {
-      width: 35px;
-      height: 3px;
-      background-color: white;
-      margin: 2px 30px 2px 0px;
-    }
-
-    #wrapper {
-      display: none;
-      position: absolute;
-      width: 20%;
-      margin-top: 40px;
-      margin-left: -40px;
-    }
-
-    #wrapper a {
-      color: white;
-      background-color:#064b9f;
-      padding: 12px 0px 16px 10px;
-      display: flex;
-      flex-direction: column;
-      text-align: left;
-    }
-
-    #burger_menu:active #wrapper {
-      display: unset;
-    } */
 
   #mobile > #wrapper > a:nth-child(4) {
     display: none;
@@ -821,31 +757,6 @@
   .section-1 > p {
     margin: 0px 10px 0px 0px;
   }
-
-    /* #header:before {
-        display: none;
-    }
-
-  #header {
-    padding-left: 0px;
-    text-align: center;
-  }
-
-  #header > #header-content {
-    width: 100%;
-  }
-
-    #header > #header-content > h1 {
-        padding-right: 0px;
-        font-size: 2.5em;
-    }
-    
-    #header > #header-content > h2 {
-        margin: 15px 0px 0px;
-        padding: 0px 25% 0px 25%;
-        width: 100%;
-        display: flex;
-    } */
 
   #header > #header-content > h2 {
     margin: 15px 0px 0px;

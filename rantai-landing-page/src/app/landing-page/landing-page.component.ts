@@ -18,9 +18,6 @@ export class LandingPageComponent implements OnInit {
       if (window.innerWidth <= 1440) {
         overview.scrollLeft = (overview.scrollWidth - window.innerWidth) / 2;
         feature.scrollLeft = (feature.scrollWidth - window.innerWidth) / 2;
-        // if(window.innerWidth > 1024) {
-        //   feature.scrollLeft = (feature.scrollWidth - window.innerWidth) / 2;
-        // }
       }
     };
     window.addEventListener("resize", scrollXCenter);
