@@ -12,6 +12,6 @@ export class EmailValidationService {
   ) { }
 
   validateUser(id: string, token: string): Observable<any>{
-    return this.http.get<any>(`http://rantai.tech:7781/api/validation/token?id=${id}&token=${token}`)
+    return this.http.get<any>(`https://rantai.tech:7782/api/validation/token?id=${id}&token=${token}`)
   }
 }
