@@ -733,11 +733,6 @@
   }
 
   #mobile_sosmed_icon > ul > li:nth-child(3) {
-    background-image: url("../../assets/images/linkedin.svg");
-    background-repeat: no-repeat;
-  }
-
-  #mobile_sosmed_icon > ul > li:nth-child(4) {
     background-image: url("../../assets/images/facebook.svg");
     background-repeat: no-repeat;
   }
@@ -1070,10 +1065,8 @@
 #sosmed_icon > ul > li:nth-child(2):after {
   background-image: url("../../assets/images/instagram.svg");
 }
+
 #sosmed_icon > ul > li:nth-child(3):after {
-  background-image: url("../../assets/images/linkedin.svg");
-}
-#sosmed_icon > ul > li:nth-child(4):after {
   background-image: url("../../assets/images/facebook.svg");
 }
 
