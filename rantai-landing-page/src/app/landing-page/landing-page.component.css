@@ -36,7 +36,7 @@
 #menu > li {
   list-style: none;
   font-weight: normal;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 #nav > ul > li:hover {
@@ -278,7 +278,8 @@
   transform: translateY(2px);
 }
 
-.container-overview, .container-feature {
+.container-overview,
+.container-feature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,7 +294,8 @@
   padding: 70px 0px 70px 0px;
 }
 
-.container-overview > div, .container-feature > div {
+.container-overview > div,
+.container-feature > div {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -323,7 +325,8 @@
   background-color: white;
 }
 
-#overview > div, #feature > div {
+#overview > div,
+#feature > div {
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -396,7 +399,8 @@
     margin-top: 30px;
   }
 
-  .container-overview > h1, .container-feature > h1 {
+  .container-overview > h1,
+  .container-feature > h1 {
     width: 80%;
   }
 
@@ -404,7 +408,8 @@
     text-align: center;
   } */
 
-  #overview .container-img, #feature .container-img{
+  #overview .container-img,
+  #feature .container-img {
     padding: 0;
     position: relative;
     width: 1440px;
@@ -535,28 +540,28 @@
   }
 
   #header:before {
-      display: none;
+    display: none;
   }
 
   #header {
-      padding-left: 0px;
-      text-align: center;
+    padding-left: 0px;
+    text-align: center;
   }
 
   #header > #header-content {
-      width: 100%;
+    width: 100%;
   }
 
   #header > #header-content > h1 {
-      padding-right: 0px;
-      font-size: 2.5em;
+    padding-right: 0px;
+    font-size: 2.5em;
   }
 
   #header > #header-content > h2 {
-      margin: 15px 0px 0px;
-      padding: 0px 25% 0px 25%;
-      width: 100%;
-      display: flex;
+    margin: 15px 0px 0px;
+    padding: 0px 25% 0px 25%;
+    width: 100%;
+    display: flex;
   }
 
   #sosmed_icon {
@@ -623,7 +628,8 @@
     font-size: 0.9em;
   }
 
-  .container-overview, .container-feature {
+  .container-overview,
+  .container-feature {
     gap: 50px;
   }
 
@@ -651,7 +657,7 @@
     width: 60%;
   }
 
-  #feature .container-img{
+  #feature .container-img {
     width: 100%;
   }
 
@@ -712,7 +718,7 @@
     margin-right: 25%;
   }
 
-  #mobile_sosmed_icon > ul > li:after {
+  /* #mobile_sosmed_icon > ul > li:after {
     content: "";
     display: inline-block;
     width: 30px;
@@ -720,9 +726,9 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: center;
-  }
+  } */
 
-  #mobile_sosmed_icon > ul > li:nth-child(1) {
+  /* #mobile_sosmed_icon > ul > li:nth-child(1) {
     background-image: url("../../assets/images/twitter.svg");
     background-repeat: no-repeat;
   }
@@ -736,11 +742,14 @@
     background-image: url("../../assets/images/facebook.svg");
     background-repeat: no-repeat;
   }
+  #mobile_sosmed_icon > ul > li:nth-child(4) {
+    background-image: url("../../assets/images/youtube.svg");
+    background-repeat: no-repeat;
+  } */
 }
 
 /* MEDIA 768 */
 @media screen and (max-width: 768px) {
-
   #mobile > #wrapper > a:nth-child(4) {
     display: none;
   }
@@ -780,7 +789,6 @@
 
 /* MEDIA 400 */
 @media screen and (max-width: 400px) {
-
   #overview .container-img {
     gap: 0px;
   }
@@ -1044,30 +1052,14 @@
   align-items: center;
 }
 
-#sosmed_icon > ul > li:after {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: center;
-}
-
 #sosmed_icon > ul > li:hover {
   cursor: pointer;
 }
 
-#sosmed_icon > ul > li:nth-child(1):after {
-  background-image: url("../../assets/images/twitter.svg");
-}
-
-#sosmed_icon > ul > li:nth-child(2):after {
-  background-image: url("../../assets/images/instagram.svg");
-}
-
-#sosmed_icon > ul > li:nth-child(3):after {
-  background-image: url("../../assets/images/facebook.svg");
+#sosmed_icon > ul > li > a > img,
+#mobile_sosmed_icon > ul > li > a > img {
+  width: 24px;
+  height: 24px;
 }
 
 .terms_and_policy {
@@ -1090,6 +1082,8 @@
 .terms_and_policy > a {
   text-decoration: none;
   font-size: 0.9em;
+  width: 100%;
+  text-align: right;
   color: #677294;
   font-family: "Poppins", sans-serif;
 }
