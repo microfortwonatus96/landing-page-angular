@@ -1,229 +1,387 @@
-<nav id="nav">
-  <ul>
-    <li><div class="logo">Rantai.tech</div></li>
-    <li>
-      <ul id="menu">
-        <li (click)="jumpto('header')">Home</li>
-        <li (click)="jumpto('about')">About Us</li>
-        <li (click)="jumpto('overview')">Overview</li>
-        <li (click)="jumpto('feature')">Features</li>
-        <li (click)="jumpto('email')">Contact</li>
-      </ul>
-    </li>
-  </ul>
-
-  <div id="mobile">
-    <div class="logo">Rantai.tech</div>
-    <div id="burger_menu" (click)="this.show = !this.show">
-      <span></span>
-      <span></span>
-      <span></span>
-
-      <div id="wrapper" [class.display]="show">
-        <a (click)="jumpto('header')">Home</a>
-        <a (click)="jumpto('about')">About Us</a>
-        <a (click)="jumpto('overview')">Overview</a>
-        <a (click)="jumpto('feature')">Features</a>
-        <a (click)="jumpto('contactus')">Contact</a>
-      </div>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container-fluid">
+    <div class="row">
+      <nav
+        class="navbar navbar-expand-lg navbar-light scrolling-navbar nav-menu"
+      >
+        <div class="container">
+          <div class="logo">
+            <a class="navbar-brand text-capitalize fw-bold" href="#">
+              <img
+                src="../../assets/images/background-header-logo.svg"
+                alt=""
+              />
+              Rantai.tech
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link fw-bold" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#overview">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- .nav-menu -->
     </div>
-  </div>
-</nav>
-
-<header id="header">
-  <div id="header-content">
-    <h1>
-      The Smartest Way to <br />
-      Manage Your Business
-    </h1>
-    <h2>
-      We provide integrated solutions to various e-commerce sales channels in
-      Indonesia.
-    </h2>
-    <h3>Get your own way to productivity!</h3>
-    <button type="button" (click)="redirect()">Download</button>
   </div>
 </header>
-
-<section id="demo">
-  <h1>Get Started Today With Our Free Demo</h1>
-  <button type="button">CONTACT US</button>
-</section>
-
-<section id="about" class="container">
-  <div id="about-img">
-    <img src="../../assets/images/about.png" alt="about" />
-  </div>
-  <div id="about-desc">
-    <h1>What is Rantai?</h1>
-    <p>
-      Rantai is a "Dual Cloud" based service to facilitate management and
-      improve the efficiency of distribution companies. Ranging from purchasing,
-      selling, inventory, accounts receivable, POS to business intelligence for
-      company management. Rantai automatically capture and extract sales order
-      data, such as a customer’s past purchases from the company, as well as
-      unstructured data such as written communications and saves it to an
-      electronic archive.
-    </p>
-    <br />
-    <p>
-      Rantai helps organize and manage business easily through one integrated
-      platform to various e-commerce sales channels in Indonesia. It’s Keep your
-      business growing at the dramatic rates you plan for and integrated around
-      a single codebase, database and business process. Which can be initiated
-      from anywhere, using any computer, tablet, or smartphone.
-    </p>
-    <button type="button">REQUEST FREE DEMO</button>
-  </div>
-</section>
-
-<section id="overview" class="container container-overview">
-  <h1>
-    We provide integrated solutions to various e-commerce sales channels in
-    Indonesia.
-  </h1>
-  <div>
-    <div id="overview-container" class="container-img">
-      <div>
-        <img src="../../assets/images/overview-left-1.png" alt="" />
-      </div>
-      <div>
-        <img src="../../assets/images/overview-left-2.png" alt="" />
-      </div>
-      <div>
-        <img src="../../assets/images/overview-center.png" alt="" />
-      </div>
-      <div>
-        <img src="../../assets/images/overview-right-1.png" alt="" />
-      </div>
-      <div>
-        <img src="../../assets/images/overview-right-2.png" alt="" />
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="feature" class="container container-feature">
-  <h1>Our Features</h1>
-  <div>
-    <div id="feature-container" class="container-img">
-      <div>
-        <img src="../../assets/images/features-1.png" alt="" />
-      </div>
-      <div>
-        <img src="../../assets/images/features-2.png" alt="" />
-      </div>
-      <div>
-        <img src="../../assets/images/features-3.png" alt="" />
-      </div>
-      <div>
-        <img src="../../assets/images/features-4.png" alt="" />
-      </div>
-      <div>
-        <img src="../../assets/images/features-5.png" alt="" />
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer id="footer" class="container">
-  <section class="section-2">
-    <div id="logo">
-      <div>
-        <h1>Rantai.tech</h1>
-      </div>
-    </div>
-    <div id="features" class="desc">
-      <h1>Features</h1>
-      <p>
-        Fully Integrated System Sales Order Automation Realtime Visibility
-        System Configuration Online & Offline
-      </p>
-    </div>
-    <div id="aboutus" class="desc">
-      <h1>About</h1>
-      <p>
-        Rantai is a multichannel e-commerce management service from Cyberindo
-        Sinergi Sistem. We provide integrated solutions that can synchronize
-        products to various e-commerce sales channels in Indonesia. Starting
-        from management order, various sales channels integration, stock
-        synchronization and also logistics processes in one platform.
-      </p>
-    </div>
-    <div id="contactus" class="desc">
-      <h1>Contact Us</h1>
-      <div id="email-container">
-        <ul id="email">
-          <li><p>support@rantai.tech</p></li>
-          <li>
-            <p>+6281315822282 / +628170822282</p>
-          </li>
-          <li>
-            <p>
-              VINILON BUILDING <br />
-              Jalan Raden Saleh No 13-17
-            </p>
-          </li>
-        </ul>
-
-        <div id="sosmed_icon">
-          <ul>
-            <li>
-              <a href="">
-                <img src="../../assets/images/twitter.svg" alt="twitter" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/rantai.tech/">
-                <img src="../../assets/images/instagram.svg" alt="instagram" />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.facebook.com/Rantaitech-103206698304548">
-                <img src="../../assets/images/facebook.svg" alt="facebook" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCLjgjjT7CerfG5qT9TTVyrQ"
-              >
-                <img src="../../assets/images/youtube.svg" alt="youtube" />
-              </a>
-            </li>
-          </ul>
+<!-- End Header -->
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container-fluid" data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div
+        class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
+      >
+        <h1>The Smartest Way to Manage Your Business</h1>
+        <h2>
+          We provide integrated solutions to various distribution sales channels
+          in Indonesia connected through Rantai Link.
+        </h2>
+        <div>
+          <a href="#about" class="btn-let-started scrollto text-uppercase"
+            >Let's Start</a
+          >
         </div>
       </div>
-
-      <div id="mobile_sosmed_icon">
-        <ul>
-          <li>
-            <a href="">
-              <img src="../../assets/images/twitter.svg" alt="twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/rantai.tech/">
-              <img src="../../assets/images/instagram.svg" alt="instagram" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/Rantaitech-103206698304548">
-              <img src="../../assets/images/facebook.svg" alt="facebook" />
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UCLjgjjT7CerfG5qT9TTVyrQ">
-              <img src="../../assets/images/youtube.svg" alt="youtube" />
-            </a>
-          </li>
-        </ul>
+      <div
+        class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img"
+        data-aos="zoom-in"
+        data-aos-delay="150"
+      >
+        <img
+          src="../../assets/images/background-header-2.png"
+          class="img-fluid animated"
+          alt=""
+        />
       </div>
-      <div class="terms_and_policy">
-        <a routerLink="/privacy">Privacy Policy</a>
+    </div>
+  </div>
+</section>
+<!-- End Hero -->
+
+<main id="main">
+  <section class="subheader">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 text-white">
+          <p>Get Started Today With Our Rantai Application</p>
+        </div>
+        <div class="col-md-2 contact-us">
+          <a href="#contact" class="btn-contact text-uppercase"> Contact Us</a>
+          <!-- <button type="button" class="btn btn-primary text-uppercase">
+
+          </button> -->
+        </div>
       </div>
     </div>
   </section>
-  <section class="section-1">
-    <p>&copy; 2019 PT. Cyberindo Sinergi System</p>
+  <!-- End Counts Section -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-lg-6 order-1 order-lg-1"
+          data-aos="zoom-in"
+          data-aos-delay="150"
+        >
+          <img src="../../assets/images/about.png" class="img-fluid" alt="" />
+        </div>
+        <div
+          class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 content"
+          data-aos="fade-right"
+        >
+          <h1>What is Rantai?</h1>
+          <p>
+            Rantai is a "Dual Cloud" based service to facilitate management and
+            improve the efficiency of distribution companies. Ranging from
+            purchasing, selling, inventory, accounts receivable, POS to business
+            intelligence for company management. Rantai automatically capture
+            and extract sales order data, such as a customer’s past purchases
+            from the company, as well as unstructured data such as written
+            communications and saves it to an electronic archive.
+          </p>
+          <br />
+          <p>
+            Rantai helps organize and manage business easily through one
+            integrated platform to various e-commerce sales channels in
+            Indonesia. It’s Keep your business growing at the dramatic rates you
+            plan for and integrated around a single codebase, database and
+            business process. Which can be initiated from anywhere, using any
+            computer, tablet, or smartphone.
+          </p>
+          <a href="#" class="read-more">REQUEST FREE DEMO</a>
+        </div>
+      </div>
+    </div>
   </section>
+  <!-- End About Section -->
+  <!-- ======= Overview Section ======= -->
+  <section id="overview" class="features">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Overview</h2>
+        <p>
+          We provide integrated solutions to various e-commerce sales channels
+          in Indonesia.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="box"></div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 mt-4 mt-md-0"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="box featured"></div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 mt-4 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="box"></div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 mt-4 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div class="box"></div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 mt-4 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
+          <div class="box"></div>
+        </div>
+
+        <!-- <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+            ></li>
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="../../assets/images/overview-left-1.png"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="1000">
+              <img
+                src="../../assets/images/overview-left-1.png"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../../assets/images/overview-center.png"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../../assets/images/overview-right-1.png"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../../assets/images/overview-right-2.png"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- End Features Section -->
+  <!-- ======= Features Section ======= -->
+  <section id="features" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Our Features</h2>
+        <span class="text-center">
+          The integrated solution to organize and manage business easily through
+          one integrated platform and improve the efficiency of distribution
+          companies.
+        </span>
+      </div>
+
+      <div class="row">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="../../assets/images/features-1.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="../../assets/images/features-2.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="../../assets/images/features-3.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="../../assets/images/features-4.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="../../assets/images/features-5.png"
+                class="card-img-top"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Services Section -->
+  <section id="contact" class="faq">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4 class="text-white">contact us!</h4>
+        </div>
+        <div class="col-lg-6 col-md-6 footer-links">
+          <span class="text-white"
+            >There are many variations of passages of Lorem Ipsum but the
+            majority have suffered alteration.</span
+          >
+        </div>
+        <div class="col-lg-4 col-md-6 footer-links footer-newsletter">
+          <form action="" method="post">
+            <input type="email" name="email" /><input
+              type="submit"
+              value="Send"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Frequently Asked Questions Section -->
+</main>
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h4>
+            <img
+              src="../../assets/images/background-header-logo.svg"
+              alt=""
+            />Rantai.tech
+          </h4>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Features</h4>
+          <p>
+            Fully Integrated System Sales Order Automation Realtime Visibility
+            System Configuration Online & Offline
+          </p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>About</h4>
+          <p>
+            Rantai is a distribution management sales from Cyberindo Sinergi
+            Sistem. We provide integrated solutions that can synchronize
+            products to various distribution sales channels in Indonesia.
+            Starting from management order, various sales channels integration,
+            stock synchronization in one platform.
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Contact Us</h4>
+          <p>support@rantai.tech</p>
+          <p>+6281315822282 / +628170822282</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row footer">
+    <p class="text-center text-white p-3">
+      &copy;2019 PT. Cyberindo Synergy System
+    </p>
+  </div>
 </footer>
+<!-- End Footer -->
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+<div id="preloader"></div>
