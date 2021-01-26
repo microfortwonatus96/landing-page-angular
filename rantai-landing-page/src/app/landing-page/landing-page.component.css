@@ -1,7 +1,3 @@
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-
 .back-to-top {
   position: fixed;
   display: none;
@@ -27,10 +23,6 @@
   background: #0960E3;
   color: #fff;
 }
-
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
 
 #preloader {
   position: fixed;
@@ -75,19 +67,11 @@
   }
 }
 
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
-
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 
 #header {
   transition: all 0.5s;
@@ -117,10 +101,6 @@
 #header .logo img {
   max-height: 40px;
 }
-
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
 
 /* Desktop Navigation */
 
@@ -193,19 +173,26 @@
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-
 #hero {
-  width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, rgba(9, 96, 227) 0%, rgba(3, 52, 85, 1) 100%), url("../../assets/images/background-header-2.png") center center no-repeat;
-  background-size: cover;
+  background: rgb(9, 96, 227);
+  background: -o-linear-gradient( 315deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
+  background: linear-gradient( 135deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
 }
 
-#hero .container, #hero .container-fluid {
-  padding-top: 84px;
+#hero::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("../../assets/images/landing-page/landing-01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  animation: up-heroImage 2s ease-in-out infinite alternate-reverse both;
 }
 
 #hero h1 {
@@ -296,8 +283,11 @@
   #hero .hero-img img {
     width: 80%;
   }
+  .text-white {
+    text-align: center;
+  }
   .img-fluid {
-    max-width: unset;
+    /* max-width: unset; */
     height: auto;
     margin-top: unset;
   }
@@ -321,17 +311,13 @@
   }
 }
 
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
-
 section {
   padding: 100px 0;
   overflow: hidden;
 }
 
 .section-bg {
-  background-color: #f9f8ff;
+  /* background-color: #f9f8ff; */
 }
 
 .section-title {
@@ -359,16 +345,14 @@ section {
   left: calc(50% - 25px);
 }
 
-.section-title p {
+/* .section-title p {
   margin-bottom: 0;
-}
+} */
 
-/*--------------------------------------------------------------
-# SubHeader
---------------------------------------------------------------*/
-.text-white p{
- padding-top: 10px;
-}
+/* .text-white p {
+  padding-top: 10px;
+} */
+
 .contact-us {
   border: 2px solid #fff;
   border-radius: 100px;
@@ -416,10 +400,6 @@ section, .subheader {
   text-align: center;
 }
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-
 .about {
   padding: 120px 0;
 }
@@ -458,12 +438,12 @@ section, .subheader {
   border-radius: 5px;
   transition: 0.5s;
   color: #fff;
-  background: linear-gradient(45deg, #5846f9 0%, #451ae2 100%);
+  background: linear-gradient(45deg, #0B69FF 0%, #0B69FF 100%);
   position: relative;
 }
 
 .about .content .read-more:hover {
-  background: linear-gradient(180deg, #5846f9 0%, #3b4ef5 100%);
+  background: linear-gradient(180deg, #0B69FF 0%, #0B69FF 100%);
 }
 
 .about .content .read-more i {
@@ -472,10 +452,6 @@ section, .subheader {
   right: 20px;
   top: 12px;
 }
-
-/*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
 
 .features .box {
   padding: 20px;
@@ -512,12 +488,49 @@ section, .subheader {
   min-height: 400px;
 }
 
-/*--------------------------------------------------------------
-# CONTACT
---------------------------------------------------------------*/
+.ourfeatures {
+  padding: 50px 20px;
+  background-color: #E4E4E4;
+}
 
-section, .faq {
-  padding: 15px 0;
+.services .icon-box {
+  text-align: center;
+  padding: 20px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+}
+
+.services .icon-box .icon {
+  margin: 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.services .icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  border-color: #fff;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.services {
+  padding: 120px 0;
+  overflow: hidden;
 }
 
 .faq {
@@ -569,9 +582,6 @@ section, .faq {
   background: #2461e6;
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 
 #footer {
   font-size: 14px;
