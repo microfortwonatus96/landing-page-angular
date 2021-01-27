@@ -80,8 +80,10 @@
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(8, 24, 167, 0.8);
-  padding: 2px 5px;
+  background: rgb(6, 58, 138);
+  background: linear-gradient(90deg, rgba(6, 58, 138, 1) 0%, rgba(2, 95, 158, 1) 100%, rgba(9, 96, 227, 1) 100%);
+  /* background: rgba(8, 24, 167, 0.8); */
+  padding: 3px 5px;
 }
 
 #header .logo {
@@ -100,6 +102,11 @@
 
 #header .logo img {
   max-height: 40px;
+}
+
+.send-email {
+  background-color: #0B69FF;
+  border: none;
 }
 
 /* Desktop Navigation */
@@ -235,7 +242,7 @@
   margin-top: -70px;
 }
 
-#hero .animated {
+.animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -252,7 +259,7 @@
   #hero .container, #hero .container-fluid {
     padding-top: 68px;
   }
-  #hero .animated {
+   .animated {
     -webkit-animation: none;
     animation: none;
   }
@@ -581,7 +588,6 @@ section, .subheader {
 #faq .footer-newsletter form input[type="submit"]:hover {
   background: #2461e6;
 }
-
 
 #footer {
   font-size: 14px;

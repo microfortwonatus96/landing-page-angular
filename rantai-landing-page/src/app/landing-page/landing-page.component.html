@@ -6,7 +6,7 @@
       >
         <div class="container">
           <div class="logo">
-            <a class="navbar-brand text-capitalize fw-bold" href="#">
+            <a class="navbar-brand text-capitalize fw-bold" href="#home">
               <img
                 src="../../assets/images/background-header-logo.svg"
                 alt=""
@@ -26,21 +26,34 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-4">
               <li class="nav-item active">
-                <a class="nav-link fw-bold" aria-current="page">Home</a>
+                <a
+                  class="nav-link text-white fw-bold"
+                  aria-current="page"
+                  href="#home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#about">About Us</a>
+                <a class="nav-link fw-bold text-white" href="#about"
+                  >About Us</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#overview">Overview</a>
+                <a class="nav-link fw-bold text-white" href="#overview"
+                  >Overview</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#ourfeatures">Features</a>
+                <a class="nav-link fw-bold text-white" href="#ourfeatures"
+                  >Features</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold" href="#contact">Contact</a>
+                <a class="nav-link fw-bold text-white" href="#contact"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
@@ -134,77 +147,128 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row row-cols-md-5 g-5 mt-5 justify-content-center">
         <div
-          class="row align-items-center justify-content-center row-cols-md-5 g-5"
+          class="col-lg-2 col-sm-6 mt-4 mt-md-0"
+          data-aos="fade-up"
+          data-aos-delay="100"
         >
-          <div
-            class="col-lg-2 col-md-6 mt-4 mt-md-0"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="box">
-              <img
-                src="../../assets/images/landing-page/overview-1.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-          </div>
-          <div
-            class="col-lg-2 col-md-6 mt-4 mt-md-0"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="box featured">
-              <img
-                src="../../assets/images/landing-page/overview-2.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-          </div>
-          <div
-            class="col-lg-2 col-md-6 mt-4 mt-lg-0"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="box">
-              <img
-                src="../../assets/images/landing-page/overview-main.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-          </div>
-          <div
-            class="col-lg-2 col-md-6 mt-4 mt-lg-0"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="box">
-              <img
-                src="../../assets/images/landing-page/overview-3.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-          </div>
-          <div
-            class="col-lg-2 col-md-6 mt-4 mt-lg-0"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="box">
-              <img
-                src="../../assets/images/landing-page/overview-4.png"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-          </div>
+          <img
+            src="../../assets/images/landing-page/overview-1.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div
+          class="col-lg-2 col-sm-6 mt-4 mt-md-0"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <img
+            src="../../assets/images/landing-page/overview-2.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
+          <img
+            src="../../assets/images/landing-page/overview-main.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div
+          class="col-lg-2 col-sm-6 mt-4 mt-md-0"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <img
+            src="../../assets/images/landing-page/overview-3.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div
+          class="col-lg-2 col-sm-6 mt-4 mt-md-0"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
+          <img
+            src="../../assets/images/landing-page/overview-4.png"
+            class="img-fluid"
+            alt=""
+          />
         </div>
       </div>
+      <!-- <div
+        class="row align-items-center justify-content-center row-cols-md-5 g-5"
+      >
+        <div
+          class="col-lg-2 col-md-6 mt-4 mt-md-0"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="box">
+            <img
+              src="../../assets/images/landing-page/overview-1.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-6 mt-4 mt-md-0"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="box featured">
+            <img
+              src="../../assets/images/landing-page/overview-2.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-6 mt-4 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="box">
+            <img
+              src="../../assets/images/landing-page/overview-main.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-6 mt-4 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div class="box">
+            <img
+              src="../../assets/images/landing-page/overview-3.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="col-lg-2 col-md-6 mt-4 mt-lg-0"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div class="box">
+            <img
+              src="../../assets/images/landing-page/overview-4.png"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+        </div>
+      </div> -->
     </div>
   </section>
 
@@ -442,7 +506,7 @@
         <div class="col-lg-2 col-md-4 footer-links">
           <h4 class="text-white">contact us!</h4>
         </div>
-        <div class="col-lg-6 col-md-4 footer-links">
+        <div class="col-lg-5 col-md-4 footer-links">
           <p class="text-white fs-6">
             There are many variations of passages of Lorem Ipsum but the
             majority have suffered alteration.
@@ -459,7 +523,7 @@
                 aria-describedby="button-addon2"
               />
               <button
-                class="btn btn-outline-secondary text-white"
+                class="btn btn-outline-secondary text-white send-email fs-6"
                 type="button"
                 id="button-addon2"
               >
@@ -476,26 +540,32 @@
   <div class="footer-top">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-6 footer-contact">
-          <h4>
-            <img
-              src="../../assets/images/background-header-logo.svg"
-              alt=""
-            />Rantai.tech
-          </h4>
+        <div class="col-lg-3 col-md-6">
+          <div class="d-flex flex-row bd-highlight">
+            <div class="bd-highlight">
+              <img
+                src="../../assets/images/logofooter.svg"
+                alt="logo"
+                class="img-fluid"
+              />
+            </div>
+            <div class="bd-highlight ps-1 pt-3" data-aos="fade-left">
+              <p class="h2 fw-bolder">Rantai.tech</p>
+            </div>
+          </div>
         </div>
 
-        <div class="col-lg-2 col-md-6 footer-links">
-          <h4>Features</h4>
-          <p>
+        <div class="col-lg-2 col-md-6">
+          <p class="h5 pt-4 fw-bolder" data-aos="fade-right">Features</p>
+          <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
             Fully Integrated System Sales Order Automation Realtime Visibility
             System Configuration Online & Offline
           </p>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>About</h4>
-          <p>
+        <div class="col-lg-3 col-md-6">
+          <p class="h5 pt-4 fw-bolder" data-aos="fade-right">About</p>
+          <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
             Rantai is a distribution management sales from Cyberindo Sinergi
             Sistem. We provide integrated solutions that can synchronize
             products to various distribution sales channels in Indonesia.
@@ -504,10 +574,87 @@
           </p>
         </div>
 
-        <div class="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Contact Us</h4>
-          <p>support@rantai.tech</p>
-          <p>+6281315822282 / +628170822282</p>
+        <div class="col-lg-4 col-md-6">
+          <p class="h5 pt-4 fw-bolder" data-aos="fade-right">Contact Us</p>
+          <div class="d-flex flex-row bd-highlight">
+            <img
+              src="../../assets/images/email.svg"
+              alt="email"
+              class="img-fluid pe-3"
+            />
+            <div
+              class="bd-highlight pt-3"
+              data-aos="fade-left"
+              data-aos-delay="100"
+            >
+              <p>support@rantai.tech</p>
+            </div>
+          </div>
+          <div class="d-flex flex-row bd-highlight">
+            <img
+              src="../../assets/images/phone.svg"
+              alt="phone"
+              class="img-fluid pe-3"
+            />
+            <div
+              class="bd-highlight pt-4"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
+              <p>+6281315822282 / +628170822282</p>
+            </div>
+          </div>
+          <div class="d-flex flex-row bd-highlight">
+            <img
+              src="../../assets/images/location.svg"
+              alt="location"
+              class="img-fluid"
+            />
+            <div class="bd-highlight pt-3">
+              <p class="ps-4" data-aos="fade-left" data-aos-delay="300">
+                Vinilon Building, Jl. Raden Saleh Raya No.kav 13-17, RT.1/RW.2,
+                Kenari, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota
+                Jakarta 10430.
+              </p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <ul class="nav nav-pills">
+              <li class="nav-item" data-aos="fade-up" data-aos-delay="100">
+                <a href="#" class="nav-link"
+                  ><img
+                    src="../../assets/images/twitter.svg"
+                    alt="twitter"
+                    class="img-fluid"
+                /></a>
+              </li>
+              <li class="nav-item" data-aos="fade-up" data-aos-delay="200">
+                <a href="#" class="nav-link"
+                  ><img
+                    src="../../assets/images/instagram.svg"
+                    alt="twitter"
+                    class="img-fluid"
+                /></a>
+              </li>
+              <li class="nav-item" data-aos="fade-up" data-aos-delay="300">
+                <a href="#" class="nav-link"
+                  ><img
+                    src="../../assets/images/linkedin.svg"
+                    alt="twitter"
+                    class="img-fluid"
+                /></a>
+              </li>
+              <li class="nav-item" data-aos="fade-up" data-aos-delay="400">
+                <a href="#" class="nav-link"
+                  ><img
+                    src="../../assets/images/facebook.svg"
+                    alt="twitter"
+                    class="img-fluid"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -515,7 +662,7 @@
 
   <div class="row footer align-items-center justify-content-center pt-3">
     <p class="text-center text-white p-3">
-      &copy;2019 PT. Cyberindo Synergy System
+      &copy; {{ newDate }}&nbsp;PT Cyberindo Sinergi Sistem
     </p>
   </div>
 </footer>

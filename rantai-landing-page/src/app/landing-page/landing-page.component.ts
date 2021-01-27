@@ -8,20 +8,22 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class LandingPageComponent implements OnInit {
   show = true;
-
+  date = new Date();
+  newDate: string;
   constructor() {}
 
   ngOnInit(): void {
-    let scrollXCenter = () => {
-      let overview = document.querySelector('#overview > div');
-      let feature = document.querySelector('#feature > div');
-      if (window.innerWidth <= 1440) {
-        overview.scrollLeft = (overview.scrollWidth - window.innerWidth) / 2;
-        feature.scrollLeft = (feature.scrollWidth - window.innerWidth) / 2;
-      }
-    };
-    window.addEventListener('resize', scrollXCenter);
-    window.addEventListener('load', scrollXCenter);
+    this.newDate = this.date.getFullYear().toString();
+    // let scrollXCenter = () => {
+    //   let overview = document.querySelector('#overview > div');
+    //   let feature = document.querySelector('#feature > div');
+    //   if (window.innerWidth <= 1440) {
+    //     overview.scrollLeft = (overview.scrollWidth - window.innerWidth) / 2;
+    //     feature.scrollLeft = (feature.scrollWidth - window.innerWidth) / 2;
+    //   }
+    // };
+    // window.addEventListener('resize', scrollXCenter);
+    // window.addEventListener('load', scrollXCenter);
   }
 
   redirect() {
