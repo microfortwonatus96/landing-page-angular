@@ -102,9 +102,17 @@
   <nav class="navbar navbar-expand-md fixed-top" id="navbar">
     <div class="container">
       <!-- Brand -->
-      <a class="navbar-brand text-capitalize fw-bold" href="#home">
-        <img src="../../assets/images/background-header-logo.svg" alt="logo" />
-        Rantai.tech
+      <a
+        class="navbar-brand fw-bold d-flex justify-content-center align-items-center"
+        href="#home"
+        style="gap: 5px"
+      >
+        <img
+          src="../../assets/images/background-header-logo.svg"
+          alt="logo"
+          width="24px"
+        />
+        rantai.tech
       </a>
 
       <button
@@ -121,7 +129,7 @@
 
       <!-- Navbar links -->
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link active" href="#home">Home</a>
           </li>
@@ -132,10 +140,10 @@
             <a class="nav-link" href="#overview">Overview</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#ourfeatures">features</a>
+            <a class="nav-link" href="#ourfeatures">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#footer">contact</a>
+            <a class="nav-link" href="#footer">Contact</a>
           </li>
         </ul>
       </div>
@@ -145,6 +153,11 @@
 
   <!-- HERO START-->
   <section class="home d-flex align-items-center position-relative">
+    <img
+      class="home-img"
+      src="assets/images/landing-page/landing-01.png"
+      alt="logo"
+    />
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-5">
@@ -155,19 +168,24 @@
             </h1>
             <p data-aos="fade-right">Get your own way to productivity!</p>
             <div class="home-btn" data-aos="fade-right">
+              <a href="#about" class="btn btn-1"> LET'S START </a>
               <a
                 href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                class="btn btn-1"
                 target="_blank"
-                >Let's Start</a
               >
+                <img
+                  src="assets/images/landing-page/google-play.png"
+                  alt="google-play"
+                  class="img-google-play"
+                  height="50px"
+                />
+              </a>
             </div>
           </article>
         </div>
         <div class="col-md-7 text-center"></div>
       </div>
     </div>
-    <img src="assets/images/landing-page/landing-01.png" alt="logo" />
   </section>
 
   <!-- HERO END -->
@@ -204,22 +222,21 @@
         >
           <article>
             <h1 class="fw-bold">What is Rantai?</h1>
-            <p class="fs-6 fw-normal">
-              Rantai is a "Dual Cloud" based service to facilitate management
-              and improve the efficiency of distribution companies. Ranging from
-              purchasing, selling, inventory, accounts receivable, POS to
-              business intelligence for company management. Rantai automatically
+            <p class="fs-6 fw-normal" style="margin-top: 30px">
+              Rantai is a "Dual Cloud" based system to facilitate management and
+              improve the efficiency of distribution companies. Ranging from
+              purchasing, selling, management inventory, accounts receivable, &
+              Point of Sale for management of company . Rantai automatically
               capture and extract sales order data, such as a customer’s past
               purchases from the company, as well as unstructured data such as
               written communications and saves it to an electronic archive.
             </p>
             <p class="fs-6 fw-normal">
               Rantai helps organize and manage business easily through one
-              integrated platform to various e-commerce sales channels in
-              Indonesia. It’s Keep your business growing at the dramatic rates
-              you plan for and integrated around a single codebase, database and
-              business process. Which can be initiated from anywhere, using any
-              computer, tablet, or smartphone.
+              integrated platform called as Rantai Link. It’s Keep you connected
+              with your partner. We gives you an innovative solution to control
+              your business from everywhere and at anytime, everything at your
+              fingertips.
             </p>
           </article>
           <a href="#footer" class="read-more">REQUEST FREE DEMO</a>
@@ -380,12 +397,15 @@
             <div class="icon-box iconbox-blue">
               <img
                 src="../../assets/images/landing-page/landing-page-08.png"
-                alt=""
-                class="card-img-top"
+                alt="image1"
+                class="card-img-top img-ourfeatures pt-3"
               />
               <article>
-                <h4 class="fs-5 pt-4 fw-bold">Full Integrated System</h4>
-                <p class="pt-3 fw-normal">
+                <h4 class="fs-5 pt-3 fw-bold">
+                  Full Integrated <br />
+                  System
+                </h4>
+                <p class="ls-c-1 pb-3">
                   Ranging from purchase, stock management, sales, invoicing to
                   delivery are integrated with one system.
                 </p>
@@ -401,12 +421,12 @@
             <div class="icon-box iconbox-orange">
               <img
                 src="../../assets/images/landing-page/landing-page-07.png"
-                alt=""
-                class="card-img-top"
+                alt="image2"
+                class="card-img-top img-ourfeatures pt-3"
               />
               <article>
-                <h4 class="pt-5 fs-5 fw-bold">Sales Order Automation</h4>
-                <p class="pt-3">
+                <h4 class="fs-5 pt-3 fw-bold">Sales Order Automation</h4>
+                <p class="ls-c-1 pb-3">
                   Minimize the manual selling process, give consumers access to
                   product information, and also able to place orders
                   automatically.
@@ -423,12 +443,15 @@
             <div class="icon-box iconbox-pink">
               <img
                 src="../../assets/images/landing-page/landing-page-09.png"
-                alt=""
-                class="card-img-top"
+                alt="image3"
+                class="card-img-top img-ourfeatures pt-3"
               />
               <article>
-                <h4 class="pt-5 fs-5 fw-bold">Realtime Stock & Price</h4>
-                <p class="pt-3">
+                <h4 class="fs-5 pt-3 fw-bold">
+                  Realtime Stock & <br />
+                  Price
+                </h4>
+                <p class="ls-c-1 pb-3">
                   Stock & prices are managed efficiently, every change of stock
                   and price will be updated in real-time.
                 </p>
@@ -444,12 +467,15 @@
             <div class="icon-box iconbox-yellow">
               <img
                 src="../../assets/images/landing-page/landing-page-10.png"
-                alt=""
-                class="card-img-top"
+                alt="image4"
+                class="card-img-top img-ourfeatures pt-3"
               />
               <article>
-                <h4 class="pt-5 fs-5 fw-bold">Smart ERP System</h4>
-                <p class="pt-3">
+                <h4 class="fs-5 pt-3 fw-bold">
+                  Smart ERP <br />
+                  System
+                </h4>
+                <p class="ls-c-1 pb-3">
                   Implementing Enterprise resource planning (ERP) Point of Sales
                   (POS), Sales Order Automation & Bill Due Date Reminder. Alse
                   equipped with auto backup & auto-update features.
@@ -667,29 +693,33 @@
         <div class="col-lg-3 col-md-6">
           <p class="h5 pt-4 fw-bolder" data-aos="fade-right">About</p>
           <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
-            Rantai is a distribution management sales from Cyberindo Sinergi
-            Sistem. We provide integrated solutions that can synchronize
-            products to various distribution sales channels in Indonesia.
-            Starting from management order, various sales channels integration,
-            stock synchronization in one platform.
+            PT Cyberindo Sinergi Sistem focusing on the role of information and
+            communication technology to generate innovation and automation of
+            business process and business model by creating a new customer
+            experience based on technology development.
           </p>
         </div>
 
         <div class="col-lg-4 col-md-6">
           <p class="h5 pt-4 fw-bolder" data-aos="fade-right">Contact Us</p>
-          <div class="d-flex flex-row bd-highlight">
-            <img
-              src="../../assets/images/email.svg"
-              alt="email"
-              class="img-fluid pe-3"
-            />
-            <div
-              class="bd-highlight pt-3"
-              data-aos="fade-left"
-              data-aos-delay="100"
+          <div>
+            <a
+              href="mailto:support@rantai.tech"
+              class="d-flex flex-row bd-highlight justify-content-start align-items-center"
             >
-              <p>support@rantai.tech</p>
-            </div>
+              <img
+                src="../../assets/images/email.svg"
+                alt="email"
+                class="img-fluid pe-3"
+              />
+              <div
+                class="bd-highlight pt-3 color-1"
+                data-aos="fade-left"
+                data-aos-delay="100"
+              >
+                <p>support@rantai.tech</p>
+              </div>
+            </a>
           </div>
           <div class="d-flex flex-row bd-highlight">
             <img
@@ -705,20 +735,31 @@
               <p>+6281315822282 / +628170822282</p>
             </div>
           </div>
-          <div class="d-flex flex-row bd-highlight">
-            <img
-              src="../../assets/images/location.svg"
-              alt="location"
-              class="img-fluid"
-            />
-            <div class="bd-highlight pt-3">
-              <p class="ps-4" data-aos="fade-left" data-aos-delay="300">
-                Vinilon Building, Jl. Raden Saleh Raya No.kav 13-17, RT.1/RW.2,
-                Kenari, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota
-                Jakarta 10430.
-              </p>
-            </div>
-          </div>
+
+          <address>
+            <a
+              class="d-flex flex-row bd-highlight"
+              target="_blank"
+              href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
+            >
+              <img
+                src="../../assets/images/location.svg"
+                alt="location"
+                class="img-fluid"
+              />
+              <div class="bd-highlight pt-3">
+                <p
+                  class="ps-4 color-1 text-left"
+                  data-aos="fade-left"
+                  data-aos-delay="300"
+                >
+                  Vinilon Building, Jl. Raden Saleh Raya No.kav 13-17,
+                  RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat, Daerah
+                  Khusus Ibukota Jakarta 10430.
+                </p>
+              </div>
+            </a>
+          </address>
 
           <div class="pt-2">
             <ul
