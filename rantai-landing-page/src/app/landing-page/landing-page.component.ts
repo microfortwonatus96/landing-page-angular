@@ -14,6 +14,14 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.newDate = this.date.getFullYear().toString();
+
+    let navbar = document.getElementById('navbar');
+    window.onscroll = function (ev) {
+      navbar.classList.add('scrolled');
+      if (window.scrollY === 0) {
+        navbar.classList.remove('scrolled');
+      }
+    };
     // let scrollXCenter = () => {
     //   let overview = document.querySelector('#overview > div');
     //   let feature = document.querySelector('#feature > div');
