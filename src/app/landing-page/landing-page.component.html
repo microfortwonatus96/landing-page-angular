@@ -63,7 +63,7 @@
             <p>Get your own way to productivity!</p>
             <div class="home-btn">
               <a href="#" class="btn btn-1">Let's Start</a>
-     
+
             </div>
           </article>
         </div>
@@ -145,6 +145,18 @@
           <li class="nav-item">
             <a class="nav-link" href="#footer">Contact</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <select (change)="changeLanguage($event.target.value)">
+                <option value="en" [selected]="'en' === langService.lang">
+                  English
+                </option>
+                <option value="id" [selected]="'id' === langService.lang">
+                  Indonesia
+                </option>
+              </select>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -163,10 +175,9 @@
         <div class="col-md-5">
           <article class="home-text">
             <h1 data-aos="fade-right">
-              The new innovation of sales process and Stock Management Of Your
-              business
+              {{ "New_Inovation" | translate }}
             </h1>
-            <p data-aos="fade-right">Get your own way to productivity!</p>
+            <p data-aos="fade-right">{{ "Get_Your" | translate }}</p>
             <div class="home-btn" data-aos="fade-right">
               <a href="#about" class="btn btn-1"> LET'S START </a>
               <a
@@ -197,7 +208,7 @@
       <div class="row align-items-center justify-content-center">
         <div class="col col-md-10 col-sm-6" data-aos="fade-right">
           <p class="text-lg-start text-white">
-            Get Started Today With Our Rantai Application
+            {{ "Get_Started" | translate }}
           </p>
         </div>
         <div class="col col-md-2 col-sm-6 contact-us" data-aos="fade-up">
@@ -221,22 +232,13 @@
           data-aos="fade-right"
         >
           <article>
-            <h1 class="fw-bold">What is Rantai?</h1>
+            <h1 class="fw-bold">{{ "What_Rantai" | translate }}</h1>
             <p class="fs-6 fw-normal" style="margin-top: 30px">
-              Rantai is a "Dual Cloud" based system to facilitate management and
-              improve the efficiency of distribution companies. Ranging from
-              purchasing, selling, management inventory, accounts receivable, &
-              Point of Sale for management of company . Rantai automatically
-              capture and extract sales order data, such as a customer’s past
-              purchases from the company, as well as unstructured data such as
-              written communications and saves it to an electronic archive.
+              {{ "Rantai_Is" | translate }} "{{ "Dual_Cloud" | translate }}"
+              {{ "Description_Rantai" | translate }}
             </p>
             <p class="fs-6 fw-normal">
-              Rantai helps organize and manage business easily through one
-              integrated platform called as Rantai Link. It’s Keep you connected
-              with your partner. We gives you an innovative solution to control
-              your business from everywhere and at anytime, everything at your
-              fingertips.
+              {{ "Desctiption_Rantai_End" | translate }}
             </p>
           </article>
           <a href="#footer" class="read-more">REQUEST FREE DEMO</a>
@@ -250,10 +252,10 @@
         <h2>Overview</h2>
         <div class="lh-1">
           <p data-aos="fade-right" class="fs-4">
-            We provide best solutions to manage your business
+            {{ "We_Provide" | translate }}
           </p>
           <p data-aos="fade-left" class="fs-4 fw-bold">
-            more intelligently, efficiently and effectively
+            {{ "We_Provide_End" | translate }}
           </p>
         </div>
       </div>
@@ -402,12 +404,10 @@
               />
               <article>
                 <h4 class="fs-5 pt-3 fw-bold">
-                  Full Integrated <br />
-                  System
+                  {{ "Full_Integrated" | translate }}
                 </h4>
                 <p class="ls-c-1 pb-3">
-                  Ranging from purchase, stock management, sales, invoicing to
-                  delivery are integrated with one system.
+                  {{ "Desc_Full_Integrated" | translate }}
                 </p>
               </article>
             </div>
@@ -425,11 +425,11 @@
                 class="card-img-top img-ourfeatures pt-3"
               />
               <article>
-                <h4 class="fs-5 pt-3 fw-bold">Sales Order Automation</h4>
+                <h4 class="fs-5 pt-3 fw-bold">
+                  {{ "Sales_Order" | translate }}
+                </h4>
                 <p class="ls-c-1 pb-3">
-                  Minimize the manual selling process, give consumers access to
-                  product information, and also able to place orders
-                  automatically.
+                  {{ "Desc_Sales_Order" | translate }}
                 </p>
               </article>
             </div>
@@ -448,12 +448,10 @@
               />
               <article>
                 <h4 class="fs-5 pt-3 fw-bold">
-                  Realtime Stock & <br />
-                  Price
+                  {{ "Realtime" | translate }}
                 </h4>
                 <p class="ls-c-1 pb-3">
-                  Stock & prices are managed efficiently, every change of stock
-                  and price will be updated in real-time.
+                  {{ "Desc_Realtime" | translate }}
                 </p>
               </article>
             </div>
@@ -472,13 +470,10 @@
               />
               <article>
                 <h4 class="fs-5 pt-3 fw-bold">
-                  Smart ERP <br />
-                  System
+                  {{ "Smart_Erp" | translate }}
                 </h4>
                 <p class="ls-c-1 pb-3">
-                  Implementing Enterprise resource planning (ERP) Point of Sales
-                  (POS), Sales Order Automation & Bill Due Date Reminder. Alse
-                  equipped with auto backup & auto-update features.
+                  {{ "Desc_Smart_Erp" | translate }}
                 </p>
               </article>
             </div>
@@ -490,7 +485,7 @@
   <section id="others" class="services section-bg">
     <div class="container" data-aos="fade-up">
       <div class="section-title">
-        <p class="fs-2 fw-bold">What makes us different from others</p>
+        <p class="fs-2 fw-bold">{{ "What_Make_Us" | translate }}</p>
       </div>
 
       <div class="row">
@@ -508,11 +503,11 @@
               />
             </div>
             <h4 class="fw-bold text-start">
-              Stock Management <br />& Planning
+              {{ "Stock_Management" | translate }} <br />
+              {{ "End_Managenment" | translate }}
             </h4>
             <p class="text-start">
-              Control your stocks and returns with five methods and also
-              purchasing planning based on the market demand.
+              {{ "Desc_Stock_Management" | translate }}
             </p>
           </div>
         </div>
@@ -530,10 +525,9 @@
                 alt=""
               />
             </div>
-            <h4 class="fw-bold text-start">Data Privacy</h4>
+            <h4 class="fw-bold text-start">{{ "Data_Privacy" | translate }}</h4>
             <p class="text-start">
-              All of important data of your business is stored on your own
-              server.
+              {{ "Desc_Data_Privacy" | translate }}
             </p>
           </div>
         </div>
@@ -552,11 +546,10 @@
               />
             </div>
             <h4 class="fw-bold text-start">
-              Stay Connected With Your Business Partners
+              {{ "Stay_Connected" | translate }}
             </h4>
             <p class="text-start">
-              Suppliers and Costumer is connected in one application that allows
-              you to make transaction easily.
+              {{ "Desc_Stay_Connected" | translate }}
             </p>
           </div>
         </div>
@@ -574,10 +567,11 @@
                 alt=""
               />
             </div>
-            <h4 class="fw-bold text-start">Stored Completely</h4>
+            <h4 class="fw-bold text-start">
+              {{ "Store_Completed" | translate }}
+            </h4>
             <p class="text-start">
-              Reports and transaction history are stored completely to an
-              digital archive (Paperless)
+              {{ "Desc_Store_Completed" | translate }}
             </p>
           </div>
         </div>
@@ -595,10 +589,11 @@
                 alt=""
               />
             </div>
-            <h4 class="fw-bold text-start">Realtime Transaction Information</h4>
+            <h4 class="fw-bold text-start">
+              {{ "Realtime_Transaction" | translate }}
+            </h4>
             <p class="text-start">
-              Know the updates and progress of your transaction through
-              notification that are send automatically.
+              {{ "Desc_Realtime_Transaction" | translate }}
             </p>
           </div>
         </div>
@@ -616,10 +611,9 @@
                 alt=""
               />
             </div>
-            <h4 class="fw-bold text-start">Support</h4>
+            <h4 class="fw-bold text-start">{{ "Support" | translate }}</h4>
             <p class="text-start">
-              We are here to support you, our support team will respond quickly
-              and be ready to help you.
+              {{ "Desc_Support" | translate }}
             </p>
           </div>
         </div>
@@ -685,18 +679,14 @@
         <div class="col-lg-2 col-md-6">
           <p class="h5 pt-4 fw-bolder" data-aos="fade-right">Features</p>
           <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
-            Fully Integrated System Sales Order Automation Realtime Visibility
-            System Configuration Online & Offline
+            {{ "Desc_Features" | translate }}
           </p>
         </div>
 
         <div class="col-lg-3 col-md-6">
           <p class="h5 pt-4 fw-bolder" data-aos="fade-right">About</p>
           <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
-            PT Cyberindo Sinergi Sistem focusing on the role of information and
-            communication technology to generate innovation and automation of
-            business process and business model by creating a new customer
-            experience based on technology development.
+            {{ "Desc_About" | translate }}
           </p>
         </div>
 
