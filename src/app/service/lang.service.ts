@@ -10,7 +10,7 @@ export class LangService {
 
   get lang(): LangList {
     let r = localStorage.getItem('lang') as LangList;
-    return r ? r : 'en';
+    return r ? r : 'id';
   }
 
   set lang(lang: LangList) {
