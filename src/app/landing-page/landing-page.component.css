@@ -1,47 +1,46 @@
-/* 
+/*
 animated
 */
+
+.font-standar {
+  font-weight: 420;
+}
+
+.font-standar-normal {
+  font-weight: 400;
+}
 
 @keyframes pulse_01 {
   0% {
     transform: scale(0.94);
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
   }
-
   70% {
     transform: scale(1);
     box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
   }
-
   100% {
     transform: scale(0.94);
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
   }
 }
 
-/* 
+/*
 HEADER
 */
 
 header {
   background: rgb(9, 96, 227);
-  background: linear-gradient(
-    90deg,
-    rgba(9, 96, 227, 1) 0%,
-    rgba(3, 52, 85, 1) 100%
-  );
+  background: linear-gradient( 90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
 }
 
 /* NAVBAR */
 
 .navbar {
   background: rgb(9, 96, 227);
-  background: linear-gradient(
-    90deg,
-    rgba(9, 96, 227, 1) 0%,
-    rgba(3, 52, 85, 1) 100%
-  );
+  background: linear-gradient( 90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
 }
+
 .navbar-nav {
   padding-left: 30px;
   transition: all 0.3s ease;
@@ -53,14 +52,11 @@ header {
 
 .navbar.scrolled {
   background: rgb(9, 96, 227);
-  background: linear-gradient(
-    90deg,
-    rgba(9, 96, 227, 1) 0%,
-    rgba(3, 52, 85, 1) 100%
-  );
+  background: linear-gradient( 90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
 }
 
 /* HOME */
+
 .home {
   min-height: 100vh;
   padding: 150px 0;
@@ -74,6 +70,7 @@ header {
   margin: 0 0 20px;
   text-transform: capitalize;
 }
+
 .home-text p {
   font-size: 18px;
   line-height: 28px;
@@ -106,6 +103,7 @@ header {
 .home .home-btn {
   margin-top: 40px;
 }
+
 .home .home-img {
   width: 70%;
   box-shadow: var(--shadow-black-100);
@@ -121,7 +119,7 @@ p.ls-c-1 {
 .img-google-play {
   animation: pulse_01 2s ease infinite;
   border-radius: 5px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 /* .back-to-top {
@@ -297,8 +295,7 @@ section {
   background-color: #064b9f;
 }
 
-section,
-.subheader {
+section, .subheader {
   padding: 20px 0;
 }
 
@@ -312,8 +309,7 @@ section,
   transition: ease-in;
 }
 
-.btn-contact-us,
-a {
+.btn-contact-us, a {
   color: #fff;
   padding: 10px 0px;
   text-align: center;
@@ -463,8 +459,7 @@ a {
   background: linear-gradient(42deg, #5846f9 0%, #033455 100%);
 }
 
-.faq .section-title h2,
-.faq .section-title p {
+.faq .section-title h2, .faq .section-title p {
   color: #fff;
 }
 
