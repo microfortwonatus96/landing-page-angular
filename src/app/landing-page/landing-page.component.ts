@@ -1,8 +1,11 @@
 import { registerLocaleData } from '@angular/common';
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
+import { takeWhile } from 'rxjs/operators';
+import { IProvince } from '../models/province.model';
 import { LangList, LangService } from '../service/lang.service';
-
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -12,9 +15,28 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
   show = true;
   date = new Date();
   newDate: string;
+  formDaftar: FormGroup = this.formBuilder.group({
+    id: null,
+    name: ['', Validators.required],
+    email: ['', Validators.required],
+    phone: [
+      '',
+      [
+        Validators.required,
+        Validators.pattern('[0-9]*'),
+        Validators.maxLength(16),
+      ],
+    ],
+    business: ['', Validators.required],
+    province: ['', Validators.required],
+    city: ['', Validators.required],
+  });
+
+  province$: Observable<IProvince[]>;
   constructor(
     public translate: TranslateService,
-    public langService: LangService
+    public langService: LangService,
+    private formBuilder: FormBuilder
   ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
@@ -25,7 +47,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
   }
   ngOnInit(): void {
     this.newDate = this.date.getFullYear().toString();
-
     let navbar = document.getElementById('navbar');
     window.onscroll = function (ev) {
       navbar.classList.add('scrolled');
@@ -59,5 +80,9 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
     this.langService.lang = event;
     this.translate.use(event);
     window.location.reload();
+  }
+  submit() {
+    let newFormData = this.formDaftar.getRawValue();
+    console.log('submit', newFormData);
   }
 }

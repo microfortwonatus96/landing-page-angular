@@ -236,14 +236,21 @@
           <article>
             <h1 class="fw-bold">{{ "What_Rantai" | translate }}</h1>
             <p class="fs-6 fw-normal" style="margin-top: 30px">
-              {{ "Rantai_Is" | translate }} "{{ "Dual_Cloud" | translate }}"
+              {{ "Rantai_Is" | translate }}
+              <i>"{{ "Dual_Cloud" | translate }}"</i>
               {{ "Description_Rantai" | translate }}
             </p>
             <p class="fs-6 fw-normal">
               {{ "Desctiption_Rantai_End" | translate }}
             </p>
           </article>
-          <a href="#footer" class="read-more">REQUEST FREE DEMO</a>
+          <a
+            href="#"
+            class="read-more"
+            data-bs-toggle="modal"
+            data-bs-target="#requestFreeDemo"
+            >REQUEST FREE DEMO</a
+          >
         </div>
       </div>
     </div>
@@ -821,3 +828,86 @@
 
 <!-- <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a> -->
 <div id="preloader"></div>
+<div
+  class="modal fade"
+  id="requestFreeDemo"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5
+          class="modal-title fw-bold"
+          style="margin: auto"
+          id="exampleModalLabel"
+        >
+          Daftar Sekarang
+        </h5>
+      </div>
+
+      <form (ngSubmit)="submit()" [formGroup]="formDaftar">
+        <div class="modal-body">
+          <h1 class="fs-6 fw-normal">
+            Masukkan data anda dibawah, kami akan menghubungi anda segera!
+          </h1>
+          <br />
+          <div class="mb-3">
+            <input
+              type="text"
+              formControlName="name"
+              autocomplete="off"
+              class="form-control"
+              placeholder="Nama Lengkap"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              autocomplete="off"
+              formControlName="email"
+              placeholder="Email"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              formControlName="phone"
+              autocomplete="off"
+              class="form-control"
+              placeholder="No.Telp/HandPhone"
+            />
+          </div>
+          <div class="mb-3">
+            <select formControlName="business" id="" class="form-select">
+              <option selected value="">Perusahaan</option>
+              <option value="dagangDistributor">Dagang & Distributor</option>
+              <option value="kontraktor">Kontraktor</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <select formControlName="province" class="form-select" id="">
+              <option selected value="">Provinsi</option>
+              <option value="kalbar">Kalimantan Barat</option>
+              <option value="dki">DKI Jakarta</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <select formControlName="city" id="" class="form-select">
+              <option selected value="">Kota</option>
+              <option value="dki">Jakarta</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+            Cancel
+          </button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
