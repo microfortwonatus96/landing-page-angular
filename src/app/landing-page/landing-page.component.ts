@@ -1,17 +1,18 @@
-import { registerLocaleData } from '@angular/common';
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { Observable } from 'rxjs';
 import { takeWhile } from 'rxjs/operators';
+import { ICity } from '../models/city.model';
+import { IProspectiveCustomer } from '../models/prospective-customer.model';
 import { IProvince } from '../models/province.model';
 import { LangList, LangService } from '../service/lang.service';
+import { UserService } from '../service/user.service';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css'],
 })
-export class LandingPageComponent implements OnInit, AfterViewInit {
+export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   show = true;
   date = new Date();
   newDate: string;
@@ -27,25 +28,65 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
         Validators.maxLength(16),
       ],
     ],
-    business: ['', Validators.required],
-    province: ['', Validators.required],
-    city: ['', Validators.required],
+    business: ['Arts & Entertainment (Seni & Hiburan)', Validators.required],
+    province: ['Aceh', Validators.required],
+    city: ['Kab. Simeulue', Validators.required],
   });
 
-  province$: Observable<IProvince[]>;
+  alive: boolean = true;
+  province: IProvince[] = [];
+  city: ICity[] = [];
+  businessType: string[] = [
+    'Arts & Entertainment (Seni & Hiburan)',
+    'Automotive (Otomotif)',
+    'Beauty & Fitness (Kecantikan & Kesehatan)',
+    'Books & Literature (Buku & Literatur)',
+    'Business & Industrial Markets (Bisnis & Pasar Industri)',
+    'Computer & Electronics (Komputer & Elektronik)',
+    'Finance (Keuangan)',
+    'Food & Drink (Makanan & Minuman)',
+    'Games (Permainan)',
+    'Healthcare (Kesehatan)',
+    'Hobbies & Leisure (Hobi & Kenyamanan)',
+    'Home & Garden (Rumah & Taman)',
+    'Internet & Telecom (Internet & Telekomunikasi)',
+    'Jobs & Education (Pekerjaan & Pendidikan)',
+    'Law & Government (Hukum & Pemerintahan)',
+    'News (Berita)',
+    'Online Communities (Komunitas Online)',
+    'People & Society (Orang & Masyarakat)',
+    'Pets & Animals (Peliharaan & Hewan)',
+    'Real Estate (Perumahaan)',
+    'Science (Ilmu Pengetahuan)',
+    'Shopping (Belanja)',
+    'Sports (Olahraga)',
+    'Travel (Perjalanan)',
+    'Others (Lainnya)',
+  ];
+
+  othersBusinness: string = null;
+  othersCity: string = null;
+
   constructor(
     public translate: TranslateService,
     public langService: LangService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private userService: UserService
   ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
   }
 
+  ngOnDestroy(): void {
+    this.alive = false;
+  }
+
   ngAfterViewInit(): void {
     this.translate.use(this.langService.lang);
   }
+
   ngOnInit(): void {
+    this.getProvince();
     this.newDate = this.date.getFullYear().toString();
     let navbar = document.getElementById('navbar');
     window.onscroll = function (ev) {
@@ -54,16 +95,26 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
         navbar.classList.remove('scrolled');
       }
     };
-    // let scrollXCenter = () => {
-    //   let overview = document.querySelector('#overview > div');
-    //   let feature = document.querySelector('#feature > div');
-    //   if (window.innerWidth <= 1440) {
-    //     overview.scrollLeft = (overview.scrollWidth - window.innerWidth) / 2;
-    //     feature.scrollLeft = (feature.scrollWidth - window.innerWidth) / 2;
-    //   }
-    // };
-    // window.addEventListener('resize', scrollXCenter);
-    // window.addEventListener('load', scrollXCenter);
+  }
+
+  getProvince() {
+    this.userService
+      .getProvince()
+      .pipe(takeWhile(() => this.alive))
+      .subscribe((response) => {
+        if (response) {
+          this.province = response;
+          this.city = this.province.find((v) =>
+            v.name.toLowerCase().includes('aceh')
+          ).cityList;
+        }
+      });
+  }
+
+  triggerCity(event) {
+    this.city = this.province.find((v) =>
+      v.name.toLowerCase().includes(event.target.value.toLowerCase())
+    ).cityList;
   }
 
   redirect() {
@@ -76,13 +127,32 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
     var offset = element.getBoundingClientRect().top - 20;
     window.scrollBy({ top: offset, behavior: 'smooth' });
   }
+
   changeLanguage(event: LangList) {
     this.langService.lang = event;
     this.translate.use(event);
     window.location.reload();
   }
+
   submit() {
-    let newFormData = this.formDaftar.getRawValue();
-    console.log('submit', newFormData);
+    console.log(this.formDaftar);
+    if (this.formDaftar.valid) {
+      let newForm: IProspectiveCustomer = this.formDaftar.getRawValue();
+      newForm.business =
+        newForm.business === 'Others (Lainnya)'
+          ? this.othersBusinness
+          : newForm.business;
+      newForm.city =
+        newForm.city === 'Others (Lainnya)' ? this.othersCity : newForm.city;
+      this.userService
+        .createProspectiveCustomer(newForm)
+        .subscribe((response) => {
+          if (response) {
+            // close modal
+            // Insert modal baru untuk confirmation berhasil
+          }
+        });
+    } else {
+    }
   }
 }

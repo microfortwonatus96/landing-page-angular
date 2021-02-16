@@ -179,7 +179,13 @@
             </h1>
             <p data-aos="fade-right">{{ "Get_Your" | translate }}</p>
             <div class="home-btn" data-aos="fade-right">
-              <a href="#about" class="btn btn-1" [style.margin-right]="'20px'">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#requestFreeDemo"
+                class="btn btn-1"
+                [style.margin-right]="'20px'"
+              >
                 LET'S START
               </a>
               <a
@@ -205,7 +211,7 @@
 </header>
 
 <main id="main">
-  <section class="subheader">
+  <!-- <section class="subheader">
     <div class="container pt-3">
       <div class="row align-items-center justify-content-center">
         <div class="col-md-10 col-sm-6 col-xs-12" data-aos="fade-right">
@@ -218,7 +224,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section id="about" class="about">
     <div class="container">
       <div class="row align-items-center justify-content-center">
@@ -249,8 +255,9 @@
             class="read-more"
             data-bs-toggle="modal"
             data-bs-target="#requestFreeDemo"
-            >REQUEST FREE DEMO</a
           >
+            REQUEST FREE DEMO
+          </a>
         </div>
       </div>
     </div>
@@ -847,7 +854,7 @@
         </h5>
       </div>
 
-      <form (ngSubmit)="submit()" [formGroup]="formDaftar">
+      <form (ngSubmit)="submit()" [formGroup]="formDaftar" autocomplete="off">
         <div class="modal-body">
           <h1 class="fs-6 fw-normal">
             Masukkan data anda dibawah, kami akan menghubungi anda segera!
@@ -857,7 +864,6 @@
             <input
               type="text"
               formControlName="name"
-              autocomplete="off"
               class="form-control"
               placeholder="Nama Lengkap"
             />
@@ -866,39 +872,71 @@
             <input
               type="email"
               class="form-control"
-              autocomplete="off"
               formControlName="email"
               placeholder="Email"
             />
           </div>
           <div class="mb-3">
             <input
-              type="text"
-              formControlName="phone"
-              autocomplete="off"
+              type="tel"
               class="form-control"
-              placeholder="No.Telp/HandPhone"
+              formControlName="phone"
+              placeholder="Phone"
             />
           </div>
           <div class="mb-3">
-            <select formControlName="business" id="" class="form-select">
-              <option selected value="">Perusahaan</option>
-              <option value="dagangDistributor">Dagang & Distributor</option>
-              <option value="kontraktor">Kontraktor</option>
+            <select formControlName="business" class="form-select">
+              <option *ngFor="let b of businessType" [value]="b">
+                {{ b | uppercase }}
+              </option>
             </select>
           </div>
-          <div class="mb-3">
-            <select formControlName="province" class="form-select" id="">
-              <option selected value="">Provinsi</option>
-              <option value="kalbar">Kalimantan Barat</option>
-              <option value="dki">DKI Jakarta</option>
-            </select>
+          <div
+            class="mb-3"
+            *ngIf="formDaftar.get('business').value === 'Others (Lainnya)'"
+          >
+            <input
+              type="text"
+              [(ngModel)]="othersBusinness"
+              class="form-control"
+              placeholder="Jenis Usaha"
+              [ngModelOptions]="{ standalone: true }"
+            />
           </div>
           <div class="mb-3">
-            <select formControlName="city" id="" class="form-select">
-              <option selected value="">Kota</option>
-              <option value="dki">Jakarta</option>
+            <select
+              formControlName="province"
+              class="form-select"
+              required
+              (change)="triggerCity($event)"
+            >
+              <option *ngFor="let p of province" [value]="p.name">
+                {{ p.name | uppercase }}
+              </option>
             </select>
+          </div>
+
+          <div class="mb-3">
+            <select formControlName="city" class="form-select">
+              <option *ngFor="let c of city" [value]="c.name">
+                {{ c.name | uppercase }}
+              </option>
+              <option value="Others (Lainnya)">
+                {{ "Others (Lainnya)" | uppercase }}
+              </option>
+            </select>
+          </div>
+          <div
+            class="mb-3"
+            *ngIf="formDaftar.get('city').value === 'Others (Lainnya)'"
+          >
+            <input
+              type="text"
+              [(ngModel)]="othersCity"
+              class="form-control"
+              placeholder="Kota"
+              [ngModelOptions]="{ standalone: true }"
+            />
           </div>
         </div>
         <div class="modal-footer">
