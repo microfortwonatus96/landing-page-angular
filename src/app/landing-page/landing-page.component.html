@@ -850,14 +850,21 @@
           style="margin: auto"
           id="exampleModalLabel"
         >
-          Daftar Sekarang
+          {{ "Join_Now" | translate }}
         </h5>
+        <button
+          type="button"
+          #myModalClose
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
 
       <form (ngSubmit)="submit()" [formGroup]="formDaftar" autocomplete="off">
         <div class="modal-body">
           <h1 class="fs-6 fw-normal">
-            Masukkan data anda dibawah, kami akan menghubungi anda segera!
+            {{ "Desc" | translate }}
           </h1>
           <br />
           <div class="mb-3">
@@ -887,7 +894,7 @@
           <div class="mb-3">
             <select formControlName="business" class="form-select">
               <option *ngFor="let b of businessType" [value]="b">
-                {{ b | uppercase }}
+                {{ b | titlecase }}
               </option>
             </select>
           </div>
@@ -941,7 +948,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-            Cancel
+            {{ "Cancel" | translate }}
           </button>
           <button type="submit" class="btn btn-primary">Submit</button>
         </div>

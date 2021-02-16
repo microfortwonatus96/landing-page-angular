@@ -1,4 +1,11 @@
-import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnDestroy,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { takeWhile } from 'rxjs/operators';
@@ -7,12 +14,15 @@ import { IProspectiveCustomer } from '../models/prospective-customer.model';
 import { IProvince } from '../models/province.model';
 import { LangList, LangService } from '../service/lang.service';
 import { UserService } from '../service/user.service';
+import Swal from 'sweetalert2';
+import { lang } from '../lang/lang.interface';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css'],
 })
 export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
+  @ViewChild('myModalClose') modalClose: ElementRef;
   show = true;
   date = new Date();
   newDate: string;
@@ -149,10 +159,23 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         .subscribe((response) => {
           if (response) {
             // close modal
+            this.modalClose.nativeElement.click();
             // Insert modal baru untuk confirmation berhasil
+            Swal.fire({
+              icon: 'success',
+              width: '400px',
+              title: lang[this.langService.lang].success,
+              text: lang[this.langService.lang].title,
+            });
           }
         });
     } else {
+      Swal.fire({
+        icon: 'error',
+        title: lang[this.langService.lang].error,
+        width: '400px',
+        text: lang[this.langService.lang].message,
+      });
     }
   }
 }
