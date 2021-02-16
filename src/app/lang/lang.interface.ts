@@ -7,7 +7,7 @@ export const lang = {
   },
   id: {
     success: 'Success',
-    title: 'Terima kasih, marketing kami akan mengubungi Anda.',
+    title: 'Terima kasih, marketing kami akan menghubungi Anda.',
     message: 'Tolong isi data Anda dengan lengkap.',
     error: 'Oops...',
   },
