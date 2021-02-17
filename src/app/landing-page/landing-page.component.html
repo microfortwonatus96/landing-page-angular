@@ -918,7 +918,7 @@
               (change)="triggerCity($event)"
             >
               <option *ngFor="let p of province" [value]="p.name">
-                {{ p.name | uppercase }}
+                {{ p.name | titlecase }}
               </option>
             </select>
           </div>
@@ -926,10 +926,10 @@
           <div class="mb-3">
             <select formControlName="city" class="form-select">
               <option *ngFor="let c of city" [value]="c.name">
-                {{ c.name | uppercase }}
+                {{ c.name | titlecase }}
               </option>
               <option value="Others (Lainnya)">
-                {{ "Others (Lainnya)" | uppercase }}
+                {{ "Others (Lainnya)" | titlecase }}
               </option>
             </select>
           </div>
