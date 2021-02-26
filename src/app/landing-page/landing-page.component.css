@@ -503,7 +503,9 @@ section, .subheader {
 #faq .footer-newsletter form input[type="submit"]:hover {
   background: #2461e6;
 }
-
+.img-rounded {
+  border-radius: 50%;
+}
 #footer {
   font-size: 14px;
   background-color: #e2f2fd;
