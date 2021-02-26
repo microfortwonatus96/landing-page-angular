@@ -145,7 +145,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   submit() {
-    console.log(this.formDaftar);
     if (this.formDaftar.valid) {
       let newForm: IProspectiveCustomer = this.formDaftar.getRawValue();
       newForm.business =
