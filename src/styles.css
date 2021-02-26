@@ -20,6 +20,11 @@ a:hover {
   text-decoration: none;
 }
 
+.pointer{
+  cursor: pointer;
+}
+
+
 /* * {
   margin: 0;
   padding: 0;

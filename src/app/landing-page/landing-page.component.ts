@@ -16,6 +16,8 @@ import { LangList, LangService } from '../service/lang.service';
 import { UserService } from '../service/user.service';
 import Swal from 'sweetalert2';
 import { lang } from '../lang/lang.interface';
+import { ActivatedRoute, Router } from '@angular/router';
+
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
@@ -81,7 +83,9 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     public translate: TranslateService,
     public langService: LangService,
     private formBuilder: FormBuilder,
-    private userService: UserService
+    private userService: UserService,
+    private router:Router,
+    private activatedRoute:ActivatedRoute
   ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
@@ -105,6 +109,13 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         navbar.classList.remove('scrolled');
       }
     };
+  }
+
+  goto(val) {
+    this.router.navigate([],{  relativeTo: this.activatedRoute,
+      queryParams: { go: val },
+      queryParamsHandling: 'merge'
+    })
   }
 
   getProvince() {
