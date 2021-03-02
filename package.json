@@ -25,6 +25,8 @@
     "@popperjs/core": "^2.6.0",
     "bootstrap": "^5.0.0-beta2",
     "http-server": "^0.12.3",
+    "jquery": "^3.5.1",
+    "jquery.easing": "^1.4.1",
     "rxjs": "~6.6.0",
     "sweetalert2": "^10.15.0",
     "tslib": "^2.0.0",
