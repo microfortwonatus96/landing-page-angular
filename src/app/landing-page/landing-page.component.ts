@@ -84,8 +84,8 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     public langService: LangService,
     private formBuilder: FormBuilder,
     private userService: UserService,
-    private router:Router,
-    private activatedRoute:ActivatedRoute
+    private router: Router,
+    private activatedRoute: ActivatedRoute
   ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
@@ -112,10 +112,11 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   goto(val) {
-    this.router.navigate([],{  relativeTo: this.activatedRoute,
+    this.router.navigate([], {
+      relativeTo: this.activatedRoute,
       queryParams: { go: val },
-      queryParamsHandling: 'merge'
-    })
+      queryParamsHandling: 'merge',
+    });
   }
 
   getProvince() {
@@ -136,11 +137,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.city = this.province.find((v) =>
       v.name.toLowerCase().includes(event.target.value.toLowerCase())
     ).cityList;
-  }
-
-  redirect() {
-    window.location.href =
-      'https://play.google.com/store/apps/details?id=com.css.rantai';
   }
 
   jumpto(value: string) {
