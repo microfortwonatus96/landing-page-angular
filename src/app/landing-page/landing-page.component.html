@@ -691,7 +691,7 @@
               type="text"
               formControlName="name"
               class="form-control"
-              placeholder="Nama Lengkap"
+              placeholder="{{ 'Full_Name' | translate }}"
             />
           </div>
           <div class="mb-3">
@@ -707,7 +707,7 @@
               type="tel"
               class="form-control"
               formControlName="phone"
-              placeholder="Phone"
+              placeholder="{{ 'Phone' | translate }}"
             />
           </div>
           <div class="mb-3">
@@ -725,7 +725,7 @@
               type="text"
               [(ngModel)]="othersBusinness"
               class="form-control"
-              placeholder="Jenis Usaha"
+              placeholder="{{ 'Business' | translate }}"
               [ngModelOptions]="{ standalone: true }"
             />
           </div>
@@ -760,7 +760,7 @@
               type="text"
               [(ngModel)]="othersCity"
               class="form-control"
-              placeholder="Kota"
+              placeholder="{{ 'City' | translate }}"
               [ngModelOptions]="{ standalone: true }"
             />
           </div>

@@ -35,5 +35,9 @@
   "Desc_About": "PT Cyberindo Sinergi Sistem focusing on the role of information and ommunication technology to generate innovation and automation of business process and business model by creating a new customer experience based on technology development.",
   "Join_Now": "Sign Up Now",
   "Desc":"Enter your data below, we will contact you immediately!",
-  "Cancel": "Cancel"
+  "Cancel": "Cancel",
+  "Full_Name":  "Full Name",
+  "Phone": "Phone",
+  "Business": "Type of Business",
+  "City": "City"
 }
