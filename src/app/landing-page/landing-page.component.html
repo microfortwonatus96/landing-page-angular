@@ -680,7 +680,13 @@
         ></button>
       </div>
 
-      <form (ngSubmit)="submit()" [formGroup]="formDaftar" autocomplete="off">
+      <form
+        (ngSubmit)="submit($event)"
+        novalidate
+        method="dialog"
+        [formGroup]="formDaftar"
+        autocomplete="off"
+      >
         <div class="modal-body">
           <h1 class="fs-6 fw-normal">
             {{ "Desc" | translate }}
@@ -690,6 +696,7 @@
             <input
               type="text"
               formControlName="name"
+              name="Name"
               class="form-control"
               placeholder="{{ 'Full_Name' | translate }}"
             />
@@ -698,25 +705,28 @@
             <input
               type="email"
               class="form-control"
+              name="Email"
               formControlName="email"
               placeholder="Email"
             />
           </div>
           <div class="mb-3">
             <input
-              type="tel"
+              type="number"
               class="form-control"
+              name="Phone"
               formControlName="phone"
               placeholder="{{ 'Phone' | translate }}"
             />
           </div>
           <div class="mb-3">
-            <select formControlName="business" class="form-select">
+            <select formControlName="business" class="form-select" name="Notes">
               <option *ngFor="let b of businessType" [value]="b">
                 {{ b | titlecase }}
               </option>
             </select>
           </div>
+
           <div
             class="mb-3"
             *ngIf="formDaftar.get('business').value === 'Others (Lainnya)'"
@@ -729,6 +739,10 @@
               [ngModelOptions]="{ standalone: true }"
             />
           </div>
+
+          <!-- HIDDEN FOR JALA -->
+          <input type="hidden" name="Address" formControlName="address" />
+
           <div class="mb-3">
             <select
               formControlName="province"
