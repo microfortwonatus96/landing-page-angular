@@ -43,7 +43,12 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     business: ['Arts & Entertainment (Seni & Hiburan)', Validators.required],
     province: ['Aceh', Validators.required],
     city: ['Kab. Simeulue', Validators.required],
+    address: ['Aceh'],
   });
+
+  get address() {
+    return this.formDaftar.get('address');
+  }
 
   alive: boolean = true;
   province: IProvince[] = [];
@@ -134,6 +139,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   triggerCity(event) {
+    this.address.setValue(event.target.value);
     this.city = this.province.find((v) =>
       v.name.toLowerCase().includes(event.target.value.toLowerCase())
     ).cityList;
@@ -151,7 +157,8 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     window.location.reload();
   }
 
-  submit() {
+  submit(event: Event) {
+    event.preventDefault();
     if (this.formDaftar.valid) {
       let newForm: IProspectiveCustomer = this.formDaftar.getRawValue();
       newForm.business =
@@ -174,6 +181,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
               text: lang[this.langService.lang].title,
             });
           }
+          this.formDaftar.reset();
         });
     } else {
       Swal.fire({
