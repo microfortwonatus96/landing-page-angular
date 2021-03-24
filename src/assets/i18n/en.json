@@ -40,7 +40,7 @@
   "Full_Name":  "Full Name",
   "Phone": "Phone",
   "Business": "Type of Business",
-  "City": "City",
+  "City": "City/Regency",
   "Month": "Month",
   "Support_Desc": "working days",
   "Hours": "hours",
@@ -54,5 +54,6 @@
   "Shipping": "Shipping",
   "Province": "Province",
   "City_Regency": "City/Regency",
-  "Other": "Others"
+  "Other": "Others",
+  "Users": "Users"
 }

@@ -40,7 +40,7 @@
   "Full_Name":  "Nama Lengkap",
   "Phone": "Telepon",
   "Business": "Jenis Usaha",
-  "City": "Kota",
+  "City": "Kota/Kabupaten",
   "Month": "Bulan",
   "Support_Desc": "hari kerja",
   "Hours": "jam",
@@ -54,5 +54,6 @@
   "Shipping": "Pengiriman",
   "Province": "Provinsi",
   "City_Regency": "Kota/Kabupaten",
-  "Other": "Lainnya"
+  "Other": "Lainnya",
+  "Users": "User"
 }
