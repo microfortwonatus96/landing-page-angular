@@ -40,10 +40,10 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         Validators.maxLength(16),
       ],
     ],
-    business: ['Arts & Entertainment (Seni & Hiburan)', Validators.required],
-    province: ['Aceh', Validators.required],
-    city: ['Kab. Simeulue', Validators.required],
-    address: ['Aceh'],
+    business: ['', Validators.required],
+    province: ['', Validators.required],
+    city: ['', Validators.required],
+    address: ['', Validators.required],
   });
 
   get address() {
@@ -54,31 +54,31 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   province: IProvince[] = [];
   city: ICity[] = [];
   businessType: string[] = [
-    'Arts & Entertainment (Seni & Hiburan)',
-    'Automotive (Otomotif)',
-    'Beauty & Fitness (Kecantikan & Kesehatan)',
-    'Books & Literature (Buku & Literatur)',
-    'Business & Industrial Markets (Bisnis & Pasar Industri)',
-    'Computer & Electronics (Komputer & Elektronik)',
-    'Finance (Keuangan)',
-    'Food & Drink (Makanan & Minuman)',
-    'Games (Permainan)',
-    'Healthcare (Kesehatan)',
-    'Hobbies & Leisure (Hobi & Kenyamanan)',
-    'Home & Garden (Rumah & Taman)',
-    'Internet & Telecom (Internet & Telekomunikasi)',
-    'Jobs & Education (Pekerjaan & Pendidikan)',
-    'Law & Government (Hukum & Pemerintahan)',
-    'News (Berita)',
-    'Online Communities (Komunitas Online)',
-    'People & Society (Orang & Masyarakat)',
-    'Pets & Animals (Peliharaan & Hewan)',
-    'Real Estate (Perumahaan)',
-    'Science (Ilmu Pengetahuan)',
-    'Shopping (Belanja)',
-    'Sports (Olahraga)',
-    'Travel (Perjalanan)',
-    'Others (Lainnya)',
+    lang[this.langService.lang].arts,
+    lang[this.langService.lang].automotive,
+    lang[this.langService.lang].beauty,
+    lang[this.langService.lang].book,
+    lang[this.langService.lang].business,
+    lang[this.langService.lang].computer,
+    lang[this.langService.lang].financy,
+    lang[this.langService.lang].food,
+    lang[this.langService.lang].games,
+    lang[this.langService.lang].healty,
+    lang[this.langService.lang].hobby,
+    lang[this.langService.lang].home,
+    lang[this.langService.lang].internet,
+    lang[this.langService.lang].jobs,
+    lang[this.langService.lang].law,
+    lang[this.langService.lang].news,
+    lang[this.langService.lang].online,
+    lang[this.langService.lang].people,
+    lang[this.langService.lang].pets,
+    lang[this.langService.lang].real,
+    lang[this.langService.lang].science,
+    lang[this.langService.lang].shopping,
+    lang[this.langService.lang].sports,
+    lang[this.langService.lang].travel,
+    lang[this.langService.lang].others,
   ];
 
   othersBusinness: string = null;
@@ -162,11 +162,14 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     if (this.formDaftar.valid) {
       let newForm: IProspectiveCustomer = this.formDaftar.getRawValue();
       newForm.business =
-        newForm.business === 'Others (Lainnya)'
+        newForm.business === lang[this.langService.lang].others
           ? this.othersBusinness
           : newForm.business;
       newForm.city =
-        newForm.city === 'Others (Lainnya)' ? this.othersCity : newForm.city;
+        newForm.city === lang[this.langService.lang].others
+          ? this.othersCity
+          : newForm.city;
+      console.log('save', newForm);
       this.userService
         .createProspectiveCustomer(newForm)
         .subscribe((response) => {
