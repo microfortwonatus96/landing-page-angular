@@ -55,5 +55,6 @@
   "Province": "Province",
   "City_Regency": "City/Regency",
   "Other": "Others",
-  "Users": "Users"
+  "Users": "Users",
+  "Integration_Bank": "Bank Integration"
 }
