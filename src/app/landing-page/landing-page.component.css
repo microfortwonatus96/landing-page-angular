@@ -452,7 +452,13 @@ input[type=number] {
 .modal-content {
   border-radius: 15px !important;
 }
-
+.f-12 {
+  font-size: 0.75rem;
+}
+.f-12-white {
+  font-size: 0.75rem;
+  color: #fff;
+}
 #footer {
   font-size: 14px;
   background-color: #e2f2fd;

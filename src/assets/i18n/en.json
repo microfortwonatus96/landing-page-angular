@@ -56,5 +56,6 @@
   "City_Regency": "City/Regency",
   "Other": "Others",
   "Users": "Users",
-  "Integration_Bank": "Bank Integration"
+  "Integration_Bank": "Bank Integration",
+  "Temp_Price": "Prices can change at any time"
 }
