@@ -457,7 +457,7 @@ input[type=number] {
 }
 .f-12-white {
   font-size: 0.75rem;
-  color: #fff;
+  color: #fff !important;
 }
 #footer {
   font-size: 14px;
