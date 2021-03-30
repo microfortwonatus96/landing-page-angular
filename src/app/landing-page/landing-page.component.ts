@@ -151,7 +151,17 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     window.scrollBy({ top: offset, behavior: 'smooth' });
   }
 
+  showLanguage() {
+    let x = document.getElementById('lang-hide');
+    if (x.style.display === 'block') {
+      x.style.display = 'none';
+    } else {
+      x.style.display = 'block';
+    }
+  }
   changeLanguage(event: LangList) {
+    let x = document.getElementById('lang-hide');
+    x.style.display = 'none';
     this.langService.lang = event;
     this.translate.use(event);
     window.location.reload();
@@ -174,9 +184,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         .createProspectiveCustomer(newForm)
         .subscribe((response) => {
           if (response) {
-            // close modal
             this.modalClose.nativeElement.click();
-            // Insert modal baru untuk confirmation berhasil
             Swal.fire({
               icon: 'success',
               width: '400px',

@@ -489,3 +489,68 @@ input[type=number] {
 .footer {
   background-color: #064b9f;
 }
+
+.click-lang {
+  outline: none;
+  cursor: pointer;
+}
+
+.lang-change {
+  align-items: stretch;
+}
+
+.lang-change>div {
+  position: relative;
+  top: 5px;
+}
+
+#lang-hide {
+  color: #fff;
+  display: none;
+  position: absolute;
+  justify-content: center;
+  z-index: 100;
+  padding: 10px;
+  width: 150px;
+  align-items: center;
+  background-color: #033355;
+  border-radius: 5px;
+}
+
+.menu-lang {
+  cursor: pointer;
+  align-items: stretch;
+  display: flex;
+}
+
+.menu-lang>div, span {
+  margin: 3px;
+  text-align: center;
+}
+
+.menu-lang:hover {
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+}
+
+.en-flag {
+  display: inline-block;
+  content: url('../../assets/images/english.png');
+  width: 20px;
+  height: 20px;
+}
+
+.id-flag {
+  display: inline-block;
+  content: url('../../assets/images/indonesia.png');
+  width: 20px;
+  height: 20px;
+}
+
+.icon-chev {
+  content: url('../../assets/images/chevron-down.svg');
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}

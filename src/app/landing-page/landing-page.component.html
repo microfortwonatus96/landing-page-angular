@@ -46,16 +46,34 @@
             <a class="nav-link" href="#footer">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">
-              <select (change)="changeLanguage($event.target.value)">
-                <option value="en" [selected]="'en' === langService.lang">
-                  English
-                </option>
-                <option value="id" [selected]="'id' === langService.lang">
-                  Indonesia
-                </option>
-              </select>
-            </a>
+            <div>
+              <a
+                class="nav-link click-lang lang-change"
+                href="#"
+                (click)="showLanguage()"
+              >
+                <div
+                  [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
+                ></div>
+                <span>
+                  {{
+                    langService.lang === "en" ? "English" : "Indonesia"
+                  }}</span
+                >
+                <div class="icon-chev"></div>
+              </a>
+              <div id="lang-hide">
+                <div class="menu-lang" (click)="changeLanguage('en')">
+                  <div class="en-flag"></div>
+                  <span>English</span>
+                </div>
+                <div class="line"></div>
+                <div class="menu-lang" (click)="changeLanguage('id')">
+                  <div class="id-flag"></div>
+                  <span>Indonesia</span>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
