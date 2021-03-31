@@ -153,14 +153,19 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
   showLanguage() {
     let x = document.getElementById('lang-hide');
+    let y = document.getElementById('chevron');
     if (x.style.display === 'block') {
       x.style.display = 'none';
+      y.style.transform = 'rotate(0deg)';
     } else {
       x.style.display = 'block';
+      y.style.transform = 'rotate(180deg)';
     }
   }
   changeLanguage(event: LangList) {
     let x = document.getElementById('lang-hide');
+    let y = document.getElementById('chevron');
+    y.style.transform = 'rotate(0deg)';
     x.style.display = 'none';
     this.langService.lang = event;
     this.translate.use(event);

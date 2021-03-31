@@ -57,5 +57,7 @@
   "Other": "Others",
   "Users": "Users",
   "Integration_Bank": "Bank Integration",
-  "Temp_Price": "Prices can change at any time"
+  "Temp_Price": "Prices can change at any time",
+  "Description_Rantai_New": "Rantai is a system where an organization consolidates and brings-down the entire order hierarchy to a single dashboard and minimize false order or stock mismanagement. With the system, a wellorganized process pipeline can be established including organizing and managing the flow of goods between multiple touchpoints.",
+  "Description_Rantai_New_Next": "Rantai helps an organization to handle more than adequate stock at any time of point to strike a balance between demand and supply. The system also helps an organization to accelerate and streamlines the entire flow of goods to maintain a healthy level of distribution management."
 }

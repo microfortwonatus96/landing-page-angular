@@ -553,4 +553,24 @@ input[type=number] {
   width: 20px;
   height: 20px;
   display: inline-block;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+}
+
+.icon-sosial {
+  border: 2px solid #6c757d;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-sosial {
+  width: 100px;
+}
+
+.sosial-text {
+  color: #444444;
 }

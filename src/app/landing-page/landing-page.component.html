@@ -60,7 +60,7 @@
                     langService.lang === "en" ? "English" : "Indonesia"
                   }}</span
                 >
-                <div class="icon-chev"></div>
+                <div class="icon-chev" id="chevron"></div>
               </a>
               <div id="lang-hide">
                 <div class="menu-lang" (click)="changeLanguage('en')">
@@ -149,12 +149,10 @@
           <article>
             <h1 class="fw-bold">{{ "What_Rantai" | translate }}</h1>
             <p class="fs-6 fw-normal" style="margin-top: 30px">
-              {{ "Rantai_Is" | translate }}
-              <i>"{{ "Dual_Cloud" | translate }}"</i>
-              {{ "Description_Rantai" | translate }}
+              {{ "Description_Rantai_New" | translate }}
             </p>
             <p class="fs-6 fw-normal">
-              {{ "Desctiption_Rantai_End" | translate }}
+              {{ "Description_Rantai_New_Next" | translate }}
             </p>
           </article>
           <a
@@ -1003,8 +1001,8 @@
 
           <div class="pt-2">
             <ul
-              class="nav nav-pills d-flex justify-content-center justify-content-md-start align-items-center"
-              style="gap: 20px"
+              class="nav nav-pills d-flex justify-content-start align-items-start"
+              style="gap: 15px"
             >
               <li class="nav-item" data-aos="fade-up" data-aos-delay="200">
                 <a
@@ -1012,14 +1010,20 @@
                   class="nav-link"
                   target="_blank"
                   title="Instagram"
-                  ><img
-                    src="../../assets/images/instagram.svg"
-                    alt="ig"
-                    width="26px"
-                    height="26px"
-                    class="img-fluid"
-                    loading="lazy"
-                /></a>
+                >
+                  <div class="d-flex align-items-center">
+                    <div class="icon-sosial">
+                      <img
+                        src="../../assets/images/instagram.svg"
+                        alt="ig"
+                        width="22px"
+                        class="img-fluid"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="ps-2 sosial-text fs-6">official.rantai</div>
+                  </div>
+                </a>
               </li>
 
               <li class="nav-item" data-aos="fade-up" data-aos-delay="400">
@@ -1028,14 +1032,20 @@
                   target="_blank"
                   class="nav-link"
                   title="Facebook"
-                  ><img
-                    src="../../assets/images/facebook.svg"
-                    alt="fb"
-                    width="16px"
-                    height="26px"
-                    class="img-fluid"
-                    loading="lazy"
-                /></a>
+                >
+                  <div class="d-flex align-items-center">
+                    <div class="icon-sosial">
+                      <img
+                        src="../../assets/images/facebook.svg"
+                        alt="fb"
+                        width="12px"
+                        class="img-fluid"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="ps-2 sosial-text fs-6">rantai</div>
+                  </div>
+                </a>
               </li>
               <li class="nav-item" data-aos="fade-up" data-aos-delay="600">
                 <a
@@ -1044,14 +1054,18 @@
                   class="nav-link"
                   title="Linkedin"
                 >
-                  <img
-                    src="../../assets/images/linkedin.svg"
-                    alt="fb"
-                    width="25px"
-                    height="26px"
-                    class="img-fluid"
-                    loading="lazy"
-                  />
+                  <div class="d-flex align-items-center">
+                    <div class="icon-sosial">
+                      <img
+                        src="../../assets/images/linkedin.svg"
+                        alt="fb"
+                        width="20px"
+                        class="img-fluid"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="ps-2 sosial-text fs-6">rantai</div>
+                  </div>
                 </a>
               </li>
             </ul>
