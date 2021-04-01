@@ -340,6 +340,12 @@ section {
   background: linear-gradient(180deg, rgba(11, 105, 253, 1) 0%, rgba(3, 51, 85, 1) 100%);
 }
 
+.platinum-active {
+  color: #fff;
+  background: rgb(11, 105, 253);
+  background: linear-gradient(180deg, rgba(11, 105, 253, 1) 0%, rgba(3, 51, 85, 1) 100%);
+}
+
 .subscribe-nonactive {
   color: #000;
   background: #E2F2FD;
@@ -353,6 +359,13 @@ section {
 }
 
 .box-medal {
+  background-color: #fff;
+  color: #0b69ff;
+  width: 100px;
+  border: none;
+}
+
+.box-medal-active {
   background-color: #fff;
   color: #0b69ff;
   width: 100px;
@@ -573,4 +586,9 @@ input[type=number] {
 
 .sosial-text {
   color: #444444;
+}
+
+.f-white {
+  color: #fff !important;
+  font-size: 0.75rem;
 }

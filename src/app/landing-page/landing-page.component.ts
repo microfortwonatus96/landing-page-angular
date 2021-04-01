@@ -17,6 +17,7 @@ import { UserService } from '../service/user.service';
 import Swal from 'sweetalert2';
 import { lang } from '../lang/lang.interface';
 import { ActivatedRoute, Router } from '@angular/router';
+declare var $: any;
 
 @Component({
   selector: 'app-landing-page',
@@ -102,6 +103,21 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngAfterViewInit(): void {
     this.translate.use(this.langService.lang);
+    $(document).ready(function () {
+      $('.zoom-subscription').mouseover(function () {
+        $(this).find('.subscribe-nonactive').addClass('subscribe-active');
+        $(this).find('.subscribe-nonactive').removeClass('subscribe-nonactive');
+        $(this).find('.text-muted').addClass('f-12-white');
+        $(this).find('.box-medal-others').addClass('box-medal');
+        $(this).find('.box-medal-others').removeClass('box-medal-others');
+      });
+      $('.zoom-subscription').mouseout(function () {
+        $(this).find('.subscribe-active').addClass('subscribe-nonactive');
+        $(this).find('.text-muted').removeClass('f-12-white');
+        $(this).find('.box-medal').addClass('box-medal-others');
+        $(this).find('.box-medal').removeClass('box-medal');
+      });
+    });
   }
 
   ngOnInit(): void {
