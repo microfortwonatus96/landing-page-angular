@@ -113,6 +113,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       });
       $('.zoom-subscription').mouseout(function () {
         $(this).find('.subscribe-active').addClass('subscribe-nonactive');
+        $(this).find('.subscribe-active').removeClass('subscribe-active');
         $(this).find('.text-muted').removeClass('f-12-white');
         $(this).find('.box-medal').addClass('box-medal-others');
         $(this).find('.box-medal').removeClass('box-medal');
@@ -178,6 +179,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       y.style.transform = 'rotate(180deg)';
     }
   }
+
   changeLanguage(event: LangList) {
     let x = document.getElementById('lang-hide');
     let y = document.getElementById('chevron');
