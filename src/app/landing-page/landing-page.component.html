@@ -46,16 +46,34 @@
             <a class="nav-link" href="#footer">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">
-              <select (change)="changeLanguage($event.target.value)">
-                <option value="en" [selected]="'en' === langService.lang">
-                  English
-                </option>
-                <option value="id" [selected]="'id' === langService.lang">
-                  Indonesia
-                </option>
-              </select>
-            </a>
+            <div>
+              <a
+                class="nav-link click-lang lang-change"
+                href="#"
+                (click)="showLanguage()"
+              >
+                <div
+                  [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
+                ></div>
+                <span>
+                  {{
+                    langService.lang === "en" ? "English" : "Indonesia"
+                  }}</span
+                >
+                <div class="icon-chev" id="chevron"></div>
+              </a>
+              <div id="lang-hide">
+                <div class="menu-lang" (click)="changeLanguage('en')">
+                  <div class="en-flag"></div>
+                  <span>English</span>
+                </div>
+                <div class="line"></div>
+                <div class="menu-lang" (click)="changeLanguage('id')">
+                  <div class="id-flag"></div>
+                  <span>Indonesia</span>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -297,7 +315,7 @@
             data-aos="zoom-in"
             data-aos-delay="300"
           >
-            <div class="icon-box iconbox-pink">
+            <div class="icon-box">
               <img
                 src="../../assets/images/landing-page/landing-page-07.png"
                 alt="image3"
@@ -406,7 +424,7 @@
           data-aos="zoom-in"
           data-aos-delay="300"
         >
-          <div class="icon-box iconbox-pink">
+          <div class="icon-box">
             <div class="icon">
               <img
                 src="../../assets/images/landing-page/landing-page-02.png"
@@ -518,8 +536,8 @@
           data-aos="zoom-in"
           data-aos-delay="100"
         >
-          <div class="img-subsciption iconbox-pink">
-            <div class="col border-radius-top img-hover subscribe-nonactive">
+          <div class="img-subsciption">
+            <div id="silver" class="col border-radius-top subscribe-nonactive">
               <div class="d-flex justify-content-between">
                 <div>
                   <h1 class="fs-6 p-2 mt-4 ms-4 fw-bold box-medal-others">
@@ -606,8 +624,8 @@
           data-aos="zoom-in"
           data-aos-delay="200"
         >
-          <div class="img-subsciption iconbox-pink">
-            <div class="col border-radius-top img-hover subscribe-nonactive">
+          <div class="img-subsciption">
+            <div class="col border-radius-top subscribe-nonactive">
               <div class="d-flex justify-content-between">
                 <div>
                   <h1 class="fs-6 p-2 mt-4 ms-4 fw-bold box-medal-others">
@@ -697,8 +715,8 @@
           data-aos="zoom-in"
           data-aos-delay="300"
         >
-          <div class="img-subsciption iconbox-pink">
-            <div class="col border-radius-top img-hover subscribe-nonactive">
+          <div class="img-subsciption">
+            <div class="col border-radius-top subscribe-nonactive">
               <div class="d-flex justify-content-between">
                 <div>
                   <h1 class="fs-6 p-2 mt-4 ms-4 fw-bold box-medal-others">
@@ -788,11 +806,13 @@
           data-aos="zoom-in"
           data-aos-delay="400"
         >
-          <div class="img-subsciption iconbox-pink">
-            <div class="col border-radius-top img-hover subscribe-active">
+          <div class="img-subsciption">
+            <div class="col border-radius-top platinum-active">
               <div class="d-flex justify-content-between">
                 <div>
-                  <h1 class="box-medal fs-6 p-2 mt-4 ms-4 fw-bold">Platinum</h1>
+                  <h1 class="box-medal-active fs-6 p-2 mt-4 ms-4 fw-bold">
+                    Platinum
+                  </h1>
                 </div>
                 <div>
                   <img
@@ -811,7 +831,7 @@
                       >/{{ "Month" | translate }}</small
                     >
                   </h1>
-                  <small class="text-start f-12-white text-muted"
+                  <small class="text-start text-muted f-white"
                     ><i>{{ "Temp_Price" | translate }}</i></small
                   >
                 </div>
@@ -985,8 +1005,8 @@
 
           <div class="pt-2">
             <ul
-              class="nav nav-pills d-flex justify-content-center justify-content-md-start align-items-center"
-              style="gap: 20px"
+              class="nav nav-pills d-flex justify-content-start align-items-start"
+              style="gap: 15px"
             >
               <li class="nav-item" data-aos="fade-up" data-aos-delay="200">
                 <a
@@ -994,14 +1014,20 @@
                   class="nav-link"
                   target="_blank"
                   title="Instagram"
-                  ><img
-                    src="../../assets/images/instagram.svg"
-                    alt="ig"
-                    width="26px"
-                    height="26px"
-                    class="img-fluid"
-                    loading="lazy"
-                /></a>
+                >
+                  <div class="d-flex align-items-center">
+                    <div class="icon-sosial">
+                      <img
+                        src="../../assets/images/instagram.svg"
+                        alt="ig"
+                        width="22px"
+                        class="img-fluid"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="ps-2 sosial-text fs-6">official.rantai</div>
+                  </div>
+                </a>
               </li>
 
               <li class="nav-item" data-aos="fade-up" data-aos-delay="400">
@@ -1010,14 +1036,20 @@
                   target="_blank"
                   class="nav-link"
                   title="Facebook"
-                  ><img
-                    src="../../assets/images/facebook.svg"
-                    alt="fb"
-                    width="16px"
-                    height="26px"
-                    class="img-fluid"
-                    loading="lazy"
-                /></a>
+                >
+                  <div class="d-flex align-items-center">
+                    <div class="icon-sosial">
+                      <img
+                        src="../../assets/images/facebook.svg"
+                        alt="fb"
+                        width="12px"
+                        class="img-fluid"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="ps-2 sosial-text fs-6">rantai</div>
+                  </div>
+                </a>
               </li>
               <li class="nav-item" data-aos="fade-up" data-aos-delay="600">
                 <a
@@ -1026,14 +1058,18 @@
                   class="nav-link"
                   title="Linkedin"
                 >
-                  <img
-                    src="../../assets/images/linkedin.svg"
-                    alt="fb"
-                    width="25px"
-                    height="26px"
-                    class="img-fluid"
-                    loading="lazy"
-                  />
+                  <div class="d-flex align-items-center">
+                    <div class="icon-sosial">
+                      <img
+                        src="../../assets/images/linkedin.svg"
+                        alt="fb"
+                        width="20px"
+                        class="img-fluid"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="ps-2 sosial-text fs-6">rantai</div>
+                  </div>
                 </a>
               </li>
             </ul>

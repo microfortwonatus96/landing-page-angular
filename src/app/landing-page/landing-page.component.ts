@@ -17,6 +17,7 @@ import { UserService } from '../service/user.service';
 import Swal from 'sweetalert2';
 import { lang } from '../lang/lang.interface';
 import { ActivatedRoute, Router } from '@angular/router';
+declare var $: any;
 
 @Component({
   selector: 'app-landing-page',
@@ -102,6 +103,21 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngAfterViewInit(): void {
     this.translate.use(this.langService.lang);
+    $(document).ready(function () {
+      $('.zoom-subscription').mouseover(function () {
+        $(this).find('.subscribe-nonactive').addClass('subscribe-active');
+        $(this).find('.subscribe-nonactive').removeClass('subscribe-nonactive');
+        $(this).find('.text-muted').addClass('f-12-white');
+        $(this).find('.box-medal-others').addClass('box-medal');
+        $(this).find('.box-medal-others').removeClass('box-medal-others');
+      });
+      $('.zoom-subscription').mouseout(function () {
+        $(this).find('.subscribe-active').addClass('subscribe-nonactive');
+        $(this).find('.text-muted').removeClass('f-12-white');
+        $(this).find('.box-medal').addClass('box-medal-others');
+        $(this).find('.box-medal').removeClass('box-medal');
+      });
+    });
   }
 
   ngOnInit(): void {
@@ -151,7 +167,22 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     window.scrollBy({ top: offset, behavior: 'smooth' });
   }
 
+  showLanguage() {
+    let x = document.getElementById('lang-hide');
+    let y = document.getElementById('chevron');
+    if (x.style.display === 'block') {
+      x.style.display = 'none';
+      y.style.transform = 'rotate(0deg)';
+    } else {
+      x.style.display = 'block';
+      y.style.transform = 'rotate(180deg)';
+    }
+  }
   changeLanguage(event: LangList) {
+    let x = document.getElementById('lang-hide');
+    let y = document.getElementById('chevron');
+    y.style.transform = 'rotate(0deg)';
+    x.style.display = 'none';
     this.langService.lang = event;
     this.translate.use(event);
     window.location.reload();
@@ -174,9 +205,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         .createProspectiveCustomer(newForm)
         .subscribe((response) => {
           if (response) {
-            // close modal
             this.modalClose.nativeElement.click();
-            // Insert modal baru untuk confirmation berhasil
             Swal.fire({
               icon: 'success',
               width: '400px',
