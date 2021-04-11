@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="id">
+  <head>
+    <link rel="alternate" hreflang="x-default" href="http://rantai.tech/" />
 
-<head>
-  <link rel="alternate" hreflang="x-default" href="http://rantai.tech/" />
-  <link rel="preload" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" as="style" />
-  <!-- Google Task Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != "dataLayer" ? "&l=" + l : "";
-      j.async = true;
-      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, "script", "dataLayer", "GTM-KXL6DL6");
-  </script>
+    <!-- Google Task Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KXL6DL6");
+    </script>
 
-  <!-- Facebook Pixel Code -->
-  <script>
-    !(function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod
-          ? n.callMethod.apply(n, arguments)
-          : n.queue.push(arguments);
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = "2.0";
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s);
-    })(
-      window,
-      document,
-      "script",
-      "https://connect.facebook.net/en_US/fbevents.js"
-    );
-    fbq("init", "481470619807615");
-    fbq("track", "PageView");
-  </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "481470619807615");
+      fbq("track", "PageView");
+    </script>
 
-  <!-- FOR JALA -->
-  <script id="jalaai-fetch" data-handle="false" data-silent="true" data-code="d7234b90-885e-11eb-8bd0-a531c7310e73"
-    src="https://jala-assets.s3-ap-southeast-1.amazonaws.com/jala_fetch.js"></script>
+    <!-- FOR JALA -->
+    <script
+      id="jalaai-fetch"
+      data-handle="false"
+      data-silent="true"
+      data-code="d7234b90-885e-11eb-8bd0-a531c7310e73"
+      src="https://jala-assets.s3-ap-southeast-1.amazonaws.com/jala_fetch.js"
+    ></script>
 
-  <script type="application/ld+json">
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Corporation",
@@ -67,28 +71,34 @@
       }
     </script>
 
-  <meta charset="utf-8" />
-  <title>Rantai</title>
-  <!-- <base href="https://rantai.tech" /> -->
-  <base href="/" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="PT. Cyberindo Sinergi Sistem" />
-  <meta name="description" content="Kelola Bisnis Anda dengan Aplikasi distribusi barang terintegrasi | Rantai.Tech" />
-  <meta name="keywords" content="erp, ecommerce, rantai, warehouse, sistem, system, accounting, bisnis,
+    <meta charset="utf-8" />
+    <title>Rantai</title>
+    <base href="https://rantai.tech" />
+    <!-- <base href="/" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="PT. Cyberindo Sinergi Sistem" />
+    <meta
+      name="description"
+      content="Kelola Bisnis Anda dengan Aplikasi distribusi barang terintegrasi | Rantai.Tech"
+    />
+    <meta
+      name="keywords"
+      content="erp, ecommerce, rantai, warehouse, sistem, system, accounting, bisnis,
       business, gudang, barang, item, product, stock, marketplace, software distributor, software distribusi,
-      software distribution, distribution" />
+      software distribution, distribution"
+    />
 
-  <!-- Open Graph / Facebook -->
-  <!-- <meta property="og:type" content="website">
+    <!-- Open Graph / Facebook -->
+    <!-- <meta property="og:type" content="website">
 <meta property="og:url" content="https://rantai.tech/">
 <meta property="og:title" content="The right solution for all your property management systems">
 <meta property="og:description" content="Nimbus9 is a building automation system application designed to simplify and automate all operations for property managers' needs.">
 <meta property="author" content="Rantai">
 <meta property="og:image" content="/assets/img/h1.png"> -->
 
-  <!-- Twitter -->
-  <!-- <meta property="twitter:site" content="">
+    <!-- Twitter -->
+    <!-- <meta property="twitter:site" content="">
 <meta property="twitter:account_id" content="">
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://nimbus9.tech/">
@@ -96,34 +106,36 @@
 <meta property="twitter:description" content="Nimbus9 is a building automation system application designed to simplify and automate all operations for property managers' needs.">
 <meta property="twitter:image" content="/assets/img/h1.png"> -->
 
-  <link rel="canonical" href="https://rantai.tech/" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
-</head>
+    <link rel="canonical" href="https://rantai.tech/" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link href="assets/temp/vendor/aos/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <app-root></app-root>
 
-<body>
-  <app-root></app-root>
+    <!-- GOOGLE TASK MANAGER  -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KXL6DL6"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
 
-  <!-- GOOGLE TASK MANAGER  -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXL6DL6" height="0" width="0"
-      style="display: none; visibility: hidden"></iframe>
-  </noscript>
+    <!-- FACEBOOK PIXEL CODE -->
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=481470619807615&ev=PageView&noscript=1"
+    /></noscript>
 
-  <!-- FACEBOOK PIXEL CODE -->
-  <noscript>
-    <img height="1" width="1" style="display: none"
-      src="https://www.facebook.com/tr?id=481470619807615&ev=PageView&noscript=1" /></noscript>
-
-  <!-- JQUERY -->
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Template Main JS File -->
-  <script src="assets/temp/js/main.js"></script>
-</body>
-
+    <!-- JQUERY -->
+    <script src="assets/temp/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/temp/vendor/aos/aos.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/temp/js/main.js"></script>
+  </body>
 </html>
