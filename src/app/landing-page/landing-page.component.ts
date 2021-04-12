@@ -202,7 +202,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         newForm.city === lang[this.langService.lang].others
           ? this.othersCity
           : newForm.city;
-      console.log('save', newForm);
       this.userService
         .createProspectiveCustomer(newForm)
         .subscribe((response) => {
