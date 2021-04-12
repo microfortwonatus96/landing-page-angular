@@ -30,9 +30,7 @@
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.js",
-              "node_modules/aos/dist/aos.js",
-              "node_modules/jquery/dist/jquery.min.js"
-            ]
+              "node_modules/aos/dist/aos.js"]
           },
           "configurations": {
             "production": {
@@ -100,8 +98,7 @@
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.js",
-              "node_modules/aos/dist/aos.js",
-              "node_modules/jquery/dist/jquery.min.js"
+              "node_modules/aos/dist/aos.js"
             ]
           }
         },
