@@ -606,9 +606,3 @@ input[type="number"] {
   filter: grayscale(0);
   transform: scale(1.2);
 }
-
-.box-media {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
