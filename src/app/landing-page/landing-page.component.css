@@ -509,18 +509,18 @@ input[type="number"] {
   color: #fff !important;
 }
 
-#footer {
+#contact {
   font-size: 14px;
   background-color: #e2f2fd;
   background-size: cover;
 }
 
-#footer .footer-top {
+#contact .footer-top {
   padding: 60px 0 30px 0;
   position: relative;
 }
 
-#footer .footer-top h4 {
+#contact .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
   position: relative;
