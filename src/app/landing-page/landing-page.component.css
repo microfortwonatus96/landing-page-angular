@@ -606,3 +606,8 @@ input[type="number"] {
   filter: grayscale(0);
   transform: scale(1.2);
 }
+
+.error-message {
+  color: #fff;
+  margin-left: 10px;
+}

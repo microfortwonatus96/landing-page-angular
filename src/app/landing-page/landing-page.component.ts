@@ -32,7 +32,14 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   formDaftar: FormGroup = this.formBuilder.group({
     id: null,
     name: ['', Validators.required],
-    email: ['', Validators.required],
+    email: [
+      '',
+      [
+        Validators.required,
+        Validators.email,
+        Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$'),
+      ],
+    ],
     phone: [
       '',
       [
@@ -84,7 +91,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
   othersBusinness: string = null;
   othersCity: string = null;
-
+  save: boolean = false;
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -189,8 +196,11 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.translate.use(event);
     window.location.reload();
   }
-
+  get f() {
+    return this.formDaftar.controls;
+  }
   submit(event: Event) {
+    this.save = true;
     event.preventDefault();
     if (this.formDaftar.valid) {
       let newForm: IProspectiveCustomer = this.formDaftar.getRawValue();
