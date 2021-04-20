@@ -611,3 +611,104 @@ input[type="number"] {
   color: #fff;
   margin-left: 10px;
 }
+
+.image-size {
+  width: 100%;
+  height: auto;
+}
+
+.tribunnews {
+  content: url('../../assets/icon-berita/tribunnews.webp');
+}
+
+.inilahcom {
+  content: url('../../assets/icon-berita/inilahcom.webp');
+}
+
+.jpncom {
+  content: url('../../assets/icon-berita/icon-jpn.webp');
+}
+
+.mediaindonesia {
+  content: url('../../assets/icon-berita/mediaindonesia.webp');
+}
+
+.investor {
+  content: url('../../assets/icon-berita/investor.webp');
+}
+
+.logo-marketing {
+  content: url('../../assets/icon-berita/logo-marketing.webp');
+}
+
+.sindonews {
+  content: url('../../assets/icon-berita/sindonewscom.webp');
+}
+
+.logo-bisnis {
+  content: url('../../assets/icon-berita/bisnis-com.webp');
+}
+
+.logo-tempo {
+  content: url('../../assets/icon-berita/tempo.webp');
+}
+
+.logo-planetmerdeka {
+  content: url('../../assets/icon-berita/planet-merdeka.webp');
+}
+
+.logo-itworks {
+  content: url('../../assets/icon-berita/itworks-new.webp');
+}
+
+.logo-antaranews {
+  content: url('../../assets/icon-berita/antaranews.webp');
+}
+
+.logo-trenteknologi {
+  content: url('../../assets/icon-berita/trenteknologi.webp');
+}
+
+.logo-mix {
+  content: url('../../assets/icon-berita/icon-mix.webp');
+}
+
+.logo-dailysosial {
+  content: url('../../assets/icon-berita/dailysosial.webp');
+}
+
+.logo-akuratcom {
+  content: url('../../assets/icon-berita/akuratcom.webp');
+}
+
+.logo-republika {
+  content: url('../../assets/icon-berita/republika.webp');
+}
+
+.logo-beritasatu {
+  content: url('../../assets/icon-berita/beritasatu.webp');
+}
+
+.logo-wartaekonomi {
+  content: url('../../assets/icon-berita/icon-warta-ekonomi.webp');
+}
+
+.logo-selular {
+  content: url('../../assets/icon-berita/seluler.webp');
+}
+
+.logo-suaracom {
+  content: url('../../assets/icon-berita/suaracom.webp');
+}
+
+.logo-idrtimes {
+  content: url('../../assets/icon-berita/idrtimes.webp');
+}
+
+.logo-techbiz {
+  content: url('../../assets/icon-berita/icon-techbiz.webp');
+}
+
+.logo-linetoday {
+  content: url('../../assets/icon-berita/linetoday.webp');
+}
