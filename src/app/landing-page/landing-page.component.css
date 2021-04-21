@@ -550,14 +550,14 @@ input[type="number"] {
 
 .en-flag {
   display: inline-block;
-  content: url("../../assets/images/english.png");
+  content: url("../../assets/images/english-baru.png");
   width: 20px;
   height: 20px;
 }
 
 .id-flag {
   display: inline-block;
-  content: url("../../assets/images/indonesia.png");
+  content: url("../../assets/images/indonesia-baru.png");
   width: 20px;
   height: 20px;
 }
@@ -617,6 +617,22 @@ input[type="number"] {
   height: auto;
 }
 
+.silver-image {
+  content: url('../../assets/img/plan-04.webp');
+}
+
+.gold-image {
+  content: url('../../assets/img/plan-03.webp');
+}
+
+.titanium-image {
+  content: url('../../assets/img/plan-02.webp');
+}
+
+.platinum-image {
+  content: url('../../assets/img/plan-01.webp');
+}
+
 .tribunnews {
   content: url('../../assets/icon-berita/tribunnews.webp');
 }
@@ -646,15 +662,15 @@ input[type="number"] {
 }
 
 .logo-bisnis {
-  content: url('../../assets/icon-berita/bisnis-com.webp');
+  content: url('../../assets/icon-berita/bisnis-com-baru.webp');
 }
 
 .logo-tempo {
-  content: url('../../assets/icon-berita/tempo.webp');
+  content: url('../../assets/icon-berita/tempo-baru.webp');
 }
 
 .logo-planetmerdeka {
-  content: url('../../assets/icon-berita/planet-merdeka.webp');
+  content: url('../../assets/icon-berita/planet-merdeka-baru.webp');
 }
 
 .logo-itworks {
