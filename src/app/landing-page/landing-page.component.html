@@ -6,13 +6,7 @@
         href="/"
         style="gap: 5px"
       >
-        <img
-          src="../../assets/img/logo.png"
-          alt="logo"
-          width="40px"
-          loading="lazy"
-          height="40px"
-        />
+        <div class="logo-header" loading="lazy"></div>
         <span class="text-logo">Rantai</span>
       </a>
 
@@ -79,44 +73,38 @@
     </div>
   </nav>
   <section class="home d-flex align-items-center position-relative">
-    <img
-      class="image-size home-img"
-      src="assets/img/laptop-screens-crop-baru.webp"
-      alt="logo"
-      loading="lazy"
-    />
+    <div class="image-size home-img laptop-crop-bg" loading="lazy"></div>
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-5">
           <article class="home-text">
-            <h1 data-aos="fade-right">
+            <h1 data-aos="fade-right" class="f-rantai">
               {{ "New_Inovation" | translate }}
             </h1>
             <p data-aos="fade-right">{{ "Get_Your" | translate }}</p>
             <div class="home-btn" data-aos="fade-right">
-              <a
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#requestFreeDemo"
-                class="btn btn-1"
-                [style.margin-right]="'20px'"
-              >
-                LET'S START
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="assets/images/landing-page/google-play.webp"
-                  alt="google-play"
-                  class="img-google-play"
-                  height="50px"
-                  width="167px"
-                  loading="lazy"
-                />
-              </a>
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#requestFreeDemo"
+                    class="btn btn-1"
+                  >
+                    LET'S START
+                  </a>
+                </div>
+                <div class="col-sm-3">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="app-logo"
+                  >
+                    <div class="img-google-play app-store" loading="lazy"></div>
+                  </a>
+                </div>
+              </div>
             </div>
           </article>
         </div>
@@ -131,20 +119,13 @@
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="col-md-6" data-aos="zoom-in" data-aos-delay="150">
-          <img
-            src="../../assets/img/laptop-tab-phone.webp"
-            class="img-fluid"
-            width="1500px"
-            height="1125px"
-            alt="laptop-display"
-            loading="lazy"
-          />
+          <div class="image-size tab-phone" loading="lazy"></div>
         </div>
         <div
           class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content"
           data-aos="fade-right"
         >
-          <article>
+          <article class="artikel">
             <h1 class="fw-bold">{{ "What_Rantai" | translate }}</h1>
             <p class="fs-6 fw-normal" style="margin-top: 30px">
               {{ "Rantai_Is" | translate }}
@@ -170,8 +151,8 @@
   <section id="overview" class="features">
     <div class="container" data-aos="fade-up">
       <div class="section-title">
-        <h2>Overview</h2>
-        <div class="lh-1">
+        <h2 class="f-title-head">Overview</h2>
+        <div class="title-overview">
           <p data-aos="fade-right" class="fs-4">
             {{ "We_Provide" | translate }}
           </p>
@@ -180,62 +161,113 @@
           </p>
         </div>
       </div>
-      <div class="row row-cols-md-5 g-5 mt-5 justify-content-center">
+      <div
+        class="row row-cols-md-5 g-5 mt-5 justify-content-center box-overview"
+      >
         <div
           class="col-lg-2 col-sm-6 mt-4 mt-md-0"
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          <img
-            src="../../assets/img/overview-1.webp"
-            class="img-fluid"
-            alt="overview-1"
-            loading="lazy"
-          />
+          <div class="image-size overview-1" loading="lazy"></div>
         </div>
         <div
           class="col-lg-2 col-sm-6 mt-4 mt-md-0"
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          <img
-            src="../../assets/img/overview-2.webp"
-            class="img-fluid"
-            alt="overview-2"
-            loading="lazy"
-          />
+          <div class="image-size overview-2" loading="lazy"></div>
         </div>
         <div class="col mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
-          <img
-            src="../../assets/img/Overview-Main.webp"
-            class="img-fluid"
-            alt="overview-main"
-            loading="lazy"
-          />
+          <div class="image-size overview-main" loading="lazy"></div>
         </div>
         <div
           class="col-lg-2 col-sm-6 mt-4 mt-md-0"
           data-aos="fade-up"
           data-aos-delay="400"
         >
-          <img
-            src="../../assets/img/overview-3.webp"
-            class="img-fluid"
-            alt="overview-3"
-            loading="lazy"
-          />
+          <div class="image-size overview-3" loading="lazy"></div>
         </div>
         <div
           class="col-lg-2 col-sm-6 mt-4 mt-md-0"
           data-aos="fade-up"
           data-aos-delay="500"
         >
-          <img
-            src="../../assets/img/overview-4.webp"
-            class="img-fluid"
-            alt="overview-4"
-            loading="lazy"
-          />
+          <div class="image-size overview-4" loading="lazy"></div>
+        </div>
+      </div>
+      <div class="box-overview-mobile">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item" data-bs-interval="3000">
+              <div
+                class="image-size overview-1 overview-slider"
+                loading="lazy"
+              ></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div
+                class="image-size overview-2 overview-slider"
+                loading="lazy"
+              ></div>
+            </div>
+            <div class="carousel-item active" data-bs-interval="3000">
+              <div
+                class="image-size overview-main overview-slider"
+                loading="lazy"
+              ></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div
+                class="image-size overview-3 overview-slider"
+                loading="lazy"
+              ></div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div
+                class="image-size overview-4 overview-slider"
+                loading="lazy"
+              ></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -244,106 +276,104 @@
   <section id="ourfeatures" class="services section-bg">
     <div class="container" data-aos="fade-up">
       <div class="section-title">
-        <h2>Our Features</h2>
+        <h2 class="f-title-head">Our Features</h2>
       </div>
       <div class="ourfeatures">
         <div class="row">
           <div
-            class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 p-4"
+            class="col-lg-3 col-md-6 d-flex align-items-stretch mt-md-0 p-4"
             data-aos="zoom-in"
             data-aos-delay="100"
           >
-            <div class="icon-box iconbox-blue">
-              <img
-                src="../../assets/images/landing-page/landing-page-08.png"
-                alt="image1"
-                width="232px"
-                height="147px"
+            <div
+              class="icon-box iconbox-blue our-feature-img shadow-background"
+            >
+              <div
+                class="img-fluid image-integrated card-img-top img-padding"
                 loading="lazy"
-                class="card-img-top pt-3"
-              />
+              ></div>
               <article>
-                <h4 class="fs-5 pt-3 fw-bold">
+                <h4 class="fs-5 pt-3 fw-bold f-18">
                   {{ "Full_Integrated" | translate }}
                 </h4>
-                <p class="ls-c-1 pb-3">
+                <div class="our-title">
+                  <p class="ls-c-1 ">
                   {{ "Desc_Full_Integrated" | translate }}
                 </p>
+                </div>
               </article>
             </div>
           </div>
 
           <div
-            class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 p-4"
+            class="col-lg-3 col-md-6 d-flex align-items-stretch mt-md-0 p-4"
             data-aos="zoom-in"
             data-aos-delay="200"
           >
-            <div class="icon-box iconbox-orange">
-              <img
-                src="../../assets/images/landing-page/landing-page-09.png"
-                alt="image2"
-                width="232px"
-                height="147px"
-                class="card-img-top pt-3"
+            <div
+              class="icon-box iconbox-orange our-feature-img shadow-background"
+            >
+              <div
+                class="img-fluid image-salesorder card-img-top img-padding"
                 loading="lazy"
-              />
+              ></div>
               <article>
-                <h4 class="fs-5 pt-3 fw-bold">
+                <h4 class="fs-5 pt-3 fw-bold f-18">
                   {{ "Sales_Order" | translate }}
                 </h4>
+                  <div class="our-title">
                 <p class="ls-c-1 pb-3">
                   {{ "Desc_Sales_Order" | translate }}
                 </p>
+                </div>
               </article>
             </div>
           </div>
 
           <div
-            class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 p-4"
+            class="col-lg-3 col-md-6 d-flex align-items-stretch mt-lg-0 p-4"
             data-aos="zoom-in"
             data-aos-delay="300"
           >
-            <div class="icon-box">
-              <img
-                src="../../assets/images/landing-page/landing-page-07.png"
-                alt="image3"
-                width="232px"
-                height="147px"
-                class="card-img-top pt-3"
+            <div class="icon-box our-feature-img shadow-background">
+              <div
+                class="img-fluid image-realtime card-img-top img-padding"
                 loading="lazy"
-              />
+              ></div>
               <article>
-                <h4 class="fs-5 pt-3 fw-bold">
+                <h4 class="fs-5 pt-3 fw-bold f-18">
                   {{ "Realtime" | translate }}
                 </h4>
+                  <div class="our-title">
                 <p class="ls-c-1 pb-3">
                   {{ "Desc_Realtime" | translate }}
                 </p>
+                </div>
               </article>
             </div>
           </div>
 
           <div
-            class="box col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 p-4"
+            class="box col-lg-3 col-md-6 d-flex align-items-stretch mt-lg-0 p-4"
             data-aos="zoom-in"
             data-aos-delay="100"
           >
-            <div class="icon-box iconbox-yellow">
-              <img
-                src="../../assets/images/landing-page/landing-page-10.png"
-                width="232px"
-                height="147px"
+            <div
+              class="icon-box iconbox-yellow our-feature-img shadow-background"
+            >
+              <div
+                class="img-fluid image-smarterp card-img-top img-padding"
                 loading="lazy"
-                alt="image4"
-                class="card-img-top pt-3"
-              />
+              ></div>
               <article>
-                <h4 class="fs-5 pt-3 fw-bold">
+                <h4 class="fs-5 pt-3 fw-bold f-18">
                   {{ "Smart_Erp" | translate }}
                 </h4>
+                  <div class="our-title">
                 <p class="ls-c-1 pb-3">
                   {{ "Desc_Smart_Erp" | translate }}
                 </p>
+                </div>
               </article>
             </div>
           </div>
@@ -363,16 +393,9 @@
           data-aos="zoom-in"
           data-aos-delay="100"
         >
-          <div class="icon-box iconbox-blue justify-content-start">
+          <div class="icon-box iconbox-blue justify-content-start what-make">
             <div class="icon">
-              <img
-                src="../../assets/images/landing-page/landing-page-04.png"
-                class="img-fluid"
-                alt="lp04"
-                width="647px"
-                loading="lazy"
-                height="561px"
-              />
+              <div class="img-fluid img-landing-04" loading="lazy"></div>
             </div>
             <h4 class="fw-bold text-start">
               {{ "Stock_Management" | translate }} <br />
@@ -389,16 +412,9 @@
           data-aos="zoom-in"
           data-aos-delay="200"
         >
-          <div class="icon-box iconbox-orange">
+          <div class="icon-box iconbox-orange what-make">
             <div class="icon">
-              <img
-                src="../../assets/images/landing-page/landing-page-01.png"
-                class="img-fluid"
-                alt="lp01"
-                width="647px"
-                loading="lazy"
-                height="561px"
-              />
+              <div class="img-fluid img-landing-01" loading="lazy"></div>
             </div>
             <h4 class="fw-bold text-start">{{ "Data_Privacy" | translate }}</h4>
             <p class="text-start">
@@ -412,16 +428,9 @@
           data-aos="zoom-in"
           data-aos-delay="300"
         >
-          <div class="icon-box">
+          <div class="icon-box what-make">
             <div class="icon">
-              <img
-                src="../../assets/images/landing-page/landing-page-02.png"
-                class="img-fluid"
-                width="647px"
-                height="561px"
-                alt="lp02"
-                loading="lazy"
-              />
+              <div class="img-fluid img-landing-02" loading="lazy"></div>
             </div>
             <h4 class="fw-bold text-start">
               {{ "Stay_Connected" | translate }}
@@ -437,16 +446,9 @@
           data-aos="zoom-in"
           data-aos-delay="400"
         >
-          <div class="icon-box iconbox-yellow">
+          <div class="icon-box iconbox-yellow what-make">
             <div class="icon">
-              <img
-                src="../../assets/images/landing-page/landing-page-03.png"
-                class="img-fluid"
-                alt="lp03"
-                width="647px"
-                height="561px"
-                loading="lazy"
-              />
+              <div class="img-fluid img-landing-03" loading="lazy"></div>
             </div>
             <h4 class="fw-bold text-start">
               {{ "Store_Completed" | translate }}
@@ -462,16 +464,9 @@
           data-aos="zoom-in"
           data-aos-delay="500"
         >
-          <div class="icon-box iconbox-red">
+          <div class="icon-box iconbox-red what-make">
             <div class="icon">
-              <img
-                src="../../assets/images/landing-page/landing-page-06.png"
-                class="img-fluid"
-                alt="lp06"
-                width="647px"
-                height="561px"
-                loading="lazy"
-              />
+              <div class="img-fluid img-landing-06" loading="lazy"></div>
             </div>
             <h4 class="fw-bold text-start">
               {{ "Realtime_Transaction" | translate }}
@@ -487,16 +482,9 @@
           data-aos="zoom-in"
           data-aos-delay="600"
         >
-          <div class="icon-box iconbox-teal">
+          <div class="icon-box iconbox-teal what-make">
             <div class="icon">
-              <img
-                src="../../assets/images/landing-page/landing-page-05.png"
-                class="img-fluid"
-                alt="lp05"
-                width="647px"
-                height="561px"
-                loading="lazy"
-              />
+              <div class="img-fluid img-landing-05" loading="lazy"></div>
             </div>
             <h4 class="fw-bold text-start">{{ "Support" | translate }}</h4>
             <p class="text-start">
@@ -510,17 +498,17 @@
 
   <section id="subsciption" class="subsciption section-bg">
     <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <h2>{{ "Title_Subscription" | translate }}</h2>
-        <div class="lh-1">
-          <p data-aos="fade-up" class="fs-4 fw-normal">
+      <div class="section-title section-choose-plan">
+        <h2 class="f-title-head">{{ "Title_Subscription" | translate }}</h2>
+        <div>
+          <p data-aos="fade-up" class="fs-4 fw-normal title-overview">
             {{ "Sub_Title" | translate }}
           </p>
         </div>
       </div>
       <div class="row">
         <div
-          class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 p-4 zoom-subscription"
+          class="col col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 p-4 zoom-subscription img-resize"
           data-aos="zoom-in"
           data-aos-delay="100"
         >
@@ -609,7 +597,7 @@
           </div>
         </div>
         <div
-          class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 p-4 zoom-subscription"
+          class="col col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 p-4 zoom-subscription img-resize"
           data-aos="zoom-in"
           data-aos-delay="200"
         >
@@ -698,7 +686,7 @@
           </div>
         </div>
         <div
-          class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 p-4 zoom-subscription"
+          class="col col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 p-4 zoom-subscription img-resize"
           data-aos="zoom-in"
           data-aos-delay="300"
         >
@@ -787,7 +775,7 @@
           </div>
         </div>
         <div
-          class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 p-4 zoom-subscription"
+          class="col col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 p-4 zoom-subscription img-resize"
           data-aos="zoom-in"
           data-aos-delay="400"
         >
@@ -879,11 +867,11 @@
   <section class="section-bg">
     <div class="container" data-aos="fade-up">
       <div class="section-title">
-        <h2>{{ "Media" | translate }}</h2>
+        <h2 class="f-title-head">{{ "Media" | translate }}</h2>
       </div>
-      <div class="row">
+      <div class="row media-coverage">
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="100"
         >
@@ -898,7 +886,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="200"
         >
@@ -911,7 +899,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="300"
         >
@@ -924,7 +912,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="400"
         >
@@ -937,7 +925,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -950,7 +938,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="600"
         >
@@ -963,7 +951,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -978,7 +966,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -991,7 +979,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1004,7 +992,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1019,7 +1007,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1032,7 +1020,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1045,7 +1033,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1058,7 +1046,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1071,7 +1059,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1084,7 +1072,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1097,7 +1085,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1112,7 +1100,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1125,7 +1113,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1138,7 +1126,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1151,7 +1139,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1164,7 +1152,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1179,7 +1167,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1192,7 +1180,7 @@
           </a>
         </div>
         <div
-          class="col-4 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
           data-aos="zoom-in"
           data-aos-delay="500"
         >
@@ -1214,17 +1202,13 @@
   <div class="footer-top" style="overflow: hidden">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 foot-content">
           <div class="d-flex flex-row bd-highlight">
             <div class="bd-highlight">
-              <img
-                src="../../assets/img/logo-biru-baru.webp"
-                alt="logo"
-                width="60px"
-                height="60px"
-                class="img-fluid img-rounded"
+              <div
+                class="img-fluid img-rounded logo-footer"
                 loading="lazy"
-              />
+              ></div>
             </div>
             <div class="bd-highlight ps-1 pt-3" data-aos="fade-left">
               <p class="h4 fw-bolder" style="margin-left: 10px">Rantai</p>
@@ -1232,35 +1216,28 @@
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-6">
+        <div class="col-lg-2 col-md-6 foot-content">
           <p class="h5 pt-4 fw-bolder" data-aos="fade-right">Features</p>
           <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
             {{ "Desc_Features" | translate }}
           </p>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 foot-content">
           <p class="h5 pt-4 fw-bolder" data-aos="fade-right">About</p>
           <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
             {{ "Desc_About" | translate }}
           </p>
         </div>
 
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6 foot-content">
           <p class="h5 pt-4 fw-bolder" data-aos="fade-right">Contact Us</p>
           <div>
             <a
               href="mailto:marketing@rantai.tech"
               class="d-flex flex-row bd-highlight justify-content-start align-items-center"
             >
-              <img
-                src="../../assets/images/email.svg"
-                alt="email"
-                class="img-fluid pe-3"
-                width="46px"
-                height="24px"
-                loading="lazy"
-              />
+              <div class="img-fluid pe-3 img-email" loading="lazy"></div>
               <div
                 class="bd-highlight pt-3 color-1"
                 data-aos="fade-left"
@@ -1271,14 +1248,7 @@
             </a>
           </div>
           <div class="d-flex flex-row bd-highlight">
-            <img
-              src="../../assets/images/phone.svg"
-              alt="phone"
-              width="40px"
-              height="61px"
-              class="img-fluid pe-3"
-              loading="lazy"
-            />
+            <div class="img-fluid pe-3 img-phone" loading="lazy"></div>
             <div
               class="bd-highlight pt-4"
               data-aos="fade-left"
@@ -1295,14 +1265,7 @@
               rel="noopener noreferrer"
               href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
             >
-              <img
-                src="../../assets/images/location.svg"
-                alt="location"
-                class="img-fluid"
-                width="18px"
-                height="95px"
-                loading="lazy"
-              />
+              <div class="img-fluid img-location" loading="lazy"></div>
               <div class="bd-highlight pt-3">
                 <p
                   class="ps-4 color-1"
@@ -1333,14 +1296,7 @@
                 >
                   <div class="d-flex align-items-center">
                     <div class="icon-sosial">
-                      <img
-                        src="../../assets/images/instagram.svg"
-                        alt="ig"
-                        width="22px"
-                        height="22px"
-                        class="img-fluid"
-                        loading="lazy"
-                      />
+                      <div class="img-fluid img-instagram" loading="lazy"></div>
                     </div>
                     <div class="ps-2 sosial-text fs-6">official.rantai</div>
                   </div>
@@ -1357,14 +1313,7 @@
                 >
                   <div class="d-flex align-items-center">
                     <div class="icon-sosial">
-                      <img
-                        src="../../assets/images/facebook.svg"
-                        alt="fb"
-                        height="22px"
-                        width="12px"
-                        class="img-fluid"
-                        loading="lazy"
-                      />
+                      <div class="img-fluid img-facebook" loading="lazy"></div>
                     </div>
                     <div class="ps-2 sosial-text fs-6">rantai</div>
                   </div>
@@ -1380,14 +1329,7 @@
                 >
                   <div class="d-flex align-items-center">
                     <div class="icon-sosial">
-                      <img
-                        src="../../assets/images/linkedin.svg"
-                        alt="in"
-                        width="20px"
-                        height="20px"
-                        class="img-fluid"
-                        loading="lazy"
-                      />
+                      <div class="img-fluid img-linkedin" loading="lazy"></div>
                     </div>
                     <div class="ps-2 sosial-text fs-6">rantai</div>
                   </div>

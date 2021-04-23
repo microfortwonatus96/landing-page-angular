@@ -82,6 +82,10 @@ header {
   font-weight: 500;
 }
 
+.app-logo {
+  padding: unset !important;
+}
+
 .btn-1:focus {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -617,6 +621,86 @@ input[type="number"] {
   height: auto;
 }
 
+.logo-header {
+  content: url('../../assets/img/logo.png');
+  width: 40px;
+  height: 40px;
+}
+
+.laptop-crop-bg {
+  content: url('../../assets/img/laptop-screens-crop-baru.webp');
+}
+
+.app-store {
+  content: url('../../assets/images/landing-page/google-play.webp');
+  width: 167px;
+  height: auto;
+}
+
+.tab-phone {
+  content: url('../../assets/img/laptop-tab-phone.webp');
+}
+
+.overview-1 {
+  content: url('../../assets/img/overview-1.webp');
+}
+
+.overview-2 {
+  content: url('../../assets/img/overview-2.webp');
+}
+
+.overview-main {
+  content: url('../../assets/img/Overview-Main.webp');
+}
+
+.overview-3 {
+  content: url('../../assets/img/overview-3.webp');
+}
+
+.overview-4 {
+  content: url('../../assets/img/overview-4.webp');
+}
+
+.image-integrated {
+  content: url('../../assets/images/landing-page/landing-integrasi.png');
+}
+
+.image-salesorder {
+  content: url('../../assets/images/landing-page/landing-salesorder.png');
+}
+
+.image-realtime {
+  content: url('../../assets/images/landing-page/landing-realtime.png');
+}
+
+.image-smarterp {
+  content: url('../../assets/images/landing-page/landing-smarterp.png');
+}
+
+.img-landing-04 {
+  content: url('../../assets/images/landing-page/landing-page-04.png');
+}
+
+.img-landing-01 {
+  content: url('../../assets/images/landing-page/landing-page-01.png');
+}
+
+.img-landing-02 {
+  content: url('../../assets/images/landing-page/landing-page-02.png');
+}
+
+.img-landing-03 {
+  content: url('../../assets/images/landing-page/landing-page-03.png');
+}
+
+.img-landing-06 {
+  content: url('../../assets/images/landing-page/landing-page-06.png');
+}
+
+.img-landing-05 {
+  content: url('../../assets/images/landing-page/landing-page-05.png');
+}
+
 .silver-image {
   content: url('../../assets/img/plan-04.webp');
 }
@@ -727,4 +811,143 @@ input[type="number"] {
 
 .logo-linetoday {
   content: url('../../assets/icon-berita/linetoday.webp');
+}
+
+.logo-footer {
+  content: url('../../assets/img/logo-biru-baru.webp');
+  width: 60px;
+  height: 60px;
+}
+
+.img-email {
+  content: url('../../assets/images/email.svg');
+  width: 46px;
+  height: 24px;
+}
+
+.img-phone {
+  content: url('../../assets/images/phone.svg');
+  width: 40px;
+  height: 61px;
+}
+
+.img-location {
+  content: url('../../assets/images/location.svg');
+  width: 18px;
+  height: 95px;
+}
+
+.img-instagram {
+  content: url('../../assets/images/instagram.svg');
+  width: 22px;
+  height: 22px;
+}
+
+.img-facebook {
+  content: url('../../assets/images/facebook.svg');
+  width: 12px;
+  height: 22px;
+}
+
+.img-linkedin {
+  content: url('../../assets/images/linkedin.svg');
+  width: 20px;
+  height: 20px;
+}
+
+.img-padding {
+  margin-top: 10px;
+  padding: 0 30px;
+}
+
+.container {
+  padding-right: 12px !important;
+}
+
+.box-overview-mobile {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 450px) and (orientation:portrait) {
+  .artikel {
+    margin: 0 35px;
+  }
+  .read-more {
+    margin-left: 60px;
+  }
+  .img-resize {
+    margin: 0 40px;
+    position: relative;
+  }
+  .home-img {
+    display: none;
+  }
+  .what-make {
+    margin: 0 40px;
+  }
+  .home-text {
+    font-size: 40px;
+    margin: 0 30px;
+  }
+  .modal-content {
+    margin: 25px;
+  }
+  .tab-phone {
+    padding: 0 50px;
+  }
+  .app-store {
+    margin: 20px 0;
+  }
+  .f-rantai {
+    font-size: 45px !important;
+  }
+  .foot-content {
+    padding: 0 35px;
+  }
+  .media-coverage {
+    padding: 0 25px;
+  }
+  .ourfeatures {
+    background-color: unset;
+  }
+  .shadow-background {
+    border-color: #fff;
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  }
+  .our-feature-img {
+    margin: 0 10px;
+  }
+  .subsciption {
+    padding: unset;
+  }
+  .f-title-head {
+    font-size: 30px !important;
+  }
+  .img-filter {
+    filter: grayscale(0);
+  }
+  .box-overview {
+    display: none;
+  }
+  .box-overview-mobile {
+    display: block;
+  }
+  .overview-slider {
+    padding: 50px;
+  }
+  .btn-1 {
+    font-weight: 600;
+  }
+  .title-overview {
+    margin: 0 10px !important;
+  }
+  .our-title {
+    margin: 0 10px;
+  }
+  .f-18{
+    font-size: 18px !important;
+  }
+  .about {
+    padding: 100px 0;
+  }
 }
