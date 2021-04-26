@@ -868,6 +868,10 @@ input[type="number"] {
   display: none;
 }
 
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #5846f9;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 450px) and (orientation:portrait) {
   .artikel {
     margin: 0 35px;
@@ -944,7 +948,7 @@ input[type="number"] {
   .our-title {
     margin: 0 10px;
   }
-  .f-18{
+  .f-18 {
     font-size: 18px !important;
   }
   .about {
