@@ -873,6 +873,9 @@ input[type="number"] {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 450px) and (orientation:portrait) {
+  .tab-phone {
+    display: none;
+  }
   .artikel {
     margin: 0 35px;
   }
@@ -953,5 +956,14 @@ input[type="number"] {
   }
   .about {
     padding: 100px 0;
+  }
+  .box-overview-mobile {
+    display: none;
+  }
+  .our-featur {
+    margin-top: -150px;
+  }
+  .box-section {
+    margin-top: -100px;
   }
 }
