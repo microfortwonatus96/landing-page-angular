@@ -45,6 +45,14 @@
   background: linear-gradient( 90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
 }
 
+.bg-section {
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(248, 250, 253, 0.44) 20%, rgba(248, 250, 254, 0.86) 40%, rgba(249, 251, 255, 0.92) 51%, rgba(250, 251, 253, 0.54) 71%, rgba(249, 249, 249, 0.17) 91%, rgba(255, 255, 255, 0.01) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(248, 250, 253, 0.44) 20%, rgba(248, 250, 254, 0.86) 40%, rgba(249, 251, 255, 0.92) 51%, rgba(250, 251, 253, 0.54) 71%, rgba(249, 249, 249, 0.17) 91%, rgba(255, 255, 255, 0.01) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(248, 250, 253, 0.44) 20%, rgba(248, 250, 254, 0.86) 40%, rgba(249, 251, 255, 0.92) 51%, rgba(250, 251, 253, 0.54) 71%, rgba(249, 249, 249, 0.17) 91%, rgba(255, 255, 255, 0.01) 100%);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(248, 250, 253, 0.44) 20%, rgba(248, 250, 254, 0.86) 40%, rgba(249, 251, 255, 0.92) 51%, rgba(250, 251, 253, 0.54) 71%, rgba(249, 249, 249, 0.17) 91%, rgba(255, 255, 255, 0.01) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 0%, rgba(248, 250, 253, 0.44) 20%, rgba(248, 250, 254, 0.86) 40%, rgba(249, 251, 255, 0.92) 51%, rgba(250, 251, 253, 0.54) 71%, rgba(249, 249, 249, 0.17) 91%, rgba(255, 255, 255, 0.01) 100%);
+}
+
 .text-logo {
   margin-left: 10px;
 }
@@ -285,10 +293,6 @@ section {
   background: linear-gradient(0deg, rgba(250, 250, 250, 1) 0%, rgba(248, 251, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
 }
 
-#overview {
-  background: #fff;
-}
-
 .benefit-subtitle {
   margin: 20px 0;
   padding-right: 20px;
@@ -413,11 +417,6 @@ section {
 
 .subsciption {
   overflow: hidden;
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(248, 250, 253, 0.44) 20%, rgba(248, 250, 254, 0.86) 40%, rgba(249, 251, 255, 0.92) 51%, rgba(250, 251, 253, 0.54) 71%, rgba(249, 249, 249, 0.17) 91%, rgba(255, 255, 255, 0.01) 100%);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(248, 250, 253, 0.44) 20%, rgba(248, 250, 254, 0.86) 40%, rgba(249, 251, 255, 0.92) 51%, rgba(250, 251, 253, 0.54) 71%, rgba(249, 249, 249, 0.17) 91%, rgba(255, 255, 255, 0.01) 100%);
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(248, 250, 253, 0.44) 20%, rgba(248, 250, 254, 0.86) 40%, rgba(249, 251, 255, 0.92) 51%, rgba(250, 251, 253, 0.54) 71%, rgba(249, 249, 249, 0.17) 91%, rgba(255, 255, 255, 0.01) 100%);
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(248, 250, 253, 0.44) 20%, rgba(248, 250, 254, 0.86) 40%, rgba(249, 251, 255, 0.92) 51%, rgba(250, 251, 253, 0.54) 71%, rgba(249, 249, 249, 0.17) 91%, rgba(255, 255, 255, 0.01) 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 0%, rgba(248, 250, 253, 0.44) 20%, rgba(248, 250, 254, 0.86) 40%, rgba(249, 251, 255, 0.92) 51%, rgba(250, 251, 253, 0.54) 71%, rgba(249, 249, 249, 0.17) 91%, rgba(255, 255, 255, 0.01) 100%);
 }
 
 .subsciption .img-subsciption {
