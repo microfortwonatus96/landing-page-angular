@@ -227,7 +227,7 @@ section {
 
 .wave-bg-3 {
   background-image: url('../../assets/img/bg-wave-2-grey.svg');
-  background-position: 0% 10%;
+  background-position: 0% 50%;
   background-size: 100%;
   background-repeat: repeat-x;
 }
@@ -584,8 +584,8 @@ input[type="number"] {
   z-index: 1;
   content: url("../../assets/images/close.svg");
   right: -30px;
-  top: -35px;
-  width: 60px;
+  top: -30px;
+  width: 50px;
   height: auto;
 }
 
@@ -1199,6 +1199,7 @@ input[type="number"] {
     margin: 0 35px;
   }
   .home-text {
+    padding-top: 100px;
     font-size: 40px;
     margin: 0 30px;
   }
@@ -1288,5 +1289,14 @@ input[type="number"] {
   }
   #subsciption {
     padding-top: 10px;
+  }
+  .wave-bg-3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 130px;
+  }
+  .smart-top {
+    margin-top:20px;
   }
 }
