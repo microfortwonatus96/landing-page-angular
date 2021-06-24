@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @keyframes pulse_01 {
   0% {
     transform: scale(0.94);
@@ -13,9 +17,27 @@
   }
 }
 
-header {
+#home-section {
   background: rgb(9, 96, 227);
   background: linear-gradient( 90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: position 10s;
+  -ms-transition: position 10s;
+  -o-transition: position 10s;
+  transition: all 0.5s ease;
+}
+
+.parallax-section {
+  height: 100vh;
+}
+
+#parallax {
+  background: url('../../assets/images/landing-page/bg-1.webp') fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .navbar {
@@ -45,6 +67,14 @@ header {
 .navbar.scrolled {
   background: rgb(9, 96, 227);
   background: linear-gradient( 90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
+}
+
+.main-container {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .home {
@@ -130,7 +160,7 @@ p.ls-c-1 {
 }
 
 section {
-  padding: 100px 0;
+  padding: 55px 0;
   overflow: hidden;
 }
 
@@ -160,7 +190,38 @@ section {
 }
 
 .about {
-  padding: 120px 0;
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
+}
+
+.wave-bg-1 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: -100px;
+  background-image: url('../../assets/img/bg-wave-2.svg');
+  background-position: 0% 50%;
+  background-size: 100%;
+  background-repeat: repeat-x;
+  transition: all 0.5s ease;
+}
+
+.wave-bg-2 {
+  background-image: url('../../assets/img/bg-wave-2-grey.svg');
+  background-position: 0% 50%;
+  background-size: 100%;
+  background-repeat: repeat-x;
+  transition: all 0.5s ease;
+}
+
+.wave-bg-3 {
+  background-image: url('../../assets/img/bg-wave-2-grey.svg');
+  background-position: 0% 10%;
+  background-size: 100%;
+  background-repeat: repeat-x;
 }
 
 .about .content h3 {
@@ -213,6 +274,44 @@ section {
   top: 12px;
 }
 
+.f-title-page {
+  color: #1a72fd;
+}
+
+#benefit {
+  background: rgb(250, 250, 250);
+  background: -moz-linear-gradient(0deg, rgba(250, 250, 250, 1) 0%, rgba(248, 251, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(250, 250, 250, 1) 0%, rgba(248, 251, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(0deg, rgba(250, 250, 250, 1) 0%, rgba(248, 251, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+}
+
+#overview {
+  background: #fff;
+}
+
+.benefit-subtitle {
+  margin: 20px 0;
+  padding-right: 20px;
+}
+
+#ourfeatures {
+  background: rgb(250, 250, 250);
+  background: -moz-linear-gradient(0deg, rgba(250, 250, 250, 1) 0%, rgba(248, 251, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(250, 250, 250, 1) 0%, rgba(248, 251, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(0deg, rgba(250, 250, 250, 1) 0%, rgba(248, 251, 255, 1) 100%, rgba(255, 255, 255, 1) 100%);
+}
+
+.bg-features {
+  background: unset !important;
+}
+
+.bg-features:hover {
+  border-color: unset !important;
+  box-shadow: unset !important;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .features .box {
   padding: 20px;
   background: #fff;
@@ -259,9 +358,19 @@ section {
   background-color: #e4e4e4;
 }
 
+.smart-erp-content {
+  margin-top: 100px;
+}
+
+.border-smart-erp {
+  box-shadow: 0px 10px 20px #00000005 !important;
+  border: 1px solid #E5EAF4 !important;
+  opacity: 1;
+}
+
 .services .icon-box {
   text-align: center;
-  padding: 20px 20px;
+  padding: 30px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
@@ -279,13 +388,13 @@ section {
 
 .services .icon-box h4 {
   font-weight: 600;
-  margin: 10px 0 15px 0;
+  margin: 10px 0 10px 0;
   font-size: 22px;
 }
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0;
 }
 
@@ -295,7 +404,6 @@ section {
 }
 
 .services {
-  padding: 120px 0;
   overflow: hidden;
 }
 
@@ -304,7 +412,6 @@ section {
 }
 
 .subsciption {
-  padding: 120px 0;
   overflow: hidden;
 }
 
@@ -313,7 +420,10 @@ section {
   transition: all ease-in-out 0.3s;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0px 0 10px 0 rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 0 10px 0 rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px 10px 20px #00000005;
+  border: 1px solid #E5EAF4;
+  opacity: 1;
 }
 
 .subsciption .img-subsciption .icon {
@@ -386,6 +496,8 @@ section {
 .border-radius-top {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-top: 1px solid #E5EAF4;
+  opacity: 1;
 }
 
 .box-top {
@@ -463,6 +575,16 @@ input[type="number"] {
   height: 80px;
 }
 
+.btn-close-video {
+  position: absolute;
+  z-index: 1;
+  content: url("../../assets/images/close.svg");
+  right: -30px;
+  top: -35px;
+  width: 60px;
+  height: auto;
+}
+
 .modal-header {
   border-bottom: none !important;
 }
@@ -474,6 +596,10 @@ input[type="number"] {
 .modal-content {
   border-radius: 15px !important;
   border: none;
+}
+
+.modal-video {
+  border-radius: unset !important;
 }
 
 .f-12 {
@@ -608,12 +734,26 @@ input[type="number"] {
 
 .hover-media:hover {
   filter: grayscale(0);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .error-message {
   color: #fff;
   margin-left: 10px;
+}
+
+.border-radius {
+  border-radius: 10px;
+  border: 1px solid #E5EAF4;
+}
+
+.border-radius-media-coverage {
+  border-radius: 10px;
+  border: 1px solid #E5EAF4;
+  height: 85px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0px 0 5px 0 rgb(0 0 0 / 10%);
 }
 
 .image-size {
@@ -627,10 +767,6 @@ input[type="number"] {
   height: 40px;
 }
 
-.laptop-crop-bg {
-  content: url('../../assets/img/laptop-screens-crop-baru.webp');
-}
-
 .app-store {
   content: url('../../assets/images/landing-page/google-play.webp');
   width: 167px;
@@ -639,6 +775,10 @@ input[type="number"] {
 
 .tab-phone {
   content: url('../../assets/img/laptop-tab-phone.webp');
+}
+
+.benefit-image {
+  content: url('../../assets/img/Icon-substract.svg');
 }
 
 .overview-1 {
@@ -821,14 +961,14 @@ input[type="number"] {
 
 .img-email {
   content: url('../../assets/images/email.svg');
-  width: 46px;
-  height: 24px;
+  width: 25px;
+  height: auto;
 }
 
 .img-phone {
   content: url('../../assets/images/phone.svg');
-  width: 40px;
-  height: 61px;
+  width: 25px;
+  height: auto;
 }
 
 .img-location {
@@ -855,6 +995,101 @@ input[type="number"] {
   height: 20px;
 }
 
+.icon-auto-trans {
+  content: url('../../assets/icon-trans/aotumatic_trans.png');
+}
+
+.icon-realtime {
+  content: url('../../assets/icon-trans/realtime_stock.png');
+}
+
+.icon-transhistory {
+  content: url('../../assets/icon-trans/trans_history.png');
+}
+
+.icon-trans-doc {
+  content: url('../../assets/icon-trans/trans_document.png');
+}
+
+.icon-trans-report {
+  content: url('../../assets/icon-trans/trans_report.png');
+}
+
+.icon-profit-lost {
+  content: url('../../assets/icon-trans/profit_lost.png');
+}
+
+.icon-stock-mutation {
+  content: url('../../assets/icon-trans/stock_mutation.png');
+}
+
+.icon-paylable {
+  content: url('../../assets/icon-trans/paylabel.png');
+}
+
+.icon-accounting {
+  content: url('../../assets/icon-trans/accounting.png');
+}
+
+.icon-marketplace {
+  content: url('../../assets/icon-trans/marketplace.png');
+}
+
+.icon-consumer {
+  content: url('../../assets/icon-trans/consumer.png');
+}
+
+.icon-play-video {
+  content: url('../../assets/img/play-video.svg');
+  animation: pulse_01 2s ease infinite
+}
+
+.box-icon-trans {
+  padding: 10px 20px !important;
+}
+
+.image-10 {
+  width: 10%;
+  height: auto !important;
+}
+
+.image-30 {
+  width: 30%;
+  height: auto;
+}
+
+.image-50 {
+  width: 50%;
+  height: auto;
+}
+
+.image-70 {
+  width: 70%;
+  height: auto;
+}
+
+.image-80 {
+  width: 80%;
+  height: auto;
+}
+
+.box-img {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.img-icon-trans {
+  width: 70%;
+  height: auto;
+}
+
+.border-img {
+  border: 1px solid #e6eeff;
+  border-width: 5px;
+  padding: 3px;
+  border-radius: 50%;
+}
+
 .img-padding {
   margin-top: 10px;
   padding: 0 30px;
@@ -872,7 +1107,74 @@ input[type="number"] {
   background-color: #5846f9;
 }
 
+.video {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.smart-erp-shadow {
+  border-color: #fff;
+  box-shadow: 0px 0 10px 0 rgb(0 0 0 / 10%);
+}
+
+.title-blue {
+  font-size: 0.85rem;
+  color: #1a72fd;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.font-title {
+  font-size: 1.8rem;
+}
+
+.font-desc {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.benefit-icon {
+  height: unset !important;
+  position: relative;
+  left:-30px;
+}
+
+.benefit-box-border {
+  box-shadow: 0px 10px 20px #00000005;
+  border: 1px solid #E5EAF4;
+  border-radius: 10px;
+  opacity: 1
+}
+
+.font-small {
+  font-size: 0.813rem;
+  line-height: 22px;
+}
+
+.f-16 {
+  font-size: 16px !important;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 450px) and (orientation:portrait) {
+  .services.icon-box {
+    font-size: 0.813rem;
+  }
+  .f-13 {
+    font-size: 0.813rem;
+  }
   .tab-phone {
     display: none;
   }
@@ -890,14 +1192,14 @@ input[type="number"] {
     display: none;
   }
   .what-make {
-    margin: 0 40px;
+    margin: 0 35px;
   }
   .home-text {
     font-size: 40px;
     margin: 0 30px;
   }
   .modal-content {
-    margin: 25px;
+    margin: unset;
   }
   .tab-phone {
     padding: 0 50px;
@@ -906,7 +1208,7 @@ input[type="number"] {
     margin: 20px 0;
   }
   .f-rantai {
-    font-size: 45px !important;
+    font-size: 35px !important;
   }
   .foot-content {
     padding: 0 35px;
@@ -963,7 +1265,24 @@ input[type="number"] {
   .our-featur {
     margin-top: -150px;
   }
-  .box-section {
-    margin-top: -100px;
+  .box-profit {
+    margin-top: 25px;
+  }
+  .wave-bg-1 {
+    background-position: 0% 110%;
+  }
+  .wave-bg-2 {
+    background-position: 0% 110%;
+  }
+  .image-10 {
+    width: 25%;
+    height: auto;
+  }
+  #parallax {
+    background: rgb(9, 96, 227);
+    background: linear-gradient( 90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
+  }
+  #subsciption {
+    padding-top: 10px;
   }
 }

@@ -132,10 +132,17 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.getProvince();
     this.newDate = this.date.getFullYear().toString();
     let navbar = document.getElementById('navbar');
+    let parallax = document.getElementById('parallax');
+    let bg1 = document.getElementById('bg-1');
     window.onscroll = function (ev) {
       navbar.classList.add('scrolled');
+      parallax.style.backgroundSize = 100 + '%';
+      parallax.style.backgroundPosition = '0-' + window.scrollY / 2 + 'px';
+      parallax.style.transform = 'translateY(' + window.scrollY / 10 + 'px)';
+      bg1.style.marginBottom = '-1px';
       if (window.scrollY === 0) {
         navbar.classList.remove('scrolled');
+        bg1.style.marginBottom = '-100px';
       }
     };
   }
