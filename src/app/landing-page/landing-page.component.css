@@ -1000,47 +1000,47 @@ input[type="number"] {
 }
 
 .icon-auto-trans {
-  content: url('../../assets/icon-trans/aotumatic_trans.png');
+  content: url('../../assets/icon-trans/aotumatic_trans.webp');
 }
 
 .icon-realtime {
-  content: url('../../assets/icon-trans/realtime_stock.png');
+  content: url('../../assets/icon-trans/realtime_stock.webp');
 }
 
 .icon-transhistory {
-  content: url('../../assets/icon-trans/trans_history.png');
+  content: url('../../assets/icon-trans/trans_history.webp');
 }
 
 .icon-trans-doc {
-  content: url('../../assets/icon-trans/trans_document.png');
+  content: url('../../assets/icon-trans/trans_document.webp');
 }
 
 .icon-trans-report {
-  content: url('../../assets/icon-trans/trans_report.png');
+  content: url('../../assets/icon-trans/trans_report.webp');
 }
 
 .icon-profit-lost {
-  content: url('../../assets/icon-trans/profit_lost.png');
+  content: url('../../assets/icon-trans/profit_lost.webp');
 }
 
 .icon-stock-mutation {
-  content: url('../../assets/icon-trans/stock_mutation.png');
+  content: url('../../assets/icon-trans/stock_mutation.webp');
 }
 
 .icon-paylable {
-  content: url('../../assets/icon-trans/paylabel.png');
+  content: url('../../assets/icon-trans/paylabel.webp');
 }
 
 .icon-accounting {
-  content: url('../../assets/icon-trans/accounting.png');
+  content: url('../../assets/icon-trans/accounting.webp');
 }
 
 .icon-marketplace {
-  content: url('../../assets/icon-trans/marketplace.png');
+  content: url('../../assets/icon-trans/marketplace.webp');
 }
 
 .icon-consumer {
-  content: url('../../assets/icon-trans/consumer.png');
+  content: url('../../assets/icon-trans/consumer.webp');
 }
 
 .icon-play-video {
