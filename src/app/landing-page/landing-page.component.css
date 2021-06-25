@@ -109,7 +109,7 @@
 
 .btn-1 {
   background-color: white;
-  padding: 12px 30px;
+  padding: 12px 35px;
   border: none;
   border-radius: 5px;
   color: #095edc;
@@ -1172,7 +1172,7 @@ input[type="number"] {
   font-size: 16px !important;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 450px) and (orientation:portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 450px)  and (orientation:portrait) {
   .services.icon-box {
     font-size: 0.813rem;
   }
@@ -1298,5 +1298,8 @@ input[type="number"] {
   }
   .smart-top {
     margin-top: 20px;
+  }
+  .modal{
+    padding: 15px;
   }
 }
