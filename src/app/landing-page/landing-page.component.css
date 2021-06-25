@@ -109,7 +109,6 @@
 
 .btn-1 {
   background-color: white;
-  padding: 12px 35px;
   border: none;
   border-radius: 5px;
   color: #095edc;
@@ -118,6 +117,11 @@
   transition: all 0.5s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   font-weight: 500;
+}
+
+.btn-1 .btn-title-lets-start {
+  font-weight: 600;
+  padding: 2px 30px;
 }
 
 .app-logo {
@@ -129,7 +133,9 @@
 }
 
 .btn-1:hover {
-  box-shadow: none;
+  background: rgb(9, 96, 227);
+  color: #fff;
+  transition: all 0.5s ease;
 }
 
 .home .home-btn {
@@ -1172,7 +1178,7 @@ input[type="number"] {
   font-size: 16px !important;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 450px)  and (orientation:portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 450px) and (orientation:portrait) {
   .services.icon-box {
     font-size: 0.813rem;
   }
@@ -1249,8 +1255,9 @@ input[type="number"] {
   .overview-slider {
     padding: 50px;
   }
-  .btn-1 {
+  .btn-1 .btn-title-lets-start {
     font-weight: 600;
+    padding: 2px 35px;
   }
   .title-overview {
     margin: 0 10px !important;
@@ -1299,7 +1306,7 @@ input[type="number"] {
   .smart-top {
     margin-top: 20px;
   }
-  .modal{
+  .modal {
     padding: 15px;
   }
 }
