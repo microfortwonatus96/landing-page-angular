@@ -15,7 +15,6 @@
         <div class="logo-header" loading="lazy"></div>
         <span class="text-logo">Rantai</span>
       </a>
-
       <button
         class="navbar-toggler"
         type="button"
@@ -81,49 +80,6 @@
 </header>
 
 <main id="main">
-  <!-- SECTION HOME -->
-  <!-- <section id="home-section" class="home d-flex align-items-center">
-    <div class="image-size home-img laptop-crop-bg" loading="lazy"></div>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-5">
-          <article class="home-text">
-            <h1 data-aos="fade-right" class="f-rantai">
-              {{ "New_Inovation" | translate }}
-            </h1>
-            <p data-aos="fade-right">{{ "Get_Your" | translate }}</p>
-            <div class="home-btn" data-aos="fade-right">
-              <div class="row">
-                <div class="col-12 col-sm-4">
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#requestFreeDemo"
-                    class="btn btn-1"
-                  >
-                    LET'S START
-                  </a>
-                </div>
-                <div class="col-sm-3">
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="app-logo"
-                  >
-                    <div class="img-google-play app-store" loading="lazy"></div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="col-md-7 text-center"></div>
-      </div>
-    </div>
-  </section> -->
-  <!-- END SECTION HOME -->
-
   <section
     id="parallax"
     data-aos="fade-up"
@@ -194,26 +150,20 @@
                 data-bs-toggle="modal"
                 data-bs-target="#watchvideo"
                 class="image-10 icon-play-video pointer"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                (click)="openVideo(false)"
               ></div>
               <div class="col f-title-page">
                 <b>Watch Video</b>
               </div>
             </div>
           </article>
-          <!-- <a
-            href="#"
-            class="read-more"
-            data-bs-toggle="modal"
-            data-bs-target="#requestFreeDemo"
-          >
-            REQUEST FREE DEMO
-          </a> -->
         </div>
       </div>
     </div>
   </section>
   <section class="wave-bg-2"></section>
-  <!-- benefit section -->
   <section id="benefit" class="services box-section">
     <div class="container" data-aos="fade-up">
       <div class="row">
@@ -2157,6 +2107,7 @@
           class="btn-close-video pointer"
           data-bs-dismiss="modal"
           aria-label="Close"
+          (click)="openVideo(true)"
         ></div>
         <div class="video">
           <iframe
@@ -2166,6 +2117,8 @@
             frameborder="0"
             allowfullscreen
             allowscriptaccess="always"
+            allow='autoplay'
+            id="frame-video"
           ></iframe>
         </div>
       </div>

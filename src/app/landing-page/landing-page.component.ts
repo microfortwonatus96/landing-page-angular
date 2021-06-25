@@ -168,7 +168,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         }
       });
   }
-
   triggerCity(event) {
     this.address.setValue(event.target.value);
     this.city = this.province.find((v) =>
@@ -240,6 +239,17 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         width: '400px',
         text: lang[this.langService.lang].message,
       });
+    }
+  }
+
+  openVideo(v: boolean) {
+    let src =
+      'https://www.youtube.com/embed/xk_3ptxZECg?autoplay=1&amp;modestbranding=1&amp;showinfo=0';
+    let id = document.getElementById('frame-video');
+    if (v) {
+      $(id).attr('src', '');
+    } else {
+      $(id).attr('src', src);
     }
   }
 }
