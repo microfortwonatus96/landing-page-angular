@@ -1178,7 +1178,7 @@ input[type="number"] {
   font-size: 16px !important;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 450px) and (orientation:portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width:480px) and (orientation:portrait) {
   .services.icon-box {
     font-size: 0.813rem;
   }
@@ -1308,5 +1308,10 @@ input[type="number"] {
   }
   .modal {
     padding: 15px;
+  }
+  .btn-close-video {
+    right: -20px;
+    top: -20px;
+    width: 40px;
   }
 }

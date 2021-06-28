@@ -138,7 +138,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     $(id).attr('src', '');
     window.onscroll = function (ev) {
       navbar.classList.add('scrolled');
-      parallax.style.backgroundSize = 100 + '%';
+      // parallax.style.backgroundSize = 100 + '%';
       parallax.style.backgroundPosition = '0-' + window.scrollY / 2 + 'px';
       parallax.style.transform = 'translateY(' + window.scrollY / 10 + 'px)';
       bg1.style.marginBottom = '-1px';
