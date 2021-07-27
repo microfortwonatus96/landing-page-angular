@@ -1178,6 +1178,27 @@ input[type="number"] {
   font-size: 16px !important;
 }
 
+@media only screen and (min-device-width:200px) and (max-device-width:320px) and (orientation:portrait) {
+  .wave-bg-1, .wave-bg-2, .wave-bg-3 {
+    background-position: 0% 100%;
+  }
+}
+
+@media only screen and (min-device-width:280px) and (max-device-width:480px) and (orientation:portrait) {
+  .wave-bg-1, .wave-bg-2, .wave-bg-3 {
+    background-position: 0% 100%;
+  }
+  .home {
+    padding: 150px 20px;
+  }
+  .home-text h1 {
+    font-size: 25px;
+  }
+  .home-text p {
+    font-size: 12px;
+  }
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width:480px) and (orientation:portrait) {
   .services.icon-box {
     font-size: 0.813rem;
@@ -1219,7 +1240,8 @@ input[type="number"] {
     margin: 20px 0;
   }
   .f-rantai {
-    font-size: 35px !important;
+    /* font-size: 35px !important; */
+    font-size: 22px !important;
   }
   .foot-content {
     padding: 0 35px;
