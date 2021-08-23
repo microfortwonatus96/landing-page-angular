@@ -668,7 +668,6 @@ input[type="number"] {
   width: 150px;
   align-items: center;
   background-color: #033355;
-  border-radius: 5px;
 }
 
 .menu-lang {
@@ -685,7 +684,7 @@ input[type="number"] {
 .menu-lang:hover {
   background-color: #fff;
   color: #000;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .en-flag {
@@ -1337,3 +1336,21 @@ input[type="number"] {
     width: 40px;
   }
 }
+
+#menu-download {
+  display: none;
+  transition: all 0.5s ease;
+  position: absolute;
+  justify-content: center;
+  z-index: 100;
+  width: 150px;
+  align-items: center;
+  background-color: #033355;
+  color: #fff;
+}
+
+#menu-download .nav-link:hover {
+  background: #fff;
+  color: #000;
+}
+

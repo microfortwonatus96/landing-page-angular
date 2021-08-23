@@ -45,31 +45,45 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <div>
-              <div
-                class="nav-link click-lang lang-change"
-                (click)="showLanguage()"
+            <div
+              class="nav-link pointer d-flex justify-content-center"
+              (click)="download()"
+            >
+              <div>Download</div>
+              &nbsp;
+              <div class="icon-chev pl-2" id="chevron1"></div>
+            </div>
+            <div id="menu-download" class="mt-2">
+              <a
+                class="nav-link"
+                href="http://192.168.88.88:7781/launcher/installer-rantai"
+                download
+                >Installer Rantai</a
               >
-                <div
-                  [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
-                ></div>
-                <span>
-                  {{
-                    langService.lang === "en" ? "English" : "Indonesia"
-                  }}</span
-                >
-                <div class="icon-chev" id="chevron"></div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div
+              class="nav-link click-lang lang-change"
+              (click)="showLanguage()"
+            >
+              <div
+                [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
+              ></div>
+              <span>
+                {{ langService.lang === "en" ? "English" : "Indonesia" }}</span
+              >
+              <div class="icon-chev" id="chevron"></div>
+            </div>
+            <div id="lang-hide" class="mt-2">
+              <div class="menu-lang" (click)="changeLanguage('en')">
+                <div class="en-flag"></div>
+                <span>English</span>
               </div>
-              <div id="lang-hide">
-                <div class="menu-lang" (click)="changeLanguage('en')">
-                  <div class="en-flag"></div>
-                  <span>English</span>
-                </div>
-                <div class="line"></div>
-                <div class="menu-lang" (click)="changeLanguage('id')">
-                  <div class="id-flag"></div>
-                  <span>Indonesia</span>
-                </div>
+              <div class="line"></div>
+              <div class="menu-lang" (click)="changeLanguage('id')">
+                <div class="id-flag"></div>
+                <span>Indonesia</span>
               </div>
             </div>
           </li>

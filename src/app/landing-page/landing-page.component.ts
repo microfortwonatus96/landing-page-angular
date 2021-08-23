@@ -184,6 +184,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   showLanguage() {
+    let menu_download = document.getElementById('menu-download');
     let x = document.getElementById('lang-hide');
     let y = document.getElementById('chevron');
     if (x.style.display === 'block') {
@@ -192,6 +193,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     } else {
       x.style.display = 'block';
       y.style.transform = 'rotate(180deg)';
+      menu_download.style.display = 'none';
     }
   }
 
@@ -252,6 +254,19 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       $(id).attr('src', '');
     } else {
       $(id).attr('src', src);
+    }
+  }
+  download() {
+    let id = document.getElementById('menu-download');
+    let y = document.getElementById('chevron1');
+    let x = document.getElementById('lang-hide');
+    if (id.style.display == 'block') {
+      id.style.display = 'none';
+      y.style.transform = 'rotate(0deg)';
+    } else {
+      id.style.display = 'block';
+      y.style.transform = 'rotate(180deg)';
+      x.style.display = 'none';
     }
   }
 }
