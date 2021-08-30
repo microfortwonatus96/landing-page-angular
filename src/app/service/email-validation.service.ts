@@ -4,19 +4,21 @@ import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class EmailValidationService {
-
-  constructor(
-    private http: HttpClient
-  ) { }
+  constructor(private http: HttpClient) {}
 
   validateUser(id: string, token: string): Observable<any> {
-    return this.http.get<any>(`${environment.api_server}/api/validation/token?id=${id}&token=${token}`)
+    return this.http.get<any>(
+      `${environment.api_server}/api/validation/token?rantaiId=${id}&token=${token}`
+    );
   }
 
   updatePassword(id: string, password: string, token: string) {
-    return this.http.post(`${environment.api_server}/api/validation/updatepass?id=${id}&password=${password}&token=${token}`, null)
+    return this.http.post(
+      `${environment.api_server}/api/validation/updatepass?rantaiId=${id}&password=${password}&token=${token}`,
+      null
+    );
   }
 }
