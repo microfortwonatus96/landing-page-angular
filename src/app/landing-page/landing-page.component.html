@@ -941,7 +941,7 @@
         </div>
       </div>
       <div class="row">
-        <div
+        <div *ngFor="let subs of subsPackage$ | async"
           class="
             col col-lg-3 col-md-6
             d-flex
@@ -956,13 +956,12 @@
         >
           <div class="img-subsciption">
             <div
-              id="silver"
               class="col border-radius-top sub subscribe-nonactive"
             >
               <div class="d-flex justify-content-between">
                 <div>
                   <h1 class="fs-6 p-2 mt-4 ms-4 fw-bold box-medal-others">
-                    Silver
+                    {{subs.type | uppercase}}
                   </h1>
                 </div>
                 <div>
@@ -976,7 +975,7 @@
                 <div class="d-flex flex-column bd-highlight">
                   <p class="text-start fs-5 fw-bold">Rp</p>
                   <h1 class="text-start fs-2 fw-bold">
-                    190,000<small class="fs-6"
+                    {{subs.price | number:'1.0' }}<small class="fs-6"
                       >/{{ "Month" | translate }}</small
                     >
                   </h1>
@@ -990,296 +989,10 @@
               <div class="container">
                 <div class="row">
                   <div class="mt-4 mb-4">
-                    <div class="d-flex justify-content-start">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        {{ "Employee" | translate }}
-                        (<b>5</b>)
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-start mt-2">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        Rantailink (<b>500 {{ "Users" | translate }}</b
-                        >)
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-start mt-2">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        Slot Item (<b>500 + {{ "Variant" | translate }}</b
-                        >)
-                      </div>
-                    </div>
-
-                    <div class="d-flex justify-content-start mt-2">
-                      <div
-                        class="bd-highlight box-list icon-invalid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        {{ "Integration_Bank" | translate }}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="
-            col col-lg-3 col-md-6
-            d-flex
-            align-items-stretch
-            mt-3 mt-md-0
-            zoom-subscription
-            img-resize
-            p-3
-          "
-          data-aos="zoom-in"
-          data-aos-delay="200"
-        >
-          <div class="img-subsciption">
-            <div class="col border-radius-top sub subscribe-nonactive">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <h1 class="fs-6 p-2 mt-4 ms-4 fw-bold box-medal-others">
-                    Gold
-                  </h1>
-                </div>
-                <div>
-                  <div
-                    class="image-size gold-image card-img-top"
-                    loading="lazy"
-                  ></div>
-                </div>
-              </div>
-              <div class="col box-price ms-4">
-                <div class="d-flex flex-column bd-highlight">
-                  <p class="text-start fs-5 fw-bold">Rp</p>
-                  <h1 class="text-start fs-2 fw-bold">
-                    490,000<small class="fs-6"
-                      >/{{ "Month" | translate }}</small
-                    >
-                  </h1>
-                  <small class="text-start f-12 text-muted"
-                    ><i>{{ "Temp_Price" | translate }}</i></small
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col subcription-desc border-radius-top">
-              <div class="container">
-                <div class="row">
-                  <div class="mt-4 mb-4">
-                    <div class="d-flex justify-content-start">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        {{ "Employee" | translate }} (<b>25</b>)
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-start mt-2">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        Rantailink (<b>4000 {{ "Users" | translate }}</b
-                        >)
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-start mt-2">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        Slot Item (<b>2000 + {{ "Variant" | translate }}</b
-                        >)
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-start mt-2">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        {{ "Integration_Bank" | translate }}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="
-            col col-lg-3 col-md-6
-            d-flex
-            align-items-stretch
-            mt-3 mt-md-0
-            zoom-subscription
-            img-resize
-            p-3
-          "
-          data-aos="zoom-in"
-          data-aos-delay="300"
-        >
-          <div class="img-subsciption">
-            <div class="col border-radius-top sub subscribe-nonactive">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <h1 class="fs-6 p-2 mt-4 ms-4 fw-bold box-medal-others">
-                    Titanium
-                  </h1>
-                </div>
-                <div>
-                  <div
-                    class="image-size titanium-image card-img-top"
-                    loading="lazy"
-                  ></div>
-                </div>
-              </div>
-              <div class="col box-price ms-4">
-                <div class="d-flex flex-column bd-highlight">
-                  <p class="text-start fs-5 fw-bold">Rp</p>
-                  <h1 class="text-start fs-2 fw-bold">
-                    890,000<small class="fs-6"
-                      >/{{ "Month" | translate }}</small
-                    >
-                  </h1>
-                  <small class="text-start f-12 text-muted"
-                    ><i>{{ "Temp_Price" | translate }}</i></small
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col subcription-desc border-radius-top">
-              <div class="container">
-                <div class="row">
-                  <div class="mt-4 mb-4">
-                    <div class="d-flex justify-content-start">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        {{ "Employee" | translate }} (<b>100</b>)
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-start mt-2">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        Rantailink (<b>5000 {{ "Users" | translate }}</b
-                        >)
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-start mt-2">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        Slot Item (<b>4000 + {{ "Variant" | translate }}</b
-                        >)
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-start mt-2">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        {{ "Integration_Bank" | translate }}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="
-            col col-lg-3 col-md-6
-            d-flex
-            align-items-stretch
-            mt-3 mt-md-0
-            zoom-subscription
-            img-resize
-            p-3
-          "
-          data-aos="zoom-in"
-          data-aos-delay="400"
-        >
-          <div class="img-subsciption">
-            <div class="col border-radius-top sub subscribe-active">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <h1 class="fs-6 p-2 mt-4 ms-4 fw-bold box-medal">Platinum</h1>
-                </div>
-                <div>
-                  <div
-                    class="image-size platinum-image card-img-top"
-                    loading="lazy"
-                  ></div>
-                </div>
-              </div>
-              <div class="col box-price ms-4">
-                <div class="d-flex flex-column bd-highlight">
-                  <p class="text-start fs-5 fw-bold">Rp</p>
-                  <h1 class="text-start fs-2 fw-bold">
-                    1,190,000<small class="fs-6"
-                      >/{{ "Month" | translate }}</small
-                    >
-                  </h1>
-                  <small class="text-start text-muted f-12-white"
-                    ><i>{{ "Temp_Price" | translate }}</i></small
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col subcription-desc border-radius-top">
-              <div class="container">
-                <div class="row">
-                  <div class="mt-4 mb-4">
-                    <div class="d-flex justify-content-start">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        {{ "Employee" | translate }} (<b>Unlimited</b>)
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-start mt-2">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        Rantailink (<b>6000 {{ "Users" | translate }}</b
-                        >)
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-start mt-2">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        Slot Item (<b>6000 + {{ "Variant" | translate }}</b
-                        >)
-                      </div>
-                    </div>
-                    <div class="d-flex justify-content-start mt-2">
-                      <div
-                        class="bd-highlight box-list icon-valid mt-1 me-2"
-                      ></div>
-                      <div class="bd-highlight text-start">
-                        {{ "Integration_Bank" | translate }}
+                    <div *ngFor="let x of subs.benefitList" class="d-flex justify-content-start mb-2">
+                      <div class="bd-highlight box-list icon-valid mt-1 me-2"></div>
+                      <div  class="bd-highlight text-start">
+                        {{ x.benefit }}
                       </div>
                     </div>
                   </div>
