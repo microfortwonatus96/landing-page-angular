@@ -41,8 +41,8 @@
 }
 
 .navbar {
-  background: rgb(9, 96, 227);
-  background: linear-gradient( 90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
+  background: rgb(113, 182, 194);
+  background: linear-gradient( 90deg, rgb(63, 171, 233) 0%, rgba(3, 52, 85, 1) 100%);
 }
 
 .bg-section {

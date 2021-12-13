@@ -136,6 +136,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   ngOnInit(): void {
     this.getProvince();
     this.subsPackage$ = this.subsService.getPackage();
+    this.tampilText();
     
     this.newDate = this.date.getFullYear().toString();
     let navbar = document.getElementById('navbar');
@@ -276,4 +277,17 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       x.style.display = 'none';
     }
   }
+  tampilText(){
+    var request = new XMLHttpRequest();
+    request.open('GET', 'https://rantai.tech/file/auditpatch.txt', true);
+    request.send(null);
+    request.onreadystatechange = function () {
+        if (request.readyState === 4 && request.status === 200) {
+            var type = request.getResponseHeader('Content-Type');
+            if (type.indexOf("text") !== 1) {
+                return request.responseText;
+            }
+        }
+    }
+}
 }
