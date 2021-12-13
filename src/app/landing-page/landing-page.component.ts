@@ -17,9 +17,6 @@ import { UserService } from '../service/user.service';
 import Swal from 'sweetalert2';
 import { lang } from '../lang/lang.interface';
 import { ActivatedRoute, Router } from '@angular/router';
-import { SubscriptionService } from '../service/subscribtion.service';
-import { Observable } from 'rxjs';
-import { ISubscribe } from '../models/subscribe.model';
 declare var $: any;
 
 @Component({
@@ -61,7 +58,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     return this.formDaftar.get('address');
   }
 
-  subsPackage$:Observable<ISubscribe[]>;
   alive: boolean = true;
   province: IProvince[] = [];
   city: ICity[] = [];
@@ -102,8 +98,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     private formBuilder: FormBuilder,
     private userService: UserService,
     private router: Router,
-    private activatedRoute: ActivatedRoute,
-    private subsService:SubscriptionService
+    private activatedRoute: ActivatedRoute
   ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
@@ -135,7 +130,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit(): void {
     this.getProvince();
-    this.subsPackage$ = this.subsService.getPackage();
+    // this.subsPackage$ = this.subsService.getPackage();
     this.tampilText();
     
     this.newDate = this.date.getFullYear().toString();
@@ -147,7 +142,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     window.onscroll = function (ev) {
       navbar.classList.add('scrolled');
       // parallax.style.backgroundSize = 100 + '%';
-      parallax.style.backgroundPosition = '0-' + window.scrollY / 2 + 'px';
+      // parallax.style.backgroundPosition = '0-' + window.scrollY / 2 + 'px';
       parallax.style.transform = 'translateY(' + window.scrollY / 10 + 'px)';
       bg1.style.marginBottom = '-1px';
       if (window.scrollY === 0) {
