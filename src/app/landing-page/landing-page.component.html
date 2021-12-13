@@ -42,7 +42,7 @@
             <a class="nav-link" href="#ourfeatures">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact">Contact Us</a>
           </li>
           <li class="nav-item">
             <div
@@ -106,52 +106,127 @@
     class="parallax-section home d-flex align-items-center"
   >
     <div class="container">
-      <div class="row align-items-bette">
-        <div class="col-md-7 col-sm-6">
-          <article class="home-text">
-            <h1 data-aos="fade-right " class="f-rantai">
-              {{ "New_Inovation" | translate }} <br />
-              {{ "New_Next1" | translate }} <br />
-              {{ "New_Next2" | translate }} <br />
-              {{ "New_Next3" | translate }}
-            </h1>
-            <p data-aos="fade-right">
-              {{ "Get_Your" | translate }}
-            </p>
-            <div class="home-btn" data-aos="fade-right">
-              <div class="row justify-content-start">
-                <div class="col-md-4 col-sm-5">
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#requestFreeDemo"
-                    class="btn btn-1"
-                  >
-                    <div class="btn-title-lets-start">LET'S START</div>
-                  </a>
-                </div>
-                <div class="col-md-4 col-sm-7">
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="app-logo"
-                  >
-                    <div class="img-google-play app-store" loading="lazy"></div>
-                  </a>
+      <div id="slider-one">
+        <div class="d-flex justify-content-between">
+          <div class="col-md-7 col-sm-6">
+            <article class="home-text">
+              <h1 data-aos="fade-right " class="f-rantai">
+                {{ "New_Inovation" | translate }} <br />
+                {{ "New_Next1" | translate }} <br />
+                {{ "New_Next2" | translate }} <br />
+                {{ "New_Next3" | translate }}
+              </h1>
+              <p data-aos="fade-right">
+                {{ "Get_Your" | translate }}
+              </p>
+              <div class="home-btn" data-aos="fade-right">
+                <div class="row justify-content-start">
+                  <div class="col-md-4 col-sm-5">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#requestFreeDemo"
+                      class="btn btn-1"
+                    >
+                      <div class="btn-title-lets-start">LET'S START</div>
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-sm-7">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="app-logo"
+                    >
+                      <div
+                        class="img-google-play app-store"
+                        loading="lazy"
+                      ></div>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
+          <div class="col-md-5 col-md-6">
+            <img src="../../assets/images/banner.svg" alt="banner" />
+          </div>
         </div>
-        <div class="col-md-5 col-sm-6">
-          <img src="../../assets/images/banner.svg" alt="banner" />
+      </div>
+
+      <div class="slider-two">
+        <div class="d-flex justify-content-between">
+          <div class="col-md-7 col-sm-6">
+            <article class="home-text">
+              <h1 data-aos="fade-right " class="f-rantai">
+                {{ "New_Inovation" | translate }} <br />
+                {{ "New_Next1" | translate }} <br />
+                {{ "New_Next2" | translate }} <br />
+                {{ "New_Next3" | translate }}
+              </h1>
+              <p data-aos="fade-right">
+                {{ "Get_Your" | translate }}
+              </p>
+              <div class="home-btn" data-aos="fade-right">
+                <div class="row justify-content-start">
+                  <div class="col-md-4 col-sm-5">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#requestFreeDemo"
+                      class="btn btn-1"
+                    >
+                      <div class="btn-title-lets-start">LET'S START</div>
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-sm-7">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="app-logo"
+                    >
+                      <div
+                        class="img-google-play app-store"
+                        loading="lazy"
+                      ></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-5 col-md-6">
+            <img src="../../assets/images/banner.svg" alt="banner" />
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-start s-3">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault1"
+            checked
+            (click)="prevBtn()"
+          />
+        </div>
+        <div class="form-check">
+          <input
+            (click)="nextBtn()"
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+          />
         </div>
       </div>
     </div>
   </section>
-  <section id="bg-1" class="wave-bg-1"></section>
 
+  <section id="bg-1" class="wave-bg-1"></section>
   <!-- SECTION 2 -->
   <section id="about" class="about">
     <div class="container">
@@ -291,6 +366,17 @@
                 </div>
               </div>
             </article>
+          </div>
+        </div>
+
+        <!-- PRICE -->
+        <div class="d-flex justify-content-center mt-5">
+          <div class="title-blue text-center">PILIHAN PAKET LANGGANAN</div>
+        </div>
+        <div class="d-flex justify-content-center col-md-8 p-3">
+          <div class="text-center fw-bold font-title">
+            Berbagai Pilihan Paket Langganan, <br />Sesuaikan dengan Kebutuhan
+            Bisnis Online Anda
           </div>
         </div>
       </div>

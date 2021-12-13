@@ -92,6 +92,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   othersBusinness: string = null;
   othersCity: string = null;
   save: boolean = false;
+  delay: number = 3000;
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -269,4 +270,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       x.style.display = 'none';
     }
   }
+
+  prevBtn() {}
+  nextBtn() {}
 }

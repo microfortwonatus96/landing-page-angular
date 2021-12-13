@@ -796,9 +796,11 @@ input[type="number"] {
 .tab-phone {
   content: url('../../assets/images/stockbarang.svg');
 }
+
 .tab-tokoonline {
   content: url('../../assets/images/tokoonline.svg')
 }
+
 .tab-fiturreport {
   content: url('../../assets/images/fiturreport.svg')
 }
@@ -1417,4 +1419,36 @@ input[type="number"] {
 #menu-download .nav-link:hover {
   background: #fff;
   color: #000;
+}
+
+.form-check-input:checked[type=radio] {
+  background-image: unset !important;
+}
+
+.form-check-input {
+  cursor: pointer;
+  border-color: rgb(9, 96, 227);
+}
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+#slides {
+  position: relative;
+  left: 0;
+  display: flex;
+  width: 100%;
+  transition: 1s ease-in-out all;
+}
+
+.slider-two {
+display: none;
+}
+
+#slider-one {
+  z-index: 10;
+  position: relative;
+  overflow: hidden;
 }
