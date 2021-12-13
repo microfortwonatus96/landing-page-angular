@@ -7,10 +7,12 @@
     transform: scale(0.94);
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
   }
+
   70% {
     transform: scale(1);
     box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
   }
+
   100% {
     transform: scale(0.94);
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
@@ -19,7 +21,7 @@
 
 #home-section {
   background: rgb(9, 96, 227);
-  background: linear-gradient( 90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
+  background: linear-gradient(90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
   -webkit-transition: all 0.5s ease;
   -moz-transition: position 10s;
   -ms-transition: position 10s;
@@ -31,19 +33,27 @@
   height: 100vh;
 }
 
-#parallax {
-  background: url('../../assets/images/landing-page/bg-1.webp') fixed;
+.box-banner {
+  width: 100%;
+  height: auto;
+}
+
+.banner-page {
+  background-image: url('../../assets/images/banner.svg') fixed;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+
 }
 
-.navbar {
-  background: rgb(9, 96, 227);
-  background: linear-gradient( 90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
+#parallax {
+  background: rgb(223, 235, 254);
+  background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
 }
+
+
 
 .bg-section {
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(248, 250, 253, 0.44) 20%, rgba(248, 250, 254, 0.86) 40%, rgba(249, 251, 255, 0.92) 51%, rgba(250, 251, 253, 0.54) 71%, rgba(249, 249, 249, 0.17) 91%, rgba(255, 255, 255, 0.01) 100%);
@@ -54,6 +64,7 @@
 }
 
 .text-logo {
+  color: #0B69FD;
   margin-left: 10px;
 }
 
@@ -67,14 +78,14 @@
 }
 
 .nav-link, a {
-  color: #fff;
+  color: #000;
   padding: 10px 0px;
   text-align: center;
 }
 
 .navbar.scrolled {
-  background: rgb(9, 96, 227);
-  background: linear-gradient( 90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
+  background: rgb(223, 235, 254);
+  background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
 }
 
 .main-container {
@@ -93,8 +104,8 @@
 
 .home-text h1 {
   font-size: 45px;
-  font-weight: 700;
-  color: white;
+  font-weight: bold;
+  color: #0B69FD;
   margin: 0 0 20px;
   text-transform: capitalize;
 }
@@ -102,8 +113,8 @@
 .home-text p {
   font-size: 18px;
   line-height: 28px;
-  color: white;
   margin: 0;
+  color: #000;
   font-weight: 400;
 }
 
@@ -461,13 +472,13 @@ section {
 .subscribe-active {
   color: #fff;
   background: rgb(11, 105, 253);
-  background: linear-gradient( 180deg, rgba(11, 105, 253, 1) 0%, rgba(3, 51, 85, 1) 100%);
+  background: linear-gradient(180deg, rgba(11, 105, 253, 1) 0%, rgba(3, 51, 85, 1) 100%);
 }
 
 .platinum-active {
   color: #fff;
   background: rgb(11, 105, 253);
-  background: linear-gradient( 180deg, rgba(11, 105, 253, 1) 0%, rgba(3, 51, 85, 1) 100%);
+  background: linear-gradient(180deg, rgba(11, 105, 253, 1) 0%, rgba(3, 51, 85, 1) 100%);
 }
 
 .subscribe-nonactive {
@@ -659,7 +670,6 @@ input[type="number"] {
 }
 
 #lang-hide {
-  color: #fff;
   display: none;
   position: absolute;
   justify-content: center;
@@ -667,7 +677,8 @@ input[type="number"] {
   padding: 10px;
   width: 150px;
   align-items: center;
-  background-color: #033355;
+  background: rgb(223, 235, 254);
+  background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
 }
 
 .menu-lang {
@@ -783,7 +794,13 @@ input[type="number"] {
 }
 
 .tab-phone {
-  content: url('../../assets/img/laptop-tab-phone.webp');
+  content: url('../../assets/images/stockbarang.svg');
+}
+.tab-tokoonline {
+  content: url('../../assets/images/tokoonline.svg')
+}
+.tab-fiturreport {
+  content: url('../../assets/images/fiturreport.svg')
 }
 
 .benefit-image {
@@ -1187,12 +1204,15 @@ input[type="number"] {
   .wave-bg-1, .wave-bg-2, .wave-bg-3 {
     background-position: 0% 100%;
   }
+
   .home {
     padding: 150px 20px;
   }
+
   .home-text h1 {
     font-size: 25px;
   }
+
   .home-text p {
     font-size: 12px;
   }
@@ -1202,134 +1222,174 @@ input[type="number"] {
   .services.icon-box {
     font-size: 0.813rem;
   }
+
   .f-13 {
     font-size: 0.813rem;
   }
+
   .tab-phone {
     display: none;
   }
+
   .artikel {
     margin: 0 35px;
   }
+
   .read-more {
     margin-left: 60px;
   }
+
   .img-resize {
     margin: 0 40px;
     position: relative;
   }
+
   .home-img {
     display: none;
   }
+
   .what-make {
     margin: 0 35px;
   }
+
   .home-text {
     padding-top: 100px;
     font-size: 40px;
     margin: 0 30px;
   }
+
   .modal-content {
     margin: unset;
   }
+
   .tab-phone {
     padding: 0 50px;
   }
+
   .app-store {
     margin: 20px 0;
   }
+
   .f-rantai {
     /* font-size: 35px !important; */
     font-size: 22px !important;
   }
+
   .foot-content {
     padding: 0 35px;
   }
+
   .media-coverage {
     padding: 0 25px;
   }
+
   .ourfeatures {
     background-color: unset;
   }
+
   .shadow-background {
     border-color: #fff;
     box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   }
+
   .our-feature-img {
     margin: 0 10px;
   }
+
   .subsciption {
     padding: unset;
   }
+
   .f-title-head {
     font-size: 30px !important;
   }
+
   .img-filter {
     filter: grayscale(0);
   }
+
   .box-overview {
     display: none;
   }
+
   .box-overview-mobile {
     display: block;
   }
+
   .overview-slider {
     padding: 50px;
   }
+
   .btn-1 .btn-title-lets-start {
     font-weight: 600;
     padding: 2px 35px;
   }
+
   .title-overview {
     margin: 0 10px !important;
   }
+
   .our-title {
     margin: 0 10px;
   }
+
   .f-18 {
     font-size: 18px !important;
   }
+
   .about {
     padding: 100px 0;
   }
+
   .box-overview-mobile {
     display: none;
   }
+
   .our-featur {
     margin-top: -150px;
   }
+
   .box-profit {
     margin-top: 25px;
   }
+
   .wave-bg-1 {
     background-position: 0% 110%;
   }
+
   .wave-bg-2 {
     background-position: 0% 110%;
   }
+
   .image-10 {
     width: 25%;
     height: auto;
   }
+
   #parallax {
     background: rgb(9, 96, 227);
-    background: linear-gradient( 90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
+    background: linear-gradient(90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
   }
+
   #subsciption {
     padding-top: 10px;
   }
+
   .wave-bg-3 {
     position: relative;
     top: 0;
     left: 0;
     margin-bottom: 130px;
   }
+
   .smart-top {
     margin-top: 20px;
   }
+
   .modal {
     padding: 15px;
   }
+
   .btn-close-video {
     right: -20px;
     top: -20px;
@@ -1345,12 +1405,16 @@ input[type="number"] {
   z-index: 100;
   width: 150px;
   align-items: center;
-  background-color: #033355;
-  color: #fff;
+  background: rgb(223, 235, 254);
+  background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
+}
+
+#menu-download .text-left {
+  text-align: left;
+  padding-left: 15px;
 }
 
 #menu-download .nav-link:hover {
   background: #fff;
   color: #000;
 }
-
