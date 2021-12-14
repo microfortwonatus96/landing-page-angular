@@ -93,6 +93,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   othersCity: string = null;
   save: boolean = false;
   delay: number = 3000;
+  versionPacth: string;
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -277,16 +278,10 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   prevBtn() {}
   nextBtn() {}
   tampilText() {
-    var request = new XMLHttpRequest();
-    request.open('GET', 'https://rantai.tech/file/auditpatch.txt', true);
-    request.send(null);
-    request.onreadystatechange = function () {
-      if (request.readyState === 4 && request.status === 200) {
-        var type = request.getResponseHeader('Content-Type');
-        if (type.indexOf('text') !== 1) {
-          return request.responseText;
-        }
-      }
-    };
+    const url = 'https://rantai.tech/file/ver.txt';
+    fetch(url)
+      .then((r) => r.text())
+      .then((t) => (this.versionPacth = t)); //process your text! )
+    //header cron
   }
 }
