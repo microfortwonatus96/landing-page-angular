@@ -32,7 +32,7 @@
             <a class="nav-link active" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About Us</a>
+            <a class="nav-link" href="#about">FITUR</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#overview">Overview</a>
@@ -41,7 +41,7 @@
             <a class="nav-link" href="#ourfeatures">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
+            <a class="nav-link" href="#contact">HUBUNGI KAMI</a>
           </li>
           <li class="nav-item">
             <div
@@ -64,6 +64,27 @@
                 href="https://rantai.tech/file/rantaitalk.exe"
                 download
                 >Rantai Talk</a
+              >
+
+              <a
+                class="nav-link text-left"
+                href="https://rantai.tech/file/rantaitalk trial.exe"
+                download
+                >Rantai Talk Trial</a
+              >
+
+              <a
+                class="nav-link text-left"
+                href="https://rantai.tech/file/auditinstaller.exe"
+                download
+                >Audit</a
+              >
+
+              <a
+                class="nav-link text-left"
+                href="https://rantai.tech/file/auditpatch.txt"
+                download
+                >Audit Patch</a
               >
             </div>
           </li>
@@ -157,15 +178,31 @@
         <div class="d-flex justify-content-between">
           <div class="col-md-7 col-sm-6">
             <article class="home-text">
-              <h1 data-aos="fade-right " class="f-rantai">
-                {{ "New_Inovation" | translate }} <br />
-                {{ "New_Next1" | translate }} <br />
-                {{ "New_Next2" | translate }} <br />
-                {{ "New_Next3" | translate }}
+              <h1 data-aos="fade-right" class="f-rantai">
+                {{ "Invite_Friends" | translate }} <br />
+                {{ "Chain_Get" | translate }} <br />
+                {{ "Total_Prize" | translate }} <br />
+                <!-- {{ "New_Next3" | translate }} -->
               </h1>
-              <p data-aos="fade-right">
-                {{ "Get_Your" | translate }}
+
+              <p data-aos="fade-right" class="one-section-p">
+                {{ "Follow_The_Program" | translate }}
               </p>
+              <p data-aos="fade-right" class="one-section-p">
+                {{ "Chance_To_Win" | translate }}
+              </p>
+              <p data-aos="fade-right" class="one-section-p">
+                {{ "Prize" | translate }} <b>Rp.100.000.000.</b>
+              </p>
+
+              <p data-aos="fade-right" class="one-section-p">
+                {{ "Sign_Up_Code_Refferal" | translate }}
+              </p>
+
+              <p data-aos="fade-right">
+                {{ "Terms and Conditionss" | translate }}
+              </p>
+
               <div class="home-btn" data-aos="fade-right">
                 <div class="row justify-content-start">
                   <div class="col-md-4 col-sm-5">
@@ -174,8 +211,17 @@
                       data-bs-toggle="modal"
                       data-bs-target="#requestFreeDemo"
                       class="btn btn-1"
+                      style="
+                        border-radius: 24px;
+                        opacity: 1;
+                        background-color: #0b69fd;
+                        width: 105%;
+                        padding: 5px;
+                      "
                     >
-                      <div class="btn-title-lets-start">LET'S START</div>
+                      <div class="btn-title-lets-start" style="color: white">
+                        {{ "Sign_Up_Now1" | translate }}
+                      </div>
                     </a>
                   </div>
                   <div class="col-md-4 col-sm-7">
@@ -231,16 +277,26 @@
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
-          <div class="title-blue py-2">Fitur Kami</div>
+          <div class="title-blue py-2">{{ "OUR_FEATURES" | translate }}</div>
         </div>
         <div class="d-flex justify-content-center">
           <div class="fw-bold font-title col-md-5 text-center">
-            Fitur Pilihan yang Tepat untuk Pertumbuhan Bisnis Online Anda
+            {{ "Features_The_Right" | translate }}
           </div>
         </div>
+
+        <div class="d-flex justify-content-center">
+          <div class="fw-bold font-title col-md-5 text-center">
+            {{ "Growth_Online_Business" | translate }}
+          </div>
+        </div>
+
         <div class="d-flex justify-content-center mt-4">
           <div class="col-md-6">
-            <span class="text-center">
+            <span
+              class="text-center"
+              style="color: rgb(167, 183, 199); font-size: 12px"
+            >
               Donec dapibus mauris id odio ornare tempus. Duis sit amet accumsan
               justo, quis tempor ligula. Quisque quis pharetra felis. Ut quis
               consequat orci, at consequat felis. Suspendisse auctor laoreet
@@ -257,27 +313,105 @@
             data-aos="fade-right"
           >
             <article class="artikel">
-              <div class="title-blue py-2">About</div>
+              <!-- <div class="title-blue py-2">About</div> -->
               <div class="fw-bold font-title">
-                {{ "What_Rantai" | translate }}
+                {{ "Manage_stock" | translate }}
               </div>
-              <p class="fs-6 fw-normal" style="margin-top: 30px">
-                {{ "Rantai_Is_1" | translate }}
+              <div class="fw-bold font-title">
+                {{ "Anytime_and_Anywhere" | translate }}
+              </div>
+
+              <div class="navbar-brand d-flex">
+                <div id="logo-centang" style="margin-top: 15px"></div>
+                <p
+                  class="
+                    lbd-highlight
+                    text-start
+                    fs-6
+                    fw-normal fw-bold
+                    font-title
+                  "
+                  style="margin-top: 25px; line-height: 1px; padding-left: 15px"
+                >
+                  {{ "Update_Stock" | translate }}
+                </p>
+              </div>
+
+              <p
+                class="fs-6 fw-normal"
+                style="
+                  margin-top: 5px;
+                  margin-bottom: 5px;
+                  line-height: 25px;
+                  font-size: 8px;
+                  color: rgb(167, 183, 199);
+                  padding-left: 35px;
+                "
+              >
+                {{ "Update_Stock_Item" | translate }}
               </p>
-              <p class="fs-6 fw-normal">
-                {{ "Rantai_Is_2" | translate }}
+
+              <div class="navbar-brand d-flex">
+                <div id="logo-centang" style="margin-top: 15px"></div>
+                <p
+                  class="
+                    lbd-highlight
+                    text-start
+                    fs-6
+                    fw-normal fw-bold
+                    font-title
+                  "
+                  style="margin-top: 25px; line-height: 1px; padding-left: 15px"
+                >
+                  {{ "Rantai_Pos" | translate }}
+                </p>
+              </div>
+
+              <p
+                class="fs-6 fw-normal"
+                style="
+                  line-height: 25px;
+                  font-size: 8px;
+                  font-style: normal;
+                  color: rgb(167, 183, 199);
+                  padding-left: 35px;
+                "
+              >
+                {{ "Online_Cashier" | translate }}
               </p>
-              <div class="row align-items-center pt-4">
-                <div
-                  data-bs-toggle="modal"
-                  data-bs-target="#watchvideo"
-                  class="image-10 icon-play-video pointer"
-                  data-bs-backdrop="static"
-                  data-bs-keyboard="false"
-                  (click)="openVideo(false)"
-                ></div>
-                <div class="col f-title-page">
-                  <b>Watch Video</b>
+
+              <p class="fs-6 fw-normal" style="padding-left: 33px">
+                <b>Daftar sekarang dan dapatkan</b>
+                <span style="color: #0b69fd; font-weight: bold">
+                  GRATIS LANGGANAN SELAMANYA!</span
+                >
+              </p>
+
+              <div
+                class="home-btn"
+                data-aos="fade-right"
+                style="padding-left: 35px"
+              >
+                <div class="row justify-content-start">
+                  <div class="col-md-4 col-sm-5">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#requestFreeDemo"
+                      class="btn btn-1"
+                      style="
+                        border-radius: 24px;
+                        opacity: 1;
+                        background-color: #0b69fd;
+                        width: 105%;
+                        padding: 5px;
+                      "
+                    >
+                      <div class="btn-title-lets-start" style="color: white">
+                        {{ "TRY_FREE1" | translate }}
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </article>
@@ -295,17 +429,110 @@
         <div class="mt-4 row justify-content-between">
           <div class="col-md-6 pt-4 pt-lg-0 content" data-aos="fade-right">
             <article class="artikel">
-              <div class="title-blue py-2">About</div>
-              <div class="fw-bold font-title">
-                {{ "What_Rantai" | translate }}
+              <!-- <div class="title-blue py-2">About</div> -->
+              <div class="fw-bold font-title" style="">
+                {{ "Control" | translate }}
               </div>
-              <p class="fs-6 fw-normal" style="margin-top: 30px">
-                {{ "Rantai_Is_1" | translate }}
+              <div class="fw-bold font-title">
+                {{ "Marketplace" | translate }}
+              </div>
+
+              <div class="navbar-brand d-flex">
+                <div id="logo-centang" style="margin-top: 15px"></div>
+                <p
+                  class="
+                    lbd-highlight
+                    text-start
+                    fs-6
+                    fw-normal fw-bold
+                    font-title
+                  "
+                  style="margin-top: 25px; line-height: 1px; padding-left: 15px"
+                >
+                  {{ "TRANSACTION_INFORMATION" | translate }}
+                </p>
+              </div>
+
+              <p class="fs-6 fw-normal" style="padding-left: 35px">
+                {{ "Access_Transaction_List" | translate }}
               </p>
-              <p class="fs-6 fw-normal">
-                {{ "Rantai_Is_2" | translate }}
+
+              <div class="navbar-brand d-flex">
+                <div id="logo-centang" style="margin-top: 15px"></div>
+                <p
+                  class="
+                    lbd-highlight
+                    text-start
+                    fs-6
+                    fw-normal fw-bold
+                    font-title
+                  "
+                  style="margin-top: 25px; line-height: 1px; padding-left: 15px"
+                >
+                  {{ "SCRAPE_AND_COPY" | translate }}
+                </p>
+              </div>
+
+              <p class="fs-6 fw-normal" style="padding-left: 35px">
+                {{ "Move_or_Copy" | translate }}
               </p>
-              <div class="row align-items-center pt-4">
+
+              <div class="navbar-brand d-flex">
+                <div id="logo-centang" style="margin-top: 15px"></div>
+                <p
+                  class="
+                    lbd-highlight
+                    text-start
+                    fs-6
+                    fw-normal fw-bold
+                    font-title
+                  "
+                  style="margin-top: 25px; line-height: 1px; padding-left: 15px"
+                >
+                  {{ "RANTAI_TALK" | translate }}
+                </p>
+              </div>
+
+              <p class="fs-6 fw-normal" style="padding-left: 35px">
+                {{ "Connect_With_All" | translate }}
+              </p>
+
+              <p class="fs-6 fw-normal" style="padding-left: 35px">
+                <b>Daftar sekarang dan dapatkan</b>
+                <span style="color: #0b69fd; font-weight: bold">
+                  GRATIS LANGGANAN SELAMANYA!</span
+                >
+              </p>
+
+              <div
+                class="home-btn"
+                data-aos="fade-right"
+                style="padding-left: 35px"
+              >
+                <div class="row justify-content-start">
+                  <div class="col-md-4 col-sm-5">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#requestFreeDemo"
+                      class="btn btn-1"
+                      style="
+                        border-radius: 24px;
+                        opacity: 1;
+                        background-color: #0b69fd;
+                        width: 105%;
+                        padding: 5px;
+                      "
+                    >
+                      <div class="btn-title-lets-start" style="color: white">
+                        {{ "TRY_FREE1" | translate }}
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="row align-items-center pt-4">
                 <div
                   data-bs-toggle="modal"
                   data-bs-target="#watchvideo"
@@ -317,7 +544,7 @@
                 <div class="col f-title-page">
                   <b>Watch Video</b>
                 </div>
-              </div>
+              </div> -->
             </article>
           </div>
           <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up">
@@ -341,17 +568,49 @@
             data-aos="fade-right"
           >
             <article class="artikel">
-              <div class="title-blue py-2">About</div>
+              <!-- <div class="title-blue py-2">About</div> -->
               <div class="fw-bold font-title">
-                {{ "What_Rantai" | translate }}
+                {{ "Generate_Financial_Report" | translate }}
               </div>
-              <p class="fs-6 fw-normal" style="margin-top: 30px">
-                {{ "Rantai_Is_1" | translate }}
+              <p
+                class="fs-6 fw-normal"
+                style="margin-top: 20px; color: rgb(167, 183, 199)"
+              >
+                {{ "More_Efficient" | translate }}
               </p>
+
               <p class="fs-6 fw-normal">
-                {{ "Rantai_Is_2" | translate }}
+                <b>Daftar sekarang dan dapatkan</b>
+                <span style="color: #0b69fd; font-weight: bold">
+                  GRATIS LANGGANAN SELAMANYA!</span
+                >
               </p>
-              <div class="row align-items-center pt-4">
+
+              <div class="home-btn" data-aos="fade-right">
+                <div class="row justify-content-start">
+                  <div class="col-md-4 col-sm-5">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#requestFreeDemo"
+                      class="btn btn-1"
+                      style="
+                        border-radius: 24px;
+                        opacity: 1;
+                        background-color: #0b69fd;
+                        width: 105%;
+                        padding: 5px;
+                      "
+                    >
+                      <div class="btn-title-lets-start" style="color: white">
+                        {{ "TRY_FREE1" | translate }}
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="row align-items-center pt-4">
                 <div
                   data-bs-toggle="modal"
                   data-bs-target="#watchvideo"
@@ -363,7 +622,7 @@
                 <div class="col f-title-page">
                   <b>Watch Video</b>
                 </div>
-              </div>
+              </div> -->
             </article>
           </div>
         </div>
@@ -451,6 +710,24 @@
                         </div>
                       </div>
                     </div>
+
+                    <div class="d-flex justify-content-start mt-2">
+                      <div
+                        class="bd-highlight box-list icon-valid mt-1 me-2"
+                      ></div>
+                      <div class="bd-highlight text-start">
+                        {{ "Up_to_16" | translate }}
+                      </div>
+                    </div>
+
+                    <div class="d-flex justify-content-start mt-2">
+                      <div
+                        class="bd-highlight box-list icon-valid mt-1 me-2"
+                      ></div>
+                      <div class="bd-highlight text-start">
+                        {{ "RantaiTalk_app1" | translate }}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -528,6 +805,15 @@
                         <div class="bd-highlight text-start">
                           {{ "Integration_Bank" | translate }}
                         </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex justify-content-start mt-2">
+                      <div
+                        class="bd-highlight box-list icon-valid mt-1 me-2"
+                      ></div>
+                      <div class="bd-highlight text-start">
+                        {{ "Multi_Gudang" | translate }}
                       </div>
                     </div>
                   </div>
@@ -640,17 +926,18 @@
       </div>
     </div>
   </section>
+
   <section>
     <div class="container" data-aos="fade-up">
       <div class="section-title">
         <div class="title-blue">
-          {{ "Media" | translate }}
+          {{ "Chains_in_Various_Media" | translate }}
         </div>
-        <div>
+        <!-- <div>
           <div data-aos="fade-up" class="font-title fw-bold title-overview">
             {{ "Media_Coverage_Subtitle" | translate }}
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="row media-coverage">
         <div
@@ -1137,143 +1424,277 @@
     </div>
   </section>
 </main>
+
 <footer id="contact">
   <div class="footer-top" style="overflow: hidden">
     <div class="container">
       <div class="row">
         <div class="col-md-1 foot-content"></div>
 
-        <div class="col-md-7 foot-content">
-          <p class="h5 pt-4 fw-bolder" data-aos="fade-right">Our Company</p>
-          <div class="row align-items-start" [style.padding-right]="'25px'">
-            <div class="col-12 col-sm-6 font-small">
-              <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
-                {{ "About_Desc_1" | translate }}
-              </p>
-            </div>
-            <div class="col-12 col-sm-6 font-small">
-              <p data-aos="zoom-in" class="pt-3" data-aos-delay="200">
-                {{ "About_Desc_2" | translate }}
-              </p>
+        <div
+          class="d-flex justify-content-around"
+          style="margin-bottom: 40px; margin-top: 0"
+        >
+          <div class="col-md-7 foot-content">
+            <p
+              class="h5 pt-4 fw-bolder"
+              data-aos="fade-right"
+              style="margin-bottom: 5px"
+            >
+              {{ "You_Need_Information" | translate }} <br />
+              {{ "Hubungi Kami dan Dapatkan Gratis Langganan" | translate }}
+            </p>
+          </div>
+
+          <div class="home-btn" data-aos="fade-right">
+            <div class="row justify-content-start">
+              <div class="col-md-4 col-sm-5" style="margin-top: 25px">
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#requestFreeDemo"
+                  class="btn btn-1"
+                  style="
+                    border-radius: 24px;
+                    opacity: 1;
+                    background-color: #0b69fd;
+                    padding: 5px;
+                    width: 450%;
+                    height: 100%;
+                    border: 2px solid #fff; ;
+                  "
+                >
+                  <div class="btn-title-lets-start" style="color: white">
+                    {{ "CONTACT_US" | translate }}
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4 foot-content">
-          <p class="h5 pt-4 fw-bolder" data-aos="fade-right">Contact Us</p>
-          <div class="pt-3">
-            <a href="mailto:marketing@rantai.tech">
-              <div class="d-flex flex-row bd-highlight align-items-center">
-                <div class="img-fluid img-email" loading="lazy"></div>
+        <div class="row justify-content-between">
+          <div
+            style="
+              border-top: 1px solid rgb(199, 193, 193);
+              border-bottom: 1px solid rgb(199, 193, 193);
+              margin-bottom: 1px;
+            "
+          >
+            <div class="row justify-content-between">
+              <div class="col-md-4 foot-content" style="margin-top: 30px">
+                <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
+                  {{ "What_Is_Rantai" | translate }}
+                </p>
                 <div
-                  class="bd-highlight color-1"
-                  data-aos="fade-left"
-                  data-aos-delay="100"
+                  class="row align-items-start"
+                  [style.padding-right]="'25px'"
                 >
-                  <div class="font-small px-3">marketing@rantai.tech</div>
+                  <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
+                    {{ "Rantai_Is" | translate }}
+                  </p>
                 </div>
               </div>
-            </a>
-          </div>
-          <div class="d-flex flex-row align-items-center bd-highlight pt-3">
-            <div class="img-fluid img-phone" loading="lazy"></div>
-            <div class="bd-highlight" data-aos="fade-left" data-aos-delay="200">
-              <div class="font-small px-3">+62 877-9898-8777</div>
-            </div>
-          </div>
 
-          <address>
-            <a
-              class="d-flex flex-row bd-highlight"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
-            >
-              <div class="d-flex flex-row align-items-center bd-highlight">
-                <div class="img-fluid img-location" loading="lazy"></div>
-                <div class="bd-highlight">
-                  <div
-                    class="color-1 font-small px-3"
-                    style="text-align: left"
-                    data-aos="fade-left"
-                    data-aos-delay="300"
+              <div class="col-md-4 foot-content" style="margin-top: 30px">
+                <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
+                  {{ "CHECK_OUR_VIDEO" | translate }}
+                </p>
+
+                <div class="home-btn pt-4" data-aos="fade-right">
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#requestFreeDemo"
+                    class="btn btn-1 col-md-8"
+                    style="
+                      border-radius: 7px;
+                      opacity: 1;
+                      background-color: #0b69fd;
+                      padding: 4px;
+                      border: 2px solid #fff;
+                    "
                   >
-                    Vinilon Building, Jl. Raden Saleh Raya No.kav 13-17,
-                    RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat, Daerah
-                    Khusus Ibukota Jakarta 10430.
-                  </div>
+                    <div
+                      class="d-flex justify-content-start align-items-center"
+                    >
+                      <div id="logo-video" style="margin-left: 25px"></div>
+                      <span
+                        style="color: white; font-size: 12px; margin-left: 15px"
+                        >Rantai Introduction</span
+                      >
+                    </div>
+                  </a>
+                </div>
+
+                <div class="home-btn pt-2" data-aos="fade-right">
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#requestFreeDemo"
+                    class="btn btn-1 col-md-8"
+                    style="
+                      border-radius: 7px;
+                      opacity: 1;
+                      background-color: white;
+                      padding: 4px;
+                      border: 2px solid #0b69fd;
+                    "
+                  >
+                    <div
+                      class="d-flex justify-content-start align-items-center"
+                    >
+                      <div id="logo-video" style="margin-left: 25px"></div>
+                      <span
+                        style="
+                          color: #0b69fd;
+                          font-size: 12px;
+                          margin-left: 15px;
+                        "
+                        >Marketplace Introduction</span
+                      >
+                    </div>
+                  </a>
+                </div>
+
+                <div class="home-btn pt-2" data-aos="fade-right">
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#requestFreeDemo"
+                    class="btn btn-1 col-md-8"
+                    style="
+                      border-radius: 7px;
+                      opacity: 1;
+                      background-color: #0b69fd;
+                      padding: 4px;
+                      border: 2px solid #fff;
+                    "
+                  >
+                    <div
+                      class="d-flex justify-content-start align-items-center"
+                    >
+                      <div id="logo-video" style="margin-left: 25px"></div>
+                      <span
+                        style="color: white; font-size: 12px; margin-left: 15px"
+                        >Marketplace Tutorial</span
+                      >
+                    </div>
+                  </a>
+                </div>
+
+                <div class="home-btn pt-2" data-aos="fade-right">
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#requestFreeDemo"
+                    class="btn btn-1 col-md-8"
+                    style="
+                      border-radius: 7px;
+                      opacity: 1;
+                      background-color: #0b69fd;
+                      padding: 4px;
+                      border: 2px solid #fff;
+                    "
+                  >
+                    <div
+                      class="d-flex justify-content-start align-items-center"
+                    >
+                      <div id="logo-video" style="margin-left: 25px"></div>
+                      <span
+                        style="color: white; font-size: 12px; margin-left: 15px"
+                        >Rantai Talk</span
+                      >
+                    </div>
+                  </a>
                 </div>
               </div>
-            </a>
-          </address>
 
-          <div>
-            <ul
-              class="
-                nav nav-pills
-                d-flex
-                justify-content-start
-                align-items-start
-              "
-              style="gap: 15px"
-            >
-              <li class="nav-item" data-aos="fade-up" data-aos-delay="200">
-                <a
-                  href="https://www.instagram.com/official.rantai/"
-                  class="nav-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  title="Instagram"
-                >
-                  <div class="d-flex align-items-center">
-                    <div class="icon-sosial">
-                      <div class="img-fluid img-instagram" loading="lazy"></div>
-                    </div>
-                    <div class="ps-2 sosial-text fs-6">official.rantai</div>
-                  </div>
-                </a>
-              </li>
+              <div class="col-md-4 foot-content" style="margin-top: 30px">
+                <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
+                  {{ "CONTACT_US" | translate }}
+                </p>
 
-              <li class="nav-item" data-aos="fade-up" data-aos-delay="400">
-                <a
-                  href="https://www.facebook.com/RantaiOfficial"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="nav-link"
-                  title="Facebook"
+                <div
+                  class="d-flex flex-row align-items-center bd-highlight pt-3"
                 >
-                  <div class="d-flex align-items-center">
-                    <div class="icon-sosial">
-                      <div class="img-fluid img-facebook" loading="lazy"></div>
-                    </div>
-                    <div class="ps-2 sosial-text fs-6">rantai</div>
+                  <div class="img-fluid img-phone" loading="lazy"></div>
+                  <div
+                    class="bd-highlight"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                  >
+                    <div class="font-small px-3">021 296 19 712</div>
                   </div>
-                </a>
-              </li>
-              <li class="nav-item" data-aos="fade-up" data-aos-delay="600">
-                <a
-                  href="https://www.linkedin.com/company/rantai-tech/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="nav-link"
-                  title="Linkedin"
-                >
-                  <div class="d-flex align-items-center">
-                    <div class="icon-sosial">
-                      <div class="img-fluid img-linkedin" loading="lazy"></div>
+                </div>
+
+                <div class="pt-3">
+                  <a href="mailto:marketing@rantai.tech">
+                    <div
+                      class="d-flex flex-row bd-highlight align-items-center"
+                    >
+                      <div class="img-fluid img-email" loading="lazy"></div>
+                      <div
+                        class="bd-highlight color-1"
+                        data-aos="fade-left"
+                        data-aos-delay="100"
+                      >
+                        <div class="font-small px-3" style="color: white">
+                          support@rantai.tech
+                        </div>
+                      </div>
                     </div>
-                    <div class="ps-2 sosial-text fs-6">rantai</div>
-                  </div>
-                </a>
-              </li>
-            </ul>
+                  </a>
+                </div>
+
+                <address>
+                  <a
+                    class="d-flex flex-row bd-highlight"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
+                  >
+                    <div
+                      class="d-flex flex-row align-items-center bd-highlight"
+                    >
+                      <div class="img-fluid img-location" loading="lazy"></div>
+                      <div class="bd-highlight">
+                        <div
+                          class="color-1 font-small px-3"
+                          style="text-align: left; color: white"
+                          data-aos="fade-left"
+                          data-aos-delay="300"
+                        >
+                          Vinilon Building, Jl. Raden Saleh Raya No.kav 13-17,
+                          RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat,
+                          Daerah Khusus Ibukota Jakarta 10430.
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </address>
+
+                <ul
+                  class="
+                    nav nav-pills
+                    d-flex
+                    justify-content-start
+                    align-items-start
+                  "
+                  style="gap: 15px"
+                ></ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="footer d-flex align-items-center justify-content-center pt-3">
+  <div
+    class="footer d-flex align-items-center justify-content-center pt-3"
+    style="background-color: #0b69fd"
+  >
     <p class="text-center text-white p-3">
       &copy; {{ newDate }}&nbsp;PT Cyberindo Sinergi Sistem
     </p>
@@ -1320,7 +1741,6 @@
             {{ "Desc" | translate }}
           </h1>
           <br />
-          <!-- <div class="container"> -->
           <div class="row">
             <div class="col-sm">
               <div class="mb-3">
@@ -1433,8 +1853,6 @@
               </div>
             </div>
           </div>
-          <!-- </div> -->
-          <!-- HIDDEN FOR JALA -->
           <input type="hidden" name="Address" formControlName="address" />
         </div>
         <div class="modal-footer">
