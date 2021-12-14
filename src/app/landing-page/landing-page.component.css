@@ -1544,6 +1544,7 @@ input[type="number"] {
   content: url('../../assets/images/videowhite.svg');
   width:20px;
   height: 20px;
+ background-color: #0B69FD;
 }
 
 #logo-videoo {
