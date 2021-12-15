@@ -29,26 +29,24 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link active" href="/">HOME</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">FITUR</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#overview">Overview</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#ourfeatures">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">HUBUNGI KAMI</a>
-          </li>
+          </li> -->
+
           <li class="nav-item">
             <div
               class="nav-link pointer d-flex justify-content-center"
               (click)="download()"
             >
-              <div>Download</div>
+              <div>DOWNLOAD</div>
               &nbsp;
               <div class="icon-chev pl-2 mt-1" id="chevron1"></div>
             </div>
@@ -57,37 +55,42 @@
                 class="nav-link text-left"
                 href="https://rantai.tech/file/rantai.exe"
                 download
-                >Rantai Installer</a
+                >RANTAI INSTALLER</a
               >
               <a
                 class="nav-link text-left"
                 href="https://rantai.tech/file/rantaitalk.exe"
                 download
-                >Rantai Talk</a
+                >RANTAI TALK</a
               >
 
               <a
                 class="nav-link text-left"
                 href="https://rantai.tech/file/rantaitalk trial.exe"
                 download
-                >Rantai Talk Trial</a
+                >RANTAI TALK TRIAL</a
               >
 
               <a
                 class="nav-link text-left"
                 href="https://rantai.tech/file/auditinstaller.exe"
                 download
-                >Audit</a
+                >AUDIT</a
               >
 
               <a
                 class="nav-link text-left"
                 href="https://rantai.tech/file/auditpatch.exe"
                 download
-                >Audit Patch {{ versionPacth }}</a
+                >AUDIT PATCH {{ versionPacth }}</a
               >
             </div>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">HUBUNGI KAMI</a>
+          </li>
+
           <li class="nav-item">
             <div
               class="nav-link click-lang lang-change"
@@ -977,8 +980,9 @@
   <section>
     <div class="container" data-aos="fade-up">
       <div class="section-title">
-        <div class="title-blue">
-          {{ "Chains_in_Various_Media" | translate }}
+        <div style="font-size: 25px; font-weight: bold">
+          <span style="color: #0b69fd"> {{ "Rantai" | translate }}</span
+          >{{ "Chains_in_Various_Media" | translate }}
         </div>
         <!-- <div>
           <div data-aos="fade-up" class="font-title fw-bold title-overview">
