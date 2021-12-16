@@ -132,7 +132,6 @@
                 {{ "Invite_Friends" | translate }} <br />
                 {{ "Chain_Get" | translate }} <br />
                 {{ "Total_Prize" | translate }} <br />
-                <!-- {{ "New_Next3" | translate }} -->
               </h1>
 
               <p data-aos="fade-right" class="one-section-p fw-bold">
@@ -187,7 +186,7 @@
               </div>
             </article>
           </div>
-          <div class="col-md-5 col-md-6">
+          <div class="col-md-5 col-sm-6">
             <img src="../../assets/images/banner.svg" alt="banner" />
           </div>
         </div>
@@ -639,14 +638,12 @@
                 <div id="silver" class="col sub">
                   <div class="d-flex justify-content-start">
                     <div class="paket-rantai img-fluid"></div>
-                    <div class="row justify-content-start">
+                    <div class="row justify-content-start text-price">
                       <div class="text-left">
-                        <div class="fw-bold text-left f-14">
-                          RANTAI MARKETPLACE
-                        </div>
+                        <div class="fw-bold f-14">RANTAI MARKETPLACE</div>
                       </div>
                       <div class="row justify-content-start">
-                        <div class="text-left f-12">
+                        <div class="f-12">
                           <sup class="text-remove">Rp 490.000</sup>
                           <span class="fw-bold">GRATIS</span>
                           <sub>Selamanya</sub>
@@ -655,10 +652,11 @@
                     </div>
                   </div>
                 </div>
+                <div class="divider"></div>
                 <div class="col subcription-desc border-radius-top">
                   <div class="container">
                     <div class="row">
-                      <div class="mt-4 mb-4">
+                      <div class="mt-2 mb-4">
                         <ng-container
                           *ngFor="let free of typelistFree; let i = index"
                         >
@@ -678,6 +676,9 @@
                             </div>
                           </div>
                         </ng-container>
+                        <span class="text-muted f-12 text-syarat"
+                          >Syarat & ketentuan berlaku.</span
+                        >
                       </div>
                     </div>
                   </div>
@@ -704,7 +705,7 @@
                 <div id="silver" class="col sub">
                   <div class="d-flex justify-content-start">
                     <div class="paket-rantaierp img-fluid"></div>
-                    <div class="row justify-content-start">
+                    <div class="row justify-content-start text-price">
                       <div class="text-left">
                         <div class="fw-bold f-14">RANTAI ERP</div>
                       </div>
@@ -718,10 +719,11 @@
                     </div>
                   </div>
                 </div>
+                <div class="divider"></div>
                 <div class="col subcription-desc border-radius-top">
                   <div class="container">
                     <div class="row">
-                      <div class="mt-4 mb-4">
+                      <div class="mt-2 mb-4">
                         <ng-container
                           *ngFor="let erp of typelistErp; let i = index"
                         >
@@ -1367,10 +1369,10 @@
         <div class="col-md-1 foot-content"></div>
 
         <div
-          class="row justify-content-around"
+          class="row justify-content-between"
           style="margin-bottom: 40px; margin-top: 0"
         >
-          <div class="col-md-7 col-sm-6 foot-content">
+          <div class="col-md-9 col-sm-6 foot-content">
             <p
               class="h5 pt-4 fw-bolder"
               data-aos="fade-right"
@@ -1381,14 +1383,10 @@
             </p>
           </div>
 
-          <div class="home-btn col-md-3 col-sm-3" data-aos="fade-right">
+          <div class="home-btn col-md-3 col-sm-6" data-aos="fade-right">
             <div class="row justify-content-start">
               <div class="" style="margin-top: 25px">
-                <a
-                  href="#"
-                  class="btn btn-primary btn-1 button1"
-                  style="margin-left: 20px"
-                >
+                <a href="#" class="btn btn-primary button1 col-md-8">
                   <div class="btn-title-lets-start" style="color: white">
                     {{ "CONTACT_US" | translate }}
                   </div>
@@ -1425,132 +1423,57 @@
                 <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
                   {{ "CHECK_OUR_VIDEO" | translate }}
                 </p>
-
-                <div
-                  class="home-btn pt-2 margin-footer teks"
-                  data-aos="fade-right"
-                >
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#requestFreeDemo"
-                    class="btn btn-1 col-md-8"
-                    style="
-                      border-radius: 7px;
-                      opacity: 1;
-                      background-color: #0b69fd;
-                      padding: 4px;
-                      border: 2px solid #fff;
-                    "
+                <div class="row justify-content-start">
+                  <div
+                    class="home-btn pt-2 margin-footer teks"
+                    data-aos="fade-right"
                   >
-                    <div
-                      class="d-flex justify-content-start align-items-center"
-                    >
-                      <div id="logo-video" style="margin-left: 25px"></div>
-                      <span
-                        style="
-                          color: white;
-                          font-size: 12px;
-                          margin-left: 15px;
-                          padding-right: 35px;
-                        "
-                        >Rantai Introduction</span
+                    <a href="#" class="btn col-md-8 col-sm-8 btn-footer">
+                      <div
+                        class="d-flex justify-content-start align-items-center"
                       >
-                    </div>
-                  </a>
-                </div>
+                        <div id="logo-video" style="margin-left: 25px"></div>
+                        <span class="btn-footer-text">Rantai Introduction</span>
+                      </div>
+                    </a>
+                  </div>
 
-                <div class="home-btn pt-2 teks" data-aos="fade-right ">
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#requestFreeDemo"
-                    class="btn btn-1 col-md-8"
-                    style="
-                      border-radius: 7px;
-                      opacity: 1;
-                      background-color: #fff;
-                      padding: 4px;
-                      border: 2px solid #0b69fd;
-                    "
-                  >
-                    <div
-                      class="d-flex justify-content-start align-items-center"
-                    >
-                      <div id="logo-video" style="margin-left: 25px"></div>
-                      <span
-                        style="
-                          color: #0b69fd;
-                          font-size: 12px;
-                          margin-left: 15px;
-                          padding-right: 3px;
-                        "
-                        >Marketplace Introduction</span
+                  <div class="home-btn pt-2 teks" data-aos="fade-right ">
+                    <a href="#" class="btn col-md-8 col-sm-8 btn-footer">
+                      <div
+                        class="d-flex justify-content-start align-items-center"
                       >
-                    </div>
-                  </a>
-                </div>
+                        <div id="logo-video" style="margin-left: 25px"></div>
+                        <span class="btn-footer-text"
+                          >Marketplace Introduction</span
+                        >
+                      </div>
+                    </a>
+                  </div>
 
-                <div class="home-btn pt-2 teks" data-aos="fade-right">
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#requestFreeDemo"
-                    class="btn btn-1 col-md-8"
-                    style="
-                      border-radius: 7px;
-                      opacity: 1;
-                      background-color: #0b69fd;
-                      padding: 4px;
-                      border: 2px solid #fff;
-                    "
-                  >
-                    <div
-                      class="d-flex justify-content-start align-items-center"
-                    >
-                      <div id="logo-video" style="margin-left: 25px"></div>
-                      <span
-                        style="
-                          color: white;
-                          font-size: 12px;
-                          margin-left: 15px;
-                          padding-right: 28px;
-                        "
-                        >Marketplace Tutorial</span
+                  <div class="home-btn pt-2 teks" data-aos="fade-right">
+                    <a href="#" class="btn col-md-8 col-sm-8 btn-footer">
+                      <div
+                        class="d-flex justify-content-start align-items-center"
                       >
-                    </div>
-                  </a>
-                </div>
+                        <div id="logo-video" style="margin-left: 25px"></div>
+                        <span class="btn-footer-text"
+                          >Marketplace Tutorial</span
+                        >
+                      </div>
+                    </a>
+                  </div>
 
-                <div class="home-btn pt-2 teks" data-aos="fade-right">
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#requestFreeDemo"
-                    class="btn btn-1 col-md-8"
-                    style="
-                      border-radius: 7px;
-                      opacity: 1;
-                      background-color: #0b69fd;
-                      padding: 4px;
-                      border: 2px solid #fff;
-                    "
-                  >
-                    <div
-                      class="d-flex justify-content-start align-items-center"
-                    >
-                      <div id="logo-video" style="margin-left: 25px"></div>
-                      <span
-                        style="
-                          color: white;
-                          font-size: 12px;
-                          margin-left: 15px;
-                          padding-right: 81px;
-                        "
-                        >Rantai Talk</span
+                  <div class="home-btn pt-2 teks" data-aos="fade-right">
+                    <a href="#" class="btn col-md-8 col-sm-6 btn-footer">
+                      <div
+                        class="d-flex justify-content-start align-items-center"
                       >
-                    </div>
-                  </a>
+                        <div id="logo-video" style="margin-left: 25px"></div>
+                        <span class="btn-footer-text">Rantai Talk</span>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
 
