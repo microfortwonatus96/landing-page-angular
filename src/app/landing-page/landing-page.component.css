@@ -190,6 +190,9 @@ p.ls-c-1 {
   .warnaTeks{
     color: #848484;
   }
+  .ukuran-font {
+    font-size: 18px;
+  }
 }
 
 section {
@@ -1211,6 +1214,10 @@ input[type="number"] {
   .teks{
     text-align: center;
   }
+  .ukuran-font {
+    font-size: 18px;
+  }
+
 }
 
 @media only screen and (min-device-width:280px) and (max-device-width:480px) and (orientation:portrait) {
@@ -1224,6 +1231,9 @@ input[type="number"] {
   }
   .teks{
     text-align: center;
+  }
+  .ukuran-font {
+    font-size: 18px;
   }
 
   .home {
@@ -1246,6 +1256,10 @@ input[type="number"] {
 
   .teks{
     text-align: center;
+  }
+
+  .ukuran-font {
+    font-size: 18px;
   }
 
   .f-13 {
