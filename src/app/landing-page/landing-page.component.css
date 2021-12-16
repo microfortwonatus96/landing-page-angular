@@ -182,6 +182,14 @@ p.ls-c-1 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
+  .teks{
+    text-align: center;
+  }
+
+  .warnaTeks{
+    color: #848484;
+  }
 }
 
 section {
@@ -629,7 +637,7 @@ input[type="number"] {
 }
 
 #contact .footer-top {
-  padding: 60px 0 30px 0;
+  padding: 30px 0 15px 0;
   position: relative;
 }
 
@@ -1195,12 +1203,27 @@ input[type="number"] {
 @media only screen and (min-device-width:200px) and (max-device-width:320px) and (orientation:portrait) {
   .wave-bg-1, .wave-bg-2, .wave-bg-3 {
     background-position: 0% 100%;
+    
+  }
+ .one-section-p{
+    color: white;
+  }
+  .teks{
+    text-align: center;
   }
 }
 
 @media only screen and (min-device-width:280px) and (max-device-width:480px) and (orientation:portrait) {
   .wave-bg-1, .wave-bg-2, .wave-bg-3 {
     background-position: 0% 100%;
+
+  }
+
+  .one-section-p{
+    color: white;
+  }
+  .teks{
+    text-align: center;
   }
 
   .home {
@@ -1219,6 +1242,10 @@ input[type="number"] {
 @media only screen and (min-device-width: 320px) and (max-device-width:480px) and (orientation:portrait) {
   .services.icon-box {
     font-size: 0.813rem;
+  }
+
+  .teks{
+    text-align: center;
   }
 
   .f-13 {
@@ -1504,6 +1531,9 @@ input[type="number"] {
   width: 25px;
   height: auto;
 }
+.text-signup {
+  padding:0 15px;
+}
 
 /* mhimik */
 .container .home-text .one-section-p{
@@ -1555,4 +1585,17 @@ input[type="number"] {
 
 .logo-fitur{
   content: url('../../assets/images/FEATURES.png')
+}
+ 
+.button1{
+  border-radius: 24px;
+  opacity: 1;
+  /* min-width: 100%; */
+  padding: 5px;
+  border: 1px solid #fff;
+  background-color:#0B69FD;
+}
+
+.margin-footer{
+  margin-top: 15px;
 }
