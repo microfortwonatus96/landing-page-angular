@@ -1635,3 +1635,10 @@ input[type="number"] {
 .margin-footer {
   margin-top: 15px;
 }
+
+#logo-vid {
+  content: url('../../assets/images/PV.png');
+  width: 20px;
+  height: 20px;
+  background-image: blue;
+}
