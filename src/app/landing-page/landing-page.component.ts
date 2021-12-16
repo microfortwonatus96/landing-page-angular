@@ -17,6 +17,10 @@ import { UserService } from '../service/user.service';
 import Swal from 'sweetalert2';
 import { lang } from '../lang/lang.interface';
 import { ActivatedRoute, Router } from '@angular/router';
+import { SubscriptionService } from '../service/subscribtion.service';
+import { ISubscribe } from '../models/subscribe.model';
+import { RefferalCodeService } from '../service/referral-code.service';
+import { IReferralCode } from '../models/referral.model';
 declare var $: any;
 
 @Component({
@@ -93,14 +97,23 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   othersCity: string = null;
   save: boolean = false;
   delay: number = 3000;
+  pageSize: number = 20;
   versionPacth: string;
+  listBenifit: ISubscribe[] = [];
+  typelistFree: any[] = [];
+  typelistErp: any[] = [];
+  listReferraCode: IReferralCode[] = [];
+  sectionFree: IReferralCode[] = [];
+  sectionPaid: IReferralCode[] = [];
   constructor(
     public translate: TranslateService,
     public langService: LangService,
     private formBuilder: FormBuilder,
     private userService: UserService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private subscriptionService: SubscriptionService,
+    private referralCodeService: RefferalCodeService
   ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
@@ -152,6 +165,23 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         bg1.style.marginBottom = '-100px';
       }
     };
+
+    this.subscriptionService
+      .getPackage()
+      .pipe(takeWhile(() => this.alive))
+      .subscribe((response) => {
+        if (response) {
+          this.typelistFree = response[0].benefitList;
+          this.typelistErp = response[1].benefitList;
+          console.log(this.typelistFree);
+          // response.forEach((v, i) => {
+          //   if (v.type == '') {
+          //     this.typelistFree.push(v.benefitList)
+          //   }
+          // });
+        }
+      });
+    this.loadReferralCode();
   }
 
   goto(val) {
@@ -161,7 +191,20 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       queryParamsHandling: 'merge',
     });
   }
-
+  loadReferralCode() {
+    this.referralCodeService
+      .referralCode(this.pageSize)
+      .pipe(takeWhile(() => this.alive))
+      .subscribe((response) => {
+        if (response) {
+          this.listReferraCode = response;
+          response.forEach((v, i) => {
+            if (i < 10) this.sectionFree.push(v);
+            if (i > 10 && i < 20) this.sectionPaid.push(v);
+          });
+        }
+      });
+  }
   getProvince() {
     this.userService
       .getProvince()

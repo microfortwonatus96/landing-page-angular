@@ -136,7 +136,7 @@
                 <!-- {{ "New_Next3" | translate }} -->
               </h1>
 
-              <p data-aos="fade-right" class="one-section-p">
+              <p data-aos="fade-right" class="one-section-p fw-bold">
                 {{ "Follow_The_Program" | translate }}
               </p>
               <p data-aos="fade-right" class="one-section-p">
@@ -630,26 +630,29 @@
             <div
               class="
                 col-lg-3 col-md-6 col-sm-6
-                d-flex
                 align-items-stretch
-                mt-4 mt-md-0
+                mt-4
+                row
                 zoom-subscription
-                p-3
+                p-4
                 img-resize
               "
               data-aos="zoom-in"
               data-aos-delay="100"
+              *ngIf="typelistFree.length > 0"
             >
               <div class="img-subsciption">
                 <div id="silver" class="col sub">
                   <div class="d-flex justify-content-start">
                     <div class="paket-rantai img-fluid"></div>
                     <div class="row justify-content-start">
-                      <div class="col-md-12">
-                        <div class="fw-bold">RANTAI MARKETPLACE</div>
+                      <div class="text-left">
+                        <div class="fw-bold text-left f-14">
+                          RANTAI MARKETPLACE
+                        </div>
                       </div>
-                      <div class="d-flex justify-content-center">
-                        <div class="text-center">
+                      <div class="row justify-content-start">
+                        <div class="text-left f-12">
                           <sup class="text-remove">Rp 490.000</sup>
                           <span class="fw-bold">GRATIS</span>
                           <sub>Selamanya</sub>
@@ -662,59 +665,25 @@
                   <div class="container">
                     <div class="row">
                       <div class="mt-4 mb-4">
-                        <div class="d-flex justify-content-start">
+                        <ng-container
+                          *ngFor="let free of typelistFree; let i = index"
+                        >
                           <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "Up_to_25" | translate }}
+                            class="
+                              mt-3
+                              d-flex
+                              justify-content-start
+                              align-items-center
+                            "
+                          >
+                            <div
+                              class="bd-highlight box-list icon-valid mt-1 me-2"
+                            ></div>
+                            <div class="bd-highlight text-start fw-bold f-14">
+                              {{ free.benefit | titlecase }}
+                            </div>
                           </div>
-                        </div>
-
-                        <div class="d-flex justify-content-start mt-2">
-                          <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "Up_to_4000" | translate }}
-                          </div>
-                        </div>
-
-                        <div class="d-flex justify-content-start mt-2">
-                          <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "2000_Item_slots" | translate }}
-                          </div>
-                        </div>
-
-                        <div class="d-flex justify-content-start mt-2">
-                          <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "1_weekday" | translate }}
-                          </div>
-                        </div>
-
-                        <div class="d-flex justify-content-start mt-2">
-                          <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "Up_to_16" | translate }}
-                          </div>
-                        </div>
-
-                        <div class="d-flex justify-content-start mt-2">
-                          <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "RantaiTalk_app1" | translate }}
-                          </div>
-                        </div>
+                        </ng-container>
                       </div>
                     </div>
                   </div>
@@ -726,15 +695,16 @@
             <div
               class="
                 col-lg-3 col-md-6 col-sm-6
-                d-flex
-                align-items-stretch
-                mt-4 mt-md-0
+                mt-4
+                row
                 zoom-subscription
-                p-3
+                p-4
+                align-items-stretch
                 img-resize
               "
               data-aos="zoom-in"
               data-aos-delay="100"
+              *ngIf="typelistErp.length > 0"
             >
               <div class="img-subsciption">
                 <div id="silver" class="col sub">
@@ -742,10 +712,10 @@
                     <div class="paket-rantaierp img-fluid"></div>
                     <div class="row justify-content-start">
                       <div class="text-left">
-                        <div class="fw-bold text-left">RANTAI ERP</div>
+                        <div class="fw-bold f-14">RANTAI ERP</div>
                       </div>
                       <div class="row justify-content-start">
-                        <div class="text-left">
+                        <div class="text-left f-12">
                           <sup>Rp </sup>
                           <span class="fw-bold">000.000</span>
                           <sub>/month</sub>
@@ -758,77 +728,25 @@
                   <div class="container">
                     <div class="row">
                       <div class="mt-4 mb-4">
-                        <div class="d-flex justify-content-start">
+                        <ng-container
+                          *ngFor="let erp of typelistErp; let i = index"
+                        >
                           <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "Up_to_100" | translate }} (<b>25</b>)
+                            class="
+                              mt-2
+                              d-flex
+                              justify-content-start
+                              align-items-center
+                            "
+                          >
+                            <div
+                              class="bd-highlight box-list icon-valid mt-1 me-2"
+                            ></div>
+                            <div class="bd-highlight text-start fw-bold f-14">
+                              {{ erp.benefit | titlecase }}
+                            </div>
                           </div>
-                        </div>
-
-                        <div class="d-flex justify-content-start mt-2">
-                          <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "Up_to_5000" | translate }}
-                          </div>
-                        </div>
-
-                        <div class="d-flex justify-content-start mt-2">
-                          <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "4000_Item_slots" | translate }}
-                          </div>
-                        </div>
-
-                        <div class="d-flex justify-content-start mt-2">
-                          <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "Integrate_with" | translate }}
-                          </div>
-                        </div>
-
-                        <div class="d-flex justify-content-start mt-2">
-                          <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "2_weekday" | translate }}
-                          </div>
-                        </div>
-
-                        <div class="d-flex justify-content-start mt-2">
-                          <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "Up_to_32" | translate }}
-                          </div>
-                        </div>
-
-                        <div class="d-flex justify-content-start mt-2">
-                          <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "RantaiTalk_app2" | translate }}
-                          </div>
-                        </div>
-
-                        <div class="d-flex justify-content-start mt-2">
-                          <div
-                            class="bd-highlight box-list icon-valid mt-1 me-2"
-                          ></div>
-                          <div class="bd-highlight text-start">
-                            {{ "Multi_Gudang" | translate }}
-                          </div>
-                        </div>
+                        </ng-container>
                       </div>
                     </div>
                   </div>
@@ -869,74 +787,61 @@
           saat ini</span
         >
       </div>
-      <div class="row justify-content-center">
+      <div
+        class="row justify-content-center"
+        *ngIf="listReferraCode.length > 0"
+      >
         <div
           class="col-md-4 col-sm-12 mt-md-0 p-3"
           data-aos="zoom-in"
           data-aos-delay="100"
         >
-          <div class="box-referral mb-3 zoom-subscription">
-            <div class="box-referral-content">
-              <div class="d-flex justify-content-start align-items-center">
-                <div class="col-md-2 col">
-                  <div class="ranktop"></div>
+          <ng-container *ngFor="let ref of sectionFree; let i = index">
+            <div class="box-referral mb-3 pointer">
+              <div class="box-referral-content">
+                <div class="d-flex justify-content-start align-items-center">
+                  <div class="col-md-2 col">
+                    <div [ngClass]="i < 5 ? 'rank' + i : 'rankbox'">
+                      <span class="ranknum"> {{ i }}</span>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col fw-bold text-left">
+                    {{ ref.email }}
+                  </div>
+                  <div class="col-md-3 col point-color">
+                    {{ ref.point }} Poin
+                  </div>
                 </div>
-                <div class="col-md-7 col fw-bold text-left">
-                  Ini pengguna/Toko Online
-                </div>
-                <div class="col-md-3 col point-color">000 Poin</div>
               </div>
             </div>
-          </div>
-          <div class="box-referral mb-3 zoom-subscription">
-            <div class="box-referral-content">
-              <div class="d-flex justify-content-start align-items-center">
-                <div class="col-md-2 col">
-                  <div class="rank2"></div>
-                </div>
-                <div class="col-md-7 col fw-bold text-left">
-                  Ini pengguna/Toko Online
-                </div>
-                <div class="col-md-3 col point-color">000 Poin</div>
-              </div>
-            </div>
-          </div>
-          <div class="box-referral mb-3 zoom-subscription">
-            <div class="box-referral-content">
-              <div class="d-flex justify-content-start align-items-center">
-                <div class="col-md-2 col">
-                  <div class="rank3"></div>
-                </div>
-                <div class="col-md-7 col fw-bold text-left">
-                  Ini pengguna/Toko Online
-                </div>
-                <div class="col-md-3 col point-color">000 Poin</div>
-              </div>
-            </div>
-          </div>
-          <div class="box-referral mb-3 zoom-subscription">
-            <div class="box-referral-content">
-              <div class="d-flex justify-content-start align-items-center">
-                <div class="col-md-2 col">
-                  <div class="rank4"></div>
-                </div>
-                <div class="col-md-7 col fw-bold text-left">
-                  Ini pengguna/Toko Online
-                </div>
-                <div class="col-md-3 col point-color">000 Poin</div>
-              </div>
-            </div>
-          </div>
+          </ng-container>
         </div>
 
         <div
           class="col-md-4 col-sm-6 p-3"
           data-aos="zoom-in"
           data-aos-delay="100"
+          *ngIf="sectionPaid.length > 0"
         >
-          <div class="col-md-12 box-referral mb-3 zoom-subscription">
-            <div class="box-referral-content point-color">BOX 2</div>
-          </div>
+          <ng-container *ngFor="let ref of sectionPaid; let i = index">
+            <div class="box-referral mb-3 pointer">
+              <div class="box-referral-content">
+                <div class="d-flex justify-content-start align-items-center">
+                  <div class="col-md-2 col">
+                    <div class="rankbox">
+                      <span class="ranknum"> {{ i }}</span>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col fw-bold text-left">
+                    {{ ref.email }}
+                  </div>
+                  <div class="col-md-3 col point-color">
+                    {{ ref.point }} Poin
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
         </div>
       </div>
 

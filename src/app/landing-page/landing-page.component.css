@@ -627,6 +627,10 @@ input[type="number"] {
   font-size: 0.75rem;
 }
 
+.f-14 {
+  font-size: 0.875rem;
+}
+
 .f-12-white {
   font-size: 0.75rem;
   color: #fff !important;
@@ -652,7 +656,7 @@ input[type="number"] {
 }
 
 .footer {
-  background-color:#2c4a7a;
+  background-color: #2c4a7a;
 }
 
 .click-lang {
@@ -1481,6 +1485,7 @@ input[type="number"] {
 
 #silver {
   padding: 10px 20px;
+  margin-top: 10px;
 }
 
 .text-remove {
@@ -1516,31 +1521,31 @@ input[type="number"] {
   font-weight: bold;
 }
 
-.ranktop {
+.rank0 {
   content: url('../../assets/images/ranktop.svg');
   width: 25px;
   height: auto;
 }
 
-.rank2 {
+.rank1 {
   content: url('../../assets/images/rank2.svg');
   width: 25px;
   height: auto;
 }
 
-.rank3 {
+.rank2 {
   content: url('../../assets/images/rank3.svg');
   width: 25px;
   height: auto;
 }
 
-.rank4 {
+.rank3 {
   content: url('../../assets/images/rank4.svg');
   width: 25px;
   height: auto;
 }
 
-.rank5{
+.rank4 {
   content: url('../../assets/images/rank5.svg');
   width: 25px;
   height: auto;
@@ -1549,9 +1554,22 @@ input[type="number"] {
   padding:0 15px;
 }
 
+.rankbox {
+  border: 1px solid #F2F5FA;
+  width: 25px;
+  height: 25px;
+  background: #F2F5FA;
+  border-radius: 50%;
+}
+
+.ranknum {
+  position: relative;
+  left: 15%;
+}
+
 /* mhimik */
-.container .home-text .one-section-p{
-  font-size:13px;
+.container .home-text .one-section-p {
+  font-size: 13px;
   line-height: 18px;
   color: rgb(17, 3, 3);
 }
@@ -1579,25 +1597,25 @@ input[type="number"] {
   height: 30px;
 }
 
-#border{
+#border {
   border: 2px solid #fff;
 }
 
 #logo-video {
   content: url('../../assets/images/videowhite.svg');
-  width:20px;
+  width: 20px;
   height: 20px;
- background-color: #0B69FD;
+  background-color: #0B69FD;
 }
 
 #logo-videoo {
   content: url('../../assets/images/videowhite.svg');
-  width:20px;
+  width: 20px;
   height: 20px;
   background-image: blue;
 }
 
-.logo-fitur{
+.logo-fitur {
   content: url('../../assets/images/FEATURES.png')
 }
  
