@@ -1692,3 +1692,38 @@ input[type="number"] {
 .margin-footer {
   margin-top: 15px;
 }
+
+#icon-twitter {
+  content: url('../../assets/images/twitterbaru.svg');
+  width: 20px;
+  height: 20px;
+  margin-left: 35px;
+}
+
+#icon-instagram {
+  content: url('../../assets/images/ig.svg');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#icon-linkedin {
+  content: url('../../assets/images/link.svg');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#icon-facebook {
+  content: url('../../assets/images/fb.svg');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#icon-youtube {
+  content: url('../../assets/images/ytb.svg');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
