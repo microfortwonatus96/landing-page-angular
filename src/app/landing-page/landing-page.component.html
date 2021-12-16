@@ -124,11 +124,10 @@
     class="parallax-section home d-flex align-items-center"
   >
     <div class="container">
-      
       <div id="slider-one ">
-        <div class="d-flex justify-content-between ">
-          <div class="col-md-7 col-sm-6 ">
-            <article class="home-text ">
+        <div class="d-flex justify-content-between">
+          <div class="col-md-7 col-sm-6">
+            <article class="home-text">
               <h1 data-aos="fade-right" class="f-rantai">
                 {{ "Invite_Friends" | translate }} <br />
                 {{ "Chain_Get" | translate }} <br />
@@ -161,10 +160,12 @@
                       href="#"
                       data-bs-toggle="modal"
                       data-bs-target="#requestFreeDemo"
-                      class="btn btn-primary btn-1 button1 "
-                     
+                      class="btn btn-primary btn-1 button1"
                     >
-                      <div class="text-signup" style="color: white; font-size: 14px;">
+                      <div
+                        class="text-signup"
+                        style="color: white; font-size: 14px"
+                      >
                         {{ "Sign_Up_Now1" | translate }}
                       </div>
                     </a>
@@ -224,7 +225,6 @@
 
               <div class="home-btn" data-aos="fade-right">
                 <div class="row justify-content-start">
-                 
                   <div class="col-md-4 col-sm-5">
                     <a
                       href="#"
@@ -254,7 +254,6 @@
                   </div>
                 </div>
               </div>
-
             </article>
           </div>
           <div class="col-md-5 col-md-6">
@@ -797,7 +796,7 @@
                 <div class="d-flex justify-content-start align-items-center">
                   <div class="col-md-2 col">
                     <div [ngClass]="i < 5 ? 'rank' + i : 'rankbox'">
-                      <span class="ranknum"> {{ i }}</span>
+                      <span class="ranknum"> {{ i + 1 }}</span>
                     </div>
                   </div>
                   <div class="col-md-7 col fw-bold text-left">
@@ -842,26 +841,23 @@
 
       <div class="home-btn col-md-12 col-sm-3" data-aos="fade-right">
         <div class="row justify-content-start">
-          <div class="" style="margin-top: 25px; text-align: center;">
-            
+          <div class="" style="margin-top: 25px; text-align: center">
             <a
               href="#"
               data-bs-toggle="modal"
               data-bs-target="#requestFreeDemo"
-              class="btn btn-primary btn-1 button1 "
- 
-        
+              class="btn btn-primary btn-1 button1"
             >
-              <div class="btn-title-lets-start" style="color: white; font-size: 12px;">
-                {{ "Read_More" | translate }} 
+              <div
+                class="btn-title-lets-start"
+                style="color: white; font-size: 12px"
+              >
+                {{ "Read_More" | translate }}
               </div>
             </a>
-
           </div>
         </div>
       </div>
-
-
     </div>
   </section>
 
@@ -1388,24 +1384,18 @@
           <div class="home-btn col-md-3 col-sm-3" data-aos="fade-right">
             <div class="row justify-content-start">
               <div class="" style="margin-top: 25px">
-                
                 <a
                   href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#requestFreeDemo"
                   class="btn btn-primary btn-1 button1"
-                  style="margin-left: 20px;"
-            
+                  style="margin-left: 20px"
                 >
                   <div class="btn-title-lets-start" style="color: white">
-                    {{ "CONTACT_US" | translate }} 
+                    {{ "CONTACT_US" | translate }}
                   </div>
                 </a>
-
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="row justify-content-between">
@@ -1414,7 +1404,6 @@
               border-top: 1px solid rgb(199, 193, 193);
               border-bottom: 1px solid rgb(199, 193, 193);
               padding-bottom: 70px;
-          
             "
           >
             <div class="row justify-content-between">
@@ -1426,7 +1415,7 @@
                   class="row align-items-start"
                   [style.padding-right]="'25px'"
                 >
-                  <p data-aos="zoom-in" class="pt-3 " data-aos-delay="150" >
+                  <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
                     {{ "Rantai_Is" | translate }}
                   </p>
                 </div>
@@ -1437,7 +1426,10 @@
                   {{ "CHECK_OUR_VIDEO" | translate }}
                 </p>
 
-                <div class="home-btn pt-2 margin-footer  teks" data-aos="fade-right" >
+                <div
+                  class="home-btn pt-2 margin-footer teks"
+                  data-aos="fade-right"
+                >
                   <a
                     href="#"
                     data-bs-toggle="modal"
@@ -1456,7 +1448,12 @@
                     >
                       <div id="logo-video" style="margin-left: 25px"></div>
                       <span
-                        style="color: white; font-size: 12px; margin-left: 15px; padding-right: 35px;"
+                        style="
+                          color: white;
+                          font-size: 12px;
+                          margin-left: 15px;
+                          padding-right: 35px;
+                        "
                         >Rantai Introduction</span
                       >
                     </div>
@@ -1482,14 +1479,19 @@
                     >
                       <div id="logo-video" style="margin-left: 25px"></div>
                       <span
-                        style="color: #0b69fd; font-size: 12px; margin-left: 15px; padding-right: 3px;"
+                        style="
+                          color: #0b69fd;
+                          font-size: 12px;
+                          margin-left: 15px;
+                          padding-right: 3px;
+                        "
                         >Marketplace Introduction</span
                       >
                     </div>
                   </a>
                 </div>
 
-                <div class="home-btn pt-2 teks" data-aos="fade-right" >
+                <div class="home-btn pt-2 teks" data-aos="fade-right">
                   <a
                     href="#"
                     data-bs-toggle="modal"
@@ -1508,14 +1510,19 @@
                     >
                       <div id="logo-video" style="margin-left: 25px"></div>
                       <span
-                        style="color: white; font-size: 12px; margin-left: 15px; padding-right: 28px;"
+                        style="
+                          color: white;
+                          font-size: 12px;
+                          margin-left: 15px;
+                          padding-right: 28px;
+                        "
                         >Marketplace Tutorial</span
                       >
                     </div>
                   </a>
                 </div>
 
-                <div class="home-btn pt-2 teks" data-aos="fade-right" >
+                <div class="home-btn pt-2 teks" data-aos="fade-right">
                   <a
                     href="#"
                     data-bs-toggle="modal"
@@ -1530,11 +1537,16 @@
                     "
                   >
                     <div
-                      class="d-flex justify-content-start align-items-center" 
+                      class="d-flex justify-content-start align-items-center"
                     >
                       <div id="logo-video" style="margin-left: 25px"></div>
                       <span
-                        style="color: white; font-size: 12px; margin-left: 15px; padding-right: 81px;"
+                        style="
+                          color: white;
+                          font-size: 12px;
+                          margin-left: 15px;
+                          padding-right: 81px;
+                        "
                         >Rantai Talk</span
                       >
                     </div>
@@ -1624,9 +1636,10 @@
   </div>
 
   <div
-    class=" d-flex align-items-center justify-content-center "
-    style="background-color: #0b69fd; padding-top: 1px;">
-    <p class="text-center text-white ">
+    class="d-flex align-items-center justify-content-center"
+    style="background-color: #0b69fd; padding-top: 1px"
+  >
+    <p class="text-center text-white">
       &copy; {{ newDate }}&nbsp;PT Cyberindo Sinergi Sistem
     </p>
   </div>

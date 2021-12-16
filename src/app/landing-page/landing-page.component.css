@@ -183,11 +183,11 @@ p.ls-c-1 {
     transition-delay: 0 !important;
   }
 
-  .teks{
+  .teks {
     text-align: center;
   }
 
-  .warnaTeks{
+  .warnaTeks {
     color: #848484;
   }
 }
@@ -1207,12 +1207,14 @@ input[type="number"] {
 @media only screen and (min-device-width:200px) and (max-device-width:320px) and (orientation:portrait) {
   .wave-bg-1, .wave-bg-2, .wave-bg-3 {
     background-position: 0% 100%;
-    
+
   }
- .one-section-p{
+
+  .one-section-p {
     color: white;
   }
-  .teks{
+
+  .teks {
     text-align: center;
   }
 }
@@ -1223,10 +1225,11 @@ input[type="number"] {
 
   }
 
-  .one-section-p{
+  .one-section-p {
     color: white;
   }
-  .teks{
+
+  .teks {
     text-align: center;
   }
 
@@ -1248,7 +1251,7 @@ input[type="number"] {
     font-size: 0.813rem;
   }
 
-  .teks{
+  .teks {
     text-align: center;
   }
 
@@ -1397,8 +1400,8 @@ input[type="number"] {
   }
 
   #parallax {
-    background: rgb(9, 96, 227);
-    background: linear-gradient(90deg, rgba(9, 96, 227, 1) 0%, rgba(3, 52, 85, 1) 100%);
+    background: rgb(223, 235, 254);
+    background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
   }
 
   #subsciption {
@@ -1536,8 +1539,9 @@ input[type="number"] {
   width: 25px;
   height: auto;
 }
+
 .text-signup {
-  padding:0 15px;
+  padding: 0 15px;
 }
 
 .rankbox {
@@ -1604,16 +1608,16 @@ input[type="number"] {
 .logo-fitur {
   content: url('../../assets/images/FEATURES.png')
 }
- 
-.button1{
+
+.button1 {
   border-radius: 24px;
   opacity: 1;
   /* min-width: 100%; */
   padding: 5px;
   border: 1px solid #fff;
-  background-color:#0B69FD;
+  background-color: #0B69FD;
 }
 
-.margin-footer{
+.margin-footer {
   margin-top: 15px;
 }
