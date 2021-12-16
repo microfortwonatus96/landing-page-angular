@@ -1642,3 +1642,38 @@ input[type="number"] {
   height: 20px;
   background-image: blue;
 }
+
+#icon-twitter {
+  content: url('../../assets/images/Icon-twitter.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 35px;
+}
+
+#icon-instagram {
+  content: url('../../assets/images/Icon-instagram.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#icon-linkedin {
+  content: url('../../assets/images/Icon-linkedin.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#icon-facebook {
+  content: url('../../assets/images/Icon-facebook.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#icon-youtube {
+  content: url('../../assets/images/Icon-youtube.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}

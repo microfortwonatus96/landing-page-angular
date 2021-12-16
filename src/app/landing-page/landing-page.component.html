@@ -1,28 +1,17 @@
 <header id="home" class="">
   <nav id="navbar" class="navbar navbar-expand-md fixed-top">
     <div class="container">
-      <a
-        class="
+      <a class="
           navbar-brand
           fw-bold
           d-flex
           justify-content-center
           align-items-center
-        "
-        href="/"
-        style="gap: 5px"
-      >
+        " href="/" style="gap: 5px">
         <div class="logo-header" loading="lazy"></div>
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavbar"
-        aria-controls="collapsibleNavbar"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
+        aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -39,48 +28,22 @@
           </li>
 
           <li class="nav-item">
-            <div
-              class="nav-link pointer d-flex justify-content-center"
-              (click)="download()"
-            >
+            <div class="nav-link pointer d-flex justify-content-center" (click)="download()">
               <div>DOWNLOAD</div>
               &nbsp;
               <div class="icon-chev pl-2 mt-1" id="chevron1"></div>
             </div>
             <div id="menu-download" class="mt-2">
-              <a
-                class="nav-link text-left"
-                href="https://rantai.tech/file/rantai.exe"
-                download
-                >RANTAI INSTALLER</a
-              >
-              <a
-                class="nav-link text-left"
-                href="https://rantai.tech/file/rantaitalk.exe"
-                download
-                >RANTAI TALK</a
-              >
+              <a class="nav-link text-left" href="https://rantai.tech/file/rantai.exe" download>RANTAI INSTALLER</a>
+              <a class="nav-link text-left" href="https://rantai.tech/file/rantaitalk.exe" download>RANTAI TALK</a>
 
-              <a
-                class="nav-link text-left"
-                href="https://rantai.tech/file/rantaitalk trial.exe"
-                download
-                >RANTAI TALK TRIAL</a
-              >
+              <a class="nav-link text-left" href="https://rantai.tech/file/rantaitalk trial.exe" download>RANTAI TALK
+                TRIAL</a>
 
-              <a
-                class="nav-link text-left"
-                href="https://rantai.tech/file/auditinstaller.exe"
-                download
-                >AUDIT</a
-              >
+              <a class="nav-link text-left" href="https://rantai.tech/file/auditinstaller.exe" download>AUDIT</a>
 
-              <a
-                class="nav-link text-left"
-                href="https://rantai.tech/file/auditpatch.exe"
-                download
-                >AUDIT PATCH {{ versionPacth }}</a
-              >
+              <a class="nav-link text-left" href="https://rantai.tech/file/auditpatch.exe" download>AUDIT PATCH {{
+                versionPacth }}</a>
             </div>
           </li>
 
@@ -89,13 +52,8 @@
           </li>
 
           <li class="nav-item">
-            <div
-              class="nav-link click-lang lang-change"
-              (click)="showLanguage()"
-            >
-              <div
-                [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
-              ></div>
+            <div class="nav-link click-lang lang-change" (click)="showLanguage()">
+              <div [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"></div>
               <span> {{ langService.lang === "en" ? "EN" : "ID" }}</span>
               <div class="icon-chev" id="chevron"></div>
             </div>
@@ -118,11 +76,7 @@
 </header>
 
 <main id="main">
-  <section
-    id="parallax"
-    data-aos="fade-up"
-    class="parallax-section home d-flex align-items-center"
-  >
+  <section id="parallax" data-aos="fade-up" class="parallax-section home d-flex align-items-center">
     <div class="container">
       <div id="slider-one ">
         <div class="d-flex justify-content-between">
@@ -156,31 +110,17 @@
               <div class="home-btn" data-aos="fade-right">
                 <div class="row justify-content-start">
                   <div class="col-md-4 col-sm-5">
-                    <a
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#requestFreeDemo"
-                      class="btn btn-primary btn-1 button1"
-                    >
-                      <div
-                        class="text-signup"
-                        style="color: white; font-size: 14px"
-                      >
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#requestFreeDemo"
+                      class="btn btn-primary btn-1 button1">
+                      <div class="text-signup" style="color: white; font-size: 14px">
                         {{ "Sign_Up_Now1" | translate }}
                       </div>
                     </a>
                   </div>
                   <div class="col-md-4 col-sm-7">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="app-logo"
-                    >
-                      <div
-                        class="img-google-play app-store"
-                        loading="lazy"
-                      ></div>
+                    <a href="https://play.google.com/store/apps/details?id=com.css.rantai" target="_blank"
+                      rel="noopener noreferrer" class="app-logo">
+                      <div class="img-google-play app-store" loading="lazy"></div>
                     </a>
                   </div>
                 </div>
@@ -226,13 +166,8 @@
               <div class="home-btn" data-aos="fade-right">
                 <div class="row justify-content-start">
                   <div class="col-md-4 col-sm-5">
-                    <a
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#requestFreeDemo"
-                      class="btn btn-primary"
-                      id="button1"
-                    >
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#requestFreeDemo" class="btn btn-primary"
+                      id="button1">
                       <div class="btn-title-lets-start" style="color: white">
                         {{ "Sign_Up_Now1" | translate }}
                       </div>
@@ -240,16 +175,9 @@
                   </div>
 
                   <div class="col-md-4 col-sm-7">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="app-logo"
-                    >
-                      <div
-                        class="img-google-play app-store"
-                        loading="lazy"
-                      ></div>
+                    <a href="https://play.google.com/store/apps/details?id=com.css.rantai" target="_blank"
+                      rel="noopener noreferrer" class="app-logo">
+                      <div class="img-google-play app-store" loading="lazy"></div>
                     </a>
                   </div>
                 </div>
@@ -264,23 +192,12 @@
 
       <div class="d-flex justify-content-start s-3">
         <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-            checked
-            (click)="prevBtn()"
-          />
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked
+            (click)="prevBtn()" />
         </div>
         <div class="form-check">
-          <input
-            (click)="nextBtn()"
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-          />
+          <input (click)="nextBtn()" class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault2" />
         </div>
       </div>
     </div>
@@ -308,10 +225,7 @@
 
         <div class="d-flex justify-content-center mt-4">
           <div class="col-md-6">
-            <span
-              class="text-center"
-              style="color: rgb(167, 183, 199); font-size: 12px"
-            >
+            <span class="text-center" style="color: rgb(167, 183, 199); font-size: 12px">
               Donec dapibus mauris id odio ornare tempus. Duis sit amet accumsan
               justo, quis tempor ligula. Quisque quis pharetra felis. Ut quis
               consequat orci, at consequat felis. Suspendisse auctor laoreet
@@ -323,10 +237,7 @@
           <div class="col-md-6" data-aos="fade-up">
             <div class="image-size tab-phone" loading="lazy"></div>
           </div>
-          <div
-            class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content"
-            data-aos="fade-right"
-          >
+          <div class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content" data-aos="fade-right">
             <article class="artikel">
               <!-- <div class="title-blue py-2">About</div> -->
               <div class="fw-bold font-title ukuran-font">
@@ -338,91 +249,69 @@
 
               <div class="navbar-brand d-flex">
                 <div id="logo-centang" style="margin-top: 15px"></div>
-                <p
-                  class="
+                <p class="
                     lbd-highlight
                     text-start
                     fs-6
                     fw-normal fw-bold
                     font-title
                     ukuran-font
-                  "
-                  style="margin-top: 25px; line-height: 1px; padding-left: 15px"
-                >
+                  " style="margin-top: 25px; line-height: 1px; padding-left: 15px">
                   {{ "Update_Stock" | translate }}
                 </p>
               </div>
 
-              <p
-                class="fs-6 fw-normal"
-                style="
+              <p class="fs-6 fw-normal" style="
                   margin-top: 5px;
                   margin-bottom: 5px;
                   line-height: 25px;
                   font-size: 8px;
                   
                   padding-left: 35px;
-                "
-              >
+                ">
                 {{ "Update_Stock_Item" | translate }}
               </p>
 
               <div class="navbar-brand d-flex">
                 <div id="logo-centang" style="margin-top: 15px"></div>
-                <p
-                  class="
+                <p class="
                     lbd-highlight
                     text-start
                     fs-6
                     fw-normal fw-bold
                     font-title
                     ukuran-font
-                  "
-                  style="margin-top: 25px; line-height: 1px; padding-left: 15px"
-                >
+                  " style="margin-top: 25px; line-height: 1px; padding-left: 15px">
                   {{ "Rantai_Pos" | translate }}
                 </p>
               </div>
 
-              <p
-                class="fs-6 fw-normal"
-                style="
+              <p class="fs-6 fw-normal" style="
                   line-height: 25px;
                   font-size: 8px;
                   font-style: normal;
                  
                   padding-left: 35px;
-                "
-              >
+                ">
                 {{ "Online_Cashier" | translate }}
               </p>
 
               <p class="fs-6 fw-normal" style="padding-left: 33px">
                 <b>Daftar sekarang dan dapatkan</b>
                 <span style="color: #0b69fd; font-weight: bold">
-                  GRATIS LANGGANAN SELAMANYA!</span
-                >
+                  GRATIS LANGGANAN SELAMANYA!</span>
               </p>
 
-              <div
-                class="home-btn"
-                data-aos="fade-right"
-                style="padding-left: 35px"
-              >
+              <div class="home-btn" data-aos="fade-right" style="padding-left: 35px">
                 <div class="row justify-content-start">
                   <div class="col-md-4 col-sm-5">
-                    <a
-                      href="https://rantai.tech/web/accounts/sign-up"
-                      class="btn btn-1"
-                      target="_blank"
-                      style="
+                    <a href="https://rantai.tech/web/accounts/sign-up" class="btn btn-1" target="_blank" style="
                         border-radius: 24px;
                         opacity: 1;
                         background-color: #0b69fd;
                         width: 105%;
                         padding: 5px;
-                      "
-                    >
+                      ">
                       <div class="btn-title-lets-start" style="color: white">
                         {{ "TRY_FREE1" | translate }}
                       </div>
@@ -454,17 +343,14 @@
 
               <div class="navbar-brand d-flex">
                 <div id="logo-centang" style="margin-top: 15px"></div>
-                <p
-                  class="
+                <p class="
                     lbd-highlight
                     text-start
                     fs-6
                     fw-normal fw-bold
                     font-title
                     ukuran-font
-                  "
-                  style="margin-top: 25px; line-height: 1px; padding-left: 15px"
-                >
+                  " style="margin-top: 25px; line-height: 1px; padding-left: 15px">
                   {{ "TRANSACTION_INFORMATION" | translate }}
                 </p>
               </div>
@@ -475,17 +361,14 @@
 
               <div class="navbar-brand d-flex">
                 <div id="logo-centang" style="margin-top: 15px"></div>
-                <p
-                  class="
+                <p class="
                     lbd-highlight
                     text-start
                     fs-6
                     fw-normal fw-bold
                     font-title
                     ukuran-font
-                  "
-                  style="margin-top: 25px; line-height: 1px; padding-left: 15px"
-                >
+                  " style="margin-top: 25px; line-height: 1px; padding-left: 15px">
                   {{ "SCRAPE_AND_COPY" | translate }}
                 </p>
               </div>
@@ -496,17 +379,14 @@
 
               <div class="navbar-brand d-flex">
                 <div id="logo-centang" style="margin-top: 15px"></div>
-                <p
-                  class="
+                <p class="
                     lbd-highlight
                     text-start
                     fs-6
                     fw-normal fw-bold
                     font-title
                     ukuran-font
-                  "
-                  style="margin-top: 25px; line-height: 1px; padding-left: 15px"
-                >
+                  " style="margin-top: 25px; line-height: 1px; padding-left: 15px">
                   {{ "RANTAI_TALK" | translate }}
                 </p>
               </div>
@@ -518,29 +398,19 @@
               <p class="fs-6 fw-normal" style="padding-left: 35px">
                 <b>Daftar sekarang dan dapatkan</b>
                 <span style="color: #0b69fd; font-weight: bold">
-                  GRATIS LANGGANAN SELAMANYA!</span
-                >
+                  GRATIS LANGGANAN SELAMANYA!</span>
               </p>
 
-              <div
-                class="home-btn"
-                data-aos="fade-right"
-                style="padding-left: 35px"
-              >
+              <div class="home-btn" data-aos="fade-right" style="padding-left: 35px">
                 <div class="row justify-content-start">
                   <div class="col-md-4 col-sm-5">
-                    <a
-                      href="https://rantai.tech/web/accounts/sign-up"
-                      class="btn btn-1"
-                      target="_blank"
-                      style="
+                    <a href="https://rantai.tech/web/accounts/sign-up" class="btn btn-1" target="_blank" style="
                         border-radius: 24px;
                         opacity: 1;
                         background-color: #0b69fd;
                         width: 105%;
                         padding: 5px;
-                      "
-                    >
+                      ">
                       <div class="btn-title-lets-start" style="color: white">
                         {{ "TRY_FREE1" | translate }}
                       </div>
@@ -566,43 +436,31 @@
           <div class="col-md-6" data-aos="fade-up">
             <div class="image-size tab-fiturreport" loading="lazy"></div>
           </div>
-          <div
-            class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content"
-            data-aos="fade-right"
-          >
+          <div class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content" data-aos="fade-right">
             <article class="artikel">
               <div class="fw-bold font-title ukuran-font">
                 {{ "Generate_Financial_Report" | translate }}
               </div>
-              <p
-                class="fs-6 fw-normal"
-                style="margin-top: 20px; color: rgb(167, 183, 199)"
-              >
+              <p class="fs-6 fw-normal" style="margin-top: 20px; color: rgb(167, 183, 199)">
                 {{ "More_Efficient" | translate }}
               </p>
 
               <p class="fs-6 fw-normal">
                 <b>Daftar sekarang dan dapatkan</b>
                 <span style="color: #0b69fd; font-weight: bold">
-                  GRATIS LANGGANAN SELAMANYA!</span
-                >
+                  GRATIS LANGGANAN SELAMANYA!</span>
               </p>
 
               <div class="home-btn" data-aos="fade-right">
                 <div class="row justify-content-start">
                   <div class="col-md-4 col-sm-5">
-                    <a
-                      href="https://rantai.tech/web/accounts/sign-up"
-                      class="btn btn-1"
-                      target="_blank"
-                      style="
+                    <a href="https://rantai.tech/web/accounts/sign-up" class="btn btn-1" target="_blank" style="
                         border-radius: 24px;
                         opacity: 1;
                         background-color: #0b69fd;
                         width: 105%;
                         padding: 5px;
-                      "
-                    >
+                      ">
                       <div class="btn-title-lets-start" style="color: white">
                         {{ "TRY_FREE1" | translate }}
                       </div>
@@ -626,8 +484,7 @@
             </div>
           </div>
           <div class="row justify-content-center">
-            <div
-              class="
+            <div class="
                 col-lg-3 col-md-6 col-sm-6
                 align-items-stretch
                 mt-4
@@ -635,11 +492,7 @@
                 zoom-subscription
                 p-4
                 img-resize
-              "
-              data-aos="zoom-in"
-              data-aos-delay="100"
-              *ngIf="typelistFree.length > 0"
-            >
+              " data-aos="zoom-in" data-aos-delay="100" *ngIf="typelistFree.length > 0">
               <div class="img-subsciption">
                 <div id="silver" class="col sub">
                   <div class="d-flex justify-content-start">
@@ -664,20 +517,14 @@
                   <div class="container">
                     <div class="row">
                       <div class="mt-4 mb-4">
-                        <ng-container
-                          *ngFor="let free of typelistFree; let i = index"
-                        >
-                          <div
-                            class="
+                        <ng-container *ngFor="let free of typelistFree; let i = index">
+                          <div class="
                               mt-3
                               d-flex
                               justify-content-start
                               align-items-center
-                            "
-                          >
-                            <div
-                              class="bd-highlight box-list icon-valid mt-1 me-2"
-                            ></div>
+                            ">
+                            <div class="bd-highlight box-list icon-valid mt-1 me-2"></div>
                             <div class="bd-highlight text-start fw-bold f-14">
                               {{ free.benefit | titlecase }}
                             </div>
@@ -691,8 +538,7 @@
             </div>
 
             <!-- RANTAI ERP -->
-            <div
-              class="
+            <div class="
                 col-lg-3 col-md-6 col-sm-6
                 mt-4
                 row
@@ -700,11 +546,7 @@
                 p-4
                 align-items-stretch
                 img-resize
-              "
-              data-aos="zoom-in"
-              data-aos-delay="100"
-              *ngIf="typelistErp.length > 0"
-            >
+              " data-aos="zoom-in" data-aos-delay="100" *ngIf="typelistErp.length > 0">
               <div class="img-subsciption">
                 <div id="silver" class="col sub">
                   <div class="d-flex justify-content-start">
@@ -727,20 +569,14 @@
                   <div class="container">
                     <div class="row">
                       <div class="mt-4 mb-4">
-                        <ng-container
-                          *ngFor="let erp of typelistErp; let i = index"
-                        >
-                          <div
-                            class="
+                        <ng-container *ngFor="let erp of typelistErp; let i = index">
+                          <div class="
                               mt-2
                               d-flex
                               justify-content-start
                               align-items-center
-                            "
-                          >
-                            <div
-                              class="bd-highlight box-list icon-valid mt-1 me-2"
-                            ></div>
+                            ">
+                            <div class="bd-highlight box-list icon-valid mt-1 me-2"></div>
                             <div class="bd-highlight text-start fw-bold f-14">
                               {{ erp.benefit | titlecase }}
                             </div>
@@ -763,10 +599,7 @@
     <div class="container" data-aos="fade-up">
       <div class="section-title section-choose-plan">
         <div class="row justify-content-center">
-          <div
-            data-aos="fade-up"
-            class="font-title fw-bold title-overview col-md-6 ukuran-font"
-          >
+          <div data-aos="fade-up" class="font-title fw-bold title-overview col-md-6 ukuran-font">
             Rantai Bagi-bagi komisi! Dapatkan Kesempatan Menang Hadiah Uang
             Tunai Total Rp100.000.000
           </div>
@@ -776,9 +609,9 @@
             Anda, semakin banyak yang menggunakan kode referral Anda semakin
             besar kesempatan Anda mendapatkan hadiah uang tunai dari Rantai
             Daftar sekang untuk mendapatkan kode referral Anda.
-           </span>
+          </span>
 
-          
+
 
         </div>
         <p data-aos="fade-right" class="" style="margin-top:10px; margin-bottom:1px; font-size: 14px;">
@@ -787,11 +620,7 @@
         <div class="home-btn col-md-12 col-sm-3 " data-aos="fade-right">
           <div class="row justify-content-start">
             <div class="teks" style="margin-top: 15px; text-align: center;">
-              <a
-                href="#"
-                class="btn btn-primary btn-1 button1 teks"
-                style="margin-left: 20px;"
-              >
+              <a href="#" class="btn btn-primary btn-1 button1 teks" style="margin-left: 20px;">
                 <div class="btn-title-lets-start" style="color: white; font-size: 12px;">
                   {{ "Sign_Up_Now1" | translate }}
                 </div>
@@ -799,24 +628,15 @@
             </div>
           </div>
         </div>
-         
+
       </div>
       <div class="d-flex justify-content-center align-items-center">
         <div class="cuptropy"></div>
-        <span class="font-title fw-bold text-center p-2 ukuran-font"
-          >Referral ranking <br />
-          saat ini</span
-        >
+        <span class="font-title fw-bold text-center p-2 ukuran-font">Referral ranking <br />
+          saat ini</span>
       </div>
-      <div
-        class="row justify-content-center"
-        *ngIf="listReferraCode.length > 0"
-      >
-        <div
-          class="col-md-4 col-sm-12 mt-md-0 p-3"
-          data-aos="zoom-in"
-          data-aos-delay="100"
-        >
+      <div class="row justify-content-center" *ngIf="listReferraCode.length > 0">
+        <div class="col-md-4 col-sm-12 mt-md-0 p-3" data-aos="zoom-in" data-aos-delay="100">
           <ng-container *ngFor="let ref of sectionFree; let i = index">
             <div class="box-referral mb-3 pointer">
               <div class="box-referral-content">
@@ -838,12 +658,7 @@
           </ng-container>
         </div>
 
-        <div
-          class="col-md-4 col-sm-6 p-3"
-          data-aos="zoom-in"
-          data-aos-delay="100"
-          *ngIf="sectionPaid.length > 0"
-        >
+        <div class="col-md-4 col-sm-6 p-3" data-aos="zoom-in" data-aos-delay="100" *ngIf="sectionPaid.length > 0">
           <ng-container *ngFor="let ref of sectionPaid; let i = index">
             <div class="box-referral mb-3 pointer">
               <div class="box-referral-content">
@@ -869,16 +684,8 @@
       <div class="home-btn col-md-12 col-sm-3" data-aos="fade-right">
         <div class="row justify-content-start">
           <div class="" style="margin-top: 25px; text-align: center">
-            <a
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#requestFreeDemo"
-              class="btn btn-primary btn-1 button1"
-            >
-              <div
-                class="btn-title-lets-start"
-                style="color: white; font-size: 12px"
-              >
+            <a href="#" data-bs-toggle="modal" data-bs-target="#requestFreeDemo" class="btn btn-primary btn-1 button1">
+              <div class="btn-title-lets-start" style="color: white; font-size: 12px">
                 {{ "Read_More" | translate }}
               </div>
             </a>
@@ -892,8 +699,7 @@
     <div class="container" data-aos="fade-up">
       <div class="section-title">
         <div style="font-size: 25px; font-weight: bold">
-          <span style="color: #0b69fd"> {{ "Rantai" | translate }}</span
-          >{{ "Chains_in_Various_Media" | translate }}
+          <span style="color: #0b69fd"> {{ "Rantai" | translate }}</span>{{ "Chains_in_Various_Media" | translate }}
         </div>
         <!-- <div>
           <div data-aos="fade-up" class="font-title fw-bold title-overview">
@@ -902,483 +708,314 @@
         </div> -->
       </div>
       <div class="row media-coverage">
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="100"
-        >
-          <a
-            href="https://www.beritasatu.com/ekonomi/756629/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="100">
+          <a href="https://www.beritasatu.com/ekonomi/756629/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-beritasatu hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="200"
-        >
-          <a
-            href="https://mediaindonesia.com/ekonomi/396038/new-normal-saatnya-lakukan-inovasi-penjualan-dan-manajemen"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://mediaindonesia.com/ekonomi/396038/new-normal-saatnya-lakukan-inovasi-penjualan-dan-manajemen"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size mediaindonesia hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="300"
-        >
-          <a
-            href="https://www.tribunnews.com/bisnis/2021/04/11/aplikasi-berbasis-smart-erp-ini-mudahkan-supplier-meng-update-stok-barang-seketika"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="300">
+          <a href="https://www.tribunnews.com/bisnis/2021/04/11/aplikasi-berbasis-smart-erp-ini-mudahkan-supplier-meng-update-stok-barang-seketika"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size tribunnews hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="400"
-        >
-          <a
-            href="https://ekbis.sindonews.com/read/388834/34/jualan-konvesional-tak-efektif-rantai-beri-inovasi-baru-1617725084"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="400">
+          <a href="https://ekbis.sindonews.com/read/388834/34/jualan-konvesional-tak-efektif-rantai-beri-inovasi-baru-1617725084"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size sindonews hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://inforial.tempo.co/info/1004809/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://inforial.tempo.co/info/1004809/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-tempo hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="600"
-        >
-          <a
-            href="https://www.suara.com/bisnis/2021/04/07/135527/rantai-link-jadi-inovasi-baru-penjualan-dan-manajemen-bisnis"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="600">
+          <a href="https://www.suara.com/bisnis/2021/04/07/135527/rantai-link-jadi-inovasi-baru-penjualan-dan-manajemen-bisnis"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-suaracom hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://planet.merdeka.com/gadget/smart-erp-solusi-manajemen-bisnis-di-masa-pandemi.html?page=all"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://planet.merdeka.com/gadget/smart-erp-solusi-manajemen-bisnis-di-masa-pandemi.html?page=all"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-planetmerdeka hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://republika.co.id/berita/qr85z0291/kelola-bisnis-dengan-cara-konvensional-sudah-tak-relevan"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://republika.co.id/berita/qr85z0291/kelola-bisnis-dengan-cara-konvensional-sudah-tak-relevan"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-republika hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://www.jpnn.com/news/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://www.jpnn.com/news/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis" target="_blank"
+            rel="noopener noreferrer">
             <div class="image-size jpncom hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://www.wartaekonomi.co.id/read335645/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://www.wartaekonomi.co.id/read335645/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-wartaekonomi hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://today.line.me/id/v2/article/59w3ly"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://today.line.me/id/v2/article/59w3ly" target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-linetoday hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://marketing.co.id/aplikasi-rantai-inovasi-baru-penjualan-dan-manajemen-bisnis/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://marketing.co.id/aplikasi-rantai-inovasi-baru-penjualan-dan-manajemen-bisnis/" target="_blank"
+            rel="noopener noreferrer">
             <div class="image-size logo-marketing hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://inilah.com/ototekno/2591895/rantai-tawarkan-solusi-bisnis-berbasis-erp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://inilah.com/ototekno/2591895/rantai-tawarkan-solusi-bisnis-berbasis-erp" target="_blank"
+            rel="noopener noreferrer">
             <div class="image-size inilahcom hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://selular.id/2021/04/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://selular.id/2021/04/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/" target="_blank"
+            rel="noopener noreferrer">
             <div class="image-size logo-selular hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://teknologi.bisnis.com/read/20210407/84/1377484/cyberindo-sinergi-menawarkan-sistem-rantai-distribusi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://teknologi.bisnis.com/read/20210407/84/1377484/cyberindo-sinergi-menawarkan-sistem-rantai-distribusi"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-bisnis hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://investor.id/business/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://investor.id/business/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size investor hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://www.antaranews.com/berita/2087550/smart-erp-solusi-manajemen-bisnis-tepat-di-kala-pandemi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://www.antaranews.com/berita/2087550/smart-erp-solusi-manajemen-bisnis-tepat-di-kala-pandemi"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-antaranews hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://akurat.co/iptek/id-1294923-read-kenali-aplikasi-rantai-jualan-dan-manajemen-bisnis-bisa-cek-dari-ponsel"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://akurat.co/iptek/id-1294923-read-kenali-aplikasi-rantai-jualan-dan-manajemen-bisnis-bisa-cek-dari-ponsel"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-akuratcom hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://www.itworks.id/38677/rantai-link-solusi-manajemen-bisnis-berbasis-smart-erp.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://www.itworks.id/38677/rantai-link-solusi-manajemen-bisnis-berbasis-smart-erp.html"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-itworks hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://mix.co.id/marcomm/news-trend/berbasis-smart-erp-platform-rantai-tawarkan-solusi-bagi-para-pelaku-bisnis/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://mix.co.id/marcomm/news-trend/berbasis-smart-erp-platform-rantai-tawarkan-solusi-bagi-para-pelaku-bisnis/"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-mix hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://techbiz.id/2021/04/rantai-hadirkan-solusi-smart-erp-untuk-manajemen-bisnis/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://techbiz.id/2021/04/rantai-hadirkan-solusi-smart-erp-untuk-manajemen-bisnis/" target="_blank"
+            rel="noopener noreferrer">
             <div class="image-size logo-techbiz hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://dailysocial.id/post/startup-saas-erp-rantai-hubungkan-distributor-dropshipper-dan-reseller-dalam-sistem-terintegrasi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://dailysocial.id/post/startup-saas-erp-rantai-hubungkan-distributor-dropshipper-dan-reseller-dalam-sistem-terintegrasi"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-dailysosial hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://idrtimes.com/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://idrtimes.com/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/" target="_blank"
+            rel="noopener noreferrer">
             <div class="image-size logo-idrtimes hover-media"></div>
           </a>
         </div>
-        <div
-          class="
+        <div class="
             col-6 col-sm-3 col-lg-2
             d-flex
             justify-content-center
             align-items-center
             mt-md-0
             p-4
-          "
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://trenteknologi.com/rantai-smart-erp-inovasi-baru-penjualan-dan-manajemen-bisnis-anda/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          " data-aos="zoom-in" data-aos-delay="500">
+          <a href="https://trenteknologi.com/rantai-smart-erp-inovasi-baru-penjualan-dan-manajemen-bisnis-anda/"
+            target="_blank" rel="noopener noreferrer">
             <div class="image-size logo-trenteknologi hover-media"></div>
           </a>
         </div>
@@ -1393,16 +1030,9 @@
       <div class="row">
         <div class="col-md-1 foot-content"></div>
 
-        <div
-          class="row justify-content-around"
-          style="margin-bottom: 40px; margin-top: 0"
-        >
+        <div class="row justify-content-around" style="margin-bottom: 40px; margin-top: 0">
           <div class="col-md-7 col-sm-6 foot-content">
-            <p
-              class="h5 pt-4 fw-bolder"
-              data-aos="fade-right"
-              style="margin-bottom: 5px"
-            >
+            <p class="h5 pt-4 fw-bolder" data-aos="fade-right" style="margin-bottom: 5px">
               {{ "You_Need_Information" | translate }} <br />
               {{ "Contact_Us_and_Get" | translate }}
             </p>
@@ -1411,11 +1041,7 @@
           <div class="home-btn col-md-3 col-sm-3" data-aos="fade-right">
             <div class="row justify-content-start">
               <div class="" style="margin-top: 25px">
-                <a
-                  href="#"
-                  class="btn btn-primary btn-1 button1"
-                  style="margin-left: 20px"
-                >
+                <a href="#" class="btn btn-primary btn-1 button1" style="margin-left: 20px">
                   <div class="btn-title-lets-start" style="color: white">
                     {{ "CONTACT_US" | translate }}
                   </div>
@@ -1426,23 +1052,18 @@
         </div>
 
         <div class="row justify-content-between">
-          <div
-            style="
+          <div style="
               border-top: 1px solid rgb(199, 193, 193);
               border-bottom: 1px solid rgb(199, 193, 193);
               padding-bottom: 70px;
-            "
-          >
+            ">
             <div class="row justify-content-between">
               <div class="col-md-4 foot-content" style="margin-top: 30px">
                 <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
                   {{ "What_Is_Rantai" | translate }}
                 </p>
-                <div
-                  class="row align-items-start"
-                  [style.padding-right]="'25px'"
-                >
-                  <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
+                <div class="row align-items-start" [style.padding-right]="'25px'">
+                  <p data-aos="zoom-in" class="pt-3" data-aos-delay="150" style="font-style: justify-content;">
                     {{ "Rantai_Is" | translate }}
                   </p>
                 </div>
@@ -1453,132 +1074,86 @@
                   {{ "CHECK_OUR_VIDEO" | translate }}
                 </p>
 
-                <div
-                  class="home-btn pt-2 margin-footer teks"
-                  data-aos="fade-right"
-                >
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#requestFreeDemo"
-                    class="btn btn-1 col-md-8"
-                    style="
+                <div class="home-btn pt-2 margin-footer teks" data-aos="fade-right">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#requestFreeDemo" class="btn btn-1 col-md-8" style="
                       border-radius: 7px;
                       opacity: 1;
                       background-color: #0b69fd;
                       padding: 4px;
                       border: 2px solid #fff;
-                    "
-                  >
-                    <div
-                      class="d-flex justify-content-start align-items-center"
-                    >
+                    ">
+                    <div class="d-flex justify-content-start align-items-center">
                       <div id="logo-video" style="margin-left: 25px"></div>
-                      <span
-                        style="
+                      <span style="
                           color: white;
                           font-size: 12px;
                           margin-left: 15px;
                           padding-right: 35px;
-                        "
-                        >Rantai Introduction</span
-                      >
+                        ">Rantai Introduction</span>
                     </div>
                   </a>
                 </div>
 
                 <div class="home-btn pt-2 teks" data-aos="fade-right ">
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#requestFreeDemo"
-                    class="btn btn-1 col-md-8"
-                    style="
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#requestFreeDemo" class="btn btn-1 col-md-8" style="
                       border-radius: 7px;
                       opacity: 1;
                       background-color: #fff;
                       padding: 4px;
                       border: 2px solid #0b69fd;
-                    "
-                  >
-                    <div
-                      class="d-flex justify-content-start align-items-center"
-                    >
+                    ">
+                    <div class="d-flex justify-content-start align-items-center">
                       <div id="logo-vid" style="margin-left: 25px"></div>
-                      <span
-                        style="
+                      <span style="
                           color: #0b69fd;
                           font-size: 12px;
                           margin-left: 15px;
                           padding-right: 3px;
-                        "
-                        >Marketplace Introduction</span
-                      >
+                        ">Marketplace Introduction</span>
                     </div>
                   </a>
                 </div>
 
                 <div class="home-btn pt-2 teks" data-aos="fade-right">
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#requestFreeDemo"
-                    class="btn btn-1 col-md-8"
-                    style="
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#requestFreeDemo" class="btn btn-1 col-md-8" style="
                       border-radius: 7px;
                       opacity: 1;
                       background-color: #0b69fd;
                       padding: 4px;
                       border: 2px solid #fff;
-                    "
-                  >
-                    <div
-                      class="d-flex justify-content-start align-items-center"
-                    >
+                    ">
+                    <div class="d-flex justify-content-start align-items-center">
                       <div id="logo-video" style="margin-left: 25px"></div>
-                      <span
-                        style="
+                      <span style="
                           color: white;
                           font-size: 12px;
                           margin-left: 15px;
                           padding-right: 28px;
-                        "
-                        >Marketplace Tutorial</span
-                      >
+                        ">Marketplace Tutorial</span>
                     </div>
                   </a>
                 </div>
 
                 <div class="home-btn pt-2 teks" data-aos="fade-right">
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#requestFreeDemo"
-                    class="btn btn-1 col-md-8"
-                    style="
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#requestFreeDemo" class="btn btn-1 col-md-8" style="
                       border-radius: 7px;
                       opacity: 1;
                       background-color: #0b69fd;
                       padding: 4px;
                       border: 2px solid #fff;
-                    "
-                  >
-                    <div
-                      class="d-flex justify-content-start align-items-center"
-                    >
+                    ">
+                    <div class="d-flex justify-content-start align-items-center">
                       <div id="logo-video" style="margin-left: 25px"></div>
-                      <span
-                        style="
+                      <span style="
                           color: white;
                           font-size: 12px;
                           margin-left: 15px;
                           padding-right: 81px;
-                        "
-                        >Rantai Talk</span
-                      >
+                        ">Rantai Talk</span>
                     </div>
                   </a>
                 </div>
+
               </div>
 
               <div class="col-md-4 foot-content" style="margin-top: 30px">
@@ -1586,30 +1161,18 @@
                   {{ "CONTACT_US" | translate }}
                 </p>
 
-                <div
-                  class="d-flex flex-row align-items-center bd-highlight pt-3"
-                >
+                <div class="d-flex flex-row align-items-center bd-highlight pt-3">
                   <div class="img-fluid img-phone" loading="lazy"></div>
-                  <div
-                    class="bd-highlight"
-                    data-aos="fade-left"
-                    data-aos-delay="200"
-                  >
+                  <div class="bd-highlight" data-aos="fade-left" data-aos-delay="200">
                     <div class="font-small px-3">021 296 19 712</div>
                   </div>
                 </div>
 
                 <div class="pt-3">
                   <a href="mailto:marketing@rantai.tech">
-                    <div
-                      class="d-flex flex-row bd-highlight align-items-center"
-                    >
+                    <div class="d-flex flex-row bd-highlight align-items-center">
                       <div class="img-fluid img-email" loading="lazy"></div>
-                      <div
-                        class="bd-highlight color-1"
-                        data-aos="fade-left"
-                        data-aos-delay="100"
-                      >
+                      <div class="bd-highlight color-1" data-aos="fade-left" data-aos-delay="100">
                         <div class="font-small px-3" style="color: white">
                           support@rantai.tech
                         </div>
@@ -1619,23 +1182,13 @@
                 </div>
 
                 <address>
-                  <a
-                    class="d-flex flex-row bd-highlight"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
-                  >
-                    <div
-                      class="d-flex flex-row align-items-center bd-highlight"
-                    >
+                  <a class="d-flex flex-row bd-highlight" target="_blank" rel="noopener noreferrer"
+                    href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157">
+                    <div class="d-flex flex-row align-items-center bd-highlight">
                       <div class="img-fluid img-location" loading="lazy"></div>
                       <div class="bd-highlight">
-                        <div
-                          class="color-1 font-small px-3"
-                          style="text-align: left; color: white"
-                          data-aos="fade-left"
-                          data-aos-delay="300"
-                        >
+                        <div class="color-1 font-small px-4" style="text-align: left; color: white" data-aos="fade-left"
+                          data-aos-delay="300">
                           Vinilon Building, Jl. Raden Saleh Raya No.kav 13-17,
                           RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat,
                           Daerah Khusus Ibukota Jakarta 10430.
@@ -1645,15 +1198,20 @@
                   </a>
                 </address>
 
-                <ul
-                  class="
+                <div class="d-flex">
+                  <div id="icon-twitter"></div>
+                  <div id="icon-instagram"></div>
+                  <div id="icon-linkedin"></div>
+                  <div id="icon-facebook"></div>
+                  <div id="icon-youtube"></div>
+                </div>
+
+                <ul class="
                     nav nav-pills
                     d-flex
                     justify-content-start
                     align-items-start
-                  "
-                  style="gap: 15px"
-                ></ul>
+                  " style="gap: 15px"></ul>
               </div>
             </div>
           </div>
@@ -1662,23 +1220,14 @@
     </div>
   </div>
 
-  <div
-    class="d-flex align-items-center justify-content-center"
-    style="background-color: #0b69fd; padding-top: 1px"
-  >
+  <div class="d-flex align-items-center justify-content-center" style="background-color: #0b69fd; padding-top: 1px">
     <p class="text-center text-white">
       &copy; {{ newDate }}&nbsp;PT Cyberindo Sinergi Sistem
     </p>
   </div>
 </footer>
 
-<div
-  class="modal fade"
-  id="requestFreeDemo"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="requestFreeDemo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content subscribe-active p-3">
       <div class="modal-header">
@@ -1690,23 +1239,11 @@
                 {{ "Join_Next" | translate }}
               </h5>
             </div>
-            <div
-              #myModalClose
-              class="close-form"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-              title="Close"
-            ></div>
+            <div #myModalClose class="close-form" data-bs-dismiss="modal" aria-label="Close" title="Close"></div>
           </div>
         </div>
       </div>
-      <form
-        (ngSubmit)="submit($event)"
-        novalidate
-        method="dialog"
-        [formGroup]="formDaftar"
-        autocomplete="off"
-      >
+      <form (ngSubmit)="submit($event)" novalidate method="dialog" [formGroup]="formDaftar" autocomplete="off">
         <div class="modal-body">
           <h1 class="fs-6 fw-normal">
             {{ "Desc" | translate }}
@@ -1715,50 +1252,26 @@
           <div class="row">
             <div class="col-sm">
               <div class="mb-3">
-                <input
-                  type="text"
-                  formControlName="name"
-                  name="Name"
-                  class="form-control input-radius"
-                  placeholder="{{ 'Full_Name' | translate }}"
-                />
+                <input type="text" formControlName="name" name="Name" class="form-control input-radius"
+                  placeholder="{{ 'Full_Name' | translate }}" />
               </div>
               <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control input-radius"
-                  name="Email"
-                  formControlName="email"
-                  placeholder="Email"
-                  [ngClass]="{ 'is-invalid': save && f.email.errors }"
-                />
-                <div
-                  *ngIf="save && f.email.errors"
-                  class="invalid-feedback error-message"
-                >
+                <input type="email" class="form-control input-radius" name="Email" formControlName="email"
+                  placeholder="Email" [ngClass]="{ 'is-invalid': save && f.email.errors }" />
+                <div *ngIf="save && f.email.errors" class="invalid-feedback error-message">
                   <div *ngIf="f.email.errors.email">
                     {{ "Email_Error" | translate }}
                   </div>
                 </div>
               </div>
               <div class="mb-3">
-                <input
-                  type="number"
-                  class="form-control input-radius"
-                  name="Phone"
-                  formControlName="phone"
-                  placeholder="{{ 'Phone' | translate }}"
-                />
+                <input type="number" class="form-control input-radius" name="Phone" formControlName="phone"
+                  placeholder="{{ 'Phone' | translate }}" />
               </div>
             </div>
             <div class="col-sm">
               <div class="mb-3">
-                <select
-                  id="business"
-                  formControlName="business"
-                  class="form-select input-radius"
-                  name="Notes"
-                >
+                <select id="business" formControlName="business" class="form-select input-radius" name="Notes">
                   <option value="" selected>
                     {{ "Business" | translate }}
                   </option>
@@ -1767,27 +1280,15 @@
                   </option>
                 </select>
               </div>
-              <div
-                class="mb-3"
-                *ngIf="
+              <div class="mb-3" *ngIf="
                   formDaftar.get('business').value === ('Other' | translate)
-                "
-              >
-                <input
-                  type="text"
-                  [(ngModel)]="othersBusinness"
-                  class="form-control input-radius"
-                  placeholder="{{ 'Business' | translate }}"
-                  [ngModelOptions]="{ standalone: true }"
-                />
+                ">
+                <input type="text" [(ngModel)]="othersBusinness" class="form-control input-radius"
+                  placeholder="{{ 'Business' | translate }}" [ngModelOptions]="{ standalone: true }" />
               </div>
               <div class="mb-3">
-                <select
-                  formControlName="province"
-                  class="form-select input-radius"
-                  required
-                  (change)="triggerCity($event)"
-                >
+                <select formControlName="province" class="form-select input-radius" required
+                  (change)="triggerCity($event)">
                   <option value="" selected>
                     {{ "Province" | translate }}
                   </option>
@@ -1810,28 +1311,16 @@
                   </option>
                 </select>
               </div>
-              <div
-                class="mb-3"
-                *ngIf="formDaftar.get('city').value === ('Other' | translate)"
-              >
-                <input
-                  type="text"
-                  [(ngModel)]="othersCity"
-                  class="form-control input-radius"
-                  placeholder="{{ 'City' | translate }}"
-                  [ngModelOptions]="{ standalone: true }"
-                />
+              <div class="mb-3" *ngIf="formDaftar.get('city').value === ('Other' | translate)">
+                <input type="text" [(ngModel)]="othersCity" class="form-control input-radius"
+                  placeholder="{{ 'City' | translate }}" [ngModelOptions]="{ standalone: true }" />
               </div>
             </div>
           </div>
           <input type="hidden" name="Address" formControlName="address" />
         </div>
         <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-danger fw-bolder"
-            data-bs-dismiss="modal"
-          >
+          <button type="button" class="btn btn-danger fw-bolder" data-bs-dismiss="modal">
             {{ "Cancel" | translate | uppercase }}
           </button>
           <button type="submit" class="btn btn-primary fw-bolder">
@@ -1843,32 +1332,14 @@
   </div>
 </div>
 
-<div
-  class="modal fade"
-  id="watchvideo"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
+<div class="modal fade" id="watchvideo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content modal-video">
       <div class="modal-body">
-        <div
-          class="btn-close-video pointer"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-          (click)="openVideo(true)"
-        ></div>
+        <div class="btn-close-video pointer" data-bs-dismiss="modal" aria-label="Close" (click)="openVideo(true)"></div>
         <div class="video">
-          <iframe
-            width="560"
-            height="349"
-            frameborder="0"
-            allowfullscreen
-            allowscriptaccess="always"
-            allow="autoplay"
-            id="frame-video"
-          ></iframe>
+          <iframe width="560" height="349" frameborder="0" allowfullscreen allowscriptaccess="always" allow="autoplay"
+            id="frame-video"></iframe>
         </div>
       </div>
     </div>
