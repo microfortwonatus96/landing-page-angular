@@ -201,7 +201,6 @@
                 {{ "Manage_Shop" | translate }} <br />
                 {{ "With_System" | translate }} <br />
                 {{ "Omnichannel" | translate }} <br />
-                <!-- {{ "New_Next3" | translate }} -->
               </h1>
 
               <p data-aos="fade-right" class="one-section-p">
@@ -304,20 +303,6 @@
             {{ "Growth_Online_Business" | translate }}
           </div>
         </div>
-
-        <div class="d-flex justify-content-center mt-4">
-          <div class="col-md-6">
-            <span
-              class="text-center"
-              style="color: rgb(167, 183, 199); font-size: 12px"
-            >
-              Donec dapibus mauris id odio ornare tempus. Duis sit amet accumsan
-              justo, quis tempor ligula. Quisque quis pharetra felis. Ut quis
-              consequat orci, at consequat felis. Suspendisse auctor laoreet
-              placerat. Nam et risus non lacus dignissim lacinia sit amet
-            </span>
-          </div>
-        </div>
         <div class="mt-4 row justify-content-between">
           <div class="col-md-6" data-aos="fade-up">
             <div class="image-size tab-phone" loading="lazy"></div>
@@ -327,7 +312,6 @@
             data-aos="fade-right"
           >
             <article class="artikel">
-              <!-- <div class="title-blue py-2">About</div> -->
               <div class="fw-bold font-title ukuran-font">
                 {{ "Manage_stock" | translate }}
               </div>
@@ -444,7 +428,7 @@
         <div class="mt-4 row justify-content-between">
           <div class="col-md-6 pt-4 pt-lg-0 content" data-aos="fade-right">
             <article class="artikel">
-              <div class="fw-bold font-title ukuran-font" style="">
+              <div class="fw-bold font-title ukuran-font">
                 {{ "Control" | translate }}
               </div>
               <div class="fw-bold font-title ukuran-font">
@@ -801,16 +785,20 @@
             <div class="box-referral mb-3 pointer">
               <div class="box-referral-content">
                 <div class="d-flex justify-content-start align-items-center">
-                  <div class="col-md-2 col">
+                  <div class="col-md-2 col-sm-2">
                     <div [ngClass]="i < 5 ? 'rank' + i : 'rankbox'">
                       <span class="ranknum"> {{ i + 1 }}</span>
                     </div>
                   </div>
-                  <div class="col-md-7 col fw-bold text-left">
-                    {{ ref.email }}
-                  </div>
-                  <div class="col-md-3 col point-color">
-                    {{ ref.point }} Poin
+                  <div class="col-md-10 col-sm-12">
+                    <div class="d-flex justify-content-between">
+                      <div class="col-md-7 col-sm-9 fw-bold">
+                        {{ ref.email }}
+                      </div>
+                      <div class="col-md-3 col-sm-3 point-color">
+                        {{ ref.point }} Poin
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -828,7 +816,7 @@
             <div class="box-referral mb-3 pointer">
               <div class="box-referral-content">
                 <div class="d-flex justify-content-start align-items-center">
-                  <div class="col-md-2 col">
+                  <div class="col-md-2 col-sm-2">
                     <div class="rankbox">
                       <span class="ranknum"> {{ i }}</span>
                     </div>
@@ -846,22 +834,24 @@
         </div>
       </div>
 
-      <div class="home-btn col-md-12 col-sm-3" data-aos="fade-right">
-        <div class="row justify-content-start">
-          <div class="" style="margin-top: 25px; text-align: center">
-            <a
-              href="#"
-              data-bs-toggle="modal"
-              data-bs-target="#requestFreeDemo"
-              class="btn btn-primary btn-1 button1"
-            >
-              <div
-                class="btn-title-lets-start"
-                style="color: white; font-size: 12px"
+      <div class="row justify-content-center">
+        <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
+          <div class="row justify-content-start">
+            <div class="" style="margin-top: 25px; text-align: center">
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#requestFreeDemo"
+                class="btn btn-primary btn-1 button1"
               >
-                {{ "Read_More" | translate }}
-              </div>
-            </a>
+                <div
+                  class="btn-title-lets-start"
+                  style="color: white; font-size: 12px"
+                >
+                  {{ "Read_More" | translate }}
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -1370,14 +1360,9 @@
 <footer id="contact">
   <div class="footer-top" style="overflow: hidden">
     <div class="container">
-      <div class="row">
-        <div class="col-md-1 foot-content"></div>
-
-        <div
-          class="row justify-content-between"
-          style="margin-bottom: 40px; margin-top: 0"
-        >
-          <div class="col-md-9 col-sm-6 foot-content">
+      <div class="foot-content">
+        <div class="row justify-content-between" style="margin-bottom: 40px">
+          <div class="col-md-10 col-sm-6">
             <p
               class="h5 pt-4 fw-bolder"
               data-aos="fade-right"
@@ -1388,11 +1373,11 @@
             </p>
           </div>
 
-          <div class="home-btn col-md-3 col-sm-6" data-aos="fade-right">
+          <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
             <div class="row justify-content-start">
               <div class="" style="margin-top: 25px">
-                <a href="#" class="btn btn-primary button1 col-md-8">
-                  <div class="btn-title-lets-start" style="color: white">
+                <a href="#" class="btn btn-primary button1 col-md-8 col-sm-8">
+                  <div class="btn-title-lets-start">
                     {{ "CONTACT_US" | translate }}
                   </div>
                 </a>
@@ -1400,162 +1385,165 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="row justify-content-between">
-          <div
-            style="
-              border-top: 1px solid rgb(199, 193, 193);
-              border-bottom: 1px solid rgb(199, 193, 193);
-              padding-bottom: 70px;
-            "
-          >
-            <div class="row justify-content-between">
-              <div class="col-md-4 foot-content" style="margin-top: 30px">
-                <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
-                  {{ "What_Is_Rantai" | translate }}
+      <div class="row justify-content-between">
+        <div class="border-box">
+          <div class="row justify-content-between">
+            <div class="col-md-4 foot-content" style="margin-top: 30px">
+              <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
+                {{ "What_Is_Rantai" | translate }}
+              </p>
+              <div class="row align-items-start" [style.padding-right]="'25px'">
+                <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
+                  {{ "Rantai_Is" | translate }}
                 </p>
-                <div
-                  class="row align-items-start"
-                  [style.padding-right]="'25px'"
-                >
-                  <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
-                    {{ "Rantai_Is" | translate }}
-                  </p>
-                </div>
               </div>
+            </div>
 
-              <div class="col-md-4 foot-content" style="margin-top: 30px">
-                <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
-                  {{ "CHECK_OUR_VIDEO" | translate }}
-                </p>
-                <div class="row justify-content-start">
-                  <div
-                    class="home-btn pt-2 margin-footer teks"
-                    data-aos="fade-right"
-                  >
-                    <a href="#" class="btn col-md-8 col-sm-8 btn-footer">
-                      <div
-                        class="d-flex justify-content-start align-items-center"
-                      >
-                        <div id="logo-video" style="margin-left: 25px"></div>
-                        <span class="btn-footer-text">Rantai Introduction</span>
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="home-btn pt-2 teks" data-aos="fade-right ">
-                    <a href="#" class="btn col-md-8 col-sm-8 btn-footer">
-                      <div
-                        class="d-flex justify-content-start align-items-center"
-                      >
-                        <div id="logo-video" style="margin-left: 25px"></div>
-                        <span class="btn-footer-text"
-                          >Marketplace Introduction</span
-                        >
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="home-btn pt-2 teks" data-aos="fade-right">
-                    <a href="#" class="btn col-md-8 col-sm-8 btn-footer">
-                      <div
-                        class="d-flex justify-content-start align-items-center"
-                      >
-                        <div id="logo-video" style="margin-left: 25px"></div>
-                        <span class="btn-footer-text"
-                          >Marketplace Tutorial</span
-                        >
-                      </div>
-                    </a>
-                  </div>
-
-                  <div class="home-btn pt-2 teks" data-aos="fade-right">
-                    <a href="#" class="btn col-md-8 col-sm-6 btn-footer">
-                      <div
-                        class="d-flex justify-content-start align-items-center"
-                      >
-                        <div id="logo-video" style="margin-left: 25px"></div>
-                        <span class="btn-footer-text">Rantai Talk</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4 foot-content" style="margin-top: 30px">
-                <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
-                  {{ "CONTACT_US" | translate }}
-                </p>
-
+            <div class="col-md-4 foot-content" style="margin-top: 30px">
+              <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
+                {{ "CHECK_OUR_VIDEO" | translate }}
+              </p>
+              <div class="row justify-content-start">
                 <div
-                  class="d-flex flex-row align-items-center bd-highlight pt-3"
+                  class="home-btn pt-2 margin-footer teks"
+                  data-aos="fade-right"
                 >
-                  <div class="img-fluid img-phone" loading="lazy"></div>
-                  <div
-                    class="bd-highlight"
-                    data-aos="fade-left"
-                    data-aos-delay="200"
-                  >
-                    <div class="font-small px-3">021 296 19 712</div>
-                  </div>
-                </div>
-
-                <div class="pt-3">
-                  <a href="mailto:marketing@rantai.tech">
-                    <div
-                      class="d-flex flex-row bd-highlight align-items-center"
-                    >
-                      <div class="img-fluid img-email" loading="lazy"></div>
-                      <div
-                        class="bd-highlight color-1"
-                        data-aos="fade-left"
-                        data-aos-delay="100"
-                      >
-                        <div class="font-small px-3" style="color: white">
-                          support@rantai.tech
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <address>
                   <a
-                    class="d-flex flex-row bd-highlight"
+                    href="https://www.youtube.com/watch?v=8JxK--cp9nE"
+                    class="btn col-md-8 col-sm-8 btn-footer"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
                   >
                     <div
-                      class="d-flex flex-row align-items-center bd-highlight"
+                      class="d-flex justify-content-start align-items-center"
                     >
-                      <div class="img-fluid img-location" loading="lazy"></div>
-                      <div class="bd-highlight">
-                        <div
-                          class="color-1 font-small px-3"
-                          style="text-align: left; color: white"
-                          data-aos="fade-left"
-                          data-aos-delay="300"
-                        >
-                          Vinilon Building, Jl. Raden Saleh Raya No.kav 13-17,
-                          RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat,
-                          Daerah Khusus Ibukota Jakarta 10430.
-                        </div>
-                      </div>
+                      <div class="logo-video"></div>
+                      <div class="icon-video-biru"></div>
+                      <span class="btn-footer-text">Rantai Introduction</span>
                     </div>
                   </a>
-                </address>
+                </div>
 
-                <ul
-                  class="
-                    nav nav-pills
-                    d-flex
-                    justify-content-start
-                    align-items-start
-                  "
-                  style="gap: 15px"
-                ></ul>
+                <div class="home-btn pt-2 teks" data-aos="fade-right ">
+                  <a
+                    href="https://www.youtube.com/watch?v=E3fK2pUYTts"
+                    class="btn col-md-8 col-sm-8 btn-footer"
+                    target="_blank"
+                  >
+                    <div
+                      class="d-flex justify-content-start align-items-center"
+                    >
+                      <div class="logo-video"></div>
+                      <div class="icon-video-biru"></div>
+                      <span class="btn-footer-text"
+                        >Marketplace Introduction</span
+                      >
+                    </div>
+                  </a>
+                </div>
+
+                <div class="home-btn pt-2 teks" data-aos="fade-right">
+                  <a
+                    href="https://youtu.be/y-Hc7QWsOd8"
+                    class="btn col-md-8 col-sm-8 btn-footer"
+                    target="_blank"
+                  >
+                    <div
+                      class="d-flex justify-content-start align-items-center"
+                    >
+                      <div class="logo-video"></div>
+                      <div class="icon-video-biru"></div>
+                      <span class="btn-footer-text">Marketplace Tutorial</span>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="home-btn pt-2 teks" data-aos="fade-right">
+                  <a
+                    href="https://www.youtube.com/watch?v=TbvnWpw19kc"
+                    class="btn col-md-8 col-sm-8 btn-footer"
+                    target="_blank"
+                  >
+                    <div
+                      class="d-flex justify-content-start align-items-center"
+                    >
+                      <div class="logo-video"></div>
+                      <div class="icon-video-biru"></div>
+                      <span class="btn-footer-text">Rantai Talk</span>
+                    </div>
+                  </a>
+                </div>
               </div>
+            </div>
+
+            <div class="col-md-4 foot-content" style="margin-top: 30px">
+              <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
+                {{ "CONTACT_US" | translate }}
+              </p>
+
+              <div class="d-flex flex-row align-items-center bd-highlight pt-3">
+                <div class="img-fluid img-phone" loading="lazy"></div>
+                <div
+                  class="bd-highlight"
+                  data-aos="fade-left"
+                  data-aos-delay="200"
+                >
+                  <div class="font-small px-3">021 296 19 712</div>
+                </div>
+              </div>
+
+              <div class="pt-3">
+                <a href="mailto:marketing@rantai.tech">
+                  <div class="d-flex flex-row bd-highlight align-items-center">
+                    <div class="img-fluid img-email" loading="lazy"></div>
+                    <div
+                      class="bd-highlight color-1"
+                      data-aos="fade-left"
+                      data-aos-delay="100"
+                    >
+                      <div class="font-small px-3" style="color: white">
+                        support@rantai.tech
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <address>
+                <a
+                  class="d-flex flex-row bd-highlight"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
+                >
+                  <div class="d-flex flex-row align-items-center bd-highlight">
+                    <div class="img-fluid img-location" loading="lazy"></div>
+                    <div class="bd-highlight">
+                      <div
+                        class="color-1 font-small px-3"
+                        style="text-align: left; color: white"
+                        data-aos="fade-left"
+                        data-aos-delay="300"
+                      >
+                        Vinilon Building, Jl. Raden Saleh Raya No.kav 13-17,
+                        RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat,
+                        Daerah Khusus Ibukota Jakarta 10430.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </address>
+
+              <ul
+                class="
+                  nav nav-pills
+                  d-flex
+                  justify-content-start
+                  align-items-start
+                "
+                style="gap: 15px"
+              ></ul>
             </div>
           </div>
         </div>

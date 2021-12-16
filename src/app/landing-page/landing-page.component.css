@@ -190,6 +190,7 @@ p.ls-c-1 {
   .warnaTeks {
     color: #848484;
   }
+
   .ukuran-font {
     font-size: 18px;
   }
@@ -1224,6 +1225,7 @@ input[type="number"] {
   .btn-footer {
     width: 100%;
   }
+
   .ukuran-font {
     font-size: 18px;
   }
@@ -1243,6 +1245,7 @@ input[type="number"] {
   .teks {
     text-align: center;
   }
+
   .ukuran-font {
     font-size: 18px;
   }
@@ -1600,6 +1603,20 @@ input[type="number"] {
   left: 10px;
 }
 
+.icon-video-biru {
+  content: url('../../assets/images/video.svg');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px
+}
+
+.logo-video {
+  content: url('../../assets/images/videowhite.svg');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px
+}
+
 .btn-footer {
   border-radius: 7px;
   opacity: 1;
@@ -1615,10 +1632,28 @@ input[type="number"] {
   padding-right: 35px;
 }
 
-.btn-footer:hover{
-  background-color: #fff;
+.btn-footer:hover {
   color: #000 !important;
+  background-color: #fff;
 }
+
+.btn-footer:hover .logo-video, .btn-footer .icon-video-biru {
+  display: none;
+}
+
+.btn-footer:hover .icon-video-biru {
+  display: block;
+
+}
+
+.border-box {
+  border-top: 1px solid rgb(199, 193, 193);
+  border-bottom: 1px solid rgb(199, 193, 193);
+  padding-bottom: 70px;
+}
+
+
+
 
 /* mhimik */
 .container .home-text .one-section-p {
@@ -1644,50 +1679,16 @@ input[type="number"] {
   height: 20px;
 }
 
-#logo-rantai {
-  content: url('../../assets/images/logo-rantai.png');
-  width: 100px;
-  height: 30px;
-}
-
-#border {
-  border: 2px solid #fff;
-}
-
-#logo-video {
-  content: url('../../assets/images/videowhite.svg');
-  width: 20px;
-  height: 20px;
-  background-color: #0B69FD;
-}
-
-#logo-videoo {
-  content: url('../../assets/images/videowhite.svg');
-  width: 20px;
-  height: 20px;
-  background-image: blue;
-}
-
-.logo-fitur {
-  content: url('../../assets/images/FEATURES.png')
-}
-
 .button1 {
   border-radius: 24px;
   opacity: 1;
-  /* min-width: 70%; */
+  width: 100%;
   padding: 5px;
+  color: #fff;
   border: 2px solid #fff;
   background-color: #0B69FD;
 }
 
 .margin-footer {
   margin-top: 15px;
-}
-
-#logo-vid {
-  content: url('../../assets/images/PV.png');
-  width: 20px;
-  height: 20px;
-  background-image: blue;
 }

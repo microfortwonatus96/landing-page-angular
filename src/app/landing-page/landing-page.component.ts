@@ -173,12 +173,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         if (response) {
           this.typelistFree = response[0].benefitList;
           this.typelistErp = response[1].benefitList;
-          console.log(this.typelistFree);
-          // response.forEach((v, i) => {
-          //   if (v.type == '') {
-          //     this.typelistFree.push(v.benefitList)
-          //   }
-          // });
         }
       });
     this.loadReferralCode();
