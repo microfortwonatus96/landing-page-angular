@@ -105,8 +105,12 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   listReferraCode: IReferralCode[] = [];
   sectionFree: IReferralCode[] = [];
   sectionPaid: IReferralCode[] = [];
+
+  listEmpyReferral: IReferralCode[] = [];
+
   selectedindex: number = 0;
   indexBtnSlide: number = 1;
+
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -179,6 +183,25 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       });
     this.loadReferralCode();
     this.carouselSlider();
+
+    for (let i = 0; i < this.pageSize; i++) {
+      this.listEmpyReferral.push({
+        code: null,
+        email: null,
+        phone: null,
+        point: null,
+      });
+    }
+    if (this.listReferraCode.length === 0) {
+      this.listEmpyReferral.forEach((v, i) => {
+        if (i <= 9) {
+          this.sectionFree.push(v);
+        }
+        if (i > 9) {
+          this.sectionPaid.push(v);
+        }
+      });
+    }
   }
 
   goto(val) {
@@ -194,14 +217,14 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       .pipe(takeWhile(() => this.alive))
       .subscribe((response) => {
         if (response) {
-          this.listReferraCode = response;
           response.forEach((v, i) => {
-            if (i < 10) this.sectionFree.push(v);
-            if (i > 10 && i < 20) this.sectionPaid.push(v);
+            if (i <= 9) this.sectionFree.push(v);
+            if (i > 9) this.sectionPaid.push(v);
           });
         }
       });
   }
+
   getProvince() {
     this.userService
       .getProvince()
