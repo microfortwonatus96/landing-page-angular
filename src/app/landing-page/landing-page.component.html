@@ -300,7 +300,7 @@
     </div>
   </section>
 
-  <section id="bg-1" class="wave-bg-1"></section>
+  <!-- <section id="bg-1" class="wave-bg-1"></section> -->
   <!-- SECTION 2 -->
   <section id="feature" class="about">
     <div class="container">
@@ -849,10 +849,7 @@
         >
       </div>
 
-      <div
-        class="row justify-content-center"
-        *ngIf="listReferraCode.length > 0"
-      >
+      <div class="row justify-content-center">
         <div
           class="col-md-4 col-sm-12 mt-md-0 p-3"
           data-aos="zoom-in"
@@ -864,7 +861,9 @@
                 <div class="d-flex justify-content-start align-items-center">
                   <div class="col-md-2 col-sm-2">
                     <div [ngClass]="i < 5 ? 'rank' + i : 'rankbox'">
-                      <span class="ranknum"> {{ i + 1 }}</span>
+                      <span [ngClass]="i < 9 ? 'ranknum-min' : 'ranknum'">
+                        {{ i + 1 }}</span
+                      >
                     </div>
                   </div>
                   <div class="col-md-10 col-sm-10">
@@ -887,7 +886,6 @@
           class="col-md-4 col-sm-6 p-3"
           data-aos="zoom-in"
           data-aos-delay="100"
-          *ngIf="sectionPaid.length > 0"
         >
           <ng-container *ngFor="let ref of sectionPaid; let i = index">
             <div class="box-referral mb-3 pointer">
@@ -895,15 +893,15 @@
                 <div class="d-flex justify-content-start align-items-center">
                   <div class="col-md-2 col-sm-2">
                     <div class="rankbox">
-                      <span class="ranknum"> {{ i }}</span>
+                      <span class="ranknum"> {{ i + 1 + 10 }}</span>
                     </div>
                   </div>
                   <div class="col-md-10 col-sm-10">
                     <div class="d-flex justify-content-between">
-                      <div class="col-md-7 col fw-bold text-left">
+                      <div class="col-md-7 col-sm-9 fw-bold text-refferal">
                         {{ ref.email }}
                       </div>
-                      <div class="col-md-3 col point-color">
+                      <div class="col-md-3 col-sm-3 point-color">
                         {{ ref.point }} Poin
                       </div>
                     </div>
