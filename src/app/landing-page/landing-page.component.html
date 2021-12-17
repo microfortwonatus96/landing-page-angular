@@ -31,18 +31,18 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="/">HOME</a>
+            <a class="nav-link active fw-bold" href="/">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#feature">FITUR</a>
+            <a class="nav-link fw-bold" href="#feature">FITUR</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#price">HARGA</a>
+            <a class="nav-link fw-bold" href="#price">HARGA</a>
           </li>
 
           <li class="nav-item">
             <div
-              class="nav-link pointer d-flex justify-content-center"
+              class="nav-link pointer d-flex justify-content-center fw-bold"
               (click)="download()"
             >
               <div>DOWNLOAD</div>
@@ -51,34 +51,34 @@
             </div>
             <div id="menu-download" class="mt-2">
               <a
-                class="nav-link text-left"
+                class="nav-link text-left fw-bold"
                 href="https://rantai.tech/file/rantai.exe"
                 download
                 >RANTAI INSTALLER</a
               >
               <a
-                class="nav-link text-left"
+                class="nav-link text-left fw-bold"
                 href="https://rantai.tech/file/rantaitalk.exe"
                 download
                 >RANTAI TALK</a
               >
 
               <a
-                class="nav-link text-left"
+                class="nav-link text-left fw-bold"
                 href="https://rantai.tech/file/rantaitalk trial.exe"
                 download
                 >RANTAI TALK TRIAL</a
               >
 
               <a
-                class="nav-link text-left"
+                class="nav-link text-left fw-bold"
                 href="https://rantai.tech/file/auditinstaller.exe"
                 download
                 >AUDIT</a
               >
 
               <a
-                class="nav-link text-left"
+                class="nav-link text-left fw-bold"
                 href="https://rantai.tech/file/auditpatch.exe"
                 download
                 >AUDIT PATCH {{ versionPacth }}</a
@@ -87,7 +87,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#contact">HUBUNGI KAMI</a>
+            <a class="nav-link fw-bold" href="#contact">HUBUNGI KAMI</a>
           </li>
 
           <li class="nav-item">
@@ -98,7 +98,7 @@
               <div
                 [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
               ></div>
-              <span> {{ langService.lang === "en" ? "EN" : "ID" }}</span>
+              <span class="fw-bold"> {{ langService.lang === "en" ? "EN" : "ID" }}</span>
               <div class="icon-chev" id="chevron"></div>
             </div>
             <div id="lang-hide" class="mt-2">
@@ -130,13 +130,13 @@
         <div class="row justify-content-between">
           <div class="col-md-7 col-sm-6">
             <article class="home-text">
-              <h1 data-aos="fade-right" class="f-rantai">
+              <h1 data-aos="fade-right" class="f-rantai" style="font-style: Montserrat; font-weight: bold;">
                 {{ "Invite_Friends" | translate }} <br />
                 {{ "Chain_Get" | translate }} <br />
                 {{ "Total_Prize" | translate }} <br />
               </h1>
 
-              <p data-aos="fade-right" class="one-section-p fw-bold">
+              <p data-aos="fade-right"  class="one-section-p" >
                 {{ "Follow_The_Program" | translate }}
               </p>
               <p data-aos="fade-right" class="one-section-p">
@@ -292,13 +292,14 @@
         <div class="d-flex justify-content-center">
           <div class="title-blue py-2">{{ "OUR_FEATURES" | translate }}</div>
         </div>
+
         <div class="d-flex justify-content-center">
-          <div class="fw-bold font-title col-md-5 text-center ukuran-font">
+          <div class="fw-bold font-title col-md-5 text-center ukuran-font" style="font-style: Montserrat; font-size: 30px;">
             {{ "Features_The_Right" | translate }}
           </div>
         </div>
 
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center"  style="margin-bottom: 50px;">
           <div class="fw-bold font-title col-md-5 text-center ukuran-font">
             {{ "Growth_Online_Business" | translate }}
           </div>
@@ -312,10 +313,10 @@
             data-aos="fade-right"
           >
             <article class="artikel">
-              <div class="fw-bold font-title ukuran-font">
+              <div class="fw-bold font-title ukuran-font" style="font-style: Montserrat; font-size: 24px;">
                 {{ "Manage_stock" | translate }}
               </div>
-              <div class="fw-bold font-title ukuran-font">
+              <div class="fw-bold font-title ukuran-font" style="font-style: Montserrat; font-size: 24px;">
                 {{ "Anytime_and_Anywhere" | translate }}
               </div>
 
@@ -380,10 +381,10 @@
                 {{ "Online_Cashier" | translate }}
               </p>
 
-              <p class="fs-6 fw-normal" style="padding-left: 33px">
-                <b>Daftar sekarang dan dapatkan</b>
+              <p class="fs-6 fw-normal" style="padding-left: 35px">
+                <b> {{ "Sign1" | translate }}</b>
                 <span style="color: #0b69fd; font-weight: bold">
-                  GRATIS LANGGANAN SELAMANYA!</span
+                  {{ "Free_Forever" | translate }}</span
                 >
               </p>
 
@@ -499,9 +500,9 @@
               </p>
 
               <p class="fs-6 fw-normal" style="padding-left: 35px">
-                <b>Daftar sekarang dan dapatkan</b>
+                <b> {{ "Sign1" | translate }}</b>
                 <span style="color: #0b69fd; font-weight: bold">
-                  GRATIS LANGGANAN SELAMANYA!</span
+                  {{ "Free_Forever" | translate }}</span
                 >
               </p>
 
@@ -559,15 +560,15 @@
               </div>
               <p
                 class="fs-6 fw-normal"
-                style="margin-top: 20px; color: rgb(167, 183, 199)"
+                style="margin-top: 20px;"
               >
                 {{ "More_Efficient" | translate }}
               </p>
 
               <p class="fs-6 fw-normal">
-                <b>Daftar sekarang dan dapatkan</b>
+                <b> {{ "Sign1" | translate }}</b>
                 <span style="color: #0b69fd; font-weight: bold">
-                  GRATIS LANGGANAN SELAMANYA!</span
+                  {{ "Free_Forever" | translate }}</span
                 >
               </p>
 
@@ -790,6 +791,7 @@
           </div>
         </div>
       </div>
+      
       <div class="d-flex justify-content-center align-items-center">
         <div class="cuptropy"></div>
         <span class="font-title fw-bold text-center p-2 ukuran-font"
@@ -797,6 +799,7 @@
           saat ini</span
         >
       </div>
+
       <div
         class="row justify-content-center"
         *ngIf="listReferraCode.length > 0"
@@ -816,11 +819,11 @@
                     </div>
                   </div>
                   <div class="col-md-10 col-sm-10">
-                    <div class="d-flex justify-content-between">
-                      <div class="col-md-7 col-sm-9 fw-bold">
+                    <div class="d-flex justify-content-between ">
+                      <div class="col-md-7 col-sm-9 fw-bold text-refferal" >
                         {{ ref.email }}
                       </div>
-                      <div class="col-md-3 col-sm-3 point-color">
+                      <div class="col-md-3 col-sm-3 point-color ">
                         {{ ref.point }} Poin
                       </div>
                     </div>
