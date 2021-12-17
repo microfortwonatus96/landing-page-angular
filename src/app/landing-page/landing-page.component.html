@@ -1,30 +1,32 @@
 <header id="home" class="">
   <nav id="navbar" class="navbar navbar-expand-md fixed-top">
-    <div class="container">
-      <a
-        class="
-          navbar-brand
-          fw-bold
-          d-flex
-          justify-content-center
-          align-items-center
-        "
-        href="/"
-        style="gap: 5px"
-      >
-        <div class="logo-header" loading="lazy"></div>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavbar"
-        aria-controls="collapsibleNavbar"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="container bg-crumb">
+      <div class="d-flex justify-content-start" style="gap: 15px">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+          aria-controls="collapsibleNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a
+          class="
+            navbar-brand
+            fw-bold
+            d-flex
+            justify-content-center
+            align-items-center
+          "
+          href="/"
+          style="gap: 5px"
+        >
+          <div class="logo-header" loading="lazy"></div>
+        </a>
+      </div>
 
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ms-auto">
@@ -124,8 +126,8 @@
     class="parallax-section home d-flex align-items-center"
   >
     <div class="container">
-      <div id="slider-one ">
-        <div class="d-flex justify-content-between">
+      <div class="mySlides slide-show">
+        <div class="row justify-content-between">
           <div class="col-md-7 col-sm-6">
             <article class="home-text">
               <h1 data-aos="fade-right" class="f-rantai">
@@ -156,10 +158,9 @@
                 <div class="row justify-content-start">
                   <div class="col-md-4 col-sm-5">
                     <a
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#requestFreeDemo"
+                      href="https://rantai.tech/web/accounts/sign-up"
                       class="btn btn-primary btn-1 button1"
+                      target="_blank"
                     >
                       <div
                         class="text-signup"
@@ -186,14 +187,14 @@
               </div>
             </article>
           </div>
-          <div class="col-md-5 col-sm-6">
+          <div class="col-md-5 col-sm-6 banner-normal">
             <img src="../../assets/images/banner.svg" alt="banner" />
           </div>
         </div>
       </div>
 
       <!-- mhimik -->
-      <div class="slider-two">
+      <div class="mySlides slide-show">
         <div class="d-flex justify-content-between">
           <div class="col-md-7 col-sm-6">
             <article class="home-text">
@@ -225,18 +226,18 @@
                 <div class="row justify-content-start">
                   <div class="col-md-4 col-sm-5">
                     <a
-                      href="#"
-                      data-bs-toggle="modal"
-                      data-bs-target="#requestFreeDemo"
-                      class="btn btn-primary"
-                      id="button1"
+                      href="https://rantai.tech/web/accounts/sign-up"
+                      class="btn btn-primary btn-1 button1"
+                      target="_blank"
                     >
-                      <div class="btn-title-lets-start" style="color: white">
+                      <div
+                        class="text-signup"
+                        style="color: white; font-size: 14px"
+                      >
                         {{ "Sign_Up_Now1" | translate }}
                       </div>
                     </a>
                   </div>
-
                   <div class="col-md-4 col-sm-7">
                     <a
                       href="https://play.google.com/store/apps/details?id=com.css.rantai"
@@ -254,30 +255,29 @@
               </div>
             </article>
           </div>
-          <div class="col-md-5 col-md-6">
+          <div class="col-md-5 col-md-6 banner-normal">
             <img src="../../assets/images/banner.svg" alt="banner" />
           </div>
         </div>
       </div>
 
-      <div class="d-flex justify-content-start s-3">
+      <div class="d-flex justify-content-start s-3 slider-mobile">
         <div class="form-check">
           <input
             class="form-check-input"
             type="radio"
             name="flexRadioDefault"
             id="flexRadioDefault1"
-            checked
-            (click)="prevBtn()"
+            (click)="btnSlide(1)"
           />
         </div>
         <div class="form-check">
           <input
-            (click)="nextBtn()"
             class="form-check-input"
             type="radio"
             name="flexRadioDefault"
             id="flexRadioDefault2"
+            (click)="btnSlide(2)"
           />
         </div>
       </div>
@@ -611,9 +611,8 @@
           <div class="row justify-content-center">
             <div
               class="
-                col-lg-3 col-md-6 col-sm-6
+                col-md-3 col-sm-6
                 align-items-stretch
-                mt-4
                 row
                 zoom-subscription
                 p-4
@@ -678,8 +677,7 @@
             <!-- RANTAI ERP -->
             <div
               class="
-                col-lg-3 col-md-6 col-sm-6
-                mt-4
+                col-md-3 col-sm-6
                 row
                 zoom-subscription
                 p-4
@@ -775,7 +773,11 @@
           <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
             <div class="row justify-content-start">
               <div class="teks" style="margin-top: 15px">
-                <a href="#" class="btn btn-primary btn-1 button1 teks">
+                <a
+                  href="https://rantai.tech/web/accounts/sign-up"
+                  target="_blank"
+                  class="btn btn-primary btn-1 button1 teks"
+                >
                   <div
                     class="btn-title-lets-start"
                     style="color: white; font-size: 12px"
@@ -1558,18 +1560,20 @@
               </address>
               <div class="d-flex justify-content-start align-items-center">
                 <a
-                  href="#"
+                  href="https://www.tiktok.com/@rantai.tech?lang=en&is_copy_url=1&is_from_webapp=v1"
                   target="_blank"
                   data-aos="fade-up"
                   data-aos-delay="100"
+                  title="tiktok"
                 >
-                  <i id="icon-twitter"></i>
+                  <i id="icon-tiktok"></i>
                 </a>
                 <a
                   href="https://www.instagram.com/official.rantai/"
                   target="_blank"
                   data-aos="fade-up"
                   data-aos-delay="200"
+                  title="instagram"
                 >
                   <i id="icon-instagram"></i>
                 </a>
@@ -1578,6 +1582,7 @@
                   target="_blank"
                   data-aos="fade-up"
                   data-aos-delay="300"
+                  title="linkedin"
                 >
                   <i id="icon-linkedin"></i>
                 </a>
@@ -1586,6 +1591,7 @@
                   target="_blank"
                   data-aos="fade-up"
                   data-aos-delay="400"
+                  title="facebook"
                 >
                   <i id="icon-facebook"></i>
                 </a>
@@ -1594,6 +1600,7 @@
                   target="_blank"
                   data-aos="fade-up"
                   data-aos-delay="500"
+                  title="youtube"
                 >
                   <i id="icon-youtube"></i>
                 </a>

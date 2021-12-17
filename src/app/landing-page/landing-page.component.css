@@ -172,6 +172,7 @@ p.ls-c-1 {
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
 }
 
 .color-1 {
@@ -567,6 +568,7 @@ section {
 .zoom-subscription {
   transition: transform 1s;
   cursor: pointer;
+  margin: 10px;
 }
 
 .zoom-subscription:hover {
@@ -1209,9 +1211,13 @@ input[type="number"] {
 }
 
 @media only screen and (min-device-width:200px) and (max-device-width:320px) and (orientation:portrait) {
-  .wave-bg-1, .wave-bg-2, .wave-bg-3 {
+  .wave-bg-2, .wave-bg-3 {
     background-position: 0% 100%;
 
+  }
+
+  .wave-bg-1 {
+    display: none;
   }
 
   .one-section-p {
@@ -1230,12 +1236,29 @@ input[type="number"] {
     font-size: 18px;
   }
 
+  .banner-normal {
+    display: none;
+  }
+
+  .bg-crumb {
+    background: rgb(223, 235, 254);
+    background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
+  }
+
+  .slider-mobile {
+    display: flex !important;
+    justify-content: center !important;
+  }
 }
 
 @media only screen and (min-device-width:280px) and (max-device-width:480px) and (orientation:portrait) {
-  .wave-bg-1, .wave-bg-2, .wave-bg-3 {
+  .wave-bg-2, .wave-bg-3 {
     background-position: 0% 100%;
 
+  }
+
+  .wave-bg-1 {
+    display: none;
   }
 
   .one-section-p {
@@ -1264,6 +1287,20 @@ input[type="number"] {
 
   .btn-footer {
     width: 100%;
+  }
+
+  .banner-normal {
+    display: none;
+  }
+
+  .bg-crumb {
+    background: rgb(223, 235, 254);
+    background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
+  }
+
+  .slider-mobile {
+    display: flex !important;
+    justify-content: center !important;
   }
 }
 
@@ -1329,7 +1366,6 @@ input[type="number"] {
   }
 
   .f-rantai {
-    /* font-size: 35px !important; */
     font-size: 22px !important;
   }
 
@@ -1457,6 +1493,24 @@ input[type="number"] {
   .btn-footer {
     width: 100%;
   }
+
+  .banner-normal {
+    display: none;
+  }
+
+  .bg-crumb {
+    background: rgb(223, 235, 254);
+    background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
+  }
+
+  .wave-bg-1 {
+    display: none;
+  }
+
+  .slider-mobile {
+    display: flex !important;
+    justify-content: center !important;
+  }
 }
 
 #menu-download {
@@ -1487,10 +1541,7 @@ input[type="number"] {
 .form-check-input {
   cursor: pointer;
   border-color: rgb(9, 96, 227);
-}
-
-.slider-two {
-  display: none;
+  transition: background-color 0.6s ease;
 }
 
 .paket-rantai {
@@ -1652,8 +1703,40 @@ input[type="number"] {
   padding-bottom: 70px;
 }
 
+.mySlides {
+  display: none;
+}
 
+.active-slider {
+  background-color: blue;
+}
 
+.slide-show {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
 
 /* mhimik */
 .container .home-text .one-section-p {
@@ -1693,8 +1776,8 @@ input[type="number"] {
   margin-top: 15px;
 }
 
-#icon-twitter {
-  content: url('../../assets/images/twitterbaru.svg');
+#icon-tiktok {
+  content: url('../../assets/images/tiktok2.svg');
   width: 20px;
   height: 20px;
   margin-left: 35px;

@@ -105,6 +105,8 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   listReferraCode: IReferralCode[] = [];
   sectionFree: IReferralCode[] = [];
   sectionPaid: IReferralCode[] = [];
+  selectedindex: number = 0;
+  indexBtnSlide: number = 1;
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -176,6 +178,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         }
       });
     this.loadReferralCode();
+    this.showSlides();
   }
 
   goto(val) {
@@ -312,13 +315,50 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
-  prevBtn() {}
-  nextBtn() {}
   tampilText() {
     const url = 'https://rantai.tech/file/ver.txt';
     fetch(url)
       .then((r) => r.text())
-      .then((t) => (this.versionPacth = t)); //process your text! )
-    //header cron
+      .then((t) => (this.versionPacth = t));
+  }
+
+  btnSlide(idx) {
+    var i;
+    var slides = document.getElementsByClassName('mySlides');
+    var dots = document.getElementsByClassName('form-check-input');
+    if (idx > slides.length) {
+      this.indexBtnSlide = 1;
+    }
+    if (idx < 1) {
+      this.indexBtnSlide = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      (<HTMLElement>slides[i]).style.display = 'none';
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(' active-slider', '');
+    }
+    (<HTMLElement>slides[this.indexBtnSlide - 1]).style.display = 'block';
+    dots[this.indexBtnSlide - 1].className += ' active-slider';
+  }
+  showSlides() {
+    let i;
+    let slides = document.getElementsByClassName('mySlides');
+    let dots = document.getElementsByClassName('form-check-input');
+    for (i = 0; i < slides.length; i++) {
+      (<HTMLElement>slides[i]).style.display = 'none';
+    }
+    this.selectedindex++;
+    if (this.selectedindex > slides.length) {
+      this.selectedindex = 1;
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(' active-slider', '');
+    }
+    (<HTMLElement>slides[this.selectedindex - 1]).style.display = 'block';
+    dots[this.selectedindex - 1].className += ' active-slider';
+    setTimeout(() => {
+      this.showSlides();
+    }, 5000);
   }
 }

@@ -15,6 +15,7 @@ import {
   ModuleTranslateLoader,
 } from '@larscom/ngx-translate-module-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { ReferralCodeComponent } from './referral-code/referral-code.component';
 export function ModuleHttpLoaderFactory(http: HttpClient) {
   const baseTranslateUrl = './assets/i18n';
   const options: IModuleTranslationOptions = {
@@ -32,6 +33,7 @@ export function ModuleHttpLoaderFactory(http: HttpClient) {
     PrivacyComponent,
     ActivateComponent,
     ResetPasswordComponent,
+    ReferralCodeComponent,
   ],
   imports: [
     BrowserModule,
