@@ -178,7 +178,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         }
       });
     this.loadReferralCode();
-    this.showSlides();
+    this.carouselSlider();
   }
 
   goto(val) {
@@ -324,7 +324,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
   btnSlide(idx) {
     var i;
-    var slides = document.getElementsByClassName('mySlides');
+    var slides = document.getElementsByClassName('carousel');
     var dots = document.getElementsByClassName('form-check-input');
     if (idx > slides.length) {
       this.indexBtnSlide = 1;
@@ -341,9 +341,9 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     (<HTMLElement>slides[this.indexBtnSlide - 1]).style.display = 'block';
     dots[this.indexBtnSlide - 1].className += ' active-slider';
   }
-  showSlides() {
+  carouselSlider() {
     let i;
-    let slides = document.getElementsByClassName('mySlides');
+    let slides = document.getElementsByClassName('carousel');
     let dots = document.getElementsByClassName('form-check-input');
     for (i = 0; i < slides.length; i++) {
       (<HTMLElement>slides[i]).style.display = 'none';
@@ -358,7 +358,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     (<HTMLElement>slides[this.selectedindex - 1]).style.display = 'block';
     dots[this.selectedindex - 1].className += ' active-slider';
     setTimeout(() => {
-      this.showSlides();
+      this.carouselSlider();
     }, 5000);
   }
 }

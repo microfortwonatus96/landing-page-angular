@@ -98,7 +98,9 @@
               <div
                 [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
               ></div>
-              <span class="fw-bold"> {{ langService.lang === "en" ? "EN" : "ID" }}</span>
+              <span class="fw-bold">
+                {{ langService.lang === "en" ? "EN" : "ID" }}</span
+              >
               <div class="icon-chev" id="chevron"></div>
             </div>
             <div id="lang-hide" class="mt-2">
@@ -126,17 +128,21 @@
     class="parallax-section home d-flex align-items-center"
   >
     <div class="container">
-      <div class="mySlides slide-show">
+      <div class="carousel slide-show">
         <div class="row justify-content-between">
           <div class="col-md-7 col-sm-6">
             <article class="home-text">
-              <h1 data-aos="fade-right" class="f-rantai" style="font-style: Montserrat; font-weight: bold;">
+              <h1
+                data-aos="fade-right"
+                class="f-rantai"
+                style="font-style: Montserrat; font-weight: bold"
+              >
                 {{ "Invite_Friends" | translate }} <br />
                 {{ "Chain_Get" | translate }} <br />
                 {{ "Total_Prize" | translate }} <br />
               </h1>
 
-              <p data-aos="fade-right"  class="one-section-p" >
+              <p data-aos="fade-right" class="one-section-p">
                 {{ "Follow_The_Program" | translate }}
               </p>
               <p data-aos="fade-right" class="one-section-p">
@@ -194,7 +200,7 @@
       </div>
 
       <!-- mhimik -->
-      <div class="mySlides slide-show">
+      <div class="carousel slide-show">
         <div class="d-flex justify-content-between">
           <div class="col-md-7 col-sm-6">
             <article class="home-text">
@@ -256,7 +262,11 @@
             </article>
           </div>
           <div class="col-md-5 col-md-6 banner-normal">
-            <img src="../../assets/images/banner.svg" alt="banner" />
+            <img
+              src="../../assets/images/banner2.svg"
+              width="500"
+              alt="banner"
+            />
           </div>
         </div>
       </div>
@@ -294,12 +304,15 @@
         </div>
 
         <div class="d-flex justify-content-center">
-          <div class="fw-bold font-title col-md-5 text-center ukuran-font" style="font-style: Montserrat; font-size: 30px;">
+          <div
+            class="fw-bold font-title col-md-5 text-center ukuran-font"
+            style="font-style: Montserrat; font-size: 30px"
+          >
             {{ "Features_The_Right" | translate }}
           </div>
         </div>
 
-        <div class="d-flex justify-content-center"  style="margin-bottom: 50px;">
+        <div class="d-flex justify-content-center" style="margin-bottom: 50px">
           <div class="fw-bold font-title col-md-5 text-center ukuran-font">
             {{ "Growth_Online_Business" | translate }}
           </div>
@@ -313,10 +326,16 @@
             data-aos="fade-right"
           >
             <article class="artikel">
-              <div class="fw-bold font-title ukuran-font" style="font-style: Montserrat; font-size: 24px;">
+              <div
+                class="fw-bold font-title ukuran-font"
+                style="font-style: Montserrat; font-size: 24px"
+              >
                 {{ "Manage_stock" | translate }}
               </div>
-              <div class="fw-bold font-title ukuran-font" style="font-style: Montserrat; font-size: 24px;">
+              <div
+                class="fw-bold font-title ukuran-font"
+                style="font-style: Montserrat; font-size: 24px"
+              >
                 {{ "Anytime_and_Anywhere" | translate }}
               </div>
 
@@ -558,10 +577,7 @@
               <div class="fw-bold font-title ukuran-font">
                 {{ "Generate_Financial_Report" | translate }}
               </div>
-              <p
-                class="fs-6 fw-normal"
-                style="margin-top: 20px;"
-              >
+              <p class="fs-6 fw-normal" style="margin-top: 20px">
                 {{ "More_Efficient" | translate }}
               </p>
 
@@ -791,7 +807,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="d-flex justify-content-center align-items-center">
         <div class="cuptropy"></div>
         <span class="font-title fw-bold text-center p-2 ukuran-font"
@@ -819,11 +835,11 @@
                     </div>
                   </div>
                   <div class="col-md-10 col-sm-10">
-                    <div class="d-flex justify-content-between ">
-                      <div class="col-md-7 col-sm-9 fw-bold text-refferal" >
+                    <div class="d-flex justify-content-between">
+                      <div class="col-md-7 col-sm-9 fw-bold text-refferal">
                         {{ ref.email }}
                       </div>
-                      <div class="col-md-3 col-sm-3 point-color ">
+                      <div class="col-md-3 col-sm-3 point-color">
                         {{ ref.point }} Poin
                       </div>
                     </div>
