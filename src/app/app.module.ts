@@ -10,6 +10,7 @@ import { ActivateComponent } from './activate/activate.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import {
   IModuleTranslationOptions,
   ModuleTranslateLoader,
@@ -49,6 +50,7 @@ export function ModuleHttpLoaderFactory(http: HttpClient) {
       },
     }),
   ],
+
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -22,7 +22,7 @@
 <main id="main">
   <section class="home">
     <div class="container" data-aos="fade-up">
-      <div class="box-content img-resize img-subsciption">
+      <div class="box-content img-subsciption">
         <div class="row justify-content-between align-items-center">
           <div class="col-md-6">
             <div class="section-title">
@@ -32,13 +32,31 @@
               </div>
             </div>
           </div>
-          <div class="input-searh col-md-3">
+          <!-- <div class="input-searh col-md-3">
             <input
               type="searh"
               class="form-control"
               placeholder="cari nama pengguna"
             />
-          </div>
+          </div> -->
+          <table id="example" class="display" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Phone Number</th>
+                <th>Point</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let x of listReferraCode; let i = index">
+                <td class="text-center">{{ i + 1 }}</td>
+                <td>{{ x.name }}</td>
+                <td>{{ x.phone }}</td>
+                <td class="text-center">{{ x.point }}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

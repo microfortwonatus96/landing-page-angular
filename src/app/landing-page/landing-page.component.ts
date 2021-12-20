@@ -157,7 +157,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.newDate = this.date.getFullYear().toString();
     let navbar = document.getElementById('navbar');
     let parallax = document.getElementById('parallax');
-    let bg1 = document.getElementById('bg-1');
+    // let bg1 = document.getElementById('bg-1');
     let id = document.getElementById('frame-video');
     $(id).attr('src', '');
     window.onscroll = function (ev) {
@@ -165,10 +165,10 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       // parallax.style.backgroundSize = 100 + '%';
       // parallax.style.backgroundPosition = '0-' + window.scrollY / 2 + 'px';
       parallax.style.transform = 'translateY(' + window.scrollY / 10 + 'px)';
-      bg1.style.marginBottom = '-1px';
+      // bg1.style.marginBottom = '-1px';
       if (window.scrollY === 0) {
         navbar.classList.remove('scrolled');
-        bg1.style.marginBottom = '-100px';
+        // bg1.style.marginBottom = '-100px';
       }
     };
 
@@ -184,24 +184,24 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadReferralCode();
     this.carouselSlider();
 
-    for (let i = 0; i < this.pageSize; i++) {
-      this.listEmpyReferral.push({
-        code: null,
-        email: null,
-        phone: null,
-        point: null,
-      });
-    }
-    if (this.listReferraCode.length === 0) {
-      this.listEmpyReferral.forEach((v, i) => {
-        if (i <= 9) {
-          this.sectionFree.push(v);
-        }
-        if (i > 9) {
-          this.sectionPaid.push(v);
-        }
-      });
-    }
+    // for (let i = 0; i < this.pageSize; i++) {
+    //   this.listEmpyReferral.push({
+    //     code: null,
+    //     email: null,
+    //     phone: null,
+    //     point: null,
+    //   });
+    // }
+    // if (this.listReferraCode.length === 0) {
+    //   this.listEmpyReferral.forEach((v, i) => {
+    //     if (i <= 9) {
+    //       this.sectionFree.push(v);
+    //     }
+    //     if (i > 9) {
+    //       this.sectionPaid.push(v);
+    //     }
+    //   });
+    // }
   }
 
   goto(val) {
@@ -217,24 +217,25 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       .pipe(takeWhile(() => this.alive))
       .subscribe((response) => {
         if (response) {
+          console.log('save', response);
           let newIndex = this.pageSize - response.length + response.length;
           for (let i = 0; i < newIndex; i++) {
             if (i <= 9) {
               this.sectionFree.push({
-                code: response[i].code,
-                email: response[i].email,
-                phone: response[i].phone,
-                point: response[i].point,
+                name: response[i]?.name,
+                phone: response[i]?.phone,
+                point: response[i]?.point,
               });
             }
             if (i > 9) {
               this.sectionPaid.push({
-                code: response[i].code,
-                email: response[i].email,
-                phone: response[i].phone,
-                point: response[i].point,
+                name: response[i]?.name,
+                phone: response[i]?.phone,
+                point: response[i]?.point,
               });
             }
+
+            // console.log('this', this.sectionFree);
           }
         }
       });
