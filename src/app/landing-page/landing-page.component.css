@@ -1255,6 +1255,16 @@ input[type="number"] {
     display: flex !important;
     justify-content: center !important;
   }
+
+  .zoom-subscription {
+    width: 85%;
+  }
+
+  .membership {
+    position: relative;
+    left: 30% !important;
+    top: 50% !important;
+  }
 }
 
 @media only screen and (min-device-width:280px) and (max-device-width:480px) and (orientation:portrait) {
@@ -1308,6 +1318,16 @@ input[type="number"] {
   .slider-mobile {
     display: flex !important;
     justify-content: center !important;
+  }
+
+  .zoom-subscription {
+    width: 85%;
+  }
+
+  .membership {
+    position: relative;
+    left: 30% !important;
+    top: 50% !important;
   }
 }
 
@@ -1522,6 +1542,16 @@ input[type="number"] {
   .slider-mobile {
     display: flex !important;
     justify-content: center !important;
+  }
+
+  .zoom-subscription {
+    width: 85%;
+  }
+
+  .membership {
+    position: relative;
+    left: 30% !important;
+    top: 50% !important;
   }
 }
 
@@ -1831,43 +1861,48 @@ input[type="number"] {
 #i-tokped {
   content: url('../../assets/img/tokped_1.svg');
   width: 150px;
-  height: 100px; 
+  height: 100px;
 
 }
 
 #i-lazada {
   content: url('../../assets/img/lazada_1.svg');
   width: 150px;
-  height: 100px; 
+  height: 100px;
 }
 
 #i-shopee {
   content: url('../../assets/img/shopee_1.svg');
   width: 150px;
-  height: 100px; 
+  height: 100px;
 }
 
 #i-blibli {
   content: url('../../assets/img/blibli_1.svg');
   width: 150px;
-  height: 100px; 
+  height: 100px;
 }
 
 #i-jdid {
   content: url('../../assets/img/jd.id.svg');
   width: 150px;
-  height: 100px; 
+  height: 100px;
 }
 
 #i-bukalapak {
   content: url('../../assets/img/bukalapak_1.svg');
   width: 150px;
-  height: 100px; 
+  height: 100px;
 }
 
-#bc{
+#bc {
   background-color: #F5F5F5;
   padding-bottom: 0px;
   padding-top: 30px;
 }
 
+.membership {
+  position: relative;
+  left: 30%;
+  top: 40%;
+}
