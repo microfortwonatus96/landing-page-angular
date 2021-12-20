@@ -1265,6 +1265,20 @@ input[type="number"] {
     left: 30% !important;
     top: 50% !important;
   }
+
+  .box-marketplace {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    display: flex;
+    transition: ease-in-out;
+    margin: 0 20px;
+  }
+
+  .marketplace-slide {
+    scroll-snap-align: start;
+    position: relative;
+  }
 }
 
 @media only screen and (min-device-width:280px) and (max-device-width:480px) and (orientation:portrait) {
@@ -1328,6 +1342,20 @@ input[type="number"] {
     position: relative;
     left: 30% !important;
     top: 50% !important;
+  }
+
+  .box-marketplace {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    display: flex;
+    transition: ease-in-out;
+    margin: 0 20px;
+  }
+
+  .marketplace-slide {
+    scroll-snap-align: start;
+    position: relative;
   }
 }
 
@@ -1552,6 +1580,20 @@ input[type="number"] {
     position: relative;
     left: 30% !important;
     top: 50% !important;
+  }
+
+  .box-marketplace {
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    display: flex;
+    transition: ease-in-out;
+    margin: 0 20px;
+  }
+
+  .marketplace-slide {
+    scroll-snap-align: start;
+    position: relative;
   }
 }
 
