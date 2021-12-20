@@ -11,8 +11,8 @@ const routes: Routes = [
   { path: 'privacy', component: PrivacyComponent },
   { path: 'activate/:token/:id', component: ActivateComponent },
   { path: 'reset/:token/:id', component: ResetPasswordComponent },
-  { path: '**', component: LandingPageComponent },
   { path: 'referral-rangking', component: ReferralCodeComponent },
+  { path: '**', component: LandingPageComponent },
 ];
 
 @NgModule({
