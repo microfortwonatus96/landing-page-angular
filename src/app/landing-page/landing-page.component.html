@@ -34,10 +34,14 @@
             <a class="nav-link active fw-bold" href="/">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#feature">FITUR</a>
+            <a class="nav-link fw-bold" href="#feature">{{
+              "Feature" | translate | uppercase
+            }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#price">HARGA</a>
+            <a class="nav-link fw-bold" href="#price">{{
+              "Price" | translate | uppercase
+            }}</a>
           </li>
 
           <li class="nav-item">
@@ -87,7 +91,9 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#contact">HUBUNGI KAMI</a>
+            <a class="nav-link fw-bold" href="#contact">{{
+              "Contact" | translate | uppercase
+            }}</a>
           </li>
 
           <li class="nav-item">
@@ -818,7 +824,9 @@
                       <div class="row justify-content-start">
                         <div class="text-left f-12">
                           <sup>Rp </sup>
-                          <span class="fw-bold">000.000</span>
+                          <span class="fw-bold">{{
+                            price | number: "1.2-2"
+                          }}</span>
                           <sub>/{{ "Month" | translate }}</sub>
                         </div>
                       </div>
@@ -872,7 +880,7 @@
             <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
               <div class="row justify-content-start">
                 <div class="" style="margin-top: 25px">
-                  <a href="#" class="btn btn-primary button1">
+                  <a href="#contact" class="btn btn-primary button1">
                     <div class="btn-title-lets-start fw-bold">
                       {{ "CONTACT_US" | translate }}
                     </div>
@@ -1539,7 +1547,10 @@
           <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
             <div class="row justify-content-start">
               <div class="" style="margin-top: 25px">
-                <a href="#" class="btn btn-primary button1 col-md-8 col-sm-8">
+                <a
+                  href="#contact"
+                  class="btn btn-primary button1 col-md-8 col-sm-8"
+                >
                   <div class="btn-title-lets-start">
                     {{ "CONTACT_US" | translate }}
                   </div>

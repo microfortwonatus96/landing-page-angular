@@ -99,7 +99,7 @@
   "Entrepreneurs": "for online entrepreneurs to control the growth of Online Stores more",
   "Efficient": "efficiently with one system.",
   "Sign_Up1": "Register now and get FREE SUBSCRIPTION FOREVER!",
-  
+
   "Sign1": "Register now and get",
   "Free_Forever":"FREE SUBSCRIPTION FOREVER!",
   "Terms and Conditions1": "terms and Conditions apply",
@@ -117,7 +117,7 @@
   "Commission_Sharing_Chain":"Commission Sharing Chain! Get a Chance to Win a Total Cash Prize of Rp.150,000,000",
   "Invite":"Invite your friends and partners to join, get a chance to win a total of IDR 150,000,000 in cash. Spread your referral code, the more people who use your referral code the more chances you have to get cash prizes from the present Signup Chain to get your referral code.",
 
-   
+
   "Terms and Conditions1": "Terms & Conditions apply",
   "Free":"FREE",
   "Forever":"Forever",
@@ -208,5 +208,8 @@
   "CHECK_OUR_VIDEO": "CHECK OUR VIDEO",
   "CONTACT_US2": "Contact Us",
 
-  "Read_More":"Read More"
+  "Read_More":"Read More",
+  "Feature": "Feature",
+  "Price" : "Price",
+  "Contact": "Contact Us"
 }

@@ -110,6 +110,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
   selectedindex: number = 0;
   indexBtnSlide: number = 1;
+  price: number;
 
   constructor(
     public translate: TranslateService,
@@ -164,7 +165,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       navbar.classList.add('scrolled');
       // parallax.style.backgroundSize = 100 + '%';
       // parallax.style.backgroundPosition = '0-' + window.scrollY / 2 + 'px';
-      parallax.style.transform = 'translateY(' + window.scrollY / 10 + 'px)';
+      parallax.style.transform = 'translateY(' + window.scrollY / 20 + 'px)';
       // bg1.style.marginBottom = '-1px';
       if (window.scrollY === 0) {
         navbar.classList.remove('scrolled');
@@ -177,6 +178,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       .pipe(takeWhile(() => this.alive))
       .subscribe((response) => {
         if (response) {
+          this.price = response[1]?.price;
           this.typelistFree = response[0].benefitList;
           this.typelistErp = response[1].benefitList;
         }
