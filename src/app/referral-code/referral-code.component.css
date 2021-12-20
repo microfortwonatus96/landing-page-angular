@@ -1440,3 +1440,6 @@ input[type="number"] {
   /* border: 1px solid #ddd; */
   padding: 20px;
 }
+.left-text {
+  text-align: left !important;
+}

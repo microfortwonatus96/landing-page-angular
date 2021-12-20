@@ -50,6 +50,7 @@ export function ModuleHttpLoaderFactory(http: HttpClient) {
       },
     }),
   ],
+
   providers: [],
   bootstrap: [AppComponent],
 })

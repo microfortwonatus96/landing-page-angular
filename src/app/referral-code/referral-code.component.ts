@@ -1,9 +1,16 @@
-import { Component, OnDestroy, OnInit, AfterViewInit } from '@angular/core';
+import {
+  Component,
+  OnDestroy,
+  OnInit,
+  AfterViewInit,
+  ViewChild,
+} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { takeWhile } from 'rxjs/operators';
 import { IReferralCode } from '../models/referral.model';
 import { LangService } from '../service/lang.service';
 import { RefferalCodeService } from '../service/referral-code.service';
+
 declare let $: any;
 @Component({
   selector: 'app-referral-code',
@@ -17,6 +24,7 @@ export class ReferralCodeComponent implements OnInit, OnDestroy, AfterViewInit {
   newDate: string;
   pageSize: number = 20;
   listReferraCode: IReferralCode[] = [];
+  dtOptions: any = {};
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -54,27 +62,8 @@ export class ReferralCodeComponent implements OnInit, OnDestroy, AfterViewInit {
       .subscribe((response) => {
         if (response) {
           this.listReferraCode = response;
-          console.log('test', this.listReferraCode);
+          // this.dataSource = new MatTableDataSource(this.listReferraCode);
         }
       });
-  }
-  buttonInRowClick(event: any): void {
-    event.stopPropagation();
-    console.log('Button in the row clicked.');
-  }
-
-  wholeRowClick(): void {
-    console.log('Whole row clicked.');
-  }
-
-  nextButtonClickEvent(): void {
-    //do next particular records like  101 - 200 rows.
-    //we are calling to api
-
-    console.log('next clicked');
-  }
-  previousButtonClickEvent(): void {
-    //do previous particular the records like  0 - 100 rows.
-    //we are calling to API
   }
 }
