@@ -15,4 +15,9 @@ export class RefferalCodeService {
       `${environment.api_referral}/public/api/rantai-referral-event/leaderboard?size=${pageSize}`
     );
   }
+  currentEvent() {
+    return this.http.get<IReferralCode[]>(
+      `${environment.api_referral}/api/rantai-referral-event/current-event`
+    );
+  }
 }

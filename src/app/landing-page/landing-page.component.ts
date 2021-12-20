@@ -183,6 +183,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
           this.typelistErp = response[1].benefitList;
         }
       });
+    this.loadEvent();
     this.loadReferralCode();
     this.carouselSlider();
 
@@ -206,6 +207,17 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     // }
   }
 
+  loadEvent() {
+    this.referralCodeService
+      .currentEvent()
+      .pipe(takeWhile(() => this.alive))
+      .subscribe((response) => {
+        if (response) {
+          // console.log('test', response);
+        }
+      });
+  }
+
   goto(val) {
     this.router.navigate([], {
       relativeTo: this.activatedRoute,
@@ -219,7 +231,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       .pipe(takeWhile(() => this.alive))
       .subscribe((response) => {
         if (response) {
-          console.log('save', response);
           let newIndex = this.pageSize - response.length + response.length;
           for (let i = 0; i < newIndex; i++) {
             if (i <= 9) {
