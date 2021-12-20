@@ -10,6 +10,9 @@ import { takeWhile } from 'rxjs/operators';
 import { IReferralCode } from '../models/referral.model';
 import { LangService } from '../service/lang.service';
 import { RefferalCodeService } from '../service/referral-code.service';
+import { MatTableDataSource } from '@angular/material/table';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 
 declare let $: any;
 @Component({
@@ -24,7 +27,11 @@ export class ReferralCodeComponent implements OnInit, OnDestroy, AfterViewInit {
   newDate: string;
   pageSize: number = 20;
   listReferraCode: IReferralCode[] = [];
+  dataSource = new MatTableDataSource([]);
+  displayedColumns = ['no', 'name', 'phone', 'point'];
   dtOptions: any = {};
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -34,7 +41,10 @@ export class ReferralCodeComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnDestroy(): void {
     this.alvieReferralRangking = false;
   }
-  ngAfterViewInit(): void {}
+  ngAfterViewInit(): void {
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
+  }
   ngOnInit(): void {
     this.translate.use(this.langService.lang);
     this.newDate = this.date.getFullYear().toString();
@@ -62,7 +72,7 @@ export class ReferralCodeComponent implements OnInit, OnDestroy, AfterViewInit {
       .subscribe((response) => {
         if (response) {
           this.listReferraCode = response;
-          // this.dataSource = new MatTableDataSource(this.listReferraCode);
+          this.dataSource = new MatTableDataSource(this.listReferraCode);
         }
       });
   }
