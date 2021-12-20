@@ -22,7 +22,7 @@
 <main id="main">
   <section class="home">
     <div class="container" data-aos="fade-up">
-      <div class="box-content img-resize img-subsciption">
+      <div class="box-content img-subsciption">
         <div class="row justify-content-between align-items-center">
           <div class="col-md-6">
             <div class="section-title">
@@ -39,6 +39,26 @@
               placeholder="cari nama pengguna"
             />
           </div>
+          <table id="example" class="display" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Nama</th>
+                <th>Phone Number</th>
+                <th>Point</th>
+              </tr>
+            </thead>
+            <tbody>
+              <ng-container *ngFor="let x of listReferraCode; let i = index">
+                <tr>
+                  <td>{{ i + 1 }}</td>
+                  <td>{{ x.name }}</td>
+                  <td>{{ x.phone }}</td>
+                  <td>{{ x.point }}</td>
+                </tr>
+              </ng-container>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
