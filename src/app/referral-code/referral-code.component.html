@@ -39,9 +39,9 @@
               placeholder="cari nama pengguna"
             />
           </div> -->
-          <!-- <table id="example" class="display" cellspacing="0" width="100%">
+          <table id="example" class="display table table-light" cellspacing="0" width="100%">
             <thead>
-              <tr>
+              <tr  style="text-align: justify;">
                 <th>No.</th>
                 <th>Nama</th>
                 <th>Phone Number</th>
@@ -49,11 +49,11 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let x of listReferraCode; let i = index">
-                <td class="text-center">{{ i + 1 }}</td>
+              <tr *ngFor="let x of listReferraCode; let i = index" style="text-align: justify;">
+                <td >{{ i + 1 }}</td>
                 <td>{{ x.name }}</td>
                 <td>{{ x.phone }}</td>
-                <td class="text-center">{{ x.point }}</td>
+                <td >{{ x.point }}</td>
               </tr>
             </tbody>
           </table> -->
