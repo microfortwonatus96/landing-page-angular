@@ -959,7 +959,7 @@
                   <div class="col-md-10 col-sm-10">
                     <div class="d-flex justify-content-between">
                       <div class="col-md-7 col-sm-9 fw-bold text-refferal">
-                        {{ ref.name }}
+                        {{ ref.name ? ref.name : "No Data" }}
                       </div>
                       <div class="col-md-3 col-sm-3 point-color">
                         {{ ref.point }} Poin
@@ -989,7 +989,7 @@
                   <div class="col-md-10 col-sm-10">
                     <div class="d-flex justify-content-between">
                       <div class="col-md-7 col-sm-9 fw-bold text-refferal">
-                        {{ ref.email }}
+                        {{ ref.name ? ref.name : "No Data" }}
                       </div>
                       <div class="col-md-3 col-sm-3 point-color">
                         {{ ref.point }} Poin
