@@ -1440,6 +1440,31 @@ input[type="number"] {
   /* border: 1px solid #ddd; */
   padding: 20px;
 }
+
 .left-text {
   text-align: left !important;
+}
+
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+}
+
+.box-tabel {
+  margin-top: 18px;
+  overflow-x: auto;
+  min-width: 100%;
+}
+
+.thead-table {
+  background-color: #F1F6FF;
+  text-align: center !important;
+}
+
+::ng-deep.mat-paginator-page-size {
+  display: none !important;
+}
+
+th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
+  border-bottom-width: 0.1px;
 }

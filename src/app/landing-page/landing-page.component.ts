@@ -186,25 +186,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadEvent();
     this.loadReferralCode();
     this.carouselSlider();
-
-    // for (let i = 0; i < this.pageSize; i++) {
-    //   this.listEmpyReferral.push({
-    //     code: null,
-    //     email: null,
-    //     phone: null,
-    //     point: null,
-    //   });
-    // }
-    // if (this.listReferraCode.length === 0) {
-    //   this.listEmpyReferral.forEach((v, i) => {
-    //     if (i <= 9) {
-    //       this.sectionFree.push(v);
-    //     }
-    //     if (i > 9) {
-    //       this.sectionPaid.push(v);
-    //     }
-    //   });
-    // }
   }
 
   loadEvent() {
@@ -252,6 +233,25 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
           }
         }
       });
+    if (this.sectionFree.length === 0 && this.sectionPaid.length === 0) {
+      for (let i = 0; i < this.pageSize; i++) {
+        this.listEmpyReferral.push({
+          name: null,
+          phone: null,
+          point: null,
+        });
+      }
+      if (this.listReferraCode.length === 0) {
+        this.listEmpyReferral.forEach((v, i) => {
+          if (i <= 9) {
+            this.sectionFree.push(v);
+          }
+          if (i > 9) {
+            this.sectionPaid.push(v);
+          }
+        });
+      }
+    }
   }
 
   getProvince() {

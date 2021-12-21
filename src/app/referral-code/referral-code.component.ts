@@ -21,29 +21,38 @@ declare let $: any;
   styleUrls: ['./referral-code.component.css'],
 })
 export class ReferralCodeComponent implements OnInit, OnDestroy, AfterViewInit {
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  // @ViewChild(MatSort) sort: MatSort;
   alvieReferralRangking: boolean = true;
   show = true;
   date = new Date();
   newDate: string;
   pageSize: number = 20;
   listReferraCode: IReferralCode[] = [];
-  dataSource = new MatTableDataSource([]);
-  displayedColumns = ['no', 'name', 'phone', 'point'];
+  dataSource: MatTableDataSource<any>;
+  // displayedColumns = ['no', 'name', 'phone', 'point'];
+  displayedColumns = ['id', 'name', 'phone', 'point'];
   dtOptions: any = {};
-  @ViewChild(MatPaginator) paginator: MatPaginator;
-  @ViewChild(MatSort) sort: MatSort;
   constructor(
     public translate: TranslateService,
     public langService: LangService,
     private referralCodeService: RefferalCodeService
-  ) {}
+  ) {
+    const users: UserData[] = [];
+    for (let i = 1; i <= 100; i++) {
+      users.push(createNewUser(i));
+    }
+
+    // Assign the data to the data source for the table to render
+    // this.dataSource = new MatTableDataSource(users);
+  }
 
   ngOnDestroy(): void {
     this.alvieReferralRangking = false;
   }
   ngAfterViewInit(): void {
     this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
+    // this.dataSource.sort = this.sort;
   }
   ngOnInit(): void {
     this.translate.use(this.langService.lang);
@@ -55,12 +64,6 @@ export class ReferralCodeComponent implements OnInit, OnDestroy, AfterViewInit {
     $(id).attr('src', '');
     window.onscroll = function (ev) {
       navbar.classList.add('scrolled');
-      parallax.style.transform = 'translateY(' + window.scrollY / 10 + 'px)';
-      bg1.style.marginBottom = '-1px';
-      if (window.scrollY === 0) {
-        navbar.classList.remove('scrolled');
-        bg1.style.marginBottom = '-100px';
-      }
     };
 
     this.loadData();
@@ -73,7 +76,74 @@ export class ReferralCodeComponent implements OnInit, OnDestroy, AfterViewInit {
         if (response) {
           this.listReferraCode = response;
           this.dataSource = new MatTableDataSource(this.listReferraCode);
+          this.dataSource.paginator = this.paginator;
         }
       });
+    if (this.listReferraCode.length === 0) {
+      this.pageSize = 0;
+    }
   }
+  cariData(value: string) {
+    value = value.trim();
+    value = value.toLowerCase();
+    this.dataSource.filter = value;
+  }
+}
+function createNewUser(id: number): UserData {
+  const name =
+    NAMES[Math.round(Math.random() * (NAMES.length - 1))] +
+    ' ' +
+    NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) +
+    '.';
+
+  return {
+    id: id.toString(),
+    name: name,
+    progress: Math.round(Math.random() * 100).toString(),
+    color: COLORS[Math.round(Math.random() * (COLORS.length - 1))],
+  };
+}
+const COLORS = [
+  'maroon',
+  'red',
+  'orange',
+  'yellow',
+  'olive',
+  'green',
+  'purple',
+  'fuchsia',
+  'lime',
+  'teal',
+  'aqua',
+  'blue',
+  'navy',
+  'black',
+  'gray',
+];
+const NAMES = [
+  'Maia',
+  'Asher',
+  'Olivia',
+  'Atticus',
+  'Amelia',
+  'Jack',
+  'Charlotte',
+  'Theodore',
+  'Isla',
+  'Oliver',
+  'Isabella',
+  'Jasper',
+  'Cora',
+  'Levi',
+  'Violet',
+  'Arthur',
+  'Mia',
+  'Thomas',
+  'Elizabeth',
+];
+export interface UserData {
+  id: string;
+  name: string;
+  progress: string;
+  color: string;
 }

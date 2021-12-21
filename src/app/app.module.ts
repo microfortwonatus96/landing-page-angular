@@ -17,8 +17,15 @@ import {
   ModuleTranslateLoader,
 } from '@larscom/ngx-translate-module-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { MatPaginatorModule } from '@angular/material/paginator';
+import {
+  MatPaginatorIntl,
+  MatPaginatorModule,
+} from '@angular/material/paginator';
 import { ReferralCodeComponent } from './referral-code/referral-code.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatChipsModule } from '@angular/material/chips';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
 export function ModuleHttpLoaderFactory(http: HttpClient) {
   const baseTranslateUrl = './assets/i18n';
   const options: IModuleTranslationOptions = {
@@ -48,6 +55,8 @@ export function ModuleHttpLoaderFactory(http: HttpClient) {
     MatTableModule,
     MatPaginatorModule,
     MatMenuModule,
+    MatChipsModule,
+    MatSelectModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -55,6 +64,8 @@ export function ModuleHttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
+    BrowserAnimationsModule,
+    MatButtonModule,
   ],
 
   providers: [],

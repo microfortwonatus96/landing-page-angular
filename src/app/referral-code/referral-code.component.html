@@ -32,73 +32,88 @@
               </div>
             </div>
           </div>
-          <!-- <div class="input-searh col-md-3">
+          <div class="input-searh col-md-3">
             <input
               type="searh"
               class="form-control"
               placeholder="cari nama pengguna"
+              (keyup)="cariData($event.target.value)"
             />
-          </div> -->
-          <table id="example" class="display table table-light" cellspacing="0" width="100%">
-            <thead>
-              <tr  style="text-align: justify;">
-                <th>No.</th>
-                <th>Nama</th>
-                <th>Phone Number</th>
-                <th>Point</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let x of listReferraCode; let i = index" style="text-align: justify;">
-                <td >{{ i + 1 }}</td>
-                <td>{{ x.name }}</td>
-                <td>{{ x.phone }}</td>
-                <td >{{ x.point }}</td>
-              </tr>
-            </tbody>
-          </table> -->
-          <mat-table [dataSource]="dataSource" matSort>
-            <!-- ID Column -->
-            <ng-container matColumnDef="no">
-              <mat-header-cell *matHeaderCellDef mat-sort-header>
-                ID
-              </mat-header-cell>
-              <mat-cell *matCellDef="let row"> {{ i }} </mat-cell>
-            </ng-container>
+          </div>
+          <div class="box-tabel">
+            <table
+              mat-table
+              [dataSource]="dataSource"
+              matSort
+              class="col-md-12"
+            >
+              <!-- ID Column -->
+              <ng-container matColumnDef="id">
+                <th
+                  mat-header-cell
+                  *matHeaderCellDef
+                  mat-sort-header
+                  class="thead-table"
+                >
+                  No.
+                </th>
+                <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+              </ng-container>
 
-            <!-- Progress Column -->
-            <ng-container matColumnDef="name">
-              <mat-header-cell *matHeaderCellDef mat-sort-header>
-                Progress
-              </mat-header-cell>
-              <mat-cell *matCellDef="let row"> {{ row.name }}% </mat-cell>
-            </ng-container>
+              <!-- Progress Column -->
+              <ng-container matColumnDef="name">
+                <th
+                  mat-header-cell
+                  *matHeaderCellDef
+                  mat-sort-header
+                  class="thead-table"
+                >
+                  Name
+                </th>
+                <td mat-cell *matCellDef="let row">{{ row.name }}</td>
+              </ng-container>
 
-            <!-- Name Column -->
-            <ng-container matColumnDef="phone">
-              <mat-header-cell *matHeaderCellDef mat-sort-header>
-                Name
-              </mat-header-cell>
-              <mat-cell *matCellDef="let row"> {{ row.phone }} </mat-cell>
-            </ng-container>
+              <!-- Name Column -->
+              <ng-container matColumnDef="phone">
+                <th
+                  mat-header-cell
+                  *matHeaderCellDef
+                  mat-sort-header
+                  class="thead-table"
+                >
+                  Phone
+                </th>
+                <td mat-cell *matCellDef="let row">{{ row.progress }}</td>
+              </ng-container>
 
-            <!-- Color Column -->
-            <ng-container matColumnDef="point">
-              <mat-header-cell *matHeaderCellDef mat-sort-header>
-                Color
-              </mat-header-cell>
-              <mat-cell *matCellDef="let row">
-                {{ row.point }}
-              </mat-cell>
-            </ng-container>
-
-            <mat-header-row
-              *matHeaderRowDef="displayedColumns"
-            ></mat-header-row>
-            <mat-row *matRowDef="let row; columns: displayedColumns"> </mat-row>
-          </mat-table>
-
-          <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+              <!-- Color Column -->
+              <ng-container matColumnDef="point">
+                <th
+                  mat-header-cell
+                  *matHeaderCellDef
+                  mat-sort-header
+                  class="thead-table"
+                >
+                  Point
+                </th>
+                <td mat-cell *matCellDef="let row">
+                  {{ row.color }}
+                </td>
+              </ng-container>
+              <tr
+                mat-header-row
+                *matHeaderRowDef="displayedColumns; sticky: true"
+              ></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+            </table>
+          </div>
+        </div>
+        <div class="mt-4">
+          <mat-paginator
+            [pageSizeOptions]="[pageSize, 25, 50, 100]"
+            showFirstLastButtons
+            [length]="pageSize"
+          ></mat-paginator>
         </div>
       </div>
     </div>

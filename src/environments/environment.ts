@@ -7,6 +7,7 @@ export const environment = {
   api_support: 'http://103.123.148.78:7791',
   api_referral: 'http://192.168.88.100:7791',
   // api_referral: 'https://rantailink.com',
+  // api_referral: 'https://rantailink.com',
   production: false,
 };
 
