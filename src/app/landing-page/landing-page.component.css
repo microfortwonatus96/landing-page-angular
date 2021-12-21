@@ -30,7 +30,7 @@
 }
 
 .parallax-section {
-  height: 100vh;
+  height: 65vh;
 }
 
 .box-banner {
@@ -97,37 +97,65 @@
 }
 
 .home {
-  min-height: 100vh;
+  min-height: 60vh;
   padding: 150px 0;
   background-color: var(--main-color);
 }
 
 .home-text h1 {
-  font-size: 45px;
+  font-size: 38px;
   font-weight: bold;
   color: #0B69FD;
   margin: 0 0 20px;
   text-transform: capitalize;
+  font-family: Montserrat;
 }
 
 .home-text p {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 28px;
   margin: 0;
   color: #000;
-  font-weight: 400;
+  
+  font-family: Source Sans Pro;
+}
+
+
+.button-footer {
+  border-radius: 24px;
+  opacity: 1;
+  width: 100%;
+  padding: 5px;
+  color: #fff;
+  font-style: Montserrat;
+  height: 42px;
+  border: 2px solid #fff;
+  background-color: #0B69FD;
 }
 
 .btn-1 {
   background-color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 24px;
   color: #095edc;
-  font-size: 16px;
+  font-family: Montserrat;
+  font-size: 13px;
   text-transform: capitalize;
   transition: all 0.5s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
   font-weight: 500;
+}
+
+.button1 {
+  border-radius: 24px;
+  opacity: 1;
+  width: 100%;
+  padding: 8px;
+  color: #fff;
+  font-family: Montserrat;
+  height: 42px;
+  /* border: 2px solid #fff; */
+  background-color: #0B69FD;
 }
 
 .btn-1 .btn-title-lets-start {
@@ -182,6 +210,10 @@ p.ls-c-1 {
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
+  }
+
+  .parallax-section {
+    height: 105vh;
   }
 
   .text-refferal {
@@ -1221,6 +1253,10 @@ input[type="number"] {
 
   }
 
+  .parallax-section {
+    height: 105vh;
+  }
+
   .text-refferal {
     margin-left: 20px;
     margin-right: 15px;
@@ -1263,6 +1299,10 @@ input[type="number"] {
 
   }
 
+  .parallax-section {
+    height: 105vh;
+  }
+
   .text-refferal {
     margin-left: 20px;
     margin-right: 15px;
@@ -1284,13 +1324,7 @@ input[type="number"] {
     padding: 150px 20px;
   }
 
-  .home-text h1 {
-    font-size: 25px;
-  }
 
-  .home-text p {
-    font-size: 12px;
-  }
 
   .btn-footer {
     width: 100%;
@@ -1314,6 +1348,10 @@ input[type="number"] {
 @media only screen and (min-device-width: 320px) and (max-device-width:480px) and (orientation:portrait) {
   .services.icon-box {
     font-size: 0.813rem;
+  }
+
+  .parallax-section {
+    height: 105vh;
   }
 
   .text-refferal {
@@ -1633,9 +1671,7 @@ input[type="number"] {
   height: auto;
 }
 
-.text-signup {
-  padding: 0 15px;
-}
+
 
 .rankbox {
   border: 1px solid #F2F5FA;
@@ -1756,11 +1792,6 @@ input[type="number"] {
 }
 
 /* mhimik */
-.container .home-text .one-section-p {
-  font-size: 13px;
-  line-height: 18px;
-  color: rgb(17, 3, 3);
-}
 
 .container .home-text p:nth-child(4) {
   margin-bottom: 20px;
@@ -1779,15 +1810,7 @@ input[type="number"] {
   height: 20px;
 }
 
-.button1 {
-  border-radius: 24px;
-  opacity: 1;
-  width: 100%;
-  padding: 5px;
-  color: #fff;
-  border: 2px solid #fff;
-  background-color: #0B69FD;
-}
+
 
 .margin-footer {
   margin-top: 15px;
@@ -1830,44 +1853,80 @@ input[type="number"] {
 
 #i-tokped {
   content: url('../../assets/img/tokped_1.svg');
-  width: 150px;
+  width: 120px;
   height: 100px; 
 
 }
 
 #i-lazada {
   content: url('../../assets/img/lazada_1.svg');
-  width: 150px;
+  width: 120px;
   height: 100px; 
 }
 
 #i-shopee {
   content: url('../../assets/img/shopee_1.svg');
-  width: 150px;
+  width: 120px;
   height: 100px; 
 }
 
 #i-blibli {
   content: url('../../assets/img/blibli_1.svg');
-  width: 150px;
+  width: 120px;
   height: 100px; 
 }
 
 #i-jdid {
   content: url('../../assets/img/jd.id.svg');
-  width: 150px;
+  width: 120px;
   height: 100px; 
 }
 
 #i-bukalapak {
   content: url('../../assets/img/bukalapak_1.svg');
-  width: 150px;
+  width: 120px;
   height: 100px; 
 }
+
+
+.Margin-T{
+  margin-top: 75px;
+}
+
+.b-navbar{
+  background-color: rgba(223, 235, 254, 1);
+  font-family: Montserrat;
+}
+
+.font-heading{
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.font-bodyText{
+  font-size: 15px;
+  line-height: 28px;
+  margin: 0;
+  color: #000;
+
+  font-family: Source Sans Pro;
+}
+
+.terms{
+  font-size: 10px;
+  color: #0B69FD;
+  font-style: italic;
+}
+
+.newButton{
+  font-family: Montserrat;
+}
+
 
 #bc{
   background-color: #F5F5F5;
   padding-bottom: 0px;
-  padding-top: 30px;
+  padding-top: 0px;
+  padding: 1px;
 }
-
