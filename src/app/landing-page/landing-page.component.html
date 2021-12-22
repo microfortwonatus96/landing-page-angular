@@ -31,15 +31,15 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active fw-bold" href="/">HOME</a>
+            <a class="nav-link active fw-bold" href="/" style="padding-top:15px;">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#feature">{{
+            <a class="nav-link fw-bold" href="#feature" style="padding-top:15px;">{{
               "Feature" | translate | uppercase
             }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#price">{{
+            <a class="nav-link fw-bold" href="#price" style="padding-top:15px;">{{
               "Price" | translate | uppercase
             }}</a>
           </li>
@@ -47,11 +47,11 @@
           <li class="nav-item">
             <div
               class="nav-link pointer d-flex justify-content-center fw-bold"
-              (click)="download()"
+              (click)="download()" style="padding-top:15px;"
             >
               <div>DOWNLOAD</div>
               &nbsp;
-              <div class="icon-chev pl-2 mt-1" id="chevron1"></div>
+              <div class="icon-chev pl-2 " id="chevron1" style=""></div>
             </div>
             <div id="menu-download" class="mt-2">
               <a
@@ -91,9 +91,8 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#contact">{{
-              "Contact" | translate | uppercase
-            }}</a>
+            <a class="nav-link fw-bold" href="#contact" style="padding-top:15px;">{{
+              "Contact" | translate | uppercase }}</a>
           </li>
 
           <li class="nav-item">
@@ -104,9 +103,7 @@
               <div
                 [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
               ></div>
-              <span class="fw-bold">
-                {{ langService.lang === "en" ? "EN" : "ID" }}</span
-              >
+              <span class="fw-bold " style=" ">{{ langService.lang === "en" ? "EN" : "ID" }}</span >
               <div class="icon-chev" id="chevron"></div>
             </div>
             <div id="lang-hide" class="mt-2">
