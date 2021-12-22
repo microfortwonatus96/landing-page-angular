@@ -20,7 +20,7 @@ declare let $: any;
   templateUrl: './referral-code.component.html',
   styleUrls: ['./referral-code.component.css'],
 })
-export class ReferralCodeComponent implements OnInit, OnDestroy, AfterViewInit {
+export class ReferralCodeComponent implements OnInit, OnDestroy {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   // @ViewChild(MatSort) sort: MatSort;
   alvieReferralRangking: boolean = true;
@@ -50,10 +50,6 @@ export class ReferralCodeComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnDestroy(): void {
     this.alvieReferralRangking = false;
   }
-  ngAfterViewInit(): void {
-    this.dataSource.paginator = this.paginator;
-    // this.dataSource.sort = this.sort;
-  }
   ngOnInit(): void {
     this.translate.use(this.langService.lang);
     this.newDate = this.date.getFullYear().toString();
@@ -74,6 +70,7 @@ export class ReferralCodeComponent implements OnInit, OnDestroy, AfterViewInit {
       .pipe(takeWhile(() => this.alvieReferralRangking))
       .subscribe((response) => {
         if (response) {
+          console.log(response);
           this.listReferraCode = response;
           this.dataSource = new MatTableDataSource(this.listReferraCode);
           this.dataSource.paginator = this.paginator;

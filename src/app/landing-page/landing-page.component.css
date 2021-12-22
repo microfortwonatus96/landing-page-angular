@@ -1300,7 +1300,7 @@ input[type="number"] {
 
   }
 
-  .bottom-slider{
+  .bottom-slider {
     padding-bottom: 70px;
   }
 
@@ -1946,6 +1946,7 @@ input[type="number"] {
 table, th, td {
   color: #878E9C;
   font-size: 12px;
+  font-family: Montserrat, Regular;
 
 }
 
@@ -1965,7 +1966,7 @@ table, th, td {
   text-transform: uppercase;
   font-size: 14px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   font-family: Montserrat;
   font-weight: 500;
 
