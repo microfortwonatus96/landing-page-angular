@@ -20,7 +20,11 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { SubscriptionService } from '../service/subscribtion.service';
 import { ISubscribe } from '../models/subscribe.model';
 import { RefferalCodeService } from '../service/referral-code.service';
-import { IReferralCode } from '../models/referral.model';
+import {
+  IReferralCode,
+  IReferralEvent,
+  TermCondition,
+} from '../models/referral.model';
 declare var $: any;
 
 @Component({
@@ -105,7 +109,28 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   listReferraCode: IReferralCode[] = [];
   sectionFree: IReferralCode[] = [];
   sectionPaid: IReferralCode[] = [];
-
+  listReferralCode: IReferralEvent[] = [];
+  referralEvent: IReferralEvent = {
+    dateCreated: null,
+    dateFrom: null,
+    dateTo: null,
+    dateUpdated: null,
+    description: null,
+    id: null,
+    lastModifiedBy: null,
+    log: [],
+    name: null,
+    termAndConditions: [],
+    title: null,
+  };
+  termCondition: TermCondition[] = [
+    {
+      dateCreated: null,
+      dateUpdated: null,
+      description: null,
+      id: null,
+    },
+  ];
   listEmpyReferral: IReferralCode[] = [];
 
   selectedindex: number = 0;
@@ -186,6 +211,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadEvent();
     this.loadReferralCode();
     this.carouselSlider();
+    this.loadEventTerms();
   }
 
   loadEvent() {
@@ -228,8 +254,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
                 point: response[i]?.point,
               });
             }
-
-            // console.log('this', this.sectionFree);
           }
         }
       });
@@ -412,5 +436,22 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     setTimeout(() => {
       this.carouselSlider();
     }, 5000);
+  }
+
+  loadEventTerms() {
+    this.referralCodeService
+      .getEvent()
+      .pipe(takeWhile(() => this.alive))
+      .subscribe((res) => {
+        if (res) {
+          this.listReferralCode.push({
+            ...this.referralEvent,
+            ...res,
+          });
+          this.listReferralCode.forEach((v, i) => {
+            this.termCondition = v.termAndConditions;
+          });
+        }
+      });
   }
 }

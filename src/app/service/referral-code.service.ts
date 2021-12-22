@@ -20,4 +20,9 @@ export class RefferalCodeService {
       `${environment.api_referral}/api/rantai-referral-event/current-event`
     );
   }
+  getEvent() {
+    return this.http.get(
+      `${environment.api_referral}/api/rantai-referral-event/current-event`
+    );
+  }
 }

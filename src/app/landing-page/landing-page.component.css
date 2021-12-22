@@ -116,7 +116,7 @@
   line-height: 28px;
   margin: 0;
   color: #000;
-  
+
   font-family: Source Sans Pro;
 }
 
@@ -1854,57 +1854,57 @@ input[type="number"] {
 #i-tokped {
   content: url('../../assets/img/tokped_1.svg');
   width: 120px;
-  height: 100px; 
+  height: 100px;
 
 }
 
 #i-lazada {
   content: url('../../assets/img/lazada_1.svg');
   width: 120px;
-  height: 100px; 
+  height: 100px;
 }
 
 #i-shopee {
   content: url('../../assets/img/shopee_1.svg');
   width: 120px;
-  height: 100px; 
+  height: 100px;
 }
 
 #i-blibli {
   content: url('../../assets/img/blibli_1.svg');
   width: 120px;
-  height: 100px; 
+  height: 100px;
 }
 
 #i-jdid {
   content: url('../../assets/img/jd.id.svg');
   width: 120px;
-  height: 100px; 
+  height: 100px;
 }
 
 #i-bukalapak {
   content: url('../../assets/img/bukalapak_1.svg');
   width: 120px;
-  height: 100px; 
+  height: 100px;
 }
 
 
-.Margin-T{
+.Margin-T {
   margin-top: 75px;
 }
 
-.b-navbar{
+.b-navbar {
   background-color: rgba(223, 235, 254, 1);
   font-family: Montserrat;
 }
 
-.font-heading{
+.font-heading {
   font-family: Montserrat;
   font-weight: bold;
   font-size: 28px;
 }
 
-.font-bodyText{
+.font-bodyText {
   font-size: 15px;
   line-height: 28px;
   margin: 0;
@@ -1913,20 +1913,53 @@ input[type="number"] {
   font-family: Source Sans Pro;
 }
 
-.terms{
+.terms {
   font-size: 10px;
   color: #0B69FD;
   font-style: italic;
 }
 
-.newButton{
+.newButton {
   font-family: Montserrat;
 }
 
 
-#bc{
+#bc {
   background-color: #F5F5F5;
   padding-bottom: 0px;
   padding-top: 0px;
   padding: 1px;
+}
+
+.title-modal {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+table, th, td {
+  color: #878E9C;
+  font-size: 12px;
+
+}
+
+.text-official {
+  color: #0B69FF !important;
+  text-decoration: none;
+}
+
+.box-tabel {
+  position: relative;
+  top: -18px;
+}
+
+.text-cek {
+  color: #0B69FF;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  justify-content:center;
+  font-family: Montserrat;
+  font-weight: 500;
+
 }
