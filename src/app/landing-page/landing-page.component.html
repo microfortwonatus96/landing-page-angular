@@ -1,3 +1,5 @@
+
+
 <header id="home" class="" >
   <nav id="navbar" class="navbar navbar-expand-md fixed-top  b-navbar" >
     <div class="container bg-crumb">
@@ -96,15 +98,15 @@
             }}</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item" >
             <div
               class="nav-link click-lang lang-change"
               (click)="showLanguage()"
             >
-              <div
+              <div 
                 [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
               ></div>
-              <span class="fw-bold">
+              <span class="fw-bold" >
                 {{ langService.lang === "en" ? "EN" : "ID" }}</span
               >
               <div class="icon-chev" id="chevron"></div>
@@ -141,7 +143,7 @@
               <h1
                 data-aos="fade-right"
                 class="f-rantai  "
-               
+               style=""
               >
                 {{ "Invite_Friends" | translate }} <br />
                 {{ "Chain_Get" | translate }} <br />
@@ -217,23 +219,23 @@
         <div class="d-flex justify-content-between">
           <div class="col-md-7 col-sm-6">
             <article class="home-text">
-              <h1 data-aos="fade-right" class="f-rantai ">
+              <h1 data-aos="fade-right" class="f-rantai " style="">
                 {{ "Manage_Shop" | translate }} <br />
                 {{ "With_System" | translate }} <br />
                 {{ "Omnichannel" | translate }} <br />
               </h1>
 
-              <p data-aos="fade-right" class="one-section-p">
+              <p data-aos="fade-right" class="one-section-p font-bodyText">
                 {{ "Follow_The_Program" | translate }}
               </p>
-              <p data-aos="fade-right" class="one-section-p">
+              <p data-aos="fade-right" class="one-section-p font-bodyText">
                 {{ "Chance_To_Win" | translate }}
               </p>
-              <p data-aos="fade-right" class="one-section-p">
+              <p data-aos="fade-right" class="one-section-p font-bodyText">
                 {{ "Prize" | translate }} <b>{{ "USD" | translate }}</b>
               </p>
 
-              <p data-aos="fade-right" class="one-section-p">
+              <p data-aos="fade-right" class="one-section-p font-bodyText">
                 {{ "Sign_Up_Code_Refferal" | translate }}
               </p>
 
@@ -288,7 +290,7 @@
         </div>
       </div>
 
-      <div class="d-flex justify-content-start s-3 slider-mobile">
+      <div class="d-flex justify-content-start s-3 slider-mobile bottom-slider" style="">
         <div class="form-check">
           <input
             class="form-check-input"
@@ -312,26 +314,28 @@
   </section>
 
   <!-- gambar -->
+
   <section id="bc">
     <div class="row justify-content-start align-items-center" >
       <div
         class="col-md-4 col-sm-6"
-        style="text-align: center; "
+        style="text-align: center; padding-top: 30px;"
       >
-        <p class="fw-bold  fs-4">Bekerja sama dengan:</p>
+        <p class="fw-bold  fs-4">{{ "Collaboration" | translate }}:</p>
       </div>
       <div class="col-md-8 col-sm-6 box-marketplace" >
         <marquee scrollamount="13">
-          <div class="d-flex justify-content-around marketplace-slide">
-            <a data-aos="fade-up" data-aos-delay="100" title="tiktok">
+          <!-- <div class="animate__animated animate__slideInRight animate__infinite	infinite animate__slower	2s"></div> -->
+          <div class="d-flex justify-content-around marketplace-slide" style=""> 
+            <a data-aos="fade-up" data-aos-delay="100" class="  ">
               <i id="i-tokped"></i>
             </a>
 
-            <a data-aos="fade-up" data-aos-delay="200">
+            <a data-aos="fade-up" data-aos-delay="200" class="">
               <i id="i-lazada"></i>
             </a>
 
-            <a data-aos="fade-up" data-aos-delay="300">
+            <a data-aos="fade-up" data-aos-delay="300" class="">
               <i id="i-shopee"></i>
             </a>
 
@@ -397,13 +401,13 @@
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
-          <div class="title-blue py-2">{{ "OUR_FEATURES" | translate }}</div>
+          <div class="title-blue py-2" style="font-family: Montserrat; font-size:15px; kerning: 100;">{{ "OUR_FEATURES" | translate }}</div>
         </div>
 
         <div class="d-flex justify-content-center">
           <div
-            class="fw-bold font-title col-md-5 text-center font-heading"
-            style=""
+            class="fw-bold font-title col-md-5 text-center "
+            style="font-family: Montserrat; font-size:30px;"
           >
             {{ "Features_The_Right" | translate }}
           </div>
@@ -412,7 +416,7 @@
         <div class="d-flex justify-content-center" style="margin-bottom: 50px">
           <div
             class="fw-bold font-title col-md-5 text-center ukuran-font"
-            style="font-style: Montserrat; font-size: 28px"
+            style="font-family: Montserrat; font-size:30px;"
           >
             {{ "Growth_Online_Business" | translate }}
           </div>
@@ -492,7 +496,7 @@
                 {{ "Online_Cashier" | translate }}
               </p>
 
-              <p class="fs-6 fw-normal" style="padding-left: 35px">
+              <p class="fw-normal" style="padding-left: 35px; font-family: source sans pro; font-size: 15px; margin-top:15px;">
                 <b> {{ "Sign1" | translate }}</b>
                 <span style="color: #0b69fd; font-weight: bold">
                   {{ "Free_Forever" | translate }}</span
@@ -559,16 +563,14 @@
                   "
                   style="
                     margin-top: 25px;
-                    line-height: 1px;
+                    line-height: 5px;
                     padding-left: 15px;
                     font-size: 14px;
                     font-family: Montserrat;
                   "
                 >
                   {{ "TRANSACTION_INFORMATION" | translate
-                  }}<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                  <br /><br /><br /><br /><br /><span>{{
+                  }}<br /><br /><br /><br /><br /><br /><span >{{
                     "TRANSACTION" | translate
                   }}</span>
                 </p>
@@ -634,7 +636,7 @@
                 {{ "Connect_With_All" | translate }}
               </p>
 
-              <p class="fs-6 fw-normal" style="padding-left: 35px">
+              <p class=" fw-normal" style="padding-left: 35px;  font-family: source sans pro; margin-top:15px; font-weight: bold; font-size:15px; " >
                 <b> {{ "Sign1" | translate }}</b>
                 <span style="color: #0b69fd; font-weight: bold">
                   {{ "Free_Forever" | translate }}</span
@@ -698,9 +700,9 @@
                 {{ "More_Efficient" | translate }}
               </p>
 
-              <p class="fs-6 fw-normal">
+              <p class=" fw-normal" style="margin-top:15px; font-weight: bold; font-size:15px; font-family:source sans pro;">
                 <b> {{ "Sign1" | translate }}</b>
-                <span style="color: #0b69fd; font-weight: bold">
+                <span style="color: #0b69fd; ">
                   {{ "Free_Forever" | translate }}</span
                 >
               </p>
@@ -734,12 +736,12 @@
         <!-- PRICE -->
         <section id="price">
           <div class="row justify-content-center mt-5">
-            <div class="title-blue text-center">
+            <div class="title-blue text-center" style="font-family: Montserrat; font-size:15px;">
               {{ "SUBSCRIPTION_PACKAGE_OPTIONS" | translate }}
             </div>
           </div>
           <div class="row justify-content-center p-3">
-            <div class="text-center font-heading" style="font-family: Montserrat;">
+            <div class="text-center fw-bold" style="font-family: Montserrat; font-size:30px;">
               {{ "Various_Package_Options" | translate }} <br />{{
                 "Adjust_to_Needs" | translate
               }}
@@ -882,7 +884,7 @@
               <p
                 class="h5 pt-4 fw-bolder col-md-12"
                 data-aos="fade-right"
-                style="margin-bottom: 5px; color: #0b69fd"
+                style="margin-bottom: 5px; color: #0b69fd; font-size:22px; font-family: Montserrat;"
               >
                 {{ "Need_Help" | translate }} <br />
                 {{ "WE" | translate }}
@@ -914,19 +916,19 @@
         <div class="row justify-content-center">
           <div
             data-aos="fade-up"
-            class=" title-overview col-md-6 font-heading"
-            style="margin-bottom: 20px; font-family: source sans pro; "
+            class=" title-overview col-md-6 fw-bold"
+            style="margin-bottom: 20px; font-family: Montserrat; font-size:30px; "
           >
             {{ "Commission_Sharing_Chain" | translate }}
           </div>
-          <span class="font-small col-md-6"  style="font-family: source sans pro;">
+          <span class="font-small col-md-6"  style="font-family: source sans pro, Regular; font-size: 15px;">
             {{ "Invite" | translate }}
           </span>
         </div>
         <p
           data-aos="fade-right"
           class=""
-          style="margin-top: 10px; margin-bottom: 1px; font-size: 14px; font-family: source sans pro;"
+          style="margin-top: 10px; margin-bottom: 1px; font-size: 15px; font-family: source sans pro;"
         >
           {{ "Sign_Up_Code_Refferal" | translate }}
         </p>
@@ -973,7 +975,7 @@
       <div class="d-flex justify-content-center align-items-center">
         <div class="cuptropy"></div>
 
-        <span class="font-title fw-bold text-center p-2 ukuran-font" style="font-family: Montserrat;">
+        <span class="font-title fw-bold text-center p-2 ukuran-font" style="font-family: Montserrat; font-size:24px;">
           {{ "R_ranking" | translate }} <br />
           {{ "At_The_Moment" | translate }}</span>
       </div>
@@ -1071,8 +1073,8 @@
   <section>
     <div class="container" data-aos="fade-up">
       <div class="section-title">
-        <div class="font-heading">
-          <span style="color: #0b69fd"> {{ "Rantai" | translate }}</span
+        <div class="fw-bold" style=" font-family: Montserrat; font-size:32px;">
+          <span style="color: #0b69fd; font-family: Montserrat; font-size:32px;"> {{ "Rantai" | translate }}</span
           >{{ "Chains_in_Various_Media" | translate }}
         </div>
       </div>
@@ -1571,7 +1573,7 @@
             <p
               class="h5 pt-4 fw-bolder"
               data-aos="fade-right"
-              style="margin-bottom: 5px"
+              style="margin-bottom: 5px; font-size:24px; font-family: Montserrat;"
             >
               {{ "You_Need_Information" | translate }} <br />
               {{ "Contact_Us_and_Get" | translate }}

@@ -30,7 +30,7 @@
 }
 
 .parallax-section {
-  height: 65vh;
+  height: 90vh;
 }
 
 .box-banner {
@@ -103,12 +103,13 @@
 }
 
 .home-text h1 {
-  font-size: 38px;
+  font-size: 44px;
   font-weight: bold;
   color: #0B69FD;
   margin: 0 0 20px;
   text-transform: capitalize;
   font-family: Montserrat;
+ 
 }
 
 .home-text p {
@@ -213,7 +214,7 @@ p.ls-c-1 {
   }
 
   .parallax-section {
-    height: 105vh;
+    height: 115vh;
   }
 
   .text-refferal {
@@ -1254,7 +1255,7 @@ input[type="number"] {
   }
 
   .parallax-section {
-    height: 105vh;
+    height: 115vh;
   }
 
   .text-refferal {
@@ -1299,8 +1300,12 @@ input[type="number"] {
 
   }
 
+  .bottom-slider{
+    padding-bottom: 70px;
+  }
+
   .parallax-section {
-    height: 105vh;
+    height: 125vh;
   }
 
   .text-refferal {
@@ -1351,7 +1356,7 @@ input[type="number"] {
   }
 
   .parallax-section {
-    height: 105vh;
+    height: 115vh;
   }
 
   .text-refferal {
@@ -1895,13 +1900,15 @@ input[type="number"] {
 
 .b-navbar{
   background-color: rgba(223, 235, 254, 1);
-  font-family: Montserrat;
+  font-family: Montserrat, Regular;
+  font-size: 13px;
 }
 
 .font-heading{
   font-family: Montserrat;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 24px;
+  line-height: 34px;
 }
 
 .font-bodyText{
@@ -1909,8 +1916,8 @@ input[type="number"] {
   line-height: 28px;
   margin: 0;
   color: #000;
-
-  font-family: Source Sans Pro;
+  line-height: 22px;
+  font-family: Source Sans Pro, Regular;
 }
 
 .terms{
@@ -1928,5 +1935,7 @@ input[type="number"] {
   background-color: #F5F5F5;
   padding-bottom: 0px;
   padding-top: 0px;
-  padding: 1px;
+ 
 }
+
+ 
