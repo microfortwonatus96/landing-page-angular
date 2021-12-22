@@ -29,22 +29,24 @@ export class ReferralCodeComponent implements OnInit, OnDestroy {
   newDate: string;
   pageSize: number = 20;
   listReferraCode: IReferralCode[] = [];
-  dataSource: MatTableDataSource<any>;
+  newListCode: IReferralCode[] = [
+    {
+      name: null,
+      phone: null,
+      point: null,
+    },
+  ];
+  dataSource: MatTableDataSource<IReferralCode>;
   // displayedColumns = ['no', 'name', 'phone', 'point'];
-  displayedColumns = ['id', 'name', 'phone', 'point'];
+  displayedColumns = ['name', 'phone', 'point'];
   dtOptions: any = {};
   constructor(
     public translate: TranslateService,
     public langService: LangService,
     private referralCodeService: RefferalCodeService
   ) {
-    const users: UserData[] = [];
-    for (let i = 1; i <= 100; i++) {
-      users.push(createNewUser(i));
-    }
-
     // Assign the data to the data source for the table to render
-    // this.dataSource = new MatTableDataSource(users);
+    // this.dataSource = new MatTableDataSource(this.listReferraCode);
   }
 
   ngOnDestroy(): void {
@@ -68,10 +70,13 @@ export class ReferralCodeComponent implements OnInit, OnDestroy {
     this.referralCodeService
       .referralCode(this.pageSize)
       .pipe(takeWhile(() => this.alvieReferralRangking))
-      .subscribe((response) => {
+      .subscribe((response: any) => {
         if (response) {
           console.log(response);
-          this.listReferraCode = response;
+          this.listReferraCode.push({
+            ...this.newListCode,
+            ...response,
+          });
           this.dataSource = new MatTableDataSource(this.listReferraCode);
           this.dataSource.paginator = this.paginator;
         }
@@ -85,62 +90,4 @@ export class ReferralCodeComponent implements OnInit, OnDestroy {
     value = value.toLowerCase();
     this.dataSource.filter = value;
   }
-}
-function createNewUser(id: number): UserData {
-  const name =
-    NAMES[Math.round(Math.random() * (NAMES.length - 1))] +
-    ' ' +
-    NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) +
-    '.';
-
-  return {
-    id: id.toString(),
-    name: name,
-    progress: Math.round(Math.random() * 100).toString(),
-    color: COLORS[Math.round(Math.random() * (COLORS.length - 1))],
-  };
-}
-const COLORS = [
-  'maroon',
-  'red',
-  'orange',
-  'yellow',
-  'olive',
-  'green',
-  'purple',
-  'fuchsia',
-  'lime',
-  'teal',
-  'aqua',
-  'blue',
-  'navy',
-  'black',
-  'gray',
-];
-const NAMES = [
-  'Maia',
-  'Asher',
-  'Olivia',
-  'Atticus',
-  'Amelia',
-  'Jack',
-  'Charlotte',
-  'Theodore',
-  'Isla',
-  'Oliver',
-  'Isabella',
-  'Jasper',
-  'Cora',
-  'Levi',
-  'Violet',
-  'Arthur',
-  'Mia',
-  'Thomas',
-  'Elizabeth',
-];
-export interface UserData {
-  id: string;
-  name: string;
-  progress: string;
-  color: string;
 }
