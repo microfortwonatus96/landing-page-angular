@@ -105,7 +105,7 @@
 
   "Invite_Friends": "Ajak Teman Pakai",
   "Chain_Get": "Rantai, Dapatkan",
-  "Total_Prize": "Hadiah Total 100 Juta",
+  "Total_Prize": "Hadiah Total 145 Juta",
   "Follow_The_Program": "Ikuti program referral Rantai. Ajak teman atau mitra bisnis Anda pakai",
   "Chance_To_Win": "Rantai dan dapatkan kesempatan memenangkan hadiah uang tunai",
   "Prize": "total",
@@ -130,8 +130,8 @@
 
   "Control": "Kontrol Semua Toko Online di Marketplace",
   "Marketplace": " Hanya dengan Satu Platform",
-  "TRANSACTION_INFORMATION": "INFORMASI TRANSAKSI DI MARKETPLACE",
-  "TRANSACTION":" SECARA REALTIME",
+  "TRANSACTION_INFORMATION": "INFORMASI TRANSAKSI ",
+  "TRANSACTION":" DI MARKETPLACE SECARA REALTIME",
   "Access_Transaction_List": "Akses daftar transaksi toko online anda dari berbagai marketplace secara lengkap dan realtime.",
   "Complete_and_Realtime": "lengkap dan realtime.",
   "SCRAPE_AND_COPY": "SCRAPE DAN COPY ITEM",
@@ -221,6 +221,7 @@
   "At_The_Moment":"saat ini",
 
   "USD":"Rp.145.000.000",
+  "Collaboration":"Bekerjasama dengan",
 
   "Up_to_100": "Up to 100 employese",
   "Up_to_5000": "Up to 5000 Rantailink",
