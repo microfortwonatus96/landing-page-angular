@@ -43,7 +43,6 @@
   "Phone": "Telepon",
   "Business": "Jenis Usaha",
   "City": "Kota/Kabupaten",
-  "Month": "Bulan",
   "Support_Desc": "hari kerja",
   "Hours": "jam",
   "Multi_Gudang": "Multi Gudang",
@@ -94,13 +93,15 @@
   "Manage_Shop": "Kelola Toko Online",
   "With_System": "dengan Satu Sistem",
   "Omnichannel": "Omnichannel",
-  "Free_Subscription": "GRATIS LANGGANAN SELAMANYA!! Rantai hadir untuk memudahkan",
+  "Free_S":"GRATIS LANGGANAN SELAMANYA!! Rantai hadir untuk memudahkan para pengusaha online mengontrol pertumbuhan Toko Online lebih efisien dengan satu sistem.",
+  
+  "Free1":"GRATIS LANGGANAN SELAMANYA!! ",
+  "Free_Subscription": "Rantai hadir untuk memudahkan",
   "Entrepreneurs": "para pengusaha online mengontrol pertumbuhan Toko Online lebih",
   "Efficient": "efisien dengan satu sistem.",
   "Sign_Up1": "Daftar sekarang dan dapatkan GRATIS LANGGANAN SELAMANYA!",
   "Sign1": "Daftar sekarang dan dapatkan",
   "Free_Forever":"GRATIS LANGGANAN SELAMANYA!",
-  "Terms and Conditions1": "syarat dan ketentuan berlaku",
   "Sign_Up_Now": "DAPATKAN SEKARANG",
 
   "Invite_Friends": "Ajak Teman Pakai",
@@ -130,8 +131,8 @@
 
   "Control": "Kontrol Semua Toko Online di Marketplace",
   "Marketplace": " Hanya dengan Satu Platform",
-  "TRANSACTION_INFORMATION": "INFORMASI TRANSAKSI ",
-  "TRANSACTION":" DI MARKETPLACE SECARA REALTIME",
+  "TRANSACTION_INFORMATION": "INFORMASI TRANSAKSI DI ",
+  "TRANSACTION":" MARKETPLACE SECARA REALTIME",
   "Access_Transaction_List": "Akses daftar transaksi toko online anda dari berbagai marketplace secara lengkap dan realtime.",
   "Complete_and_Realtime": "lengkap dan realtime.",
   "SCRAPE_AND_COPY": "SCRAPE DAN COPY ITEM",
@@ -192,8 +193,6 @@
   "Free":"GRATIS",
   "Forever":"Selamanya",
   "Month":"Bulan",
-
-  "Need_Help":"Butuh Bantuan untuk Jenis Paket Langganan? Hubungi",
   "Get":"Kami dan Dapatkan Gratis Langganan Selamanya",
 
 
@@ -221,7 +220,7 @@
   "At_The_Moment":"saat ini",
 
   "USD":"Rp.145.000.000",
-  "Collaboration":"Bekerjasama dengan",
+  "Collaboration":"Bekerja sama dengan",
 
   "Up_to_100": "Up to 100 employese",
   "Up_to_5000": "Up to 5000 Rantailink",

@@ -51,7 +51,7 @@
             >
               <div>DOWNLOAD</div>
               &nbsp;
-              <div class="icon-chev pl-2 " id="chevron1" style=""></div>
+              <div class="icon-chev pl-2 " id="chevron1" ></div>
             </div>
             <div id="menu-download" class="mt-2">
               <a
@@ -103,7 +103,7 @@
               <div
                 [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
               ></div>
-              <span class="fw-bold " style=" ">{{ langService.lang === "en" ? "EN" : "ID" }}</span >
+              <span class="fw-bold " >{{ langService.lang === "en" ? "EN" : "ID" }}</span >
               <div class="icon-chev" id="chevron"></div>
             </div>
             <div id="lang-hide" class="mt-2">
@@ -118,24 +118,46 @@
               </div>
             </div>
           </li>
+
+      
+
+          <!-- <li class="nav-item">
+            <div class="col-md-4 col-sm-5">
+              <a
+                href="https://rantai.tech/web/accounts/sign-up"
+                class="btn btn-primary btn-1 button1"
+                target="_blank" style=" border: solid 2px #0B69FD; width: 100%;"
+              >
+                <div
+                  class="text-signup"
+                  style="font-size: 14px"
+                >
+                  {{ "TRY_FREE1" | translate }}
+                </div>
+              </a>
+            </div>
+          </li>
+           -->
         </ul>
       </div>
     </div>
   </nav>
 </header>
 
-<main id="main">
+<main id="main" >
   <section
     id="parallax"
     data-aos="fade-up"
-    class="parallax-section home d-flex align-items-center Margin-T"
+    class="parallax-section home d-flex align-items-center Margin-T" 
+ 
+
   >
-    <div class="container">
+    <div class="container" >
       <div class="carousel slide-show">
         <div class="row justify-content-between">
           <div class="col-md-7 col-sm-6">
             <article class="home-text">
-              <h1 data-aos="fade-right" class="f-rantai" >
+              <h1 data-aos="fade-right" class="f-rantai heading-p" >
                 {{ "Invite_Friends" | translate }} <br />
                 {{ "Chain_Get" | translate }} <br />
                 {{ "Total_Prize" | translate }} <br />
@@ -144,18 +166,16 @@
               <p data-aos="fade-right" class="one-section-p font-bodyText">
                 {{ "Follow_The_Program" | translate }}
               </p>
-              <p data-aos="fade-right" class="one-section-p font-bodyText">
-                {{ "Chance_To_Win" | translate }}
+              <p data-aos="fade-right" class="one-section-p font-bodyText" style="margin-bottom: 15px;">
+                {{ "Chance_To_Win" | translate }}  {{ "Prize" | translate }} <b>{{ "USD" | translate }}</b>
               </p>
-              <p data-aos="fade-right" class="one-section-p font-bodyText">
-                {{ "Prize" | translate }} <b>{{ "USD" | translate }}</b>
-              </p>
+             
 
-              <p data-aos="fade-right" class="one-section-p font-bodyText">
+              <p data-aos="fade-right" class="one-section-p font-bodyText" >
                 {{ "Sign_Up_Code_Refferal" | translate }}
               </p>
 
-              <div style="margin-top: 10px">
+              <div style="margin-top: -15px;">
                 <a
                   href="#"
                   data-bs-toggle="modal"
@@ -167,12 +187,13 @@
                 </a>
               </div>
 
-              <div class="home-btn" data-aos="fade-right">
+              <div class="home-btn" data-aos="fade-right" style="margin-top: 18px; ">
                 <div class="row justify-content-start">
                   <div class="col-md-4 col-sm-5">
                     <a
+               
                       href="https://rantai.tech/web/accounts/sign-up"
-                      class="btn btn-primary btn-1 button1"
+                      class=" bttn btn btn-primary btn-1 button1 " 
                       target="_blank"
                     >
                       <div
@@ -183,15 +204,15 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-md-4 col-sm-7" style="margin-left: 35px">
+                  <div class="col-md-4 col-sm-7  image-google" >
                     <a
                       href="https://play.google.com/store/apps/details?id=com.css.rantai"
                       target="_blank"
                       rel="noopener noreferrer"
-                      class="app-logo"
+                      class="app-logo"  
                     >
                       <div
-                        class="img-google-play app-store"
+                        class="img-google-play app-store" 
                         loading="lazy"
                       ></div>
                     </a>
@@ -201,53 +222,65 @@
             </article>
           </div>
           <div class="col-md-5 col-sm-6 banner-normal">
-            <img src="../../assets/images/banner.svg" alt="banner" />
+            <img src="../../assets/images/banner.svg" alt="banner" class="banner1" />
           </div>
         </div>
       </div>
 
       <!-- mhimik -->
-      <div class="carousel slide-show">
+      <div class="carousel slide-show" >
         <div class="d-flex justify-content-between">
           <div class="col-md-7 col-sm-6">
             <article class="home-text">
-              <h1 data-aos="fade-right" class="f-rantai" >
+              <h1 data-aos="fade-right" class="f-rantai "  id="head2">
                 {{ "Manage_Shop" | translate }} <br />
                 {{ "With_System" | translate }} <br />
                 {{ "Omnichannel" | translate }} <br />
               </h1>
 
               <p data-aos="fade-right" class="one-section-p font-bodyText">
-                {{ "Follow_The_Program" | translate }}
+               <b> {{ "Free1" | translate }} </b> {{ "Free_Subscription" | translate }}
               </p>
               <p data-aos="fade-right" class="one-section-p font-bodyText">
-                {{ "Chance_To_Win" | translate }}
+                {{ "Entrepreneurs" | translate }}
               </p>
-              <p data-aos="fade-right" class="one-section-p font-bodyText">
-                {{ "Prize" | translate }} <b>{{ "USD" | translate }}</b>
+              <p data-aos="fade-right" class="one-section-p font-bodyText" style="margin-bottom: 15px;">
+                {{ "Efficient" | translate }} 
               </p>
 
-              <p data-aos="fade-right" class="one-section-p font-bodyText">
-                {{ "Sign_Up_Code_Refferal" | translate }}
-              </p>
+              <p
+              class="fw-normal"
+              style="
+              
+                font-family: source sans pro;
+                font-size: 15px;
+                margin-top: 15px;
+              "
+            >
+               {{ "Sign1"| translate }}<span style="color: black; font-weight: bold">{{"Free_Forever" | translate }}</span
+              >
+            </p>
+          
 
-              <div style="margin-top: 10px">
+              <div style="margin-top: 5px">
                 <a
-                  href="https://rantai.tech/web/accounts/sign-up"
-                  target="_blank"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#syartdanketentuan"
                 >
-                  <div class="terms" style="text-align: left">
+                  <div class="terms" style="text-align: left; font-family: source sans pro; font-style: italic;">
                     <ins> {{ "Terms and Conditionss" | translate }}</ins>
                   </div>
                 </a>
               </div>
 
-              <div class="home-btn" data-aos="fade-right">
+              <div class="home-btn" data-aos="fade-right" style="margin-top: 18px; padding-bottom: 33px;">
                 <div class="row justify-content-start">
                   <div class="col-md-4 col-sm-5">
                     <a
+                  
                       href="https://rantai.tech/web/accounts/sign-up"
-                      class="btn btn-primary btn-1 button1"
+                      class=" btn btn-primary btn-1 button1 bttn"
                       target="_blank"
                     >
                       <div
@@ -258,7 +291,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-md-4 col-sm-7" style="margin-left: 35px">
+                  <div class="col-md-4 col-sm-7 image-google" >
                     <a
                       href="https://play.google.com/store/apps/details?id=com.css.rantai"
                       target="_blank"
@@ -275,16 +308,16 @@
               </div>
             </article>
           </div>
-          <div class="col-md-5 col-sm-6 banner-normal">
-            <img src="../../assets/images/banner2.svg" alt="banner" />
+          <div class="col-md-5 col-sm-6 banner-n2" >
+            <img src="../../assets/images/banner2.svg" alt="banner" class="banner2"/>
           </div>
         </div>
+
+      
       </div>
 
-      <div
-        class="d-flex justify-content-start s-3 slider-mobile bottom-slider"
-      >
-        <div class="form-check">
+      <div class="d-flex justify-content-start s-3 slider-mobile" style="margin-top: -25px;">
+        <div class="form-check" >
           <input
             class="form-check-input"
             type="radio"
@@ -293,7 +326,7 @@
             (click)="btnSlide(1)"
           />
         </div>
-        <div class="form-check">
+        <div class="form-check" >
           <input
             class="form-check-input"
             type="radio"
@@ -303,90 +336,90 @@
           />
         </div>
       </div>
-    </div>
+      <!-- <div class="col-md-5 col-sm-6 banner-n2 " >
+        <img src="../../assets/images/banner2.svg" alt="banner" class="banner2"/>
+      </div> -->
+    </div> 
+   
   </section>
 
-  <!-- gambar -->
-
-  <section id="bc">
-    <div class="row justify-content-start align-items-center">
-      <div
-        class="col-md-4 col-sm-6"
-        style="text-align: center; padding-top: 30px"
-      >
-        <p class="fw-bold fs-4">{{ "Collaboration" | translate }}:</p>
-      </div>
-      <div class="col-md-8 col-sm-6 box-marketplace">
-        <marquee scrollamount="13">
-          <!-- <div class="animate__animated animate__slideInRight animate__infinite	infinite animate__slower	2s"></div> -->
-          <div class="d-flex justify-content-around marketplace-slide">
-            <a data-aos="fade-up" data-aos-delay="100" class="">
-              <i id="i-tokped"></i>
-            </a>
-
-            <a data-aos="fade-up" data-aos-delay="200" class="">
-              <i id="i-lazada"></i>
-            </a>
-
-            <a data-aos="fade-up" data-aos-delay="300" class="">
-              <i id="i-shopee"></i>
-            </a>
-
-            <a data-aos="fade-up" data-aos-delay="400">
-              <i id="i-blibli"></i>
-              <p
-                style="
-                  font-style: Montserrat;
-                  font-weight: bold;
-                  color: #919aab;
-                  font-size: 10px;
-                  text-align: center;
-                  position: relative;
-                  margin-top: -30px;
-                "
-              >
-                COMING SOON
-              </p>
-            </a>
-
-            <a data-aos="fade-up" data-aos-delay="500">
-              <i id="i-jdid"></i>
-              <p
-                style="
-                  font-style: Montserrat;
-                  font-weight: bold;
-                  color: #919aab;
-                  font-size: 10px;
-                  text-align: center;
-                  position: relative;
-                  margin-top: -30px;
-                "
-              >
-                COMING SOON
-              </p>
-            </a>
-
-            <a data-aos="fade-up" data-aos-delay="500">
-              <i id="i-bukalapak"> </i>
-              <p
-                style="
-                  font-style: Montserrat;
-                  font-weight: bold;
-                  color: #919aab;
-                  font-size: 10px;
-                  text-align: center;
-                  position: relative;
-                  margin-top: -30px;
-                "
-              >
-                COMING SOON
-              </p>
-            </a>
-          </div>
-        </marquee>
-      </div>
+  <section style="padding:0px;">
+  <div class="row justify-content-start align-items-center" id="bc">
+    <div class="col-md-3 col-sm-6" style="text-align: center; padding-top: 30px">
+      <p class="fw-bold " style="font-family: Montserrat; font-size:14px;">{{ "Collaboration" | translate }}:</p>
     </div>
-  </section>
+    <div class="col-md-8 col-sm-6 box-marketplace">
+      <marquee scrollamount="13">
+        <!-- <div class="animate__animated animate__slideInRight animate__infinite	infinite animate__slower	2s"></div> -->
+        <div class="d-flex justify-content-around marketplace-slide" style="margin-top:30px;">
+          <a data-aos="fade-up" data-aos-delay="100" style="padding-right: 35px;">
+            <i id="i-tokped"></i>
+          </a>
+
+          <a data-aos="fade-up" data-aos-delay="200" style="padding-right: 35px;">
+            <i id="i-lazada"></i>
+          </a>
+
+          <a data-aos="fade-up" data-aos-delay="300" style="padding-right: 35px;">
+            <i id="i-shopee"></i>
+          </a>
+
+          <a data-aos="fade-up" data-aos-delay="400" style="padding-right: 35px;">
+            <i id="i-blibli"></i>
+            <p
+            style="
+            font-style: Montserrat;
+            font-weight: bold;
+            color: #919aab;
+            font-size: 8px;
+            text-align: center;
+            position: relative;
+            margin-top: -5px;
+          "
+            >
+              COMING SOON
+            </p>
+          </a>
+
+          <a data-aos="fade-up" data-aos-delay="500" style="padding-right: 35px;">
+            <i id="i-jdid"></i>
+            <p
+            style="
+            font-style: Montserrat;
+            font-weight: bold;
+            color: #919aab;
+            font-size: 8px;
+            text-align: center;
+            position: relative;
+            margin-top: -5px;
+          "
+            >
+              COMING SOON
+            </p>
+          </a>
+
+          <a data-aos="fade-up" data-aos-delay="500" style="padding-right: 35px;">
+            <i id="i-bukalapak"> </i>
+            <p
+              style="
+                font-style: Montserrat;
+                font-weight: bold;
+                color: #919aab;
+                font-size: 8px;
+                text-align: center;
+                position: relative;
+                margin-top: -5px;
+              "
+            >
+              COMING SOON
+            </p>
+          </a>
+        </div>
+      </marquee>
+    </div>
+  </div>
+</section>
+
 
   <!-- SECTION 2 -->
   <section id="feature" class="about">
@@ -395,7 +428,7 @@
         <div class="d-flex justify-content-center">
           <div
             class="title-blue py-2"
-            style="font-family: Montserrat; font-size: 15px; kerning: 100"
+            style="font-family: Montserrat; font-size: 15px; "
           >
             {{ "OUR_FEATURES" | translate }}
           </div>
@@ -418,10 +451,13 @@
             {{ "Growth_Online_Business" | translate }}
           </div>
         </div>
+
         <div class="mt-4 row justify-content-between">
-          <div class="col-md-6" data-aos="fade-up">
-            <div class="image-size tab-phone" loading="lazy"></div>
+          
+          <div class="col-md-6" data-aos="fade-up"> 
+            <div id="r-720" class=" tab-phone" loading="lazy" ></div>
           </div>
+          
           <div
             class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content"
             data-aos="fade-right"
@@ -429,13 +465,13 @@
             <article class="artikel">
               <div
                 class="fw-bold font-title ukuran-font"
-                style="font-style: Montserrat; font-size: 20px"
+                style="font-family: Montserrat; font-size: 20px"
               >
                 {{ "Manage_stock" | translate }}
               </div>
               <div
-                class="fw-bold font-title ukuran-font"
-                style="font-style: Montserrat; font-size: 20px"
+                class=" font-title ukuran-font"
+                style="font-family: Montserrat; font-size: 20px; font-weight: bold;"
               >
                 {{ "Anytime_and_Anywhere" | translate }}
               </div>
@@ -450,15 +486,16 @@
                     padding-left: 15px;
                     font-size: 13px;
                     font-family: Montserrat;
+                    font-weight: bold;
                   "
                 >
                   {{ "Update_Stock" | translate
                   }}<br /><br /><br /><br /><br /><br /><br /><br />
                   <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                  <br /><br /><br /><br /><br /><br /><span
-                    style="position: relative; margin-right: 50px"
-                    >{{ "U" | translate }}</span
-                  >
+                  <br /><br /><br /><br /><br /><br />
+                  <span style=" margin-left: -1px;">
+                    {{ "U" | translate }}
+                    </span>
                 </p>
               </div>
 
@@ -516,10 +553,11 @@
                 style="padding-left: 35px"
               >
                 <div class="row justify-content-start">
-                  <div class="col-md-4 col-sm-5">
+                  <div class="col-md-4 col-sm-5"  id="bts3">
                     <a
                       href="https://rantai.tech/web/accounts/sign-up"
-                      class="btn btn-1"
+                     
+                      class="btn btn-1 "
                       target="_blank"
                       style="
                         border-radius: 24px;
@@ -544,16 +582,27 @@
   </section>
 
   <!-- SECTION 3 -->
-  <section id="benefit" class="services box-section">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="mt-4 row justify-content-between">
-          <div class="col-md-6 pt-4 pt-lg-0 content" data-aos="fade-right">
-            <article class="artikel">
-              <div class="fw-bold font-heading">
+  <section id="benefit" class="services box-section section3" >
+    <div class="container" >
+
+      <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up" >
+        <div id="test" class="image-mobile image-toko-online" loading="lazy" >
+          <img src="../../assets/images/tokoonline.svg" alt="" class="image-mobile">
+        </div>
+      </div>
+
+      <div class="row align-items-center justify-content-center" style="margin-left: 12px;">
+        
+        <div class="mt-4 row justify-content-between" >
+
+          
+
+          <div class="col-md-6 pt-4 pt-lg-0 content" data-aos="fade-right" >
+            <article class="artikel" >
+              <div class="fw-bold font-heading" style="font-family: Montserrat;">
                 {{ "Control" | translate }}
               </div>
-              <div class="fw-bold font-heading">
+              <div class="fw-bold font-heading" style="font-family: Montserrat;">
                 {{ "Marketplace" | translate }}
               </div>
 
@@ -576,7 +625,9 @@
                   "
                 >
                   {{ "TRANSACTION_INFORMATION" | translate
-                  }}<br /><br /><br /><br /><br /><br /><span>{{
+                  }}<br /><br /><br /><br /><br /><br />
+                  
+                  <span style="margin-left: -1px;">{{
                     "TRANSACTION" | translate
                   }}</span>
                 </p>
@@ -661,7 +712,7 @@
                 style="padding-left: 35px"
               >
                 <div class="row justify-content-start">
-                  <div class="col-md-4 col-sm-5">
+                  <div class="col-md-4 col-sm-5"  id="bts3">
                     <a
                       href="https://rantai.tech/web/accounts/sign-up"
                       class="btn btn-1"
@@ -683,9 +734,13 @@
               </div>
             </article>
           </div>
+
           <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up">
-            <div class="image-size tab-tokoonline" loading="lazy"></div>
+            <div id="image-section3" class="image-size" loading="lazy" >
+              <img class="img-tok" src="../../assets/images/tokoonline.svg" alt="" >
+            </div>
           </div>
+        
         </div>
       </div>
     </div>
@@ -696,9 +751,11 @@
     <div class="container">
       <div class="row align-items-center justify-content-center">
         <div class="mt-4 row justify-content-between">
+         
           <div class="col-md-6" data-aos="fade-up">
-            <div class="image-size tab-fiturreport" loading="lazy"></div>
+            <div class="image-size1 tab-fiturreport" loading="lazy"></div>
           </div>
+          
           <div
             class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content"
             data-aos="fade-right"
@@ -728,7 +785,7 @@
 
               <div class="home-btn" data-aos="fade-right">
                 <div class="row justify-content-start">
-                  <div class="col-md-4 col-sm-5">
+                  <div class="col-md-4 col-sm-5"  id="bts3">
                     <a
                       href="https://rantai.tech/web/accounts/sign-up"
                       class="btn btn-1"
@@ -772,8 +829,9 @@
               }}
             </div>
           </div>
-          <div class="row justify-content-center">
-            <div
+
+          <div class="row justify-content-center gbr" style=" margin-right: 20px; ">
+            <div 
               class="
                 col-md-3 col-sm-6
                 align-items-stretch
@@ -785,20 +843,21 @@
               data-aos="zoom-in"
               data-aos-delay="100"
               *ngIf="typelistFree.length > 0"
+              
             >
-              <div class="img-subsciption">
+              <div class="img-subsciption" >
                 <div id="silver" class="col sub">
                   <div class="d-flex justify-content-start">
                     <div class="paket-rantai img-fluid"></div>
                     <div class="row justify-content-start text-price">
                       <div class="text-left">
-                        <div class="fw-bold f-14">RANTAI MARKETPLACE</div>
+                        <div class="fw-bold f-14" style="font-family: Montserrat;">RANTAI MARKETPLACE</div>
                       </div>
                       <div class="row justify-content-start">
                         <div class="f-12">
                           <sup class="text-remove">Rp 490.000</sup>
-                          <span class="fw-bold">{{ "Free" | translate }}</span>
-                          <sub>{{ "Forever" | translate }}</sub>
+                          <span class="fw-bold" style="font-family: Montserrat;">{{ "Free" | translate }}</span>
+                          <sub style="font-family: Montserrat;"> {{ "Forever" | translate }}</sub>
                         </div>
                       </div>
                     </div>
@@ -823,12 +882,12 @@
                             <div
                               class="bd-highlight box-list icon-valid mt-1 me-2"
                             ></div>
-                            <div class="bd-highlight text-start fw-bold f-14">
+                            <div class="bd-highlight text-start fw-bold f-14" style="font-family: source sans pro;">
                               {{ free.benefit | titlecase }}
                             </div>
                           </div>
                         </ng-container>
-                        <span class="text-muted f-12 text-syarat"
+                        <span class="text-muted f-12 text-syarat" style="font-family: Montserrat; font-style: italic; font-size:10px;"
                           >{{ "Terms and Conditions1" | translate }}.</span
                         >
                       </div>
@@ -851,6 +910,7 @@
               data-aos="zoom-in"
               data-aos-delay="100"
               *ngIf="typelistErp.length > 0"
+        
             >
               <div class="img-subsciption">
                 <div id="silver" class="col sub">
@@ -858,15 +918,15 @@
                     <div class="paket-rantaierp img-fluid"></div>
                     <div class="row justify-content-start text-price">
                       <div class="text-left">
-                        <div class="fw-bold f-14">RANTAI ERP</div>
+                        <div class="fw-bold f-14" style="font-family: Montserrat;">RANTAI ERP</div>
                       </div>
                       <div class="row justify-content-start">
                         <div class="text-left f-12">
-                          <sup>Rp </sup>
+                          <sup style="font-family: Montserrat;">Rp </sup>
                           <span class="fw-bold">{{
                             price | number: "1.2-2"
                           }}</span>
-                          <sub>/{{ "Month" | translate }}</sub>
+                          <sub style="font-family: Montserrat;">/{{ "Month" | translate }}</sub>
                         </div>
                       </div>
                     </div>
@@ -891,7 +951,7 @@
                             <div
                               class="bd-highlight box-list icon-valid mt-1 me-2"
                             ></div>
-                            <div class="bd-highlight text-start fw-bold f-14">
+                            <div class="bd-highlight text-start fw-bold f-14" style="font-family: source sans pro;">
                               {{ erp.benefit | titlecase }}
                             </div>
                           </div>
@@ -905,16 +965,13 @@
           </div>
 
           <div class="row justify-content-center" style="margin-bottom: 40px">
-            <div class="col-md-6 col-sm-6 teks">
+           
+            <div class="col-md-6 col-sm-6 teks" >
               <p
-                class="h5 pt-4 fw-bolder col-md-12"
+              id="butuhB"
+                class="h5 pt-4 fw-bolder col-md-12 butuhB"
                 data-aos="fade-right"
-                style="
-                  margin-bottom: 5px;
-                  color: #0b69fd;
-                  font-size: 22px;
-                  font-family: Montserrat;
-                "
+               
               >
                 {{ "Need_Help" | translate }} <br />
                 {{ "WE" | translate }}
@@ -923,25 +980,26 @@
 
             <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
               <div class="row justify-content-start">
-                <div class="" style="margin-top: 25px">
-                  <a href="#contact" class="btn btn-primary button1">
-                    <div class="btn-title-lets-start fw-bold">
+                <div class="buttonmik" style="margin-top: 25px; ">
+                  <a href="#contact" class="btn btn-primary button1 bttn" style=" font: size 13px; ">
+                    <div class="btn-title-lets-start fw-bold" >
                       {{ "CONTACT_US" | translate }}
                     </div>
                   </a>
                 </div>
               </div>
             </div>
+
           </div>
         </section>
       </div>
     </div>
   </section>
 
-  <section id="benefit" class="services box-section">
-    <div class="container" data-aos="fade-up">
-      <div class="section-title section-choose-plan">
-        <div class="row justify-content-center">
+  <section id="benefit" class="services box-section" >
+    <div class="container" data-aos="fade-up" >
+      <div class="section-title section-choose-plan" style=" margin-left: 20px; margin-right: 20px;">
+        <div class="row justify-content-center komisi" >
           <div
             data-aos="fade-up"
             class="title-overview col-md-6 fw-bold"
@@ -954,8 +1012,9 @@
             {{ "Commission_Sharing_Chain" | translate }}
           </div>
           <span
-            class="font-small col-md-6"
-            style="font-family: source sans pro, Regular; font-size: 15px"
+          id="komisi-font"
+            class=" col-md-6 komisi-font"
+        
           >
             {{ "Invite" | translate }}
           </span>
@@ -982,7 +1041,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#syartdanketentuan"
                 >
-                  <div class="terms">
+                  <div class="terms" style="font-family: source sans pro; font-style: italic; font-size:10px;">
                     <ins> {{ "Terms and Conditionss" | translate }}</ins>
                   </div>
                 </a>
@@ -994,14 +1053,15 @@
         <div class="row justify-content-center">
           <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
             <div class="row justify-content-start">
-              <div class="teks" style="margin-top: 15px">
-                <a
+              <div class="teks btnn" style="margin-top: 15px; ">
+                <a id="bts5"
                   href="https://rantai.tech/web/accounts/sign-up"
                   target="_blank"
-                  class="btn btn-primary btn-1 button1 teks"
+                  class="  btn btn-primary btn-1 button1 teks btmik "
+               
                 >
                   <div
-                    class="btn-title-lets-start"
+                    class="btn-title-lets-start "
                     style="color: white; font-size: 11px"
                   >
                     {{ "Sign_Up_Now1" | translate }}
@@ -1013,7 +1073,7 @@
         </div>
       </div>
 
-      <div class="d-flex justify-content-center align-items-center">
+      <div class="d-flex justify-content-center align-items-center" >
         <div class="cuptropy"></div>
 
         <span
@@ -1027,9 +1087,10 @@
 
       <div class="row justify-content-center">
         <div
-          class="col-md-4 col-sm-12 mt-md-0 p-3"
+          class="col-md-4 col-sm-12 mt-md-0 p-4 referal_r"
           data-aos="zoom-in"
           data-aos-delay="100"
+         
         >
           <ng-container *ngFor="let ref of sectionFree; let i = index">
             <div class="box-referral mb-3 pointer">
@@ -1042,12 +1103,12 @@
                       >
                     </div>
                   </div>
-                  <div class="col-md-10 col-sm-10">
+                  <div class="col-md-10 col-sm-10" >
                     <div class="d-flex justify-content-between">
-                      <div class="col-md-7 col-sm-9 fw-bold text-refferal">
+                      <div class="col-md-7 col-sm-9 fw-bold text-refferal" style="font-family: Montserrat; font-size:13px;">
                         {{ ref.name ? ref.name : "No Data" }}
                       </div>
-                      <div class="col-md-3 col-sm-3 point-color">
+                      <div class="col-md-3 col-sm-3 point-color" style="font-family: Montserrat; font-size:13px; font-weight: bold; ">
                         {{ ref.point }} Poin
                       </div>
                     </div>
@@ -1059,9 +1120,10 @@
         </div>
 
         <div
-          class="col-md-4 col-sm-6 p-3"
+          class="col-md-4 col-sm-6 p-4 p-referal referal_r"
           data-aos="zoom-in"
           data-aos-delay="100"
+         
         >
           <ng-container *ngFor="let ref of sectionPaid; let i = index">
             <div class="box-referral mb-3 pointer">
@@ -1073,11 +1135,11 @@
                     </div>
                   </div>
                   <div class="col-md-10 col-sm-10">
-                    <div class="d-flex justify-content-between">
-                      <div class="col-md-7 col-sm-9 fw-bold text-refferal">
+                    <div class="d-flex justify-content-between" style="font-family: Montserrat; font-size:13px;">
+                      <div class="col-md-7 col-sm-9 fw-bold text-refferal" >
                         {{ ref.name ? ref.name : "No Data" }}
                       </div>
-                      <div class="col-md-3 col-sm-3 point-color">
+                      <div class="col-md-3 col-sm-3 point-color" >
                         {{ ref.point }} Poin
                       </div>
                     </div>
@@ -1144,7 +1206,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-beritasatu hover-media"></div>
+            <div id="imagee" class="image-size1 logo-beritasatu hover-media" ></div>
           </a>
         </div>
         <div
@@ -1164,7 +1226,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size mediaindonesia hover-media"></div>
+            <div id="imagee" class="image-size1 mediaindonesia hover-media"></div>
           </a>
         </div>
         <div
@@ -1184,7 +1246,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size tribunnews hover-media"></div>
+            <div id="imagee" class="image-size1 tribunnews hover-media"></div>
           </a>
         </div>
         <div
@@ -1204,7 +1266,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size sindonews hover-media"></div>
+            <div id="imagee" class="image-size1 sindonews hover-media"></div>
           </a>
         </div>
         <div
@@ -1224,7 +1286,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-tempo hover-media"></div>
+            <div id="imagee" class="image-size1 logo-tempo hover-media"></div>
           </a>
         </div>
         <div
@@ -1244,7 +1306,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-suaracom hover-media"></div>
+            <div id="imagee" class="image-size1 logo-suaracom hover-media"></div>
           </a>
         </div>
         <div
@@ -1264,7 +1326,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-planetmerdeka hover-media"></div>
+            <div id="imagee" class="image-size1 logo-planetmerdeka hover-media"></div>
           </a>
         </div>
         <div
@@ -1284,7 +1346,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-republika hover-media"></div>
+            <div id="imagee" class="image-size1 logo-republika hover-media"></div>
           </a>
         </div>
         <div
@@ -1304,7 +1366,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size jpncom hover-media"></div>
+            <div id="imagee" class="image-size1 jpncom hover-media"></div>
           </a>
         </div>
         <div
@@ -1324,7 +1386,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-wartaekonomi hover-media"></div>
+            <div id="imagee" class="image-size1 logo-wartaekonomi hover-media"></div>
           </a>
         </div>
         <div
@@ -1344,7 +1406,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-linetoday hover-media"></div>
+            <div id="imagee" class="image-size1 logo-linetoday hover-media"></div>
           </a>
         </div>
         <div
@@ -1364,7 +1426,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-marketing hover-media"></div>
+            <div id="imagee" class="image-size1 logo-marketing hover-media"></div>
           </a>
         </div>
         <div
@@ -1384,7 +1446,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size inilahcom hover-media"></div>
+            <div id="imagee" class="image-size1 inilahcom hover-media"></div>
           </a>
         </div>
         <div
@@ -1404,7 +1466,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-selular hover-media"></div>
+            <div id="imagee" class="image-size1 logo-selular hover-media"></div>
           </a>
         </div>
         <div
@@ -1424,7 +1486,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-bisnis hover-media"></div>
+            <div id="imagee" class="image-size1 logo-bisnis hover-media"></div>
           </a>
         </div>
         <div
@@ -1444,7 +1506,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size investor hover-media"></div>
+            <div id="imagee" class="image-size1 investor hover-media"></div>
           </a>
         </div>
         <div
@@ -1464,7 +1526,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-antaranews hover-media"></div>
+            <div id="imagee" class="image-size1 logo-antaranews hover-media"></div>
           </a>
         </div>
         <div
@@ -1484,7 +1546,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-akuratcom hover-media"></div>
+            <div id="imagee" class="image-size1 logo-akuratcom hover-media"></div>
           </a>
         </div>
         <div
@@ -1504,7 +1566,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-itworks hover-media"></div>
+            <div id="imagee" class="image-size1 logo-itworks hover-media"></div>
           </a>
         </div>
         <div
@@ -1524,7 +1586,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-mix hover-media"></div>
+            <div id="imagee" class="image-size1 logo-mix hover-media"></div>
           </a>
         </div>
         <div
@@ -1544,7 +1606,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-techbiz hover-media"></div>
+            <div id="imagee" class="image-size1 logo-techbiz hover-media"></div>
           </a>
         </div>
         <div
@@ -1564,7 +1626,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-dailysosial hover-media"></div>
+            <div id="imagee" class="image-size1 logo-dailysosial hover-media"></div>
           </a>
         </div>
         <div
@@ -1584,7 +1646,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-idrtimes hover-media"></div>
+            <div id="imagee" class="image-size1 logo-idrtimes hover-media"></div>
           </a>
         </div>
         <div
@@ -1604,7 +1666,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="image-size logo-trenteknologi hover-media"></div>
+            <div id="imagee" class="image-size1 logo-trenteknologi hover-media"></div>
           </a>
         </div>
       </div>
@@ -1617,7 +1679,7 @@
     <div class="container">
       <div class="foot-content">
         <div class="row justify-content-around" style="margin-bottom: 40px">
-          <div class="col-md-10 col-sm-6">
+          <div class="col-md-8 col-sm-8">
             <p
               class="h5 pt-4 fw-bolder"
               data-aos="fade-right"
@@ -1649,9 +1711,9 @@
 
           <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
             <div class="row justify-content-start">
-              <div class="" style="margin-top: 25px">
-                <a href="#contact" class="button-footer btn btn-primary">
-                  <div class="btn-title-lets-start fw-bold">
+              <div  style="margin-top: 25px">
+                <a href="#contact" class="button-footer btn btn-primary btttn" >
+                  <div class="btn-title-lets-start fw-bold " style="font-family: Montserrat;">
                     {{ "CONTACT_US" | translate }}
                   </div>
                 </a>
@@ -1663,20 +1725,31 @@
 
       <div class="row justify-content-between">
         <div class="border-box">
+         
+          <div class="d-flex flex-row align-items-center bd-highlight pt-3 logo-foot">
+            <div class="logo-footerr " loading="lazy" ></div>
+            <div
+              class="bd-highlight"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            > 
+            </div>
+          </div>
+          
           <div class="row justify-content-between">
             <div class="col-md-4 foot-content" style="margin-top: 30px">
-              <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
+              <p class="h5 pt-4 fw-bolder fw-bold" data-aos="fade-right" style="font-family: Montserrat; font-size:15px;">
                 {{ "What_Is_Rantai" | translate }}
               </p>
               <div class="row align-items-start" [style.padding-right]="'25px'">
-                <p data-aos="zoom-in" class="pt-3" data-aos-delay="150">
+                <p data-aos="zoom-in" class="pt-3" data-aos-delay="150" style="font-family: source sans pro; font-size: 14px;">
                   {{ "Rantai_Is" | translate }}
                 </p>
               </div>
             </div>
 
-            <div class="col-md-4 foot-content" style="margin-top: 30px">
-              <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
+            <div class="col-md-4 foot-content" style="margin-top: 30px; font-family: Montserrat; ">
+              <p class="h5 pt-4 fw-bolder" data-aos="fade-right" style="font-size:15px;">
                 {{ "CHECK_OUR_VIDEO" | translate }}
               </p>
               <div class="row justify-content-start">
@@ -1688,13 +1761,14 @@
                     href="https://www.youtube.com/watch?v=8JxK--cp9nE"
                     class="btn col-md-8 col-sm-8 btn-footer"
                     target="_blank"
+                  
                   >
                     <div
                       class="d-flex justify-content-start align-items-center"
                     >
                       <div class="logo-video"></div>
                       <div class="icon-video-biru"></div>
-                      <span class="btn-footer-text">Rantai Introduction</span>
+                      <span class="btn-footer-text" >Rantai Introduction</span>
                     </div>
                   </a>
                 </div>
@@ -1710,7 +1784,7 @@
                     >
                       <div class="logo-video"></div>
                       <div class="icon-video-biru"></div>
-                      <span class="btn-footer-text"
+                      <span  class="text-foot" 
                         >Marketplace Introduction</span
                       >
                     </div>
@@ -1728,7 +1802,7 @@
                     >
                       <div class="logo-video"></div>
                       <div class="icon-video-biru"></div>
-                      <span class="btn-footer-text">Marketplace Tutorial</span>
+                      <span class="btn-footer-text" >Marketplace Tutorial</span>
                     </div>
                   </a>
                 </div>
@@ -1744,7 +1818,7 @@
                     >
                       <div class="logo-video"></div>
                       <div class="icon-video-biru"></div>
-                      <span class="btn-footer-text">Rantai Talk</span>
+                      <span class="btn-footer-text" >Rantai Talk</span>
                     </div>
                   </a>
                 </div>
@@ -1752,7 +1826,7 @@
             </div>
 
             <div class="col-md-4 foot-content" style="margin-top: 30px">
-              <p class="h5 pt-4 fw-bolder" data-aos="fade-right">
+              <p class="h5 pt-4 fw-bolder" data-aos="fade-right" style="font-family: Montserrat;  font-size:15px;">
                 {{ "CONTACT_US" | translate }}
               </p>
 
@@ -1762,8 +1836,8 @@
                   class="bd-highlight"
                   data-aos="fade-left"
                   data-aos-delay="200"
-                >
-                  <div class="font-small px-3">021 296 19 712</div>
+                > 
+                  <div class="font-small px-3" style="font-family: source sans pro;  font-size:14px;">021 296 19 712</div>
                 </div>
               </div>
 
@@ -1776,7 +1850,7 @@
                       data-aos="fade-left"
                       data-aos-delay="100"
                     >
-                      <div class="font-small px-3" style="color: white">
+                      <div class="font-small px-3" style="color: white; font-family: source sans pro; font-size:14px;">
                         support@rantai.tech
                       </div>
                     </div>
@@ -1796,7 +1870,7 @@
                     <div class="bd-highlight">
                       <div
                         class="color-1 font-small px-3"
-                        style="text-align: left; color: white; margin-left: 7px"
+                        style="text-align: left; color: white; margin-left: 7px; font-family: source sans pro; font-size:14px;"
                         data-aos="fade-left"
                         data-aos-delay="300"
                       >
@@ -1875,7 +1949,7 @@
     class="d-flex align-items-center justify-content-center"
     style="background-color: #0b69fd; padding-top: 1px"
   >
-    <p class="text-center text-white">
+    <p class="text-center text-white" style="font-family: Montserrat;">
       &copy; {{ newDate }}&nbsp;PT Cyberindo Sinergi Sistem
     </p>
   </div>
