@@ -209,8 +209,18 @@ p.ls-c-1 {
 }
 
 @media only screen and (min-device-width: 400px) and (max-device-width:768px) and (orientation:portrait) {
+
+
   [data-aos-delay] {
     transition-delay: 0 !important;
+  }
+
+  .log-footer{
+    margin-left: -25px;
+  }
+
+  .edit-header{
+    margin-left:-30px; font-size: 10px;
   }
 
   
@@ -1359,6 +1369,14 @@ input[type="number"] {
   .wave-bg-2, .wave-bg-3 {
     background-position: 0% 100%;
   }
+  .log-footer{
+    margin-left: -25px;
+  }
+
+  .edit-header{
+    margin-left:0px; font-size: 13px;
+  }
+
 
   .parallax-section {
     height: 135vh;
@@ -1724,6 +1742,10 @@ input[type="number"] {
 @media only screen and (min-device-width:320px) and (max-device-width:480px) and (orientation:portrait) {
   .wave-bg-2, .wave-bg-3 {
     background-position: 0% 100%;
+  }
+
+  .edit-header{
+    margin-left:0px; font-size: 13px;
   }
 
   .parallax-section {
@@ -2158,6 +2180,10 @@ input[type="number"] {
 @media only screen and (min-device-width: 360px) and (max-device-width:480px) and (orientation:portrait) {
   .services.icon-box {
     font-size: 0.813rem;
+  }
+
+  .edit-header{
+    margin-left:0px; font-size: 13px;
   }
 
   .text-foot{
