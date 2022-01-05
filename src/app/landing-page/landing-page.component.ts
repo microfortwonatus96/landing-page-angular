@@ -238,23 +238,32 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       .pipe(takeWhile(() => this.alive))
       .subscribe((response) => {
         if (response) {
-          let newIndex = this.pageSize - response.length + response.length;
-          for (let i = 0; i < newIndex; i++) {
-            if (i <= 9) {
-              this.sectionFree.push({
+          console.log('rep ' , response)
+          // let max = 20;
+          
+          
+          // let newIndex = this.pageSize - response.length + response.length;
+          for(let i = 0; i < 20; i++){
+            if(i < 10){
+              this.sectionFree[i] = {
                 name: response[i]?.name,
                 phone: response[i]?.phone,
                 point: response[i]?.point,
-              });
-            }
-            if (i > 9) {
-              this.sectionPaid.push({
+              }
+            }else{
+              let  idx2 = i- 10;
+              this.sectionPaid[idx2] = {
                 name: response[i]?.name,
                 phone: response[i]?.phone,
                 point: response[i]?.point,
-              });
+              };
             }
           }
+
+          console.log('obj ' ,  this.sectionFree)
+          console.log('obj2 ' ,  this.sectionPaid)
+
+          
         }
       });
     if (this.sectionFree.length === 0 && this.sectionPaid.length === 0) {
