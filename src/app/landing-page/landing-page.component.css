@@ -225,7 +225,7 @@ p.ls-c-1 {
     margin-left:-30px; font-size: 10px;
   }
 
-  
+
   .image-google{
     margin-left:70px;
   }
@@ -237,7 +237,7 @@ p.ls-c-1 {
     font-size: 22px;
     font-family: Montserrat;
     margin-left: -95px;
-    
+
     font-weight:bold;
     width: 130%;
   }
@@ -249,10 +249,10 @@ p.ls-c-1 {
 
   .komisi{
     width: 200%;
-    margin-left:-323px; 
+    margin-left:-323px;
     font-size: 40;
   }
-  
+
  .text-foot{
     font-size:8px;
     font-family: Montserrat;
@@ -261,7 +261,7 @@ p.ls-c-1 {
 
   .btn-footer{
     width: 100%;
- 
+
   }
 
 
@@ -275,7 +275,7 @@ p.ls-c-1 {
   }
 
   #bts5{
-    width:230px; 
+    width:230px;
     margin-left:-70px;
   }
 
@@ -301,8 +301,8 @@ p.ls-c-1 {
   .bttn{
     width: 150%;
     margin-bottom: 60px;
- 
- 
+
+
   }
 
   .btttn{
@@ -1393,12 +1393,12 @@ input[type="number"] {
     padding-right:10px;
     margin-top: 30px;
   }
-  
+
   #head2{
     margin-top:-120px;
   }
 
-  
+
 
   .text-refferal {
     margin-left: 20px;
@@ -1456,7 +1456,7 @@ input[type="number"] {
   }
   .komisi{
     width: 110%;
-    margin-left:-15px; 
+    margin-left:-15px;
     font-size: 30;
   }
 
@@ -1479,7 +1479,7 @@ input[type="number"] {
   margin-left:20px;
   }
 
-  
+
 .btn-1 {
   background-color: white;
   border: none;
@@ -1724,7 +1724,7 @@ input[type="number"] {
     width: 100%;
   }
 
- 
+
 
   .bg-crumb {
     background: rgb(223, 235, 254);
@@ -1777,7 +1777,7 @@ input[type="number"] {
   }
   .komisi{
     width: 110%;
-    margin-left:-15px; 
+    margin-left:-15px;
     font-size: 30;
   }
 
@@ -1800,7 +1800,7 @@ input[type="number"] {
   margin-left:20px;
   }
 
-  
+
 .btn-1 {
   background-color: white;
   border: none;
@@ -2046,7 +2046,7 @@ input[type="number"] {
     width: 100%;
   }
 
- 
+
 
   .bg-crumb {
     background: rgb(223, 235, 254);
@@ -2065,10 +2065,10 @@ input[type="number"] {
 
   /*mik*/
 
- 
+
 
   .p-referal{
-    
+
     margin-top:-45px;
   }
 
@@ -2104,13 +2104,13 @@ input[type="number"] {
     margin-left: 25px;
   }
 
- 
+
 
   .section3{
     margin-left: -60px;
   }
 
- 
+
 
   .text-refferal {
     margin-left: 20px;
@@ -2147,24 +2147,24 @@ input[type="number"] {
   }
 
   .banner-n2{
-    margin-top: 30px; 
-    padding-bottom: 100px; 
+    margin-top: 30px;
+    padding-bottom: 100px;
     text-align: center;
   }
 
   .banner1{
     height: 170px;
 
-  
+
   }
 
-  .banner2{
+  /* .banner2{
     height: 150px;
- 
+
     display: flex;
     display:none;
-  
-  }
+
+  } */
 
 
 
@@ -2211,7 +2211,7 @@ input[type="number"] {
   }
   .komisi{
     width: 110%;
-    margin-left:-15px; 
+    margin-left:-15px;
     font-size: 30;
   }
 
@@ -2234,7 +2234,7 @@ input[type="number"] {
   margin-left:20px;
   }
 
-  
+
 .btn-1 {
   background-color: white;
   border: none;
@@ -2482,7 +2482,7 @@ input[type="number"] {
     width: 100%;
   }
 
- 
+
 
   .bg-crumb {
     background: rgb(223, 235, 254);
@@ -2525,14 +2525,14 @@ input[type="number"] {
   }
 
   #bts5{
-    width:230px; 
+    width:230px;
     margin-left:-50px;
   }
 
   .referal_r{
     width: 400px;
   }
- 
+
   .image-google{
     margin-left:80px;
   }
@@ -2544,7 +2544,7 @@ input[type="number"] {
 
   .komisi{
     width: 200%;
-    margin-left:-450px; 
+    margin-left:-450px;
     font-size: 44px;
   }
 
@@ -2554,19 +2554,19 @@ input[type="number"] {
     color: #0b69fd;
     font-size: 22px;
     font-family: Montserrat;
-    margin-left: -55px;  
+    margin-left: -55px;
     font-weight:bold;
-   
+
   }
 
    .btmik{
     width:120%;
   }
-  
+
   .bttn{
     width: 10%;
     margin-bottom: 60px;
-   
+
   }
 
   .btn-1 {
@@ -2916,8 +2916,8 @@ input[type="number"] {
   content: url('../../assets/img/tokped_1.svg');
   width: 100px;
   height: 30px;
- 
- 
+
+
 }
 
 #i-lazada {
@@ -2931,7 +2931,7 @@ input[type="number"] {
   content: url('../../assets/img/shopee_1.svg');
   width: 100px;
   height: 30px;
-  
+
 }
 
 #i-blibli {
@@ -2945,7 +2945,7 @@ input[type="number"] {
   content: url('../../assets/img/jd.id.svg');
   width: 100px;
   height: 30px;
- 
+
 }
 
 #i-bukalapak {
