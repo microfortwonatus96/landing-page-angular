@@ -1372,6 +1372,33 @@ input[type="number"] {
     background-position: 0% 100%;
   }
 
+  
+  .form-check-input {
+    cursor: pointer;
+    border-color: rgb(9, 96, 227);
+    transition: background-color 0.6s ease;
+    margin-top:-200px;
+    display:none !important;
+  }
+
+  .banner-n2{
+    margin-top: 0px;
+    /* padding-bottom: 100px; */
+    text-align: center;
+  }
+
+
+  .banner2{
+   
+    height: 160px;
+    margin-bottom:60px;
+    margin-left: 20px;
+  }
+
+  .collaboration{
+    margin-top:20px;
+  }
+
   .f-12 {
     font-size: 0.40rem;
   }
@@ -1466,10 +1493,12 @@ input[type="number"] {
   .btttn{
     width: 90%;
     margin-left:10px;
+   
   }
 
   .btnn{
     margin-left: 0px;
+   
   }
 
   .gbr{
@@ -1489,6 +1518,12 @@ input[type="number"] {
   transition: all 0.5s ease;
   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
   font-weight: 500;
+  /* margin-bottom:50px; */
+ 
+}
+
+.btnmic{
+  margin-bottom: 20px;
 }
 
 .button1 {
@@ -1501,6 +1536,7 @@ input[type="number"] {
   height: 42px;
   /* border: 2px solid #fff; */
   background-color: #0B69FD;
+  
 }
 
   .image-size{
@@ -1576,9 +1612,16 @@ input[type="number"] {
   }
 
   .home-text {
-    padding-top: 100px;
+   
     font-size: 40px;
     margin: 0 30px;
+  }
+
+  
+  .home-text h1 {
+   
+    font-size: 22px;
+   
   }
 
   .modal-content {
@@ -1593,9 +1636,7 @@ input[type="number"] {
     margin: 20px 0;
   }
 
-  .f-rantai {
-    font-size: 22px !important;
-  }
+  
 
   .foot-content {
     padding: 0 35px;
@@ -1736,12 +1777,32 @@ input[type="number"] {
   .slider-mobile {
     display: flex !important;
     justify-content: center !important;
+   
   }
 }
 
 @media only screen and (min-device-width:320px) and (max-device-width:480px) and (orientation:portrait) {
   .wave-bg-2, .wave-bg-3 {
     background-position: 0% 100%;
+  }
+
+
+  .form-check-input {
+    cursor: pointer;
+    border-color: rgb(9, 96, 227);
+    transition: background-color 0.6s ease;
+    margin-top:-200px;
+    display: block !important;
+  }
+  
+  .Margin-T {
+    margin-top: 0px;
+  }
+  
+  .banner2{
+    height: 150px;
+    margin-bottom:auto;
+    margin-left: auto;
   }
 
   .f-12 {
@@ -1814,6 +1875,7 @@ input[type="number"] {
   transition: all 0.5s ease;
   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
   font-weight: 500;
+
 }
 
 .button1 {
@@ -1902,7 +1964,7 @@ input[type="number"] {
   }
 
   .home-text {
-    padding-top: 100px;
+   
     font-size: 40px;
     margin: 0 30px;
   }
@@ -2062,6 +2124,7 @@ input[type="number"] {
   .slider-mobile {
     display: flex !important;
     justify-content: center !important;
+   
   }
 
 
@@ -2086,7 +2149,7 @@ input[type="number"] {
   }
 
   .heading-p{
-    padding-top:50px;
+    /* padding-top:50px; */
   }
 
   
@@ -2141,14 +2204,15 @@ input[type="number"] {
 
   .banner-normal {
     text-align: center;
-    padding-bottom:160px;
-    padding-top:30px;
+    /* padding-bottom:160px; */
+    padding-top:50px;
+ 
 
   }
 
   .banner-n2{
-    margin-top: 30px;
-    padding-bottom: 100px;
+    margin-top: 35px;
+    /* padding-bottom: 100px; */
     text-align: center;
   }
 
@@ -2160,10 +2224,6 @@ input[type="number"] {
 
   .banner2{
     height: 150px;
-
- 
-   
-
   }
 
 
@@ -2173,15 +2233,33 @@ input[type="number"] {
     background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
   }
 
-  .slider-mobile {
-    display: flex !important;
-    justify-content: center !important;
-  }
+
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width:480px) and (orientation:portrait) {
   .services.icon-box {
     font-size: 0.813rem;
+  } 
+
+
+.Margin-T {
+  margin-top: 0px;
+}
+
+
+  .parallax-section {
+    height: 130vh;
+  }
+
+  .form-check-input {
+    cursor: pointer;
+    border-color: rgb(9, 96, 227);
+    transition: background-color 0.6s ease;
+   margin-top:-180px;
+  }
+
+  .collaboration{
+    margin-top:20px;
   }
 
   .f-12 {
@@ -2289,9 +2367,6 @@ input[type="number"] {
   }
 
 
-  .parallax-section {
-    height: 125vh;
-  }
 
   .text-refferal {
     margin-left: 20px;
@@ -2340,7 +2415,7 @@ input[type="number"] {
   }
 
   .home-text {
-    padding-top: 100px;
+   
     font-size: 40px;
     margin: 0 30px;
   }
@@ -2500,6 +2575,7 @@ input[type="number"] {
   .slider-mobile {
     display: flex !important;
     justify-content: center !important;
+ 
   }
 }
 
@@ -2570,7 +2646,7 @@ input[type="number"] {
   .bttn{
     width: 10%;
     margin-bottom: 60px;
-
+   
   }
 
   .btn-1 {
@@ -2626,9 +2702,28 @@ input[type="number"] {
     height: 100vh;
   }
 
+  .form-check-input {
+    cursor: pointer;
+    border-color: rgb(9, 96, 227);
+    transition: background-color 0.6s ease;
+    margin-top:-230px;
+    display: block !important;
+  }
+
+  .btnn{
+    margin-left: 40px;
+   
+  }
+
+
+
+ 
+  /* .btmik{
+    width:80%;
+    margin-right:-30px;
+  } */
+
 }
-
-
 
 #menu-download {
   display: none;
@@ -2651,12 +2746,11 @@ input[type="number"] {
   color: #000;
 }
 
-
-
 .form-check-input {
   cursor: pointer;
   border-color: rgb(9, 96, 227);
   transition: background-color 0.6s ease;
+  display:none;
 }
 
 .paket-rantai {
@@ -2959,9 +3053,6 @@ input[type="number"] {
 
 }
 
-.Margin-T {
-  margin-top: 55px;
-}
 
 .b-navbar {
   background-color: rgba(223, 235, 254, 1);
@@ -3056,9 +3147,20 @@ table, th, td {
   font-family: source sans pro, Regular;
 }
 
-
 .text-foot{
   font-size:10px;
   font-family: Montserrat;
  margin-left: 17px;
+}
+
+.form-check-input {
+  cursor: pointer;
+  border-color: rgb(9, 96, 227);
+  transition: background-color 0.6s ease;
+  display: block;
+}
+
+
+.Margin-T {
+  margin-top: 55px;
 }
