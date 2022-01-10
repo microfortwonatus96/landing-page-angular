@@ -25,12 +25,25 @@ export interface IConditions {
   dateCreated: number;
   dateUpdated: number;
 }
+
+export interface UrlText{
+  text:string;
+  link?:string;
+}
+
 export interface TermCondition {
   dateCreated: number;
   dateUpdated: number;
   description: string;
   id: number;
+  deepLink: string;
+  startIndex:number;
+  lastIndex: number;
+
+  urlText:UrlText[];
 }
+
+
 
 export interface IReferralEvent {
   dateCreated: number;

@@ -123,20 +123,14 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     termAndConditions: [],
     title: null,
   };
-  termCondition: TermCondition[] = [
-    {
-      dateCreated: null,
-      dateUpdated: null,
-      description: null,
-      id: null,
-    },
-  ];
+  termCondition: TermCondition[];
+  
   listEmpyReferral: IReferralCode[] = [];
 
   selectedindex: number = 0;
   indexBtnSlide: number = 1;
   price: number;
-
+color: string = "blue";
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -459,8 +453,36 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
           });
           this.listReferralCode.forEach((v, i) => {
             this.termCondition = v.termAndConditions;
+            this.checkLink()
           });
         }
       });
+  }
+
+  checkLink(){
+    // let deskripsi:string = ''
+    this.termCondition.forEach((v, i) => {
+      v.urlText =[];
+      if(v.startIndex){
+        let start = v.description.substring(0, v.startIndex)
+        let url = v.description.substring(v.startIndex, v.lastIndex+1)
+        let end = v.description.substring(v.lastIndex + 1, v.description.length)
+        v.urlText.push({text:start})
+        v.urlText.push({text:url, link:v.deepLink})
+        v.urlText.push({text:end})
+      }else{
+        v.urlText.push({
+          text:v.description
+        })
+      }
+      // if(!v.deepLink) return
+      //   let desc = v.description
+      //   let subs = desc.substring(v.startIndex, v.lastIndex) 
+      //   let ctx = desc + "<font color="+this.color+">"+ subs+"</font>"
+      //   deskripsi = ctx
+        
+    })
+
+    console.log('this' , this.termCondition)
   }
 }

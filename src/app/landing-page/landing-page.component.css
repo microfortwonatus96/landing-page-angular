@@ -1372,6 +1372,9 @@ input[type="number"] {
     background-position: 0% 100%;
   }
 
+  .parallax-section {
+    height: 150vh;
+  }
   
   .form-check-input {
     cursor: pointer;
@@ -1387,9 +1390,7 @@ input[type="number"] {
     text-align: center;
   }
 
-
   .banner2{
-   
     height: 160px;
     margin-bottom:60px;
     margin-left: 20px;
@@ -1408,11 +1409,6 @@ input[type="number"] {
 
   .edit-header{
     margin-left:0px; font-size: 13px;
-  }
-
-
-  .parallax-section {
-    height: 135vh;
   }
 
   .image-google{
@@ -1461,7 +1457,6 @@ input[type="number"] {
   .text-foot{
     font-size:10px;
     font-family: Montserrat;
-
   }
 
   .butuhB{
@@ -1489,16 +1484,13 @@ input[type="number"] {
     font-size:10px;
   }
 
-
   .btttn{
     width: 90%;
     margin-left:10px;
-   
   }
 
   .btnn{
     margin-left: 0px;
-   
   }
 
   .gbr{
@@ -1506,20 +1498,18 @@ input[type="number"] {
   margin-left:20px;
   }
 
-
 .btn-1 {
   background-color: white;
   border: none;
   border-radius: 24px;
   color: #095edc;
   font-family: Montserrat;
-  font-size: 13px;
+  font-size: 7px;
   text-transform: capitalize;
   transition: all 0.5s ease;
   /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
   font-weight: 500;
   /* margin-bottom:50px; */
- 
 }
 
 .btnmic{
@@ -1536,7 +1526,6 @@ input[type="number"] {
   height: 42px;
   /* border: 2px solid #fff; */
   background-color: #0B69FD;
-  
 }
 
   .image-size{
@@ -1562,8 +1551,6 @@ input[type="number"] {
   .section3{
     margin-left: -60px;
   }
-
-
 
   .text-refferal {
     margin-left: 20px;
@@ -1617,11 +1604,8 @@ input[type="number"] {
     margin: 0 30px;
   }
 
-  
-  .home-text h1 {
-   
+  .home-text h1 { 
     font-size: 22px;
-   
   }
 
   .modal-content {
@@ -1762,8 +1746,6 @@ input[type="number"] {
   .btn-footer {
     width: 100%;
   }
-
-
 
   .bg-crumb {
     background: rgb(223, 235, 254);
@@ -1913,9 +1895,6 @@ input[type="number"] {
   .section3{
     margin-left: -60px;
   }
-
-
-
 
   .text-refferal {
     margin-left: 20px;
@@ -2124,13 +2103,9 @@ input[type="number"] {
   .slider-mobile {
     display: flex !important;
     justify-content: center !important;
-   
   }
 
-
   /*mik*/
-
-
 
   .p-referal{
 
@@ -2148,9 +2123,6 @@ input[type="number"] {
     display:none;
   }
 
-  .heading-p{
-    /* padding-top:50px; */
-  }
 
   
 
@@ -2167,13 +2139,9 @@ input[type="number"] {
     margin-left: 25px;
   }
 
-
-
   .section3{
     margin-left: -60px;
   }
-
-
 
   .text-refferal {
     margin-left: 20px;
@@ -2196,8 +2164,6 @@ input[type="number"] {
     padding: 150px 20px;
   }
 
-
-
   .btn-footer {
     width: 100%;
   }
@@ -2206,8 +2172,6 @@ input[type="number"] {
     text-align: center;
     /* padding-bottom:160px; */
     padding-top:50px;
- 
-
   }
 
   .banner-n2{
@@ -2218,21 +2182,16 @@ input[type="number"] {
 
   .banner1{
     height: 170px;
-
-
   }
 
   .banner2{
     height: 150px;
   }
 
-
-
   .bg-crumb {
     background: rgb(223, 235, 254);
     background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
   }
-
 
 }
 
@@ -2699,7 +2658,7 @@ input[type="number"] {
 
 @media only screen and (min-device-width: 400px)  and (max-device-width:500px) and  (orientation:portrait) {
   .parallax-section {
-    height: 100vh;
+    height: 110vh;
   }
 
   .form-check-input {
@@ -2714,15 +2673,6 @@ input[type="number"] {
     margin-left: 40px;
    
   }
-
-
-
- 
-  /* .btmik{
-    width:80%;
-    margin-right:-30px;
-  } */
-
 }
 
 #menu-download {
