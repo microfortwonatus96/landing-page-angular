@@ -2140,7 +2140,7 @@
         <table class="box-tabel">
           <ng-container *ngFor="let x of termCondition; let i = index">
             <tr>
-              <td>{{ i + 1 }}.</td>
+              <td style="vertical-align: top;">{{ i + 1 }}.</td>
               <td>
                 <ng-container *ngFor="let d of x.urlText">
                   <span *ngIf="!d.link">{{ d.text }}</span>
