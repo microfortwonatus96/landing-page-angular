@@ -17,12 +17,12 @@ export class RefferalCodeService {
   }
   currentEvent() {
     return this.http.get<IReferralCode[]>(
-      `${environment.api_referral}/api/rantai-referral-event/current-event`
+      `${environment.api_server}/api/referral/event`
     );
   }
-  getEvent() {
-    return this.http.get(
-      `${environment.api_referral}/api/rantai-referral-event/current-event`
-    );
-  }
+  // getEvent() {
+  //   return this.http.get(
+  //     `${environment.api_referral}/api/rantai-referral-event/current-event`
+  //   );
+  // }
 }

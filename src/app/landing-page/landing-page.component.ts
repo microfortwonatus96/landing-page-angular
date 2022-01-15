@@ -443,7 +443,7 @@ color: string = "blue";
 
   loadEventTerms() {
     this.referralCodeService
-      .getEvent()
+      .currentEvent()
       .pipe(takeWhile(() => this.alive))
       .subscribe((res) => {
         if (res) {
