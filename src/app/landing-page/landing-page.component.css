@@ -217,6 +217,11 @@ p.ls-c-1 {
     transition-delay: 0 !important;
   }
 
+  .baru-btn{
+    width: 200%; 
+    margin-left: -350px;
+  }
+
   .log-footer {
     margin-left: -25px;
   }
@@ -2206,6 +2211,11 @@ input[type="number"] {
     font-size: 0.813rem;
   }
 
+  .baru-btn{
+    width: 80%; 
+    margin-left: 40px;
+  }
+
 
   .Margin-T {
     margin-top: 0px;
@@ -2551,6 +2561,11 @@ input[type="number"] {
     height: 10vh;
   }
 
+  .baru-btn{
+    width: 200%; 
+   margin-left: -350px;
+  }
+
   .text-foot {
     font-size: 10px;
   }
@@ -2674,6 +2689,11 @@ input[type="number"] {
 @media only screen and (min-device-width: 400px) and (max-device-width:500px) and (orientation:portrait) {
   .parallax-section {
     height: 110vh;
+  }
+
+  .baru-btn{
+    width: 80%; 
+   margin-left: 40px;
   }
 
   .form-check-input {
