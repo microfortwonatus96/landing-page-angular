@@ -1135,7 +1135,7 @@
             <div class="input-group mb-3">
               <input
                 class="form-control form-search-input"
-                placeholder="Search by phone number"
+                placeholder="{{ 'Search_by_phone' | translate }}"
                 aria-label="Search"
                 aria-describedby="button-addon2"
                 (keypress)="numberOnly($event)"
@@ -1159,9 +1159,9 @@
             </div>
           </form>
         </div>
-        <span *ngIf="dataNotFound === true" class="text-red"
-          >{{ "Data_Not_Found" | translate }}</span
-        >
+        <span *ngIf="dataNotFound === true" class="text-red">{{
+          "Data_Not_Found" | translate
+        }}</span>
       </div>
       <div class="row justify-content-center">
         <div *ngIf="resultSearch.length > 0" class="row justify-content-center">
