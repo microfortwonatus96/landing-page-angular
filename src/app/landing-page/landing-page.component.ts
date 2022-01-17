@@ -144,7 +144,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   color: string = 'blue';
   phoneNumber: string = '';
   resultSearch: IReferralCode[] = [];
-  dataNotFound: boolean = false;
+  dataNotFound: boolean;
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -190,6 +190,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    this.dataNotFound = false;
     this.getProvince();
     // this.subsPackage$ = this.subsService.getPackage();
     this.tampilText();
@@ -489,6 +490,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     });
   }
   search(event: Event) {
+    this.dataNotFound = false;
     this.phoneNumber = this.searchForm.get('phone').value;
     while (this.phoneNumber.charAt(0) === '0') {
       this.phoneNumber = this.phoneNumber.substring(1);
