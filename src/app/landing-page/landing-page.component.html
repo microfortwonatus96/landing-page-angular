@@ -147,7 +147,7 @@
         <div class="row justify-content-between">
           <div class="col-md-7 col-sm-6">
             <article class="home-text">
-              <h1 data-aos="fade-right" class="f-rantai ">
+              <h1 data-aos="fade-right" class="f-rantai">
                 {{ "Invite_Friends" | translate }} <br />
                 {{ "Chain_Get" | translate }} <br />
                 {{ "Total_Prize" | translate }} <br />
@@ -190,7 +190,7 @@
                   <div class="col-md-4 col-sm-5">
                     <a
                       href="https://rantai.tech/web/accounts/sign-up"
-                      class="bttn btn btn-primary btn-1 button1 "
+                      class="bttn btn btn-primary btn-1 button1"
                       target="_blank"
                     >
                       <div
@@ -240,7 +240,6 @@
               </h1>
 
               <p data-aos="fade-right" class="one-section-p font-bodyText">
-               
                 {{ "Free_Subscription" | translate }}
               </p>
               <p data-aos="fade-right" class="one-section-p font-bodyText">
@@ -336,11 +335,11 @@
 
       <div
         class="d-flex justify-content-start s-3 slider-mobile"
-        style="margin-top: -25px; display: none;"
+        style="margin-top: -25px; display: none"
       >
-        <div class="form-check" >
+        <div class="form-check">
           <input
-            class="form-check-input" 
+            class="form-check-input"
             type="radio"
             name="flexRadioDefault"
             id="flexRadioDefault1"
@@ -349,7 +348,7 @@
         </div>
         <div class="form-check">
           <input
-            class="form-check-input" 
+            class="form-check-input"
             type="radio"
             name="flexRadioDefault"
             id="flexRadioDefault2"
@@ -357,7 +356,6 @@
           />
         </div>
       </div>
-
     </div>
   </section>
 
@@ -367,7 +365,10 @@
         class="col-md-3 col-sm-6"
         style="text-align: center; padding-top: 30px"
       >
-        <p class="fw-bold collaboration" style="font-family: Montserrat; font-size: 14px; ">
+        <p
+          class="fw-bold collaboration"
+          style="font-family: Montserrat; font-size: 14px"
+        >
           {{ "Collaboration" | translate }}:
         </p>
       </div>
@@ -1097,7 +1098,7 @@
         <div class="row justify-content-center">
           <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
             <div class="row justify-content-start">
-              <div class="teks btnn" style="margin-top: 15px; ">
+              <div class="teks btnn" style="margin-top: 15px">
                 <a
                   id="bts5"
                   href="https://rantai.tech/web/accounts/sign-up"
@@ -1128,8 +1129,83 @@
           {{ "At_The_Moment" | translate }}</span
         >
       </div>
-
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-3">
+          <form [formGroup]="searchForm" autocomplete="off">
+            <div class="input-group mb-3">
+              <input
+                class="form-control form-search-input"
+                placeholder="Search by phone number"
+                aria-label="Search"
+                aria-describedby="button-addon2"
+                (keypress)="numberOnly($event)"
+                (keyup)="clear($event)"
+                type="text"
+                formControlName="phone"
+                autocomplete="off"
+                maxLength="16"
+                required
+              />
+              <button
+                (click)="search($event)"
+                class="btn btn-outline-secondary button-search"
+                type="button"
+                id="button-addon2"
+              >
+                <span class="btn-txt-search">
+                  {{ "Search" | translate }}
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <span *ngIf="dataNotFound === true" class="text-red"
+          >No data found!</span
+        >
+      </div>
       <div class="row justify-content-center">
+        <div *ngIf="resultSearch.length > 0" class="row justify-content-center">
+          <ng-container *ngFor="let sr of resultSearch; let i = index">
+            <div class="col-md-4">
+              <div class="box-referral mb-3 pointer">
+                <div class="box-referral-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="col-md-2 col-sm-2">
+                      <div
+                        [ngClass]="i < 5 ? 'rank' + (sr.rank - 1) : 'rankbox'"
+                      ></div>
+                    </div>
+                    <div class="col">
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="fw-bold text-refferal f-12"
+                          style="font-family: Montserrat"
+                        >
+                          <span>
+                            {{ sr.name ? sr.name : "No Data" }} /
+                            {{ sr.phone }}</span
+                          >
+                        </div>
+                        <div
+                          class="point-color"
+                          style="
+                            font-family: Montserrat;
+                            font-size: 12px;
+                            font-weight: bold;
+                          "
+                        >
+                          {{ sr.point }} Poin
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+        </div>
         <div
           class="col-md-4 col-sm-12 mt-md-0 p-4 referal_r"
           data-aos="zoom-in"
@@ -2140,11 +2216,17 @@
         <table class="box-tabel">
           <ng-container *ngFor="let x of termCondition; let i = index">
             <tr>
-              <td style="vertical-align: top;">{{ i + 1 }}.</td>
+              <td style="vertical-align: top">{{ i + 1 }}.</td>
               <td>
                 <ng-container *ngFor="let d of x.urlText">
                   <span *ngIf="!d.link">{{ d.text }}</span>
-                  <a *ngIf="d.link" [href]="d.link" target="_blank" style="color: blue;">{{ d.text }}</a>
+                  <a
+                    *ngIf="d.link"
+                    [href]="d.link"
+                    target="_blank"
+                    style="color: blue"
+                    >{{ d.text }}</a
+                  >
                 </ng-container>
               </td>
             </tr>

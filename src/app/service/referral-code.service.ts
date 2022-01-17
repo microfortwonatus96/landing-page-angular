@@ -10,10 +10,10 @@ import { IReferralCode } from '../models/referral.model';
 export class RefferalCodeService {
   constructor(private http: HttpClient) {}
 
-  referralCode(pageSize: number): Observable<IReferralCode[]> {
-    return this.http.get<IReferralCode[]>(
-      `${environment.api_referral}/public/api/rantai-referral-event/leaderboard?size=${pageSize}`
-    );
+  referralCode(pageSize: number, search?: string): Observable<IReferralCode[]> {
+    let str = `${environment.api_referral}/public/api/rantai-referral-event/leaderboard?size=${pageSize}`;
+    if (search && search.length) str = str + `&search=${search}`;
+    return this.http.get<IReferralCode[]>(str);
   }
   currentEvent() {
     return this.http.get<IReferralCode[]>(

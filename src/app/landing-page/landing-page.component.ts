@@ -62,6 +62,17 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     address: ['', Validators.required],
   });
 
+  searchForm: FormGroup = this.formBuilder.group({
+    phone: [
+      '',
+      [
+        Validators.required,
+        Validators.pattern('[0-9]*'),
+        Validators.maxLength(16),
+      ],
+    ],
+  });
+
   get address() {
     return this.formDaftar.get('address');
   }
@@ -124,13 +135,16 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     title: null,
   };
   termCondition: TermCondition[];
-  
+
   listEmpyReferral: IReferralCode[] = [];
 
   selectedindex: number = 0;
   indexBtnSlide: number = 1;
   price: number;
-color: string = "blue";
+  color: string = 'blue';
+  phoneNumber: string = '';
+  resultSearch: IReferralCode[] = [];
+  dataNotFound: boolean = false;
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -144,7 +158,13 @@ color: string = "blue";
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
   }
-
+  numberOnly(event): boolean {
+    const charCode = event.which ? event.which : event.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+      return false;
+    }
+    return true;
+  }
   ngOnDestroy(): void {
     this.alive = false;
   }
@@ -214,7 +234,6 @@ color: string = "blue";
       .pipe(takeWhile(() => this.alive))
       .subscribe((response) => {
         if (response) {
-          // console.log('test', response);
         }
       });
   }
@@ -226,58 +245,47 @@ color: string = "blue";
       queryParamsHandling: 'merge',
     });
   }
-  loadReferralCode() {
-    this.referralCodeService
-      .referralCode(this.pageSize)
-      .pipe(takeWhile(() => this.alive))
-      .subscribe((response) => {
-        if (response) {
-          console.log('rep ' , response)
-          // let max = 20;
-          
-          
-          // let newIndex = this.pageSize - response.length + response.length;
-          for(let i = 0; i < 20; i++){
-            if(i < 10){
-              this.sectionFree[i] = {
-                name: response[i]?.name,
-                phone: response[i]?.phone,
-                point: response[i]?.point,
+  loadReferralCode(phone?: string) {
+    if (!phone) {
+      this.resultSearch = [];
+      this.referralCodeService
+        .referralCode(this.pageSize)
+        .pipe(takeWhile(() => this.alive))
+        .subscribe((response) => {
+          if (response) {
+            this.dataNotFound = false;
+            for (let i = 0; i < 20; i++) {
+              if (i < 10) {
+                this.sectionFree[i] = {
+                  name: response[i]?.name,
+                  phone: response[i]?.phone,
+                  point: response[i]?.point,
+                };
+              } else {
+                let idx2 = i - 10;
+                this.sectionPaid[idx2] = {
+                  name: response[i]?.name,
+                  phone: response[i]?.phone,
+                  point: response[i]?.point,
+                };
               }
-            }else{
-              let  idx2 = i- 10;
-              this.sectionPaid[idx2] = {
-                name: response[i]?.name,
-                phone: response[i]?.phone,
-                point: response[i]?.point,
-              };
             }
           }
-
-          console.log('obj ' ,  this.sectionFree)
-          console.log('obj2 ' ,  this.sectionPaid)
-
-          
-        }
-      });
-    if (this.sectionFree.length === 0 && this.sectionPaid.length === 0) {
-      for (let i = 0; i < this.pageSize; i++) {
-        this.listEmpyReferral.push({
-          name: null,
-          phone: null,
-          point: null,
         });
-      }
-      if (this.listReferraCode.length === 0) {
-        this.listEmpyReferral.forEach((v, i) => {
-          if (i <= 9) {
-            this.sectionFree.push(v);
+    } else {
+      this.sectionFree = [];
+      this.sectionPaid = [];
+      this.referralCodeService
+        .referralCode(this.pageSize, phone)
+        .pipe(takeWhile(() => this.alive))
+        .subscribe((response) => {
+          if (response) {
+            this.resultSearch = response;
           }
-          if (i > 9) {
-            this.sectionPaid.push(v);
+          if (response.length == 0) {
+            this.dataNotFound = true;
           }
         });
-      }
     }
   }
 
@@ -453,36 +461,43 @@ color: string = "blue";
           });
           this.listReferralCode.forEach((v, i) => {
             this.termCondition = v.termAndConditions;
-            this.checkLink()
+            this.checkLink();
           });
         }
       });
   }
 
-  checkLink(){
+  checkLink() {
     // let deskripsi:string = ''
     this.termCondition.forEach((v, i) => {
-      v.urlText =[];
-      if(v.startIndex){
-        let start = v.description.substring(0, v.startIndex)
-        let url = v.description.substring(v.startIndex, v.lastIndex+1)
-        let end = v.description.substring(v.lastIndex + 1, v.description.length)
-        v.urlText.push({text:start})
-        v.urlText.push({text:url, link:v.deepLink})
-        v.urlText.push({text:end})
-      }else{
+      v.urlText = [];
+      if (v.startIndex) {
+        let start = v.description.substring(0, v.startIndex);
+        let url = v.description.substring(v.startIndex, v.lastIndex + 1);
+        let end = v.description.substring(
+          v.lastIndex + 1,
+          v.description.length
+        );
+        v.urlText.push({ text: start });
+        v.urlText.push({ text: url, link: v.deepLink });
+        v.urlText.push({ text: end });
+      } else {
         v.urlText.push({
-          text:v.description
-        })
+          text: v.description,
+        });
       }
-      // if(!v.deepLink) return
-      //   let desc = v.description
-      //   let subs = desc.substring(v.startIndex, v.lastIndex) 
-      //   let ctx = desc + "<font color="+this.color+">"+ subs+"</font>"
-      //   deskripsi = ctx
-        
-    })
-
-    console.log('this' , this.termCondition)
+    });
+  }
+  search(event: Event) {
+    this.phoneNumber = this.searchForm.get('phone').value;
+    while (this.phoneNumber.charAt(0) === '0') {
+      this.phoneNumber = this.phoneNumber.substring(1);
+    }
+    this.loadReferralCode(this.phoneNumber);
+  }
+  clear($event) {
+    if (this.searchForm.get('phone').value === '') {
+      this.loadReferralCode();
+    }
   }
 }
