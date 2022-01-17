@@ -136,6 +136,7 @@
   "Sign_Up2": "Register now and get ",
   "TRY_FREE1": "TRY FREE",
   "Collaboration":"In collaboration with",
+  "Data_Not_Found": "Data Not Found!",
 
   "Control": "Control All Online Stores in Marketplace",
   "Marketplace": " with Just One Platform",
@@ -218,5 +219,8 @@
   "Feature": "Feature",
   "Price" : "Price",
   "Contact": "Contact Us",
+  "Search by phone":"Search by phone number",
   "Search": "Search"
+
+ 
 }

@@ -144,6 +144,8 @@
   "Sign_Up3": "Daftar sekarang dan dapatkan GRATIS LANGGANAN SELAMANYA!",
   "TRY_FREE2": "COBA GRATIS",
 
+  "Data_Not_Found": "Data Tidak Ditemukan!",
+
   "Generate_Financial_Report": "Generate Laporan Keuangan Lengkap dari Setiap Transaksi Dalam Satu Klik",
   "Of_Every_Transaction": "dari Setiap Transaksi Dalam Satu Klik",
   "More_Efficient": "Lebih efisien dalam pembuatan berbagai laporan keuangan seperti, laporan penjualan, untung dan rugi, pengembalian, pengeluaran, serta hutang-piutang. Akses dan export setiap laporan hanya dengan satu Klik.",
@@ -233,6 +235,7 @@
   "Feature": "Fitur",
   "Price" : "Harga",
   "Contact": "Hubungi Kami",
+  "Search by phone":"Cari Berdasarkan Nomor Telepon",
   "Search": "Cari"
 
 
