@@ -218,7 +218,7 @@ p.ls-c-1 {
   }
 
   .baru-btn{
-    width: 200%; 
+    width: 200%;
     margin-left: -350px;
   }
 
@@ -2212,7 +2212,7 @@ input[type="number"] {
   }
 
   .baru-btn{
-    width: 80%; 
+    width: 80%;
     margin-left: 40px;
   }
 
@@ -2562,7 +2562,7 @@ input[type="number"] {
   }
 
   .baru-btn{
-    width: 200%; 
+    width: 200%;
    margin-left: -350px;
   }
 
@@ -2692,7 +2692,7 @@ input[type="number"] {
   }
 
   .baru-btn{
-    width: 80%; 
+    width: 80%;
    margin-left: 40px;
   }
 
@@ -3183,4 +3183,7 @@ table, th, td {
 }
 .text-red {
   color:red;
+}
+.left-sty{
+  left: 4px;
 }

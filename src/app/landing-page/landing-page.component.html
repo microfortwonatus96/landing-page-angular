@@ -1146,6 +1146,7 @@
                 maxLength="16"
                 required
               />
+
               <button
                 (click)="search($event)"
                 class="btn btn-outline-secondary button-search"
@@ -1174,8 +1175,18 @@
                   >
                     <div class="col-md-2 col-sm-2">
                       <div
-                        [ngClass]="i < 5 ? 'rank' + (sr.rank - 1) : 'rankbox'"
-                      ></div>
+                        [ngClass]="
+                          i < 5 && sr.rank !== 0
+                            ? 'rank' + (sr.rank - 1)
+                            : 'rankbox'
+                        "
+                      >
+                        <span
+                          [ngClass]="sr.rank == 0 ? 'ranknum left-sty' : ''"
+                        >
+                          {{ sr.rank }}</span
+                        >
+                      </div>
                     </div>
                     <div class="col">
                       <div class="d-flex justify-content-between">
