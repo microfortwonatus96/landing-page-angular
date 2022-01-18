@@ -217,7 +217,7 @@ p.ls-c-1 {
     transition-delay: 0 !important;
   }
 
-  .baru-btn{
+  .baru-btn {
     width: 200%;
     margin-left: -350px;
   }
@@ -2211,7 +2211,7 @@ input[type="number"] {
     font-size: 0.813rem;
   }
 
-  .baru-btn{
+  .baru-btn {
     width: 80%;
     margin-left: 40px;
   }
@@ -2561,9 +2561,9 @@ input[type="number"] {
     height: 10vh;
   }
 
-  .baru-btn{
+  .baru-btn {
     width: 200%;
-   margin-left: -350px;
+    margin-left: -350px;
   }
 
   .text-foot {
@@ -2691,9 +2691,9 @@ input[type="number"] {
     height: 110vh;
   }
 
-  .baru-btn{
+  .baru-btn {
     width: 80%;
-   margin-left: 40px;
+    margin-left: 40px;
   }
 
   .form-check-input {
@@ -3181,9 +3181,11 @@ table, th, td {
   font-family: Montserrat;
   top: -2px;
 }
+
 .text-red {
-  color:red;
+  color: red;
 }
-.left-sty{
+
+.left-sty {
   left: 4px;
 }
