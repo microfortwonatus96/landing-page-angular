@@ -1129,8 +1129,8 @@
           {{ "At_The_Moment" | translate }}</span
         >
       </div>
-      <div class="row justify-content-center mt-4 baru-btn">
-        <div class="col-md-3">
+      <!-- <div class="row justify-content-center mt-4 baru-btn">
+        <div class="col-md-4">
           <form [formGroup]="searchForm" autocomplete="off">
             <div class="input-group mb-3">
               <input
@@ -1146,6 +1146,7 @@
                 maxLength="16"
                 required
               />
+
               <button
                 (click)="search($event)"
                 class="btn btn-outline-secondary button-search"
@@ -1162,9 +1163,9 @@
         <span *ngIf="dataNotFound === true" class="text-red">{{
           "Data_Not_Found" | translate
         }}</span>
-      </div>
+      </div> -->
       <div class="row justify-content-center">
-        <div *ngIf="resultSearch.length > 0" class="row justify-content-center">
+        <!-- <div *ngIf="resultSearch.length > 0" class="row justify-content-center">
           <ng-container *ngFor="let sr of resultSearch; let i = index">
             <div class="col-md-4">
               <div class="box-referral mb-3 pointer">
@@ -1174,8 +1175,18 @@
                   >
                     <div class="col-md-2 col-sm-2">
                       <div
-                        [ngClass]="i < 5 ? 'rank' + (sr.rank - 1) : 'rankbox'"
-                      ></div>
+                        [ngClass]="
+                          i < 5 && sr.rank !== 0
+                            ? 'rank' + (sr.rank - 1)
+                            : 'rankbox'
+                        "
+                      >
+                        <span
+                          [ngClass]="sr.rank == 0 ? 'ranknum left-sty' : ''"
+                        >
+                          {{ sr.rank }}</span
+                        >
+                      </div>
                     </div>
                     <div class="col">
                       <div class="d-flex justify-content-between">
@@ -1205,7 +1216,7 @@
               </div>
             </div>
           </ng-container>
-        </div>
+        </div> -->
         <div
           class="col-md-4 col-sm-12 mt-md-0 p-4 referal_r"
           data-aos="zoom-in"

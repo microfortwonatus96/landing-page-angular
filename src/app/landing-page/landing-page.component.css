@@ -2767,9 +2767,9 @@ input[type="number"] {
     background-color: #0B69FD;
   }
 
-  .baru-btn{
-    width: 80%; 
-   margin-left: 40px;
+  .baru-btn {
+    width: 80%;
+    margin-left: 40px;
   }
 
   .form-check-input {
@@ -3257,8 +3257,13 @@ table, th, td {
   font-family: Montserrat;
   top: -2px;
 }
+
 .text-red {
-  color:red;
+  color: red;
+}
+
+.left-sty {
+  left: 4px;
 }
 
 .title-sb{

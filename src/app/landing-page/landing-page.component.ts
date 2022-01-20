@@ -144,7 +144,8 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   color: string = 'blue';
   phoneNumber: string = '';
   resultSearch: IReferralCode[] = [];
-  dataNotFound: boolean = false;
+  dataNotFound: boolean;
+  autoFocus: boolean = false;
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -281,17 +282,19 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
           }
         });
     } else {
-      this.sectionFree = [];
-      this.sectionPaid = [];
       this.referralCodeService
         .referralCode(this.pageSize, phone)
         .pipe(takeWhile(() => this.alive))
         .subscribe((response) => {
           if (response) {
+            this.sectionFree = [];
+            this.sectionPaid = [];
             this.resultSearch = response;
           }
           if (response.length == 0) {
             this.dataNotFound = true;
+            this.sectionFree = [];
+            this.sectionPaid = [];
           }
         });
     }
@@ -497,11 +500,14 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     });
   }
   search(event: Event) {
-    this.phoneNumber = this.searchForm.get('phone').value;
-    while (this.phoneNumber.charAt(0) === '0') {
-      this.phoneNumber = this.phoneNumber.substring(1);
+    if (this.searchForm.valid) {
+      this.dataNotFound = false;
+      this.phoneNumber = this.searchForm.get('phone').value;
+      while (this.phoneNumber.charAt(0) === '0') {
+        this.phoneNumber = this.phoneNumber.substring(1);
+      }
+      this.loadReferralCode(this.phoneNumber);
     }
-    this.loadReferralCode(this.phoneNumber);
   }
   clear($event) {
     if (this.searchForm.get('phone').value === '') {
