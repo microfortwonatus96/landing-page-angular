@@ -188,8 +188,16 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       });
     });
   }
-
+ 
+  
   ngOnInit(): void {
+
+    // $(document).ready(function(){
+    //   $("#mybtn").click(funct any){
+    //     $(".g1").fadeOut();
+    //   }
+    // });
+
     this.getProvince();
     // this.subsPackage$ = this.subsService.getPackage();
     this.tampilText();
@@ -500,4 +508,5 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       this.loadReferralCode();
     }
   }
+
 }
