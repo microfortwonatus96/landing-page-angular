@@ -217,6 +217,21 @@ p.ls-c-1 {
     transition-delay: 0 !important;
   }
 
+  .galery{
+    margin-left:-30px;
+  }
+  .btn-galery {
+    width: 190%;
+    margin-bottom: 60px;
+    font-size:12px;
+  }
+
+  .footer-sb{
+    font-size: 20px!important; 
+    margin-left: -70px;
+    margin-right:0px;  
+  }
+
   .baru-btn{
     width: 200%; 
     margin-left: -350px;
@@ -307,7 +322,6 @@ p.ls-c-1 {
   .bttn {
     width: 150%;
     margin-bottom: 60px;
-
 
   }
 
@@ -1378,6 +1392,23 @@ input[type="number"] {
     background-position: 0% 100%;
   }
 
+  .galery{
+    margin-left:0px;
+  }
+
+  .btn-galery {
+    width: 190%;
+    margin-bottom: 60px;
+    font-size:12px;
+    margin-left: 18px;
+  }
+
+  .footer-sb{
+    font-size: 20px!important; 
+    margin-left: 0px;
+    margin-right:0px;  
+  }
+
   .parallax-section {
     height: 150vh;
   }
@@ -1777,7 +1808,13 @@ input[type="number"] {
     background-position: 0% 100%;
   }
 
+  .galery{
+    margin-left:0px;
+  }
 
+  .footer-sb{
+    font-size: 20px!important;   
+  }
   .form-check-input {
     cursor: pointer;
     border-color: rgb(9, 96, 227);
@@ -2211,6 +2248,16 @@ input[type="number"] {
     font-size: 0.813rem;
   }
 
+  .galery{
+    margin-left:0px;
+  }
+
+  .footer-sb{
+    font-size: 20px!important;   
+    margin-left: 15px;
+    margin-right:5px;
+  }
+
   .baru-btn{
     width: 80%; 
     margin-left: 40px;
@@ -2561,6 +2608,18 @@ input[type="number"] {
     height: 10vh;
   }
 
+  .btn-galery {
+    width: 190%;
+    margin-bottom: 60px;
+    font-size:12px;
+    
+  }
+
+  .footer-sb{
+    font-size: 20px!important; 
+    margin-left: -50px;
+    margin-right:0px;  
+  }
   .baru-btn{
     width: 200%; 
    margin-left: -350px;
@@ -2686,9 +2745,26 @@ input[type="number"] {
   }
 }
 
-@media only screen and (min-device-width: 400px) and (max-device-width:500px) and (orientation:portrait) {
+@media only screen and (min-device-width: 400px) and (max-device-width:541px) and (orientation:portrait) {
   .parallax-section {
     height: 110vh;
+  }
+  .footer-sb{
+    font-size: 20px!important;   
+    margin-left: 28px;
+    margin-right:14px;
+  }
+
+  .button1 {
+    border-radius: 24px;
+    opacity: 1;
+    width: 100%;
+    padding: 8px;
+    color: #fff;
+    font-family: Montserrat;
+    height: 42px;
+    /* border: 2px solid #fff; */
+    background-color: #0B69FD;
   }
 
   .baru-btn{
@@ -3183,4 +3259,79 @@ table, th, td {
 }
 .text-red {
   color:red;
+}
+
+.title-sb{
+  font-family: Montserrat; 
+  font-size:32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.paragraf-sb{
+  font-family: source sans pro, Regular; 
+  font-size: 15px;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.footer-sb{
+  font-family: Montserrat; 
+  font-size:25px;
+  color:#0B69FD;
+  font-weight: bold;
+}
+
+ .g1 {
+  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_1.jpg')
+} 
+.g2 {
+  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_2.jpg')
+} 
+.g3 {
+  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_3.jpg')
+} 
+.g4 {
+  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_4.jpg')
+} 
+.g5 {
+  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_5.jpg')
+} 
+.g6 {
+  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_6.jpg')
+} 
+.g7 {
+  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_7.jpg')
+} 
+.g8 {
+  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_8.jpg')
+} 
+
+
+.text-rantai{
+ color: #0B69FD;
+}
+
+.contain{ 
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  margin-top:20px;
+}
+
+.contain div{
+  width: 310px;
+  height: 190px;
+}
+
+#mybtn{
+
+  margin-top:20px; 
+  width:15%; 
+  border-radius: 24px; 
+  color:#fff; 
+  background-color: #0b69fd;  
+  border: 2px solid #fff; 
+  padding:5px; 
+  font-weight: bold;
 }
