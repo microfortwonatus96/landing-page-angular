@@ -1808,6 +1808,11 @@ input[type="number"] {
     background-position: 0% 100%;
   }
 
+  .text-search{
+    font-size: 10px !important;
+    font-family: monserrat;
+  }
+
   .galery{
     margin-left:0px;
   }
@@ -2246,6 +2251,11 @@ input[type="number"] {
 @media only screen and (min-device-width: 360px) and (max-device-width:480px) and (orientation:portrait) {
   .services.icon-box {
     font-size: 0.813rem;
+  }
+
+  .text-search{
+    font-size: 10px !important;
+    font-family: monserrat;
   }
 
   .galery{
@@ -2749,6 +2759,11 @@ input[type="number"] {
   .parallax-section {
     height: 110vh;
   }
+
+  .text-search{
+    font-size: 13px !important;
+    font-family: monserrat;
+  }
   .footer-sb{
     font-size: 20px!important;   
     margin-left: 28px;
@@ -3238,11 +3253,12 @@ table, th, td {
   color: #fff;
   border: none;
   outline: none;
-  width: 25%;
+  width: 30%;
 }
 
 .form-control:focus {
   box-shadow: unset !important;
+
 }
 
 .btn-check:focus+.btn, .btn:focus {
@@ -3311,10 +3327,27 @@ table, th, td {
 .g8 {
   content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_8.jpg')
 } 
+.g9 {
+  content: url('../../assets/images/img-a.jpg')
+} 
+.g10 {
+  content: url('../../assets/images/imgA2.jpg')
+} 
+.g11 {
+  content: url('../../assets/images/banner2.svg')
+} 
+.g12 {
+  content: url('../../assets/images/chat.svg')
+} 
 
 
 .text-rantai{
  color: #0B69FD;
+}
+
+.text-search{
+  font-size: 18px;
+  font-family: monserrat;
 }
 
 .contain{ 
@@ -3323,20 +3356,73 @@ table, th, td {
   justify-content: center;
   margin-top:20px;
 }
-
-.contain div{
+.contain .no-img {
   width: 310px;
   height: 190px;
 }
+.hide{
+  opacity: 0;
+}
+
+.contain img{
+  width: 310px;
+  height: 190px;
+
+}
 
 #mybtn{
-
   margin-top:20px; 
   width:15%; 
   border-radius: 24px; 
   color:#fff; 
   background-color: #0b69fd;  
   border: 2px solid #fff; 
-  padding:5px; 
+  padding:8px; 
+  font-family:montserrat;
   font-weight: bold;
+  font-size: 13px;
+}
+
+.section10{
+  padding:20px;
+}
+
+.footer-s10{
+  font-family: Montserrat; 
+  font-size:24px;
+  color:#0B69FD;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer-text-s10{
+  font-family: source sans pro, Regular; 
+  font-size: 15px;
+  text-align: center;
+  color:#919AAB; 
+}
+
+.title-montserrat{
+  font-size: 15px;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.content-source-SansPro{
+  font-size: 15px;
+  font-family: source sans pro, Regular;
+}
+.fade-in {
+  animation:fadeIn 3s;
+}
+.fade-out {
+  animation: fadeOut 8s;
+}
+@keyframes fadeIn{
+  from { opacity:0}
+  to { opacity:1}
+}
+@keyframes fadeOut {
+  from{opacity:1}
+  to{ opacity:0}
 }

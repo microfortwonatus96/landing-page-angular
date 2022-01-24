@@ -1,0 +1,48 @@
+.konten1{
+    border: 1px solid #DDE2EB;
+    width: 180%;
+    height: auto;
+    border-radius: 15px; 
+    margin: 20px;
+   
+  }
+
+  .icon-plus {
+    content: url('../../assets/images/icon-plus.svg');
+   
+  }
+
+  
+  .icon-minus {
+    content: url('../../assets/images/icon-minus.svg');
+  }
+
+  .icon{
+    height:20px;
+    margin-right: -50px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+  }
+  .more-hide{
+    display:none;
+  }
+  .more-show{
+    display: block;
+
+  }
+  .color-text {
+    color: #0B69FD;
+  }
+
+  .moreless{
+    color: #919AAB;
+    font-family: source sans pro, Regular;
+    font-size:15px;
+    padding-bottom: 10px;
+  }
+
+  .faq-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }

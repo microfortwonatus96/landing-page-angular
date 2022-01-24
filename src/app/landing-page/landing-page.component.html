@@ -1129,12 +1129,14 @@
           {{ "At_The_Moment" | translate }}</span
         >
       </div>
-      <!-- <div class="row justify-content-center mt-4 baru-btn">
-        <div class="col-md-4">
+      <div class="row justify-content-center mt-4 baru-btn">
+        <div class="col-md-3">
           <form [formGroup]="searchForm" autocomplete="off">
             <div class="input-group mb-3">
               <input
-                class="form-control form-search-input"
+          
+                class="form-control form-search-input text-search "
+            
                 placeholder="{{ 'Search_by_phone' | translate }}"
                 aria-label="Search"
                 aria-describedby="button-addon2"
@@ -1146,7 +1148,6 @@
                 maxLength="16"
                 required
               />
-
               <button
                 (click)="search($event)"
                 class="btn btn-outline-secondary button-search"
@@ -1163,9 +1164,9 @@
         <span *ngIf="dataNotFound === true" class="text-red">{{
           "Data_Not_Found" | translate
         }}</span>
-      </div> -->
+      </div>
       <div class="row justify-content-center">
-        <!-- <div *ngIf="resultSearch.length > 0" class="row justify-content-center">
+        <div *ngIf="resultSearch.length > 0" class="row justify-content-center">
           <ng-container *ngFor="let sr of resultSearch; let i = index">
             <div class="col-md-4">
               <div class="box-referral mb-3 pointer">
@@ -1175,18 +1176,8 @@
                   >
                     <div class="col-md-2 col-sm-2">
                       <div
-                        [ngClass]="
-                          i < 5 && sr.rank !== 0
-                            ? 'rank' + (sr.rank - 1)
-                            : 'rankbox'
-                        "
-                      >
-                        <span
-                          [ngClass]="sr.rank == 0 ? 'ranknum left-sty' : ''"
-                        >
-                          {{ sr.rank }}</span
-                        >
-                      </div>
+                        [ngClass]="i < 5 ? 'rank' + (sr.rank - 1) : 'rankbox'"
+                      ></div>
                     </div>
                     <div class="col">
                       <div class="d-flex justify-content-between">
@@ -1216,7 +1207,7 @@
               </div>
             </div>
           </ng-container>
-        </div> -->
+        </div>
         <div
           class="col-md-4 col-sm-12 mt-md-0 p-4 referal_r"
           data-aos="zoom-in"
@@ -1323,27 +1314,22 @@
     </div>
   </section>
 
-  <section style="padding:20px;">
+  <section class="section10">
     <div >
       <p class="title-sb"> {{ "Use_Rantai" | translate }} <span class="text-rantai"> Rantai </span></p>
       <p class="paragraf-sb"> {{ "Those_customers" | translate }} </p>
     </div>
 
-      <div class="contain" data-aos="fade-up" >     
-          <div class=" test-size g1 " loading="lazy"></div>
-          <div class=" test-size g2 " loading="lazy"></div>
-          <div class=" test-size g3 " loading="lazy"></div>
-          <div class=" test-size g4 " loading="lazy"></div>
-          <div class=" test-size g5 " loading="lazy"></div>
-          <div class=" test-size g6 " loading="lazy"></div>
-          <div class=" test-size g7 " loading="lazy"></div>
-          <div class=" test-size g8 " loading="lazy"></div>
-      </div>
+      <div class="contain" > 
+        <ng-container *ngFor="let x of activeImage">
+          <div class="fade-in " *ngIf="x" >
+            <img   [src]="'https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/'+x" />
+          </div>
 
-      <div style="text-align: center;">
-        <button id="mybtn">klik</button>
+          <div *ngIf="!x" class="no-img"></div>
+        
+        </ng-container>
       </div>
-
       <div class="row justify-content-center">
         <div class="col-md-6 col-sm-6">
           <p class="h5 pt-4 fw-bolder col-md-12 footer-sb" data-aos="fade-right">
@@ -1733,6 +1719,59 @@
       </div>
     </div>
   </section>
+
+  <!-- <section>
+
+    <div >
+      <p class="title-sb"> {{ "Frequently" | translate }}</p>
+      <p class="paragraf-sb"> {{ "We_are_here" | translate }} </p>
+    </div>
+  
+    <div class="container">
+    <div class="row justify-content-start">
+
+      <div class="col-6" >
+        <ng-container *ngFor="let x of dataContent; let d = index">
+          <div *ngIf="checkOdd(e)" class=" box">
+            
+              <app-faq [content]="'aaaaa \n bb'"></app-faq>
+          </div>
+          <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat" >
+            <app-faq [content]="x"></app-faq>
+          </div>  
+        </ng-container>
+    </div>
+
+  <div class="col-6">
+      <ng-container *ngFor="let x of dataContent; let d = index">
+        <div *ngIf="checkOdd(e)" class=" box">
+          
+            <app-faq [content]="'aaaaa \n bb'"></app-faq>
+        </div>
+        <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat" >
+          <app-faq [content]="x"></app-faq>
+        </div>  
+      </ng-container>
+  </div>
+</div>
+</div>
+  
+    <div>
+      <p class="footer-s10" data-aos="fade-right">
+        {{ "Still_have" | translate }}
+      </p>
+      <p class="footer-text-s10" > 
+         {{ "Haven't_found" | translate }}<br>{{ "is_always" | translate }}
+      </p>
+    </div>
+  
+     <div class="row justify-content-center">
+        <a href="#contact" >
+          <button  id="mybtn">{{ "CONTACT_US" | translate }}</button>
+        </a>
+      </div>
+  </section> -->
+  
 </main>
 
 <footer id="contact">
