@@ -25,6 +25,8 @@ import {
   IReferralEvent,
   TermCondition,
 } from '../models/referral.model';
+import { GaleryService } from '../service/customer-galery.service';
+import { Galery } from '../models/galery.model';
 declare var $: any;
 
 @Component({
@@ -34,6 +36,31 @@ declare var $: any;
 })
 export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('myModalClose') modalClose: ElementRef;
+
+  selecedContent = ''
+  dataContent = [
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.",
+    "dLorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "u"
+  ]
   show = true;
   date = new Date();
   newDate: string;
@@ -134,6 +161,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     termAndConditions: [],
     title: null,
   };
+ 
   termCondition: TermCondition[];
 
   listEmpyReferral: IReferralCode[] = [];
@@ -146,6 +174,14 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   resultSearch: IReferralCode[] = [];
   dataNotFound: boolean;
   autoFocus: boolean = false;
+  nameGambar:string = ''
+  nextNameGambar:string = '';
+  nextIndex: number = 0;
+  activeImage:string[] = []
+ 
+  faqSideLeft= []
+  faqSideRight = []
+  listcontentGalery: string[] = [];
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -154,7 +190,8 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private subscriptionService: SubscriptionService,
-    private referralCodeService: RefferalCodeService
+    private referralCodeService: RefferalCodeService,
+    private galeryService: GaleryService
   ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
@@ -166,8 +203,32 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     }
     return true;
   }
+
+  randomUrl(){
+   
+    let r = Math.floor(Math.random() * this.listcontentGalery.length);
+    let str = this.listcontentGalery[r];
+
+    if(!this.activeImage.includes(str)){
+      let ranNum = Math.floor(Math.random() * this.activeImage.length);
+      this.activeImage[ranNum] = str;
+    }else{
+      this.randomUrl();
+    }
+  }
+
+  settingArray() {
+    setInterval(() => {
+      this.randomUrl()
+    }, 2000);
+  }
   ngOnDestroy(): void {
     this.alive = false;
+  }
+
+  checkOdd(n:number){
+    // console.log("aa")
+    return n % 2
   }
 
   ngAfterViewInit(): void {
@@ -192,13 +253,10 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
  
   
   ngOnInit(): void {
-
-    // $(document).ready(function(){
-    //   $("#mybtn").click(funct any){
-    //     $(".g1").fadeOut();
-    //   }
-    // });
-
+    for(let i=0; i < 8;i++){
+      this.activeImage.push(this.listcontentGalery[i])
+    }
+    this.settingArray()
     this.getProvince();
     // this.subsPackage$ = this.subsService.getPackage();
     this.tampilText();
@@ -235,6 +293,33 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadReferralCode();
     this.carouselSlider();
     this.loadEventTerms();
+    this.loadContentFaq()
+    this.loadGaleryImage()
+  }
+
+  loadGaleryImage(){
+    this.galeryService.getGalery().pipe(takeWhile(() => this.alive)).subscribe((response:any) => {
+      if(response){
+        this.listcontentGalery = [...response.content]
+      }
+      })
+  }
+
+  loadContentFaq(){
+    this.dataContent.forEach((v, idx) => {
+      for (let i = 0; i < 20; i++) {
+        if (i < 10) {
+          // console.log("left", v)
+          // this.faqSideLeft[i].push({this.dataContent[id]})
+        } else {
+          let idx2 = i - 10;
+          // this.faqSideRight[idx2] = v
+        }
+      }
+    })
+
+    console.log("left", this.faqSideLeft);
+    // console.log("right", this.faqSideRight)
   }
 
   loadEvent() {
