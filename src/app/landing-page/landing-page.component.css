@@ -1808,6 +1808,8 @@ input[type="number"] {
     background-position: 0% 100%;
   }
 
+ 
+
   .text-search{
     font-size: 10px !important;
     font-family: monserrat;
@@ -2253,6 +2255,14 @@ input[type="number"] {
     font-size: 0.813rem;
   }
 
+  .contain{
+    margin-right: -5px;
+  }
+
+  .responsive-img{
+    display: unset ;
+  }
+
   .text-search{
     font-size: 10px !important;
     font-family: monserrat;
@@ -2618,6 +2628,7 @@ input[type="number"] {
     height: 10vh;
   }
 
+
   .btn-galery {
     width: 190%;
     margin-bottom: 60px;
@@ -2649,7 +2660,6 @@ input[type="number"] {
     margin-left: -95px;
   }
 
-
   #imagee {
     width: 130px;
     height: auto;
@@ -2678,7 +2688,6 @@ input[type="number"] {
     margin-left: -450px;
     font-size: 44px;
   }
-
 
   .butuhB {
     margin-bottom: 5px;
@@ -2758,6 +2767,10 @@ input[type="number"] {
 @media only screen and (min-device-width: 400px) and (max-device-width:541px) and (orientation:portrait) {
   .parallax-section {
     height: 110vh;
+  }
+
+  .contain{
+    margin-right: -20px;
   }
 
   .text-search{
@@ -3363,6 +3376,7 @@ table, th, td {
   /* justify-content: center; */
   margin-top:20px;
   width: 100%;
+
 }
 
 .contain img{
@@ -3377,8 +3391,6 @@ table, th, td {
 .hide{
   opacity: 0;
 }
-
-
 
 #mybtn{
   margin-top:20px; 
