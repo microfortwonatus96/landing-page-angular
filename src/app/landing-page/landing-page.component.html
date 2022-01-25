@@ -136,6 +136,8 @@
   </nav>
 </header>
 
+
+
 <main id="main">
   <section
     id="parallax"
@@ -1332,10 +1334,12 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-md-6 col-sm-6">
-          <p class="h5 pt-4 fw-bolder col-md-12 footer-sb" data-aos="fade-right">
+          <p [ngClass]="setColor  ? 'red':''" class="h5 pt-4 fw-bolder col-md-12 footer-sb" data-aos="fade-right">
             {{ "SignUp_Galery" | translate }} 
           </p>
         </div>
+
+        
 
         <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
           <div class="row justify-content-start">
@@ -1771,7 +1775,8 @@
         </a>
       </div>
   </section> -->
-  
+
+
 </main>
 
 <footer id="contact">

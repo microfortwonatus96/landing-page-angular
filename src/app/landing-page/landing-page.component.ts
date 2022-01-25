@@ -64,6 +64,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   show = true;
   date = new Date();
   newDate: string;
+  viewAll= false
   formDaftar: FormGroup = this.formBuilder.group({
     id: null,
     name: ['', Validators.required],
@@ -182,6 +183,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   faqSideLeft= []
   faqSideRight = []
   listcontentGalery: string[] = [];
+  setColor:boolean = false;
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -213,7 +215,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       let ranNum = Math.floor(Math.random() * this.activeImage.length);
       this.activeImage[ranNum] = str;
     }else{
-      this.randomUrl();
+      // this.randomUrl();
     }
   }
 
@@ -300,6 +302,8 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   loadGaleryImage(){
     this.galeryService.getGalery().pipe(takeWhile(() => this.alive)).subscribe((response:any) => {
       if(response){
+        
+     
         this.listcontentGalery = [...response.content]
       }
       })
@@ -600,4 +604,14 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
+  // toogle(){
+  //   let counter: number  = 0
+   
+  //   if(counter == 0){ 
+  //   this.setColor = true
+  //   }else {
+  //     counter += 1;
+  //     this.setColor = false
+  //   }
+  // }
 }

@@ -11,6 +11,9 @@ export class GaleryService {
   constructor(private http: HttpClient) {}
 
   getGalery(): Observable<Galery[]> {
+    // return this.http.get<Galery[]>(
+    //   `${environment.api_galery}/testimoni/directory`
+    // );
     return this.http.get<Galery[]>(
       `${environment.api_galery}/testimoni`
     );

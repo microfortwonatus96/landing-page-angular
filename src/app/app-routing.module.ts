@@ -5,6 +5,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ReferralCodeComponent } from './referral-code/referral-code.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { ViewAllComponent } from './view-all/view-all.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'reset/:token/:id', component: ResetPasswordComponent },
   { path: 'referral-rangking', component: ReferralCodeComponent },
   { path: '**', component: LandingPageComponent },
+  { path: 'view-all', component: ViewAllComponent },
 ];
 
 @NgModule({
