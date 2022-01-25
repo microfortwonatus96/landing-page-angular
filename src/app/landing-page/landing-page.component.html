@@ -1322,16 +1322,23 @@
       <p class="paragraf-sb"> {{ "Those_customers" | translate }} </p>
     </div>
 
-      <div class="contain" > 
+    <!-- <div class="d-flex row justify-content-center">-->
+    <!-- <div class="galery-img">  -->
+      <div class="container contain" > 
         <ng-container *ngFor="let x of activeImage">
-          <div class="fade-in " *ngIf="x" >
+          <div class="fade-in row justify-content-center"  *ngIf="x" >
+            <div class="col-8">
             <img   [src]="'https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/'+x" />
+          </div>
           </div>
 
           <div *ngIf="!x" class="no-img"></div>
-        
         </ng-container>
-      </div>
+        </div>
+    <!-- </div> -->
+  <!--   </div> -->
+
+    
       <div class="row justify-content-center">
         <div class="col-md-6 col-sm-6">
           <p [ngClass]="setColor  ? 'red':''" class="h5 pt-4 fw-bolder col-md-12 footer-sb" data-aos="fade-right">

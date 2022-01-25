@@ -3350,12 +3350,26 @@ table, th, td {
   font-family: monserrat;
 }
 
+/* .galery-img{
+  width: 80%;
+  height: auto;
+  background-color: red;
+  justify-content: center;
+} */
+
 .contain{ 
   display: flex;
   flex-wrap:wrap;
-  justify-content: center;
+  /* justify-content: center; */
   margin-top:20px;
+  width: 100%;
 }
+
+.contain img{
+  width: 310px;
+  height: 190px;
+}
+
 .contain .no-img {
   width: 310px;
   height: 190px;
@@ -3364,11 +3378,7 @@ table, th, td {
   opacity: 0;
 }
 
-.contain img{
-  width: 310px;
-  height: 190px;
 
-}
 
 #mybtn{
   margin-top:20px; 
