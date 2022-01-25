@@ -179,6 +179,8 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   nextNameGambar:string = '';
   nextIndex: number = 0;
   activeImage:string[] = []
+
+  // lastBox = -1;
  
   faqSideLeft= []
   faqSideRight = []
@@ -207,7 +209,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   randomUrl(){
-   
     let r = Math.floor(Math.random() * this.listcontentGalery.length);
     let str = this.listcontentGalery[r];
 
@@ -215,14 +216,14 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       let ranNum = Math.floor(Math.random() * this.activeImage.length);
       this.activeImage[ranNum] = str;
     }else{
-      // this.randomUrl();
+      this.randomUrl();
     }
   }
 
   settingArray() {
     setInterval(() => {
       this.randomUrl()
-    }, 2000);
+    }, 700);
   }
   ngOnDestroy(): void {
     this.alive = false;
@@ -255,9 +256,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
  
   
   ngOnInit(): void {
-    for(let i=0; i < 8;i++){
-      this.activeImage.push(this.listcontentGalery[i])
-    }
+
     this.settingArray()
     this.getProvince();
     // this.subsPackage$ = this.subsService.getPackage();
@@ -302,9 +301,10 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   loadGaleryImage(){
     this.galeryService.getGalery().pipe(takeWhile(() => this.alive)).subscribe((response:any) => {
       if(response){
-        
-     
         this.listcontentGalery = [...response.content]
+        for(let i=0; i < 8;i++){
+          this.activeImage.push(this.listcontentGalery[i])
+        }
       }
       })
   }
