@@ -223,7 +223,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   settingArray() {
     setInterval(() => {
       this.randomUrl()
-    }, 700);
+    }, 3000);
   }
   ngOnDestroy(): void {
     this.alive = false;
