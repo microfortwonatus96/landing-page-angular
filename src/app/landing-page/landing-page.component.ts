@@ -26,7 +26,7 @@ import {
   TermCondition,
 } from '../models/referral.model';
 import { GaleryService } from '../service/customer-galery.service';
-import { Galery } from '../models/galery.model';
+import { Galery, ITestimoni } from '../models/galery.model';
 declare var $: any;
 
 @Component({
@@ -185,7 +185,10 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   faqSideLeft= []
   faqSideRight = []
   listcontentGalery: string[] = [];
+  listGaleryTestimoni:ITestimoni[] = [];
   setColor:boolean = false;
+  showMore: boolean = false;
+  mainPage: boolean
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -256,7 +259,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
  
   
   ngOnInit(): void {
-
     this.settingArray()
     this.getProvince();
     // this.subsPackage$ = this.subsService.getPackage();
@@ -296,12 +298,15 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadEventTerms();
     this.loadContentFaq()
     this.loadGaleryImage()
+    this.checkPage()
   }
 
   loadGaleryImage(){
     this.galeryService.getGalery().pipe(takeWhile(() => this.alive)).subscribe((response:any) => {
       if(response){
         this.listcontentGalery = [...response.content]
+        this.listGaleryTestimoni = [...response.content]
+        // console.log("data galeri", this.listGaleryTestimoni)      
         for(let i=0; i < 8;i++){
           this.activeImage.push(this.listcontentGalery[i])
         }
@@ -309,6 +314,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       })
   }
 
+  
   loadContentFaq(){
     this.dataContent.forEach((v, idx) => {
       for (let i = 0; i < 20; i++) {
@@ -322,7 +328,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       }
     })
 
-    console.log("left", this.faqSideLeft);
+    // console.log("left", this.faqSideLeft);
     // console.log("right", this.faqSideRight)
   }
 
@@ -604,14 +610,35 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
-  // toogle(){
-  //   let counter: number  = 0
-   
-  //   if(counter == 0){ 
-  //   this.setColor = true
-  //   }else {
-  //     counter += 1;
-  //     this.setColor = false
-  //   }
-  // }
+  
+  more(event) {
+    // console.log("test", event);
+    if(event) return this.showMore =false;
+    this.showMore = true; 
+  }
+
+  selengkapnya(){
+    this.mainPage = false;
+    localStorage.setItem('more', this.mainPage.toString());
+  }
+
+  destroyReadMore(){
+    this.mainPage = true;
+    localStorage.setItem('more', this.mainPage.toString());
+  }
+  checkPage(){
+    let statusPage = localStorage.getItem('more')
+    // console.log("test", statusPage);
+    if(statusPage == undefined) {
+      this.mainPage = true;
+    }else {
+      if(statusPage == 'true'){
+        // console.log("true")
+        this.mainPage = true;
+      }else  {
+        // console.log("false")
+        this.mainPage = false;
+      }
+    }
+  }
 }
