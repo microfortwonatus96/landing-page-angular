@@ -18,9 +18,7 @@ export class FaqComponent implements OnInit {
   more(event) {
     console.log("test", event);
     if(event) return this.showMore =false;
-    this.showMore = true;
-
-    
+    this.showMore = true; 
   }
 
 }

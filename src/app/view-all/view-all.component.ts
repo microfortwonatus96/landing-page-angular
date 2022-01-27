@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewAllComponent implements OnInit {
 
+  activeImage:string[] = []
+  listcontentGalery: string[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
