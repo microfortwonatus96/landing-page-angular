@@ -37,6 +37,7 @@ declare var $: any;
 export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('myModalClose') modalClose: ElementRef;
 
+  readMore = false;
   selecedContent = ''
   dataContent = [
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.",
@@ -188,7 +189,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   listGaleryTestimoni:ITestimoni[] = [];
   setColor:boolean = false;
   showMore: boolean = false;
-  mainPage: boolean
+  // mainPage: boolean
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -226,7 +227,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   settingArray() {
     setInterval(() => {
       this.randomUrl()
-    }, 3000);
+    }, 7000);
   }
   ngOnDestroy(): void {
     this.alive = false;
@@ -259,6 +260,21 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
  
   
   ngOnInit(): void {
+    this.readMore = false;
+    this.activatedRoute.queryParams.subscribe(re=>{
+      if(re){
+        this.readMore = re['more'] !== undefined
+        if(this.readMore){
+          document.getElementById('block').classList.add('display-none')
+          document.getElementById('block').classList.remove('display-block')
+          $('#main').animate({ scrollTop: 0 }, 'slow');
+        }else{
+          document.getElementById('block').classList.remove('display-none')
+          document.getElementById('block').classList.add('display-block')
+        }
+      }
+    })
+
     this.settingArray()
     this.getProvince();
     // this.subsPackage$ = this.subsService.getPackage();
@@ -298,7 +314,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadEventTerms();
     this.loadContentFaq()
     this.loadGaleryImage()
-    this.checkPage()
   }
 
   loadGaleryImage(){
@@ -618,27 +633,33 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   selengkapnya(){
-    this.mainPage = false;
-    localStorage.setItem('more', this.mainPage.toString());
+    this.router.navigate([], {
+      relativeTo: this.activatedRoute,
+      queryParams: {
+        more: 'true'
+      },
+      queryParamsHandling: 'merge',
+      // preserve the existing query params in the route
+    });
   }
 
-  destroyReadMore(){
-    this.mainPage = true;
-    localStorage.setItem('more', this.mainPage.toString());
-  }
-  checkPage(){
-    let statusPage = localStorage.getItem('more')
-    // console.log("test", statusPage);
-    if(statusPage == undefined) {
-      this.mainPage = true;
-    }else {
-      if(statusPage == 'true'){
-        // console.log("true")
-        this.mainPage = true;
-      }else  {
-        // console.log("false")
-        this.mainPage = false;
-      }
-    }
-  }
+  // destroyReadMore(){
+  //   this.mainPage = true;
+  //   localStorage.setItem('more', this.mainPage.toString());
+  // }
+  // checkPage(){
+  //   let statusPage = localStorage.getItem('more')
+  //   // console.log("test", statusPage);
+  //   if(statusPage == undefined) {
+  //     this.mainPage = true;
+  //   }else {
+  //     if(statusPage == 'true'){
+  //       // console.log("true")
+  //       this.mainPage = true;
+  //     }else  {
+  //       // console.log("false")
+  //       this.mainPage = false;
+  //     }
+  //   }
+  // }
 }
