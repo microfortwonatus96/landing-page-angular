@@ -217,6 +217,12 @@ p.ls-c-1 {
     transition-delay: 0 !important;
   }
 
+  .responsive-galery2{
+    margin-left:22px;
+  }
+  .responsive-img{
+    margin-left:8px;
+  }
   .galery{
     margin-left:-30px;
   }
@@ -1808,7 +1814,6 @@ input[type="number"] {
     background-position: 0% 100%;
   }
 
- 
 
   .text-search{
     font-size: 10px !important;
@@ -2255,14 +2260,7 @@ input[type="number"] {
     font-size: 0.813rem;
   }
 
-  .contain{
-    margin-right: -5px;
-  }
-
-  .responsive-img{
-    display: unset ;
-  }
-
+ 
   .text-search{
     font-size: 10px !important;
     font-family: monserrat;
@@ -2628,6 +2626,12 @@ input[type="number"] {
     height: 10vh;
   }
 
+  .responsive-galery2{
+    margin-left:20px;
+  }
+  .responsive-img{
+    margin-left:8px;
+  }
 
   .btn-galery {
     width: 190%;
@@ -2769,10 +2773,12 @@ input[type="number"] {
     height: 110vh;
   }
 
-  .contain{
-    margin-right: -20px;
+  .responsive-galery2{
+    margin-left:15px;
   }
-
+  .responsive-img{
+    margin-left:5px;
+  }
   .text-search{
     font-size: 13px !important;
     font-family: monserrat;
@@ -3316,43 +3322,6 @@ table, th, td {
   font-weight: bold;
 }
 
- .g1 {
-  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_1.jpg')
-} 
-.g2 {
-  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_2.jpg')
-} 
-.g3 {
-  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_3.jpg')
-} 
-.g4 {
-  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_4.jpg')
-} 
-.g5 {
-  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_5.jpg')
-} 
-.g6 {
-  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_6.jpg')
-} 
-.g7 {
-  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_7.jpg')
-} 
-.g8 {
-  content: url('https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/testimoni_8.jpg')
-} 
-.g9 {
-  content: url('../../assets/images/img-a.jpg')
-} 
-.g10 {
-  content: url('../../assets/images/imgA2.jpg')
-} 
-.g11 {
-  content: url('../../assets/images/banner2.svg')
-} 
-.g12 {
-  content: url('../../assets/images/chat.svg')
-} 
-
 
 .text-rantai{
  color: #0B69FD;
@@ -3363,25 +3332,18 @@ table, th, td {
   font-family: monserrat;
 }
 
-/* .galery-img{
-  width: 80%;
-  height: auto;
-  background-color: red;
-  justify-content: center;
-} */
-
 .contain{ 
   display: flex;
   flex-wrap:wrap;
-  /* justify-content: center; */
   margin-top:20px;
   width: 100%;
-
+  /* margin-right: unset ; */
 }
 
 .contain img{
   width: 310px;
   height: 190px;
+  
 }
 
 .contain .no-img {
@@ -3435,7 +3397,7 @@ table, th, td {
   font-family: source sans pro, Regular;
 }
 .fade-in {
-  animation:fadeIn 3s;
+  animation:fadeIn 4s;
 }
 .fade-out {
   animation: fadeOut 8s;
@@ -3447,4 +3409,78 @@ table, th, td {
 @keyframes fadeOut {
   from{opacity:1}
   to{ opacity:0}
+}
+
+.tag-a{
+  color:#0B69FD !important;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 13px;
+  font-family: Montserrat;
+}
+
+.center{
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* b */
+
+.g1 {
+  content: url('../../assets/images/img-a.jpg')
+} 
+
+.galery-dua{ 
+  display: flex;
+  flex-wrap:wrap;
+  margin-top:20px;
+  width: 100%;
+ 
+}
+
+.galery-dua img{
+  width: 300px;
+  height: 190px;
+  border: 1px solid rgb(236, 231, 231);
+  margin: 10px;
+}
+
+.text-rantai{
+  color: #0B69FD;
+ }
+
+ .nama-customer{
+  font-size:15px;
+  font-family:montserrat;
+ }
+ .nama-toko{
+  font-size: 12px;
+  font-family: Montserrat;
+  color:#0B69FD;
+  font-weight:bold;
+ }
+
+ .text-centerr{
+  text-align: center;
+  line-height: 5px;
+  margin-top:15px;
+ 
+ }
+
+ .galery2{
+  padding: 20px;
+  margin-top:90px;
+ }
+
+ .display-none {
+  display: none !important;
+}
+
+.display-block {
+  display: block !important;
+}
+#readmore {
+  position:sticky;
+  top: 150px;
 }

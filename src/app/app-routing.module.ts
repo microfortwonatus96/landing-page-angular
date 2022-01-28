@@ -13,8 +13,8 @@ const routes: Routes = [
   { path: 'activate/:token/:id', component: ActivateComponent },
   { path: 'reset/:token/:id', component: ResetPasswordComponent },
   { path: 'referral-rangking', component: ReferralCodeComponent },
+  { path: 'testimoni/view-all', component: ViewAllComponent },
   { path: '**', component: LandingPageComponent },
-  { path: 'view-all', component: ViewAllComponent },
 ];
 
 @NgModule({

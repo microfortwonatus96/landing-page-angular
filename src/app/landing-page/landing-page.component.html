@@ -1,4 +1,4 @@
-<header id="home" class="">
+<header id="home" >
   <nav id="navbar" class="navbar navbar-expand-md fixed-top b-navbar">
     <div class="container bg-crumb">
       <div class="d-flex justify-content-start" style="gap: 15px">
@@ -17,6 +17,7 @@
           class="navbar-brand fw-bold d-flex justify-content-center align-items-center"
           href="/"
           style="gap: 5px"
+          (click)="destroyReadMore()"
         >
           <div class="logo-header" loading="lazy"></div>
         </a>
@@ -26,6 +27,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a
+            (click)="destroyReadMore()"
               class="nav-link active fw-bold"
               href="/"
               style="padding-top: 15px"
@@ -34,6 +36,7 @@
           </li>
           <li class="nav-item">
             <a
+            (click)="destroyReadMore()"
               class="nav-link fw-bold"
               href="#feature"
               style="padding-top: 15px"
@@ -42,6 +45,7 @@
           </li>
           <li class="nav-item">
             <a
+            (click)="destroyReadMore()"
               class="nav-link fw-bold"
               href="#price"
               style="padding-top: 15px"
@@ -138,7 +142,9 @@
 
 
 
-<main id="main">
+<main id="main" >
+  <div [ngClass]="mainPage ? 'display-block' : 'display-none'">
+<!-- SECTION 1 -->
   <section
     id="parallax"
     data-aos="fade-up"
@@ -361,6 +367,7 @@
     </div>
   </section>
 
+   <!-- SECTION 2 -->
   <section style="padding: 0px">
     <div class="row justify-content-start align-items-center" id="bc">
       <div
@@ -472,7 +479,7 @@
     </div>
   </section>
 
-  <!-- SECTION 2 -->
+ <!-- SECTION 3 -->
   <section id="feature" class="about">
     <div class="container">
       <div class="row align-items-center justify-content-center">
@@ -628,7 +635,7 @@
     </div>
   </section>
 
-  <!-- SECTION 3 -->
+ <!-- SECTION 4 -->
   <section id="benefit" class="services box-section section3">
     <div class="container">
       <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up">
@@ -780,7 +787,7 @@
     </div>
   </section>
 
-  <!-- SECTION 4 -->
+ <!-- SECTION 5 -->
   <section id="about" class="about">
     <div class="container">
       <div class="row align-items-center justify-content-center">
@@ -1037,6 +1044,7 @@
     </div>
   </section>
 
+  <!-- SECTION 6 -->
   <section id="benefit" class="services box-section">
     <div class="container" data-aos="fade-up">
       <div
@@ -1316,37 +1324,36 @@
     </div>
   </section>
 
+ <!-- SECTION 7 -->
   <section class="section10">
     <div >
       <p class="title-sb"> {{ "Use_Rantai" | translate }} <span class="text-rantai"> Rantai </span></p>
       <p class="paragraf-sb"> {{ "Those_customers" | translate }} </p>
     </div>
 
-    <!-- <div class="d-flex row justify-content-center">-->
-    <!-- <div class="galery-img">  -->
       <div class="container contain" > 
         <ng-container *ngFor="let x of activeImage">
-          <div class="fade-in row justify-content-center responsive-img"  *ngIf="x" >
-            <div class="col-8 responsive-img" >
-            <img [src]="'https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/'+x" />
+          <div class=" fade-in row row-cols-10 responsive-img"  *ngIf="x" >
+            <div class="col">
+              <img [src]="'https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/'+x.imageLocation" />
+            </div>
           </div>
-          </div>
-
           <div *ngIf="!x" class="no-img"></div>
         </ng-container>
-        </div>
-    <!-- </div> -->
-  <!--   </div> -->
+      </div>  
+  
+       <div class="center " > 
+         <!-- <a class="tag-a"  href="#" routerLink="testimoni/view-all" target="_blank" >LIHAT SELENGKAPNYA</a> -->
+           <a class="tag-a pointer"  href="#readmore" (click)="selengkapnya()" >LIHAT SELENGKAPNYA</a>
+         <!-- <div class="tag-a pointer" (click)="selengkapnya()"> <span>lihat selengkapnya</span></div> -->
+       </div>
 
-    
       <div class="row justify-content-center">
         <div class="col-md-6 col-sm-6">
-          <p [ngClass]="setColor  ? 'red':''" class="h5 pt-4 fw-bolder col-md-12 footer-sb" data-aos="fade-right">
+          <p class="h5 pt-4 fw-bolder col-md-12 footer-sb" data-aos="fade-right">
             {{ "SignUp_Galery" | translate }} 
           </p>
         </div>
-
-        
 
         <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
           <div class="row justify-content-start">
@@ -1361,10 +1368,10 @@
           </div>
         </div>
       </div>
-
   </section>
-
-  <section>
+ 
+   <!-- SECTION 8 -->
+  <section >
     <div class="container" data-aos="fade-up">
       <div class="section-title">
         <div class="fw-bold" style="font-family: Montserrat; font-size: 32px">
@@ -1730,9 +1737,7 @@
       </div>
     </div>
   </section>
-
   <!-- <section>
-
     <div >
       <p class="title-sb"> {{ "Frequently" | translate }}</p>
       <p class="paragraf-sb"> {{ "We_are_here" | translate }} </p>
@@ -1782,7 +1787,29 @@
         </a>
       </div>
   </section> -->
-
+</div>
+  
+<section id="readmore" class="galery2" [ngClass]="mainPage ? 'display-none' : 'display-block'">
+  <div >
+    <p class="title-sb"> {{ "Use_Rantai" | translate }} <span class="text-rantai"> Rantai </span></p>
+    <p class="paragraf-sb"> {{ "Those_customers" | translate }} </p>
+  </div>
+  
+  <div class="container galery-dua" > 
+    <ng-container *ngFor="let x of listGaleryTestimoni">
+      <div class="row row-cols-12 " > 
+          <div class="col-12 responsive-galery2" >
+            <img [src]="'https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/'+x.imageLocation" />  
+              <div class="text-centerr col-12"> 
+                  <p class="nama-customer ">{{x.ownerName}}</p>
+                  <p class="nama-toko">{{x.tokoName}}</p>
+                  <p class="nama-customer">{{x.location}}</p> 
+              </div>            
+          </div>
+      </div>
+    </ng-container>
+  </div>
+</section>
 
 </main>
 
