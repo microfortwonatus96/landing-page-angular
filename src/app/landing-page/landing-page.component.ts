@@ -267,7 +267,13 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         if(this.readMore){
           document.getElementById('block').classList.add('display-none')
           document.getElementById('block').classList.remove('display-block')
-          $('#main').animate({ scrollTop: 0 }, 'slow');
+          
+          // $('html, body').animate({ scrollTop: 0 }, 'slow');
+          $('html, body').animate({ 
+            scrollTop: 0 }, 'slow');
+          //mobile vesion 
+          //id=main ilang  > scrollTop
+          
         }else{
           document.getElementById('block').classList.remove('display-none')
           document.getElementById('block').classList.add('display-block')
@@ -633,12 +639,17 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   selengkapnya(){
+    
     this.router.navigate([], {
+      
       relativeTo: this.activatedRoute,
       queryParams: {
         more: 'true'
+        
       },
+      
       queryParamsHandling: 'merge',
+      
       // preserve the existing query params in the route
     });
   }
