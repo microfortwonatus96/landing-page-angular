@@ -146,6 +146,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   resultSearch: IReferralCode[] = [];
   dataNotFound: boolean;
   autoFocus: boolean = false;
+  mainPage: boolean = true;
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -429,7 +430,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(' active-slider', '');
     }
-    (<HTMLElement>slides[this.indexBtnSlide - 1]).style.display = 'block';
+    (<HTMLElement>slides[this.indexBtnSlide - 1])[0].style.display = 'block';
     dots[this.indexBtnSlide - 1].className += ' active-slider';
   }
   carouselSlider() {

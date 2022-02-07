@@ -137,999 +137,1009 @@
 </header>
 
 <main id="main">
-  <section
-    id="parallax"
-    data-aos="fade-up"
-    class="parallax-section home d-flex align-items-center Margin-T"
-  >
-    <div class="container">
-      <div class="carousel slide-show">
-        <div class="row justify-content-between">
-          <div class="col-md-7 col-sm-6">
-            <article class="home-text">
-              <h1 data-aos="fade-right" class="f-rantai">
-                {{ "Invite_Friends" | translate }} <br />
-                {{ "Chain_Get" | translate }} <br />
-                {{ "Total_Prize" | translate }} <br />
-              </h1>
+  <div [ngClass]="mainPage ? 'display-block' : 'display-none'">
+    <section
+      id="parallax"
+      data-aos="fade-up"
+      class="parallax-section home d-flex align-items-center Margin-T"
+    >
+      <div class="container">
+        <div class="carousel slide-show">
+          <div class="row justify-content-between">
+            <div class="col-md-7 col-sm-6">
+              <article class="home-text">
+                <h1 data-aos="fade-right" class="f-rantai">
+                  {{ "Invite_Friends" | translate }} <br />
+                  {{ "Chain_Get" | translate }} <br />
+                  {{ "Total_Prize" | translate }} <br />
+                </h1>
 
-              <p data-aos="fade-right" class="one-section-p font-bodyText">
-                {{ "Follow_The_Program" | translate }}
-              </p>
-              <p
-                data-aos="fade-right"
-                class="one-section-p font-bodyText"
-                style="margin-bottom: 15px"
-              >
-                {{ "Chance_To_Win" | translate }} {{ "Prize" | translate }}
-                <b>{{ "USD" | translate }}</b>
-              </p>
-
-              <p data-aos="fade-right" class="one-section-p font-bodyText">
-                {{ "Sign_Up_Code_Refferal" | translate }}
-              </p>
-
-              <div style="margin-top: -15px">
-                <a
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#syartdanketentuan"
+                <p data-aos="fade-right" class="one-section-p font-bodyText">
+                  {{ "Follow_The_Program" | translate }}
+                </p>
+                <p
+                  data-aos="fade-right"
+                  class="one-section-p font-bodyText"
+                  style="margin-bottom: 15px"
                 >
-                  <div class="terms" style="text-align: left">
-                    <ins> {{ "Terms and Conditions" | translate }}</ins>
-                  </div>
-                </a>
-              </div>
+                  {{ "Chance_To_Win" | translate }} {{ "Prize" | translate }}
+                  <b>{{ "USD" | translate }}</b>
+                </p>
 
-              <div
-                class="home-btn"
-                data-aos="fade-right"
-                style="margin-top: 18px"
-              >
-                <div class="row justify-content-start">
-                  <div class="col-md-4 col-sm-5">
-                    <a
-                      href="https://rantai.tech/web/accounts/sign-up"
-                      class="bttn btn btn-primary btn-1 button1"
-                      target="_blank"
-                    >
-                      <div
-                        class="text-signup"
-                        style="color: white; font-size: 13px"
-                      >
-                        {{ "Sign_Up_Now1" | translate }}
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-md-4 col-sm-7 image-google">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="app-logo"
-                    >
-                      <div
-                        class="img-google-play app-store"
-                        loading="lazy"
-                      ></div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-5 col-sm-6 banner-normal">
-            <img
-              src="../../assets/images/banner.svg"
-              alt="banner"
-              class="banner1"
-            />
-          </div>
-        </div>
-      </div>
+                <p data-aos="fade-right" class="one-section-p font-bodyText">
+                  {{ "Sign_Up_Code_Refferal" | translate }}
+                </p>
 
-      <!-- mhimik -->
-      <div class="carousel slide-show">
-        <div class="row justify-content-between">
-          <div class="col-md-7 col-sm-6">
-            <article class="home-text">
-              <h1 data-aos="fade-right" class="f-rantai" id="head2">
-                {{ "Manage_Shop" | translate }} <br />
-                {{ "With_System" | translate }} <br />
-                {{ "Omnichannel" | translate }} <br />
-              </h1>
-
-              <p data-aos="fade-right" class="one-section-p font-bodyText">
-                {{ "Free_Subscription" | translate }}
-              </p>
-              <p data-aos="fade-right" class="one-section-p font-bodyText">
-                {{ "Entrepreneurs" | translate }}
-              </p>
-              <p
-                data-aos="fade-right"
-                class="one-section-p font-bodyText"
-                style="margin-bottom: 15px"
-              >
-                {{ "Efficient" | translate }}
-              </p>
-
-              <p
-                class="fw-normal"
-                style="
-                  font-family: source sans pro;
-                  font-size: 15px;
-                  margin-top: 15px;
-                "
-              >
-                {{ "Sign1" | translate
-                }}<span style="color: black; font-weight: bold">{{
-                  "Free_Forever" | translate
-                }}</span>
-              </p>
-
-              <div style="margin-top: 5px">
-                <a
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#syartdanketentuan"
-                >
-                  <div
-                    class="terms"
-                    style="
-                      text-align: left;
-                      font-family: source sans pro;
-                      font-style: italic;
-                    "
+                <div style="margin-top: -15px">
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#syartdanketentuan"
                   >
-                    <ins> {{ "Terms and Conditions" | translate }}</ins>
-                  </div>
-                </a>
-              </div>
+                    <div class="terms" style="text-align: left">
+                      <ins> {{ "Terms and Conditions" | translate }}</ins>
+                    </div>
+                  </a>
+                </div>
 
-              <div
-                class="home-btn"
-                data-aos="fade-right"
-                style="margin-top: 18px; padding-bottom: 33px"
-              >
-                <div class="row justify-content-start">
-                  <div class="col-md-4 col-sm-5">
-                    <a
-                      href="https://rantai.tech/web/accounts/sign-up"
-                      class="btn btn-primary btn-1 button1 bttn btnmic"
-                      target="_blank"
-                    >
-                      <div
-                        class="text-signup"
-                        style="color: white; font-size: 14px"
+                <div
+                  class="home-btn"
+                  data-aos="fade-right"
+                  style="margin-top: 18px"
+                >
+                  <div class="row justify-content-start">
+                    <div class="col-md-4 col-sm-5">
+                      <a
+                        href="https://rantai.tech/web/accounts/sign-up"
+                        class="bttn btn btn-primary btn-1 button1"
+                        target="_blank"
                       >
-                        {{ "Sign_Up_Now1" | translate }}
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-md-4 col-sm-7 image-google">
-                    <a
-                      href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="app-logo"
-                    >
-                      <div
-                        class="img-google-play app-store"
-                        loading="lazy"
-                      ></div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div class="col-md-5 col-sm-6 banner-n2">
-            <img
-              src="../../assets/images/banner2.svg"
-              alt="banner"
-              class="banner2"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="d-flex justify-content-start s-3 slider-mobile"
-        style="margin-top: -25px; display: none"
-      >
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-            (click)="btnSlide(1)"
-          />
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-            (click)="btnSlide(2)"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section style="padding: 0px">
-    <div class="row justify-content-start align-items-center" id="bc">
-      <div
-        class="col-md-3 col-sm-6"
-        style="text-align: center; padding-top: 30px"
-      >
-        <p
-          class="fw-bold collaboration"
-          style="font-family: Montserrat; font-size: 14px"
-        >
-          {{ "Collaboration" | translate }}:
-        </p>
-      </div>
-      <div class="col-md-8 col-sm-6 box-marketplace">
-        <marquee scrollamount="13">
-          <div
-            class="d-flex justify-content-around marketplace-slide"
-            style="margin-top: 30px"
-          >
-            <a
-              data-aos="fade-up"
-              data-aos-delay="100"
-              style="padding-right: 35px"
-            >
-              <i id="i-tokped"></i>
-            </a>
-
-            <a
-              data-aos="fade-up"
-              data-aos-delay="200"
-              style="padding-right: 35px"
-            >
-              <i id="i-lazada"></i>
-            </a>
-
-            <a
-              data-aos="fade-up"
-              data-aos-delay="300"
-              style="padding-right: 35px"
-            >
-              <i id="i-shopee"></i>
-            </a>
-
-            <a
-              data-aos="fade-up"
-              data-aos-delay="400"
-              style="padding-right: 35px"
-            >
-              <i id="i-blibli"></i>
-              <p
-                style="
-                  font-style: Montserrat;
-                  font-weight: bold;
-                  color: #919aab;
-                  font-size: 8px;
-                  text-align: center;
-                  position: relative;
-                  margin-top: -5px;
-                "
-              >
-                COMING SOON
-              </p>
-            </a>
-
-            <a
-              data-aos="fade-up"
-              data-aos-delay="500"
-              style="padding-right: 35px"
-            >
-              <i id="i-jdid"></i>
-              <p
-                style="
-                  font-style: Montserrat;
-                  font-weight: bold;
-                  color: #919aab;
-                  font-size: 8px;
-                  text-align: center;
-                  position: relative;
-                  margin-top: -5px;
-                "
-              >
-                COMING SOON
-              </p>
-            </a>
-
-            <a
-              data-aos="fade-up"
-              data-aos-delay="500"
-              style="padding-right: 35px"
-            >
-              <i id="i-bukalapak"> </i>
-              <p
-                style="
-                  font-style: Montserrat;
-                  font-weight: bold;
-                  color: #919aab;
-                  font-size: 8px;
-                  text-align: center;
-                  position: relative;
-                  margin-top: -5px;
-                "
-              >
-                COMING SOON
-              </p>
-            </a>
-          </div>
-        </marquee>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 2 -->
-  <section id="feature" class="about">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="d-flex justify-content-center">
-          <div
-            class="title-blue py-2"
-            style="font-family: Montserrat; font-size: 15px"
-          >
-            {{ "OUR_FEATURES" | translate }}
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-center">
-          <div
-            class="fw-bold font-title col-md-5 text-center"
-            style="font-family: Montserrat; font-size: 30px"
-          >
-            {{ "Features_The_Right" | translate }}
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-center" style="margin-bottom: 50px">
-          <div
-            class="fw-bold font-title col-md-5 text-center ukuran-font"
-            style="font-family: Montserrat; font-size: 30px"
-          >
-            {{ "Growth_Online_Business" | translate }}
-          </div>
-        </div>
-
-        <div class="mt-4 row justify-content-between">
-          <div class="col-md-6" data-aos="fade-up">
-            <div id="r-720" class="tab-phone" loading="lazy"></div>
-          </div>
-
-          <div
-            class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content"
-            data-aos="fade-right"
-          >
-            <article class="artikel">
-              <div
-                class="fw-bold font-title ukuran-font"
-                style="font-family: Montserrat; font-size: 20px"
-              >
-                {{ "Manage_stock" | translate }}
-              </div>
-              <div
-                class="font-title ukuran-font"
-                style="
-                  font-family: Montserrat;
-                  font-size: 20px;
-                  font-weight: bold;
-                "
-              >
-                {{ "Anytime_and_Anywhere" | translate }}
-              </div>
-
-              <div class="navbar-brand d-flex">
-                <div id="logo-centang" style="margin-top: 15px"></div>
-                <p
-                  class="lbd-highlight text-start fw-normal fw-bold font-title"
-                  style="
-                    margin-top: 25px;
-                    line-height: 1px;
-                    padding-left: 15px;
-                    font-size: 13px;
-                    font-family: Montserrat;
-                    font-weight: bold;
-                  "
-                >
-                  {{ "Update_Stock" | translate
-                  }}<br /><br /><br /><br /><br /><br /><br /><br />
-                  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                  <br /><br /><br /><br /><br /><br />
-                  <span style="margin-left: -1px">
-                    {{ "U" | translate }}
-                  </span>
-                </p>
-              </div>
-
-              <p
-                class="font-bodyText"
-                style="padding-left: 35px; margin-top: 12px"
-              >
-                {{ "Update_Stock_Item" | translate }}
-              </p>
-
-              <div class="navbar-brand d-flex">
-                <div id="logo-centang" style="margin-top: 15px"></div>
-                <p
-                  class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font"
-                  style="
-                    margin-top: 25px;
-                    line-height: 1px;
-                    padding-left: 15px;
-                    font-size: 13px;
-                    font-family: Montserrat;
-                  "
-                >
-                  {{ "Rantai_Pos" | translate }}
-                </p>
-              </div>
-
-              <p class="font-bodyText" style="padding-left: 35px">
-                {{ "Online_Cashier" | translate }}
-              </p>
-
-              <p
-                class="fw-normal"
-                style="
-                  padding-left: 35px;
-                  font-family: source sans pro;
-                  font-size: 15px;
-                  margin-top: 15px;
-                "
-              >
-                <b> {{ "Sign1" | translate }}</b>
-                <span style="color: #0b69fd; font-weight: bold">
-                  {{ "Free_Forever" | translate }}</span
-                >
-              </p>
-
-              <div
-                class="home-btn"
-                data-aos="fade-right"
-                style="padding-left: 35px"
-              >
-                <div class="row justify-content-start">
-                  <div class="col-md-4 col-sm-5" id="bts3">
-                    <a
-                      href="https://rantai.tech/web/accounts/sign-up"
-                      class="btn btn-1"
-                      target="_blank"
-                      style="
-                        border-radius: 24px;
-                        opacity: 1;
-                        background-color: #0b69fd;
-                        width: 105%;
-                        padding: 5px;
-                      "
-                    >
-                      <div class="btn-title-lets-start" style="color: white">
-                        {{ "TRY_FREE1" | translate }}
-                      </div>
-                    </a>
+                        <div
+                          class="text-signup"
+                          style="color: white; font-size: 13px"
+                        >
+                          {{ "Sign_Up_Now1" | translate }}
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4 col-sm-7 image-google">
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="app-logo"
+                      >
+                        <div
+                          class="img-google-play app-store"
+                          loading="lazy"
+                        ></div>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECTION 3 -->
-  <section id="benefit" class="services box-section section3">
-    <div class="container">
-      <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up">
-        <div id="test" class="image-mobile image-toko-online" loading="lazy">
-          <img
-            src="../../assets/images/tokoonline.svg"
-            alt=""
-            class="image-mobile"
-          />
-        </div>
-      </div>
-
-      <div
-        class="row align-items-center justify-content-center"
-        style="margin-left: 12px"
-      >
-        <div class="mt-4 row justify-content-between">
-          <div class="col-md-6 pt-4 pt-lg-0 content" data-aos="fade-right">
-            <article class="artikel">
-              <div class="fw-bold font-heading" style="font-family: Montserrat">
-                {{ "Control" | translate }}
-              </div>
-              <div class="fw-bold font-heading" style="font-family: Montserrat">
-                {{ "Marketplace" | translate }}
-              </div>
-
-              <div class="navbar-brand d-flex">
-                <div id="logo-centang" style="margin-top: 15px"></div>
-                <p
-                  class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font"
-                  style="
-                    margin-top: 25px;
-                    line-height: 5px;
-                    padding-left: 15px;
-                    font-size: 14px;
-                    font-family: Montserrat;
-                  "
-                >
-                  {{ "TRANSACTION_INFORMATION" | translate
-                  }}<br /><br /><br /><br /><br /><br />
-
-                  <span style="margin-left: -1px">{{
-                    "TRANSACTION" | translate
-                  }}</span>
-                </p>
-                <br />
-              </div>
-
-              <p class="font-bodyText" style="padding-left: 35px">
-                {{ "Access_Transaction_List" | translate }}
-              </p>
-
-              <div class="navbar-brand d-flex">
-                <div id="logo-centang" style="margin-top: 15px"></div>
-                <p
-                  class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font"
-                  style="
-                    margin-top: 25px;
-                    line-height: 1px;
-                    padding-left: 15px;
-                    font-size: 14px;
-                    font-family: Montserrat;
-                  "
-                >
-                  {{ "SCRAPE_AND_COPY" | translate }}
-                </p>
-              </div>
-
-              <p class="font-bodyText" style="padding-left: 35px">
-                {{ "Move_or_Copy" | translate }}
-              </p>
-
-              <div class="navbar-brand d-flex">
-                <div id="logo-centang" style="margin-top: 15px"></div>
-                <p
-                  class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font"
-                  style="
-                    margin-top: 25px;
-                    line-height: 1px;
-                    padding-left: 15px;
-                    font-size: 14px;
-                    font-family: Montserrat;
-                  "
-                >
-                  {{ "RANTAI_TALK" | translate }}
-                </p>
-              </div>
-
-              <p class="font-bodyText" style="padding-left: 35px">
-                {{ "Connect_With_All" | translate }}
-              </p>
-
-              <p
-                class="fw-normal"
-                style="
-                  padding-left: 35px;
-                  font-family: source sans pro;
-                  margin-top: 15px;
-                  font-weight: bold;
-                  font-size: 15px;
-                "
-              >
-                <b> {{ "Sign1" | translate }}</b>
-                <span style="color: #0b69fd; font-weight: bold">
-                  {{ "Free_Forever" | translate }}</span
-                >
-              </p>
-
-              <div
-                class="home-btn"
-                data-aos="fade-right"
-                style="padding-left: 35px"
-              >
-                <div class="row justify-content-start">
-                  <div class="col-md-4 col-sm-5" id="bts3">
-                    <a
-                      href="https://rantai.tech/web/accounts/sign-up"
-                      class="btn btn-1"
-                      target="_blank"
-                      style="
-                        border-radius: 24px;
-                        opacity: 1;
-                        background-color: #0b69fd;
-                        width: 105%;
-                        padding: 5px;
-                      "
-                    >
-                      <div class="btn-title-lets-start" style="color: white">
-                        {{ "TRY_FREE1" | translate }}
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up">
-            <div id="image-section3" class="image-size" loading="lazy">
+              </article>
+            </div>
+            <div class="col-md-5 col-sm-6 banner-normal">
               <img
-                class="img-tok"
-                src="../../assets/images/tokoonline.svg"
-                alt=""
+                src="../../assets/images/banner.svg"
+                alt="banner"
+                class="banner1"
               />
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- SECTION 4 -->
-  <section id="about" class="about">
-    <div class="container">
-      <div class="row align-items-center justify-content-center">
-        <div class="mt-4 row justify-content-between">
-          <div class="col-md-6" data-aos="fade-up">
-            <div class="image-size1 tab-fiturreport" loading="lazy"></div>
+        <!-- mhimik -->
+        <div class="carousel slide-show">
+          <div class="row justify-content-between">
+            <div class="col-md-7 col-sm-6">
+              <article class="home-text">
+                <h1 data-aos="fade-right" class="f-rantai" id="head2">
+                  {{ "Manage_Shop" | translate }} <br />
+                  {{ "With_System" | translate }} <br />
+                  {{ "Omnichannel" | translate }} <br />
+                </h1>
+
+                <p data-aos="fade-right" class="one-section-p font-bodyText">
+                  {{ "Free_Subscription" | translate }}
+                </p>
+                <p data-aos="fade-right" class="one-section-p font-bodyText">
+                  {{ "Entrepreneurs" | translate }}
+                </p>
+                <p
+                  data-aos="fade-right"
+                  class="one-section-p font-bodyText"
+                  style="margin-bottom: 15px"
+                >
+                  {{ "Efficient" | translate }}
+                </p>
+
+                <p
+                  class="fw-normal"
+                  style="
+                    font-family: source sans pro;
+                    font-size: 15px;
+                    margin-top: 15px;
+                  "
+                >
+                  {{ "Sign1" | translate
+                  }}<span style="color: black; font-weight: bold">{{
+                    "Free_Forever" | translate
+                  }}</span>
+                </p>
+
+                <div style="margin-top: 5px">
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#syartdanketentuan"
+                  >
+                    <div
+                      class="terms"
+                      style="
+                        text-align: left;
+                        font-family: source sans pro;
+                        font-style: italic;
+                      "
+                    >
+                      <ins> {{ "Terms and Conditions" | translate }}</ins>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="home-btn"
+                  data-aos="fade-right"
+                  style="margin-top: 18px; padding-bottom: 33px"
+                >
+                  <div class="row justify-content-start">
+                    <div class="col-md-4 col-sm-5">
+                      <a
+                        href="https://rantai.tech/web/accounts/sign-up"
+                        class="btn btn-primary btn-1 button1 bttn btnmic"
+                        target="_blank"
+                      >
+                        <div
+                          class="text-signup"
+                          style="color: white; font-size: 14px"
+                        >
+                          {{ "Sign_Up_Now1" | translate }}
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4 col-sm-7 image-google">
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="app-logo"
+                      >
+                        <div
+                          class="img-google-play app-store"
+                          loading="lazy"
+                        ></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-5 col-sm-6 banner-n2">
+              <img
+                src="../../assets/images/banner2.svg"
+                alt="banner"
+                class="banner2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex justify-content-start s-3 slider-mobile"
+          style="margin-top: -25px; display: none"
+        >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+              (click)="btnSlide(1)"
+            />
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+              (click)="btnSlide(2)"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: 0px">
+      <div class="row justify-content-start align-items-center" id="bc">
+        <div
+          class="col-md-3 col-sm-6"
+          style="text-align: center; padding-top: 30px"
+        >
+          <p
+            class="fw-bold collaboration"
+            style="font-family: Montserrat; font-size: 14px"
+          >
+            {{ "Collaboration" | translate }}:
+          </p>
+        </div>
+        <div class="col-md-8 col-sm-6 box-marketplace">
+          <marquee scrollamount="13">
+            <div
+              class="d-flex justify-content-around marketplace-slide"
+              style="margin-top: 30px"
+            >
+              <a
+                data-aos="fade-up"
+                data-aos-delay="100"
+                style="padding-right: 35px"
+              >
+                <i id="i-tokped"></i>
+              </a>
+
+              <a
+                data-aos="fade-up"
+                data-aos-delay="200"
+                style="padding-right: 35px"
+              >
+                <i id="i-lazada"></i>
+              </a>
+
+              <a
+                data-aos="fade-up"
+                data-aos-delay="300"
+                style="padding-right: 35px"
+              >
+                <i id="i-shopee"></i>
+              </a>
+
+              <a
+                data-aos="fade-up"
+                data-aos-delay="400"
+                style="padding-right: 35px"
+              >
+                <i id="i-blibli"></i>
+                <p
+                  style="
+                    font-style: Montserrat;
+                    font-weight: bold;
+                    color: #919aab;
+                    font-size: 8px;
+                    text-align: center;
+                    position: relative;
+                    margin-top: -5px;
+                  "
+                >
+                  COMING SOON
+                </p>
+              </a>
+
+              <a
+                data-aos="fade-up"
+                data-aos-delay="500"
+                style="padding-right: 35px"
+              >
+                <i id="i-jdid"></i>
+                <p
+                  style="
+                    font-style: Montserrat;
+                    font-weight: bold;
+                    color: #919aab;
+                    font-size: 8px;
+                    text-align: center;
+                    position: relative;
+                    margin-top: -5px;
+                  "
+                >
+                  COMING SOON
+                </p>
+              </a>
+
+              <a
+                data-aos="fade-up"
+                data-aos-delay="500"
+                style="padding-right: 35px"
+              >
+                <i id="i-bukalapak"> </i>
+                <p
+                  style="
+                    font-style: Montserrat;
+                    font-weight: bold;
+                    color: #919aab;
+                    font-size: 8px;
+                    text-align: center;
+                    position: relative;
+                    margin-top: -5px;
+                  "
+                >
+                  COMING SOON
+                </p>
+              </a>
+            </div>
+          </marquee>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section id="feature" class="about">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="d-flex justify-content-center">
+            <div
+              class="title-blue py-2"
+              style="font-family: Montserrat; font-size: 15px"
+            >
+              {{ "OUR_FEATURES" | translate }}
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div
+              class="fw-bold font-title col-md-5 text-center"
+              style="font-family: Montserrat; font-size: 30px"
+            >
+              {{ "Features_The_Right" | translate }}
+            </div>
           </div>
 
           <div
-            class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content"
-            data-aos="fade-right"
+            class="d-flex justify-content-center"
+            style="margin-bottom: 50px"
           >
-            <article class="artikel">
-              <div class="font-heading">
-                {{ "Generate_Financial_Report" | translate }}
-              </div>
-              <p class="font-bodyText" style="margin-top: 20px">
-                {{ "More_Efficient" | translate }}
-              </p>
+            <div
+              class="fw-bold font-title col-md-5 text-center ukuran-font"
+              style="font-family: Montserrat; font-size: 30px"
+            >
+              {{ "Growth_Online_Business" | translate }}
+            </div>
+          </div>
 
-              <p
-                class="fw-normal"
-                style="
-                  margin-top: 15px;
-                  font-weight: bold;
-                  font-size: 15px;
-                  font-family: source sans pro;
-                "
-              >
-                <b> {{ "Sign1" | translate }}</b>
-                <span style="color: #0b69fd">
-                  {{ "Free_Forever" | translate }}</span
+          <div class="mt-4 row justify-content-between">
+            <div class="col-md-6" data-aos="fade-up">
+              <div id="r-720" class="tab-phone" loading="lazy"></div>
+            </div>
+
+            <div
+              class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content"
+              data-aos="fade-right"
+            >
+              <article class="artikel">
+                <div
+                  class="fw-bold font-title ukuran-font"
+                  style="font-family: Montserrat; font-size: 20px"
                 >
-              </p>
+                  {{ "Manage_stock" | translate }}
+                </div>
+                <div
+                  class="font-title ukuran-font"
+                  style="
+                    font-family: Montserrat;
+                    font-size: 20px;
+                    font-weight: bold;
+                  "
+                >
+                  {{ "Anytime_and_Anywhere" | translate }}
+                </div>
 
-              <div class="home-btn" data-aos="fade-right">
+                <div class="navbar-brand d-flex">
+                  <div id="logo-centang" style="margin-top: 15px"></div>
+                  <p
+                    class="lbd-highlight text-start fw-normal fw-bold font-title"
+                    style="
+                      margin-top: 25px;
+                      line-height: 1px;
+                      padding-left: 15px;
+                      font-size: 13px;
+                      font-family: Montserrat;
+                      font-weight: bold;
+                    "
+                  >
+                    {{ "Update_Stock" | translate
+                    }}<br /><br /><br /><br /><br /><br /><br /><br />
+                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <br /><br /><br /><br /><br /><br />
+                    <span style="margin-left: -1px">
+                      {{ "U" | translate }}
+                    </span>
+                  </p>
+                </div>
+
+                <p
+                  class="font-bodyText"
+                  style="padding-left: 35px; margin-top: 12px"
+                >
+                  {{ "Update_Stock_Item" | translate }}
+                </p>
+
+                <div class="navbar-brand d-flex">
+                  <div id="logo-centang" style="margin-top: 15px"></div>
+                  <p
+                    class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font"
+                    style="
+                      margin-top: 25px;
+                      line-height: 1px;
+                      padding-left: 15px;
+                      font-size: 13px;
+                      font-family: Montserrat;
+                    "
+                  >
+                    {{ "Rantai_Pos" | translate }}
+                  </p>
+                </div>
+
+                <p class="font-bodyText" style="padding-left: 35px">
+                  {{ "Online_Cashier" | translate }}
+                </p>
+
+                <p
+                  class="fw-normal"
+                  style="
+                    padding-left: 35px;
+                    font-family: source sans pro;
+                    font-size: 15px;
+                    margin-top: 15px;
+                  "
+                >
+                  <b> {{ "Sign1" | translate }}</b>
+                  <span style="color: #0b69fd; font-weight: bold">
+                    {{ "Free_Forever" | translate }}</span
+                  >
+                </p>
+
+                <div
+                  class="home-btn"
+                  data-aos="fade-right"
+                  style="padding-left: 35px"
+                >
+                  <div class="row justify-content-start">
+                    <div class="col-md-4 col-sm-5" id="bts3">
+                      <a
+                        href="https://rantai.tech/web/accounts/sign-up"
+                        class="btn btn-1"
+                        target="_blank"
+                        style="
+                          border-radius: 24px;
+                          opacity: 1;
+                          background-color: #0b69fd;
+                          width: 105%;
+                          padding: 5px;
+                        "
+                      >
+                        <div class="btn-title-lets-start" style="color: white">
+                          {{ "TRY_FREE1" | translate }}
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section id="benefit" class="services box-section section3">
+      <div class="container">
+        <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up">
+          <div id="test" class="image-mobile image-toko-online" loading="lazy">
+            <img
+              src="../../assets/images/tokoonline.svg"
+              alt=""
+              class="image-mobile"
+            />
+          </div>
+        </div>
+
+        <div
+          class="row align-items-center justify-content-center"
+          style="margin-left: 12px"
+        >
+          <div class="mt-4 row justify-content-between">
+            <div class="col-md-6 pt-4 pt-lg-0 content" data-aos="fade-right">
+              <article class="artikel">
+                <div
+                  class="fw-bold font-heading"
+                  style="font-family: Montserrat"
+                >
+                  {{ "Control" | translate }}
+                </div>
+                <div
+                  class="fw-bold font-heading"
+                  style="font-family: Montserrat"
+                >
+                  {{ "Marketplace" | translate }}
+                </div>
+
+                <div class="navbar-brand d-flex">
+                  <div id="logo-centang" style="margin-top: 15px"></div>
+                  <p
+                    class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font"
+                    style="
+                      margin-top: 25px;
+                      line-height: 5px;
+                      padding-left: 15px;
+                      font-size: 14px;
+                      font-family: Montserrat;
+                    "
+                  >
+                    {{ "TRANSACTION_INFORMATION" | translate
+                    }}<br /><br /><br /><br /><br /><br />
+
+                    <span style="margin-left: -1px">{{
+                      "TRANSACTION" | translate
+                    }}</span>
+                  </p>
+                  <br />
+                </div>
+
+                <p class="font-bodyText" style="padding-left: 35px">
+                  {{ "Access_Transaction_List" | translate }}
+                </p>
+
+                <div class="navbar-brand d-flex">
+                  <div id="logo-centang" style="margin-top: 15px"></div>
+                  <p
+                    class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font"
+                    style="
+                      margin-top: 25px;
+                      line-height: 1px;
+                      padding-left: 15px;
+                      font-size: 14px;
+                      font-family: Montserrat;
+                    "
+                  >
+                    {{ "SCRAPE_AND_COPY" | translate }}
+                  </p>
+                </div>
+
+                <p class="font-bodyText" style="padding-left: 35px">
+                  {{ "Move_or_Copy" | translate }}
+                </p>
+
+                <div class="navbar-brand d-flex">
+                  <div id="logo-centang" style="margin-top: 15px"></div>
+                  <p
+                    class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font"
+                    style="
+                      margin-top: 25px;
+                      line-height: 1px;
+                      padding-left: 15px;
+                      font-size: 14px;
+                      font-family: Montserrat;
+                    "
+                  >
+                    {{ "RANTAI_TALK" | translate }}
+                  </p>
+                </div>
+
+                <p class="font-bodyText" style="padding-left: 35px">
+                  {{ "Connect_With_All" | translate }}
+                </p>
+
+                <p
+                  class="fw-normal"
+                  style="
+                    padding-left: 35px;
+                    font-family: source sans pro;
+                    margin-top: 15px;
+                    font-weight: bold;
+                    font-size: 15px;
+                  "
+                >
+                  <b> {{ "Sign1" | translate }}</b>
+                  <span style="color: #0b69fd; font-weight: bold">
+                    {{ "Free_Forever" | translate }}</span
+                  >
+                </p>
+
+                <div
+                  class="home-btn"
+                  data-aos="fade-right"
+                  style="padding-left: 35px"
+                >
+                  <div class="row justify-content-start">
+                    <div class="col-md-4 col-sm-5" id="bts3">
+                      <a
+                        href="https://rantai.tech/web/accounts/sign-up"
+                        class="btn btn-1"
+                        target="_blank"
+                        style="
+                          border-radius: 24px;
+                          opacity: 1;
+                          background-color: #0b69fd;
+                          width: 105%;
+                          padding: 5px;
+                        "
+                      >
+                        <div class="btn-title-lets-start" style="color: white">
+                          {{ "TRY_FREE1" | translate }}
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up">
+              <div id="image-section3" class="image-size" loading="lazy">
+                <img
+                  class="img-tok"
+                  src="../../assets/images/tokoonline.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="mt-4 row justify-content-between">
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="image-size1 tab-fiturreport" loading="lazy"></div>
+            </div>
+
+            <div
+              class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content"
+              data-aos="fade-right"
+            >
+              <article class="artikel">
+                <div class="font-heading">
+                  {{ "Generate_Financial_Report" | translate }}
+                </div>
+                <p class="font-bodyText" style="margin-top: 20px">
+                  {{ "More_Efficient" | translate }}
+                </p>
+
+                <p
+                  class="fw-normal"
+                  style="
+                    margin-top: 15px;
+                    font-weight: bold;
+                    font-size: 15px;
+                    font-family: source sans pro;
+                  "
+                >
+                  <b> {{ "Sign1" | translate }}</b>
+                  <span style="color: #0b69fd">
+                    {{ "Free_Forever" | translate }}</span
+                  >
+                </p>
+
+                <div class="home-btn" data-aos="fade-right">
+                  <div class="row justify-content-start">
+                    <div class="col-md-4 col-sm-5" id="bts3">
+                      <a
+                        href="https://rantai.tech/web/accounts/sign-up"
+                        class="btn btn-1"
+                        target="_blank"
+                        style="
+                          border-radius: 24px;
+                          opacity: 1;
+                          background-color: #0b69fd;
+                          width: 105%;
+                          padding: 5px;
+                        "
+                      >
+                        <div class="btn-title-lets-start" style="color: white">
+                          {{ "TRY_FREE1" | translate }}
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- PRICE -->
+          <section id="price">
+            <div class="row justify-content-center mt-5">
+              <div
+                class="title-blue text-center"
+                style="font-family: Montserrat; font-size: 15px"
+              >
+                {{ "SUBSCRIPTION_PACKAGE_OPTIONS" | translate }}
+              </div>
+            </div>
+            <div class="row justify-content-center p-3">
+              <div
+                class="text-center fw-bold"
+                style="font-family: Montserrat; font-size: 30px"
+              >
+                {{ "Various_Package_Options" | translate }} <br />{{
+                  "Adjust_to_Needs" | translate
+                }}
+              </div>
+            </div>
+
+            <div
+              class="row justify-content-center gbr"
+              style="margin-right: 20px"
+            >
+              <div
+                class="col-md-3 col-sm-6 align-items-stretch row zoom-subscription p-4 img-resize"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                *ngIf="typelistFree.length > 0"
+              >
+                <div class="img-subsciption">
+                  <div id="silver" class="col sub">
+                    <div class="d-flex justify-content-start">
+                      <div class="paket-rantai img-fluid"></div>
+                      <div class="row justify-content-start text-price">
+                        <div class="text-left">
+                          <div
+                            class="fw-bold f-14"
+                            style="font-family: Montserrat"
+                          >
+                            RANTAI MARKETPLACE
+                          </div>
+                        </div>
+                        <div class="row justify-content-start">
+                          <div class="f-12">
+                            <sup class="text-remove">Rp 490.000</sup>
+                            <span
+                              class="fw-bold"
+                              style="font-family: Montserrat"
+                              >{{ "Free" | translate }}</span
+                            >
+                            <sub style="font-family: Montserrat">
+                              {{ "Forever" | translate }}</sub
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="col subcription-desc border-radius-top">
+                    <div class="container">
+                      <div class="row">
+                        <div class="mt-2 mb-4">
+                          <ng-container
+                            *ngFor="let free of typelistFree; let i = index"
+                          >
+                            <div
+                              class="mt-3 d-flex justify-content-start align-items-center"
+                            >
+                              <div
+                                class="bd-highlight box-list icon-valid mt-1 me-2"
+                              ></div>
+                              <div
+                                class="bd-highlight text-start fw-bold f-14"
+                                style="font-family: source sans pro"
+                              >
+                                {{ free.benefit | titlecase }}
+                              </div>
+                            </div>
+                          </ng-container>
+                          <span
+                            class="text-muted f-12 text-syarat"
+                            style="
+                              font-family: Montserrat;
+                              font-style: italic;
+                              font-size: 10px;
+                            "
+                            >{{ "Terms and Conditions" | translate }}.</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- RANTAI ERP -->
+              <div
+                class="col-md-3 col-sm-6 row zoom-subscription p-4 align-items-stretch img-resize"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                *ngIf="typelistErp.length > 0"
+              >
+                <div class="img-subsciption">
+                  <div id="silver" class="col sub">
+                    <div class="d-flex justify-content-start">
+                      <div class="paket-rantaierp img-fluid"></div>
+                      <div class="row justify-content-start text-price">
+                        <div class="text-left">
+                          <div
+                            class="fw-bold f-14"
+                            style="font-family: Montserrat"
+                          >
+                            RANTAI ERP
+                          </div>
+                        </div>
+                        <div class="row justify-content-start">
+                          <div class="text-left f-12">
+                            <sup style="font-family: Montserrat">Rp </sup>
+                            <span class="fw-bold">{{
+                              price | number: "1.2-2"
+                            }}</span>
+                            <sub style="font-family: Montserrat"
+                              >/{{ "Month" | translate }}</sub
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="col subcription-desc border-radius-top">
+                    <div class="container">
+                      <div class="row">
+                        <div class="mt-2 mb-4">
+                          <ng-container
+                            *ngFor="let erp of typelistErp; let i = index"
+                          >
+                            <div
+                              class="mt-2 d-flex justify-content-start align-items-center"
+                            >
+                              <div
+                                class="bd-highlight box-list icon-valid mt-1 me-2"
+                              ></div>
+                              <div
+                                class="bd-highlight text-start fw-bold f-14"
+                                style="font-family: source sans pro"
+                              >
+                                {{ erp.benefit | titlecase }}
+                              </div>
+                            </div>
+                          </ng-container>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row justify-content-center" style="margin-bottom: 40px">
+              <div class="col-md-6 col-sm-6 teks">
+                <p
+                  id="butuhB"
+                  class="h5 pt-4 fw-bolder col-md-12 butuhB"
+                  data-aos="fade-right"
+                >
+                  {{ "Need_Help" | translate }} <br />
+                  {{ "WE" | translate }}
+                </p>
+              </div>
+
+              <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
                 <div class="row justify-content-start">
-                  <div class="col-md-4 col-sm-5" id="bts3">
+                  <div class="buttonmik" style="margin-top: 25px">
                     <a
-                      href="https://rantai.tech/web/accounts/sign-up"
-                      class="btn btn-1"
-                      target="_blank"
-                      style="
-                        border-radius: 24px;
-                        opacity: 1;
-                        background-color: #0b69fd;
-                        width: 105%;
-                        padding: 5px;
-                      "
+                      href="#contact"
+                      class="btn btn-primary button1 bttn"
+                      style="font: size 13px"
                     >
-                      <div class="btn-title-lets-start" style="color: white">
-                        {{ "TRY_FREE1" | translate }}
+                      <div class="btn-title-lets-start fw-bold">
+                        {{ "CONTACT_US" | translate }}
                       </div>
                     </a>
                   </div>
                 </div>
               </div>
-            </article>
-          </div>
+            </div>
+          </section>
         </div>
+      </div>
+    </section>
 
-        <!-- PRICE -->
-        <section id="price">
-          <div class="row justify-content-center mt-5">
+    <section id="benefit" class="services box-section">
+      <div class="container" data-aos="fade-up">
+        <div
+          class="section-title section-choose-plan"
+          style="margin-left: 20px; margin-right: 20px"
+        >
+          <div class="row justify-content-center komisi">
             <div
-              class="title-blue text-center"
-              style="font-family: Montserrat; font-size: 15px"
+              data-aos="fade-up"
+              class="title-overview col-md-6 fw-bold"
+              style="
+                margin-bottom: 20px;
+                font-family: Montserrat;
+                font-size: 30px;
+              "
             >
-              {{ "SUBSCRIPTION_PACKAGE_OPTIONS" | translate }}
+              {{ "Commission_Sharing_Chain" | translate }}
             </div>
+            <span id="komisi-font" class="col-md-6 komisi-font">
+              {{ "Invite" | translate }}
+            </span>
           </div>
-          <div class="row justify-content-center p-3">
-            <div
-              class="text-center fw-bold"
-              style="font-family: Montserrat; font-size: 30px"
-            >
-              {{ "Various_Package_Options" | translate }} <br />{{
-                "Adjust_to_Needs" | translate
-              }}
-            </div>
-          </div>
-
-          <div
-            class="row justify-content-center gbr"
-            style="margin-right: 20px"
+          <p
+            data-aos="fade-right"
+            class=""
+            style="
+              margin-top: 10px;
+              margin-bottom: 1px;
+              font-size: 15px;
+              font-family: source sans pro;
+            "
           >
-            <div
-              class="col-md-3 col-sm-6 align-items-stretch row zoom-subscription p-4 img-resize"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-              *ngIf="typelistFree.length > 0"
-            >
-              <div class="img-subsciption">
-                <div id="silver" class="col sub">
-                  <div class="d-flex justify-content-start">
-                    <div class="paket-rantai img-fluid"></div>
-                    <div class="row justify-content-start text-price">
-                      <div class="text-left">
-                        <div
-                          class="fw-bold f-14"
-                          style="font-family: Montserrat"
-                        >
-                          RANTAI MARKETPLACE
-                        </div>
-                      </div>
-                      <div class="row justify-content-start">
-                        <div class="f-12">
-                          <sup class="text-remove">Rp 490.000</sup>
-                          <span
-                            class="fw-bold"
-                            style="font-family: Montserrat"
-                            >{{ "Free" | translate }}</span
-                          >
-                          <sub style="font-family: Montserrat">
-                            {{ "Forever" | translate }}</sub
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="divider"></div>
-                <div class="col subcription-desc border-radius-top">
-                  <div class="container">
-                    <div class="row">
-                      <div class="mt-2 mb-4">
-                        <ng-container
-                          *ngFor="let free of typelistFree; let i = index"
-                        >
-                          <div
-                            class="mt-3 d-flex justify-content-start align-items-center"
-                          >
-                            <div
-                              class="bd-highlight box-list icon-valid mt-1 me-2"
-                            ></div>
-                            <div
-                              class="bd-highlight text-start fw-bold f-14"
-                              style="font-family: source sans pro"
-                            >
-                              {{ free.benefit | titlecase }}
-                            </div>
-                          </div>
-                        </ng-container>
-                        <span
-                          class="text-muted f-12 text-syarat"
-                          style="
-                            font-family: Montserrat;
-                            font-style: italic;
-                            font-size: 10px;
-                          "
-                          >{{ "Terms and Conditions" | translate }}.</span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {{ "Sign_Up_Code_Refferal" | translate }}
+          </p>
 
-            <!-- RANTAI ERP -->
-            <div
-              class="col-md-3 col-sm-6 row zoom-subscription p-4 align-items-stretch img-resize"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-              *ngIf="typelistErp.length > 0"
-            >
-              <div class="img-subsciption">
-                <div id="silver" class="col sub">
-                  <div class="d-flex justify-content-start">
-                    <div class="paket-rantaierp img-fluid"></div>
-                    <div class="row justify-content-start text-price">
-                      <div class="text-left">
-                        <div
-                          class="fw-bold f-14"
-                          style="font-family: Montserrat"
-                        >
-                          RANTAI ERP
-                        </div>
-                      </div>
-                      <div class="row justify-content-start">
-                        <div class="text-left f-12">
-                          <sup style="font-family: Montserrat">Rp </sup>
-                          <span class="fw-bold">{{
-                            price | number: "1.2-2"
-                          }}</span>
-                          <sub style="font-family: Montserrat"
-                            >/{{ "Month" | translate }}</sub
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="divider"></div>
-                <div class="col subcription-desc border-radius-top">
-                  <div class="container">
-                    <div class="row">
-                      <div class="mt-2 mb-4">
-                        <ng-container
-                          *ngFor="let erp of typelistErp; let i = index"
-                        >
-                          <div
-                            class="mt-2 d-flex justify-content-start align-items-center"
-                          >
-                            <div
-                              class="bd-highlight box-list icon-valid mt-1 me-2"
-                            ></div>
-                            <div
-                              class="bd-highlight text-start fw-bold f-14"
-                              style="font-family: source sans pro"
-                            >
-                              {{ erp.benefit | titlecase }}
-                            </div>
-                          </div>
-                        </ng-container>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row justify-content-center" style="margin-bottom: 40px">
-            <div class="col-md-6 col-sm-6 teks">
-              <p
-                id="butuhB"
-                class="h5 pt-4 fw-bolder col-md-12 butuhB"
-                data-aos="fade-right"
-              >
-                {{ "Need_Help" | translate }} <br />
-                {{ "WE" | translate }}
-              </p>
-            </div>
-
-            <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
+          <div class="row justify-content-center">
+            <div class="col-md-2 col-sm-6" data-aos="fade-right">
               <div class="row justify-content-start">
-                <div class="buttonmik" style="margin-top: 25px">
+                <div style="margin-top: 15px">
                   <a
-                    href="#contact"
-                    class="btn btn-primary button1 bttn"
-                    style="font: size 13px"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#syartdanketentuan"
                   >
-                    <div class="btn-title-lets-start fw-bold">
-                      {{ "CONTACT_US" | translate }}
+                    <div
+                      class="terms"
+                      style="
+                        font-family: source sans pro;
+                        font-style: italic;
+                        font-size: 10px;
+                      "
+                    >
+                      <ins> {{ "Terms and Conditions" | translate }}</ins>
                     </div>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-    </div>
-  </section>
 
-  <section id="benefit" class="services box-section">
-    <div class="container" data-aos="fade-up">
-      <div
-        class="section-title section-choose-plan"
-        style="margin-left: 20px; margin-right: 20px"
-      >
-        <div class="row justify-content-center komisi">
-          <div
-            data-aos="fade-up"
-            class="title-overview col-md-6 fw-bold"
-            style="
-              margin-bottom: 20px;
-              font-family: Montserrat;
-              font-size: 30px;
-            "
+          <div class="row justify-content-center">
+            <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
+              <div class="row justify-content-start">
+                <div class="teks btnn" style="margin-top: 15px">
+                  <a
+                    id="bts5"
+                    href="https://rantai.tech/web/accounts/sign-up"
+                    target="_blank"
+                    class="btn btn-primary btn-1 button1 teks btmik"
+                  >
+                    <div
+                      class="btn-title-lets-start"
+                      style="color: white; font-size: 11px"
+                    >
+                      {{ "Sign_Up_Now1" | translate }}
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="cuptropy"></div>
+
+          <span
+            class="font-title fw-bold text-center p-2 ukuran-font"
+            style="font-family: Montserrat; font-size: 24px"
           >
-            {{ "Commission_Sharing_Chain" | translate }}
-          </div>
-          <span id="komisi-font" class="col-md-6 komisi-font">
-            {{ "Invite" | translate }}
-          </span>
+            {{ "R_ranking" | translate }} <br />
+            {{ "At_The_Moment" | translate }}</span
+          >
         </div>
-        <p
-          data-aos="fade-right"
-          class=""
-          style="
-            margin-top: 10px;
-            margin-bottom: 1px;
-            font-size: 15px;
-            font-family: source sans pro;
-          "
-        >
-          {{ "Sign_Up_Code_Refferal" | translate }}
-        </p>
-
-        <div class="row justify-content-center">
-          <div class="col-md-2 col-sm-6" data-aos="fade-right">
-            <div class="row justify-content-start">
-              <div style="margin-top: 15px">
-                <a
-                  href="#"
-                  data-bs-toggle="modal"
-                  data-bs-target="#syartdanketentuan"
-                >
-                  <div
-                    class="terms"
-                    style="
-                      font-family: source sans pro;
-                      font-style: italic;
-                      font-size: 10px;
-                    "
-                  >
-                    <ins> {{ "Terms and Conditions" | translate }}</ins>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
-            <div class="row justify-content-start">
-              <div class="teks btnn" style="margin-top: 15px">
-                <a
-                  id="bts5"
-                  href="https://rantai.tech/web/accounts/sign-up"
-                  target="_blank"
-                  class="btn btn-primary btn-1 button1 teks btmik"
-                >
-                  <div
-                    class="btn-title-lets-start"
-                    style="color: white; font-size: 11px"
-                  >
-                    {{ "Sign_Up_Now1" | translate }}
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="cuptropy"></div>
-
-        <span
-          class="font-title fw-bold text-center p-2 ukuran-font"
-          style="font-family: Montserrat; font-size: 24px"
-        >
-          {{ "R_ranking" | translate }} <br />
-          {{ "At_The_Moment" | translate }}</span
-        >
-      </div>
-      <!-- <div class="row justify-content-center mt-4 baru-btn">
+        <!-- <div class="row justify-content-center mt-4 baru-btn">
         <div class="col-md-4">
           <form [formGroup]="searchForm" autocomplete="off">
             <div class="input-group mb-3">
@@ -1164,8 +1174,8 @@
           "Data_Not_Found" | translate
         }}</span>
       </div> -->
-      <div class="row justify-content-center">
-        <!-- <div *ngIf="resultSearch.length > 0" class="row justify-content-center">
+        <div class="row justify-content-center">
+          <!-- <div *ngIf="resultSearch.length > 0" class="row justify-content-center">
           <ng-container *ngFor="let sr of resultSearch; let i = index">
             <div class="col-md-4">
               <div class="box-referral mb-3 pointer">
@@ -1217,94 +1227,98 @@
             </div>
           </ng-container>
         </div> -->
-        <div
-          class="col-md-4 col-sm-12 mt-md-0 p-4 referal_r"
-          data-aos="zoom-in"
-          data-aos-delay="100"
-        >
-          <ng-container *ngFor="let ref of sectionFree; let i = index">
-            <div class="box-referral mb-3 pointer">
-              <div class="box-referral-content">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="col-md-2 col-sm-2">
-                    <div [ngClass]="i < 5 ? 'rank' + i : 'rankbox'">
-                      <span [ngClass]="i < 9 ? 'ranknum-min' : 'ranknum'">
-                        {{ i + 1 }}</span
-                      >
+          <div
+            class="col-md-4 col-sm-12 mt-md-0 p-4 referal_r"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <ng-container *ngFor="let ref of sectionFree; let i = index">
+              <div class="box-referral mb-3 pointer">
+                <div class="box-referral-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="col-md-2 col-sm-2">
+                      <div [ngClass]="i < 5 ? 'rank' + i : 'rankbox'">
+                        <span [ngClass]="i < 9 ? 'ranknum-min' : 'ranknum'">
+                          {{ i + 1 }}</span
+                        >
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="d-flex justify-content-between">
+                        <div
+                          class="fw-bold text-refferal f-12"
+                          style="font-family: Montserrat"
+                        >
+                          <span>
+                            {{ ref.name ? ref.name : "No Data" }} /
+                            {{ ref.phone }}</span
+                          >
+                        </div>
+                        <div
+                          class="point-color"
+                          style="
+                            font-family: Montserrat;
+                            font-size: 12px;
+                            font-weight: bold;
+                          "
+                        >
+                          {{ ref.point }} Poin
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="d-flex justify-content-between">
+                </div>
+              </div>
+            </ng-container>
+          </div>
+
+          <div
+            class="col-md-4 col-sm-6 p-4 p-referal referal_r"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <ng-container *ngFor="let ref of sectionPaid; let i = index">
+              <div class="box-referral mb-3 pointer">
+                <div class="box-referral-content">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="col-md-2 col-sm-2">
+                      <div class="rankbox">
+                        <span class="ranknum"> {{ i + 1 + 10 }}</span>
+                      </div>
+                    </div>
+                    <div class="col">
                       <div
-                        class="fw-bold text-refferal f-12"
+                        class="d-flex justify-content-between f-12"
                         style="font-family: Montserrat"
                       >
-                        <span>
-                          {{ ref.name ? ref.name : "No Data" }} /
-                          {{ ref.phone }}</span
-                        >
-                      </div>
-                      <div
-                        class="point-color"
-                        style="
-                          font-family: Montserrat;
-                          font-size: 12px;
-                          font-weight: bold;
-                        "
-                      >
-                        {{ ref.point }} Poin
+                        <div class="fw-bold text-refferal">
+                          <span>
+                            {{ ref.name ? ref.name : "No Data" }} /
+                            {{ ref.phone }}</span
+                          >
+                        </div>
+                        <div class="point-color">{{ ref.point }} Poin</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ng-container>
+            </ng-container>
+          </div>
         </div>
 
         <div
-          class="col-md-4 col-sm-6 p-4 p-referal referal_r"
-          data-aos="zoom-in"
-          data-aos-delay="100"
+          class="row justify-content-center"
+          *ngIf="sectionFree.length > 0 || sectionPaid.length > 0"
         >
-          <ng-container *ngFor="let ref of sectionPaid; let i = index">
-            <div class="box-referral mb-3 pointer">
-              <div class="box-referral-content">
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="col-md-2 col-sm-2">
-                    <div class="rankbox">
-                      <span class="ranknum"> {{ i + 1 + 10 }}</span>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div
-                      class="d-flex justify-content-between f-12"
-                      style="font-family: Montserrat"
-                    >
-                      <div class="fw-bold text-refferal">
-                        <span>
-                          {{ ref.name ? ref.name : "No Data" }} /
-                          {{ ref.phone }}</span
-                        >
-                      </div>
-                      <div class="point-color">{{ ref.point }} Poin</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </ng-container>
-        </div>
-      </div>
-
-      <div
-        class="row justify-content-center"
-        *ngIf="sectionFree.length > 0 || sectionPaid.length > 0"
-      >
-        <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
-          <div class="row justify-content-start">
-            <div class="" style="margin-top: 25px; text-align: center">
-              <!-- <a
+          <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
+            <div class="row justify-content-start">
+              <div class="" style="margin-top: 25px; text-align: center">
+                <!-- <a
                 [routerLink]="['/referral-rangking']"
                 class="btn btn-primary btn-1 button1"
                 target="_blank"
@@ -1316,381 +1330,396 @@
                   {{ "Read_More" | translate }}
                 </div>
               </a> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="container" data-aos="fade-up">
-      <div class="section-title">
-        <div class="fw-bold" style="font-family: Montserrat; font-size: 32px">
-          <span
-            style="color: #0b69fd; font-family: Montserrat; font-size: 32px"
+    <section>
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <div class="fw-bold" style="font-family: Montserrat; font-size: 32px">
+            <span
+              style="color: #0b69fd; font-family: Montserrat; font-size: 32px"
+            >
+              {{ "Rantai" | translate }}</span
+            >{{ "Chains_in_Various_Media" | translate }}
+          </div>
+        </div>
+        <div class="row media-coverage">
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="100"
           >
-            {{ "Rantai" | translate }}</span
-          >{{ "Chains_in_Various_Media" | translate }}
+            <a
+              href="https://www.beritasatu.com/ekonomi/756629/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-beritasatu hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <a
+              href="https://mediaindonesia.com/ekonomi/396038/new-normal-saatnya-lakukan-inovasi-penjualan-dan-manajemen"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 mediaindonesia hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <a
+              href="https://www.tribunnews.com/bisnis/2021/04/11/aplikasi-berbasis-smart-erp-ini-mudahkan-supplier-meng-update-stok-barang-seketika"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div id="imagee" class="image-size1 tribunnews hover-media"></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <a
+              href="https://ekbis.sindonews.com/read/388834/34/jualan-konvesional-tak-efektif-rantai-beri-inovasi-baru-1617725084"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div id="imagee" class="image-size1 sindonews hover-media"></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://inforial.tempo.co/info/1004809/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div id="imagee" class="image-size1 logo-tempo hover-media"></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            <a
+              href="https://www.suara.com/bisnis/2021/04/07/135527/rantai-link-jadi-inovasi-baru-penjualan-dan-manajemen-bisnis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-suaracom hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://planet.merdeka.com/gadget/smart-erp-solusi-manajemen-bisnis-di-masa-pandemi.html?page=all"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-planetmerdeka hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://republika.co.id/berita/qr85z0291/kelola-bisnis-dengan-cara-konvensional-sudah-tak-relevan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-republika hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://www.jpnn.com/news/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div id="imagee" class="image-size1 jpncom hover-media"></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://www.wartaekonomi.co.id/read335645/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-wartaekonomi hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://today.line.me/id/v2/article/59w3ly"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-linetoday hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://marketing.co.id/aplikasi-rantai-inovasi-baru-penjualan-dan-manajemen-bisnis/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-marketing hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://inilah.com/ototekno/2591895/rantai-tawarkan-solusi-bisnis-berbasis-erp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div id="imagee" class="image-size1 inilahcom hover-media"></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://selular.id/2021/04/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-selular hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://teknologi.bisnis.com/read/20210407/84/1377484/cyberindo-sinergi-menawarkan-sistem-rantai-distribusi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-bisnis hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://investor.id/business/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div id="imagee" class="image-size1 investor hover-media"></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://www.antaranews.com/berita/2087550/smart-erp-solusi-manajemen-bisnis-tepat-di-kala-pandemi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-antaranews hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://akurat.co/iptek/id-1294923-read-kenali-aplikasi-rantai-jualan-dan-manajemen-bisnis-bisa-cek-dari-ponsel"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-akuratcom hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://www.itworks.id/38677/rantai-link-solusi-manajemen-bisnis-berbasis-smart-erp.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-itworks hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://mix.co.id/marcomm/news-trend/berbasis-smart-erp-platform-rantai-tawarkan-solusi-bagi-para-pelaku-bisnis/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div id="imagee" class="image-size1 logo-mix hover-media"></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://techbiz.id/2021/04/rantai-hadirkan-solusi-smart-erp-untuk-manajemen-bisnis/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-techbiz hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://dailysocial.id/post/startup-saas-erp-rantai-hubungkan-distributor-dropshipper-dan-reseller-dalam-sistem-terintegrasi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-dailysosial hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://idrtimes.com/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-idrtimes hover-media"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://trenteknologi.com/rantai-smart-erp-inovasi-baru-penjualan-dan-manajemen-bisnis-anda/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-trenteknologi hover-media"
+              ></div>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="row media-coverage">
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="100"
-        >
-          <a
-            href="https://www.beritasatu.com/ekonomi/756629/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 logo-beritasatu hover-media"
-            ></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="200"
-        >
-          <a
-            href="https://mediaindonesia.com/ekonomi/396038/new-normal-saatnya-lakukan-inovasi-penjualan-dan-manajemen"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 mediaindonesia hover-media"
-            ></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="300"
-        >
-          <a
-            href="https://www.tribunnews.com/bisnis/2021/04/11/aplikasi-berbasis-smart-erp-ini-mudahkan-supplier-meng-update-stok-barang-seketika"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div id="imagee" class="image-size1 tribunnews hover-media"></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="400"
-        >
-          <a
-            href="https://ekbis.sindonews.com/read/388834/34/jualan-konvesional-tak-efektif-rantai-beri-inovasi-baru-1617725084"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div id="imagee" class="image-size1 sindonews hover-media"></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://inforial.tempo.co/info/1004809/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div id="imagee" class="image-size1 logo-tempo hover-media"></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="600"
-        >
-          <a
-            href="https://www.suara.com/bisnis/2021/04/07/135527/rantai-link-jadi-inovasi-baru-penjualan-dan-manajemen-bisnis"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 logo-suaracom hover-media"
-            ></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://planet.merdeka.com/gadget/smart-erp-solusi-manajemen-bisnis-di-masa-pandemi.html?page=all"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 logo-planetmerdeka hover-media"
-            ></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://republika.co.id/berita/qr85z0291/kelola-bisnis-dengan-cara-konvensional-sudah-tak-relevan"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 logo-republika hover-media"
-            ></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://www.jpnn.com/news/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div id="imagee" class="image-size1 jpncom hover-media"></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://www.wartaekonomi.co.id/read335645/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 logo-wartaekonomi hover-media"
-            ></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://today.line.me/id/v2/article/59w3ly"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 logo-linetoday hover-media"
-            ></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://marketing.co.id/aplikasi-rantai-inovasi-baru-penjualan-dan-manajemen-bisnis/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 logo-marketing hover-media"
-            ></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://inilah.com/ototekno/2591895/rantai-tawarkan-solusi-bisnis-berbasis-erp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div id="imagee" class="image-size1 inilahcom hover-media"></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://selular.id/2021/04/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div id="imagee" class="image-size1 logo-selular hover-media"></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://teknologi.bisnis.com/read/20210407/84/1377484/cyberindo-sinergi-menawarkan-sistem-rantai-distribusi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div id="imagee" class="image-size1 logo-bisnis hover-media"></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://investor.id/business/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div id="imagee" class="image-size1 investor hover-media"></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://www.antaranews.com/berita/2087550/smart-erp-solusi-manajemen-bisnis-tepat-di-kala-pandemi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 logo-antaranews hover-media"
-            ></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://akurat.co/iptek/id-1294923-read-kenali-aplikasi-rantai-jualan-dan-manajemen-bisnis-bisa-cek-dari-ponsel"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 logo-akuratcom hover-media"
-            ></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://www.itworks.id/38677/rantai-link-solusi-manajemen-bisnis-berbasis-smart-erp.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div id="imagee" class="image-size1 logo-itworks hover-media"></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://mix.co.id/marcomm/news-trend/berbasis-smart-erp-platform-rantai-tawarkan-solusi-bagi-para-pelaku-bisnis/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div id="imagee" class="image-size1 logo-mix hover-media"></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://techbiz.id/2021/04/rantai-hadirkan-solusi-smart-erp-untuk-manajemen-bisnis/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div id="imagee" class="image-size1 logo-techbiz hover-media"></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://dailysocial.id/post/startup-saas-erp-rantai-hubungkan-distributor-dropshipper-dan-reseller-dalam-sistem-terintegrasi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 logo-dailysosial hover-media"
-            ></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://idrtimes.com/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 logo-idrtimes hover-media"
-            ></div>
-          </a>
-        </div>
-        <div
-          class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-          data-aos="zoom-in"
-          data-aos-delay="500"
-        >
-          <a
-            href="https://trenteknologi.com/rantai-smart-erp-inovasi-baru-penjualan-dan-manajemen-bisnis-anda/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div
-              id="imagee"
-              class="image-size1 logo-trenteknologi hover-media"
-            ></div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
+  <div id="main2" [ngClass]="mainPage ? 'display-none' : 'display-block'">
+    <div>testsing</div>
+  </div>
 </main>
-
 <footer id="contact">
   <div class="footer-top" style="overflow: hidden">
     <div class="container">

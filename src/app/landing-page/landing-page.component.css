@@ -3189,3 +3189,17 @@ table, th, td {
 .left-sty {
   left: 4px;
 }
+
+.display-none {
+  display: none !important;
+}
+
+.display-block {
+  display: block !important;
+}
+
+#main2 {
+  height:200px;
+  width:100%;
+  background-color:red;
+}
