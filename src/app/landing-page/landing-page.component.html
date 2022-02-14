@@ -1142,6 +1142,22 @@
             {{ "At_The_Moment" | translate }}</span
           >
         </div>
+
+        <div
+          class="d-flex justify-content-center align-items-center info-event"
+        >
+          Periode Event Akan Berakhir:
+          <ng-container *ngIf="autoWaktuSelesai.day > 0">
+            <span>
+              {{ autoWaktuSelesai.day }} Hari {{ autoWaktuSelesai.hours }} Jam
+              {{ autoWaktuSelesai.minutes }} Menit
+              {{ autoWaktuSelesai.seconds }} Detik
+            </span>
+          </ng-container>
+          <ng-container *ngIf="autoWaktuSelesai.day < 1">
+            <span class="info-danger">Periode Event telah berakhir.</span>
+          </ng-container>
+        </div>
         <div class="row justify-content-center mt-4 baru-btn">
           <!-- <div class="col-md-3">
           <form [formGroup]="searchForm" autocomplete="off">

@@ -27,6 +27,7 @@ import {
 } from '../models/referral.model';
 import { GaleryService } from '../service/customer-galery.service';
 import { Galery, ITestimoni } from '../models/galery.model';
+import { CountdownEventService } from '../service/countdown-event.service';
 declare var $: any;
 
 @Component({
@@ -190,6 +191,23 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   setColor: boolean = false;
   showMore: boolean = false;
   // mainPage: boolean
+
+  // countdown event
+  setIntervalAlive;
+
+  autoWaktuSelesai: {
+    day: number;
+    hours: number;
+    minutes: number;
+    seconds: number;
+    timestamp: number;
+  } = {
+    day: null,
+    hours: null,
+    minutes: null,
+    seconds: null,
+    timestamp: null,
+  };
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -199,7 +217,8 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     private activatedRoute: ActivatedRoute,
     private subscriptionService: SubscriptionService,
     private referralCodeService: RefferalCodeService,
-    private galeryService: GaleryService
+    private galeryService: GaleryService,
+    private countDownService: CountdownEventService
   ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
@@ -231,13 +250,28 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
   ngOnDestroy(): void {
     this.alive = false;
+    clearInterval(this.setIntervalAlive);
   }
 
   checkOdd(n: number) {
     // console.log("aa")
     return n % 2;
   }
+  countTimerEvent() {
+    this.setIntervalAlive = setInterval((v) => {
+      this.autoWaktuSelesai.timestamp -= 1;
+      this.autoWaktuSelesai = {
+        ...this.countDownService.secondsToDhms(
+          +this.autoWaktuSelesai.timestamp
+        ),
+        timestamp: +this.autoWaktuSelesai.timestamp,
+      };
 
+      if (this.autoWaktuSelesai.timestamp < 0) {
+        clearInterval(this.setIntervalAlive);
+      }
+    }, 1000);
+  }
   ngAfterViewInit(): void {
     this.translate.use(this.langService.lang);
     $(document).ready(function () {
@@ -584,8 +618,15 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.referralCodeService
       .currentEvent()
       .pipe(takeWhile(() => this.alive))
-      .subscribe((res) => {
+      .subscribe((res: any) => {
         if (res) {
+          this.autoWaktuSelesai = {
+            ...this.countDownService.secondsToDhms(+res.dateTo),
+            timestamp: +res.dateTo,
+          };
+
+          this.countTimerEvent();
+
           this.listReferralCode.push({
             ...this.referralEvent,
             ...res,
