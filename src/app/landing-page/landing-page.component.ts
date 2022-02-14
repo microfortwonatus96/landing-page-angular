@@ -25,6 +25,8 @@ import {
   IReferralEvent,
   TermCondition,
 } from '../models/referral.model';
+import { GaleryService } from '../service/customer-galery.service';
+import { Galery, ITestimoni } from '../models/galery.model';
 declare var $: any;
 
 @Component({
@@ -34,9 +36,36 @@ declare var $: any;
 })
 export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('myModalClose') modalClose: ElementRef;
+
+  readMore = false;
+  selecedContent = '';
+  dataContent = [
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
+    'dLorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
+    'e',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'u',
+  ];
   show = true;
   date = new Date();
   newDate: string;
+  viewAll = false;
   formDaftar: FormGroup = this.formBuilder.group({
     id: null,
     name: ['', Validators.required],
@@ -134,6 +163,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     termAndConditions: [],
     title: null,
   };
+
   termCondition: TermCondition[];
 
   listEmpyReferral: IReferralCode[] = [];
@@ -146,7 +176,20 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   resultSearch: IReferralCode[] = [];
   dataNotFound: boolean;
   autoFocus: boolean = false;
-  mainPage: boolean = true;
+  nameGambar: string = '';
+  nextNameGambar: string = '';
+  nextIndex: number = 0;
+  activeImage: string[] = [];
+
+  // lastBox = -1;
+
+  faqSideLeft = [];
+  faqSideRight = [];
+  listcontentGalery: string[] = [];
+  listGaleryTestimoni: ITestimoni[] = [];
+  setColor: boolean = false;
+  showMore: boolean = false;
+  // mainPage: boolean
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -155,7 +198,8 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private subscriptionService: SubscriptionService,
-    private referralCodeService: RefferalCodeService
+    private referralCodeService: RefferalCodeService,
+    private galeryService: GaleryService
   ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
@@ -167,8 +211,31 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     }
     return true;
   }
+
+  randomUrl() {
+    let r = Math.floor(Math.random() * this.listcontentGalery.length);
+    let str = this.listcontentGalery[r];
+
+    if (!this.activeImage.includes(str)) {
+      let ranNum = Math.floor(Math.random() * this.activeImage.length);
+      this.activeImage[ranNum] = str;
+    } else {
+      this.randomUrl();
+    }
+  }
+
+  settingArray() {
+    setInterval(() => {
+      this.randomUrl();
+    }, 7000);
+  }
   ngOnDestroy(): void {
     this.alive = false;
+  }
+
+  checkOdd(n: number) {
+    // console.log("aa")
+    return n % 2;
   }
 
   ngAfterViewInit(): void {
@@ -192,7 +259,31 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.dataNotFound = false;
+    this.readMore = false;
+    this.activatedRoute.queryParams.subscribe((re) => {
+      if (re) {
+        this.readMore = re['more'] !== undefined;
+        if (this.readMore) {
+          document.getElementById('block').classList.add('display-none');
+          document.getElementById('block').classList.remove('display-block');
+
+          // $('html, body').animate({ scrollTop: 0 }, 'slow');
+          $('html, body').animate(
+            {
+              scrollTop: 0,
+            },
+            'slow'
+          );
+          //mobile vesion
+          //id=main ilang  > scrollTop
+        } else {
+          document.getElementById('block').classList.remove('display-none');
+          document.getElementById('block').classList.add('display-block');
+        }
+      }
+    });
+
+    this.settingArray();
     this.getProvince();
     // this.subsPackage$ = this.subsService.getPackage();
     this.tampilText();
@@ -229,6 +320,41 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadReferralCode();
     this.carouselSlider();
     this.loadEventTerms();
+    this.loadContentFaq();
+    this.loadGaleryImage();
+  }
+
+  loadGaleryImage() {
+    this.galeryService
+      .getGalery()
+      .pipe(takeWhile(() => this.alive))
+      .subscribe((response: any) => {
+        if (response) {
+          this.listcontentGalery = [...response.content];
+          this.listGaleryTestimoni = [...response.content];
+          // console.log("data galeri", this.listGaleryTestimoni)
+          for (let i = 0; i < 8; i++) {
+            this.activeImage.push(this.listcontentGalery[i]);
+          }
+        }
+      });
+  }
+
+  loadContentFaq() {
+    this.dataContent.forEach((v, idx) => {
+      for (let i = 0; i < 20; i++) {
+        if (i < 10) {
+          // console.log("left", v)
+          // this.faqSideLeft[i].push({this.dataContent[id]})
+        } else {
+          let idx2 = i - 10;
+          // this.faqSideRight[idx2] = v
+        }
+      }
+    });
+
+    // console.log("left", this.faqSideLeft);
+    // console.log("right", this.faqSideRight)
   }
 
   loadEvent() {
@@ -430,7 +556,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(' active-slider', '');
     }
-    (<HTMLElement>slides[this.indexBtnSlide - 1])[0].style.display = 'block';
+    (<HTMLElement>slides[this.indexBtnSlide - 1]).style.display = 'block';
     dots[this.indexBtnSlide - 1].className += ' active-slider';
   }
   carouselSlider() {
@@ -508,4 +634,43 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       this.loadReferralCode();
     }
   }
+
+  more(event) {
+    // console.log("test", event);
+    if (event) return (this.showMore = false);
+    this.showMore = true;
+  }
+
+  selengkapnya() {
+    this.router.navigate([], {
+      relativeTo: this.activatedRoute,
+      queryParams: {
+        more: 'true',
+      },
+
+      queryParamsHandling: 'merge',
+
+      // preserve the existing query params in the route
+    });
+  }
+
+  // destroyReadMore(){
+  //   this.mainPage = true;
+  //   localStorage.setItem('more', this.mainPage.toString());
+  // }
+  // checkPage(){
+  //   let statusPage = localStorage.getItem('more')
+  //   // console.log("test", statusPage);
+  //   if(statusPage == undefined) {
+  //     this.mainPage = true;
+  //   }else {
+  //     if(statusPage == 'true'){
+  //       // console.log("true")
+  //       this.mainPage = true;
+  //     }else  {
+  //       // console.log("false")
+  //       this.mainPage = false;
+  //     }
+  //   }
+  // }
 }
