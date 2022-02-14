@@ -1,4 +1,4 @@
-<header id="home" class="">
+<header id="home">
   <nav id="navbar" class="navbar navbar-expand-md fixed-top b-navbar">
     <div class="container bg-crumb">
       <div class="d-flex justify-content-start" style="gap: 15px">
@@ -137,7 +137,8 @@
 </header>
 
 <main id="main">
-  <div [ngClass]="mainPage ? 'display-block' : 'display-none'">
+  <div id="block">
+    <!-- SECTION 1 -->
     <section
       id="parallax"
       data-aos="fade-up"
@@ -360,6 +361,7 @@
       </div>
     </section>
 
+    <!-- SECTION 2 -->
     <section style="padding: 0px">
       <div class="row justify-content-start align-items-center" id="bc">
         <div
@@ -471,7 +473,7 @@
       </div>
     </section>
 
-    <!-- SECTION 2 -->
+    <!-- SECTION 3 -->
     <section id="feature" class="about">
       <div class="container">
         <div class="row align-items-center justify-content-center">
@@ -630,7 +632,7 @@
       </div>
     </section>
 
-    <!-- SECTION 3 -->
+    <!-- SECTION 4 -->
     <section id="benefit" class="services box-section section3">
       <div class="container">
         <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up">
@@ -788,7 +790,7 @@
       </div>
     </section>
 
-    <!-- SECTION 4 -->
+    <!-- SECTION 5 -->
     <section id="about" class="about">
       <div class="container">
         <div class="row align-items-center justify-content-center">
@@ -965,7 +967,7 @@
                             class="fw-bold f-14"
                             style="font-family: Montserrat"
                           >
-                            RANTAI ERP
+                            RANTAI PRIVATE SERVER
                           </div>
                         </div>
                         <div class="row justify-content-start">
@@ -1045,6 +1047,7 @@
       </div>
     </section>
 
+    <!-- SECTION 6 -->
     <section id="benefit" class="services box-section">
       <div class="container" data-aos="fade-up">
         <div
@@ -1139,12 +1142,14 @@
             {{ "At_The_Moment" | translate }}</span
           >
         </div>
-        <!-- <div class="row justify-content-center mt-4 baru-btn">
-        <div class="col-md-4">
+        <div class="row justify-content-center mt-4 baru-btn">
+          <!-- <div class="col-md-3">
           <form [formGroup]="searchForm" autocomplete="off">
             <div class="input-group mb-3">
               <input
-                class="form-control form-search-input"
+
+                class="form-control form-search-input text-search "
+
                 placeholder="{{ 'Search_by_phone' | translate }}"
                 aria-label="Search"
                 aria-describedby="button-addon2"
@@ -1156,7 +1161,6 @@
                 maxLength="16"
                 required
               />
-
               <button
                 (click)="search($event)"
                 class="btn btn-outline-secondary button-search"
@@ -1169,64 +1173,57 @@
               </button>
             </div>
           </form>
+        </div> -->
+          <span *ngIf="dataNotFound === true" class="text-red">{{
+            "Data_Not_Found" | translate
+          }}</span>
         </div>
-        <span *ngIf="dataNotFound === true" class="text-red">{{
-          "Data_Not_Found" | translate
-        }}</span>
-      </div> -->
         <div class="row justify-content-center">
-          <!-- <div *ngIf="resultSearch.length > 0" class="row justify-content-center">
-          <ng-container *ngFor="let sr of resultSearch; let i = index">
-            <div class="col-md-4">
-              <div class="box-referral mb-3 pointer">
-                <div class="box-referral-content">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="col-md-2 col-sm-2">
-                      <div
-                        [ngClass]="
-                          i < 5 && sr.rank !== 0
-                            ? 'rank' + (sr.rank - 1)
-                            : 'rankbox'
-                        "
-                      >
-                        <span
-                          [ngClass]="sr.rank == 0 ? 'ranknum left-sty' : ''"
-                        >
-                          {{ sr.rank }}</span
-                        >
+          <div
+            *ngIf="resultSearch.length > 0"
+            class="row justify-content-center"
+          >
+            <ng-container *ngFor="let sr of resultSearch; let i = index">
+              <div class="col-md-4">
+                <div class="box-referral mb-3 pointer">
+                  <div class="box-referral-content">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div class="col-md-2 col-sm-2">
+                        <div
+                          [ngClass]="i < 5 ? 'rank' + (sr.rank - 1) : 'rankbox'"
+                        ></div>
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="d-flex justify-content-between">
-                        <div
-                          class="fw-bold text-refferal f-12"
-                          style="font-family: Montserrat"
-                        >
-                          <span>
-                            {{ sr.name ? sr.name : "No Data" }} /
-                            {{ sr.phone }}</span
+                      <div class="col">
+                        <div class="d-flex justify-content-between">
+                          <div
+                            class="fw-bold text-refferal f-12"
+                            style="font-family: Montserrat"
                           >
-                        </div>
-                        <div
-                          class="point-color"
-                          style="
-                            font-family: Montserrat;
-                            font-size: 12px;
-                            font-weight: bold;
-                          "
-                        >
-                          {{ sr.point }} Poin
+                            <span>
+                              {{ sr.name ? sr.name : "No Data" }} /
+                              {{ sr.phone }}</span
+                            >
+                          </div>
+                          <div
+                            class="point-color"
+                            style="
+                              font-family: Montserrat;
+                              font-size: 12px;
+                              font-weight: bold;
+                            "
+                          >
+                            {{ sr.point }} Poin
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </ng-container>
-        </div> -->
+            </ng-container>
+          </div>
           <div
             class="col-md-4 col-sm-12 mt-md-0 p-4 referal_r"
             data-aos="zoom-in"
@@ -1337,6 +1334,69 @@
       </div>
     </section>
 
+    <!-- SECTION 7 -->
+    <section class="section10">
+      <div>
+        <p class="title-sb">
+          {{ "Use_Rantai" | translate }}
+          <span class="text-rantai"> Rantai </span>
+        </p>
+        <p class="paragraf-sb">{{ "Those_customers" | translate }}</p>
+      </div>
+
+      <div class="container contain">
+        <ng-container *ngFor="let x of activeImage">
+          <div class="fade-in row row-cols-10 responsive-img" *ngIf="x">
+            <div class="col">
+              <img
+                [src]="
+                  'https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/' +
+                  x.imageLocation
+                "
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div *ngIf="!x" class="no-img"></div>
+        </ng-container>
+      </div>
+
+      <div class="center">
+        <!-- <a class="tag-a"  href="#" routerLink="testimoni/view-all" target="_blank" >LIHAT SELENGKAPNYA</a> -->
+        <a class="tag-a pointer" (click)="selengkapnya()">LIHAT SELENGKAPNYA</a>
+        <!-- <div class="tag-a pointer" (click)="selengkapnya()"> <span>lihat selengkapnya</span></div> -->
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-6">
+          <p
+            class="h5 pt-4 fw-bolder col-md-12 footer-sb"
+            data-aos="fade-right"
+          >
+            {{ "SignUp_Galery" | translate }}
+          </p>
+        </div>
+
+        <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
+          <div class="row justify-content-start">
+            <div class="buttonmik galery" style="margin-top: 25px">
+              <a
+                href="https://rantai.tech/web/accounts/sign-up"
+                target="_blank"
+                class="btn btn-primary button1 btn-galery"
+                style="font: size 13px"
+              >
+                <div class="btn-title-lets-start fw-bold">
+                  {{ "Sign_Up_Now1" | translate }}
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8 -->
     <section>
       <div class="container" data-aos="fade-up">
         <div class="section-title">
@@ -1715,11 +1775,87 @@
         </div>
       </div>
     </section>
+    <!-- <section>
+    <div >
+      <p class="title-sb"> {{ "Frequently" | translate }}</p>
+      <p class="paragraf-sb"> {{ "We_are_here" | translate }} </p>
+    </div>
+
+    <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-6" >
+        <ng-container *ngFor="let x of dataContent; let d = index">
+          <div *ngIf="checkOdd(e)" class=" box">
+
+              <app-faq [content]="'aaaaa \n bb'"></app-faq>
+          </div>
+          <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat" >
+            <app-faq [content]="x"></app-faq>
+          </div>
+        </ng-container>
+    </div>
+  <div class="col-6">
+      <ng-container *ngFor="let x of dataContent; let d = index">
+        <div *ngIf="checkOdd(e)" class=" box">
+
+            <app-faq [content]="'aaaaa \n bb'"></app-faq>
+        </div>
+        <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat" >
+          <app-faq [content]="x"></app-faq>
+        </div>
+      </ng-container>
   </div>
-  <div id="main2" [ngClass]="mainPage ? 'display-none' : 'display-block'">
-    <div>testsing</div>
+</div>
+</div>
+
+    <div>
+      <p class="footer-s10" data-aos="fade-right">
+        {{ "Still_have" | translate }}
+      </p>
+      <p class="footer-text-s10" >
+         {{ "Haven't_found" | translate }}<br>{{ "is_always" | translate }}
+      </p>
+    </div>
+
+     <div class="row justify-content-center">
+        <a href="#contact" >
+          <button  id="mybtn">{{ "CONTACT_US" | translate }}</button>
+        </a>
+      </div>
+  </section> -->
   </div>
+
+  <section id="readmore" class="galery2" *ngIf="readMore">
+    <div>
+      <p class="title-sb">
+        {{ "Use_Rantai" | translate }} <span class="text-rantai"> Rantai </span>
+      </p>
+      <p class="paragraf-sb">{{ "Those_customers" | translate }}</p>
+    </div>
+
+    <div class="container galery-dua">
+      <ng-container *ngFor="let x of listGaleryTestimoni">
+        <div class="row row-cols-12">
+          <div class="col-12 responsive-galery2">
+            <img
+              [src]="
+                'https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/' +
+                x.imageLocation
+              "
+              loading="lazy"
+            />
+            <div class="text-centerr col-12">
+              <p class="nama-customer">{{ x.ownerName }}</p>
+              <p class="nama-toko">{{ x.tokoName }}</p>
+              <p class="nama-customer">{{ x.location }}</p>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </section>
 </main>
+
 <footer id="contact">
   <div class="footer-top" style="overflow: hidden">
     <div class="container">

@@ -26,6 +26,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
+import { FaqComponent } from './faq/faq.component';
+import { ViewAllComponent } from './view-all/view-all.component';
 export function ModuleHttpLoaderFactory(http: HttpClient) {
   const baseTranslateUrl = './assets/i18n';
   const options: IModuleTranslationOptions = {
@@ -44,6 +46,8 @@ export function ModuleHttpLoaderFactory(http: HttpClient) {
     ActivateComponent,
     ResetPasswordComponent,
     ReferralCodeComponent,
+    FaqComponent,
+    ViewAllComponent,
   ],
   imports: [
     CommonModule,

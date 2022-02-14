@@ -220,7 +220,16 @@
   "Price" : "Price",
   "Contact": "Contact Us",
   "Search_by_phone":"Search by phone number",
-  "Search": "Search"
+  "Search": "Search",
+  "SignUp_Galery":"Sign up now! Be one of them, Rantai customers who have successfully developed their online business",
+  "Use_Rantai":"They Who Already Use ",
+  "Those_customers":"Those customers who have successfully grown their online business with Rantai.",
+
+  "Frequently":"Frequently asked questions",
+  "We_are_here":"We are here with some informations that may help you to get to know more about Rantai",
+  "Still_have":"Still have more questions?",
+  "Haven't_found":"Haven't found your question on our FAQs? You can always contact us. Our support team ",
+  "is_always":"is always available to help you"
 
 
 }

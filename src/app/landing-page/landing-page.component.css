@@ -217,7 +217,28 @@ p.ls-c-1 {
     transition-delay: 0 !important;
   }
 
-  .baru-btn {
+  .responsive-galery2{
+    margin-left:22px;
+  }
+  .responsive-img{
+    margin-left:8px;
+  }
+  .galery{
+    margin-left:-30px;
+  }
+  .btn-galery {
+    width: 190%;
+    margin-bottom: 60px;
+    font-size:12px;
+  }
+
+  .footer-sb{
+    font-size: 20px!important;
+    margin-left: -70px;
+    margin-right:0px;
+  }
+
+  .baru-btn{
     width: 200%;
     margin-left: -350px;
   }
@@ -307,7 +328,6 @@ p.ls-c-1 {
   .bttn {
     width: 150%;
     margin-bottom: 60px;
-
 
   }
 
@@ -1378,6 +1398,23 @@ input[type="number"] {
     background-position: 0% 100%;
   }
 
+  .galery{
+    margin-left:0px;
+  }
+
+  .btn-galery {
+    width: 190%;
+    margin-bottom: 60px;
+    font-size:12px;
+    margin-left: 18px;
+  }
+
+  .footer-sb{
+    font-size: 20px!important;
+    margin-left: 0px;
+    margin-right:0px;
+  }
+
   .parallax-section {
     height: 150vh;
   }
@@ -1778,6 +1815,18 @@ input[type="number"] {
   }
 
 
+  .text-search{
+    font-size: 10px !important;
+    font-family: monserrat;
+  }
+
+  .galery{
+    margin-left:0px;
+  }
+
+  .footer-sb{
+    font-size: 20px!important;
+  }
   .form-check-input {
     cursor: pointer;
     border-color: rgb(9, 96, 227);
@@ -2211,7 +2260,23 @@ input[type="number"] {
     font-size: 0.813rem;
   }
 
-  .baru-btn {
+
+  .text-search{
+    font-size: 10px !important;
+    font-family: monserrat;
+  }
+
+  .galery{
+    margin-left:0px;
+  }
+
+  .footer-sb{
+    font-size: 20px!important;
+    margin-left: 15px;
+    margin-right:5px;
+  }
+
+  .baru-btn{
     width: 80%;
     margin-left: 40px;
   }
@@ -2561,9 +2626,28 @@ input[type="number"] {
     height: 10vh;
   }
 
-  .baru-btn {
+  .responsive-galery2{
+    margin-left:20px;
+  }
+  .responsive-img{
+    margin-left:8px;
+  }
+
+  .btn-galery {
+    width: 190%;
+    margin-bottom: 60px;
+    font-size:12px;
+
+  }
+
+  .footer-sb{
+    font-size: 20px!important;
+    margin-left: -50px;
+    margin-right:0px;
+  }
+  .baru-btn{
     width: 200%;
-    margin-left: -350px;
+   margin-left: -350px;
   }
 
   .text-foot {
@@ -2579,7 +2663,6 @@ input[type="number"] {
     width: 200%;
     margin-left: -95px;
   }
-
 
   #imagee {
     width: 130px;
@@ -2609,7 +2692,6 @@ input[type="number"] {
     margin-left: -450px;
     font-size: 44px;
   }
-
 
   .butuhB {
     margin-bottom: 5px;
@@ -2686,9 +2768,37 @@ input[type="number"] {
   }
 }
 
-@media only screen and (min-device-width: 400px) and (max-device-width:500px) and (orientation:portrait) {
+@media only screen and (min-device-width: 400px) and (max-device-width:541px) and (orientation:portrait) {
   .parallax-section {
     height: 110vh;
+  }
+
+  .responsive-galery2{
+    margin-left:15px;
+  }
+  .responsive-img{
+    margin-left:5px;
+  }
+  .text-search{
+    font-size: 13px !important;
+    font-family: monserrat;
+  }
+  .footer-sb{
+    font-size: 20px!important;
+    margin-left: 28px;
+    margin-right:14px;
+  }
+
+  .button1 {
+    border-radius: 24px;
+    opacity: 1;
+    width: 100%;
+    padding: 8px;
+    color: #fff;
+    font-family: Montserrat;
+    height: 42px;
+    /* border: 2px solid #fff; */
+    background-color: #0B69FD;
   }
 
   .baru-btn {
@@ -3162,11 +3272,12 @@ table, th, td {
   color: #fff;
   border: none;
   outline: none;
-  width: 25%;
+  width: 30%;
 }
 
 .form-control:focus {
   box-shadow: unset !important;
+
 }
 
 .btn-check:focus+.btn, .btn:focus {
@@ -3190,16 +3301,186 @@ table, th, td {
   left: 4px;
 }
 
-.display-none {
+.title-sb{
+  font-family: Montserrat;
+  font-size:32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.paragraf-sb{
+  font-family: source sans pro, Regular;
+  font-size: 15px;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.footer-sb{
+  font-family: Montserrat;
+  font-size:25px;
+  color:#0B69FD;
+  font-weight: bold;
+}
+
+
+.text-rantai{
+ color: #0B69FD;
+}
+
+.text-search{
+  font-size: 18px;
+  font-family: monserrat;
+}
+
+.contain{
+  display: flex;
+  flex-wrap:wrap;
+  margin-top:20px;
+  width: 100%;
+  /* margin-right: unset ; */
+}
+
+.contain img{
+  width: 310px;
+  height: 190px;
+
+}
+
+.contain .no-img {
+  width: 310px;
+  height: 190px;
+}
+.hide{
+  opacity: 0;
+}
+
+#mybtn{
+  margin-top:20px;
+  width:15%;
+  border-radius: 24px;
+  color:#fff;
+  background-color: #0b69fd;
+  border: 2px solid #fff;
+  padding:8px;
+  font-family:montserrat;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.section10{
+  padding:20px;
+}
+
+.footer-s10{
+  font-family: Montserrat;
+  font-size:24px;
+  color:#0B69FD;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer-text-s10{
+  font-family: source sans pro, Regular;
+  font-size: 15px;
+  text-align: center;
+  color:#919AAB;
+}
+
+.title-montserrat{
+  font-size: 15px;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.content-source-SansPro{
+  font-size: 15px;
+  font-family: source sans pro, Regular;
+}
+.fade-in {
+  animation:fadeIn 4s;
+}
+.fade-out {
+  animation: fadeOut 8s;
+}
+@keyframes fadeIn{
+  from { opacity:0}
+  to { opacity:1}
+}
+@keyframes fadeOut {
+  from{opacity:1}
+  to{ opacity:0}
+}
+
+.tag-a{
+  color:#0B69FD !important;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 13px;
+  font-family: Montserrat;
+}
+
+.center{
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* b */
+
+.g1 {
+  content: url('../../assets/images/img-a.jpg')
+}
+
+.galery-dua{
+  display: flex;
+  flex-wrap:wrap;
+  margin-top:20px;
+  width: 100%;
+
+}
+
+.galery-dua img{
+  width: 300px;
+  height: 190px;
+  border: 1px solid rgb(236, 231, 231);
+  margin: 10px;
+}
+
+.text-rantai{
+  color: #0B69FD;
+ }
+
+ .nama-customer{
+  font-size:15px;
+  font-family:montserrat;
+ }
+ .nama-toko{
+  font-size: 12px;
+  font-family: Montserrat;
+  color:#0B69FD;
+  font-weight:bold;
+ }
+
+ .text-centerr{
+  text-align: center;
+  line-height: 5px;
+  margin-top:15px;
+
+ }
+
+ .galery2{
+  padding: 20px;
+  margin-top:90px;
+ }
+
+ .display-none {
   display: none !important;
 }
 
 .display-block {
   display: block !important;
 }
-
-#main2 {
-  height:200px;
-  width:100%;
-  background-color:red;
+#readmore {
+  position:sticky;
+  top: 150px;
 }
