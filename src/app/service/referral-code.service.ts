@@ -25,4 +25,8 @@ export class RefferalCodeService {
   //     `${environment.api_referral}/api/rantai-referral-event/current-event`
   //   );
   // }
+
+  findTimeServer() {
+    return this.http.get<IReferralCode[]>(`${environment.api_server}/time`);
+  }
 }
