@@ -421,7 +421,7 @@
     </section>
 
     <!-- SECTION 4 -->
-    <section id="benefit" class="services box-section section3">
+    <section id="benefit" class="services  section3">
       <div class="container">
         <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up">
           <div id="test" class="image-mobile image-toko-online" loading="lazy">
@@ -448,6 +448,7 @@
                     padding-left: 15px;
                     font-size: 14px;
                     font-family: Montserrat;
+                  
                   ">
                     {{ "TRANSACTION_INFORMATION" | translate
                     }}<br /><br /><br /><br /><br /><br />
@@ -456,10 +457,10 @@
                       "TRANSACTION" | translate
                       }}</span>
                   </p>
-                  <br />
+                  <br/>
                 </div>
 
-                <p class="font-bodyText" style="padding-left: 35px">
+                <p class="font-bodyText" style="padding-left: 35px;">
                   {{ "Access_Transaction_List" | translate }}
                 </p>
 
@@ -493,7 +494,7 @@
                   </p>
                 </div>
 
-                <p class="font-bodyText" style="padding-left: 35px">
+                <p class="font-bodyText" style="padding-left: 35px;">
                   {{ "Connect_With_All" | translate }}
                 </p>
 
@@ -597,7 +598,7 @@
               </div>
             </div>
             <div class="row justify-content-center p-3">
-              <div class="text-center fw-bold" style="font-family: Montserrat; font-size: 30px">
+              <div class="text-center fw-bold" style="font-family: Montserrat; font-size: 30px;">
                 {{ "Various_Package_Options" | translate }} <br />{{
                 "Adjust_to_Needs" | translate
                 }}
@@ -725,7 +726,7 @@
     </section>
 
     <!-- SECTION 6 -->
-    <section id="benefit" class="services box-section">
+    <section id="benefit" class="services ">
       <div class="container" data-aos="fade-up">
         <div class="section-title section-choose-plan" style="margin-left: 20px; margin-right: 20px">
           <div class="row justify-content-center komisi">
@@ -740,7 +741,7 @@
               {{ "Invite" | translate }}
             </span>
           </div>
-          <p data-aos="fade-right" class="" style="
+          <p data-aos="fade-right"  style="
             margin-top: 10px;
             margin-bottom: 1px;
             font-size: 15px;
@@ -783,45 +784,19 @@
           </div>
         </div>
 
+        <div class="row justify-content-center">
+          <div class="heading-point4 col-md-8">
+            <h1 class="text-point4">{{ "Point4" | translate }}</h1>
+          </div>
+        </div>
+
         <div class="d-flex justify-content-center align-items-center">
           <div class="cuptropy"></div>
-
           <span class="font-title fw-bold text-center p-2 ukuran-font" style="font-family: Montserrat; font-size: 24px">
             {{ "R_ranking" | translate }} <br />
             {{ "At_The_Moment" | translate }}</span>
         </div>
         <div class="row justify-content-center mt-4 baru-btn">
-          <!-- <div class="col-md-3">
-          <form [formGroup]="searchForm" autocomplete="off">
-            <div class="input-group mb-3">
-              <input
-          
-                class="form-control form-search-input text-search "
-            
-                placeholder="{{ 'Search_by_phone' | translate }}"
-                aria-label="Search"
-                aria-describedby="button-addon2"
-                (keypress)="numberOnly($event)"
-                (keyup)="clear($event)"
-                type="text"
-                formControlName="phone"
-                autocomplete="off"
-                maxLength="16"
-                required
-              />
-              <button
-                (click)="search($event)"
-                class="btn btn-outline-secondary button-search"
-                type="button"
-                id="button-addon2"
-              >
-                <span class="btn-txt-search">
-                  {{ "Search" | translate }}
-                </span>
-              </button>
-            </div>
-          </form>
-        </div> -->
           <span *ngIf="dataNotFound === true" class="text-red">{{
             "Data_Not_Found" | translate
             }}</span>
@@ -922,18 +897,6 @@
           <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
             <div class="row justify-content-start">
               <div class="" style="margin-top: 25px; text-align: center">
-                <!-- <a
-                [routerLink]="['/referral-rangking']"
-                class="btn btn-primary btn-1 button1"
-                target="_blank"
-              >
-                <div
-                  class="btn-title-lets-start"
-                  style="color: white; font-size: 12px"
-                >
-                  {{ "Read_More" | translate }}
-                </div>
-              </a> -->
               </div>
             </div>
           </div>

@@ -31,7 +31,6 @@
 
 .parallax-section {
   height: 80vh;
-
 }
 
 .box-banner {
@@ -46,15 +45,12 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-
 }
 
 #parallax {
   background: rgb(223, 235, 254);
   background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
 }
-
-
 
 .bg-section {
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.02) 0%, rgba(248, 250, 253, 0.44) 20%, rgba(248, 250, 254, 0.86) 40%, rgba(249, 251, 255, 0.92) 51%, rgba(250, 251, 253, 0.54) 71%, rgba(249, 249, 249, 0.17) 91%, rgba(255, 255, 255, 0.01) 100%);
@@ -110,7 +106,6 @@
   margin: 0 0 20px;
   text-transform: capitalize;
   font-family: Montserrat;
-
 }
 
 .home-text p {
@@ -120,7 +115,6 @@
   color: #000;
   font-family: Source Sans Pro;
 }
-
 
 .button-footer {
   border-radius: 24px;
@@ -143,7 +137,6 @@
   font-size: 13px;
   text-transform: capitalize;
   transition: all 0.5s ease;
-  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
   font-weight: 500;
 }
 
@@ -155,7 +148,6 @@
   color: #fff;
   font-family: Montserrat;
   height: 42px;
-  /* border: 2px solid #fff; */
   background-color: #0B69FD;
 }
 
@@ -201,175 +193,10 @@ p.ls-c-1 {
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-
 }
 
 .color-1 {
   color: rgb(68, 68, 68);
-}
-
-
-
-@media only screen and (min-device-width: 400px) and (max-device-width:768px) and (orientation:portrait) {
-
-
-  [data-aos-delay] {
-    transition-delay: 0 !important;
-  }
-
-  .responsive-galery2{
-    margin-left:22px;
-  }
-  .responsive-img{
-    margin-left:8px;
-  }
-  .galery{
-    margin-left:-30px;
-  }
-  .btn-galery {
-    width: 190%;
-    margin-bottom: 60px;
-    font-size:12px;
-  }
-
-  .footer-sb{
-    font-size: 20px!important; 
-    margin-left: -70px;
-    margin-right:0px;  
-  }
-
-  .baru-btn{
-    width: 200%; 
-    margin-left: -350px;
-  }
-
-  .log-footer {
-    margin-left: -25px;
-  }
-
-  .edit-header {
-    margin-left: -30px;
-    font-size: 10px;
-  }
-
-
-  .image-google {
-    margin-left: 70px;
-  }
-
-
-  .butuhB {
-    margin-bottom: 5px;
-    color: #0b69fd;
-    font-size: 22px;
-    font-family: Montserrat;
-    margin-left: -95px;
-
-    font-weight: bold;
-    width: 130%;
-  }
-
-  #komisi-font {
-    font-size: 20px;
-    font-family: source sans pro, Regular;
-  }
-
-  .komisi {
-    width: 200%;
-    margin-left: -323px;
-    font-size: 40;
-  }
-
-  .text-foot {
-    font-size: 8px;
-    font-family: Montserrat;
-    margin-left: 17px;
-  }
-
-  .btn-footer {
-    width: 100%;
-
-  }
-
-
-  #imagee {
-    width: 130px;
-    height: auto;
-  }
-
-  .referal_r {
-    width: 340px;
-  }
-
-  #bts5 {
-    width: 230px;
-    margin-left: -70px;
-  }
-
-  .gbr {
-    width: 170%;
-    margin-left: -245px;
-  }
-
-  .image-size1 {
-    width: 350px;
-    margin-left: -15px;
-  }
-
-  .img-tok {
-    width: 350px;
-
-  }
-
-  #bts3 {
-    width: 245px;
-  }
-
-  .bttn {
-    width: 150%;
-    margin-bottom: 60px;
-
-  }
-
-  .btttn {
-    width: 200%;
-    margin-left: -50px;
-  }
-
-  .banner1 {
-    height: 230px;
-    padding-right: 10px;
-  }
-
-  .tab-phone {
-    height: 240px;
-
-  }
-
-  /* #r-720{
-    height:300px;
-  }  */
-
-  .parallax-section {
-    height: 80vh;
-  }
-
-  .text-refferal {
-    margin-left: 20px;
-    margin-right: 15px;
-  }
-
-  .teks {
-    text-align: center;
-  }
-
-  .warnaTeks {
-    color: #848484;
-  }
-
-  .ukuran-font {
-    font-size: 18px;
-  }
 }
 
 section {
@@ -669,8 +496,6 @@ section {
   background: linear-gradient(180deg, rgba(11, 105, 253, 1) 0%, rgba(3, 51, 85, 1) 100%);
 }
 
-
-
 .subsciption .subcription-desc {
   background: #fff;
   position: relative;
@@ -927,10 +752,6 @@ input[type="number"] {
   font-size: 0.75rem;
 }
 
-/* .img-filter {
-  filter: grayscale(1);
-} */
-
 .hover-media {
   transition: transform 1s;
 }
@@ -964,7 +785,6 @@ input[type="number"] {
   height: auto;
 }
 
-
 .logo-header {
   content: url('../../assets/images/logorantaibaru.svg');
   min-width: 100%;
@@ -987,11 +807,6 @@ input[type="number"] {
 .tab-phone {
   content: url('../../assets/images/stockbarang.svg');
 }
-
-/* .tab-tokoonline {
-  content: url('../../assets/images/tokoonline.svg')
-} */
-
 .tab-fiturreport {
   content: url('../../assets/images/fiturreport.svg')
 }
@@ -1087,251 +902,196 @@ input[type="number"] {
 .jpncom {
   content: url('../../assets/icon-news/jpn.png');
 }
-
 .mediaindonesia {
   content: url('../../assets/icon-news/mediaindo.png');
 }
-
 .investor {
   content: url('../../assets/icon-news/investor.png');
 }
-
 .logo-marketing {
   content: url('../../assets/icon-news/marketing.png');
 }
-
 .sindonews {
   content: url('../../assets/icon-news/sindo.png');
 }
-
 .logo-bisnis {
   content: url('../../assets/icon-news/bisnis.png');
 }
-
 .logo-tempo {
   content: url('../../assets/icon-news/tempo.png');
 }
-
 .logo-planetmerdeka {
   content: url('../../assets/icon-news/planet.png');
 }
-
 .logo-itworks {
   content: url('../../assets/icon-news/itworks.png');
 }
-
 .logo-antaranews {
   content: url('../../assets/icon-news/antaranews.png');
 }
-
 .logo-trenteknologi {
   content: url('../../assets/icon-news/trendtekno.png');
 }
-
 .logo-mix {
   content: url('../../assets/icon-news/mix.png');
 }
-
 .logo-dailysosial {
   content: url('../../assets/icon-news/dailysosial.png');
 }
-
 .logo-akuratcom {
   content: url('../../assets/icon-news/akurat.png');
 }
-
 .logo-republika {
   content: url('../../assets/icon-news/republika.png');
 }
-
 .logo-beritasatu {
   content: url('../../assets/icon-news/beritasatu.png');
 }
-
 .logo-wartaekonomi {
   content: url('../../assets/icon-news/wartacom.png');
 }
-
 .logo-selular {
   content: url('../../assets/icon-news/seluler.png');
 }
-
 .logo-suaracom {
   content: url('../../assets/icon-news/suaracom.png');
 }
-
 .logo-idrtimes {
   content: url('../../assets/icon-news/idrnews.png');
 }
-
 .logo-techbiz {
   content: url('../../assets/icon-news/techbiz.png');
 }
-
 .logo-linetoday {
   content: url('../../assets/icon-news/linetoday.png');
 }
-
 .logo-footer {
   content: url('../../assets/img/logo-biru-baru.webp');
   width: 60px;
   height: 60px;
 }
-
 .img-email {
   content: url('../../assets/images/email.svg');
   width: 25px;
   height: auto;
 }
-
 .img-phone {
   content: url('../../assets/images/phone.svg');
   width: 25px;
   height: auto;
 }
-
 .img-location {
   content: url('../../assets/images/location.svg');
   width: 18px;
   height: 95px;
 }
-
 .img-instagram {
   content: url('../../assets/images/instagram.svg');
   width: 22px;
   height: 22px;
 }
-
 .img-facebook {
   content: url('../../assets/images/facebook.svg');
   width: 12px;
   height: 22px;
 }
-
 .img-linkedin {
   content: url('../../assets/images/linkedin.svg');
   width: 20px;
   height: 20px;
 }
-
 .icon-auto-trans {
   content: url('../../assets/icon-trans/aotumatic_trans.webp');
 }
-
 .icon-realtime {
   content: url('../../assets/icon-trans/realtime_stock.webp');
 }
-
 .icon-transhistory {
   content: url('../../assets/icon-trans/trans_history.webp');
 }
-
 .icon-trans-doc {
   content: url('../../assets/icon-trans/trans_document.webp');
 }
-
 .icon-trans-report {
   content: url('../../assets/icon-trans/trans_report.webp');
 }
-
 .icon-profit-lost {
   content: url('../../assets/icon-trans/profit_lost.webp');
 }
-
 .icon-stock-mutation {
   content: url('../../assets/icon-trans/stock_mutation.webp');
 }
-
 .icon-paylable {
   content: url('../../assets/icon-trans/paylabel.webp');
 }
-
 .icon-accounting {
   content: url('../../assets/icon-trans/accounting.webp');
 }
-
 .icon-marketplace {
   content: url('../../assets/icon-trans/marketplace.webp');
 }
-
 .icon-consumer {
   content: url('../../assets/icon-trans/consumer.webp');
 }
-
 .icon-play-video {
   content: url('../../assets/img/play-video.svg');
   animation: pulse_01 2s ease infinite
 }
-
 .cuptropy {
   content: url('../../assets/images/cuptropy.svg');
   width: 100px;
   height: 100px;
 }
-
 .box-icon-trans {
   padding: 10px 20px !important;
 }
-
 .image-10 {
   width: 10%;
   height: auto !important;
 }
-
 .image-30 {
   width: 30%;
   height: auto;
 }
-
 .image-50 {
   width: 50%;
   height: auto;
 }
-
 .image-70 {
   width: 70%;
   height: auto;
 }
-
 .image-80 {
   width: 80%;
   height: auto;
 }
-
 .box-img {
   width: 50px !important;
   height: 50px !important;
 }
-
 .img-icon-trans {
   width: 70%;
   height: auto;
 }
-
 .border-img {
   border: 1px solid #e6eeff;
   border-width: 5px;
   padding: 3px;
   border-radius: 50%;
 }
-
 .img-padding {
   margin-top: 10px;
   padding: 0 30px;
 }
-
 .container {
   padding-right: 12px !important;
 }
-
 .box-overview-mobile {
   display: none;
 }
-
 .carousel-dark .carousel-indicators [data-bs-target] {
   background-color: #5846f9;
 }
-
 .video {
   position: relative;
   display: block;
@@ -1340,7 +1100,6 @@ input[type="number"] {
   padding-bottom: 56.25%;
   overflow: hidden;
 }
-
 .video iframe {
   position: absolute;
   top: 0;
@@ -1348,12 +1107,10 @@ input[type="number"] {
   width: 100%;
   height: 100%;
 }
-
 .smart-erp-shadow {
   border-color: #fff;
   box-shadow: 0px 0 10px 0 rgb(0 0 0 / 10%);
 }
-
 .title-blue {
   font-size: 0.85rem;
   color: #1a72fd;
@@ -1361,64 +1118,175 @@ input[type="number"] {
   letter-spacing: 2px;
   font-weight: 600;
 }
-
 .font-title {
   font-size: 1.8rem;
 }
-
 .font-desc {
   font-size: 12px;
   line-height: 22px;
 }
-
 .benefit-icon {
   height: unset !important;
   position: relative;
   left: -30px;
 }
-
 .benefit-box-border {
   box-shadow: 0px 10px 20px #00000005;
   border: 1px solid #E5EAF4;
   border-radius: 10px;
   opacity: 1
 }
-
 .font-small {
   font-size: 0.813rem;
   line-height: 22px;
 }
-
 .f-16 {
   font-size: 16px !important;
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width:768px) and (orientation:portrait) {
+
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+  .responsive-galery2{
+    margin-left:22px;
+  }
+  .responsive-img{
+    margin-left:8px;
+  }
+  .galery{
+    margin-left:-30px;
+  }
+  .btn-galery {
+    width: 190%;
+    margin-bottom: 60px;
+    font-size:12px;
+  }
+  .footer-sb{
+    font-size: 20px!important; 
+    margin-left: -70px;
+    margin-right:0px;  
+  }
+  .baru-btn{
+    width: 200%; 
+    margin-left: -350px;
+  }
+  .log-footer {
+    margin-left: -25px;
+  }
+  .edit-header {
+    margin-left: -30px;
+    font-size: 10px;
+  }
+  .image-google {
+    margin-left: 70px;
+  }
+  .butuhB {
+    margin-bottom: 5px;
+    color: #0b69fd;
+    font-size: 22px;
+    font-family: Montserrat;
+    margin-left: -95px;
+    font-weight: bold;
+    width: 130%;
+  }
+  #komisi-font {
+    font-size: 20px;
+    font-family: source sans pro, Regular;
+  }
+  .komisi {
+    width: 200%;
+    margin-left: -323px;
+    font-size: 40;
+  }
+  .text-foot {
+    font-size: 8px;
+    font-family: Montserrat;
+    margin-left: 17px;
+  }
+  .btn-footer {
+    width: 100%;
+  }
+  #imagee {
+    width: 130px;
+    height: auto;
+  }
+  .referal_r {
+    width: 340px;
+  }
+  #bts5 {
+    width: 230px;
+    margin-left: -70px;
+  }
+  .gbr {
+    width: 170%;
+    margin-left: -245px;
+  }
+  .image-size1 {
+    width: 350px;
+    margin-left: -15px;
+  }
+  .img-tok {
+    width: 350px;
+  }
+  #bts3 {
+    width: 245px;
+  }
+  .bttn {
+    width: 150%;
+    margin-bottom: 60px;
+  }
+  .btttn {
+    width: 200%;
+    margin-left: -50px;
+  }
+  .banner1 {
+    height: 230px;
+    padding-right: 10px;
+  }
+  .tab-phone {
+    height: 240px;
+  }
+  .parallax-section {
+    height: 80vh;
+  }
+  .text-refferal {
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+  .teks {
+    text-align: center;
+  }
+  .warnaTeks {
+    color: #848484;
+  }
+  .ukuran-font {
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-device-width:200px) and (max-device-width:320px) and (orientation:portrait) {
   .wave-bg-2, .wave-bg-3 {
     background-position: 0% 100%;
   }
-
   .galery{
     margin-left:0px;
   }
-
   .btn-galery {
     width: 190%;
     margin-bottom: 60px;
     font-size:12px;
     margin-left: 18px;
   }
-
   .footer-sb{
     font-size: 20px!important; 
     margin-left: 0px;
     margin-right:0px;  
   }
-
   .parallax-section {
     height: 150vh;
   }
-
   .form-check-input {
     cursor: pointer;
     border-color: rgb(9, 96, 227);
@@ -1426,67 +1294,52 @@ input[type="number"] {
     margin-top: -200px;
     display: none !important;
   }
-
   .banner-n2 {
     margin-top: 0px;
-    /* padding-bottom: 100px; */
     text-align: center;
   }
-
   .banner2 {
     height: 160px;
     margin-bottom: 60px;
     margin-left: 20px;
   }
-
   .collaboration {
     margin-top: 20px;
   }
-
   .f-12 {
     font-size: 0.40rem;
   }
-
   .log-footer {
     margin-left: -25px;
   }
-
   .edit-header {
     margin-left: 0px;
     font-size: 13px;
   }
-
   .image-google {
     display: none;
   }
-
   .banner1 {
     height: 190px;
     padding-right: 10px;
     margin-top: 30px;
   }
-
   .text-refferal {
     margin-left: 20px;
     margin-right: 15px;
   }
-
   .one-section-p {
     color: white;
   }
-
   .teks {
     text-align: center;
   }
-
   .btn-footer {
     width: 100%;
   }
-
   .ukuran-font {
     font-size: 18px;
   }
-
   .bg-crumb {
     background: rgb(223, 235, 254);
     background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
@@ -1496,8 +1349,6 @@ input[type="number"] {
     display: flex !important;
     justify-content: center !important;
   }
-
-  /*mik*/
 
   .text-foot {
     font-size: 10px;
@@ -1519,26 +1370,21 @@ input[type="number"] {
     font-size: 15px;
     font-family: source sans pro, Regular;
   }
-
   .komisi {
     width: 110%;
     margin-left: -15px;
     font-size: 30;
   }
-
   .btn-footer-text {
     font-size: 10px;
   }
-
   .btttn {
     width: 90%;
     margin-left: 10px;
   }
-
   .btnn {
     margin-left: 0px;
   }
-
   .gbr {
     width: 90%;
     margin-left: 20px;
@@ -1589,7 +1435,6 @@ input[type="number"] {
     text-align: center;
     margin-left: 32px;
   }
-
   .logo-footerr {
     margin-left: 25px;
   }
@@ -1597,7 +1442,6 @@ input[type="number"] {
   .section3 {
     margin-left: -60px;
   }
-
   .text-refferal {
     margin-left: 20px;
     margin-right: 15px;
@@ -1665,9 +1509,6 @@ input[type="number"] {
   .app-store {
     margin: 20px 0;
   }
-
-
-
   .foot-content {
     padding: 0 35px;
   }
@@ -1813,7 +1654,6 @@ input[type="number"] {
   .wave-bg-2, .wave-bg-3 {
     background-position: 0% 100%;
   }
-
 
   .text-search{
     font-size: 10px !important;
@@ -2149,8 +1989,6 @@ input[type="number"] {
     width: 100%;
   }
 
-
-
   .bg-crumb {
     background: rgb(223, 235, 254);
     background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
@@ -2182,9 +2020,6 @@ input[type="number"] {
   .image-google {
     display: none;
   }
-
-
-
 
   .buttonmik {
     padding-left: 60px;
@@ -2259,8 +2094,13 @@ input[type="number"] {
   .services.icon-box {
     font-size: 0.813rem;
   }
-
- 
+  .title-sb{
+    font-size:25px !important;
+  }
+  .text-point4{
+    width: 110%;
+    margin-left:-18px;
+  }
   .text-search{
     font-size: 10px !important;
     font-family: monserrat;
@@ -3465,7 +3305,6 @@ table, th, td {
   text-align: center;
   line-height: 5px;
   margin-top:15px;
- 
  }
 
  .galery2{
@@ -3483,4 +3322,15 @@ table, th, td {
 #readmore {
   position:sticky;
   top: 150px;
+}
+
+.heading-point4{
+  text-align: center;
+}
+.text-point4{
+  font-size: 1.25rem; 
+  font-family: Montserrat; 
+  font-weight: bold; 
+  padding: 2rem; 
+  text-transform: capitalize;
 }
