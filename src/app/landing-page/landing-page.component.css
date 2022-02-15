@@ -3351,7 +3351,8 @@ table, th, td {
   text-align: center;
 }
 .text-point4{
-  font-size: 1.25rem; 
+  color: red;
+  font-size: .75rem; 
   font-family: Montserrat; 
   font-weight: bold; 
   padding: 2rem; 
