@@ -259,7 +259,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
   countTimerEvent() {
     this.setIntervalAlive = setInterval((v) => {
-      this.autoWaktuSelesai.timestamp -= 1;
+      // this.autoWaktuSelesai.timestamp -= 1;
       this.autoWaktuSelesai = {
         ...this.countDownService.secondsToDhms(
           +this.autoWaktuSelesai.timestamp
