@@ -3357,3 +3357,7 @@ table, th, td {
   padding: 2rem; 
   text-transform: capitalize;
 }
+
+.periode{
+  padding-top: 40px;
+}
