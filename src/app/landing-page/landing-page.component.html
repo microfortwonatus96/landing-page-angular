@@ -633,7 +633,7 @@
     </section>
 
     <!-- SECTION 4 -->
-    <section id="benefit" class="services  section3">
+    <section id="benefit" class="services section3">
       <div class="container">
         <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up">
           <div id="test" class="image-mobile image-toko-online" loading="lazy">
@@ -667,14 +667,16 @@
 
                 <div class="navbar-brand d-flex">
                   <div id="logo-centang" style="margin-top: 15px"></div>
-                  <p class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font" style="
-                    margin-top: 25px;
-                    line-height: 5px;
-                    padding-left: 15px;
-                    font-size: 14px;
-                    font-family: Montserrat;
-                  
-                  ">
+                  <p
+                    class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font"
+                    style="
+                      margin-top: 25px;
+                      line-height: 5px;
+                      padding-left: 15px;
+                      font-size: 14px;
+                      font-family: Montserrat;
+                    "
+                  >
                     {{ "TRANSACTION_INFORMATION" | translate
                     }}<br /><br /><br /><br /><br /><br />
 
@@ -682,10 +684,10 @@
                       "TRANSACTION" | translate
                     }}</span>
                   </p>
-                  <br/>
+                  <br />
                 </div>
 
-                <p class="font-bodyText" style="padding-left: 35px;">
+                <p class="font-bodyText" style="padding-left: 35px">
                   {{ "Access_Transaction_List" | translate }}
                 </p>
 
@@ -725,7 +727,7 @@
                   </p>
                 </div>
 
-                <p class="font-bodyText" style="padding-left: 35px;">
+                <p class="font-bodyText" style="padding-left: 35px">
                   {{ "Connect_With_All" | translate }}
                 </p>
 
@@ -861,7 +863,10 @@
               </div>
             </div>
             <div class="row justify-content-center p-3">
-              <div class="text-center fw-bold" style="font-family: Montserrat; font-size: 30px;">
+              <div
+                class="text-center fw-bold"
+                style="font-family: Montserrat; font-size: 30px"
+              >
                 {{ "Various_Package_Options" | translate }} <br />{{
                   "Adjust_to_Needs" | translate
                 }}
@@ -1043,7 +1048,7 @@
     </section>
 
     <!-- SECTION 6 -->
-    <section id="benefit" class="services ">
+    <section id="benefit" class="services">
       <div class="container" data-aos="fade-up">
         <div
           class="section-title section-choose-plan"
@@ -1065,12 +1070,15 @@
               {{ "Invite" | translate }}
             </span>
           </div>
-          <p data-aos="fade-right"  style="
-            margin-top: 10px;
-            margin-bottom: 1px;
-            font-size: 15px;
-            font-family: source sans pro;
-          ">
+          <p
+            data-aos="fade-right"
+            style="
+              margin-top: 10px;
+              margin-bottom: 1px;
+              font-size: 15px;
+              font-family: source sans pro;
+            "
+          >
             {{ "Sign_Up_Code_Refferal" | translate }}
           </p>
 
@@ -1130,7 +1138,10 @@
 
         <div class="d-flex justify-content-center align-items-center">
           <div class="cuptropy"></div>
-          <span class="font-title fw-bold text-center p-2 ukuran-font" style="font-family: Montserrat; font-size: 24px">
+          <span
+            class="font-title fw-bold text-center p-2 ukuran-font"
+            style="font-family: Montserrat; font-size: 24px"
+          >
             {{ "R_ranking" | translate }} <br />
             {{ "At_The_Moment" | translate }}</span
           >
@@ -1139,16 +1150,21 @@
         <div
           class="d-flex justify-content-center align-items-center info-event periode"
         >
-          <ng-container *ngIf="autoWaktuSelesai.day > 0">
+          <ng-container
+            *ngIf="autoWaktuSelesai.day > 0 || autoWaktuSelesai.day == 0"
+          >
             <span>
               Periode Event Akan Berakhir:
-              {{ autoWaktuSelesai.day }} Hari {{ autoWaktuSelesai.hours }} Jam
+              <ng-container *ngIf="autoWaktuSelesai.day > 0">
+                {{ autoWaktuSelesai.day }} Hari
+              </ng-container>
+              {{ autoWaktuSelesai.hours }} Jam
               {{ autoWaktuSelesai.minutes }} Menit
               {{ autoWaktuSelesai.seconds }} Detik
             </span>
           </ng-container>
-          <ng-container *ngIf="autoWaktuSelesai.day < 1">
-            <span class="info-danger">Periode Event telah berakhir.</span>
+          <ng-container *ngIf="autoWaktuSelesai.day < 0">
+            <span class="info-danger">Periode Event Telah Berakhir.</span>
           </ng-container>
         </div>
         <div class="row justify-content-center mt-4 baru-btn">
@@ -1292,8 +1308,7 @@
         >
           <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
             <div class="row justify-content-start">
-              <div class="" style="margin-top: 25px; text-align: center">
-              </div>
+              <div class="" style="margin-top: 25px; text-align: center"></div>
             </div>
           </div>
         </div>
