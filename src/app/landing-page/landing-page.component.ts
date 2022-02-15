@@ -27,6 +27,7 @@ import {
 } from '../models/referral.model';
 import { GaleryService } from '../service/customer-galery.service';
 import { Galery, ITestimoni } from '../models/galery.model';
+import { CountdownEventService } from '../service/countdown-event.service';
 declare var $: any;
 
 @Component({
@@ -38,34 +39,34 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('myModalClose') modalClose: ElementRef;
 
   readMore = false;
-  selecedContent = ''
+  selecedContent = '';
   dataContent = [
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.",
-    "dLorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "u"
-  ]
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
+    'dLorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
+    'e',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'u',
+  ];
   show = true;
   date = new Date();
   newDate: string;
-  viewAll= false
+  viewAll = false;
   formDaftar: FormGroup = this.formBuilder.group({
     id: null,
     name: ['', Validators.required],
@@ -163,7 +164,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     termAndConditions: [],
     title: null,
   };
- 
+
   termCondition: TermCondition[];
 
   listEmpyReferral: IReferralCode[] = [];
@@ -176,20 +177,37 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   resultSearch: IReferralCode[] = [];
   dataNotFound: boolean;
   autoFocus: boolean = false;
-  nameGambar:string = ''
-  nextNameGambar:string = '';
+  nameGambar: string = '';
+  nextNameGambar: string = '';
   nextIndex: number = 0;
-  activeImage:string[] = []
+  activeImage: string[] = [];
 
   // lastBox = -1;
- 
-  faqSideLeft= []
-  faqSideRight = []
+
+  faqSideLeft = [];
+  faqSideRight = [];
   listcontentGalery: string[] = [];
-  listGaleryTestimoni:ITestimoni[] = [];
-  setColor:boolean = false;
+  listGaleryTestimoni: ITestimoni[] = [];
+  setColor: boolean = false;
   showMore: boolean = false;
   // mainPage: boolean
+
+  // countdown event
+  setIntervalAlive;
+
+  autoWaktuSelesai: {
+    day: number;
+    hours: number;
+    minutes: number;
+    seconds: number;
+    timestamp: number;
+  } = {
+    day: null,
+    hours: null,
+    minutes: null,
+    seconds: null,
+    timestamp: null,
+  };
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -199,7 +217,8 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     private activatedRoute: ActivatedRoute,
     private subscriptionService: SubscriptionService,
     private referralCodeService: RefferalCodeService,
-    private galeryService: GaleryService
+    private galeryService: GaleryService,
+    private countDownService: CountdownEventService
   ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
@@ -212,32 +231,47 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     return true;
   }
 
-  randomUrl(){
+  randomUrl() {
     let r = Math.floor(Math.random() * this.listcontentGalery.length);
     let str = this.listcontentGalery[r];
 
-    if(!this.activeImage.includes(str)){
+    if (!this.activeImage.includes(str)) {
       let ranNum = Math.floor(Math.random() * this.activeImage.length);
       this.activeImage[ranNum] = str;
-    }else{
+    } else {
       this.randomUrl();
     }
   }
 
   settingArray() {
     setInterval(() => {
-      this.randomUrl()
+      this.randomUrl();
     }, 7000);
   }
   ngOnDestroy(): void {
     this.alive = false;
+    clearInterval(this.setIntervalAlive);
   }
 
-  checkOdd(n:number){
+  checkOdd(n: number) {
     // console.log("aa")
-    return n % 2
+    return n % 2;
   }
+  countTimerEvent() {
+    this.setIntervalAlive = setInterval((v) => {
+      this.autoWaktuSelesai.timestamp -= 1;
+      this.autoWaktuSelesai = {
+        ...this.countDownService.secondsToDhms(
+          +this.autoWaktuSelesai.timestamp
+        ),
+        timestamp: +this.autoWaktuSelesai.timestamp,
+      };
 
+      if (this.autoWaktuSelesai.timestamp < 0) {
+        clearInterval(this.setIntervalAlive);
+      }
+    }, 1000);
+  }
   ngAfterViewInit(): void {
     this.translate.use(this.langService.lang);
     $(document).ready(function () {
@@ -257,31 +291,33 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       });
     });
   }
- 
-  
+
   ngOnInit(): void {
     this.readMore = false;
-    this.activatedRoute.queryParams.subscribe(re=>{
-      if(re){
-        this.readMore = re['more'] !== undefined
-        if(this.readMore){
-          document.getElementById('block').classList.add('display-none')
-          document.getElementById('block').classList.remove('display-block')
-          
+    this.activatedRoute.queryParams.subscribe((re) => {
+      if (re) {
+        this.readMore = re['more'] !== undefined;
+        if (this.readMore) {
+          document.getElementById('block').classList.add('display-none');
+          document.getElementById('block').classList.remove('display-block');
+
           // $('html, body').animate({ scrollTop: 0 }, 'slow');
-          $('html, body').animate({ 
-            scrollTop: 0 }, 'slow');
-          //mobile vesion 
+          $('html, body').animate(
+            {
+              scrollTop: 0,
+            },
+            'slow'
+          );
+          //mobile vesion
           //id=main ilang  > scrollTop
-          
-        }else{
-          document.getElementById('block').classList.remove('display-none')
-          document.getElementById('block').classList.add('display-block')
+        } else {
+          document.getElementById('block').classList.remove('display-none');
+          document.getElementById('block').classList.add('display-block');
         }
       }
-    })
+    });
 
-    this.settingArray()
+    this.settingArray();
     this.getProvince();
     // this.subsPackage$ = this.subsService.getPackage();
     this.tampilText();
@@ -318,25 +354,27 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadReferralCode();
     this.carouselSlider();
     this.loadEventTerms();
-    this.loadContentFaq()
-    this.loadGaleryImage()
+    this.loadContentFaq();
+    this.loadGaleryImage();
   }
 
-  loadGaleryImage(){
-    this.galeryService.getGalery().pipe(takeWhile(() => this.alive)).subscribe((response:any) => {
-      if(response){
-        this.listcontentGalery = [...response.content]
-        this.listGaleryTestimoni = [...response.content]
-        // console.log("data galeri", this.listGaleryTestimoni)      
-        for(let i=0; i < 8;i++){
-          this.activeImage.push(this.listcontentGalery[i])
+  loadGaleryImage() {
+    this.galeryService
+      .getGalery()
+      .pipe(takeWhile(() => this.alive))
+      .subscribe((response: any) => {
+        if (response) {
+          this.listcontentGalery = [...response.content];
+          this.listGaleryTestimoni = [...response.content];
+          // console.log("data galeri", this.listGaleryTestimoni)
+          for (let i = 0; i < 8; i++) {
+            this.activeImage.push(this.listcontentGalery[i]);
+          }
         }
-      }
-      })
+      });
   }
 
-  
-  loadContentFaq(){
+  loadContentFaq() {
     this.dataContent.forEach((v, idx) => {
       for (let i = 0; i < 20; i++) {
         if (i < 10) {
@@ -347,7 +385,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
           // this.faqSideRight[idx2] = v
         }
       }
-    })
+    });
 
     // console.log("left", this.faqSideLeft);
     // console.log("right", this.faqSideRight)
@@ -580,8 +618,15 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.referralCodeService
       .currentEvent()
       .pipe(takeWhile(() => this.alive))
-      .subscribe((res) => {
+      .subscribe((res: any) => {
         if (res) {
+          this.autoWaktuSelesai = {
+            ...this.countDownService.secondsToDhms(+res.dateTo),
+            timestamp: +res.dateTo,
+          };
+
+          this.countTimerEvent();
+
           this.listReferralCode.push({
             ...this.referralEvent,
             ...res,
@@ -631,25 +676,21 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
-  
   more(event) {
     // console.log("test", event);
-    if(event) return this.showMore =false;
-    this.showMore = true; 
+    if (event) return (this.showMore = false);
+    this.showMore = true;
   }
 
-  selengkapnya(){
-    
+  selengkapnya() {
     this.router.navigate([], {
-      
       relativeTo: this.activatedRoute,
       queryParams: {
-        more: 'true'
-        
+        more: 'true',
       },
-      
+
       queryParamsHandling: 'merge',
-      
+
       // preserve the existing query params in the route
     });
   }
