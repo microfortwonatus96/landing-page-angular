@@ -117,6 +117,9 @@
 .slide-right{
   content: url('../../assets/img/slider-right.svg')
 }
+.carousel-control-next, .carousel-control-prev{
+  width: 22% !important;
+}
 
 /* end section 7 */
 
@@ -248,6 +251,12 @@
 }
 /* end section 6  */
 
+/* section 7  */
+.carousel-control-next, .carousel-control-prev{
+  width: 25% !important;
+}
+/* end section 7  */
+
 /* footer */
 .parallax-footer{
   height:110vh;
@@ -349,6 +358,12 @@
     margin-top: 20px;
   }
   /* end section 6  */
+
+  /* section 7  */
+  .carousel-control-next, .carousel-control-prev{
+  width: 30% !important;
+}
+/* end section 7  */
   
   /* footer */
   .parallax-footer{
