@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse edit-header" id="collapsibleNavbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a
+            <a 
               class="nav-link active fw-bold"
               href="/"
               style="padding-top: 15px"
@@ -33,60 +33,28 @@
             >
           </li>
           <li class="nav-item">
-            <a
-              class="nav-link fw-bold"
-              href="#feature"
-              style="padding-top: 15px"
-              >{{ "Feature" | translate | uppercase }}</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link fw-bold"
-              href="#price"
-              style="padding-top: 15px"
-              >{{ "Price" | translate | uppercase }}</a
-            >
-          </li>
-
-          <li class="nav-item">
             <div
               class="nav-link pointer d-flex justify-content-center fw-bold"
               (click)="download()"
               style="padding-top: 15px"
             >
-              <div>DOWNLOAD</div>
+              <div>OTHERS</div>
               &nbsp;
               <div class="icon-chev pl-2" id="chevron1"></div>
             </div>
             <div id="menu-download" class="mt-2">
               <a
                 class="nav-link text-left fw-bold"
-                href="https://rantai.tech/file/rantai.exe"
-                download
-                >RANTAI INSTALLER</a
-              >
-              <a
-                class="nav-link text-left fw-bold"
                 href="https://rantai.tech/file/rantaitalk.exe"
                 download
                 >RANTAI TALK</a
               >
-
-              <!-- <a
-                class="nav-link text-left fw-bold"
-                href="https://rantai.tech/file/rantaitalk trial.exe"
-                download
-                >RANTAI TALK TRIAL</a
-              > -->
-
               <a
                 class="nav-link text-left fw-bold"
                 href="https://rantai.tech/file/auditinstaller.exe"
                 download
                 >AUDIT</a
               >
-
               <a
                 class="nav-link text-left fw-bold"
                 href="https://rantai.tech/file/auditpatch.exe"
@@ -139,1231 +107,422 @@
 <main id="main">
   <div id="block">
     <!-- SECTION 1 -->
-    <section
-      id="parallax"
-      data-aos="fade-up"
-      class="parallax-section home d-flex align-items-center Margin-T"
-    >
-      <div class="container">
-        <div class="carousel slide-show">
+    <section id="parallax" data-aos="fade-up" class="parallax-section1">
+      <div class="container ">
           <div class="row justify-content-between">
-            <div class="col-md-7 col-sm-6">
-              <article class="home-text">
-                <h1 data-aos="fade-right" class="f-rantai">
-                  {{ "Invite_Friends" | translate }} <br />
-                  {{ "Chain_Get" | translate }} <br />
-                  {{ "Total_Prize" | translate }} <br />
-                </h1>
-
-                <p data-aos="fade-right" class="one-section-p font-bodyText">
-                  {{ "Follow_The_Program" | translate }}
-                </p>
-                <p
-                  data-aos="fade-right"
-                  class="one-section-p font-bodyText"
-                  style="margin-bottom: 15px"
-                >
-                  {{ "Chance_To_Win" | translate }} {{ "Prize" | translate }}
-                  <b>{{ "USD" | translate }}</b>
-                </p>
-
-                <p data-aos="fade-right" class="one-section-p font-bodyText">
-                  {{ "Sign_Up_Code_Refferal" | translate }}
-                </p>
-
-                <div style="margin-top: -15px">
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#syartdanketentuan"
-                  >
-                    <div class="terms" style="text-align: left">
-                      <ins> {{ "Terms and Conditions" | translate }}</ins>
+            <div class="col-md-6 col-sm-6">
+              <article>
+                <div class="d-grid gap-2">
+                  <div >
+                    <h1 class="title-section1"  data-aos="fade-right">
+                      {{ "Manage_Shop" | translate }} 
+                    </h1>
+                  </div>
+                  <div class="font-source f-15 p-section1">
+                    <div>
+                      <p data-aos="fade-right">
+                        {{ "Rantai_present" | translate }}
+                      </p>
                     </div>
-                  </a>
-                </div>
-
-                <div
-                  class="home-btn"
-                  data-aos="fade-right"
-                  style="margin-top: 18px"
-                >
-                  <div class="row justify-content-start">
-                    <div class="col-md-4 col-sm-5">
-                      <a
-                        href="https://rantai.tech/web/accounts/sign-up"
-                        class="bttn btn btn-primary btn-1 button1"
-                        target="_blank"
-                      >
-                        <div
-                          class="text-signup"
-                          style="color: white; font-size: 13px"
-                        >
-                          {{ "Sign_Up_Now1" | translate }}
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-4 col-sm-7 image-google">
-                      <a
-                        href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="app-logo"
-                      >
-                        <div
-                          class="img-google-play app-store"
-                          loading="lazy"
-                        ></div>
-                      </a>
+                    <div>
+                      <p data-aos="fade-right" >
+                        {{ "Signup_now_or" | translate }}
+                      </p>
                     </div>
                   </div>
                 </div>
-              </article>
-            </div>
-            <div class="col-md-5 col-sm-6 banner-normal">
-              <img
-                src="../../assets/images/banner.svg"
-                alt="banner"
-                class="banner1"
-              />
-            </div>
-          </div>
-        </div>
-
-        <!-- mhimik -->
-        <div class="carousel slide-show">
-          <div class="row justify-content-between">
-            <div class="col-md-7 col-sm-6">
-              <article class="home-text">
-                <h1 data-aos="fade-right" class="f-rantai" id="head2">
-                  {{ "Manage_Shop" | translate }} <br />
-                  {{ "With_System" | translate }} <br />
-                  {{ "Omnichannel" | translate }} <br />
-                </h1>
-
-                <p data-aos="fade-right" class="one-section-p font-bodyText">
-                  {{ "Free_Subscription" | translate }}
-                </p>
-                <p data-aos="fade-right" class="one-section-p font-bodyText">
-                  {{ "Entrepreneurs" | translate }}
-                </p>
-                <p
-                  data-aos="fade-right"
-                  class="one-section-p font-bodyText"
-                  style="margin-bottom: 15px"
-                >
-                  {{ "Efficient" | translate }}
-                </p>
-
-                <p
-                  class="fw-normal"
-                  style="
-                    font-family: source sans pro;
-                    font-size: 15px;
-                    margin-top: 15px;
-                  "
-                >
-                  {{ "Sign1" | translate
-                  }}<span style="color: black; font-weight: bold">{{
-                    "Free_Forever" | translate
-                  }}</span>
-                </p>
-
-                <div style="margin-top: 5px">
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#syartdanketentuan"
-                  >
-                    <div
-                      class="terms"
-                      style="
-                        text-align: left;
-                        font-family: source sans pro;
-                        font-style: italic;
-                      "
-                    >
-                      <ins> {{ "Terms and Conditions" | translate }}</ins>
-                    </div>
-                  </a>
-                </div>
-
-                <div
-                  class="home-btn"
-                  data-aos="fade-right"
-                  style="margin-top: 18px; padding-bottom: 33px"
-                >
-                  <div class="row justify-content-start">
-                    <div class="col-md-4 col-sm-5">
-                      <a
-                        href="https://rantai.tech/web/accounts/sign-up"
-                        class="btn btn-primary btn-1 button1 bttn btnmic"
-                        target="_blank"
-                      >
-                        <div
-                          class="text-signup"
-                          style="color: white; font-size: 14px"
-                        >
-                          {{ "Sign_Up_Now1" | translate }}
-                        </div>
+                <div class="d-flex justify-content-start gap-3 footer-section1" data-aos="fade-right">
+                    <div class="col-4">
+                      <a href="https://rantai.tech/web/accounts/sign-up"> 
+                       <button class="btn-try-free">{{ "Sign_Up_Now" | translate }}</button>
                       </a>
                     </div>
-                    <div class="col-md-4 col-sm-7 image-google">
-                      <a
-                        href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="app-logo"
-                      >
-                        <div
-                          class="img-google-play app-store"
-                          loading="lazy"
-                        ></div>
+                    <div class="col-4 logo-google">
+                      <a href="https://play.google.com/store/apps/details?id=com.css.rantai" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="app-store" loading="lazy"></div>
                       </a>
                     </div>
-                  </div>
                 </div>
               </article>
             </div>
-            <div class="col-md-5 col-sm-6 banner-n2">
-              <img
-                src="../../assets/images/banner2.svg"
-                alt="banner"
-                class="banner2"
-              />
+            <div class="col-md-6 col-sm-6 banner-1">
+              <img src="../../assets/images/banner2.svg" alt="banner" class="banner1"/>
             </div>
-          </div>
-        </div>
-
-        <div
-          class="d-flex justify-content-start s-3 slider-mobile"
-          style="margin-top: -25px; display: none"
-        >
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault1"
-              (click)="btnSlide(1)"
-            />
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault2"
-              (click)="btnSlide(2)"
-            />
-          </div>
-        </div>
+          </div>   
       </div>
     </section>
-
+    <!-- END SECTION 1 -->
+    
     <!-- SECTION 2 -->
-    <section style="padding: 0px">
-      <div class="row justify-content-start align-items-center" id="bc">
-        <div
-          class="col-md-3 col-sm-6"
-          style="text-align: center; padding-top: 30px"
-        >
-          <p
-            class="fw-bold collaboration"
-            style="font-family: Montserrat; font-size: 14px"
-          >
-            {{ "Collaboration" | translate }}:
-          </p>
-        </div>
-        <div class="col-md-8 col-sm-6 box-marketplace">
-          <marquee scrollamount="13">
-            <div
-              class="d-flex justify-content-around marketplace-slide"
-              style="margin-top: 30px"
-            >
-              <a
-                data-aos="fade-up"
-                data-aos-delay="100"
-                style="padding-right: 35px"
-              >
-                <i id="i-tokped"></i>
-              </a>
-
-              <a
-                data-aos="fade-up"
-                data-aos-delay="200"
-                style="padding-right: 35px"
-              >
-                <i id="i-lazada"></i>
-              </a>
-
-              <a
-                data-aos="fade-up"
-                data-aos-delay="300"
-                style="padding-right: 35px"
-              >
-                <i id="i-shopee"></i>
-              </a>
-
-              <a
-                data-aos="fade-up"
-                data-aos-delay="400"
-                style="padding-right: 35px"
-              >
-                <i id="i-blibli"></i>
-                <p
-                  style="
-                    font-style: Montserrat;
-                    font-weight: bold;
-                    color: #919aab;
-                    font-size: 8px;
-                    text-align: center;
-                    position: relative;
-                    margin-top: -5px;
-                  "
-                >
-                  COMING SOON
-                </p>
-              </a>
-
-              <a
-                data-aos="fade-up"
-                data-aos-delay="500"
-                style="padding-right: 35px"
-              >
-                <i id="i-jdid"></i>
-                <p
-                  style="
-                    font-style: Montserrat;
-                    font-weight: bold;
-                    color: #919aab;
-                    font-size: 8px;
-                    text-align: center;
-                    position: relative;
-                    margin-top: -5px;
-                  "
-                >
-                  COMING SOON
-                </p>
-              </a>
-
-              <a
-                data-aos="fade-up"
-                data-aos-delay="500"
-                style="padding-right: 35px"
-              >
-                <i id="i-bukalapak"> </i>
-                <p
-                  style="
-                    font-style: Montserrat;
-                    font-weight: bold;
-                    color: #919aab;
-                    font-size: 8px;
-                    text-align: center;
-                    position: relative;
-                    margin-top: -5px;
-                  "
-                >
-                  COMING SOON
-                </p>
-              </a>
-            </div>
-          </marquee>
-        </div>
+    <section class="parallax-section2">
+      <div class="medal gap-4">
+        <div class="img-medal"></div>
+        <div class="font-montserrat">{{ "Trusted_by" | translate }} <span class="text-medal">000</span> {{ "Online_Stores_from" | translate }}</div>     
       </div>
     </section>
+    <!-- END SECTION 2 -->
 
     <!-- SECTION 3 -->
-    <section id="feature" class="about">
+    <section class="parallax-section3">
       <div class="container">
-        <div class="row align-items-center justify-content-center">
+        <div class="row align-items-center justify-content-center gap-4">
           <div class="d-flex justify-content-center">
-            <div
-              class="title-blue py-2"
-              style="font-family: Montserrat; font-size: 15px"
-            >
+            <div class="title-blue">
               {{ "OUR_FEATURES" | translate }}
             </div>
           </div>
 
           <div class="d-flex justify-content-center">
-            <div
-              class="fw-bold font-title col-md-5 text-center"
-              style="font-family: Montserrat; font-size: 30px"
-            >
+            <div class="title-first col-md-6">
               {{ "Features_The_Right" | translate }}
             </div>
           </div>
 
-          <div
-            class="d-flex justify-content-center"
-            style="margin-bottom: 50px"
-          >
-            <div
-              class="fw-bold font-title col-md-5 text-center ukuran-font"
-              style="font-family: Montserrat; font-size: 30px"
-            >
-              {{ "Growth_Online_Business" | translate }}
+          <div class="d-flex justify-content-center">
+            <div class="title-silver col-md-5">
+              {{ "Rantai_help" | translate }}
             </div>
           </div>
 
-          <div class="mt-4 row justify-content-between">
+          <div class="row justify-content-between">
             <div class="col-md-6" data-aos="fade-up">
-              <div id="r-720" class="tab-phone" loading="lazy"></div>
+              <div class="tab-phone" loading="lazy"></div>
             </div>
 
-            <div
-              class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content"
-              data-aos="fade-right"
-            >
-              <article class="artikel">
-                <div
-                  class="fw-bold font-title ukuran-font"
-                  style="font-family: Montserrat; font-size: 20px"
-                >
-                  {{ "Manage_stock" | translate }}
-                </div>
-                <div
-                  class="font-title ukuran-font"
-                  style="
-                    font-family: Montserrat;
-                    font-size: 20px;
-                    font-weight: bold;
-                  "
-                >
-                  {{ "Anytime_and_Anywhere" | translate }}
+            <div class="row col-md-6 gap-2" data-aos="fade-right">    
+              <div class="title-second">
+                {{ "Manage_stock" | translate }}
+              </div>
+
+              <div>
+                <div>
+                  <div class="d-flex gap-3">
+                    <div id="logo-centang"></div>
+                    <p class="title-content">{{ "Update_Stock" | translate }}</p>
+                  </div>
+                  <div>
+                    <p class="content-first">{{ "Update_Stock_Item" | translate }}</p>
+                  </div>
                 </div>
 
-                <div class="navbar-brand d-flex">
-                  <div id="logo-centang" style="margin-top: 15px"></div>
-                  <p
-                    class="lbd-highlight text-start fw-normal fw-bold font-title"
-                    style="
-                      margin-top: 25px;
-                      line-height: 1px;
-                      padding-left: 15px;
-                      font-size: 13px;
-                      font-family: Montserrat;
-                      font-weight: bold;
-                    "
-                  >
-                    {{ "Update_Stock" | translate
-                    }}<br /><br /><br /><br /><br /><br /><br /><br />
-                    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                    <br /><br /><br /><br /><br /><br />
-                    <span style="margin-left: -1px">
-                      {{ "U" | translate }}
-                    </span>
+                <div>
+                  <div class="d-flex gap-3">
+                    <div id="logo-centang"></div>
+                    <p class="title-content">{{ "Rantai_Pos" | translate }}</p>
+                  </div>
+                  <div>
+                    <p class="content-first">{{ "Online_Cashier" | translate }}</p>
+                  </div>
+                </div>
+              
+              <div>
+                <div class="sign-free">
+                  <p class="fw-bold f-15 ">
+                    {{ "Sign" | translate }} <span class="text-blue">{{ "Free_Forever" | translate }}</span>
                   </p>
                 </div>
-
-                <p
-                  class="font-bodyText"
-                  style="padding-left: 35px; margin-top: 12px"
-                >
-                  {{ "Update_Stock_Item" | translate }}
-                </p>
-
-                <div class="navbar-brand d-flex">
-                  <div id="logo-centang" style="margin-top: 15px"></div>
-                  <p
-                    class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font"
-                    style="
-                      margin-top: 25px;
-                      line-height: 1px;
-                      padding-left: 15px;
-                      font-size: 13px;
-                      font-family: Montserrat;
-                    "
-                  >
-                    {{ "Rantai_Pos" | translate }}
-                  </p>
-                </div>
-
-                <p class="font-bodyText" style="padding-left: 35px">
-                  {{ "Online_Cashier" | translate }}
-                </p>
-
-                <p
-                  class="fw-normal"
-                  style="
-                    padding-left: 35px;
-                    font-family: source sans pro;
-                    font-size: 15px;
-                    margin-top: 15px;
-                  "
-                >
-                  <b> {{ "Sign1" | translate }}</b>
-                  <span style="color: #0b69fd; font-weight: bold">
-                    {{ "Free_Forever" | translate }}</span
-                  >
-                </p>
-
-                <div
-                  class="home-btn"
-                  data-aos="fade-right"
-                  style="padding-left: 35px"
-                >
-                  <div class="row justify-content-start">
-                    <div class="col-md-4 col-sm-5" id="bts3">
-                      <a
-                        href="https://rantai.tech/web/accounts/sign-up"
-                        class="btn btn-1"
-                        target="_blank"
-                        style="
-                          border-radius: 24px;
-                          opacity: 1;
-                          background-color: #0b69fd;
-                          width: 105%;
-                          padding: 5px;
-                        "
-                      >
-                        <div class="btn-title-lets-start" style="color: white">
-                          {{ "TRY_FREE1" | translate }}
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4 -->
-    <section id="benefit" class="services  section3">
-      <div class="container">
-        <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up">
-          <div id="test" class="image-mobile image-toko-online" loading="lazy">
-            <img
-              src="../../assets/images/tokoonline.svg"
-              alt=""
-              class="image-mobile"
-            />
-          </div>
-        </div>
-
-        <div
-          class="row align-items-center justify-content-center"
-          style="margin-left: 12px"
-        >
-          <div class="mt-4 row justify-content-between">
-            <div class="col-md-6 pt-4 pt-lg-0 content" data-aos="fade-right">
-              <article class="artikel">
-                <div
-                  class="fw-bold font-heading"
-                  style="font-family: Montserrat"
-                >
-                  {{ "Control" | translate }}
-                </div>
-                <div
-                  class="fw-bold font-heading"
-                  style="font-family: Montserrat"
-                >
-                  {{ "Marketplace" | translate }}
-                </div>
-
-                <div class="navbar-brand d-flex">
-                  <div id="logo-centang" style="margin-top: 15px"></div>
-                  <p class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font" style="
-                    margin-top: 25px;
-                    line-height: 5px;
-                    padding-left: 15px;
-                    font-size: 14px;
-                    font-family: Montserrat;
-                  
-                  ">
-                    {{ "TRANSACTION_INFORMATION" | translate
-                    }}<br /><br /><br /><br /><br /><br />
-
-                    <span style="margin-left: -1px">{{
-                      "TRANSACTION" | translate
-                    }}</span>
-                  </p>
-                  <br/>
-                </div>
-
-                <p class="font-bodyText" style="padding-left: 35px;">
-                  {{ "Access_Transaction_List" | translate }}
-                </p>
-
-                <div class="navbar-brand d-flex">
-                  <div id="logo-centang" style="margin-top: 15px"></div>
-                  <p
-                    class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font"
-                    style="
-                      margin-top: 25px;
-                      line-height: 1px;
-                      padding-left: 15px;
-                      font-size: 14px;
-                      font-family: Montserrat;
-                    "
-                  >
-                    {{ "SCRAPE_AND_COPY" | translate }}
-                  </p>
-                </div>
-
-                <p class="font-bodyText" style="padding-left: 35px">
-                  {{ "Move_or_Copy" | translate }}
-                </p>
-
-                <div class="navbar-brand d-flex">
-                  <div id="logo-centang" style="margin-top: 15px"></div>
-                  <p
-                    class="lbd-highlight text-start fw-normal fw-bold font-title ukuran-font"
-                    style="
-                      margin-top: 25px;
-                      line-height: 1px;
-                      padding-left: 15px;
-                      font-size: 14px;
-                      font-family: Montserrat;
-                    "
-                  >
-                    {{ "RANTAI_TALK" | translate }}
-                  </p>
-                </div>
-
-                <p class="font-bodyText" style="padding-left: 35px;">
-                  {{ "Connect_With_All" | translate }}
-                </p>
-
-                <p
-                  class="fw-normal"
-                  style="
-                    padding-left: 35px;
-                    font-family: source sans pro;
-                    margin-top: 15px;
-                    font-weight: bold;
-                    font-size: 15px;
-                  "
-                >
-                  <b> {{ "Sign1" | translate }}</b>
-                  <span style="color: #0b69fd; font-weight: bold">
-                    {{ "Free_Forever" | translate }}</span
-                  >
-                </p>
-
-                <div
-                  class="home-btn"
-                  data-aos="fade-right"
-                  style="padding-left: 35px"
-                >
-                  <div class="row justify-content-start">
-                    <div class="col-md-4 col-sm-5" id="bts3">
-                      <a
-                        href="https://rantai.tech/web/accounts/sign-up"
-                        class="btn btn-1"
-                        target="_blank"
-                        style="
-                          border-radius: 24px;
-                          opacity: 1;
-                          background-color: #0b69fd;
-                          width: 105%;
-                          padding: 5px;
-                        "
-                      >
-                        <div class="btn-title-lets-start" style="color: white">
-                          {{ "TRY_FREE1" | translate }}
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-
-            <div class="col-md-6 order-2 order-lg-2" data-aos="fade-up">
-              <div id="image-section3" class="image-size" loading="lazy">
-                <img
-                  class="img-tok"
-                  src="../../assets/images/tokoonline.svg"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 5 -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="mt-4 row justify-content-between">
-            <div class="col-md-6" data-aos="fade-up">
-              <div class="image-size1 tab-fiturreport" loading="lazy"></div>
-            </div>
-
-            <div
-              class="col-md-6 pt-4 pt-lg-0 order-2 order-lg-2 content"
-              data-aos="fade-right"
-            >
-              <article class="artikel">
-                <div class="font-heading">
-                  {{ "Generate_Financial_Report" | translate }}
-                </div>
-                <p class="font-bodyText" style="margin-top: 20px">
-                  {{ "More_Efficient" | translate }}
-                </p>
-
-                <p
-                  class="fw-normal"
-                  style="
-                    margin-top: 15px;
-                    font-weight: bold;
-                    font-size: 15px;
-                    font-family: source sans pro;
-                  "
-                >
-                  <b> {{ "Sign1" | translate }}</b>
-                  <span style="color: #0b69fd">
-                    {{ "Free_Forever" | translate }}</span
-                  >
-                </p>
-
-                <div class="home-btn" data-aos="fade-right">
-                  <div class="row justify-content-start">
-                    <div class="col-md-4 col-sm-5" id="bts3">
-                      <a
-                        href="https://rantai.tech/web/accounts/sign-up"
-                        class="btn btn-1"
-                        target="_blank"
-                        style="
-                          border-radius: 24px;
-                          opacity: 1;
-                          background-color: #0b69fd;
-                          width: 105%;
-                          padding: 5px;
-                        "
-                      >
-                        <div class="btn-title-lets-start" style="color: white">
-                          {{ "TRY_FREE1" | translate }}
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- PRICE -->
-          <section id="price">
-            <div class="row justify-content-center mt-5">
-              <div
-                class="title-blue text-center"
-                style="font-family: Montserrat; font-size: 15px"
-              >
-                {{ "SUBSCRIPTION_PACKAGE_OPTIONS" | translate }}
-              </div>
-            </div>
-            <div class="row justify-content-center p-3">
-              <div class="text-center fw-bold" style="font-family: Montserrat; font-size: 30px;">
-                {{ "Various_Package_Options" | translate }} <br />{{
-                  "Adjust_to_Needs" | translate
-                }}
-              </div>
-            </div>
-
-            <div
-              class="row justify-content-center gbr"
-              style="margin-right: 20px"
-            >
-              <div
-                class="col-md-3 col-sm-6 align-items-stretch row zoom-subscription p-4 img-resize"
-                data-aos="zoom-in"
-                data-aos-delay="100"
-                *ngIf="typelistFree.length > 0"
-              >
-                <div class="img-subsciption">
-                  <div id="silver" class="col sub">
-                    <div class="d-flex justify-content-start">
-                      <div class="paket-rantai img-fluid"></div>
-                      <div class="row justify-content-start text-price">
-                        <div class="text-left">
-                          <div
-                            class="fw-bold f-14"
-                            style="font-family: Montserrat"
-                          >
-                            RANTAI MARKETPLACE
-                          </div>
-                        </div>
-                        <div class="row justify-content-start">
-                          <div class="f-12">
-                            <sup class="text-remove">Rp 490.000</sup>
-                            <span
-                              class="fw-bold"
-                              style="font-family: Montserrat"
-                              >{{ "Free" | translate }}</span
-                            >
-                            <sub style="font-family: Montserrat">
-                              {{ "Forever" | translate }}</sub
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="col subcription-desc border-radius-top">
-                    <div class="container">
-                      <div class="row">
-                        <div class="mt-2 mb-4">
-                          <ng-container
-                            *ngFor="let free of typelistFree; let i = index"
-                          >
-                            <div
-                              class="mt-3 d-flex justify-content-start align-items-center"
-                            >
-                              <div
-                                class="bd-highlight box-list icon-valid mt-1 me-2"
-                              ></div>
-                              <div
-                                class="bd-highlight text-start fw-bold f-14"
-                                style="font-family: source sans pro"
-                              >
-                                {{ free.benefit | titlecase }}
-                              </div>
-                            </div>
-                          </ng-container>
-                          <span
-                            class="text-muted f-12 text-syarat"
-                            style="
-                              font-family: Montserrat;
-                              font-style: italic;
-                              font-size: 10px;
-                            "
-                            >{{ "Terms and Conditions" | translate }}.</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- RANTAI ERP -->
-              <div
-                class="col-md-3 col-sm-6 row zoom-subscription p-4 align-items-stretch img-resize"
-                data-aos="zoom-in"
-                data-aos-delay="100"
-                *ngIf="typelistErp.length > 0"
-              >
-                <div class="img-subsciption">
-                  <div id="silver" class="col sub">
-                    <div class="d-flex justify-content-start">
-                      <div class="paket-rantaierp img-fluid"></div>
-                      <div class="row justify-content-start text-price">
-                        <div class="text-left">
-                          <div
-                            class="fw-bold f-14"
-                            style="font-family: Montserrat"
-                          >
-                            RANTAI PRIVATE SERVER
-                          </div>
-                        </div>
-                        <div class="row justify-content-start">
-                          <div class="text-left f-12">
-                            <sup style="font-family: Montserrat">Rp </sup>
-                            <span class="fw-bold">{{
-                              price | number: "1.2-2"
-                            }}</span>
-                            <sub style="font-family: Montserrat"
-                              >/{{ "Month" | translate }}</sub
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="divider"></div>
-                  <div class="col subcription-desc border-radius-top">
-                    <div class="container">
-                      <div class="row">
-                        <div class="mt-2 mb-4">
-                          <ng-container
-                            *ngFor="let erp of typelistErp; let i = index"
-                          >
-                            <div
-                              class="mt-2 d-flex justify-content-start align-items-center"
-                            >
-                              <div
-                                class="bd-highlight box-list icon-valid mt-1 me-2"
-                              ></div>
-                              <div
-                                class="bd-highlight text-start fw-bold f-14"
-                                style="font-family: source sans pro"
-                              >
-                                {{ erp.benefit | titlecase }}
-                              </div>
-                            </div>
-                          </ng-container>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row justify-content-center" style="margin-bottom: 40px">
-              <div class="col-md-6 col-sm-6 teks">
-                <p
-                  id="butuhB"
-                  class="h5 pt-4 fw-bolder col-md-12 butuhB"
-                  data-aos="fade-right"
-                >
-                  {{ "Need_Help" | translate }} <br />
-                  {{ "WE" | translate }}
-                </p>
-              </div>
-
-              <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
-                <div class="row justify-content-start">
-                  <div class="buttonmik" style="margin-top: 25px">
-                    <a
-                      href="#contact"
-                      class="btn btn-primary button1 bttn"
-                      style="font: size 13px"
-                    >
-                      <div class="btn-title-lets-start fw-bold">
-                        {{ "CONTACT_US" | translate }}
-                      </div>
+                <div class="d-flex justify-content-start btn-try" data-aos="fade-right">
+                  <div class="col-md-4 col-sm-5">
+                    <a href="https://rantai.tech/web/accounts/sign-up"> 
+                      <button class="btn-try-free font-montserrat">{{ "TRY_FREE" | translate }}</button>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- END SECTION 3 -->
+
+    <!-- SECTION 4 -->
+    <section class="parallax-section4">
+      <div class="container">
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="image-mobile " loading="lazy">
+            <img src="../../assets/images/tokoonline.svg" class="image-mobile"/>
+          </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+          <div class="row justify-content-between">
+            <div class="row col-md-6 gap-3" data-aos="fade-right">   
+              <div class="title-second">
+                {{ "Control" | translate }}
+              </div>
+
+              <div>
+              <div>
+                <div class="d-flex gap-3">
+                  <div id="logo-centang"></div>
+                  <p class="title-content">
+                    {{ "TRANSACTION_INFORMATION" | translate }}
+                  </p>
+                </div>
+                <div>
+                  <p class="content-first">
+                    {{ "Access_Transaction_List" | translate }}
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div class="d-flex gap-3">
+                  <div id="logo-centang"></div>
+                  <p class="title-content">{{ "SCRAPE_AND_COPY" | translate }}</p>
+                </div>
+                <div>
+                  <p class="content-first">{{ "Move_or_Copy" | translate }}</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="d-flex gap-3">
+                  <div id="logo-centang"></div>
+                  <p class="title-content">{{ "RANTAI_TALK" | translate }}</p>
+                </div>
+                <div>
+                  <p class="content-first">{{ "Connect_With_All" | translate }}</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="sign-free">
+                  <p class="fw-bold f-15 ">
+                      {{ "Sign" | translate }} <span class="text-blue">{{ "Free_Forever" | translate }}</span>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-start btn-try" data-aos="fade-right">
+                  <div class="col-md-4 col-sm-5">
+                    <a href="https://rantai.tech/web/accounts/sign-up"> 
+                      <button class="btn-try-free">{{ "TRY_FREE" | translate }}</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+          <div class="col-md-6 " data-aos="fade-up">
+            <div class="image-size" loading="lazy">
+              <img class="image-media" src="../../assets/images/tokoonline.svg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- END SECTION 4 -->
+
+    <!-- SECTION 5 -->
+    <section class="parallax-section5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="image-size1 tab-fiturreport" loading="lazy"></div>
+            </div>
+
+            <div class="row col-md-6 gap-3" data-aos="fade-right">    
+              <div class="title-second">{{ "Generate_Financial_Report" | translate }}</div>
+              <div class="content-generate">{{ "More_Efficient" | translate }}</div>
+              <div>
+                <div>
+                  <p class="fw-bold f-15 font-source">
+                      {{ "Sign" | translate }} <span class="text-blue">{{ "Free_Forever" | translate }}</span>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-start btn-free" data-aos="fade-right">
+                  <div class="col-md-4 col-sm-5">
+                    <a href="https://rantai.tech/web/accounts/sign-up"> 
+                      <button class="btn-try-free">{{ "TRY_FREE" | translate }}</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>   
+          </div>
+        </div>
+    </section>
+    <!-- END SECTION 5 -->
 
     <!-- SECTION 6 -->
-    <section id="benefit" class="services ">
-      <div class="container" data-aos="fade-up">
-        <div
-          class="section-title section-choose-plan"
-          style="margin-left: 20px; margin-right: 20px"
-        >
-          <div class="row justify-content-center komisi">
-            <div
-              data-aos="fade-up"
-              class="title-overview col-md-6 fw-bold"
-              style="
-                margin-bottom: 20px;
-                font-family: Montserrat;
-                font-size: 30px;
-              "
-            >
-              {{ "Commission_Sharing_Chain" | translate }}
-            </div>
-            <span id="komisi-font" class="col-md-6 komisi-font">
-              {{ "Invite" | translate }}
-            </span>
+    <section> 
+      <div class="parallax-section6">
+        <div class="row">
+          <div class="col">
+            <p class="fw-bold collaboration">
+              {{ "Collaboration" | translate }}:
+            </p>
           </div>
-          <p data-aos="fade-right"  style="
-            margin-top: 10px;
-            margin-bottom: 1px;
-            font-size: 15px;
-            font-family: source sans pro;
-          ">
-            {{ "Sign_Up_Code_Refferal" | translate }}
-          </p>
+        </div>
+        <div class="container">
+          <div class=" row">
+            <div class="col">
+              <marquee scrollamount="13">
+                <div class="d-flex justify-content-center gap-5">
+                  <a data-aos="fade-up" data-aos-delay="100">
+                    <i id="i-tokped"></i>
+                  </a>
 
-          <div class="row justify-content-center">
-            <div class="col-md-2 col-sm-6" data-aos="fade-right">
-              <div class="row justify-content-start">
-                <div style="margin-top: 15px">
-                  <a
-                    href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#syartdanketentuan"
-                  >
-                    <div
-                      class="terms"
-                      style="
-                        font-family: source sans pro;
-                        font-style: italic;
-                        font-size: 10px;
-                      "
-                    >
-                      <ins> {{ "Terms and Conditions" | translate }}</ins>
-                    </div>
+                  <a data-aos="fade-up" data-aos-delay="200">
+                    <i id="i-lazada"></i>
+                  </a>
+
+                  <a data-aos="fade-up" data-aos-delay="300">
+                    <i id="i-shopee"></i>
+                  </a>
+
+                  <a data-aos="fade-up" data-aos-delay="400">
+                    <i id="i-blibli"></i>
+                  </a>
+
+                  <a data-aos="fade-up" data-aos-delay="500">
+                    <i id="i-jdid"></i>
+                  </a>
+
+                  <a data-aos="fade-up" data-aos-delay="500">
+                    <i id="i-bukalapak"> </i>
+                    <p class="coming-soon">COMING SOON</p>
                   </a>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-            <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
-              <div class="row justify-content-start">
-                <div class="teks btnn" style="margin-top: 15px">
-                  <a
-                    id="bts5"
-                    href="https://rantai.tech/web/accounts/sign-up"
-                    target="_blank"
-                    class="btn btn-primary btn-1 button1 teks btmik"
-                  >
-                    <div
-                      class="btn-title-lets-start"
-                      style="color: white; font-size: 11px"
-                    >
-                      {{ "Sign_Up_Now1" | translate }}
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="heading-point4 col-md-8">
-            <h1 class="text-point4">{{ "Point4" | translate }}</h1>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-center align-items-center">
-          <div class="cuptropy"></div>
-          <span class="font-title fw-bold text-center p-2 ukuran-font" style="font-family: Montserrat; font-size: 24px">
-            {{ "R_ranking" | translate }} <br />
-            {{ "At_The_Moment" | translate }}</span
-          >
-        </div>
-
-        <div
-          class="d-flex justify-content-center align-items-center info-event periode"
-        >
-          <ng-container *ngIf="autoWaktuSelesai.day > 0">
-            <span>
-              Periode Event Akan Berakhir:
-              {{ autoWaktuSelesai.day }} Hari {{ autoWaktuSelesai.hours }} Jam
-              {{ autoWaktuSelesai.minutes }} Menit
-              {{ autoWaktuSelesai.seconds }} Detik
-            </span>
-          </ng-container>
-          <ng-container *ngIf="autoWaktuSelesai.day < 1">
-            <span class="info-danger">Periode Event telah berakhir.</span>
-          </ng-container>
-        </div>
-        <div class="row justify-content-center mt-4 baru-btn">
-          <span *ngIf="dataNotFound === true" class="text-red">{{
-            "Data_Not_Found" | translate
-          }}</span>
-        </div>
-        <div class="row justify-content-center">
-          <div
-            *ngIf="resultSearch.length > 0"
-            class="row justify-content-center"
-          >
-            <ng-container *ngFor="let sr of resultSearch; let i = index">
-              <div class="col-md-4">
-                <div class="box-referral mb-3 pointer">
-                  <div class="box-referral-content">
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <div class="col-md-2 col-sm-2">
-                        <div
-                          [ngClass]="i < 5 ? 'rank' + (sr.rank - 1) : 'rankbox'"
-                        ></div>
-                      </div>
-                      <div class="col">
-                        <div class="d-flex justify-content-between">
-                          <div
-                            class="fw-bold text-refferal f-12"
-                            style="font-family: Montserrat"
-                          >
-                            <span>
-                              {{ sr.name ? sr.name : "No Data" }} /
-                              {{ sr.phone }}</span
-                            >
-                          </div>
-                          <div
-                            class="point-color"
-                            style="
-                              font-family: Montserrat;
-                              font-size: 12px;
-                              font-weight: bold;
-                            "
-                          >
-                            {{ sr.point }} Poin
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ng-container>
-          </div>
-          <div
-            class="col-md-4 col-sm-12 mt-md-0 p-4 referal_r"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
-            <ng-container *ngFor="let ref of sectionFree; let i = index">
-              <div class="box-referral mb-3 pointer">
-                <div class="box-referral-content">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="col-md-2 col-sm-2">
-                      <div [ngClass]="i < 5 ? 'rank' + i : 'rankbox'">
-                        <span [ngClass]="i < 9 ? 'ranknum-min' : 'ranknum'">
-                          {{ i + 1 }}</span
-                        >
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="d-flex justify-content-between">
-                        <div
-                          class="fw-bold text-refferal f-12"
-                          style="font-family: Montserrat"
-                        >
-                          <span>
-                            {{ ref.name ? ref.name : "No Data" }} /
-                            {{ ref.phone }}</span
-                          >
-                        </div>
-                        <div
-                          class="point-color"
-                          style="
-                            font-family: Montserrat;
-                            font-size: 12px;
-                            font-weight: bold;
-                          "
-                        >
-                          {{ ref.point }} Poin
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ng-container>
-          </div>
-
-          <div
-            class="col-md-4 col-sm-6 p-4 p-referal referal_r"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
-            <ng-container *ngFor="let ref of sectionPaid; let i = index">
-              <div class="box-referral mb-3 pointer">
-                <div class="box-referral-content">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div class="col-md-2 col-sm-2">
-                      <div class="rankbox">
-                        <span class="ranknum"> {{ i + 1 + 10 }}</span>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div
-                        class="d-flex justify-content-between f-12"
-                        style="font-family: Montserrat"
-                      >
-                        <div class="fw-bold text-refferal">
-                          <span>
-                            {{ ref.name ? ref.name : "No Data" }} /
-                            {{ ref.phone }}</span
-                          >
-                        </div>
-                        <div class="point-color">{{ ref.point }} Poin</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </ng-container>
-          </div>
-        </div>
-
-        <div
-          class="row justify-content-center"
-          *ngIf="sectionFree.length > 0 || sectionPaid.length > 0"
-        >
-          <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
-            <div class="row justify-content-start">
-              <div class="" style="margin-top: 25px; text-align: center">
-              </div>
+              </marquee>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- END SECTION 6 -->
 
     <!-- SECTION 7 -->
-    <section class="section10">
-      <div>
-        <p class="title-sb">
-          {{ "Use_Rantai" | translate }}
-          <span class="text-rantai"> Rantai </span>
-        </p>
-        <p class="paragraf-sb">{{ "Those_customers" | translate }}</p>
-      </div>
+    <section>
+      <div class="parallax-section7">       
+        <div class="row justify-content-center gap-3 content-S7">
+          <div class="title-blue">EVENT RANTAI</div>
+          <div class="title-section7">{{ "The_Winners" | translate }}</div>
+          <div class="p-S7">{{ "Check_out_top5" | translate }}</div>
+       
+          <!-- <div class="container d-flex justify-content-center">
+            <div class="slide-left"></div>
+            <div class="img-s7"></div>
+            <div class="slide-right"></div>
+          </div> -->
 
-      <div class="container contain">
-        <ng-container *ngFor="let x of activeImage">
-          <div class="fade-in row row-cols-10 responsive-img" *ngIf="x">
-            <div class="col">
-              <img
-                [src]="
-                  'https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/' +
-                  x.imageLocation
-                "
-                loading="lazy"
-              />
+          <div id="carouselExampleControls" class="container d-flex justify-content-center carousel slide" data-bs-ride="carousel">           
+            <div>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="slide-right" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-          </div>
-          <div *ngIf="!x" class="no-img"></div>
-        </ng-container>
-      </div>
-
-      <div class="center">
-        <!-- <a class="tag-a"  href="#" routerLink="testimoni/view-all" target="_blank" >LIHAT SELENGKAPNYA</a> -->
-        <a class="tag-a pointer" (click)="selengkapnya()">LIHAT SELENGKAPNYA</a>
-        <!-- <div class="tag-a pointer" (click)="selengkapnya()"> <span>lihat selengkapnya</span></div> -->
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-md-6 col-sm-6">
-          <p
-            class="h5 pt-4 fw-bolder col-md-12 footer-sb"
-            data-aos="fade-right"
-          >
-            {{ "SignUp_Galery" | translate }}
-          </p>
-        </div>
-
-        <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
-          <div class="row justify-content-start">
-            <div class="buttonmik galery" style="margin-top: 25px">
-              <a
-                href="https://rantai.tech/web/accounts/sign-up"
-                target="_blank"
-                class="btn btn-primary button1 btn-galery"
-                style="font: size 13px"
-              >
-                <div class="btn-title-lets-start fw-bold">
-                  {{ "Sign_Up_Now1" | translate }}
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <img class="d-block img-s7">
                 </div>
-              </a>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <img class="d-block img-s7">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <img class="d-block img-s7">
+                </div>
+              </div>
+            </div> 
+            <div>
+              <button class="carousel-control-prev "type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="slide-left" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
             </div>
           </div>
         </div>
+        <!-- <ng-container *ngFor="let x of listGaleryTestimoni">
+          <div class="row justify-content-center gap-2 toko">
+            <div class="nama-toko">{{ x.tokoName}}</div>
+            <div class="pemilik-toko">{{ x.ownerName }}</div>
+          </div>     
+      </ng-container> -->
+      <div class="row justify-content-center gap-2 toko">
+        <div class="nama-toko">{{ "This_Is_Shop_Name" | translate }}</div>
+        <div class="pemilik-toko">{{ "This_Is_Shop_Owner" | translate }}</div>
+      </div>
+      <div class="footer-s7">{{ "Check_out_Rantai_Event" | translate }}</div>    
+      <div class="container media-coverage">
+        <div class="row">
+          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div  class="img-footer-s7 hover-media"></div>
+            </a>
+          </div>     
+          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div  class="img-footer-s7 hover-media"></div>
+            </a>
+          </div> 
+          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div  class="img-footer-s7 hover-media"></div>
+            </a>
+          </div> 
+          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div  class="img-footer-s7 hover-media"></div>
+            </a>
+          </div> 
+          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div  class="img-footer-s7 hover-media"></div>
+            </a>
+          </div> 
+          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div  class="img-footer-s7 hover-media"></div>
+            </a>
+          </div> 
+          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div  class="img-footer-s7 hover-media"></div>
+            </a>
+          </div> 
+          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div  class="img-footer-s7 hover-media"></div>
+            </a>
+          </div> 
+          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div  class="img-footer-s7 hover-media"></div>
+            </a>
+          </div> 
+          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div  class="img-footer-s7 hover-media"></div>
+            </a>
+          </div> 
+          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div  class="img-footer-s7 hover-media"></div>
+            </a>
+          </div> 
+          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div  class="img-footer-s7 hover-media"></div>
+            </a>
+          </div> 
+        </div>
+      </div>
       </div>
     </section>
-
+    <!-- END SECTION 7 --> 
+        
     <!-- SECTION 8 -->
-    <section>
+    <section class=" parallax-section8">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <div class="fw-bold" style="font-family: Montserrat; font-size: 32px">
@@ -1741,6 +900,8 @@
         </div>
       </div>
     </section>
+
+    <!-- section FAQ -->
     <!-- <section>
     <div >
       <p class="title-sb"> {{ "Frequently" | translate }}</p>
@@ -1748,190 +909,131 @@
     </div>
 
     <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-6" >
-        <ng-container *ngFor="let x of dataContent; let d = index">
-          <div *ngIf="checkOdd(e)" class=" box">
+      <div class="row justify-content-start">
+        <div class="col-6" >
+          <ng-container *ngFor="let x of dataContent; let d = index">
+            <div *ngIf="checkOdd(e)" class=" box">
 
-              <app-faq [content]="'aaaaa \n bb'"></app-faq>
-          </div>
-          <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat" >
-            <app-faq [content]="x"></app-faq>
-          </div>
-        </ng-container>
-    </div>
-  <div class="col-6">
-      <ng-container *ngFor="let x of dataContent; let d = index">
-        <div *ngIf="checkOdd(e)" class=" box">
+                <app-faq [content]="'aaaaa \n bb'"></app-faq>
+            </div>
+            <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat" >
+              <app-faq [content]="x"></app-faq>
+            </div>
+          </ng-container>
+      </div>
+      <div class="col-6">
+          <ng-container *ngFor="let x of dataContent; let d = index">
+            <div *ngIf="checkOdd(e)" class=" box">
 
-            <app-faq [content]="'aaaaa \n bb'"></app-faq>
-        </div>
-        <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat" >
-          <app-faq [content]="x"></app-faq>
-        </div>
-      </ng-container>
-  </div>
-</div>
-</div>
+                <app-faq [content]="'aaaaa \n bb'"></app-faq>
+            </div>
+            <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat" >
+              <app-faq [content]="x"></app-faq>
+            </div>
+          </ng-container>
+      </div>
+      </div>
+      </div>
 
-    <div>
-      <p class="footer-s10" data-aos="fade-right">
-        {{ "Still_have" | translate }}
-      </p>
-      <p class="footer-text-s10" >
-         {{ "Haven't_found" | translate }}<br>{{ "is_always" | translate }}
-      </p>
-    </div>
+      <div>
+        <p class="footer-s10" data-aos="fade-right">
+          {{ "Still_have" | translate }}
+        </p>
+        <p class="footer-text-s10" >
+          {{ "Haven't_found" | translate }}<br>{{ "is_always" | translate }}
+        </p>
+      </div>
 
-     <div class="row justify-content-center">
+      <div class="row justify-content-center">
         <a href="#contact" >
           <button  id="mybtn">{{ "CONTACT_US" | translate }}</button>
         </a>
-      </div>
-  </section> -->
-  </div>
-
-  <section id="readmore" class="galery2" *ngIf="readMore">
-    <div>
-      <p class="title-sb">
-        {{ "Use_Rantai" | translate }} <span class="text-rantai"> Rantai </span>
-      </p>
-      <p class="paragraf-sb">{{ "Those_customers" | translate }}</p>
     </div>
+    </section> -->
+    <!-- section FAQ -->
+    
+    <!-- section galery -->
+    <!-- <section id="readmore" class="galery2" *ngIf="readMore">
+      <div>
+        <p class="title-sb">
+          {{ "Use_Rantai" | translate }} <span class="text-rantai"> Rantai </span>
+        </p>
+        <p class="paragraf-sb">{{ "Those_customers" | translate }}</p>
+      </div>
 
-    <div class="container galery-dua">
-      <ng-container *ngFor="let x of listGaleryTestimoni">
-        <div class="row row-cols-12">
-          <div class="col-12 responsive-galery2">
-            <img
-              [src]="
-                'https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/' +
-                x.imageLocation
-              "
-              loading="lazy"
-            />
-            <div class="text-centerr col-12">
-              <p class="nama-customer">{{ x.ownerName }}</p>
-              <p class="nama-toko">{{ x.tokoName }}</p>
-              <p class="nama-customer">{{ x.location }}</p>
+      <div class="container galery-dua">
+        <ng-container *ngFor="let x of listGaleryTestimoni">
+          <div class="row row-cols-12">
+            <div class="col-12 responsive-galery2">
+              <img
+                [src]="
+                  'https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/' +
+                  x.imageLocation
+                "
+                loading="lazy"
+              />
+              <div class="text-centerr col-12">
+                <p class="nama-customer">{{ x.ownerName }}</p>
+                <p class="nama-toko">{{ x.tokoName }}</p>
+                <p class="nama-customer">{{ x.location }}</p>
+              </div>
             </div>
           </div>
-        </div>
-      </ng-container>
-    </div>
-  </section>
+        </ng-container>
+      </div>
+    </section> -->
+    <!-- end section galery -->
+</div>
 </main>
 
-<footer id="contact">
+<!-- <footer id="contact" class="parallax-footer">
   <div class="footer-top" style="overflow: hidden">
     <div class="container">
-      <div class="foot-content">
-        <div class="row justify-content-around" style="margin-bottom: 40px">
-          <div class="col-md-8 col-sm-8">
-            <p
-              class="h5 pt-4 fw-bolder"
-              data-aos="fade-right"
-              style="
-                margin-bottom: 5px;
-                font-size: 24px;
-                font-family: Montserrat;
-              "
-            >
+      <div class="foot-conten">
+        <div class="d-flex justify-content-between footer-media">
+          <div> 
+            <p class="teks-footer" data-aos="fade-right">
               {{ "You_Need_Information" | translate }} <br />
               {{ "Contact_Us_and_Get" | translate }}
             </p>
           </div>
-
-          <!-- <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
-            <div class="row justify-content-start">
-              <div class="" style="margin-top: 25px">
-                <a
-                  href="#contact"
-                  class="btn btn-primary  btn-footer col-md-8 col-sm-8"
-                >
-                  <div class="btn-title-lets-start">
-                    {{ "CONTACT_US" | translate }}
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div> -->
-
-          <div class="home-btn col-md-2 col-sm-6" data-aos="fade-right">
-            <div class="row justify-content-start">
-              <div style="margin-top: 25px">
-                <a href="#contact" class="button-footer btn btn-primary btttn">
-                  <div
-                    class="btn-title-lets-start fw-bold"
-                    style="font-family: Montserrat"
-                  >
-                    {{ "CONTACT_US" | translate }}
-                  </div>
-                </a>
-              </div>
-            </div>
+          <div data-aos="fade-right">
+            <a href="#contact"> 
+              <button class="button-footer font-montserrat">{{ "CONTACT_US" | translate }}</button>
+            </a>
           </div>
         </div>
       </div>
 
       <div class="row justify-content-between">
         <div class="border-box">
-          <div
-            class="d-flex flex-row align-items-center bd-highlight pt-3 logo-foot"
-          >
+          <div class="d-flex flex-row align-items-center bd-highlight pt-3 logo-foot">
             <div class="logo-footerr" loading="lazy"></div>
-            <div
-              class="bd-highlight"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            ></div>
+            <div class="bd-highlight" data-aos="fade-left" data-aos-delay="200"></div>
           </div>
-
-          <div class="row justify-content-between">
-            <div class="col-md-4 foot-content" style="margin-top: 30px">
-              <p
-                class="h5 pt-4 fw-bolder fw-bold"
-                data-aos="fade-right"
-                style="font-family: Montserrat; font-size: 15px"
-              >
+          <div class="row justify-content-between pt-5">
+            <div class="col-md-4 foot-content">
+              <p class="fw-bold font-montserrat f-15" data-aos="fade-right">
                 {{ "What_Is_Rantai" | translate }}
               </p>
-              <div class="row align-items-start" [style.padding-right]="'25px'">
-                <p
-                  data-aos="zoom-in"
-                  class="pt-3"
-                  data-aos-delay="150"
-                  style="font-family: source sans pro; font-size: 14px"
-                >
+              <div class="row align-items-start">
+                <p data-aos="zoom-in" class="pt-3 f-14 font-source" data-aos-delay="150">
                   {{ "Rantai_Is" | translate }}
                 </p>
               </div>
             </div>
-
-            <div
-              class="col-md-4 foot-content"
-              style="margin-top: 30px; font-family: Montserrat"
-            >
-              <p
-                class="h5 pt-4 fw-bolder"
-                data-aos="fade-right"
-                style="font-size: 15px"
-              >
+            <div class="col-md-4 foot-content font-montserrat">
+              <p class="f-15 fw-bold" data-aos="fade-right">
                 {{ "CHECK_OUR_VIDEO" | translate }}
               </p>
               <div class="row justify-content-start">
-                <div
-                  class="home-btn pt-2 margin-footer teks"
-                  data-aos="fade-right"
-                >
-                  <a
+                <div class=" pt-4 teks" data-aos="fade-right">
+                  <a 
                     href="https://www.youtube.com/watch?v=8JxK--cp9nE"
                     class="btn col-md-8 col-sm-8 btn-footer"
                     target="_blank"
                   >
-                    <div
-                      class="d-flex justify-content-start align-items-center"
-                    >
+                    <div class="d-flex justify-content-start align-items-center">
                       <div class="logo-video"></div>
                       <div class="icon-video-biru"></div>
                       <span class="btn-footer-text">Rantai Introduction</span>
@@ -1939,7 +1041,7 @@
                   </a>
                 </div>
 
-                <div class="home-btn pt-2 teks" data-aos="fade-right ">
+                <div class=" pt-2 teks" data-aos="fade-right ">
                   <a
                     href="https://www.youtube.com/watch?v=E3fK2pUYTts"
                     class="btn col-md-8 col-sm-8 btn-footer"
@@ -1955,7 +1057,7 @@
                   </a>
                 </div>
 
-                <div class="home-btn pt-2 teks" data-aos="fade-right">
+                <div class=" pt-2 teks" data-aos="fade-right">
                   <a
                     href="https://youtu.be/y-Hc7QWsOd8"
                     class="btn col-md-8 col-sm-8 btn-footer"
@@ -1971,7 +1073,7 @@
                   </a>
                 </div>
 
-                <div class="home-btn pt-2 teks" data-aos="fade-right">
+                <div class=" pt-2 teks" data-aos="fade-right">
                   <a
                     href="https://www.youtube.com/watch?v=TbvnWpw19kc"
                     class="btn col-md-8 col-sm-8 btn-footer"
@@ -1989,15 +1091,12 @@
               </div>
             </div>
 
-            <div class="col-md-4 foot-content" style="margin-top: 30px">
-              <p
-                class="h5 pt-4 fw-bolder"
-                data-aos="fade-right"
-                style="font-family: Montserrat; font-size: 15px"
-              >
+            <div class="col-md-4 foot-content">
+              <p class="fw-bold f-15 font-montserrat" data-aos="fade-right">
                 {{ "CONTACT_US" | translate }}
               </p>
 
+              <div class="font-source">
               <div class="d-flex flex-row align-items-center bd-highlight pt-3">
                 <div class="img-fluid img-phone" loading="lazy"></div>
                 <div
@@ -2068,6 +1167,7 @@
                   </div>
                 </a>
               </address>
+            </div>
               <div
                 class="d-flex justify-content-start align-items-center log-footer"
               >
@@ -2127,311 +1227,175 @@
       </div>
     </div>
   </div>
-
-  <div
-    class="d-flex align-items-center justify-content-center"
-    style="background-color: #0b69fd; padding-top: 1px"
-  >
-    <p class="text-center text-white" style="font-family: Montserrat">
-      &copy; {{ newDate }}&nbsp;PT Cyberindo Sinergi Sistem
-    </p>
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between footer-end font-montserrat">
+      <div>
+        <p class="text-white">
+        &copy; {{ newDate }}&nbsp;PT Cyberindo Sinergi Sistem
+        </p>
+      </div>
+      <div class="d-flex gap-4 text-footer-end">
+        <p><a href="#">FAQ</a></p>
+        <p><a href="#">Terms of Service</a></p>
+        <p><a href="#">Help Center</a></p>
+      </div>
+    </div>
   </div>
-</footer>
-
-<div
-  class="modal fade"
-  id="requestFreeDemo"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content subscribe-active p-3">
-      <div class="modal-header">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h5 class="modal-title fw-bold" id="exampleModalLabel">
-                {{ "Join_Now" | translate }} <br />
-                {{ "Join_Next" | translate }}
-              </h5>
-            </div>
-            <div
-              #myModalClose
-              class="close-form"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-              title="Close"
-            ></div>
+</footer> -->
+<footer id="contact">
+  <div class="parallax-footer">
+    <div class="container set-footer">
+      <div class="row gap-5">
+        <div class="d-flex justify-content-between d-footer">
+          <div class="title-footer">
+            <div>{{ "You_Need_Information" | translate }}</div>
+            <div>{{ "Contact_Us_and_Get" | translate }}</div>
+          </div>
+          <div>
+            <a href="#contact"> 
+              <button class="button-footer">{{ "CONTACT_US" | translate }}</button>
+            </a>
           </div>
         </div>
-      </div>
-      <form
-        (ngSubmit)="submit($event)"
-        novalidate
-        method="dialog"
-        [formGroup]="formDaftar"
-        autocomplete="off"
-      >
-        <div class="modal-body">
-          <h1 class="fs-6 fw-normal">
-            {{ "Desc" | translate }}
-          </h1>
-          <br />
-          <div class="row">
-            <div class="col-sm">
-              <div class="mb-3">
-                <input
-                  type="text"
-                  formControlName="name"
-                  name="Name"
-                  class="form-control input-radius"
-                  placeholder="{{ 'Full_Name' | translate }}"
-                />
+        <div>
+          <div class="border-box"></div>
+        </div>
+        <div class="row gap-4">
+          <div class="logo-rantai-footer" loading="lazy" data-aos="fade-left" data-aos-delay="200">
+          </div>
+          <div class="d-flex justify-content-between d-footer gap-3">
+            <div class="col-md-4">
+              <div class="row justify-content-start gap-2">          
+                <div class="title-content-footer">{{ "What_Is_Rantai" | translate }}</div>
+                <div class="çontent-footer">{{ "Rantai_Is" | translate }}</div>
               </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control input-radius"
-                  name="Email"
-                  formControlName="email"
-                  placeholder="Email"
-                  [ngClass]="{ 'is-invalid': save && f.email.errors }"
-                />
-                <div
-                  *ngIf="save && f.email.errors"
-                  class="invalid-feedback error-message"
-                >
-                  <div *ngIf="f.email.errors.email">
-                    {{ "Email_Error" | translate }}
-                  </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="row justify-content-start gap-2">
+              <div class="title-content-footer">{{ "CHECK_OUR_VIDEO" | translate }}</div> 
+              <div class="row justify-content-start gap-2"> 
+                <div>     
+                  <a href="https://www.youtube.com/watch?v=8JxK--cp9nE" class="btn col-md-8 col-sm-8 btn-footer" target="_blank">
+                    <div class="d-flex justify-content-start gap-3">
+                      <div class="logo-video"></div>
+                      <div class="icon-video-biru"></div>
+                      <div class="btn-footer-text">Rantai Introduction</div>
+                    </div>
+                  </a> 
+                </div>  
+                <div>     
+                  <a href="https://www.youtube.com/watch?v=E3fK2pUYTts" class="btn col-md-8 col-sm-8 btn-footer" target="_blank">
+                    <div class="d-flex justify-content-start gap-3">
+                      <div class="logo-video"></div>
+                      <div class="icon-video-biru"></div>
+                      <div class="btn-footer-text">Marketplace Introduction</div>
+                    </div>
+                  </a> 
+                </div>
+                <div>     
+                  <a href="https://youtu.be/y-Hc7QWsOd8" class="btn col-md-8 col-sm-8 btn-footer" target="_blank">
+                    <div class="d-flex justify-content-start gap-3">
+                      <div class="logo-video"></div>
+                      <div class="icon-video-biru"></div>
+                      <div class="btn-footer-text">Marketplace Tutorial</div>
+                    </div>
+                  </a> 
+                </div>
+                <div>     
+                  <a href="https://www.youtube.com/watch?v=TbvnWpw19kc" class="btn col-md-8 col-sm-8 btn-footer" target="_blank">
+                    <div class="d-flex justify-content-start gap-3">
+                      <div class="logo-video"></div>
+                      <div class="icon-video-biru"></div>
+                      <div class="btn-footer-text">Rantai Talk</div>
+                    </div>
+                  </a> 
                 </div>
               </div>
-              <div class="mb-3">
-                <input
-                  type="number"
-                  class="form-control input-radius"
-                  name="Phone"
-                  formControlName="phone"
-                  placeholder="{{ 'Phone' | translate }}"
-                />
               </div>
             </div>
-            <div class="col-sm">
-              <div class="mb-3">
-                <select
-                  id="business"
-                  formControlName="business"
-                  class="form-select input-radius"
-                  name="Notes"
-                >
-                  <option value="" selected>
-                    {{ "Business" | translate }}
-                  </option>
-                  <option *ngFor="let b of businessType" [value]="b">
-                    {{ b | titlecase }}
-                  </option>
-                </select>
-              </div>
-              <div
-                class="mb-3"
-                *ngIf="
-                  formDaftar.get('business').value === ('Other' | translate)
-                "
-              >
-                <input
-                  type="text"
-                  [(ngModel)]="othersBusinness"
-                  class="form-control input-radius"
-                  placeholder="{{ 'Business' | translate }}"
-                  [ngModelOptions]="{ standalone: true }"
-                />
-              </div>
-              <div class="mb-3">
-                <select
-                  formControlName="province"
-                  class="form-select input-radius"
-                  required
-                  (change)="triggerCity($event)"
-                >
-                  <option value="" selected>
-                    {{ "Province" | translate }}
-                  </option>
-                  <option *ngFor="let p of province" [value]="p.name">
-                    {{ p.name | titlecase }}
-                  </option>
-                </select>
-              </div>
 
-              <div class="mb-3">
-                <select formControlName="city" class="form-select input-radius">
-                  <option value="" selected>
-                    {{ "City_Regency" | translate }}
-                  </option>
-                  <option *ngFor="let c of city" [value]="c.name">
-                    {{ c.name | titlecase }}
-                  </option>
-                  <option value="{{ 'Other' | translate }}">
-                    {{ "Other" | translate }}
-                  </option>
-                </select>
-              </div>
-              <div
-                class="mb-3"
-                *ngIf="formDaftar.get('city').value === ('Other' | translate)"
-              >
-                <input
-                  type="text"
-                  [(ngModel)]="othersCity"
-                  class="form-control input-radius"
-                  placeholder="{{ 'City' | translate }}"
-                  [ngModelOptions]="{ standalone: true }"
-                />
-              </div>
-            </div>
-          </div>
-          <input type="hidden" name="Address" formControlName="address" />
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-danger fw-bolder"
-            data-bs-dismiss="modal"
-          >
-            {{ "Cancel" | translate | uppercase }}
-          </button>
-          <button type="submit" class="btn btn-primary fw-bolder">
-            {{ "Submit" | uppercase }}
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-
-<div
-  class="modal fade"
-  id="watchvideo"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content modal-video">
-      <div class="modal-body">
-        <div
-          class="btn-close-video pointer"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-          (click)="openVideo(true)"
-        ></div>
-        <div class="video">
-          <iframe
-            width="560"
-            height="349"
-            frameborder="0"
-            allowfullscreen
-            allowscriptaccess="always"
-            allow="autoplay"
-            id="frame-video"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div
-  class="modal fade"
-  id="syartdanketentuan"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content" [style.padding]="'14px 0px'">
-      <div class="modal-header">
-        <h5 class="modal-title title-modal" id="exampleModalLabel">
-          Syarat dan Ketentuan
-        </h5>
-      </div>
-      <div class="modal-body">
-        <table class="box-tabel">
-          <ng-container *ngFor="let x of termCondition; let i = index">
-            <tr>
-              <td style="vertical-align: top">{{ i + 1 }}.</td>
-              <td>
-                <ng-container *ngFor="let d of x.urlText">
-                  <span *ngIf="!d.link">{{ d.text }}</span>
+            <div class="col-md-4 row gap-2">
+              <div>
+                <div class="title-content-footer">
+                  <p>{{ "CONTACT_US" | translate }}</p>
+                </div>
+                <div class="row gap-3">
+                <div class="d-flex justify-content-start gap-3" data-aos="fade-left" data-aos-delay="200">
+                  <div class="img-phone" loading="lazy"></div>
+                  <div class="çontent-footer">021 296 19 712</div>
+                </div>
+                <div class="d-flex justify-content-start gap-3" data-aos="fade-left" data-aos-delay="200">
+                  <div class="img-email" loading="lazy"></div>
+                  <div class="çontent-footer">support@rantai.tech</div>
+                </div>
+                <div class="d-flex justify-content-start gap-4" data-aos="fade-left" data-aos-delay="200">
+                  <div class="img-location" loading="lazy"></div>
+                  <div>
+                    <a class="çontent-footer" target="_blank" href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"> 
+                      Vinilon Building Jl. Raden Saleh Raya No.kav 13-17, RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat, DKI Jakarta 10430
+                    </a>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-start align-items-cente footer-media" >
                   <a
-                    *ngIf="d.link"
-                    [href]="d.link"
+                    href="https://www.tiktok.com/@rantai.tech?lang=en&is_copy_url=1&is_from_webapp=v1"
                     target="_blank"
-                    style="color: blue"
-                    >{{ d.text }}</a
+                    data-aos="fade-up"
+                    data-aos-delay="100"
                   >
-                </ng-container>
-              </td>
-            </tr>
-          </ng-container>
-          <!-- <tr>
-            <td></td>
-            <td>
-              * follow ig kami di
-              <a
-                href="https://www.instagram.com/official.rantai/"
-                target="_blank"
-                class="text-official"
-              >
-                <b class="text-official">@official.rantai</b></a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>* subscribe youtube channel kami di "Rantai Official"</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              * like dan comment
-              <a
-                href="https://www.youtube.com/watch?v=xk_3ptxZECg"
-                target="_blank"
-                class="text-official"
-              >
-                https://www.youtube.com/watch?v=xk_3ptxZECg
-              </a>
-            </td>
-          </tr> -->
-        </table>
-        <div class="row justify-content-center align-center">
-          <div class="col-md-6">
-            <a
-              href="https://rantai.tech/web/accounts/sign-up"
-              target="_blank"
-              class="btn btn-primary btn-1 button1 teks"
-            >
-              <div
-                class="btn-title-lets-start"
-                style="color: white; font-size: 11px"
-              >
-                {{ "Sign_Up_Now1" | translate }}
+                    <i id="icon-tiktok"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/official.rantai/"
+                    target="_blank"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <i id="icon-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/72025358/admin/"
+                    target="_blank"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <i id="icon-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/RantaiOfficial"
+                    target="_blank"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <i id="icon-facebook"></i>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCtScj1vp9ZV9tOZ1tcZnC4w"
+                    target="_blank"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  >
+                    <i id="icon-youtube"></i>
+                  </a>
+                </div>
               </div>
-            </a>
+              </div>
+            </div>         
           </div>
         </div>
-        <!-- <div class="row justify-content-center" [style.margin-top]="'18px'">
-          <div class="col-md-6">
-            <a
-              [routerLink]="['/referral-rangking']"
-              class="text-cek"
-              target="_blank"
-            >
-              cek referral rangking
-            </a>
-          </div>
-        </div> -->
+        <div class="border-box"></div>
+      </div>
+      <div class="d-flex justify-content-between d-footer ">
+        <div class="last-foot">
+          <div class="last-footer">© 2021 PT Cyberindo Sinergi Sistem</div>
+        </div>
+        <div class="d-flex justify-content-start gap-4 last-foot">
+          <a href="#" class="last-footer"><div>FAQ</div></a>
+          <a href="#" class="last-footer"><div>Terms of Service</div></a>
+          <a href="#" class="last-footer"><div>Help Center</div></a>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</footer>

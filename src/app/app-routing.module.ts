@@ -9,6 +9,7 @@ import { ViewAllComponent } from './view-all/view-all.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
+
   { path: 'privacy', component: PrivacyComponent },
   { path: 'activate/:token/:id', component: ActivateComponent },
   { path: 'reset/:token/:id', component: ResetPasswordComponent },
