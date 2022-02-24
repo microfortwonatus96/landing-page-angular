@@ -2,22 +2,11 @@
   <nav id="navbar" class="navbar navbar-expand-md fixed-top b-navbar">
     <div class="container bg-crumb">
       <div class="d-flex justify-content-start" style="gap: 15px">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#collapsibleNavbar"
-          aria-controls="collapsibleNavbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
+          aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a
-          class="navbar-brand fw-bold d-flex justify-content-center align-items-center"
-          href="/"
-          style="gap: 5px"
-        >
+        <a class="navbar-brand fw-bold d-flex justify-content-center align-items-center" href="/" style="gap: 5px">
           <div class="logo-header" loading="lazy"></div>
         </a>
       </div>
@@ -65,25 +54,16 @@
           </li>
 
           <li class="nav-item">
-            <a
-              class="nav-link fw-bold"
-              href="#contact"
-              style="padding-top: 15px"
-              >{{ "Contact" | translate | uppercase }}</a
-            >
+            <a class="nav-link fw-bold" href="#contact" style="padding-top: 15px">{{ "Contact" | translate | uppercase
+              }}</a>
           </li>
 
           <li class="nav-item">
-            <div
-              class="nav-link click-lang lang-change"
-              (click)="showLanguage()"
-            >
-              <div
-                [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
-              ></div>
+            <div class="nav-link click-lang lang-change" (click)="showLanguage()">
+              <div [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"></div>
               <span class="fw-bold">{{
                 langService.lang === "en" ? "EN" : "ID"
-              }}</span>
+                }}</span>
               <div class="icon-chev" id="chevron"></div>
             </div>
             <div id="lang-hide" class="mt-2">
@@ -526,375 +506,176 @@
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <div class="fw-bold" style="font-family: Montserrat; font-size: 32px">
-            <span
-              style="color: #0b69fd; font-family: Montserrat; font-size: 32px"
-            >
-              {{ "Rantai" | translate }}</span
-            >{{ "Chains_in_Various_Media" | translate }}
+            <span style="color: #0b69fd; font-family: Montserrat; font-size: 32px">
+              {{ "Rantai" | translate }}</span>{{ "Chains_in_Various_Media" | translate }}
           </div>
         </div>
         <div class="row media-coverage">
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
-            <a
-              href="https://www.beritasatu.com/ekonomi/756629/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-beritasatu hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="100">
+            <a href="https://www.beritasatu.com/ekonomi/756629/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-beritasatu hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
-            <a
-              href="https://mediaindonesia.com/ekonomi/396038/new-normal-saatnya-lakukan-inovasi-penjualan-dan-manajemen"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 mediaindonesia hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://mediaindonesia.com/ekonomi/396038/new-normal-saatnya-lakukan-inovasi-penjualan-dan-manajemen"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 mediaindonesia hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <a
-              href="https://www.tribunnews.com/bisnis/2021/04/11/aplikasi-berbasis-smart-erp-ini-mudahkan-supplier-meng-update-stok-barang-seketika"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="300">
+            <a href="https://www.tribunnews.com/bisnis/2021/04/11/aplikasi-berbasis-smart-erp-ini-mudahkan-supplier-meng-update-stok-barang-seketika"
+              target="_blank" rel="noopener noreferrer">
               <div id="imagee" class="image-size1 tribunnews hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
-            <a
-              href="https://ekbis.sindonews.com/read/388834/34/jualan-konvesional-tak-efektif-rantai-beri-inovasi-baru-1617725084"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="400">
+            <a href="https://ekbis.sindonews.com/read/388834/34/jualan-konvesional-tak-efektif-rantai-beri-inovasi-baru-1617725084"
+              target="_blank" rel="noopener noreferrer">
               <div id="imagee" class="image-size1 sindonews hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://inforial.tempo.co/info/1004809/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://inforial.tempo.co/info/1004809/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
+              target="_blank" rel="noopener noreferrer">
               <div id="imagee" class="image-size1 logo-tempo hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="600"
-          >
-            <a
-              href="https://www.suara.com/bisnis/2021/04/07/135527/rantai-link-jadi-inovasi-baru-penjualan-dan-manajemen-bisnis"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-suaracom hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="600">
+            <a href="https://www.suara.com/bisnis/2021/04/07/135527/rantai-link-jadi-inovasi-baru-penjualan-dan-manajemen-bisnis"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-suaracom hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://planet.merdeka.com/gadget/smart-erp-solusi-manajemen-bisnis-di-masa-pandemi.html?page=all"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-planetmerdeka hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://planet.merdeka.com/gadget/smart-erp-solusi-manajemen-bisnis-di-masa-pandemi.html?page=all"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-planetmerdeka hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://republika.co.id/berita/qr85z0291/kelola-bisnis-dengan-cara-konvensional-sudah-tak-relevan"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-republika hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://republika.co.id/berita/qr85z0291/kelola-bisnis-dengan-cara-konvensional-sudah-tak-relevan"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-republika hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://www.jpnn.com/news/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://www.jpnn.com/news/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis" target="_blank"
+              rel="noopener noreferrer">
               <div id="imagee" class="image-size1 jpncom hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://www.wartaekonomi.co.id/read335645/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-wartaekonomi hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://www.wartaekonomi.co.id/read335645/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-wartaekonomi hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://today.line.me/id/v2/article/59w3ly"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-linetoday hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://today.line.me/id/v2/article/59w3ly" target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-linetoday hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://marketing.co.id/aplikasi-rantai-inovasi-baru-penjualan-dan-manajemen-bisnis/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-marketing hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://marketing.co.id/aplikasi-rantai-inovasi-baru-penjualan-dan-manajemen-bisnis/"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-marketing hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://inilah.com/ototekno/2591895/rantai-tawarkan-solusi-bisnis-berbasis-erp"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://inilah.com/ototekno/2591895/rantai-tawarkan-solusi-bisnis-berbasis-erp" target="_blank"
+              rel="noopener noreferrer">
               <div id="imagee" class="image-size1 inilahcom hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://selular.id/2021/04/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-selular hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://selular.id/2021/04/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/" target="_blank"
+              rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-selular hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://teknologi.bisnis.com/read/20210407/84/1377484/cyberindo-sinergi-menawarkan-sistem-rantai-distribusi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-bisnis hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://teknologi.bisnis.com/read/20210407/84/1377484/cyberindo-sinergi-menawarkan-sistem-rantai-distribusi"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-bisnis hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://investor.id/business/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://investor.id/business/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
+              target="_blank" rel="noopener noreferrer">
               <div id="imagee" class="image-size1 investor hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://www.antaranews.com/berita/2087550/smart-erp-solusi-manajemen-bisnis-tepat-di-kala-pandemi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-antaranews hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://www.antaranews.com/berita/2087550/smart-erp-solusi-manajemen-bisnis-tepat-di-kala-pandemi"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-antaranews hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://akurat.co/iptek/id-1294923-read-kenali-aplikasi-rantai-jualan-dan-manajemen-bisnis-bisa-cek-dari-ponsel"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-akuratcom hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://akurat.co/iptek/id-1294923-read-kenali-aplikasi-rantai-jualan-dan-manajemen-bisnis-bisa-cek-dari-ponsel"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-akuratcom hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://www.itworks.id/38677/rantai-link-solusi-manajemen-bisnis-berbasis-smart-erp.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-itworks hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://www.itworks.id/38677/rantai-link-solusi-manajemen-bisnis-berbasis-smart-erp.html"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-itworks hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://mix.co.id/marcomm/news-trend/berbasis-smart-erp-platform-rantai-tawarkan-solusi-bagi-para-pelaku-bisnis/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://mix.co.id/marcomm/news-trend/berbasis-smart-erp-platform-rantai-tawarkan-solusi-bagi-para-pelaku-bisnis/"
+              target="_blank" rel="noopener noreferrer">
               <div id="imagee" class="image-size1 logo-mix hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://techbiz.id/2021/04/rantai-hadirkan-solusi-smart-erp-untuk-manajemen-bisnis/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-techbiz hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://techbiz.id/2021/04/rantai-hadirkan-solusi-smart-erp-untuk-manajemen-bisnis/"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-techbiz hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://dailysocial.id/post/startup-saas-erp-rantai-hubungkan-distributor-dropshipper-dan-reseller-dalam-sistem-terintegrasi"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-dailysosial hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://dailysocial.id/post/startup-saas-erp-rantai-hubungkan-distributor-dropshipper-dan-reseller-dalam-sistem-terintegrasi"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-dailysosial hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://idrtimes.com/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-idrtimes hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://idrtimes.com/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/" target="_blank"
+              rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-idrtimes hover-media"></div>
             </a>
           </div>
-          <div
-            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <a
-              href="https://trenteknologi.com/rantai-smart-erp-inovasi-baru-penjualan-dan-manajemen-bisnis-anda/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                id="imagee"
-                class="image-size1 logo-trenteknologi hover-media"
-              ></div>
+          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in" data-aos-delay="500">
+            <a href="https://trenteknologi.com/rantai-smart-erp-inovasi-baru-penjualan-dan-manajemen-bisnis-anda/"
+              target="_blank" rel="noopener noreferrer">
+              <div id="imagee" class="image-size1 logo-trenteknologi hover-media"></div>
             </a>
           </div>
         </div>
@@ -1099,15 +880,8 @@
               <div class="font-source">
               <div class="d-flex flex-row align-items-center bd-highlight pt-3">
                 <div class="img-fluid img-phone" loading="lazy"></div>
-                <div
-                  class="bd-highlight"
-                  data-aos="fade-left"
-                  data-aos-delay="200"
-                >
-                  <div
-                    class="font-small px-3"
-                    style="font-family: source sans pro; font-size: 14px"
-                  >
+                <div class="bd-highlight" data-aos="fade-left" data-aos-delay="200">
+                  <div class="font-small px-3" style="font-family: source sans pro; font-size: 14px">
                     021 296 19 712
                   </div>
                 </div>
@@ -1117,19 +891,12 @@
                 <a href="mailto:marketing@rantai.tech">
                   <div class="d-flex flex-row bd-highlight align-items-center">
                     <div class="img-fluid img-email" loading="lazy"></div>
-                    <div
-                      class="bd-highlight color-1"
-                      data-aos="fade-left"
-                      data-aos-delay="100"
-                    >
-                      <div
-                        class="font-small px-3"
-                        style="
+                    <div class="bd-highlight color-1" data-aos="fade-left" data-aos-delay="100">
+                      <div class="font-small px-3" style="
                           color: white;
                           font-family: source sans pro;
                           font-size: 14px;
-                        "
-                      >
+                        ">
                         support@rantai.tech
                       </div>
                     </div>
@@ -1138,27 +905,18 @@
               </div>
 
               <address>
-                <a
-                  class="d-flex flex-row bd-highlight"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
-                >
+                <a class="d-flex flex-row bd-highlight" target="_blank" rel="noopener noreferrer"
+                  href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157">
                   <div class="d-flex flex-row align-items-center bd-highlight">
                     <div class="img-fluid img-location" loading="lazy"></div>
                     <div class="bd-highlight">
-                      <div
-                        class="color-1 font-small px-3"
-                        style="
+                      <div class="color-1 font-small px-3" style="
                           text-align: left;
                           color: white;
                           margin-left: 7px;
                           font-family: source sans pro;
                           font-size: 14px;
-                        "
-                        data-aos="fade-left"
-                        data-aos-delay="300"
-                      >
+                        " data-aos="fade-left" data-aos-delay="300">
                         Vinilon Building, Jl. Raden Saleh Raya No.kav 13-17,
                         RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat,
                         Daerah Khusus Ibukota Jakarta 10430.
@@ -1180,47 +938,24 @@
                 >
                   <i id="icon-tiktok"></i>
                 </a>
-                <a
-                  href="https://www.instagram.com/official.rantai/"
-                  target="_blank"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  title="instagram"
-                >
+                <a href="https://www.instagram.com/official.rantai/" target="_blank" data-aos="fade-up"
+                  data-aos-delay="200" title="instagram">
                   <i id="icon-instagram"></i>
                 </a>
-                <a
-                  href="https://www.linkedin.com/company/72025358/admin/"
-                  target="_blank"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  title="linkedin"
-                >
+                <a href="https://www.linkedin.com/company/72025358/admin/" target="_blank" data-aos="fade-up"
+                  data-aos-delay="300" title="linkedin">
                   <i id="icon-linkedin"></i>
                 </a>
-                <a
-                  href="https://www.facebook.com/RantaiOfficial"
-                  target="_blank"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                  title="facebook"
-                >
+                <a href="https://www.facebook.com/RantaiOfficial" target="_blank" data-aos="fade-up"
+                  data-aos-delay="400" title="facebook">
                   <i id="icon-facebook"></i>
                 </a>
-                <a
-                  href="https://www.youtube.com/channel/UCtScj1vp9ZV9tOZ1tcZnC4w"
-                  target="_blank"
-                  data-aos="fade-up"
-                  data-aos-delay="500"
-                  title="youtube"
-                >
+                <a href="https://www.youtube.com/channel/UCtScj1vp9ZV9tOZ1tcZnC4w" target="_blank" data-aos="fade-up"
+                  data-aos-delay="500" title="youtube">
                   <i id="icon-youtube"></i>
                 </a>
               </div>
-              <ul
-                class="nav nav-pills d-flex justify-content-start align-items-start"
-                style="gap: 15px"
-              ></ul>
+              <ul class="nav nav-pills d-flex justify-content-start align-items-start" style="gap: 15px"></ul>
             </div>
           </div>
         </div>

@@ -190,6 +190,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   listGaleryTestimoni: ITestimoni[] = [];
   setColor: boolean = false;
   showMore: boolean = false;
+  timeServer: number;
   // mainPage: boolean
 
   // countdown event
@@ -257,12 +258,23 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     // console.log("aa")
     return n % 2;
   }
+  loadTimeServer() {
+    this.referralCodeService
+      .findTimeServer()
+      .pipe(takeWhile(() => this.alive))
+      .subscribe((res) => {
+        if (res) {
+          this.timeServer = +res;
+        }
+      });
+  }
   countTimerEvent() {
     this.setIntervalAlive = setInterval((v) => {
       this.autoWaktuSelesai.timestamp -= 1;
       this.autoWaktuSelesai = {
         ...this.countDownService.secondsToDhms(
-          +this.autoWaktuSelesai.timestamp
+          +this.autoWaktuSelesai.timestamp,
+          this.timeServer
         ),
         timestamp: +this.autoWaktuSelesai.timestamp,
       };
@@ -319,7 +331,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
     this.settingArray();
     this.getProvince();
-    // this.subsPackage$ = this.subsService.getPackage();
     this.tampilText();
 
     this.newDate = this.date.getFullYear().toString();
@@ -356,6 +367,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadEventTerms();
     this.loadContentFaq();
     this.loadGaleryImage();
+    this.loadTimeServer();
   }
 
   loadGaleryImage() {
@@ -378,17 +390,11 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.dataContent.forEach((v, idx) => {
       for (let i = 0; i < 20; i++) {
         if (i < 10) {
-          // console.log("left", v)
-          // this.faqSideLeft[i].push({this.dataContent[id]})
         } else {
           let idx2 = i - 10;
-          // this.faqSideRight[idx2] = v
         }
       }
     });
-
-    // console.log("left", this.faqSideLeft);
-    // console.log("right", this.faqSideRight)
   }
 
   loadEvent() {
@@ -621,7 +627,10 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       .subscribe((res: any) => {
         if (res) {
           this.autoWaktuSelesai = {
-            ...this.countDownService.secondsToDhms(+res.dateTo),
+            ...this.countDownService.secondsToDhms(
+              +res.dateTo,
+              this.timeServer
+            ),
             timestamp: +res.dateTo,
           };
 
