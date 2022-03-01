@@ -2,11 +2,22 @@
   <nav id="navbar" class="navbar navbar-expand-md fixed-top b-navbar">
     <div class="container bg-crumb">
       <div class="d-flex justify-content-start" style="gap: 15px">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
-          aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+          aria-controls="collapsibleNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand fw-bold d-flex justify-content-center align-items-center" href="/" style="gap: 5px">
+        <a
+          class="navbar-brand fw-bold d-flex justify-content-center align-items-center"
+          href="/"
+          style="gap: 5px"
+        >
           <div class="logo-header" loading="lazy"></div>
         </a>
       </div>
@@ -14,7 +25,7 @@
       <div class="collapse navbar-collapse edit-header" id="collapsibleNavbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a 
+            <a
               class="nav-link active fw-bold"
               href="/"
               style="padding-top: 15px"
@@ -54,16 +65,25 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#contact" style="padding-top: 15px">{{ "Contact" | translate | uppercase
-              }}</a>
+            <a
+              class="nav-link fw-bold"
+              href="#contact"
+              style="padding-top: 15px"
+              >{{ "Contact" | translate | uppercase }}</a
+            >
           </li>
 
           <li class="nav-item">
-            <div class="nav-link click-lang lang-change" (click)="showLanguage()">
-              <div [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"></div>
+            <div
+              class="nav-link click-lang lang-change"
+              (click)="showLanguage()"
+            >
+              <div
+                [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
+              ></div>
               <span class="fw-bold">{{
                 langService.lang === "en" ? "EN" : "ID"
-                }}</span>
+              }}</span>
               <div class="icon-chev" id="chevron"></div>
             </div>
             <div id="lang-hide" class="mt-2">
@@ -88,57 +108,72 @@
   <div id="block">
     <!-- SECTION 1 -->
     <section id="parallax" data-aos="fade-up" class="parallax-section1">
-      <div class="container ">
-          <div class="row justify-content-between">
-            <div class="col-md-6 col-sm-6">
-              <article>
-                <div class="d-grid gap-2">
-                  <div >
-                    <h1 class="title-section1"  data-aos="fade-right">
-                      {{ "Manage_Shop" | translate }} 
-                    </h1>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-6 col-sm-6">
+            <article>
+              <div class="d-grid gap-2">
+                <div>
+                  <h1 class="title-section1" data-aos="fade-right">
+                    {{ "Manage_Shop" | translate }}
+                  </h1>
+                </div>
+                <div class="font-source f-15 p-section1">
+                  <div>
+                    <p data-aos="fade-right">
+                      {{ "Rantai_present" | translate }}
+                    </p>
                   </div>
-                  <div class="font-source f-15 p-section1">
-                    <div>
-                      <p data-aos="fade-right">
-                        {{ "Rantai_present" | translate }}
-                      </p>
-                    </div>
-                    <div>
-                      <p data-aos="fade-right" >
-                        {{ "Signup_now_or" | translate }}
-                      </p>
-                    </div>
+                  <div>
+                    <p data-aos="fade-right">
+                      {{ "Signup_now_or" | translate }}
+                    </p>
                   </div>
                 </div>
-                <div class="d-flex justify-content-start gap-3 footer-section1" data-aos="fade-right">
-                    <div class="col-4">
-                      <a href="https://rantai.tech/web/accounts/sign-up"> 
-                       <button class="btn-try-free">{{ "Sign_Up_Now" | translate }}</button>
-                      </a>
-                    </div>
-                    <div class="col-4 logo-google">
-                      <a href="https://play.google.com/store/apps/details?id=com.css.rantai" target="_blank"
-                        rel="noopener noreferrer">
-                        <div class="app-store" loading="lazy"></div>
-                      </a>
-                    </div>
+              </div>
+              <div
+                class="d-flex justify-content-start gap-3 footer-section1"
+                data-aos="fade-right"
+              >
+                <div class="col-4">
+                  <a href="https://rantai.tech/web/accounts/sign-up">
+                    <button class="btn-try-free">
+                      {{ "Sign_Up_Now" | translate }}
+                    </button>
+                  </a>
                 </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-sm-6 banner-1">
-              <img src="../../assets/images/banner2.svg" alt="banner" class="banner1"/>
-            </div>
-          </div>   
+                <div class="col-4 logo-google">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="app-store" loading="lazy"></div>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-sm-6 banner-1">
+            <img
+              src="../../assets/images/banner2.svg"
+              alt="banner"
+              class="banner1"
+            />
+          </div>
+        </div>
       </div>
     </section>
     <!-- END SECTION 1 -->
-    
+
     <!-- SECTION 2 -->
     <section class="parallax-section2">
       <div class="medal gap-4">
         <div class="img-medal"></div>
-        <div class="font-montserrat">{{ "Trusted_by" | translate }} <span class="text-medal">000</span> {{ "Online_Stores_from" | translate }}</div>     
+        <div class="font-montserrat">
+          {{ "Trusted_by" | translate }} <span class="text-medal">000</span>
+          {{ "Online_Stores_from" | translate }}
+        </div>
       </div>
     </section>
     <!-- END SECTION 2 -->
@@ -170,7 +205,7 @@
               <div class="tab-phone" loading="lazy"></div>
             </div>
 
-            <div class="row col-md-6 gap-2" data-aos="fade-right">    
+            <div class="row col-md-6 gap-2" data-aos="fade-right">
               <div class="title-second">
                 {{ "Manage_stock" | translate }}
               </div>
@@ -179,10 +214,14 @@
                 <div>
                   <div class="d-flex gap-3">
                     <div id="logo-centang"></div>
-                    <p class="title-content">{{ "Update_Stock" | translate }}</p>
+                    <p class="title-content">
+                      {{ "Update_Stock" | translate }}
+                    </p>
                   </div>
                   <div>
-                    <p class="content-first">{{ "Update_Stock_Item" | translate }}</p>
+                    <p class="content-first">
+                      {{ "Update_Stock_Item" | translate }}
+                    </p>
                   </div>
                 </div>
 
@@ -192,25 +231,35 @@
                     <p class="title-content">{{ "Rantai_Pos" | translate }}</p>
                   </div>
                   <div>
-                    <p class="content-first">{{ "Online_Cashier" | translate }}</p>
+                    <p class="content-first">
+                      {{ "Online_Cashier" | translate }}
+                    </p>
                   </div>
                 </div>
-              
-              <div>
-                <div class="sign-free">
-                  <p class="fw-bold f-15 ">
-                    {{ "Sign" | translate }} <span class="text-blue">{{ "Free_Forever" | translate }}</span>
-                  </p>
-                </div>
-                <div class="d-flex justify-content-start btn-try" data-aos="fade-right">
-                  <div class="col-md-4 col-sm-5">
-                    <a href="https://rantai.tech/web/accounts/sign-up"> 
-                      <button class="btn-try-free font-montserrat">{{ "TRY_FREE" | translate }}</button>
-                    </a>
+
+                <div>
+                  <div class="sign-free">
+                    <p class="fw-bold f-15">
+                      {{ "Sign" | translate }}
+                      <span class="text-blue">{{
+                        "Free_Forever" | translate
+                      }}</span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex justify-content-start btn-try"
+                    data-aos="fade-right"
+                  >
+                    <div class="col-md-4 col-sm-5">
+                      <a href="https://rantai.tech/web/accounts/sign-up">
+                        <button class="btn-try-free font-montserrat">
+                          {{ "TRY_FREE" | translate }}
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -222,78 +271,98 @@
     <section class="parallax-section4">
       <div class="container">
         <div class="col-md-6" data-aos="fade-up">
-          <div class="image-mobile " loading="lazy">
-            <img src="../../assets/images/tokoonline.svg" class="image-mobile"/>
+          <div class="image-mobile" loading="lazy">
+            <img
+              src="../../assets/images/tokoonline.svg"
+              class="image-mobile"
+            />
           </div>
         </div>
 
         <div class="row align-items-center justify-content-center">
           <div class="row justify-content-between">
-            <div class="row col-md-6 gap-3" data-aos="fade-right">   
+            <div class="row col-md-6 gap-3" data-aos="fade-right">
               <div class="title-second">
                 {{ "Control" | translate }}
               </div>
 
               <div>
-              <div>
-                <div class="d-flex gap-3">
-                  <div id="logo-centang"></div>
-                  <p class="title-content">
-                    {{ "TRANSACTION_INFORMATION" | translate }}
-                  </p>
-                </div>
                 <div>
-                  <p class="content-first">
-                    {{ "Access_Transaction_List" | translate }}
-                  </p>
+                  <div class="d-flex gap-3">
+                    <div id="logo-centang"></div>
+                    <p class="title-content">
+                      {{ "TRANSACTION_INFORMATION" | translate }}
+                    </p>
+                  </div>
+                  <div>
+                    <p class="content-first">
+                      {{ "Access_Transaction_List" | translate }}
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div>
-                <div class="d-flex gap-3">
-                  <div id="logo-centang"></div>
-                  <p class="title-content">{{ "SCRAPE_AND_COPY" | translate }}</p>
-                </div>
                 <div>
-                  <p class="content-first">{{ "Move_or_Copy" | translate }}</p>
+                  <div class="d-flex gap-3">
+                    <div id="logo-centang"></div>
+                    <p class="title-content">
+                      {{ "SCRAPE_AND_COPY" | translate }}
+                    </p>
+                  </div>
+                  <div>
+                    <p class="content-first">
+                      {{ "Move_or_Copy" | translate }}
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div>
-                <div class="d-flex gap-3">
-                  <div id="logo-centang"></div>
-                  <p class="title-content">{{ "RANTAI_TALK" | translate }}</p>
-                </div>
                 <div>
-                  <p class="content-first">{{ "Connect_With_All" | translate }}</p>
+                  <div class="d-flex gap-3">
+                    <div id="logo-centang"></div>
+                    <p class="title-content">{{ "RANTAI_TALK" | translate }}</p>
+                  </div>
+                  <div>
+                    <p class="content-first">
+                      {{ "Connect_With_All" | translate }}
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div>
-                <div class="sign-free">
-                  <p class="fw-bold f-15 ">
-                      {{ "Sign" | translate }} <span class="text-blue">{{ "Free_Forever" | translate }}</span>
-                  </p>
-                </div>
-                <div class="d-flex justify-content-start btn-try" data-aos="fade-right">
-                  <div class="col-md-4 col-sm-5">
-                    <a href="https://rantai.tech/web/accounts/sign-up"> 
-                      <button class="btn-try-free">{{ "TRY_FREE" | translate }}</button>
-                    </a>
+                <div>
+                  <div class="sign-free">
+                    <p class="fw-bold f-15">
+                      {{ "Sign" | translate }}
+                      <span class="text-blue">{{
+                        "Free_Forever" | translate
+                      }}</span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex justify-content-start btn-try"
+                    data-aos="fade-right"
+                  >
+                    <div class="col-md-4 col-sm-5">
+                      <a href="https://rantai.tech/web/accounts/sign-up">
+                        <button class="btn-try-free">
+                          {{ "TRY_FREE" | translate }}
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
 
-          <div class="col-md-6 " data-aos="fade-up">
-            <div class="image-size" loading="lazy">
-              <img class="image-media" src="../../assets/images/tokoonline.svg"/>
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="image-size" loading="lazy">
+                <img
+                  class="image-media"
+                  src="../../assets/images/tokoonline.svg"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
     <!-- END SECTION 4 -->
 
@@ -301,35 +370,47 @@
     <section class="parallax-section5">
       <div class="container">
         <div class="row align-items-center justify-content-center">
-            <div class="col-md-6" data-aos="fade-up">
-              <div class="image-size1 tab-fiturreport" loading="lazy"></div>
-            </div>
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="image-size1 tab-fiturreport" loading="lazy"></div>
+          </div>
 
-            <div class="row col-md-6 gap-3" data-aos="fade-right">    
-              <div class="title-second">{{ "Generate_Financial_Report" | translate }}</div>
-              <div class="content-generate">{{ "More_Efficient" | translate }}</div>
+          <div class="row col-md-6 gap-3" data-aos="fade-right">
+            <div class="title-second">
+              {{ "Generate_Financial_Report" | translate }}
+            </div>
+            <div class="content-generate">
+              {{ "More_Efficient" | translate }}
+            </div>
+            <div>
               <div>
-                <div>
-                  <p class="fw-bold f-15 font-source">
-                      {{ "Sign" | translate }} <span class="text-blue">{{ "Free_Forever" | translate }}</span>
-                  </p>
-                </div>
-                <div class="d-flex justify-content-start btn-free" data-aos="fade-right">
-                  <div class="col-md-4 col-sm-5">
-                    <a href="https://rantai.tech/web/accounts/sign-up"> 
-                      <button class="btn-try-free">{{ "TRY_FREE" | translate }}</button>
-                    </a>
-                  </div>
+                <p class="fw-bold f-15 font-source">
+                  {{ "Sign" | translate }}
+                  <span class="text-blue">{{
+                    "Free_Forever" | translate
+                  }}</span>
+                </p>
+              </div>
+              <div
+                class="d-flex justify-content-start btn-free"
+                data-aos="fade-right"
+              >
+                <div class="col-md-4 col-sm-5">
+                  <a href="https://rantai.tech/web/accounts/sign-up">
+                    <button class="btn-try-free">
+                      {{ "TRY_FREE" | translate }}
+                    </button>
+                  </a>
                 </div>
               </div>
-            </div>   
+            </div>
           </div>
         </div>
+      </div>
     </section>
     <!-- END SECTION 5 -->
 
     <!-- SECTION 6 -->
-    <section> 
+    <section>
       <div class="parallax-section6">
         <div class="row">
           <div class="col">
@@ -339,7 +420,7 @@
           </div>
         </div>
         <div class="container">
-          <div class=" row">
+          <div class="row">
             <div class="col">
               <marquee scrollamount="13">
                 <div class="d-flex justify-content-center gap-5">
@@ -378,304 +459,561 @@
 
     <!-- SECTION 7 -->
     <section>
-      <div class="parallax-section7">       
+      <div class="parallax-section7">
         <div class="row justify-content-center gap-3 content-S7">
           <div class="title-blue">EVENT RANTAI</div>
           <div class="title-section7">{{ "The_Winners" | translate }}</div>
           <div class="p-S7">{{ "Check_out_top5" | translate }}</div>
-       
+
           <!-- <div class="container d-flex justify-content-center">
             <div class="slide-left"></div>
             <div class="img-s7"></div>
             <div class="slide-right"></div>
           </div> -->
 
-          <div id="carouselExampleControls" class="container d-flex justify-content-center carousel slide" data-bs-ride="carousel">           
-            <div>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="slide-right" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <div class="carousel-inner container">
+          <div
+            id="carouselExampleControls"
+            class="container d-flex justify-content-center carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="row justify-content-center">
-                  <img class="d-block img-s7">
+                <div class="box-slider">
+                  <img id="imgSlider" class="d-block img-s7 img-slider" />
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <img class="d-block img-s7">
+                <div class="box-slider">
+                  <img id="imgSlider" class="d-block img-s7 img-slider" />
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="row justify-content-center">
-                  <img class="d-block img-s7">
+                <div class="box-slider">
+                  <img id="imgSlider" class="d-block img-s7 img-slider" />
                 </div>
               </div>
-            </div> 
-            <div>
-              <button class="carousel-control-prev "type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="slide-left" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
             </div>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span class="slide-right" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span class="slide-left" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
           </div>
         </div>
         <!-- <ng-container *ngFor="let x of listGaleryTestimoni">
           <div class="row justify-content-center gap-2 toko">
             <div class="nama-toko">{{ x.tokoName}}</div>
             <div class="pemilik-toko">{{ x.ownerName }}</div>
-          </div>     
+          </div>
       </ng-container> -->
-      <div class="row justify-content-center gap-2 toko">
-        <div class="nama-toko">{{ "This_Is_Shop_Name" | translate }}</div>
-        <div class="pemilik-toko">{{ "This_Is_Shop_Owner" | translate }}</div>
-      </div>
-      <div class="footer-s7">{{ "Check_out_Rantai_Event" | translate }}</div>    
-      <div class="container media-coverage">
-        <div class="row">
-          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div  class="img-footer-s7 hover-media"></div>
-            </a>
-          </div>     
-          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div  class="img-footer-s7 hover-media"></div>
-            </a>
-          </div> 
-          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div  class="img-footer-s7 hover-media"></div>
-            </a>
-          </div> 
-          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div  class="img-footer-s7 hover-media"></div>
-            </a>
-          </div> 
-          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div  class="img-footer-s7 hover-media"></div>
-            </a>
-          </div> 
-          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div  class="img-footer-s7 hover-media"></div>
-            </a>
-          </div> 
-          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div  class="img-footer-s7 hover-media"></div>
-            </a>
-          </div> 
-          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div  class="img-footer-s7 hover-media"></div>
-            </a>
-          </div> 
-          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div  class="img-footer-s7 hover-media"></div>
-            </a>
-          </div> 
-          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div  class="img-footer-s7 hover-media"></div>
-            </a>
-          </div> 
-          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div  class="img-footer-s7 hover-media"></div>
-            </a>
-          </div> 
-          <div class="col-6 col-sm-3 col-lg-2" data-aos="zoom-in" data-aos-delay="100">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <div  class="img-footer-s7 hover-media"></div>
-            </a>
-          </div> 
+        <div class="row justify-content-center gap-2 toko">
+          <div class="nama-toko">{{ "This_Is_Shop_Name" | translate }}</div>
+          <div class="pemilik-toko">{{ "This_Is_Shop_Owner" | translate }}</div>
+        </div>
+        <div class="footer-s7">{{ "Check_out_Rantai_Event" | translate }}</div>
+        <div class="container media-coverage">
+          <div class="row">
+            <div
+              class="col-6 col-sm-3 col-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="img-footer-s7 hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="img-footer-s7 hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="img-footer-s7 hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="img-footer-s7 hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="img-footer-s7 hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="img-footer-s7 hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="img-footer-s7 hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="img-footer-s7 hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="img-footer-s7 hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="img-footer-s7 hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="img-footer-s7 hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="img-footer-s7 hover-media"></div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
     </section>
-    <!-- END SECTION 7 --> 
-        
+    <!-- END SECTION 7 -->
+
     <!-- SECTION 8 -->
-    <section class=" parallax-section8">
+    <section class="parallax-section8">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
           <div class="fw-bold" style="font-family: Montserrat; font-size: 32px">
-            <span style="color: #0b69fd; font-family: Montserrat; font-size: 32px">
-              {{ "Rantai" | translate }}</span>{{ "Chains_in_Various_Media" | translate }}
+            <span
+              style="color: #0b69fd; font-family: Montserrat; font-size: 32px"
+            >
+              {{ "Rantai" | translate }}</span
+            >{{ "Chains_in_Various_Media" | translate }}
           </div>
         </div>
         <div class="row media-coverage">
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="100">
-            <a href="https://www.beritasatu.com/ekonomi/756629/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-beritasatu hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <a
+              href="https://www.beritasatu.com/ekonomi/756629/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-beritasatu hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="200">
-            <a href="https://mediaindonesia.com/ekonomi/396038/new-normal-saatnya-lakukan-inovasi-penjualan-dan-manajemen"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 mediaindonesia hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <a
+              href="https://mediaindonesia.com/ekonomi/396038/new-normal-saatnya-lakukan-inovasi-penjualan-dan-manajemen"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 mediaindonesia hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="300">
-            <a href="https://www.tribunnews.com/bisnis/2021/04/11/aplikasi-berbasis-smart-erp-ini-mudahkan-supplier-meng-update-stok-barang-seketika"
-              target="_blank" rel="noopener noreferrer">
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <a
+              href="https://www.tribunnews.com/bisnis/2021/04/11/aplikasi-berbasis-smart-erp-ini-mudahkan-supplier-meng-update-stok-barang-seketika"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div id="imagee" class="image-size1 tribunnews hover-media"></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="400">
-            <a href="https://ekbis.sindonews.com/read/388834/34/jualan-konvesional-tak-efektif-rantai-beri-inovasi-baru-1617725084"
-              target="_blank" rel="noopener noreferrer">
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <a
+              href="https://ekbis.sindonews.com/read/388834/34/jualan-konvesional-tak-efektif-rantai-beri-inovasi-baru-1617725084"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div id="imagee" class="image-size1 sindonews hover-media"></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://inforial.tempo.co/info/1004809/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
-              target="_blank" rel="noopener noreferrer">
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://inforial.tempo.co/info/1004809/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div id="imagee" class="image-size1 logo-tempo hover-media"></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="600">
-            <a href="https://www.suara.com/bisnis/2021/04/07/135527/rantai-link-jadi-inovasi-baru-penjualan-dan-manajemen-bisnis"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-suaracom hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            <a
+              href="https://www.suara.com/bisnis/2021/04/07/135527/rantai-link-jadi-inovasi-baru-penjualan-dan-manajemen-bisnis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-suaracom hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://planet.merdeka.com/gadget/smart-erp-solusi-manajemen-bisnis-di-masa-pandemi.html?page=all"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-planetmerdeka hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://planet.merdeka.com/gadget/smart-erp-solusi-manajemen-bisnis-di-masa-pandemi.html?page=all"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-planetmerdeka hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://republika.co.id/berita/qr85z0291/kelola-bisnis-dengan-cara-konvensional-sudah-tak-relevan"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-republika hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://republika.co.id/berita/qr85z0291/kelola-bisnis-dengan-cara-konvensional-sudah-tak-relevan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-republika hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://www.jpnn.com/news/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis" target="_blank"
-              rel="noopener noreferrer">
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://www.jpnn.com/news/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div id="imagee" class="image-size1 jpncom hover-media"></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://www.wartaekonomi.co.id/read335645/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-wartaekonomi hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://www.wartaekonomi.co.id/read335645/rantai-inovasi-baru-penjualan-dan-manajemen-bisnis"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-wartaekonomi hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://today.line.me/id/v2/article/59w3ly" target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-linetoday hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://today.line.me/id/v2/article/59w3ly"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-linetoday hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://marketing.co.id/aplikasi-rantai-inovasi-baru-penjualan-dan-manajemen-bisnis/"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-marketing hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://marketing.co.id/aplikasi-rantai-inovasi-baru-penjualan-dan-manajemen-bisnis/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-marketing hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://inilah.com/ototekno/2591895/rantai-tawarkan-solusi-bisnis-berbasis-erp" target="_blank"
-              rel="noopener noreferrer">
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://inilah.com/ototekno/2591895/rantai-tawarkan-solusi-bisnis-berbasis-erp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div id="imagee" class="image-size1 inilahcom hover-media"></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://selular.id/2021/04/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/" target="_blank"
-              rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-selular hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://selular.id/2021/04/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-selular hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://teknologi.bisnis.com/read/20210407/84/1377484/cyberindo-sinergi-menawarkan-sistem-rantai-distribusi"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-bisnis hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://teknologi.bisnis.com/read/20210407/84/1377484/cyberindo-sinergi-menawarkan-sistem-rantai-distribusi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-bisnis hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://investor.id/business/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
-              target="_blank" rel="noopener noreferrer">
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://investor.id/business/platform-rantai-link-mengelola-bisnis-berbasis-smart-erp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div id="imagee" class="image-size1 investor hover-media"></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://www.antaranews.com/berita/2087550/smart-erp-solusi-manajemen-bisnis-tepat-di-kala-pandemi"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-antaranews hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://www.antaranews.com/berita/2087550/smart-erp-solusi-manajemen-bisnis-tepat-di-kala-pandemi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-antaranews hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://akurat.co/iptek/id-1294923-read-kenali-aplikasi-rantai-jualan-dan-manajemen-bisnis-bisa-cek-dari-ponsel"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-akuratcom hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://akurat.co/iptek/id-1294923-read-kenali-aplikasi-rantai-jualan-dan-manajemen-bisnis-bisa-cek-dari-ponsel"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-akuratcom hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://www.itworks.id/38677/rantai-link-solusi-manajemen-bisnis-berbasis-smart-erp.html"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-itworks hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://www.itworks.id/38677/rantai-link-solusi-manajemen-bisnis-berbasis-smart-erp.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-itworks hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://mix.co.id/marcomm/news-trend/berbasis-smart-erp-platform-rantai-tawarkan-solusi-bagi-para-pelaku-bisnis/"
-              target="_blank" rel="noopener noreferrer">
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://mix.co.id/marcomm/news-trend/berbasis-smart-erp-platform-rantai-tawarkan-solusi-bagi-para-pelaku-bisnis/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div id="imagee" class="image-size1 logo-mix hover-media"></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://techbiz.id/2021/04/rantai-hadirkan-solusi-smart-erp-untuk-manajemen-bisnis/"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-techbiz hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://techbiz.id/2021/04/rantai-hadirkan-solusi-smart-erp-untuk-manajemen-bisnis/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-techbiz hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://dailysocial.id/post/startup-saas-erp-rantai-hubungkan-distributor-dropshipper-dan-reseller-dalam-sistem-terintegrasi"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-dailysosial hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://dailysocial.id/post/startup-saas-erp-rantai-hubungkan-distributor-dropshipper-dan-reseller-dalam-sistem-terintegrasi"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-dailysosial hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://idrtimes.com/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/" target="_blank"
-              rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-idrtimes hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://idrtimes.com/rantai-solusi-baru-manajemen-bisnis-berbasis-smart-erp/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-idrtimes hover-media"
+              ></div>
             </a>
           </div>
-          <div class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
-            data-aos="zoom-in" data-aos-delay="500">
-            <a href="https://trenteknologi.com/rantai-smart-erp-inovasi-baru-penjualan-dan-manajemen-bisnis-anda/"
-              target="_blank" rel="noopener noreferrer">
-              <div id="imagee" class="image-size1 logo-trenteknologi hover-media"></div>
+          <div
+            class="col-6 col-sm-3 col-lg-2 d-flex justify-content-center align-items-center mt-md-0 p-4"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://trenteknologi.com/rantai-smart-erp-inovasi-baru-penjualan-dan-manajemen-bisnis-anda/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div
+                id="imagee"
+                class="image-size1 logo-trenteknologi hover-media"
+              ></div>
             </a>
           </div>
         </div>
@@ -732,7 +1070,7 @@
     </div>
     </section> -->
     <!-- section FAQ -->
-    
+
     <!-- section galery -->
     <!-- <section id="readmore" class="galery2" *ngIf="readMore">
       <div>
@@ -764,7 +1102,7 @@
       </div>
     </section> -->
     <!-- end section galery -->
-</div>
+  </div>
 </main>
 
 <!-- <footer id="contact" class="parallax-footer">
@@ -772,14 +1110,14 @@
     <div class="container">
       <div class="foot-conten">
         <div class="d-flex justify-content-between footer-media">
-          <div> 
+          <div>
             <p class="teks-footer" data-aos="fade-right">
               {{ "You_Need_Information" | translate }} <br />
               {{ "Contact_Us_and_Get" | translate }}
             </p>
           </div>
           <div data-aos="fade-right">
-            <a href="#contact"> 
+            <a href="#contact">
               <button class="button-footer font-montserrat">{{ "CONTACT_US" | translate }}</button>
             </a>
           </div>
@@ -809,7 +1147,7 @@
               </p>
               <div class="row justify-content-start">
                 <div class=" pt-4 teks" data-aos="fade-right">
-                  <a 
+                  <a
                     href="https://www.youtube.com/watch?v=8JxK--cp9nE"
                     class="btn col-md-8 col-sm-8 btn-footer"
                     target="_blank"
@@ -987,8 +1325,10 @@
             <div>{{ "Contact_Us_and_Get" | translate }}</div>
           </div>
           <div>
-            <a href="#contact"> 
-              <button class="button-footer">{{ "CONTACT_US" | translate }}</button>
+            <a href="#contact">
+              <button class="button-footer">
+                {{ "CONTACT_US" | translate }}
+              </button>
             </a>
           </div>
         </div>
@@ -996,57 +1336,83 @@
           <div class="border-box"></div>
         </div>
         <div class="row gap-4">
-          <div class="logo-rantai-footer" loading="lazy" data-aos="fade-left" data-aos-delay="200">
-          </div>
+          <div
+            class="logo-rantai-footer"
+            loading="lazy"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          ></div>
           <div class="d-flex justify-content-between d-footer gap-3">
             <div class="col-md-4">
-              <div class="row justify-content-start gap-2">          
-                <div class="title-content-footer">{{ "What_Is_Rantai" | translate }}</div>
+              <div class="row justify-content-start gap-2">
+                <div class="title-content-footer">
+                  {{ "What_Is_Rantai" | translate }}
+                </div>
                 <div class="çontent-footer">{{ "Rantai_Is" | translate }}</div>
               </div>
             </div>
 
             <div class="col-md-4">
               <div class="row justify-content-start gap-2">
-              <div class="title-content-footer">{{ "CHECK_OUR_VIDEO" | translate }}</div> 
-              <div class="row justify-content-start gap-2"> 
-                <div>     
-                  <a href="https://www.youtube.com/watch?v=8JxK--cp9nE" class="btn col-md-8 col-sm-8 btn-footer" target="_blank">
-                    <div class="d-flex justify-content-start gap-3">
-                      <div class="logo-video"></div>
-                      <div class="icon-video-biru"></div>
-                      <div class="btn-footer-text">Rantai Introduction</div>
-                    </div>
-                  </a> 
-                </div>  
-                <div>     
-                  <a href="https://www.youtube.com/watch?v=E3fK2pUYTts" class="btn col-md-8 col-sm-8 btn-footer" target="_blank">
-                    <div class="d-flex justify-content-start gap-3">
-                      <div class="logo-video"></div>
-                      <div class="icon-video-biru"></div>
-                      <div class="btn-footer-text">Marketplace Introduction</div>
-                    </div>
-                  </a> 
+                <div class="title-content-footer">
+                  {{ "CHECK_OUR_VIDEO" | translate }}
                 </div>
-                <div>     
-                  <a href="https://youtu.be/y-Hc7QWsOd8" class="btn col-md-8 col-sm-8 btn-footer" target="_blank">
-                    <div class="d-flex justify-content-start gap-3">
-                      <div class="logo-video"></div>
-                      <div class="icon-video-biru"></div>
-                      <div class="btn-footer-text">Marketplace Tutorial</div>
-                    </div>
-                  </a> 
+                <div class="row justify-content-start gap-2">
+                  <div>
+                    <a
+                      href="https://www.youtube.com/watch?v=8JxK--cp9nE"
+                      class="btn col-md-8 col-sm-8 btn-footer"
+                      target="_blank"
+                    >
+                      <div class="d-flex justify-content-start gap-3">
+                        <div class="logo-video"></div>
+                        <div class="icon-video-biru"></div>
+                        <div class="btn-footer-text">Rantai Introduction</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="https://www.youtube.com/watch?v=E3fK2pUYTts"
+                      class="btn col-md-8 col-sm-8 btn-footer"
+                      target="_blank"
+                    >
+                      <div class="d-flex justify-content-start gap-3">
+                        <div class="logo-video"></div>
+                        <div class="icon-video-biru"></div>
+                        <div class="btn-footer-text">
+                          Marketplace Introduction
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="https://youtu.be/y-Hc7QWsOd8"
+                      class="btn col-md-8 col-sm-8 btn-footer"
+                      target="_blank"
+                    >
+                      <div class="d-flex justify-content-start gap-3">
+                        <div class="logo-video"></div>
+                        <div class="icon-video-biru"></div>
+                        <div class="btn-footer-text">Marketplace Tutorial</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div>
+                    <a
+                      href="https://www.youtube.com/watch?v=TbvnWpw19kc"
+                      class="btn col-md-8 col-sm-8 btn-footer"
+                      target="_blank"
+                    >
+                      <div class="d-flex justify-content-start gap-3">
+                        <div class="logo-video"></div>
+                        <div class="icon-video-biru"></div>
+                        <div class="btn-footer-text">Rantai Talk</div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                <div>     
-                  <a href="https://www.youtube.com/watch?v=TbvnWpw19kc" class="btn col-md-8 col-sm-8 btn-footer" target="_blank">
-                    <div class="d-flex justify-content-start gap-3">
-                      <div class="logo-video"></div>
-                      <div class="icon-video-biru"></div>
-                      <div class="btn-footer-text">Rantai Talk</div>
-                    </div>
-                  </a> 
-                </div>
-              </div>
               </div>
             </div>
 
@@ -1056,72 +1422,92 @@
                   <p>{{ "CONTACT_US" | translate }}</p>
                 </div>
                 <div class="row gap-3">
-                <div class="d-flex justify-content-start gap-3" data-aos="fade-left" data-aos-delay="200">
-                  <div class="img-phone" loading="lazy"></div>
-                  <div class="çontent-footer">021 296 19 712</div>
-                </div>
-                <div class="d-flex justify-content-start gap-3" data-aos="fade-left" data-aos-delay="200">
-                  <div class="img-email" loading="lazy"></div>
-                  <div class="çontent-footer">support@rantai.tech</div>
-                </div>
-                <div class="d-flex justify-content-start gap-4" data-aos="fade-left" data-aos-delay="200">
-                  <div class="img-location" loading="lazy"></div>
-                  <div>
-                    <a class="çontent-footer" target="_blank" href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"> 
-                      Vinilon Building Jl. Raden Saleh Raya No.kav 13-17, RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat, DKI Jakarta 10430
+                  <div
+                    class="d-flex justify-content-start gap-3"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                  >
+                    <div class="img-phone" loading="lazy"></div>
+                    <div class="çontent-footer">021 296 19 712</div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-start gap-3"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                  >
+                    <div class="img-email" loading="lazy"></div>
+                    <div class="çontent-footer">support@rantai.tech</div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-start gap-4"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                  >
+                    <div class="img-location" loading="lazy"></div>
+                    <div>
+                      <a
+                        class="çontent-footer"
+                        target="_blank"
+                        href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
+                      >
+                        Vinilon Building Jl. Raden Saleh Raya No.kav 13-17,
+                        RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat, DKI
+                        Jakarta 10430
+                      </a>
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex justify-content-start align-items-cente footer-media"
+                  >
+                    <a
+                      href="https://www.tiktok.com/@rantai.tech?lang=en&is_copy_url=1&is_from_webapp=v1"
+                      target="_blank"
+                      data-aos="fade-up"
+                      data-aos-delay="100"
+                    >
+                      <i id="icon-tiktok"></i>
+                    </a>
+                    <a
+                      href="https://www.instagram.com/official.rantai/"
+                      target="_blank"
+                      data-aos="fade-up"
+                      data-aos-delay="200"
+                    >
+                      <i id="icon-instagram"></i>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/72025358/admin/"
+                      target="_blank"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
+                      <i id="icon-linkedin"></i>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/RantaiOfficial"
+                      target="_blank"
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                    >
+                      <i id="icon-facebook"></i>
+                    </a>
+                    <a
+                      href="https://www.youtube.com/channel/UCtScj1vp9ZV9tOZ1tcZnC4w"
+                      target="_blank"
+                      data-aos="fade-up"
+                      data-aos-delay="500"
+                    >
+                      <i id="icon-youtube"></i>
                     </a>
                   </div>
                 </div>
-                <div class="d-flex justify-content-start align-items-cente footer-media" >
-                  <a
-                    href="https://www.tiktok.com/@rantai.tech?lang=en&is_copy_url=1&is_from_webapp=v1"
-                    target="_blank"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
-                    <i id="icon-tiktok"></i>
-                  </a>
-                  <a
-                    href="https://www.instagram.com/official.rantai/"
-                    target="_blank"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                  >
-                    <i id="icon-instagram"></i>
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/72025358/admin/"
-                    target="_blank"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                  >
-                    <i id="icon-linkedin"></i>
-                  </a>
-                  <a
-                    href="https://www.facebook.com/RantaiOfficial"
-                    target="_blank"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
-                    <i id="icon-facebook"></i>
-                  </a>
-                  <a
-                    href="https://www.youtube.com/channel/UCtScj1vp9ZV9tOZ1tcZnC4w"
-                    target="_blank"
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                  >
-                    <i id="icon-youtube"></i>
-                  </a>
-                </div>
               </div>
-              </div>
-            </div>         
+            </div>
           </div>
         </div>
         <div class="border-box"></div>
       </div>
-      <div class="d-flex justify-content-between d-footer ">
+      <div class="d-flex justify-content-between d-footer">
         <div class="last-foot">
           <div class="last-footer">© 2021 PT Cyberindo Sinergi Sistem</div>
         </div>

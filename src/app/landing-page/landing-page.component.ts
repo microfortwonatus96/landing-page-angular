@@ -231,7 +231,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     }
     return true;
   }
-
   randomUrl() {
     let r = Math.floor(Math.random() * this.listcontentGalery.length);
     let str = this.listcontentGalery[r];
@@ -363,7 +362,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       });
     this.loadEvent();
     this.loadReferralCode();
-    this.carouselSlider();
+    // this.carouselSlider();
     this.loadEventTerms();
     this.loadContentFaq();
     this.loadGaleryImage();
@@ -599,6 +598,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     (<HTMLElement>slides[this.indexBtnSlide - 1]).style.display = 'block';
     dots[this.indexBtnSlide - 1].className += ' active-slider';
   }
+
   carouselSlider() {
     let i;
     let slides = document.getElementsByClassName('carousel');
