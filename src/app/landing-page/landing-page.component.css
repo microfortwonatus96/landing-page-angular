@@ -1,5 +1,4 @@
 @media only screen and (min-device-width:200px) and (max-device-width:320px) and (orientation:portrait) {
-
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width:480px) and (orientation:portrait) {
@@ -60,6 +59,8 @@
 .medal{
   height: 100px !important;
   font-size:1rem !important;
+  position: relative;
+  top: 5px;
 }
 .img-medal{
   width: 80px !important;
@@ -125,7 +126,7 @@
 
 /* footer */
 .parallax-footer{
-  height:195vh;
+  height:200vh;
 }
 .set-footer{
   position: relative;
@@ -138,7 +139,7 @@
   display:block !important;
 }
 .last-footer{
-  padding-top: 20px !important;
+  padding-top: 15px !important;
   text-align: center;
 }
 .button-footer{
@@ -165,7 +166,7 @@
 
 /* footer */
 .parallax-footer{
-  height:175vh;
+  height:180vh;
 }
 /* end footer */
 }
@@ -259,7 +260,7 @@
 
 /* footer */
 .parallax-footer{
-  height:110vh;
+  height:108vh;
 }
 .set-footer{
   position: relative;
@@ -367,7 +368,7 @@
   
   /* footer */
   .parallax-footer{
-    height:110vh;
+    height:107vh;
   }
   .set-footer{
     position: relative;
@@ -423,7 +424,7 @@
 }
   /* footer */
 .parallax-footer{
-  height:170vh;
+  height:175vh;
 }
 .btn-footer{
   width: 380px !important;
@@ -432,6 +433,9 @@
   font-size:14px !important;
 }
 /* end footer */
+}
+
+@media only screen and (min-device-width: 540px) and (max-device-width:720px) and (orientation:portrait) {
 }
 
 /************************************** Batas Media Query *********************************************/
@@ -457,25 +461,34 @@
 .f-8 {
   font-size: 0.50rem;
  }
- .f-10 {
+.f-10 {
    font-size: 0.625rem;
  }
- .f-12 {
+.f-12 {
    font-size: 0.75rem !important;
  }
- .f-14 {
+.f-14 {
    font-size: 0.875rem;
  }
- .f-15 {
+.f-15 {
    font-size: 0.9375rem !important;
  }
- .f-16 {
+.f-16 {
    font-size: 1rem;
  }
- .f-18 {
+.f-18 {
    font-size: 1.125rem;
  }
- .text-blue{
+.f-20{
+   font-size: 1.250rem;
+ }
+.f-22{
+   font-size: 1.375rem;;
+ }
+.f-24{
+   font-size: 1.500rem;
+ }
+.text-blue{
    color:#0b69fd;
  }
 .font-source{
@@ -519,7 +532,7 @@
   letter-spacing: 2px;
   font-weight: 600;
   font-family: Montserrat; 
-  font-size: 15px
+  font-size: 15px;
 }
 .title-first{
   font-size: 2rem;
@@ -557,7 +570,7 @@
   top: -10px;
 }
 section {
-  overflow: hidden;
+  overflow: hidden;;
 }
 .hover-media {
   transition: transform 1s;
@@ -602,6 +615,8 @@ section {
   cursor: pointer;
 }
 .lang-change {
+  position: relative;
+  bottom:3px;
   align-items: center;
   justify-content: center;
 }
@@ -726,13 +741,14 @@ section {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  font-family: montserrat;
 }
 .img-medal{
   content: url('../../assets/img/medal.svg');
   width: 80px;
   height: 70px;
 }
-.text-medal{
+.text-medal2{
   color:#52EEFF
 }
 /* end section 2 */
@@ -878,9 +894,6 @@ section {
   height: auto;
   content: url('../../assets/icon-news/investor.png')
 }
-.box-slider{
-  width: calc(52vw + 2rem);
-}
 .nama-toko{
   font-size: 1rem;
   color:#0B69FD;
@@ -913,6 +926,8 @@ section {
 /* section 8 */
 .parallax-section8{
   background-color: #FAFAFA;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .section-title {
   text-align: center;
@@ -1083,14 +1098,15 @@ section {
 .last-footer{
   font-size:12px;
   font-family: montserrat;
-  color: #FFFFFF
+  color: #FFFFFF;
+  cursor: pointer;
 }
 .last-foot{
   position: relative;
   top: 25px;
   font-size:12px;
   font-family: montserrat;
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 #icon-tiktok {
   content: url('../../assets/images/Icon-twitter.svg');
@@ -1127,3 +1143,48 @@ section {
   left: 10px;
 }
 /* end footer */
+
+/* section faq */
+.paralax-faq{
+  padding-top:40px;
+  padding-bottom: 40px;
+}
+.btn-faq{
+  border: 1px solid #0b69fd;
+  border-radius: 24px;
+  width:190px;
+  background-color: #0b69fd;
+  height:42px;
+  color: #fff;
+  font-size: 12px;
+  align-items:center;
+  font-family: montserrat;
+}
+.btn-faq:hover{
+  background-color: rgb(16, 98, 230);
+}
+.title-footer-faq{
+  font-size:24px;
+  font-family: montserrat;
+  font-weight: bold;
+  color: #0b69fd;
+  text-align: center;
+}
+.content-footer-faq{
+  font-size:15px;
+  font-family: source sans pro, Regular;
+  color: #1E232E;
+  text-align: center;
+}
+/* end section faq */
+
+.display-none{
+  display: none;
+}
+.display-block{
+  display: block;
+}
+#readmore {
+  position: sticky;
+  top: 150px;
+}
