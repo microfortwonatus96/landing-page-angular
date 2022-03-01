@@ -319,7 +319,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
             },
             'slow'
           );
-          //mobile vesion
+          //mobile version
           //id=main ilang  > scrollTop
         } else {
           document.getElementById('block').classList.remove('display-none');

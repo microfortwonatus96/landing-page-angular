@@ -1,7 +1,7 @@
 <header id="home">
   <nav id="navbar" class="navbar navbar-expand-md fixed-top b-navbar">
     <div class="container bg-crumb">
-      <div class="d-flex justify-content-start" style="gap: 15px">
+      <div class="d-flex justify-content-start">
         <button
           class="navbar-toggler"
           type="button"
@@ -16,7 +16,6 @@
         <a
           class="navbar-brand fw-bold d-flex justify-content-center align-items-center"
           href="/"
-          style="gap: 5px"
         >
           <div class="logo-header" loading="lazy"></div>
         </a>
@@ -25,18 +24,12 @@
       <div class="collapse navbar-collapse edit-header" id="collapsibleNavbar">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a
-              class="nav-link active fw-bold"
-              href="/"
-              style="padding-top: 15px"
-              >HOME</a
-            >
+            <a class="nav-link active fw-bold" href="/">HOME</a>
           </li>
           <li class="nav-item">
             <div
               class="nav-link pointer d-flex justify-content-center fw-bold"
               (click)="download()"
-              style="padding-top: 15px"
             >
               <div>OTHERS</div>
               &nbsp;
@@ -65,12 +58,9 @@
           </li>
 
           <li class="nav-item">
-            <a
-              class="nav-link fw-bold"
-              href="#contact"
-              style="padding-top: 15px"
-              >{{ "Contact" | translate | uppercase }}</a
-            >
+            <a class="nav-link fw-bold" href="#contact">{{
+              "Contact" | translate | uppercase
+            }}</a>
           </li>
 
           <li class="nav-item">
@@ -118,17 +108,10 @@
                     {{ "Manage_Shop" | translate }}
                   </h1>
                 </div>
-                <div class="font-source f-15 p-section1">
-                  <div>
-                    <p data-aos="fade-right">
-                      {{ "Rantai_present" | translate }}
-                    </p>
-                  </div>
-                  <div>
-                    <p data-aos="fade-right">
-                      {{ "Signup_now_or" | translate }}
-                    </p>
-                  </div>
+                <div>
+                  <p data-aos="fade-right">
+                    {{ "Signup_now_or" | translate }}
+                  </p>
                 </div>
               </div>
               <div
@@ -170,8 +153,8 @@
     <section class="parallax-section2">
       <div class="medal gap-4">
         <div class="img-medal"></div>
-        <div class="font-montserrat">
-          {{ "Trusted_by" | translate }} <span class="text-medal">000</span>
+        <div class="text-medal1">
+          {{ "Trusted_by" | translate }} <span class="text-medal2">000</span>
           {{ "Online_Stores_from" | translate }}
         </div>
       </div>
@@ -225,38 +208,36 @@
                   </div>
                 </div>
 
-                <div>
-                  <div class="d-flex gap-3">
-                    <div id="logo-centang"></div>
-                    <p class="title-content">{{ "Rantai_Pos" | translate }}</p>
-                  </div>
-                  <div>
-                    <p class="content-first">
-                      {{ "Online_Cashier" | translate }}
-                    </p>
-                  </div>
+                <div class="d-flex gap-3">
+                  <div id="logo-centang"></div>
+                  <p class="title-content">{{ "Rantai_Pos" | translate }}</p>
                 </div>
-
                 <div>
-                  <div class="sign-free">
-                    <p class="fw-bold f-15">
-                      {{ "Sign" | translate }}
-                      <span class="text-blue">{{
-                        "Free_Forever" | translate
-                      }}</span>
-                    </p>
-                  </div>
-                  <div
-                    class="d-flex justify-content-start btn-try"
-                    data-aos="fade-right"
-                  >
-                    <div class="col-md-4 col-sm-5">
-                      <a href="https://rantai.tech/web/accounts/sign-up">
-                        <button class="btn-try-free font-montserrat">
-                          {{ "TRY_FREE" | translate }}
-                        </button>
-                      </a>
-                    </div>
+                  <p class="content-first">
+                    {{ "Online_Cashier" | translate }}
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div class="sign-free">
+                  <p class="fw-bold f-15">
+                    {{ "Sign" | translate }}
+                    <span class="text-blue">{{
+                      "Free_Forever" | translate
+                    }}</span>
+                  </p>
+                </div>
+                <div
+                  class="d-flex justify-content-start btn-try"
+                  data-aos="fade-right"
+                >
+                  <div class="col-md-4 col-sm-5">
+                    <a href="https://rantai.tech/web/accounts/sign-up">
+                      <button class="btn-try-free font-montserrat">
+                        {{ "TRY_FREE" | translate }}
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -464,7 +445,6 @@
           <div class="title-blue">EVENT RANTAI</div>
           <div class="title-section7">{{ "The_Winners" | translate }}</div>
           <div class="p-S7">{{ "Check_out_top5" | translate }}</div>
-
           <!-- <div class="container d-flex justify-content-center">
             <div class="slide-left"></div>
             <div class="img-s7"></div>
@@ -644,11 +624,8 @@
     <section class="parallax-section8">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <div class="fw-bold" style="font-family: Montserrat; font-size: 32px">
-            <span
-              style="color: #0b69fd; font-family: Montserrat; font-size: 32px"
-            >
-              {{ "Rantai" | translate }}</span
+          <div class="title-first">
+            <span class="text-blue">{{ "Rantai" | translate }}</span
             >{{ "Chains_in_Various_Media" | translate }}
           </div>
         </div>
@@ -1021,54 +998,59 @@
     </section>
 
     <!-- section FAQ -->
-    <!-- <section>
-    <div >
-      <p class="title-sb"> {{ "Frequently" | translate }}</p>
-      <p class="paragraf-sb"> {{ "We_are_here" | translate }} </p>
-    </div>
+    <section id="readmore" class="paralax-faq" *ngIf="readMore">
+      <div class="container">
+        <div>
+          <p class="title-first">{{ "Frequently" | translate }}</p>
+          <p class="content-footer-faq">{{ "We_are_here" | translate }}</p>
+        </div>
 
-    <div class="container">
-      <div class="row justify-content-start">
-        <div class="col-6" >
-          <ng-container *ngFor="let x of dataContent; let d = index">
-            <div *ngIf="checkOdd(e)" class=" box">
-
-                <app-faq [content]="'aaaaa \n bb'"></app-faq>
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-6">
+              <ng-container *ngFor="let x of dataContent; let d = index">
+                <div *ngIf="checkOdd(e)" class="box">
+                  <app-faq [content]="'aaaaa \n bb'"></app-faq>
+                </div>
+                <div
+                  *ngIf="!checkOdd(e)"
+                  class="col-6 box-faq title-montserrat"
+                >
+                  <app-faq [content]="x"></app-faq>
+                </div>
+              </ng-container>
             </div>
-            <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat" >
-              <app-faq [content]="x"></app-faq>
+            <div class="col-6">
+              <ng-container *ngFor="let x of dataContent; let d = index">
+                <div *ngIf="checkOdd(e)" class="box">
+                  <app-faq [content]="'aaaaa \n bb'"></app-faq>
+                </div>
+                <div
+                  *ngIf="!checkOdd(e)"
+                  class="col-6 box-faq title-montserrat"
+                >
+                  <app-faq [content]="x"></app-faq>
+                </div>
+              </ng-container>
             </div>
-          </ng-container>
-      </div>
-      <div class="col-6">
-          <ng-container *ngFor="let x of dataContent; let d = index">
-            <div *ngIf="checkOdd(e)" class=" box">
+          </div>
+        </div>
 
-                <app-faq [content]="'aaaaa \n bb'"></app-faq>
-            </div>
-            <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat" >
-              <app-faq [content]="x"></app-faq>
-            </div>
-          </ng-container>
+        <div class="row justify-content-start mt-5">
+          <p class="title-footer-faq" data-aos="fade-right">
+            {{ "Still_have" | translate }}
+          </p>
+          <p class="title-silver">
+            {{ "Haven't_found" | translate }}<br />{{ "is_always" | translate }}
+          </p>
+        </div>
+        <div class="d-flex justify-content-center" data-aos="fade-right">
+          <a href="#contact">
+            <button class="btn-faq">{{ "CONTACT_US" | translate }}</button>
+          </a>
+        </div>
       </div>
-      </div>
-      </div>
-
-      <div>
-        <p class="footer-s10" data-aos="fade-right">
-          {{ "Still_have" | translate }}
-        </p>
-        <p class="footer-text-s10" >
-          {{ "Haven't_found" | translate }}<br>{{ "is_always" | translate }}
-        </p>
-      </div>
-
-      <div class="row justify-content-center">
-        <a href="#contact" >
-          <button  id="mybtn">{{ "CONTACT_US" | translate }}</button>
-        </a>
-    </div>
-    </section> -->
+    </section>
     <!-- section FAQ -->
 
     <!-- section galery -->
@@ -1315,6 +1297,7 @@
     </div>
   </div>
 </footer> -->
+
 <footer id="contact">
   <div class="parallax-footer">
     <div class="container set-footer">
@@ -1342,7 +1325,7 @@
             data-aos="fade-left"
             data-aos-delay="200"
           ></div>
-          <div class="d-flex justify-content-between d-footer gap-3">
+          <div class="d-flex justify-content-between d-footer gap-4">
             <div class="col-md-4">
               <div class="row justify-content-start gap-2">
                 <div class="title-content-footer">
@@ -1512,9 +1495,9 @@
           <div class="last-footer">© 2021 PT Cyberindo Sinergi Sistem</div>
         </div>
         <div class="d-flex justify-content-start gap-4 last-foot">
-          <a href="#" class="last-footer"><div>FAQ</div></a>
-          <a href="#" class="last-footer"><div>Terms of Service</div></a>
-          <a href="#" class="last-footer"><div>Help Center</div></a>
+          <div (click)="selengkapnya()" class="last-footer"><div>FAQ</div></div>
+          <div href="#" class="last-footer"><div>Terms of Service</div></div>
+          <div href="#" class="last-footer"><div>Help Center</div></div>
         </div>
       </div>
     </div>
