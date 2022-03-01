@@ -1298,8 +1298,8 @@ section {
 
 /* section faq */
 .paralax-faq{
-  padding-top:40px;
-  padding-bottom: 40px;
+  padding-block:100px;
+  position: relative;
 }
 .btn-faq{
   border: 1px solid #0b69fd;

@@ -997,62 +997,6 @@
       </div>
     </section>
 
-    <!-- section FAQ -->
-    <section id="readmore" class="paralax-faq" *ngIf="readMore">
-      <div class="container">
-        <div>
-          <p class="title-first">{{ "Frequently" | translate }}</p>
-          <p class="content-footer-faq">{{ "We_are_here" | translate }}</p>
-        </div>
-
-        <div class="container">
-          <div class="row justify-content-start">
-            <div class="col-6">
-              <ng-container *ngFor="let x of dataContent; let d = index">
-                <div *ngIf="checkOdd(e)" class="box">
-                  <app-faq [content]="'aaaaa \n bb'"></app-faq>
-                </div>
-                <div
-                  *ngIf="!checkOdd(e)"
-                  class="col-6 box-faq title-montserrat"
-                >
-                  <app-faq [content]="x"></app-faq>
-                </div>
-              </ng-container>
-            </div>
-            <div class="col-6">
-              <ng-container *ngFor="let x of dataContent; let d = index">
-                <div *ngIf="checkOdd(e)" class="box">
-                  <app-faq [content]="'aaaaa \n bb'"></app-faq>
-                </div>
-                <div
-                  *ngIf="!checkOdd(e)"
-                  class="col-6 box-faq title-montserrat"
-                >
-                  <app-faq [content]="x"></app-faq>
-                </div>
-              </ng-container>
-            </div>
-          </div>
-        </div>
-
-        <div class="row justify-content-start mt-5">
-          <p class="title-footer-faq" data-aos="fade-right">
-            {{ "Still_have" | translate }}
-          </p>
-          <p class="title-silver">
-            {{ "Haven't_found" | translate }}<br />{{ "is_always" | translate }}
-          </p>
-        </div>
-        <div class="d-flex justify-content-center" data-aos="fade-right">
-          <a href="#contact">
-            <button class="btn-faq">{{ "CONTACT_US" | translate }}</button>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- section FAQ -->
-
     <!-- section galery -->
     <!-- <section id="readmore" class="galery2" *ngIf="readMore">
       <div>
@@ -1085,6 +1029,55 @@
     </section> -->
     <!-- end section galery -->
   </div>
+  <!-- section FAQ -->
+  <section id="readmore" class="paralax-faq" *ngIf="readMore">
+    <div class="container">
+      <div>
+        <p class="title-first">{{ "Frequently" | translate }}</p>
+        <p class="content-footer-faq">{{ "We_are_here" | translate }}</p>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-6">
+            <ng-container *ngFor="let x of dataContent; let d = index">
+              <div *ngIf="checkOdd(e)" class="box">
+                <app-faq [content]="'aaaaa \n bb'"></app-faq>
+              </div>
+              <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat">
+                <app-faq [content]="x"></app-faq>
+              </div>
+            </ng-container>
+          </div>
+          <div class="col-6">
+            <ng-container *ngFor="let x of dataContent; let d = index">
+              <div *ngIf="checkOdd(e)" class="box">
+                <app-faq [content]="'aaaaa \n bb'"></app-faq>
+              </div>
+              <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat">
+                <app-faq [content]="x"></app-faq>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-start mt-5">
+        <p class="title-footer-faq" data-aos="fade-right">
+          {{ "Still_have" | translate }}
+        </p>
+        <p class="title-silver">
+          {{ "Haven't_found" | translate }}<br />{{ "is_always" | translate }}
+        </p>
+      </div>
+      <div class="d-flex justify-content-center" data-aos="fade-right">
+        <a href="#contact">
+          <button class="btn-faq">{{ "CONTACT_US" | translate }}</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- section FAQ -->
 </main>
 
 <!-- <footer id="contact" class="parallax-footer">

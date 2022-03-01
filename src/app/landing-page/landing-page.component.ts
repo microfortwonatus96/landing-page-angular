@@ -307,7 +307,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.readMore = false;
     this.activatedRoute.queryParams.subscribe((re) => {
       if (re) {
-        this.readMore = re['more'] !== undefined;
+        this.readMore = re['faq'] !== undefined;
         if (this.readMore) {
           document.getElementById('block').classList.add('display-none');
           document.getElementById('block').classList.remove('display-block');
@@ -695,7 +695,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.router.navigate([], {
       relativeTo: this.activatedRoute,
       queryParams: {
-        more: 'true',
+        faq: 'true',
       },
 
       queryParamsHandling: 'merge',
