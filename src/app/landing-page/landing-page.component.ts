@@ -47,21 +47,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     'dLorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
     'e',
     'f',
-    'g',
-    'h',
-    'i',
-    'j',
-    'k',
-    'm',
-    'n',
-    'o',
-    'p',
-    'q',
-    'r',
-    's',
-    't',
-    'u',
-    'u',
   ];
   show = true;
   date = new Date();
@@ -311,6 +296,10 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         if (this.readMore) {
           document.getElementById('block').classList.add('display-none');
           document.getElementById('block').classList.remove('display-block');
+          document.getElementById('navbar').classList.add('b-navbar1');
+          document.getElementById('navbar').classList.remove('b-navbar');
+          document.getElementById('navbar-t').classList.add('navbar-toggler-icon1');
+          document.getElementById('navbar-t').classList.remove('navbar-toggler-icon');
 
           // $('html, body').animate({ scrollTop: 0 }, 'slow');
           $('html, body').animate(
@@ -319,6 +308,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
             },
             'slow'
           );
+
           //mobile version
           //id=main ilang  > scrollTop
         } else {

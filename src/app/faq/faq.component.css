@@ -1,3 +1,12 @@
+@media only screen and (min-device-width: 360px) and (max-device-width:480px) and (orientation:portrait) {
+  .konten1{
+    width: 380% !important;
+  }
+  .icon{
+    position: relative !important;
+    left:0px !important;
+  }
+}
 .konten1{
     border: 1px solid #DDE2EB;
     width: 180%;
