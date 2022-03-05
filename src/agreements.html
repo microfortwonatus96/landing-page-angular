@@ -75,7 +75,7 @@
       .t-desc {
         font-size: 0.75rem;
         padding: 10px 0px;
-        vertical-align: top;
+        /* vertical-align: top; */
       }
       .fw-sm-bold {
         font-weight: 500;
@@ -137,7 +137,7 @@
 
       @media only screen and (min-width: 320px) and (max-width: 480px) {
         .box-container {
-          width: 90%;
+          width: calc(100% - 10%);
           padding: 30px 20px;
         }
         .box-header > span {
@@ -146,6 +146,22 @@
         .t-title {
           font-size: 1rem;
           font-weight: 600;
+        }
+        ::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar {
+          width: 10px;
+          height: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          -webkit-box-shadow: inset 0 0 6px rgba(2, 2, 2, 0.5);
+          background-color: rgb(73, 72, 72);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
         }
       }
     </style>
