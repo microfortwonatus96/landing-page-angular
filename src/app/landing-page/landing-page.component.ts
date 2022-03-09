@@ -26,10 +26,10 @@ import {
   TermCondition,
 } from '../models/referral.model';
 import { GaleryService } from '../service/customer-galery.service';
-import { Galery, ITestimoni } from '../models/galery.model';
+import { Galery } from '../models/galery.model';
 import { CountdownEventService } from '../service/countdown-event.service';
 import { TestimoniService } from '../service/testimoni.service';
-import {lTestimoni} from '../models/testimoni.model';
+import { ITestimoni } from '../models/testimoni.model';
 declare var $: any;
 
 @Component({
@@ -175,7 +175,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   faqSideLeft = [];
   faqSideRight = [];
   listcontentGalery: string[] = [];
-  listImageTestimoni: lTestimoni[] = [];
+  listImageTestimoni: ITestimoni[] = [];
   listGaleryTestimoni: ITestimoni[] = [];
   setColor: boolean = false;
   showMore: boolean = false;
@@ -291,6 +291,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         $(this).find('.box-medal').removeClass('box-medal');
       });
     });
+    $('#carouselExampleControls').carousel();
   }
 
   ngOnInit(): void {
@@ -304,8 +305,12 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
           document.getElementById('block').classList.remove('display-block');
           document.getElementById('navbar').classList.add('b-navbar1');
           document.getElementById('navbar').classList.remove('b-navbar');
-          document.getElementById('navbar-t').classList.add('navbar-toggler-icon1');
-          document.getElementById('navbar-t').classList.remove('navbar-toggler-icon');
+          document
+            .getElementById('navbar-t')
+            .classList.add('navbar-toggler-icon1');
+          document
+            .getElementById('navbar-t')
+            .classList.remove('navbar-toggler-icon');
 
           // $('html, body').animate({ scrollTop: 0 }, 'slow');
           $('html, body').animate(
@@ -323,7 +328,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         }
       }
     });
-
 
     this.settingArray();
     this.getProvince();
@@ -366,16 +370,17 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadTimeServer();
   }
 
-  loadTestimoniImage(){
+  loadTestimoniImage() {
     this.testimoniService
-    .getTestimoni()
-    .pipe(takeWhile(() =>this.alive))
-    .subscribe((res: any) => {
-      console.log("data", res);
-      if(res){ 
-        this.listImageTestimoni = [...res.content];
-      }
-    });
+      .getTestimoni()
+      .pipe(takeWhile(() => this.alive))
+      .subscribe((res: any) => {
+        if (res) {
+          this.listImageTestimoni = [...res.content];
+
+          console.log('data pemenang', this.listImageTestimoni);
+        }
+      });
   }
 
   loadGaleryImage() {
