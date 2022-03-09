@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Kelola Bisnis Anda dengan Aplikasi distribusi barang terintegrasi |
+      Rantai.Tech
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/ic/rantai-icon.svg" />
+    <meta name="author" content="PT. Cyberindo Sinergi Sistem" />
+    <meta
+      name="description"
+      content="Aplikasi Omnichannel & Distribusi Barang Rantai inovasi baru yang dapat memudahkan proses penjualan & manajemen bisnis."
+    />
+    <meta
+      name="keywords"
+      content="omnichannel, toko online, marketplace, erp, ecommerce, rantai, warehouse, sistem, system, accounting, bisnis,
+      business, gudang, barang, item, product, stock, marketplace, software distributor, software distribusi, rantaitalk, rantai,
+      software distribution, distribution"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-151362921-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-151362921-1");
+    </script>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: rgb(8, 79, 191);
+        background: linear-gradient(
+          180deg,
+          rgba(8, 79, 191, 1) 0%,
+          rgba(75, 107, 246, 1) 84%
+        );
+        overflow: hidden;
+        font-family: "Montserrat", sans-serif;
+      }
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar {
+        width: 12px;
+        height: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(2, 2, 2, 0.5);
+        background-color: rgb(73, 72, 72);
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+      }
+
+      .f-12 {
+        font-size: 0.75rem;
+      }
+      .f-14 {
+        font-size: 0.875rem;
+      }
+      .t-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      .t-subtitle {
+        font-size: 1rem;
+      }
+      .t-subtitle > div {
+        font-weight: 600;
+      }
+      .t-desc {
+        font-size: 0.75rem;
+        padding: 10px 0px;
+        /* vertical-align: top; */
+      }
+      .fw-sm-bold {
+        font-weight: 500;
+      }
+      .fw-bold {
+        font-weight: bold;
+      }
+      .fw-sm-bold {
+        font-weight: 600;
+      }
+      .padd-10 {
+        padding: 10px 0;
+      }
+      a {
+        color: blue;
+      }
+      .t-color {
+        color: blue;
+      }
+
+      .container {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+      .box-container {
+        position: relative;
+        margin: 0 auto;
+        box-shadow: 0px 0px 2px 2px rgb(0 0 0 / 4%);
+        background: #fff;
+        width: 60%;
+        padding: 30px 50px;
+        top: 25px;
+      }
+      .box-header {
+        padding: 15px 0px;
+        line-height: 1;
+      }
+      .box-header > span {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      .border-header {
+        width: 100%;
+        background-color: #ddd;
+        height: 2px;
+      }
+      .box-content {
+        width: 100%;
+        padding-top: 20px;
+        margin: 0;
+      }
+      .subtitle {
+        padding-bottom: 10px;
+      }
+      ul li {
+        font-size: 20px;
+      }
+
+      @media only screen and (min-width: 320px) and (max-width: 480px) {
+        .box-container {
+          width: calc(100% - 10%);
+          padding: 30px 20px;
+        }
+        .box-header > span {
+          font-size: 1.2rem;
+        }
+        .t-title {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+        ::-webkit-scrollbar-track {
+          -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar {
+          width: 10px;
+          height: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          -webkit-box-shadow: inset 0 0 6px rgba(2, 2, 2, 0.5);
+          background-color: rgb(73, 72, 72);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-container">
+        <div class="box-header">
+          <span>Terms and Conditions</span>
+        </div>
+        <div class="border-header"></div>
+        <div class="box-content">
+          <div class="subtitle">
+            <div class="t-title">Terms and Conditions ("Terms")</div>
+          </div>
+          <div class="t-desc">
+            <div>
+              Our Terms and Conditions were last updated on March 4, 2022.
+            </div>
+            <div>
+              Please read these terms and conditions carefully before using Our
+              Service.
+            </div>
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>Interpretation and Definitions</div>
+          </div>
+          <div class="f-14 fw-sm-bold padd-10">Interpretation</div>
+          <div class="t-desc">
+            <span
+              >The words of which the initial letter is capitalized have
+              meanings defined under the following conditions. The following
+              definitions shall have the same meaning regardless of whether they
+              appear in singular or in plural.</span
+            >
+          </div>
+          <div class="f-14 fw-sm-bold padd-10">Definitions</div>
+          <div class="t-desc">
+            <span>For the purposes of these Terms and Conditions:</span>
+          </div>
+          <ul>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;Application&rdquo;</b>
+                means the software program provided by the Company downloaded by
+                You on any electronic device, named RANTAI
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;Application Store&rdquo; </b>
+                means the digital distribution service operated and developed by
+                Apple Inc. (Apple App Store) or Google Inc. (Google Play Store)
+                in which the Application has been downloaded.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;Affiliate&rdquo; </b>
+                means an entity that controls, is controlled by or is under
+                common control with a party, where "control" means ownership of
+                50% or more of the shares, equity interest or other securities
+                entitled to vote for election of directors or other managing
+                authority.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;Account&rdquo;</b>
+                means a unique account created for You to access our Service or
+                parts of our Service.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;Company&rdquo;</b>
+                (referred to as either "the Company", "We", "Us" or "Our" in
+                this Agreement) refers to PT. Cyberindo Sinergi Sistem.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;Country&rdquo;</b>
+                refers to Indonesian.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;Content&rdquo;</b>
+                refers to content such as text, images, or other information
+                that can be posted, uploaded, linked to or otherwise made
+                available by You, regardless of the form of that content.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;Device&rdquo;</b>
+                means any device that can access the Service such as a computer,
+                a cell phone or a digital tablet.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;Feedback&rdquo;</b>
+                means feedback, innovations or suggestions sent by You regarding
+                the attributes, performance or features of our Service.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;Service&rdquo;</b>
+                refers to the Website.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;Terms and Conditions&rdquo;</b>
+                (also referred as "Terms") mean these Terms and Conditions that
+                form the entire agreement between You and the Company regarding
+                the use of the Service. This Terms and Conditions Agreement was
+                generated by TermsFeed Mobile App Terms and Conditions
+                Generator.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold"
+                  >&ldquo;Third-party Social Media Service&rdquo;</b
+                >
+                means any services or content (including data, information,
+                products or services) provided by a third-party that may be
+                displayed, included or made available by the Service.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;Website&rdquo;</b> refers to
+                Rantai.tech, accessible from
+                <a href="https://rantai.tech">https://rantai.tech</a>
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                ><b class="fw-bold">&ldquo;You&rdquo;</b>
+                means the individual accessing or using the Service, or the
+                company, or other legal entity on behalf of which such
+                individual is accessing or using the Service, as applicable.
+              </span>
+            </li>
+          </ul>
+
+          <div class="t-subtitle padd-10">
+            <div>Acknowledgment</div>
+          </div>
+          <div class="t-desc">
+            <span
+              >These are the Terms and Conditions governing the use of this
+              Service and the agreement that operates between You and the
+              Company. These Terms and Conditions set out the rights and
+              obligations of all users regarding the use of the Service.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >Your access to and use of the Service is conditioned on Your
+              acceptance of and compliance with these Terms and Conditions.
+              These Terms and Conditions apply to all visitors, users and others
+              who access or use the Service.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >By accessing or using the Service You agree to be bound by these
+              Terms and Conditions. If You disagree with any part of these Terms
+              and Conditions then You may not access the Service.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >You represent that you are over the age of 18. The Company does
+              not permit those under 18 to use the Service.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >Your access to and use of the Service is also conditioned on Your
+              acceptance of and compliance with the Privacy Policy of the
+              Company. Our Privacy Policy describes Our policies and procedures
+              on the collection, use and disclosure of Your personal information
+              when You use the Application or the Website and tells You about
+              Your privacy rights and how the law protects You. Please read Our
+              Privacy Policy carefully before using Our Service.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>User Accounts</div>
+          </div>
+          <div class="t-desc">
+            <span
+              >When You create an account with Us, You must provide Us
+              information that is accurate, complete, and current at all times.
+              Failure to do so constitutes a breach of the Terms, which may
+              result in immediate termination of Your account on Our
+              Service.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >You are responsible for safeguarding the password that You use to
+              access the Service and for any activities or actions under Your
+              password, whether Your password is with Our Service or a
+              Third-Party Social Media Service.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >You agree not to disclose Your password to any third party. You
+              must notify Us immediately upon becoming aware of any breach of
+              security or unauthorized use of Your account.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >You may not use as a username the name of another person or
+              entity or that is not lawfully available for use, a name or
+              trademark that is subject to any rights of another person or
+              entity other than You without appropriate authorization, or a name
+              that is otherwise offensive, vulgar or obscene.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>Content</div>
+          </div>
+          <div class="f-14 fw-sm-bold padd-10">Your Right to Post Content</div>
+          <div class="t-desc">
+            <span
+              >Our Service allows You to post Content. You are responsible for
+              the Content that You post to the Service, including its legality,
+              reliability, and appropriateness.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >By posting Content to the Service, You grant Us the right and
+              license to use, modify, publicly perform, publicly display,
+              reproduce, and distribute such Content on and through the Service.
+              You retain any and all of Your rights to any Content You submit,
+              post or display on or through the Service and You are responsible
+              for protecting those rights. You agree that this license includes
+              the right for Us to make Your Content available to other users of
+              the Service, who may also use Your Content subject to these
+              Terms.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >You represent and warrant that: (i) the Content is Yours (You own
+              it) or You have the right to use it and grant Us the rights and
+              license as provided in these Terms, and (ii) the posting of Your
+              Content on or through the Service does not violate the privacy
+              rights, publicity rights, copyrights, contract rights or any other
+              rights of any person.</span
+            >
+          </div>
+          <div class="f-14 fw-sm-bold padd-10">Content Restrictions</div>
+          <div class="t-desc">
+            <span
+              >The Company is not responsible for the content of the Service's
+              users. You expressly understand and agree that You are solely
+              responsible for the Content and for all activity that occurs under
+              your account, whether done so by You or any third person using
+              Your account.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >You may not transmit any Content that is unlawful, offensive,
+              upsetting, intended to disgust, threatening, libelous, defamatory,
+              obscene or otherwise objectionable. Examples of such objectionable
+              Content include, but are not limited to, the following:</span
+            >
+          </div>
+          <ul>
+            <li>
+              <span class="t-desc"
+                >Unlawful or promoting unlawful activity.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                >Defamatory, discriminatory, or mean-spirited content, including
+                references or commentary about religion, race, sexual
+                orientation, gender, national/ethnic origin, or other targeted
+                groups.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                >Spam, machine – or randomly – generated, constituting
+                unauthorized or unsolicited advertising, chain letters, any
+                other form of unauthorized solicitation, or any form of lottery
+                or gambling.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                >Containing or installing any viruses, worms, malware, trojan
+                horses, or other content that is designed or intended to
+                disrupt, damage, or limit the functioning of any software,
+                hardware or telecommunications equipment or to damage or obtain
+                unauthorized access to any data or other information of a third
+                person.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                >Infringing on any proprietary rights of any party, including
+                patent, trademark, trade secret, copyright, right of publicity
+                or other rights.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                >Impersonating any person or entity including the Company and
+                its employees or representatives.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                >Violating the privacy of any third person.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc">False information and features. </span>
+            </li>
+          </ul>
+          <div class="t-desc">
+            <span
+              >The Company reserves the right, but not the obligation, to, in
+              its sole discretion, determine whether or not any Content is
+              appropriate and complies with this Terms, refuse or remove this
+              Content. The Company further reserves the right to make formatting
+              and edits and change the manner of any Content. The Company can
+              also limit or revoke the use of the Service if You post such
+              objectionable Content. As the Company cannot control all content
+              posted by users and/or third parties on the Service, you agree to
+              use the Service at your own risk. You understand that by using the
+              Service You may be exposed to content that You may find offensive,
+              indecent, incorrect or objectionable, and You agree that under no
+              circumstances will the Company be liable in any way for any
+              content, including any errors or omissions in any content, or any
+              loss or damage of any kind incurred as a result of your use of any
+              content.</span
+            >
+          </div>
+          <div class="f-14 fw-sm-bold padd-10">Content Backups</div>
+          <div class="t-desc">
+            <span
+              >Although regular backups of Content are performed, the Company
+              does not guarantee there will be no loss or corruption of
+              data.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >Corrupt or invalid backup points may be caused by, without
+              limitation, Content that is corrupted prior to being backed up or
+              that changes during the time a backup is performed.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >The Company will provide support and attempt to troubleshoot any
+              known or discovered issues that may affect the backups of Content.
+              But You acknowledge that the Company has no liability related to
+              the integrity of Content or the failure to successfully restore
+              Content to a usable state.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >You agree to maintain a complete and accurate copy of any Content
+              in a location independent of the Service.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>Copyright Policy</div>
+          </div>
+          <div class="f-14 fw-sm-bold padd-10">
+            Intellectual Property Infringement
+          </div>
+          <div class="t-desc">
+            <span
+              >We respect the intellectual property rights of others. It is Our
+              policy to respond to any claim that Content posted on the Service
+              infringes a copyright or other intellectual property infringement
+              of any person.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >If You are a copyright owner, or authorized on behalf of one, and
+              You believe that the copyrighted work has been copied in a way
+              that constitutes copyright infringement that is taking place
+              through the Service, You must submit Your notice in writing to the
+              attention of our copyright agent via email (support@rantai.tech)
+              and include in Your notice a detailed description of the alleged
+              infringement.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >You may be held accountable for damages (including costs and
+              attorneys' fees) for misrepresenting that any Content is
+              infringing Your copyright.</span
+            >
+          </div>
+          <div class="f-14 fw-sm-bold padd-10">
+            DMCA Notice and DMCA Procedure for Copyright Infringement Claims
+          </div>
+          <div class="t-desc">
+            <span
+              >You may submit a notification pursuant to the Digital Millennium
+              Copyright Act (DMCA) by providing our Copyright Agent with the
+              following information in writing (see 17 U.S.C 512(c)(3) for
+              further detail):</span
+            >
+          </div>
+          <ul>
+            <li>
+              <span class="t-desc"
+                >An electronic or physical signature of the person authorized to
+                act on behalf of the owner of the copyright's interest.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                >A description of the copyrighted work that You claim has been
+                infringed, including the URL (i.e., web page address) of the
+                location where the copyrighted work exists or a copy of the
+                copyrighted work.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                >Identification of the URL or other specific location on the
+                Service where the material that You claim is infringing is
+                located.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                >Your address, telephone number, and email address.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                >A statement by You that You have a good faith belief that the
+                disputed use is not authorized by the copyright owner, its
+                agent, or the law.
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                >A statement by You, made under penalty of perjury, that the
+                above information in Your notice is accurate and that You are
+                the copyright owner or authorized to act on the copyright
+                owner's behalf.
+              </span>
+            </li>
+          </ul>
+          <div class="t-desc">
+            <span
+              >You can contact our copyright agent via email
+              (support@rantai.tech). Upon receipt of a notification, the Company
+              will take whatever action, in its sole discretion, it deems
+              appropriate, including removal of the challenged content from the
+              Service.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>Intellectual Property</div>
+          </div>
+          <div class="t-desc">
+            <span
+              >The Service and its original content (excluding Content provided
+              by You or other users), features and functionality are and will
+              remain the exclusive property of the Company and its
+              licensors.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >The Service is protected by copyright, trademark, and other laws
+              of both the Country and foreign countries.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >Our trademarks and trade dress may not be used in connection with
+              any product or service without the prior written consent of the
+              Company.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>Your Feedback to Us</div>
+          </div>
+          <div class="t-desc">
+            <span
+              >You assign all rights, title and interest in any Feedback You
+              provide the Company. If for any reason such assignment is
+              ineffective, You agree to grant the Company a non-exclusive,
+              perpetual, irrevocable, royalty free, worldwide right and license
+              to use, reproduce, disclose, sub-license, distribute, modify and
+              exploit such Feedback without restriction.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>Links to Other Websites</div>
+          </div>
+          <div class="t-desc">
+            <span
+              >Our Service may contain links to third-party web sites or
+              services that are not owned or controlled by the Company.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >The Company has no control over, and assumes no responsibility
+              for, the content, privacy policies, or practices of any third
+              party web sites or services. You further acknowledge and agree
+              that the Company shall not be responsible or liable, directly or
+              indirectly, for any damage or loss caused or alleged to be caused
+              by or in connection with the use of or reliance on any such
+              content, goods or services available on or through any such web
+              sites or services.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >We strongly advise You to read the terms and conditions and
+              privacy policies of any third-party web sites or services that You
+              visit.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>Termination</div>
+          </div>
+          <div class="t-desc">
+            <span
+              >We may terminate or suspend Your Account immediately, without
+              prior notice or liability, for any reason whatsoever, including
+              without limitation if You breach these Terms and Conditions.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >Upon termination, Your right to use the Service will cease
+              immediately. If You wish to terminate Your Account, You may simply
+              discontinue using the Service.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>&quot;AS IS&quot; and &quot;AS AVAILABLE&quot; Disclaimer</div>
+          </div>
+          <div class="t-desc">
+            <span
+              >The Service is provided to You "AS IS" and "AS AVAILABLE" and
+              with all faults and defects without warranty of any kind. To the
+              maximum extent permitted under applicable law, the Company, on its
+              own behalf and on behalf of its Affiliates and its and their
+              respective licensors and service providers, expressly disclaims
+              all warranties, whether express, implied, statutory or otherwise,
+              with respect to the Service, including all implied warranties of
+              merchantability, fitness for a particular purpose, title and
+              non-infringement, and warranties that may arise out of course of
+              dealing, course of performance, usage or trade practice. Without
+              limitation to the foregoing, the Company provides no warranty or
+              undertaking, and makes no representation of any kind that the
+              Service will meet Your requirements, achieve any intended results,
+              be compatible or work with any other software, applications,
+              systems or services, operate without interruption, meet any
+              performance or reliability standards or be error free or that any
+              errors or defects can or will be corrected.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >Without limiting the foregoing, neither the Company nor any of
+              the company's provider makes any representation or warranty of any
+              kind, express or implied: (i) as to the operation or availability
+              of the Service, or the information, content, and materials or
+              products included thereon; (ii) that the Service will be
+              uninterrupted or error-free; (iii) as to the accuracy,
+              reliability, or currency of any information or content provided
+              through the Service; or (iv) that the Service, its servers, the
+              content, or e-mails sent from or on behalf of the Company are free
+              of viruses, scripts, trojan horses, worms, malware, timebombs or
+              other harmful components.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >Some jurisdictions do not allow the exclusion of certain types of
+              warranties or limitations on applicable statutory rights of a
+              consumer, so some or all of the above exclusions and limitations
+              may not apply to You. But in such a case the exclusions and
+              limitations set forth in this section shall be applied to the
+              greatest extent enforceable under applicable law.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>Governing Law</div>
+          </div>
+          <div class="t-desc">
+            <span
+              >The laws of the Country, excluding its conflicts of law rules,
+              shall govern this Terms and Your use of the Service. Your use of
+              the Application may also be subject to other local, state,
+              national, or international laws.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>Disputes Resolution</div>
+          </div>
+          <div class="t-desc">
+            <span
+              >If You have any concern or dispute about the Service, You agree
+              to first try to resolve the dispute informally by contacting the
+              Company.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>Severability and Waiver</div>
+          </div>
+          <div class="f-14 fw-sm-bold padd-10">Severability</div>
+          <div class="t-desc">
+            <span
+              >If any provision of these Terms is held to be unenforceable or
+              invalid, such provision will be changed and interpreted to
+              accomplish the objectives of such provision to the greatest extent
+              possible under applicable law and the remaining provisions will
+              continue in full force and effect.</span
+            >
+          </div>
+          <div class="f-14 fw-sm-bold padd-10">Waiver</div>
+          <div class="t-desc">
+            <span
+              >Except as provided herein, the failure to exercise a right or to
+              require performance of an obligation under these Terms shall not
+              effect a party's ability to exercise such right or require such
+              performance at any time thereafter nor shall the waiver of a
+              breach constitute a waiver of any subsequent breach.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>Changes to These Terms and Conditions</div>
+          </div>
+          <div class="t-desc">
+            <span
+              >We reserve the right, at Our sole discretion, to modify or
+              replace these Terms at any time. If a revision is material We will
+              make reasonable efforts to provide at least 30 days' notice prior
+              to any new terms taking effect. What constitutes a material change
+              will be determined at Our sole discretion.</span
+            >
+          </div>
+          <div class="t-desc">
+            <span
+              >By continuing to access or use Our Service after those revisions
+              become effective, You agree to be bound by the revised terms. If
+              You do not agree to the new terms, in whole or in part, please
+              stop using the website and the Service.</span
+            >
+          </div>
+          <div class="t-subtitle padd-10">
+            <div>Contact Us</div>
+          </div>
+          <div class="t-desc">
+            <span
+              >If you have any questions about these Terms and Conditions, You
+              can contact us:</span
+            >
+          </div>
+          <ul>
+            <li>
+              <span class="t-desc"
+                >By visiting this page on our website:
+                <a href="https://rantai.tech">https://rantai.tech</a>
+              </span>
+            </li>
+            <li>
+              <span class="t-desc"
+                >By sending us an email: support@rantai.tech
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
