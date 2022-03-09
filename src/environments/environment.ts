@@ -12,6 +12,8 @@ export const environment = {
   // api_referral: 'https://rantailink.com',
   api_galery: 'https://rantai-marketplace.com/storage/api',
   // api_galery: 'http://192.168.88.88:7795/api',
+  api_testimoni: 'https://rantai-marketplace.com/storage/api',
+  // api_testimoni: 'http://rantaikita.com:7795/api',
   production: false,
 };
 

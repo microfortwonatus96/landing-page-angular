@@ -202,7 +202,7 @@
               </div>
               <div class="d-flex justify-content-start btn-try" data-aos="fade-right">
                 <div class="col-md-4 col-sm-5">
-                  <a href="https://rantai.tech/web/accounts/sign-up"> 
+                  <a href="https://rantai.tech/web/accounts/sign-up" target="_blank"> 
                     <button class="btn-try-free font-montserrat">{{ "TRY_FREE" | translate }}</button>
                   </a>
                 </div>
@@ -275,7 +275,7 @@
               </div>
               <div class="d-flex justify-content-start btn-try" data-aos="fade-right">
                 <div class="col-md-4 col-sm-5">
-                  <a href="https://rantai.tech/web/accounts/sign-up"> 
+                  <a href="https://rantai.tech/web/accounts/sign-up" target="_blank"> 
                     <button class="btn-try-free">{{ "TRY_FREE" | translate }}</button>
                   </a>
                 </div>
@@ -314,7 +314,7 @@
               </div>
               <div class="d-flex justify-content-start btn-free" data-aos="fade-right">
                 <div class="col-md-4 col-sm-5">
-                  <a href="https://rantai.tech/web/accounts/sign-up"> 
+                  <a href="https://rantai.tech/web/accounts/sign-up" target="_blank"> 
                     <button class="btn-try-free">{{ "TRY_FREE" | translate }}</button>
                   </a>
                 </div>
@@ -381,6 +381,8 @@
         <div class="title-blue">EVENT RANTAI</div>
         <div class="title-section7">{{ "The_Winners" | translate }}</div>
         <div class="p-S7">{{ "Check_out_top5" | translate }}</div>
+        
+        <ng-container *ngFor="let data of listImageTestimoni">
         <div
           id="carouselExampleControls"
           class="container d-flex justify-content-center carousel slide"
@@ -389,10 +391,17 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="box-slider">
-                <img id="imgSlider" class="d-block img-s7 img-slider" />
+                <!-- <img id="imgSlider" class="d-block img-s7 img-slider" /> -->
+                <img id="imgSlider" class="d-block img-slider" 
+                  [src]="
+                    'https://rantai-marketplace.com/storage/api/file/image?directory=' +
+                    data.imagePath
+                  "
+                  loading="lazy"
+                />
               </div>
             </div>
-            <div class="carousel-item">
+            <!-- <div class="carousel-item">
               <div class="box-slider">
                 <img id="imgSlider" class="d-block img-b img-slider" />
               </div>
@@ -401,7 +410,7 @@
               <div class="box-slider">
                 <img id="imgSlider" class="d-block img-c img-slider" />
               </div>
-            </div>
+            </div> -->
           </div>
           <button
             class="carousel-control-next"
@@ -422,12 +431,16 @@
             <span class="visually-hidden">Previous</span>
           </button>
         </div>
+      </ng-container>
       </div>
       
-    <div class="row justify-content-center gap-2 toko">
-      <div class="nama-toko">{{ "This_Is_Shop_Name" | translate }}</div>
-      <div class="pemilik-toko">{{ "This_Is_Shop_Owner" | translate }}</div>
-    </div>
+    <ng-container *ngFor="let d of listImageTestimoni">
+      <div class="row justify-content-center gap-2 toko">
+        <div class="nama-toko">{{ d.ownerShop }}</div>
+        <div class="pemilik-toko">{{ d.ownerName }}</div>
+      </div>
+    </ng-container>
+  
     <div class="footer-s7">{{ "Check_out_Rantai_Event" | translate }}</div>    
     <div class="container media-coverage">
       <div class="row">
@@ -496,7 +509,89 @@
     </div>
   </section>
   <!-- END SECTION 7 --> 
-        
+
+  <!-- section testimoni -->
+  <section class="parallax-testimoni">
+    <div>
+      <div class="mt-5">
+        <div class="title-top-testimoni">TESTIMONIAL</div>
+        <div class="title-testimoni">Apa Kata Pelanggan Kami</div>
+      </div>
+      <div class="d-flex justify-content-center gap-3 mt-5 box-testimoni">
+        <div class="col-4 box-testimoni-left">
+          <div class="box-content-testimoni">
+            <div class="petik mt-4">
+              <div class="petik-color">''</div>
+            </div>
+            <div class="content-title-box">
+              <div class="title-content-testimoni">Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim</div>
+            </div>
+            <div class="row gap-2 footer-box">
+              <div class="title-content-testimoni">INI NAMA PELANGGAN</div>
+              <div class="pelanggan-blue">INI NAMA TOKO</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 box-testimoni-center">
+          <div class="box-content-testimoni">
+            <div class="petik mt-4">
+              <div class="petik-color">''</div>
+            </div>
+            <div class="content-title-box">
+              <div class="title-content-testimoni">Maecenas kdnkdf dvkodnvkod dvkndkonvkd snvknv ksnvkdnv  interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim</div>
+            </div>
+            <div class="row gap-2 footer-box">
+              <div class="title-content-testimoni">INI NAMA PELANGGAN</div>
+              <div class="pelanggan-blue">INI NAMA TOKO</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 box-testimoni-right">
+          <div class="box-content-testimoni">
+            <div class="petik mt-4">
+              <div class="petik-color">''</div>
+            </div>
+            <div class="content-title-box">
+              <div class="title-content-testimoni"> iofoknvkonvklnvk vkdnv vmdv ojvdvd  dvkodnkv ;asdoij dvnidv oksjdvd Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim</div>
+            </div>
+            <div class="row gap-2 footer-box">
+              <div class="title-content-testimoni">INI NAMA PELANGGAN</div>
+              <div class="pelanggan-blue">INI NAMA TOKO</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dot mt-4">
+        <span class="dot-slide"></span> 
+        <span class="dot-slide"></span> 
+        <span class="dot-slide"></span> 
+        <span class="dot-slide"></span> 
+      </div>
+<!-- 
+      <div class="d-flex justify-content-start s-3 slider-mobile">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault1"
+            (click)="btnSlide(1)"
+          />
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault2"
+            (click)="btnSlide(2)"
+          />
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <!-- end section testimoni -->
+
   <!-- SECTION 8 -->
   <section class="parallax-section8">
     <div class="container" data-aos="fade-up">
@@ -765,7 +860,6 @@
     <app-help-center></app-help-center>
   </section> -->
   <!-- section help-center -->
-
 </main>
 <footer id="contact">
   <div class="parallax-footer">

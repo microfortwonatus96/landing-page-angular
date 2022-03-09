@@ -28,6 +28,8 @@ import {
 import { GaleryService } from '../service/customer-galery.service';
 import { Galery, ITestimoni } from '../models/galery.model';
 import { CountdownEventService } from '../service/countdown-event.service';
+import { TestimoniService } from '../service/testimoni.service';
+import {lTestimoni} from '../models/testimoni.model';
 declare var $: any;
 
 @Component({
@@ -166,12 +168,14 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   nextNameGambar: string = '';
   nextIndex: number = 0;
   activeImage: string[] = [];
+  slideImage: string[] = [];
 
   // lastBox = -1;
 
   faqSideLeft = [];
   faqSideRight = [];
   listcontentGalery: string[] = [];
+  listImageTestimoni: lTestimoni[] = [];
   listGaleryTestimoni: ITestimoni[] = [];
   setColor: boolean = false;
   showMore: boolean = false;
@@ -204,6 +208,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     private subscriptionService: SubscriptionService,
     private referralCodeService: RefferalCodeService,
     private galeryService: GaleryService,
+    private testimoniService: TestimoniService,
     private countDownService: CountdownEventService
   ) {
     this.translate.addLangs(['en', 'id']);
@@ -290,6 +295,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit(): void {
     this.readMore = false;
+    this.loadTestimoniImage();
     this.activatedRoute.queryParams.subscribe((re) => {
       if (re) {
         this.readMore = re['faq'] !== undefined;
@@ -317,6 +323,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         }
       }
     });
+
 
     this.settingArray();
     this.getProvince();
@@ -357,6 +364,18 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.loadContentFaq();
     this.loadGaleryImage();
     this.loadTimeServer();
+  }
+
+  loadTestimoniImage(){
+    this.testimoniService
+    .getTestimoni()
+    .pipe(takeWhile(() =>this.alive))
+    .subscribe((res: any) => {
+      console.log("data", res);
+      if(res){ 
+        this.listImageTestimoni = [...res.content];
+      }
+    });
   }
 
   loadGaleryImage() {
