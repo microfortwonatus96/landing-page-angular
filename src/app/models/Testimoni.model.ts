@@ -1,8 +1,9 @@
 export interface Testimoni {
-    content: string[];
+  content: string[];
 }
-export interface lTestimoni{
-    imagePath:string
-    ownerName:string
-    ownerShop:string
+export interface ITestimoni {
+  imagePath: string;
+  ownerName: string;
+  id: number;
+  ownerShop: string;
 }
