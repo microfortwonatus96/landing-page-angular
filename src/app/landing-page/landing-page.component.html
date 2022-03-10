@@ -474,21 +474,20 @@
               <div
                 class="carousel-item"
                 *ngFor="
-                  let x of listImageTestimoni;
+                  let x of listWinnerImg;
                   let index = index;
                   let isFirst = first
                 "
                 [ngClass]="{ active: isFirst }"
               >
-                <div class="box-slider flex-column">               
+                <div class="box-slider flex-column">
                   <!-- <img class="img-s7"> -->
                   <img
                     id="imgSlider"
                     class="d-block img-slider"
-                    [src]="
-                      'https://rantai-marketplace.com/storage/api/file/image?directory=' +
-                      x.imagePath"
-                    loading="lazy"/>
+                    [src]="x.imagePath"
+                    loading="lazy"
+                  />
 
                   <div class="row toko">
                     <div class="nama-toko">{{ x.ownerShop }}</div>
@@ -580,7 +579,7 @@
       </div>
     </section>
     <!-- END SECTION 7 -->
-   
+
     <!-- section testimoni -->
     <!-- <section class="parallax-testimoni">
       <div>
