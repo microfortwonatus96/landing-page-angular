@@ -377,7 +377,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       .subscribe((res: any) => {
         if (res) {
           this.listImageTestimoni = [...res.content];
-
           console.log('data pemenang', this.listImageTestimoni);
         }
       });

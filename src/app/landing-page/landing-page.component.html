@@ -465,7 +465,6 @@
           <div class="title-section7">{{ "The_Winners" | translate }}</div>
           <div class="p-S7">{{ "Check_out_top5" | translate }}</div>
 
-          <!-- <ng-container *ngFor="let data of listImageTestimoni"> -->
           <div
             id="carouselExampleControls"
             class="container d-flex justify-content-center carousel slide"
@@ -481,17 +480,20 @@
                 "
                 [ngClass]="{ active: isFirst }"
               >
-                <div class="box-slider">
-                  <!-- <img id="imgSlider" class="d-block img-s7 img-slider" /> -->
+                <div class="box-slider flex-column">               
+                  <!-- <img class="img-s7"> -->
                   <img
                     id="imgSlider"
                     class="d-block img-slider"
                     [src]="
                       'https://rantai-marketplace.com/storage/api/file/image?directory=' +
-                      x.imagePath
-                    "
-                    loading="lazy"
-                  />
+                      x.imagePath"
+                    loading="lazy"/>
+
+                  <div class="row toko">
+                    <div class="nama-toko">{{ x.ownerShop }}</div>
+                    <div class="pemilik-toko">{{ x.ownerName }}</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -514,15 +516,7 @@
               <span class="visually-hidden">Previous</span>
             </button>
           </div>
-          <!-- </ng-container> -->
         </div>
-
-        <!-- <ng-container *ngFor="let d of listImageTestimoni">
-          <div class="row justify-content-center gap-2 toko">
-            <div class="nama-toko">{{ d.ownerShop }}</div>
-            <div class="pemilik-toko">{{ d.ownerName }}</div>
-          </div>
-        </ng-container> -->
 
         <div class="footer-s7">{{ "Check_out_Rantai_Event" | translate }}</div>
         <div class="container media-coverage">
@@ -533,7 +527,7 @@
               data-aos-delay="100"
             >
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="img-footer-s7 hover-media"></div>
+                <div class="logo-lambe hover-media"></div>
               </a>
             </div>
             <div
@@ -542,7 +536,7 @@
               data-aos-delay="100"
             >
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="img-footer-s7 hover-media"></div>
+                <div class="logo-detik-finance hover-media"></div>
               </a>
             </div>
             <div
@@ -551,7 +545,7 @@
               data-aos-delay="100"
             >
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="img-footer-s7 hover-media"></div>
+                <div class="logo-liputan hover-media"></div>
               </a>
             </div>
             <div
@@ -560,7 +554,7 @@
               data-aos-delay="100"
             >
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="img-footer-s7 hover-media"></div>
+                <div class="logo-media-indonesia hover-media"></div>
               </a>
             </div>
             <div
@@ -569,7 +563,7 @@
               data-aos-delay="100"
             >
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="img-footer-s7 hover-media"></div>
+                <div class="logo-suara hover-media"></div>
               </a>
             </div>
             <div
@@ -578,61 +572,7 @@
               data-aos-delay="100"
             >
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="img-footer-s7 hover-media"></div>
-              </a>
-            </div>
-            <div
-              class="col-6 col-sm-3 col-lg-2"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="img-footer-s7 hover-media"></div>
-              </a>
-            </div>
-            <div
-              class="col-6 col-sm-3 col-lg-2"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="img-footer-s7 hover-media"></div>
-              </a>
-            </div>
-            <div
-              class="col-6 col-sm-3 col-lg-2"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="img-footer-s7 hover-media"></div>
-              </a>
-            </div>
-            <div
-              class="col-6 col-sm-3 col-lg-2"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="img-footer-s7 hover-media"></div>
-              </a>
-            </div>
-            <div
-              class="col-6 col-sm-3 col-lg-2"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="img-footer-s7 hover-media"></div>
-              </a>
-            </div>
-            <div
-              class="col-6 col-sm-3 col-lg-2"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="img-footer-s7 hover-media"></div>
+                <div class="logo-tribun hover-media"></div>
               </a>
             </div>
           </div>
@@ -640,9 +580,9 @@
       </div>
     </section>
     <!-- END SECTION 7 -->
-
+   
     <!-- section testimoni -->
-    <section class="parallax-testimoni">
+    <!-- <section class="parallax-testimoni">
       <div>
         <div class="mt-5">
           <div class="title-top-testimoni">TESTIMONIAL</div>
@@ -709,29 +649,8 @@
           <span class="dot-slide"></span>
           <span class="dot-slide"></span>
         </div>
-        <!--
-      <div class="d-flex justify-content-start s-3 slider-mobile">
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault1"
-            (click)="btnSlide(1)"
-          />
-        </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            name="flexRadioDefault"
-            id="flexRadioDefault2"
-            (click)="btnSlide(2)"
-          />
-        </div>
-      </div> -->
       </div>
-    </section>
+    </section> -->
     <!-- end section testimoni -->
 
     <!-- SECTION 8 -->
@@ -1111,38 +1030,6 @@
       </div>
     </section>
     <!-- END SECTION 8 -->
-
-    <!-- section galery -->
-    <!-- <section id="readmore" class="galery2" *ngIf="readMore">
-      <div>
-        <p class="title-sb">
-          {{ "Use_Rantai" | translate }} <span class="text-rantai"> Rantai </span>
-        </p>
-        <p class="paragraf-sb">{{ "Those_customers" | translate }}</p>
-      </div>
-
-      <div class="container galery-dua">
-        <ng-container *ngFor="let x of listGaleryTestimoni">
-          <div class="row row-cols-12">
-            <div class="col-12 responsive-galery2">
-              <img
-                [src]="
-                  'https://rantai-marketplace.com/storage/api/file/image?directory=image/testimoni/' +
-                  x.imageLocation
-                "
-                loading="lazy"
-              />
-              <div class="text-centerr col-12">
-                <p class="nama-customer">{{ x.ownerName }}</p>
-                <p class="nama-toko">{{ x.tokoName }}</p>
-                <p class="nama-customer">{{ x.location }}</p>
-              </div>
-            </div>
-          </div>
-        </ng-container>
-      </div>
-    </section> -->
-    <!-- end section galery -->
   </div>
   <!-- section FAQ -->
   <section id="readmore" class="paralax-faq" *ngIf="readMore">
