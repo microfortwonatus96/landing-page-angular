@@ -180,6 +180,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   setColor: boolean = false;
   showMore: boolean = false;
   timeServer: number;
+  listWinnerImg: ITestimoni[] = [];
   // mainPage: boolean
 
   // countdown event
@@ -377,11 +378,25 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
       .subscribe((res: any) => {
         if (res) {
           this.listImageTestimoni = [...res.content];
-          console.log('data pemenang', this.listImageTestimoni);
+          // console.log('data pemenang', this.listImageTestimoni);
+          this.imgToBase64();
         }
       });
   }
+  imgToBase64() {
+    this.listImageTestimoni.forEach((x, i) => {
+      let url = `https://rantai-marketplace.com/storage/api/file/image?directory=${x.imagePath}`;
 
+      this.testimoniService.getBase64ImageFromUrl(url).then((image: any) => {
+        this.listWinnerImg.push({
+          id: x.id,
+          imagePath: image,
+          ownerName: x.ownerName,
+          ownerShop: x.ownerShop,
+        });
+      });
+    });
+  }
   loadGaleryImage() {
     this.galeryService
       .getGalery()

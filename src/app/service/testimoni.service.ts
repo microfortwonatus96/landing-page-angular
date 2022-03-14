@@ -15,4 +15,31 @@ export class TestimoniService {
       `${environment.api_testimoni}/winner-event`
     );
   }
+  getImageByFilename(filename: string): string {
+    // console.log('get image filename ' , filename)
+    let url = `${environment.api_testimoni}/api/file/image?directory=${filename}`;
+    // console.log('build url ' , url)
+    return url;
+  }
+  async getBase64ImageFromUrl(imageUrl) {
+    // console.log('image url  ', imageUrl)
+    let res = await fetch(imageUrl);
+    let blob = await res.blob();
+
+    return new Promise((resolve, reject) => {
+      let reader = new FileReader();
+      reader.addEventListener(
+        'load',
+        function () {
+          resolve(reader.result);
+        },
+        false
+      );
+
+      reader.onerror = () => {
+        return reject(this);
+      };
+      reader.readAsDataURL(blob);
+    });
+  }
 }
