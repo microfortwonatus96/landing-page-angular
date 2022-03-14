@@ -108,8 +108,8 @@
 
 /* section 6 */
 .collaboration{
-  font-size: 1.7rem !important;
-  margin-top: 20px;
+  font-size: 1.4rem !important;
+  margin-top: 10px;
 }
 /* end section 6  */
 
@@ -335,11 +335,10 @@
 
 /* footer */
 .parallax-footer{
-  height:108vh;
+  height:107vh;
 }
 .set-footer{
   position: relative;
-  /* left: 10px; */
 }
 .btn-footer{
   width: 210px !important;
@@ -465,7 +464,7 @@
 
   /* footer */
   .parallax-footer{
-    height:107vh;
+    height:106vh;
   }
   .set-footer {
     position: relative;
@@ -529,6 +528,10 @@
 .tab-fiturreport {
   width: calc(90% + 2rem) !important;
   display: block !important;
+}
+
+.collaboration{
+  font-size:1.3rem !important;
 }
 
 /* section 7 */
@@ -1058,7 +1061,7 @@ section {
   margin-bottom: 40px;
 }
 .tab-phone {
-  width: calc(35vw + 2rem);
+  width: calc(100% - 10%);
   content: url('../../assets/images/stockbarang.svg');
 }
 .sign-free {
@@ -1082,7 +1085,7 @@ section {
   height: auto;
 }
 .image-media{
-  width: calc(35vw + 2rem);
+  width: calc(100% - 10%);
 }
 /* end section 4 */
 
@@ -1093,7 +1096,7 @@ section {
   margin-bottom: 40px;
 }
 .tab-fiturreport {
-  width: calc(35vw + 2rem);
+  width: calc(100% - 10%);
   content: url('../../assets/images/fiturreport.svg');
 }
 .content-generate {
@@ -1106,7 +1109,7 @@ section {
 /* section 6 */
 .parallax-section6 {
   background-color: #0b69fd;
-  height: 240px;
+  height: 190px;
   display: block;
   justify-content: center;
   align-items: center;
@@ -1115,7 +1118,7 @@ section {
   font-size: 2rem;
   font-family: montserrat;
   text-align: center;
-  margin-top: 45px;
+  margin-top: 25px;
   color: #FFFFFF;
 }
 .coming-soon {
@@ -1124,32 +1127,32 @@ section {
   font-family: montserrat;
 }
 #i-tokped {
-  content: url('../../assets/images/img-tokopedia.svg');
+  content: url('../../assets/logo-marketplace/tokped.svg');
   width: 150px;
   height: 50px;
 }
 #i-lazada {
-  content: url('../../assets/images/img-lazada.svg');
+  content: url('../../assets/logo-marketplace/lazada.svg');
   width: 150px;
   height: 50px;
 }
 #i-shopee {
-  content: url('../../assets/images/img-shopee.svg');
+  content: url('../../assets/logo-marketplace/shopee.svg');
   width: 150px;
   height: 50px;
 }
 #i-blibli {
-  content: url('../../assets/images/img-blibli.svg');
+  content: url('../../assets/logo-marketplace/blibli.svg');
   width: 150px;
   height: 50px;
 }
 #i-jdid {
-  content: url('../../assets/images/img-jdid.svg');
+  content: url('../../assets/logo-marketplace/jd.id.svg');
   width: 150px;
   height: 50px;
 }
 #i-bukalapak {
-  content: url('../../assets/images/img-bukalapak.svg');
+  content: url('../../assets/logo-marketplace/bukalapak.svg');
   width: 150px;
   height: 50px;
 }
@@ -1655,12 +1658,17 @@ section {
   padding-bottom: 40px;
 }
 .header-box{
+  display: flex;
+  justify-content: center;
+  align-items: start;
   position: relative;
   top: 20px;
   right: 20px;
   bottom: 20px;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  left: 20px;
+  background-color: antiquewhite;
+  font-family: Franklin Gothic Medium;
+  font-size: 2rem;
+  box-shadow: none;
+  text-align: center;  
 }

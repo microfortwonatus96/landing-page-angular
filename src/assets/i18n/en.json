@@ -1,4 +1,7 @@
 {
+  "kontak":"CONTACT",
+  "others":"OTHERS",
+
   "Sign_Up": "Register now and get FREE SUBSCRIPTION FOREVER!",
   "Sign": "Register now and get",
   "Free_Forever":"FREE SUBSCRIPTION FOREVER!",
@@ -41,7 +44,7 @@
   "This_Is_Shop_Name": "This is the name of the shop", 
 
   "Rantai":"Rantai",
-  "Chains_in_Various_Media": "in Various Media",
+  "Chains_in_Various_Media": " in Various Media",
 
   "You_Need_Information": "Do you need more complete information?",
   "Contact_Us_and_Get": "Contact Us and Get Free Subscription",
