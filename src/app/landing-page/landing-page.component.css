@@ -1657,18 +1657,4 @@ section {
   padding-top:80px;
   padding-bottom: 40px;
 }
-.header-box{
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  position: relative;
-  top: 20px;
-  right: 20px;
-  bottom: 20px;
-  left: 20px;
-  background-color: antiquewhite;
-  font-family: Franklin Gothic Medium;
-  font-size: 2rem;
-  box-shadow: none;
-  text-align: center;  
-}
+
