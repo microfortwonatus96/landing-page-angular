@@ -29,6 +29,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { FaqComponent } from './faq/faq.component';
 import { ViewAllComponent } from './view-all/view-all.component';
 import { HelpCenterComponent } from './help-center/help-center.component';
+import { AgreementsComponent } from './agreements/agreements.component';
 export function ModuleHttpLoaderFactory(http: HttpClient) {
   const baseTranslateUrl = './assets/i18n';
   const options: IModuleTranslationOptions = {
@@ -50,6 +51,7 @@ export function ModuleHttpLoaderFactory(http: HttpClient) {
     FaqComponent,
     ViewAllComponent,
     HelpCenterComponent,
+    AgreementsComponent,
   ],
   imports: [
     CommonModule,
