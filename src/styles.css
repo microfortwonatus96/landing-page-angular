@@ -1,31 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-  /* font-family: sans-serif; */
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
-  /* color: #444444; */
 }
-
-
 ::-webkit-scrollbar {
   display: none;
 }
-
 a {
   color: #5846f9;
   text-decoration: none;
 }
-
 a:hover {
   color: #8577fb;
   text-decoration: none;
 }
-
 .bold {
   font-weight: bold;
 }
-
 .pointer {
   cursor: pointer;
 }
@@ -36,17 +28,13 @@ a:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 } */
-
+body { 
+  margin: 0;
+ }
 html, body { 
-  height: 100%;
- 
- }
-body { margin: 0;
-  /* font-family: Montserrat, "Helvetica Neue", sans-serif; */
- }
-
-html, body { height: 100%; }
-body { margin: 0;
-  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+  height: 100%; 
+}
+body { 
+  margin: 0;
  }
 
