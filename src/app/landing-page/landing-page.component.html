@@ -59,7 +59,9 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="#contact">{{ "kontak" | translate }}</a>
+            <a class="nav-link fw-bold" href="#contact">{{
+              "kontak" | translate
+            }}</a>
           </li>
 
           <li class="nav-item">
@@ -94,7 +96,7 @@
 </header>
 
 <main id="main">
-  <div id="block">
+  <div id="block" [ngClass]="agreementShow || faqPage ? 'display-none' : ''">
     <!-- SECTION 1 -->
     <section id="parallax" data-aos="fade-up" class="parallax-section1">
       <div class="container">
@@ -522,7 +524,11 @@
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <a href="https://lambeturah.co.id/hot-news/kenalan-dengan-rantai-aplikasi-untuk-tingkatkan-performa-bisnis/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://lambeturah.co.id/hot-news/kenalan-dengan-rantai-aplikasi-untuk-tingkatkan-performa-bisnis/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="logo-lambe hover-media"></div>
               </a>
             </div>
@@ -531,7 +537,11 @@
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <a href="https://finance.detik.com/foto-bisnis/d-5966078/upaya-meningkatkan-performa-bisnis-secara-digital?_ga=2.268309069.2136663856.1646207413-1917212325.1623755834" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://finance.detik.com/foto-bisnis/d-5966078/upaya-meningkatkan-performa-bisnis-secara-digital?_ga=2.268309069.2136663856.1646207413-1917212325.1623755834"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="logo-detik-finance hover-media"></div>
               </a>
             </div>
@@ -540,7 +550,10 @@
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <a href="https://www.liputan6.com/bisnis/read/4902028/e-commerce-terbukti-bantu-genjot-penjualan-dari-hulu-ke-hilir" target="_blank">
+              <a
+                href="https://www.liputan6.com/bisnis/read/4902028/e-commerce-terbukti-bantu-genjot-penjualan-dari-hulu-ke-hilir"
+                target="_blank"
+              >
                 <div class="logo-liputan hover-media"></div>
               </a>
             </div>
@@ -549,7 +562,11 @@
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <a href="https://mediaindonesia.com/teknologi/475525/rantai-tawarkan-aplikasi-terpadu-pengelolaan-toko-online-di-marketplace" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://mediaindonesia.com/teknologi/475525/rantai-tawarkan-aplikasi-terpadu-pengelolaan-toko-online-di-marketplace"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="logo-media-indonesia hover-media"></div>
               </a>
             </div>
@@ -558,7 +575,11 @@
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <a href="https://www.suara.com/bisnis/2022/03/03/154059/rantai-siap-tingkatkan-performa-bisnis-lewat-berbagai-fitur-canggih" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.suara.com/bisnis/2022/03/03/154059/rantai-siap-tingkatkan-performa-bisnis-lewat-berbagai-fitur-canggih"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="logo-suara hover-media"></div>
               </a>
             </div>
@@ -567,7 +588,11 @@
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              <a href="https://www.tribunnews.com/images/editorial/view/1915438/aplikasi-rantai-siap-meningkatkan-performa-bisnis-lewat-berbagai" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.tribunnews.com/images/editorial/view/1915438/aplikasi-rantai-siap-meningkatkan-performa-bisnis-lewat-berbagai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div class="logo-tribun hover-media"></div>
               </a>
             </div>
@@ -1028,7 +1053,7 @@
     <!-- END SECTION 8 -->
   </div>
   <!-- section FAQ -->
-  <section id="readmore" class="paralax-faq" *ngIf="readMore">
+  <section id="readmore" class="paralax-faq" *ngIf="faqPage">
     <div class="container">
       <div>
         <p class="title-first">{{ "Frequently" | translate }}</p>
@@ -1082,7 +1107,14 @@
     <app-help-center></app-help-center>
   </section> -->
   <!-- section help-center -->
-  
+
+  <!-- START AGREEMENT SECTION -->
+  <section id="readmore" class="paralax-faq" *ngIf="agreementShow && !faqPage">
+    <div class="container">
+      <app-agreements></app-agreements>
+    </div>
+  </section>
+  <!-- END AGREEMENT SECTION -->
 </main>
 <footer id="contact">
   <div class="parallax-footer">
@@ -1186,87 +1218,85 @@
             </div>
 
             <div class="col-md-4 row gap-2">
-                <div class="title-content-footer">
-                  <p>{{ "CONTACT_US" | translate }}</p>
-                </div>
-                <div class="row gap-3">
-                  <div
-                    class="d-flex justify-content-start gap-3"
-                
-                    data-aos-delay="200"
-                  >
-                    <div class="img-phone" loading="lazy"></div>
-                    <div class="çontent-footer">021 296 19 712</div>
-                  </div>
-                  <div
-                    class="d-flex justify-content-start gap-3"
-                   
-                    data-aos-delay="200"
-                  >
-                    <div class="img-email" loading="lazy"></div>
-                    <div class="çontent-footer">support@rantai.tech</div>
-                  </div>
-                  <div
-                    class="d-flex justify-content-start gap-4"
-                    data-aos-delay="200"
-                  >
-                    <div class="img-location" loading="lazy"></div>
-                    <div>
-                      <a
-                        class="çontent-footer"
-                        target="_blank"
-                        href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
-                      >
-                        Vinilon Building Jl. Raden Saleh Raya No.kav 13-17,
-                        RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat, DKI
-                        Jakarta 10430
-                      </a>
-                    </div>     
+              <div class="title-content-footer">
+                <p>{{ "CONTACT_US" | translate }}</p>
+              </div>
+              <div class="row gap-3">
+                <div
+                  class="d-flex justify-content-start gap-3"
+                  data-aos-delay="200"
+                >
+                  <div class="img-phone" loading="lazy"></div>
+                  <div class="çontent-footer">021 296 19 712</div>
                 </div>
                 <div
-                    class="d-flex justify-content-start align-items-cente footer-media"
-                  >
+                  class="d-flex justify-content-start gap-3"
+                  data-aos-delay="200"
+                >
+                  <div class="img-email" loading="lazy"></div>
+                  <div class="çontent-footer">support@rantai.tech</div>
+                </div>
+                <div
+                  class="d-flex justify-content-start gap-4"
+                  data-aos-delay="200"
+                >
+                  <div class="img-location" loading="lazy"></div>
+                  <div>
                     <a
-                      href="https://www.tiktok.com/@rantai.tech?lang=en&is_copy_url=1&is_from_webapp=v1"
+                      class="çontent-footer"
                       target="_blank"
-                      data-aos="fade-up"
-                      data-aos-delay="100"
+                      href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
                     >
-                      <i id="icon-tiktok"></i>
-                    </a>
-                    <a
-                      href="https://www.instagram.com/official.rantai/"
-                      target="_blank"
-                      data-aos="fade-up"
-                      data-aos-delay="200"
-                    >
-                      <i id="icon-instagram"></i>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/company/72025358/admin/"
-                      target="_blank"
-                      data-aos="fade-up"
-                      data-aos-delay="300"
-                    >
-                      <i id="icon-linkedin"></i>
-                    </a>
-                    <a
-                      href="https://www.facebook.com/RantaiOfficial"
-                      target="_blank"
-                      data-aos="fade-up"
-                      data-aos-delay="400"
-                    >
-                      <i id="icon-facebook"></i>
-                    </a>
-                    <a
-                      href="https://www.youtube.com/channel/UCtScj1vp9ZV9tOZ1tcZnC4w"
-                      target="_blank"
-                      data-aos="fade-up"
-                      data-aos-delay="500"
-                    >
-                      <i id="icon-youtube"></i>
+                      Vinilon Building Jl. Raden Saleh Raya No.kav 13-17,
+                      RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat, DKI
+                      Jakarta 10430
                     </a>
                   </div>
+                </div>
+                <div
+                  class="d-flex justify-content-start align-items-cente footer-media"
+                >
+                  <a
+                    href="https://www.tiktok.com/@rantai.tech?lang=en&is_copy_url=1&is_from_webapp=v1"
+                    target="_blank"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <i id="icon-tiktok"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/official.rantai/"
+                    target="_blank"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <i id="icon-instagram"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/72025358/admin/"
+                    target="_blank"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <i id="icon-linkedin"></i>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/RantaiOfficial"
+                    target="_blank"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <i id="icon-facebook"></i>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/channel/UCtScj1vp9ZV9tOZ1tcZnC4w"
+                    target="_blank"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                  >
+                    <i id="icon-youtube"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -1279,7 +1309,9 @@
         </div>
         <div class="d-flex justify-content-start gap-4 last-foot">
           <div (click)="selengkapnya()" class="last-footer"><div>FAQ</div></div>
-          <div class="last-footer"><div>Terms of Service</div></div>
+          <div class="last-footer" (click)="openAgreements()">
+            <div>Terms of Service</div>
+          </div>
           <div class="last-footer"><div>Help Center</div></div>
         </div>
       </div>

@@ -16,7 +16,12 @@ import { LangList, LangService } from '../service/lang.service';
 import { UserService } from '../service/user.service';
 import Swal from 'sweetalert2';
 import { lang } from '../lang/lang.interface';
-import { ActivatedRoute, Router } from '@angular/router';
+import {
+  ActivatedRoute,
+  ActivationEnd,
+  NavigationEnd,
+  Router,
+} from '@angular/router';
 import { SubscriptionService } from '../service/subscribtion.service';
 import { ISubscribe } from '../models/subscribe.model';
 import { RefferalCodeService } from '../service/referral-code.service';
@@ -40,7 +45,7 @@ declare var $: any;
 export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('myModalClose') modalClose: ElementRef;
 
-  readMore = false;
+  faqPage = false;
   selecedContent = '';
   dataContent = [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
@@ -199,6 +204,9 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     seconds: null,
     timestamp: null,
   };
+
+  agreementShow = false;
+  languageChange: string = '';
   constructor(
     public translate: TranslateService,
     public langService: LangService,
@@ -214,6 +222,54 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
+    this.router.events.subscribe((res: any) => {
+      this.languageChange = localStorage.getItem('lang')
+        ? localStorage.getItem('lang')
+        : 'id';
+      this.faqPage = false;
+      this.agreementShow = false;
+      this.faqPage = res.url?.includes('/faq');
+      this.agreementShow = res.url?.includes('/agreements');
+      if (this.agreementShow) this.faqPage = false;
+      if (this.faqPage) {
+        this.agreementShow = false;
+        document.getElementById('block').classList.add('display-none');
+        document.getElementById('block').classList.remove('display-block');
+        document.getElementById('navbar').classList.add('b-navbar1');
+        document.getElementById('navbar').classList.remove('b-navbar');
+        document
+          .getElementById('navbar-t')
+          .classList.add('navbar-toggler-icon1');
+        document
+          .getElementById('navbar-t')
+          .classList.remove('navbar-toggler-icon');
+        $('html, body').animate(
+          {
+            scrollTop: 0,
+          },
+          'slow'
+        );
+      }
+
+      if (this.agreementShow) {
+        this.activatedRoute.queryParams.subscribe((re) => {
+          if (re['lang'] === 'en' || re['lang'] === 'id') {
+            $('html, body').animate(
+              {
+                scrollTop: 0,
+              },
+              'slow'
+            );
+          }
+        });
+      }
+      this.activatedRoute.queryParams.subscribe((res) => {
+        if (res['lang']) {
+          this.languageChange = res['lang'];
+          this.langService.lang = res['lang'];
+        }
+      });
+    });
   }
   numberOnly(event): boolean {
     const charCode = event.which ? event.which : event.keyCode;
@@ -245,7 +301,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   checkOdd(n: number) {
-    // console.log("aa")
     return n % 2;
   }
   loadTimeServer() {
@@ -296,40 +351,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.readMore = false;
     this.loadTestimoniImage();
-    this.activatedRoute.queryParams.subscribe((re) => {
-      if (re) {
-        this.readMore = re['faq'] !== undefined;
-        if (this.readMore) {
-          document.getElementById('block').classList.add('display-none');
-          document.getElementById('block').classList.remove('display-block');
-          document.getElementById('navbar').classList.add('b-navbar1');
-          document.getElementById('navbar').classList.remove('b-navbar');
-          document
-            .getElementById('navbar-t')
-            .classList.add('navbar-toggler-icon1');
-          document
-            .getElementById('navbar-t')
-            .classList.remove('navbar-toggler-icon');
-
-          // $('html, body').animate({ scrollTop: 0 }, 'slow');
-          $('html, body').animate(
-            {
-              scrollTop: 0,
-            },
-            'slow'
-          );
-
-          //mobile version
-          //id=main ilang  > scrollTop
-        } else {
-          document.getElementById('block').classList.remove('display-none');
-          document.getElementById('block').classList.add('display-block');
-        }
-      }
-    });
-
     this.settingArray();
     this.getProvince();
     this.tampilText();
@@ -405,7 +427,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
         if (response) {
           this.listcontentGalery = [...response.content];
           this.listGaleryTestimoni = [...response.content];
-          // console.log("data galeri", this.listGaleryTestimoni)
           for (let i = 0; i < 8; i++) {
             this.activeImage.push(this.listcontentGalery[i]);
           }
@@ -677,7 +698,6 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   checkLink() {
-    // let deskripsi:string = ''
     this.termCondition.forEach((v, i) => {
       v.urlText = [];
       if (v.startIndex) {
@@ -713,42 +733,21 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     }
   }
 
-  more(event) {
-    // console.log("test", event);
-    if (event) return (this.showMore = false);
-    this.showMore = true;
-  }
-
   selengkapnya() {
-    this.router.navigate([], {
-      relativeTo: this.activatedRoute,
+    this.router.navigate(['faq'], {
       queryParams: {
-        faq: 'true',
+        lang: this.langService.lang,
       },
-
       queryParamsHandling: 'merge',
-
-      // preserve the existing query params in the route
     });
   }
 
-  // destroyReadMore(){
-  //   this.mainPage = true;
-  //   localStorage.setItem('more', this.mainPage.toString());
-  // }
-  // checkPage(){
-  //   let statusPage = localStorage.getItem('more')
-  //   // console.log("test", statusPage);
-  //   if(statusPage == undefined) {
-  //     this.mainPage = true;
-  //   }else {
-  //     if(statusPage == 'true'){
-  //       // console.log("true")
-  //       this.mainPage = true;
-  //     }else  {
-  //       // console.log("false")
-  //       this.mainPage = false;
-  //     }
-  //   }
-  // }
+  openAgreements() {
+    this.router.navigate(['agreements'], {
+      queryParams: {
+        lang: this.langService.lang,
+      },
+      queryParamsHandling: 'merge',
+    });
+  }
 }

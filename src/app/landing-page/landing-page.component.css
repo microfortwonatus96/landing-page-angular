@@ -1371,7 +1371,7 @@ section {
   height: 50px;
 }
 .footer-box{
-  position: relative; 
+  position: relative;
   top: 70px;
 }
 /* end section testimoni */
@@ -1635,7 +1635,7 @@ section {
   display: none;
 }
 .display-block{
-  display: block;
+  display: block ;
 }
 #readmore {
   position: sticky;
