@@ -46,6 +46,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('myModalClose') modalClose: ElementRef;
 
   faqPage = false;
+  privacyPage = false;
   selecedContent = '';
   dataContent = [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
@@ -222,15 +223,22 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
+
     this.router.events.subscribe((res: any) => {
       this.languageChange = localStorage.getItem('lang')
         ? localStorage.getItem('lang')
         : 'id';
+
       this.faqPage = false;
       this.agreementShow = false;
+      this.privacyPage = false;
       this.faqPage = res.url?.includes('/faq');
+      this.privacyPage = res.url?.includes('/privacy');
       this.agreementShow = res.url?.includes('/agreements');
-      if (this.agreementShow) this.faqPage = false;
+
+      if (this.agreementShow || this.privacyPage) this.faqPage = false;
+      if (this.agreementShow || this.faqPage) this.privacyPage = false;
+
       if (this.faqPage) {
         this.agreementShow = false;
         document.getElementById('block').classList.add('display-none');
@@ -249,6 +257,19 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
           },
           'slow'
         );
+      }
+
+      if (this.privacyPage) {
+        this.activatedRoute.queryParams.subscribe((re) => {
+          if (re['lang'] === 'en' || re['lang'] === 'id') {
+            $('html, body').animate(
+              {
+                scrollTop: 0,
+              },
+              'slow'
+            );
+          }
+        });
       }
 
       if (this.agreementShow) {
@@ -744,6 +765,15 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
 
   openAgreements() {
     this.router.navigate(['agreements'], {
+      queryParams: {
+        lang: this.langService.lang,
+      },
+      queryParamsHandling: 'merge',
+    });
+  }
+
+  openPrivacy() {
+    this.router.navigate(['privacy'], {
       queryParams: {
         lang: this.langService.lang,
       },
