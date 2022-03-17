@@ -60,6 +60,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   date = new Date();
   newDate: string;
   viewAll = false;
+  totalMarketplace = 500;
   formDaftar: FormGroup = this.formBuilder.group({
     id: null,
     name: ['', Validators.required],
@@ -221,6 +222,11 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     private testimoniService: TestimoniService,
     private countDownService: CountdownEventService
   ) {
+    this.userService
+      .getCurrentUser().subscribe((x :any)=>{
+        if(x && x.content)
+        this.totalMarketplace  = x.content.countMarketplace; 
+    })
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
 
