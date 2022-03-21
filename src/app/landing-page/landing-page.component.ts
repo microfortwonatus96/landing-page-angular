@@ -60,7 +60,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   date = new Date();
   newDate: string;
   viewAll = false;
-  totalMarketplace = 500;
+  totalMarketplace = 0;
   formDaftar: FormGroup = this.formBuilder.group({
     id: null,
     name: ['', Validators.required],

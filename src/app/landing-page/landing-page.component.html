@@ -57,7 +57,7 @@
               >
               <a
                 class="nav-link text-left fw-bold"
-                href="https://rantai.tech/file/mysql_wb.exe"
+                href="https://rantai.tech/file/mysql_wb.msi"
                 download
                 >MySQL WORKBENCH</a
               >
@@ -170,7 +170,7 @@
     <section class="parallax-section2">
       <div class="medal gap-4">
         <div class="img-medal"></div>
-        <div class="text-medal1">
+        <div class="text-medal1" *ngIf="totalMarketplace !== 500">
           {{ "Trusted_by" | translate }} <span class="text-medal2">{{ totalMarketplace }}</span>
           {{ "Online_Stores_from" | translate }}
         </div>
