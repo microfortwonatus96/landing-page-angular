@@ -208,13 +208,10 @@
   padding-bottom: 0px;
   width: 100vw;
 }
-
 .box-page-one {
   position: relative;
   bottom: -80px;
 }
-
-
 .img-home1 {
   content: url('../../assets/img/Home-s1.png');
   width: 223px;
@@ -226,7 +223,6 @@
   border-top-right-radius: 30px;
 
 }
-
 .img-mydashboard1 {
   content: url('../../assets/img/MyDashboard-s1.png');
   width: 743px;
