@@ -25,12 +25,14 @@
       <div class="col-5">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active fw-bold" href="/"
-              >MENGAPA MEMILIH RANTAI?</a
-            >
+            <a class="nav-link active fw-bold" href="#section8">{{
+              "why_choose" | translate
+            }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active fw-bold" href="#features">FITUR</a>
+            <a class="nav-link active fw-bold" href="#ourfeature">{{
+              "feature" | translate
+            }}</a>
           </li>
 
           <li class="nav-item">
@@ -78,7 +80,10 @@
 </header>
 
 <main id="main">
-  <div id="block">
+  <div
+    id="block"
+    [ngClass]="agreementShow || faqPage || privacyPage ? 'display-none' : ''"
+  >
     <!-- section 1 -->
     <section data-aos="fade-up" class="parallax-section1">
       <div class="container">
@@ -86,38 +91,28 @@
           <div class="row justify-content-center">
             <div class="title">
               <div>
-                Satu Aplikasi untuk Kelola Semua Toko Online Kamu, <br />
-                Gratis Langganan Selamanya!
+                {{ "Manage_Shop" | translate }} <br />
+                {{ "Free_sub" | translate }}
               </div>
             </div>
           </div>
           <div class="row justify-content-center">
             <div class="text-content">
-              <div>
-                Rantai hadir untuk memudahkan para pelaku UMKM mengontrol
-                pertumbuhan Toko Online lebih efisien dengan satu sistem
-                integrasi dashboard dan aplikasi mobile.
-              </div>
+              <div>{{ "Rantai_present" | translate }}</div>
             </div>
           </div>
           <div class="row justify-content-center">
             <div class="text-content">
-              <div>
-                Daftar sekarang atau unduh aplikasi Rantai di handphone kamu
-                sekarang, dapatkan gratis langganan selamanya!!
-              </div>
+              <div>{{ "Signup_now_or" | translate }}</div>
             </div>
           </div>
 
           <div
-            class="d-flex justify-content-center gap-3 pt-3"
+            class="d-flex justify-content-center gap-3"
             data-aos="fade-right"
           >
-            <div class="pointer">
-              <a
-                href="https://rantai.tech/web/accounts/sign-up"
-                target="_blank"
-              >
+            <div class="">
+              <a href="https://rantai.tech/web/accounts/sign-up">
                 <button class="btn-try-free">
                   {{ "Sign_Up_Now" | translate }}
                 </button>
@@ -135,20 +130,25 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="row justify-content-center gap-5 box-page-one">
+          <div class="row justify-content-center pt-4 gap-5 box-page-one">
             <div class="img-home1"></div>
             <div class="img-mydashboard1"></div>
           </div>
-          <div class="box-footer-top">
-            <div class="row justify-content-center foot-s1">
+          <div class="box-footer-s1">
+            <div class="d-flex justify-content-center foot-s1">
               <div class="col-5">
                 <div class="d-flex">
                   <div class="icon-left-s1"></div>
                   <div class="content-footer-s1">
-                    <div class="title-foot-s1">1000+ Pengguna Aktif</div>
-                    <div class="content-foot-s1">
-                      Sudah lebih dari 1000 pengguna yang mempercayai Rantai
-                      mengelola toko online mereka
+                    <div>
+                      <div class="title-foot-s1">
+                        {{ "Active_Users" | translate }}
+                      </div>
+                    </div>
+                    <div>
+                      <div class="content-foot-s1">
+                        {{ "more_than" | translate }}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -157,10 +157,15 @@
                 <div class="d-flex">
                   <div class="icon-right-s1"></div>
                   <div class="content-footer-s1">
-                    <div class="title-foot-s1">600+ Toko Online Terkoneksi</div>
-                    <div class="content-foot-s1">
-                      Membantu 600+ Toko online dari berbagai marketplace lebih
-                      efisien dan lebih maju
+                    <div>
+                      <div class="title-foot-s1">
+                        {{ "Online_Stores" | translate }}
+                      </div>
+                    </div>
+                    <div>
+                      <div class="content-foot-s1">
+                        {{ "Helping_online_stores" | translate }}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -173,7 +178,7 @@
     <!-- end section 1 -->
 
     <!-- section 2 -->
-    <section class="parallax-section2" id="features">
+    <section id="ourfeature" class="parallax-section2">
       <div class="container">
         <div class="row align-items-center justify-content-center gap-4">
           <div class="d-flex justify-content-center">
@@ -190,9 +195,7 @@
 
           <div class="d-flex justify-content-center">
             <div class="content-first col-md-7">
-              Dari urusan stok barang, toko online di marketplace, hingga
-              keuangan. Simak fitur-fitur pilihan Rantai yang dihadirkan untuk
-              membantu pertumbuhan Toko online kamu.
+              {{ "From_the_stock" | translate }}
             </div>
           </div>
 
@@ -202,10 +205,9 @@
             </div>
 
             <div class="row col-md-6 gap-2" data-aos="fade-right">
-              <div class="title-blue">MANAJEMEN STOK</div>
+              <div class="title-blue">{{ "STOCK_MANAGEMENT" | translate }}</div>
               <div class="title-second">
-                Kontrol Stok Barang Lebih Efisien Tanpa Ribet, Kapanpun dan Dari
-                Manapun
+                {{ "Stock_Control" | translate }}
               </div>
 
               <div class="row gap-3">
@@ -219,10 +221,7 @@
                     </div>
                     <div>
                       <p class="content-second col-11">
-                        Tidak perlu ribet update stok barang, dengan satu
-                        langkah, stok akan terupdate otomatis sesuai perubahan
-                        dan transaksi toko Kamu, dari manapun melalui handphone
-                        Anda.
+                        {{ "No_need" | translate }}
                       </p>
                     </div>
                   </div>
@@ -233,13 +232,12 @@
                     <div class="d-flex gap-3">
                       <div id="logo-centang"></div>
                       <p class="title-content">
-                        {{ "Rantai_Pos" | translate }}
+                        {{ "ONLINE_CASHIER" | translate }}
                       </p>
                     </div>
                     <div>
                       <p class="content-second col-11">
-                        Integrasi setiap transaksi di toko fisik kamu dengan
-                        stok barang di gudang secara otomatis dan realtime.
+                        {{ "Integration" | translate }}
                       </p>
                     </div>
                   </div>
@@ -290,10 +288,11 @@
         <div class="row align-items-center justify-content-center">
           <div class="row justify-content-between">
             <div class="row col-md-6 gap-3" data-aos="fade-right">
-              <div class="title-blue">INTEGRASI MARKETPLACE</div>
+              <div class="title-blue">
+                {{ "MARKETPLACE_INTEGRATION" | translate }}
+              </div>
               <div class="title-second">
-                Kontrol Semua Toko Online Kamu Di Marketplace Hanya dengan Satu
-                Aplikasi
+                {{ "Control" | translate }}
               </div>
 
               <div class="row gap-3">
@@ -302,13 +301,12 @@
                     <div class="d-flex gap-3">
                       <div id="logo-centang"></div>
                       <p class="title-content">
-                        INFORMASI TRANSAKSI DI MARKETPLACE SECARA REALTIME
+                        {{ "TRANSACTION_INFORMATION" | translate }}
                       </p>
                     </div>
                     <div>
                       <p class="content-second col-11">
-                        Akses semua transaksi yang terjadi di setiap toko online
-                        kamu di marketplace secara lengkap dan realtime
+                        {{ "Access_all_transactions" | translate }}
                       </p>
                     </div>
                   </div>
@@ -319,13 +317,26 @@
                     <div class="d-flex gap-3">
                       <div id="logo-centang"></div>
                       <p class="title-content">
-                        COPY ITEM DARI TOKO DI MARKETPLACE
+                        {{ "COPY_ITEMS" | translate }}
                       </p>
                     </div>
                     <div>
                       <p class="content-second col-11">
-                        Salin item dan informasinya dari toko yang satu ke toko
-                        kamu yang lain.
+                        {{ "Copy_items_and" | translate }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-content-s2">
+                  <div class="pt-4">
+                    <div class="d-flex gap-3">
+                      <div id="logo-centang"></div>
+                      <p class="title-content">{{ "SAVE_TIME" | translate }}</p>
+                    </div>
+                    <div>
+                      <p class="content-second col-11">
+                        {{ "Importing_items" | translate }}
                       </p>
                     </div>
                   </div>
@@ -336,33 +347,12 @@
                     <div class="d-flex gap-3">
                       <div id="logo-centang"></div>
                       <p class="title-content">
-                        HEMAT WAKTU DENGAN BULK IMPORT
+                        {{ "CONNECT_WITH_CUSTOMERS" | translate }}
                       </p>
                     </div>
                     <div>
                       <p class="content-second col-11">
-                        Import item jadi semakin cepat dan mudah dengan bulk
-                        import, import sekaligus setiap item dari toko yang satu
-                        ke toko kamu yang lain.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="box-content-s2">
-                  <div class="pt-4">
-                    <div class="d-flex gap-3">
-                      <div id="logo-centang"></div>
-                      <p class="title-content">
-                        TERHUBUNG DENGAN PELANGGAN SECARA REALTIME DENGAN
-                        RANTAITALK ANDROID
-                      </p>
-                    </div>
-                    <div>
-                      <p class="content-second col-11">
-                        Balas semua chat pelanggan toko kamu di berbagai
-                        marketplace secara langsung melalui satu interface
-                        Rantaitalk. Pelayanan pelanggan jadi semakin mudah.
+                        {{ "Reply_to_all" | translate }}
                       </p>
                     </div>
                   </div>
@@ -416,10 +406,11 @@
           </div>
 
           <div class="row col-md-6 gap-3" data-aos="fade-right">
-            <div class="title-blue">LAPORAN KEUANGAN</div>
+            <div class="title-blue">
+              {{ "FINANCIAL_STATEMENTS" | translate }}
+            </div>
             <div class="title-second">
-              Buat Laporan Keuangan sari Setiap Transaksi Secara Mudah dan
-              Lengkap
+              {{ "Create_Financial" | translate }}
             </div>
 
             <div class="row gap-3">
@@ -428,15 +419,12 @@
                   <div class="d-flex gap-3">
                     <div id="logo-centang"></div>
                     <p class="title-content">
-                      SATU KLIK UNTUK GENERATE BERBAGAI LAPORAN KEUANGAN
+                      {{ "ONE_CLICK" | translate }}
                     </p>
                   </div>
                   <div>
                     <p class="content-second col-10">
-                      Lebih efisien dalam pembuatan berbagai laporan keuangan
-                      seperti, laporan penjualan, untung dan rugi, pengembalian,
-                      pengeluaran, serta hutang-piutang. Akses dan export setiap
-                      laporan hanya dengan satu Klik.
+                      {{ "More_efficient_in" | translate }}
                     </p>
                   </div>
                 </div>
@@ -473,12 +461,12 @@
     </section>
     <!-- end section 4 -->
 
-    <!-- end section 5 -->
+    <!-- section 5 -->
     <section class="parallax-section5">
       <div class="container">
         <div class="row justify-content-start gap-5">
           <div class="row justify-content-start gap-3">
-            <div class="collab">Bekerja Sama dengan Marketplace Terbaik</div>
+            <div class="collab">{{ "Collaboration" | translate }}</div>
             <div>
               <div class="row justify-content-center">
                 <div class="logo-tokped"></div>
@@ -498,11 +486,10 @@
             <div class="d-flex justify-content-center">
               <div class="d-flex flex-column gap-3 box-content-s5">
                 <div class="title-s5">
-                  Rantai Sudah Tersedia di Google Playstore Download Sekarang!
+                  {{ "Rantai_is_Available" | translate }}
                 </div>
                 <div class="content-s5">
-                  Download dan daftar melalui Rantai Mobile, Kelola toko online
-                  jadi lebih mudah hanya lewat hp kamu .
+                  {{ "Download_and_register" | translate }}
                 </div>
                 <div class="logo-google">
                   <a
@@ -526,17 +513,14 @@
 
     <!-- SECTION 6 -->
     <section class="parallax-section6">
-      <div class="container">
+      <div>
         <div class="row justify-content-center gap-3 content-S7">
-          <div class="title-blue">EVENT RANTAI</div>
+          <div class="title-blue">{{ "RANTAI_​EVENTS" | translate }}</div>
           <div class="title-section7 col-6">
-            Para Pemenang Rantai Bagi-bagi Komisi Uang Tunai Ratusan Juta
+            {{ "The_Winners" | translate }}
           </div>
           <div class="row justify-content-center">
-            <div class="p-S7 col-4">
-              Top 5 Pemenang event Rantai Bagi-bagi komisi, mendapatkan hadiah
-              uang tunai total ratusan juta rupiah
-            </div>
+            <div class="p-S7 col-4">{{ "top5" | translate }}</div>
           </div>
           <div
             id="carouselExampleControls"
@@ -562,9 +546,7 @@
                   />
 
                   <div class="row toko">
-                    <div class="nama-toko">
-                      {{ x.ownerShop ? x.ownerShop : "&nbsp;" }}
-                    </div>
+                    <div class="nama-toko">{{ x.ownerShop }}</div>
                     <div class="pemilik-toko">{{ x.ownerName }}</div>
                   </div>
                 </div>
@@ -591,13 +573,11 @@
           </div>
         </div>
 
-        <div class="footer-s7">
-          Simak Press Rilis Penyerahan Hadiah Rantai Bagi-bagi Komisi
-        </div>
-        <div class="container media-coverage pt-3">
-          <div class="row gap-4">
+        <div class="footer-s7">{{ "Check_out_Rantai_Event" | translate }}</div>
+        <div class="container media-coverage">
+          <div class="row">
             <div
-              class="col-6 col-sm-3 col-lg-2 box-media"
+              class="col-6 col-sm-3 col-lg-2"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -610,7 +590,7 @@
               </a>
             </div>
             <div
-              class="col-6 col-sm-3 col-lg-2 box-media"
+              class="col-6 col-sm-3 col-lg-2"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -623,7 +603,7 @@
               </a>
             </div>
             <div
-              class="col-6 col-sm-3 col-lg-2 box-media"
+              class="col-6 col-sm-3 col-lg-2"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -635,7 +615,7 @@
               </a>
             </div>
             <div
-              class="col-6 col-sm-3 col-lg-2 box-media"
+              class="col-6 col-sm-3 col-lg-2"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -648,7 +628,7 @@
               </a>
             </div>
             <div
-              class="col-6 col-sm-3 col-lg-2 box-media"
+              class="col-6 col-sm-3 col-lg-2"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -661,7 +641,7 @@
               </a>
             </div>
             <div
-              class="col-6 col-sm-3 col-lg-2 box-media"
+              class="col-6 col-sm-3 col-lg-2"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -671,22 +651,6 @@
                 rel="noopener noreferrer"
               >
                 <div class="logo-tribun hover-media"></div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="box-footer">
-          <div class="row justify-content-evenly box-foot">
-            <div class="title-foot-s8 col-5">
-              Download Rantai Sekarang! Gratis Langganan Selamanya
-            </div>
-            <div class="logo-google">
-              <a
-                href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="app-store" loading="lazy"></div>
               </a>
             </div>
           </div>
@@ -768,8 +732,16 @@
     <!-- end section 7 -->
 
     <!-- section 8 -->
-    <!-- <section class="parallax-section8">
+    <section id="section8" class="parallax-section8">
       <div class="container">
+        <!-- <div class="col-md-6" data-aos="fade-up">
+            <div class="image-mobile" loading="lazy">
+              <img
+                src="../../assets/img/img-s3.png"
+                class="image-mobile"
+              />
+            </div>
+          </div> -->
         <div class="row justify-content-center">
           <div class="row justify-content-between">
             <div
@@ -777,27 +749,15 @@
               data-aos="fade-right"
             >
               <div>
-                <div class="title-blue">MENGAPA MEMILIH RANTAI?</div>
+                <div class="title-blue">{{ "WHY_CHOOSE" | translate }}</div>
               </div>
               <div class="title-s8">
-                Gratis Langganan Selamanya, Rantai Berkomitmen untuk Terus
-                Membantu Memajukan Ekonomi Nasional, Dengan Aplikasi Pengelolaan
-                Toko Online Bagi Para Pelaku UMKM
+                {{ "Rantai_Is_Committed" | translate }}
               </div>
               <div class="content-s8">
-                Dengan sistem yang terintegrasi di aplikasi handphone dan
-                dashboard, berbagai fitur unggulan Rantai hadir untuk
-                mempermudah para pelaku UMKM meningkatkan efisiensi pengelolaan
-                toko- toko onlinenya.
+                {{ "With_an_integrated" | translate }}
               </div>
-              <div>
-                UMKM sebagai salah satu pemberi kontribusi terbesar pada
-                peningkatan ekonomi nasional, menjadi target utama Rantai.
-                Menyediakan aplikasi pengelolaan toko online dengan gratis
-                langganan selamanya untuk para pelaku UMKM, merupakan satu
-                komitmen mewujudkan misi utama Rantai, yaitu untuk ambil bagian
-                memajukan ekonomi Nasional.
-              </div>
+              <div>{{ "UMKM_as_one" | translate }}</div>
             </div>
 
             <div class="col-md-6" data-aos="fade-up">
@@ -810,26 +770,79 @@
             </div>
           </div>
         </div>
-        <div class="box-footer">
-          <div class="row justify-content-evenly box-foot">
-            <div class="title-foot-s8">
-              Download Rantai Sekarang! Gratis Langganan Selamanya
-            </div>
-            <div class="logo-google col-5">
-              <a
-                href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div class="app-store" loading="lazy"></div>
-              </a>
+        <div>
+          <div class="row justify-content-center">
+            <div class="box-footer">
+              <div class="d-flex justify-content-evenly box-foot">
+                <div class="title-foot-s8 col-5">
+                  {{ "Download_Rantai_Now" | translate }}
+                </div>
+                <div class="logo-google">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="app-store" loading="lazy"></div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- end section 8 -->
   </div>
+  <!-- section FAQ -->
+  <section id="readmore" class="paralax-faq" *ngIf="faqPage">
+    <div class="container">
+      <div>
+        <p class="title-first">{{ "Frequently" | translate }}</p>
+        <p class="content-footer-faq">{{ "We_are_here" | translate }}</p>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-start faq-mediaQ">
+          <div class="col-6">
+            <ng-container *ngFor="let x of dataContent; let d = index">
+              <div *ngIf="checkOdd(e)" class="box">
+                <app-faq [content]="'aaaaa \n bb'"></app-faq>
+              </div>
+              <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat">
+                <app-faq [content]="x"></app-faq>
+              </div>
+            </ng-container>
+          </div>
+          <div class="col-6">
+            <ng-container *ngFor="let x of dataContent; let d = index">
+              <div *ngIf="checkOdd(e)" class="box">
+                <app-faq [content]="'aaaaa \n bb'"></app-faq>
+              </div>
+              <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat">
+                <app-faq [content]="x"></app-faq>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-start mt-5">
+        <p class="title-footer-faq" data-aos="fade-right">
+          {{ "Still_have" | translate }}
+        </p>
+        <p class="title-silver">
+          {{ "Haven't_found" | translate }}<br />{{ "is_always" | translate }}
+        </p>
+      </div>
+      <div class="d-flex justify-content-center" data-aos="fade-right">
+        <a href="#contact">
+          <button class="btn-faq">{{ "CONTACT_US" | translate }}</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- section FAQ -->
 </main>
 
 <footer id="contact">
@@ -845,11 +858,7 @@
                 data-aos="fade-left"
                 data-aos-delay="200"
               ></div>
-              <div class="çontent-footer">
-                Rantai adalah sebuah software untuk pengelolaan toko online di
-                berbagai Marketplace. Rantai hadir untuk membantu kamu sebagai
-                pelaku UMKM, meningkatkan efisiensi dan operasional toko online.
-              </div>
+              <div class="çontent-footer">{{ "Rantai_Is" | translate }}</div>
             </div>
           </div>
 
@@ -953,7 +962,9 @@
                   </a>
                 </div>
               </div>
-              <div class="follow-me">Ikuti Kami:</div>
+              <div class="follow-me">
+                {{ "follow_me" | translate }}
+              </div>
               <div
                 class="d-flex justify-content-start align-items-center footer-media"
               >
@@ -1009,9 +1020,11 @@
         </div>
         <div class="d-flex gap-5 last-foot">
           <div (click)="selengkapnya()" class="last-footer"><div>FAQ</div></div>
-          <div class="last-footer"><div>Help Center</div></div>
+          <div class="last-footer">
+            <div>{{ "help_center" | translate }}</div>
+          </div>
           <div class="last-footer" (click)="openAgreements()">
-            <div>Terms of Service</div>
+            <div>{{ "Terms_of_Service" | translate }}</div>
           </div>
         </div>
       </div>

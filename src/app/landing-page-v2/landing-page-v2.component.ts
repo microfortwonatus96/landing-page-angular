@@ -1,19 +1,3 @@
-import { LangList, LangService } from '../service/lang.service';
-// import { TranslateService } from '@ngx-translate/core';
-import { ITestimoni } from '../models/testimoni.model';
-import { TestimoniService } from '../service/testimoni.service';
-// import { LangList, LangService } from '../service/lang.service';
-import { UserService } from '../service/user.service';
-import Swal from 'sweetalert2';
-import { lang } from '../lang/lang.interface';
-import {
-  ActivatedRoute,
-  ActivationEnd,
-  NavigationEnd,
-  Router,
-} from '@angular/router';
-import { SubscriptionService } from '../service/subscribtion.service';
-import { ISubscribe } from '../models/subscribe.model';
 import {
   AfterViewInit,
   Component,
@@ -25,6 +9,32 @@ import {
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { takeWhile } from 'rxjs/operators';
+import { ICity } from '../models/city.model';
+import { IProspectiveCustomer } from '../models/prospective-customer.model';
+import { IProvince } from '../models/province.model';
+import { LangList, LangService } from '../service/lang.service';
+import { UserService } from '../service/user.service';
+import Swal from 'sweetalert2';
+import { lang } from '../lang/lang.interface';
+import {
+  ActivatedRoute,
+  ActivationEnd,
+  NavigationEnd,
+  Router,
+} from '@angular/router';
+import { SubscriptionService } from '../service/subscribtion.service';
+import { ISubscribe } from '../models/subscribe.model';
+import { RefferalCodeService } from '../service/referral-code.service';
+import {
+  IReferralCode,
+  IReferralEvent,
+  TermCondition,
+} from '../models/referral.model';
+import { GaleryService } from '../service/customer-galery.service';
+import { Galery } from '../models/galery.model';
+import { CountdownEventService } from '../service/countdown-event.service';
+import { TestimoniService } from '../service/testimoni.service';
+import { ITestimoni } from '../models/testimoni.model';
 declare var $: any;
 
 @Component({
@@ -34,12 +44,22 @@ declare var $: any;
 })
 export class LandingPageV2Component implements OnInit {
   faqPage = false;
+  privacyPage = false;
+  dataContent = [
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
+    'dLorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit omnis incidunt ratione ea libero vel, cumque perspiciatis repellendus deserunt.',
+    'e',
+    'f',
+  ];
   listImageTestimoni: ITestimoni[] = [];
   listWinnerImg: ITestimoni[] = [];
   alive: boolean = true;
   languageChange: string = '';
   agreementShow = false;
-  privacyPage = false;
+  faqSideLeft = [];
+  faqSideRight = [];
   constructor(
     public langService: LangService,
     public translate: TranslateService,
@@ -62,12 +82,13 @@ export class LandingPageV2Component implements OnInit {
 
       if (this.agreementShow || this.privacyPage) this.faqPage = false;
       if (this.agreementShow || this.faqPage) this.privacyPage = false;
+
       if (this.faqPage) {
         this.agreementShow = false;
         document.getElementById('block').classList.add('display-none');
         document.getElementById('block').classList.remove('display-block');
         document.getElementById('navbar').classList.add('b-navbar1');
-        document.getElementById('navbar').classList.remove('b-navbar');
+        document.getElementById('navbar').classList.remove('b-navbar1');
         document
           .getElementById('navbar-t')
           .classList.add('navbar-toggler-icon1');
@@ -117,6 +138,7 @@ export class LandingPageV2Component implements OnInit {
 
   ngOnInit(): void {
     this.loadTestimoniImage();
+    this.loadContentFaq();
   }
   loadTestimoniImage() {
     this.testimoniService
@@ -181,6 +203,16 @@ export class LandingPageV2Component implements OnInit {
         lang: this.langService.lang,
       },
       queryParamsHandling: 'merge',
+    });
+  }
+  loadContentFaq() {
+    this.dataContent.forEach((v, idx) => {
+      for (let i = 0; i < 20; i++) {
+        if (i < 10) {
+        } else {
+          let idx2 = i - 10;
+        }
+      }
     });
   }
 }
