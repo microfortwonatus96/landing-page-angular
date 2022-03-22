@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 @keyframes pulse_01 {
   0% {
     transform: scale(0.94);
@@ -416,97 +420,15 @@
   width: calc(100% - 10%);
   content: url('../../assets/img/img-s4.png');
 }
-  .img-s4{
-    width: calc(100% - 10%);
-    content: url('../../assets/img/img-s4.png');
-  }
-  /* end section 4 */
 
-  /* end section 5 */
-  .parallax-section5{
-    background-color: aquamarine;
-    height: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .collab{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.125rem;
-    line-height: 120%;
-    text-align: center;
-    color: #1A1E25;
-  }
-  .logo-tokped{
-    width: 210px;
-    height: auto;
-    content: url('../../assets/img/logo-tokped.png');
-  }
-  .logo-shopee{
-    width: 210px;
-    height: auto;
-    content: url('../../assets/img/logo-shopee.png');
-  }
-  .logo-jdid{
-    width: 210px;
-    height: auto;
-    content: url('../../assets/img/logo-Jdid.png');
-  }
-  .logo-blibli{
-    width: 210px;
-    height: auto;
-    content: url('../../assets/img/logo-blibli.png');
-  }
-  .logo-lazada{
-    width: 210px;
-    height: auto;
-    content: url('../../assets/img/logo-lazada.png');
-  }
-  .logo-bukalapak{
-    width: 210px;
-    height: auto;
-    content: url('../../assets/img/logo-bukalapak.png');
-  }
-  .box-s5{
-    width: 100%;
-    height: 420px;
-    left: 100px;
-    top: 3935px;
-    background: linear-gradient(180deg, #DFEBFE 0%, #DEF4FE 100%);
-    border-radius: 40px;
-  }
-  .img-foot-s5{
-    width: 100%;
-    height: auto;
-    content: url('../../assets/img/img-foot-s5.png');
-  }
-  .title-s5{
-    width: 504px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 32px;
-    color: #0B69FD;
-  }
-  .content-s5{
-    width: 504px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 22px;
-    color: #1A1E25;
-  }
-  .box-content-s5{
-    padding-top:96px;
-  }
-  /* end section 5 */
+.img-s4 {
+  width: calc(100% - 10%);
+  content: url('../../assets/img/img-s4.png');
+}
 
 /* end section 4 */
 
-/* end section 5 */
+/* section 5 */
 .parallax-section5 {
   background-color: aquamarine;
   height: 100%;
@@ -560,9 +482,43 @@
   content: url('../../assets/img/logo-bukalapak.png');
 }
 
-.img-s5 {
+.box-s5 {
   width: 100%;
-  content: url('../../assets/img/img-s5.png');
+  height: 420px;
+  left: 100px;
+  top: 3935px;
+  background: linear-gradient(180deg, #DFEBFE 0%, #DEF4FE 100%);
+  border-radius: 40px;
+}
+
+.img-foot-s5 {
+  width: 100%;
+  height: auto;
+  content: url('../../assets/img/img-foot-s5.png');
+}
+
+.title-s5 {
+  width: 504px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 32px;
+  color: #0B69FD;
+}
+
+.content-s5 {
+  width: 504px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #1A1E25;
+}
+
+.box-content-s5 {
+  padding-top: 96px;
 }
 
 /* end section 5 */
@@ -609,6 +565,7 @@
 .img-slider {
   width: calc(100% - 40%);
   height: auto;
+  border-radius: 20px;
 }
 
 .box-slider {
@@ -676,42 +633,42 @@
 }
 
 .logo-lambe {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-lambe-turah.png');
 }
 
 .logo-detik-finance {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-detikfinance.png');
 }
 
 .logo-liputan {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-liputan6.png');
 }
 
 .logo-media-indonesia {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-mediaIndonesia.png');
 }
 
 .logo-suara {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-suara.png');
 }
 
 .logo-tribun {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-tribunimages.png');
