@@ -23,4 +23,8 @@ export class UserService {
       prospectiveCustomer
     );
   }
+
+  getCurrentUser(){
+    return this.http.get(`${environment.api_server}/util/v2/count/user-marketplace`);
+  }
 }
