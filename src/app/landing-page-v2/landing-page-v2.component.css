@@ -806,7 +806,8 @@
 /* footer */
 .parallax-footer {
     background-color: #DFEBFE;
-    padding: 40px 0px;
+    padding-top: 130px;
+    padding-bottom: 40px;
     width: 100%;
   }
   .title-footer {
