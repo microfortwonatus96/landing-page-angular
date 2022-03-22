@@ -1,4 +1,7 @@
 {
+  "kontak":"HUBUNGI KAMI",
+  "others":"LAINNYA",
+
   "Sign_Up": "Daftar sekarang dan dapatkan GRATIS LANGGANAN SELAMANYA!",
   "Sign": "Daftar sekarang dan dapatkan",
   "Free_Forever":"GRATIS LANGGANAN SELAMANYA!",
@@ -56,8 +59,7 @@
   "Haven't_found":"Belum menemukan pertanyaan Anda di FAQ kami? Anda selalu dapat menghubungi kami. Tim dukungan kami ",
   "Still_have":"Masih ada pertanyaan lain?",
   "Point4":"Jika terdapat 2 pemenang atau lebih dengan point sama, Maka TOTAL Nominal hadiah dari masing-masing peringkat tersebut akan dibagi rata Kepada para pemenang",
-  "is_always": "selalu tersedia untuk membantu Anda",
-  "kontak":"KONTAK",
-  "others":"LAINNYA"
+  "is_always": "selalu tersedia untuk membantu Anda"
+  
 }
 
