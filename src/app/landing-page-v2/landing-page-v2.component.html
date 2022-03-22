@@ -24,11 +24,11 @@
 
       <div class="col-5">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link active fw-bold" href="#section8">{{
               "why_choose" | translate
             }}</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link active fw-bold" href="#ourfeature">{{
               "feature" | translate
@@ -546,7 +546,9 @@
                   />
 
                   <div class="row toko">
-                    <div class="nama-toko">{{ x.ownerShop }}</div>
+                    <div class="nama-toko">
+                      {{ x.ownerShop ? x.ownerShop : "&nbsp;" }}
+                    </div>
                     <div class="pemilik-toko">{{ x.ownerName }}</div>
                   </div>
                 </div>
@@ -575,9 +577,9 @@
 
         <div class="footer-s7">{{ "Check_out_Rantai_Event" | translate }}</div>
         <div class="container media-coverage">
-          <div class="row">
+          <div class="row gap-4">
             <div
-              class="col-6 col-sm-3 col-lg-2"
+              class="col-6 col-sm-3 col-lg-2 box-media"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -590,7 +592,7 @@
               </a>
             </div>
             <div
-              class="col-6 col-sm-3 col-lg-2"
+              class="col-6 col-sm-3 col-lg-2 box-media"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -603,7 +605,7 @@
               </a>
             </div>
             <div
-              class="col-6 col-sm-3 col-lg-2"
+              class="col-6 col-sm-3 col-lg-2 box-media"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -615,7 +617,7 @@
               </a>
             </div>
             <div
-              class="col-6 col-sm-3 col-lg-2"
+              class="col-6 col-sm-3 col-lg-2 box-media"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -628,7 +630,7 @@
               </a>
             </div>
             <div
-              class="col-6 col-sm-3 col-lg-2"
+              class="col-6 col-sm-3 col-lg-2 box-media"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -641,7 +643,7 @@
               </a>
             </div>
             <div
-              class="col-6 col-sm-3 col-lg-2"
+              class="col-6 col-sm-3 col-lg-2 box-media"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
@@ -732,16 +734,8 @@
     <!-- end section 7 -->
 
     <!-- section 8 -->
-    <section id="section8" class="parallax-section8">
+    <!-- <section id="section8" class="parallax-section8">
       <div class="container">
-        <!-- <div class="col-md-6" data-aos="fade-up">
-            <div class="image-mobile" loading="lazy">
-              <img
-                src="../../assets/img/img-s3.png"
-                class="image-mobile"
-              />
-            </div>
-          </div> -->
         <div class="row justify-content-center">
           <div class="row justify-content-between">
             <div
@@ -791,7 +785,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- end section 8 -->
   </div>
   <!-- section FAQ -->
@@ -801,7 +795,6 @@
         <p class="title-first">{{ "Frequently" | translate }}</p>
         <p class="content-footer-faq">{{ "We_are_here" | translate }}</p>
       </div>
-
       <div class="container">
         <div class="row justify-content-start faq-mediaQ">
           <div class="col-6">
@@ -848,6 +841,24 @@
 <footer id="contact">
   <div class="parallax-footer">
     <div class="container">
+      <div class="row justify-content-center">
+        <div class="box-footer">
+          <div class="d-flex justify-content-evenly box-foot">
+            <div class="title-foot-s8 col-5">
+              {{ "Download_Rantai_Now" | translate }}
+            </div>
+            <div class="logo-google">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="app-store" loading="lazy"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row gap-5">
         <div class="d-flex justify-content-between d-footer gap-4">
           <div class="col-md-4">

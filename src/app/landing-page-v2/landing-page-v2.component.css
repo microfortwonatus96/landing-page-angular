@@ -190,6 +190,7 @@
   width: 55%;
   line-height: 110%;
 }
+
 .text-content {
   font-family: 'Montserrat';
   font-style: normal;
@@ -209,10 +210,12 @@
   padding-bottom: 0px;
   width: 100vw;
 }
+
 .box-page-one {
   position: relative;
   bottom: -80px;
 }
+
 .img-home1 {
   content: url('../../assets/img/Home-s1.png');
   width: 223px;
@@ -224,6 +227,7 @@
   border-top-right-radius: 30px;
 
 }
+
 .img-mydashboard1 {
   content: url('../../assets/img/MyDashboard-s1.png');
   width: 743px;
@@ -234,6 +238,7 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
 .box-footer-top {
   width: 100%;
   height: 150px;
@@ -242,6 +247,7 @@
   position: relative;
   top: 50px;
 }
+
 .box-footer-s1 {
   width: 100%;
   height: 150px;
@@ -250,18 +256,21 @@
   position: relative;
   top: 80px;
 }
+
 .icon-left-s1 {
   content: url('../../assets/img/Icon-left-s1.png');
   width: 120px;
   height: 120px;
   filter: drop-shadow(0px 0px 32px rgba(53, 76, 113, 0.12));
 }
+
 .icon-right-s1 {
   content: url('../../assets/img/Icon-right-s1.png');
   width: 120px;
   height: 120px;
   filter: drop-shadow(0px 0px 32px rgba(53, 76, 113, 0.12));
 }
+
 .title-foot-s1 {
   height: 32px;
   font-family: 'Montserrat';
@@ -272,6 +281,7 @@
   color: #FFFFFF;
   width: 100%;
 }
+
 .content-foot-s1 {
   font-family: 'Montserrat';
   font-style: normal;
@@ -282,10 +292,12 @@
   width: 100%;
   height: 100%;
 }
+
 .content-footer-s1 {
   position: relative;
   top: 25px;
 }
+
 .foot-s1 {
   position: relative;
   top: 20px;
@@ -628,42 +640,42 @@
 }
 
 .logo-lambe {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-lambe-turah.png');
 }
 
 .logo-detik-finance {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-detikfinance.png');
 }
 
 .logo-liputan {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-liputan6.png');
 }
 
 .logo-media-indonesia {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-mediaIndonesia.png');
 }
 
 .logo-suara {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-suara.png');
 }
 
 .logo-tribun {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-tribunimages.png');
@@ -695,42 +707,47 @@
   top: 25%;
 }
 
-  /* section 8 */
-  .img-s8{
-    width: 100%;
-    content: url('../../assets/img/img-s8.png');
-  }
-  .title-foot-s8{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.125rem;
-    line-height: 120%;
-    color: #FFFFFF;
-  }
-  .content-s8{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 22px;
-    color: #1A1E25;
-  }
+/* section 8 */
+.img-s8 {
+  width: 100%;
+  content: url('../../assets/img/img-s8.png');
+}
+
+.title-foot-s8 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.125rem;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.content-s8 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #1A1E25;
+}
+
 /* end section 8 */
 
-.box-footer{
+.box-footer {
   width: 100%;
   height: 160px;
   background: #0B69FD;
   border-radius: 40px;
   position: relative;
-  top: 120px;
+  top: -80px;
 }
-.box-foot{
+
+.box-foot {
   position: relative;
   top: 25%;
 }
-.title-s8{
+
+.title-s8 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
@@ -741,208 +758,243 @@
 
 /* footer */
 .parallax-footer {
-    background-color: #DFEBFE;
-    padding-top: 130px;
-    padding-bottom: 40px;
-    width: 100%;
-  }
-  .title-footer {
-    color: #FFFFFF;
-    font-size: 24px;
-    font-family: Montserrat;
-  }
-  .border-box {
-    border: 1px solid #BCCDEB;
-    width: 100%;
-    text-align: center;
-  }
-  .logo-rantai-footer {
-    width: 170px;
-    height: auto;
-    content: url('../../assets/img/Logo-foot-blue.png');
-  }
-  .set-rantai{
-    position: relative;
-    top: 35px;
-  }
-  .title-content-footer {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.75rem;
-    line-height: 15px;
-    color: #0B69FD;
-  }
-  .çontent-footer {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 22px;
-    color: #1A1E25;
-  }
-  .btn-footer {
-    border-radius: 20px;
-    opacity: 1;
-    background-color: #ffffff;
-    border: 2px solid #0b69fd;
-    color: #0b69fd;
-    width: 320px;
-    height: 42px;
-  }
-  .btn-footer-text:hover {
-    color: #0b69fd;
-  }
-  .btn-footer:hover {
-    background-color: #fff;
-    color: #0b69fd;
-  }
-  .btn-footer:hover .logo-video .icon-video-biru, .btn-footer .logo-video {
-    display: none;
-  }
-  .btn-footer:hover .icon-video {
-    display: block;
-  } */
-  .btn-footer-text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    line-height: 15px;
-    color: #0B69FD;
-  }
-  .btn{
-    font-weight: 400;
-    font-family: 'Montserrat';
-    font-size: 0.75rem !important;
-  }
-  .icon-video-biru {
-    content: url('../../assets/images/video.svg');
-    width: 20px;
-    height: 20px;
-    margin-left: 25px
-  }
-  .logo-video {
-    content: url('../../assets/images/videowhite.svg');
-    width: 20px;
-    height: 20px;
-    margin-left: 25px
-  }
-  .img-phone {
-    content: url('../../assets/img/icon-phone.png');
-    width: 20px;
-    height: auto;
-  }
-  .img-email {
-    content: url('../../assets/img/Icon-email.png');
-    width: 20px;
-    height: auto;
-  }
-  .img-location {
-    content: url('../../assets/img/Icon-location.png');
-    width: 20px;
-    height: 25px;
-    position: relative;
-    top: 5px;
-  }
-  .last-footer {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.75rem;
-    line-height: 15px;
-    color: #0B69FD;
-    cursor: pointer;
-  }
-  .last-foot {
-    position: relative;
-    top: 25px;
-    font-size: 12px;
-    font-family: montserrat;
-    color: #FFFFFF;
-  }
-  .follow-me{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 22px;
-    color: #1A1E25;
-    position: relative;
-    left: 45px;
-  }
-  #icon-tiktok {
-    content: url('../../assets/img/Icon-tiktok.png');
-    width: 20px;
-    height: 20px;
-    margin-left: 35px;
-  }
-  #icon-instagram {
-    content: url('../../assets/img/Icon-instagram.png');
-    width: 20px;
-    height: 20px;
-    margin-left: 25px;
-  }
-  #icon-linkedin {
-    content: url('../../assets/img/Icon-linkedin.png');
-    width: 20px;
-    height: 20px;
-    margin-left: 25px;
-  }
-  #icon-facebook {
-    content: url('../../assets/img/Icon-facebook.png');
-    width: 20px;
-    height: 20px;
-    margin-left: 25px;
-  }
-  #icon-youtube {
-    content: url('../../assets/img/Icon-youtube.png');
-    width: 20px;
-    height: 20px;
-    margin-left: 25px;
-  }
-  .footer-media {
-    position: relative;
-    left: 10px;
-  }
-  /* end footer */
+  background-color: #DFEBFE;
+  /* padding-top: 130px; */
+  padding-bottom: 40px;
+  width: 100%;
+}
 
-  /* section faq */
-.paralax-faq{
-  padding-block:100px;
+.title-footer {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: Montserrat;
+}
+
+.border-box {
+  border: 1px solid #BCCDEB;
+  width: 100%;
+  text-align: center;
+}
+
+.logo-rantai-footer {
+  width: 170px;
+  height: auto;
+  content: url('../../assets/img/Logo-foot-blue.png');
+}
+
+.set-rantai {
+  position: relative;
+  top: 35px;
+}
+
+.title-content-footer {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 15px;
+  color: #0B69FD;
+}
+
+.çontent-footer {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #1A1E25;
+}
+
+.btn-footer {
+  border-radius: 20px;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 2px solid #0b69fd;
+  color: #0b69fd;
+  width: 320px;
+  height: 42px;
+}
+
+.btn-footer-text:hover {
+  color: #0b69fd;
+}
+
+.btn-footer:hover {
+  background-color: #fff;
+  color: #0b69fd;
+}
+
+.btn-footer:hover .logo-video .icon-video-biru, .btn-footer .logo-video {
+  display: none;
+}
+
+.btn-footer:hover .icon-video {
+  display: block;
+}
+
+*/ .btn-footer-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 15px;
+  color: #0B69FD;
+}
+
+.btn {
+  font-weight: 400;
+  font-family: 'Montserrat';
+  font-size: 0.75rem !important;
+}
+
+.icon-video-biru {
+  content: url('../../assets/images/video.svg');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px
+}
+
+.logo-video {
+  content: url('../../assets/images/videowhite.svg');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px
+}
+
+.img-phone {
+  content: url('../../assets/img/icon-phone.png');
+  width: 20px;
+  height: auto;
+}
+
+.img-email {
+  content: url('../../assets/img/Icon-email.png');
+  width: 20px;
+  height: auto;
+}
+
+.img-location {
+  content: url('../../assets/img/Icon-location.png');
+  width: 20px;
+  height: 25px;
+  position: relative;
+  top: 5px;
+}
+
+.last-footer {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 15px;
+  color: #0B69FD;
+  cursor: pointer;
+}
+
+.last-foot {
+  position: relative;
+  top: 25px;
+  font-size: 12px;
+  font-family: montserrat;
+  color: #FFFFFF;
+}
+
+.follow-me {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #1A1E25;
+  position: relative;
+  left: 45px;
+}
+
+#icon-tiktok {
+  content: url('../../assets/img/Icon-tiktok.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 35px;
+}
+
+#icon-instagram {
+  content: url('../../assets/img/Icon-instagram.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#icon-linkedin {
+  content: url('../../assets/img/Icon-linkedin.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#icon-facebook {
+  content: url('../../assets/img/Icon-facebook.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#icon-youtube {
+  content: url('../../assets/img/Icon-youtube.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+.footer-media {
+  position: relative;
+  left: 10px;
+}
+
+/* end footer */
+
+/* section faq */
+.paralax-faq {
+  padding-block: 100px;
   position: relative;
 }
-.btn-faq{
+
+.btn-faq {
   border: 1px solid #0b69fd;
   border-radius: 24px;
-  width:190px;
+  width: 190px;
   background-color: #0b69fd;
-  height:42px;
+  height: 42px;
   color: #fff;
   font-size: 12px;
-  align-items:center;
+  align-items: center;
   font-family: montserrat;
 }
-.btn-faq:hover{
+
+.btn-faq:hover {
   background-color: rgb(16, 98, 230);
 }
-.title-footer-faq{
-  font-size:24px;
+
+.title-footer-faq {
+  font-size: 24px;
   font-family: montserrat;
   font-weight: bold;
   color: #0b69fd;
   text-align: center;
 }
-.content-footer-faq{
-  font-size:15px;
+
+.content-footer-faq {
+  font-size: 15px;
   font-family: source sans pro, Regular;
   color: #1E232E;
   text-align: center;
 }
-.display-none{
+
+.display-none {
   display: none;
 }
-.display-block{
-  display: block ;
+
+.display-block {
+  display: block;
 }
+
 #readmore {
   position: sticky;
   top: 150px;
@@ -955,4 +1007,22 @@
 .display-block {
   display: block;
 }
+
 /* end section faq */
+.box-media {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(53, 76, 113, 0.12);
+  border-radius: 20px;
+  width: 190px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.box-media:hover {
+  box-shadow: 0px 4px 12px 8px #DAE5F8;
+  transition: all 0.5s ease;
+}
