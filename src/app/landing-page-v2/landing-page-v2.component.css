@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 @keyframes pulse_01 {
   0% {
     transform: scale(0.94);
@@ -246,6 +250,7 @@
   position: relative;
   top: 80px;
 }
+
 .box-footer {
   width: 100%;
   height: 150px;
@@ -429,93 +434,108 @@
   width: calc(100% - 10%);
   content: url('../../assets/img/img-s4.png');
 }
-  .img-s4{
-    width: calc(100% - 10%);
-    content: url('../../assets/img/img-s4.png');
-  }
-  /* end section 4 */
 
-  /* end section 5 */
-  .parallax-section5{
-    background-color: aquamarine;
-    height: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .collab{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.125rem;
-    line-height: 120%;
-    text-align: center;
-    color: #1A1E25;
-  }
-  .logo-tokped{
-    width: 210px;
-    height: auto;
-    content: url('../../assets/img/logo-tokped.png');
-  }
-  .logo-shopee{
-    width: 210px;
-    height: auto;
-    content: url('../../assets/img/logo-shopee.png');
-  }
-  .logo-jdid{
-    width: 210px;
-    height: auto;
-    content: url('../../assets/img/logo-Jdid.png');
-  }
-  .logo-blibli{
-    width: 210px;
-    height: auto;
-    content: url('../../assets/img/logo-blibli.png');
-  }
-  .logo-lazada{
-    width: 210px;
-    height: auto;
-    content: url('../../assets/img/logo-lazada.png');
-  }
-  .logo-bukalapak{
-    width: 210px;
-    height: auto;
-    content: url('../../assets/img/logo-bukalapak.png');
-  }
-  .box-s5{
-    width: 100%;
-    height: 420px;
-    left: 100px;
-    top: 3935px;
-    background: linear-gradient(180deg, #DFEBFE 0%, #DEF4FE 100%);
-    border-radius: 40px;
-  }
-  .img-foot-s5{
-    width: 100%;
-    height: auto;
-    content: url('../../assets/img/img-foot-s5.png');
-  }
-  .title-s5{
-    width: 504px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 32px;
-    color: #0B69FD;
-  }
-  .content-s5{
-    width: 504px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 22px;
-    color: #1A1E25;
-  }
-  .box-content-s5{
-    padding-top:96px;
-  }
-  /* end section 5 */
+.img-s4 {
+  width: calc(100% - 10%);
+  content: url('../../assets/img/img-s4.png');
+}
+
+/* end section 4 */
+
+/* end section 5 */
+.parallax-section5 {
+  background-color: aquamarine;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.collab {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.125rem;
+  line-height: 120%;
+  text-align: center;
+  color: #1A1E25;
+}
+
+.logo-tokped {
+  width: 210px;
+  height: auto;
+  content: url('../../assets/img/logo-tokped.png');
+}
+
+.logo-shopee {
+  width: 210px;
+  height: auto;
+  content: url('../../assets/img/logo-shopee.png');
+}
+
+.logo-jdid {
+  width: 210px;
+  height: auto;
+  content: url('../../assets/img/logo-Jdid.png');
+}
+
+.logo-blibli {
+  width: 210px;
+  height: auto;
+  content: url('../../assets/img/logo-blibli.png');
+}
+
+.logo-lazada {
+  width: 210px;
+  height: auto;
+  content: url('../../assets/img/logo-lazada.png');
+}
+
+.logo-bukalapak {
+  width: 210px;
+  height: auto;
+  content: url('../../assets/img/logo-bukalapak.png');
+}
+
+.box-s5 {
+  width: 100%;
+  height: 420px;
+  left: 100px;
+  top: 3935px;
+  background: linear-gradient(180deg, #DFEBFE 0%, #DEF4FE 100%);
+  border-radius: 40px;
+}
+
+.img-foot-s5 {
+  width: 100%;
+  height: auto;
+  content: url('../../assets/img/img-foot-s5.png');
+}
+
+.title-s5 {
+  width: 504px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 32px;
+  color: #0B69FD;
+}
+
+.content-s5 {
+  width: 504px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #1A1E25;
+}
+
+.box-content-s5 {
+  padding-top: 96px;
+}
+
+/* end section 5 */
 
 /* end section 4 */
 
@@ -622,6 +642,7 @@
 .img-slider {
   width: calc(100% - 40%);
   height: auto;
+  border-radius: 20px;
 }
 
 .box-slider {
@@ -689,42 +710,42 @@
 }
 
 .logo-lambe {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-lambe-turah.png');
 }
 
 .logo-detik-finance {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-detikfinance.png');
 }
 
 .logo-liputan {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-liputan6.png');
 }
 
 .logo-media-indonesia {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-mediaIndonesia.png');
 }
 
 .logo-suara {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-suara.png');
 }
 
 .logo-tribun {
-  padding: 40px;
+  /* padding: 40px; */
   width: 100%;
   height: auto;
   content: url('../../assets/images/logo-tribunimages.png');
@@ -757,214 +778,269 @@
   top: 25%;
 }
 
-  /* section 8 */
-  .parallax-section8{
-    background-color: antiquewhite;
-    padding: 40px 0px;
-  }
-  .img-s8{
-    width: 100%;
-    content: url('../../assets/img/img-s8.png');
-  }
-  .title-foot-s8{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.125rem;
-    line-height: 120%;
-    color: #FFFFFF;
-  }
-  .box-footer{
-    width: 100%;
-    height: 160px;
-    background: #0B69FD;
-    border-radius: 40px;
-  }
-  .box-foot{
-    position: relative;
-    top: 25%;
-  }
-  .title-s8{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.125rem;
-    line-height: 120%;
-    color: #1A1E25;
-  }
-  .content-s8{
+/* section 8 */
+.parallax-section8 {
+  background-color: antiquewhite;
+  padding: 40px 0px;
+}
 
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 22px;
-    color: #1A1E25;
-  }
+.img-s8 {
+  width: 100%;
+  content: url('../../assets/img/img-s8.png');
+}
+
+.title-foot-s8 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.125rem;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.box-footer {
+  width: 100%;
+  height: 160px;
+  background: #0B69FD;
+  border-radius: 40px;
+}
+
+.box-foot {
+  position: relative;
+  top: 25%;
+}
+
+.title-s8 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.125rem;
+  line-height: 120%;
+  color: #1A1E25;
+}
+
+.content-s8 {
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #1A1E25;
+}
+
 /* end section 8 */
 
 /* footer */
 .parallax-footer {
-    background-color: #DFEBFE;
-    padding-top: 130px;
-    padding-bottom: 40px;
-    width: 100%;
-  }
-  .title-footer {
-    color: #FFFFFF;
-    font-size: 24px;
-    font-family: Montserrat;
-  }
-  .border-box {
-    border: 1px solid #BCCDEB;
-    width: 100%;
-    text-align: center;
-  }
-  .logo-rantai-footer {
-    width: 170px;
-    height: auto;
-    content: url('../../assets/img/Logo-foot-blue.png');
-  }
-  .set-rantai{
-    position: relative;
-    top: 35px;
-  }
-  .title-content-footer {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.75rem;
-    line-height: 15px;
-    color: #0B69FD;
-  }
-  .çontent-footer {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 22px;
-    color: #1A1E25;
-  }
-  .btn-footer {
-    border-radius: 7px;
-    opacity: 1;
-    background-color: #ffffff;
-    border: 2px solid #0b69fd;
-    color: #0b69fd;
-    width: 320px;
-    height: 42px;
-  }
-  .btn-footer-text:hover {
-    color: #0b69fd;
-  }
-  .btn-footer:hover {
-    background-color: #fff;
-    color: #0b69fd;
-  }
-  .btn-footer:hover .logo-video .icon-video-biru, .btn-footer .logo-video {
-    display: none;
-  }
-  .btn-footer:hover .icon-video {
-    display: block;
-  } */
-  .btn-footer-text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    line-height: 15px;
-    color: #0B69FD;
-  }
-  .btn{
-    font-weight: 400;
-    font-family: 'Montserrat';
-    font-size: 0.75rem !important;
-  }
-  .icon-video-biru {
-    content: url('../../assets/images/video.svg');
-    width: 20px;
-    height: 20px;
-    margin-left: 25px
-  }
-  .logo-video {
-    content: url('../../assets/images/videowhite.svg');
-    width: 20px;
-    height: 20px;
-    margin-left: 25px
-  }
-  .img-phone {
-    content: url('../../assets/img/icon-phone.png');
-    width: 20px;
-    height: auto;
-  }
-  .img-email {
-    content: url('../../assets/img/Icon-email.png');
-    width: 20px;
-    height: auto;
-  }
-  .img-location {
-    content: url('../../assets/img/Icon-location.png');
-    width: 20px;
-    height: 25px;
-    position: relative;
-    top: 5px;
-  }
-  .last-footer {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.75rem;
-    line-height: 15px;
-    color: #0B69FD;
-    cursor: pointer;
-  }
-  .last-foot {
-    position: relative;
-    top: 25px;
-    font-size: 12px;
-    font-family: montserrat;
-    color: #FFFFFF;
-  }
-  .follow-me{
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 22px;
-    color: #1A1E25;
-    position: relative;
-    left: 45px;
-  }
-  #icon-tiktok {
-    content: url('../../assets/img/Icon-tiktok.png');
-    width: 20px;
-    height: 20px;
-    margin-left: 35px;
-  }
-  #icon-instagram {
-    content: url('../../assets/img/Icon-instagram.png');
-    width: 20px;
-    height: 20px;
-    margin-left: 25px;
-  }
-  #icon-linkedin {
-    content: url('../../assets/img/Icon-linkedin.png');
-    width: 20px;
-    height: 20px;
-    margin-left: 25px;
-  }
-  #icon-facebook {
-    content: url('../../assets/img/Icon-facebook.png');
-    width: 20px;
-    height: 20px;
-    margin-left: 25px;
-  }
-  #icon-youtube {
-    content: url('../../assets/img/Icon-youtube.png');
-    width: 20px;
-    height: 20px;
-    margin-left: 25px;
-  }
-  .footer-media {
-    position: relative;
-    left: 10px;
-  }
-  /* end footer */
+  background-color: #DFEBFE;
+  padding-top: 130px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.title-footer {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: Montserrat;
+}
+
+.border-box {
+  border: 1px solid #BCCDEB;
+  width: 100%;
+  text-align: center;
+}
+
+.logo-rantai-footer {
+  width: 170px;
+  height: auto;
+  content: url('../../assets/img/Logo-foot-blue.png');
+}
+
+.set-rantai {
+  position: relative;
+  top: 35px;
+}
+
+.title-content-footer {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 15px;
+  color: #0B69FD;
+}
+
+.çontent-footer {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #1A1E25;
+}
+
+.btn-footer {
+  border-radius: 100px;
+  opacity: 1;
+  background-color: #ffffff;
+  border: 2px solid #0b69fd;
+  color: #0b69fd;
+  width: 320px;
+  height: 42px;
+  outline: none;
+}
+
+.btn-footer-text:hover {
+  color: #0b69fd;
+}
+
+.btn-footer:hover {
+  background-color: #fff;
+  color: #0b69fd;
+}
+
+.btn-footer:hover .logo-video .icon-video-biru, .btn-footer .logo-video {
+  display: none;
+}
+
+.btn-footer:hover .icon-video {
+  display: block;
+}
+
+*/ .btn-footer-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 15px;
+  color: #0B69FD;
+}
+
+.btn {
+  font-weight: 400;
+  font-family: 'Montserrat';
+  font-size: 0.75rem !important;
+}
+
+.icon-video-biru {
+  content: url('../../assets/images/video.svg');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px
+}
+
+.logo-video {
+  content: url('../../assets/images/videowhite.svg');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px
+}
+
+.img-phone {
+  content: url('../../assets/img/icon-phone.png');
+  width: 20px;
+  height: auto;
+}
+
+.img-email {
+  content: url('../../assets/img/Icon-email.png');
+  width: 20px;
+  height: auto;
+}
+
+.img-location {
+  content: url('../../assets/img/Icon-location.png');
+  width: 20px;
+  height: 25px;
+  position: relative;
+  top: 5px;
+}
+
+.last-footer {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 15px;
+  color: #0B69FD;
+  cursor: pointer;
+}
+
+.last-foot {
+  position: relative;
+  top: 25px;
+  font-size: 12px;
+  font-family: montserrat;
+  color: #FFFFFF;
+}
+
+.follow-me {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #1A1E25;
+  position: relative;
+  left: 45px;
+}
+
+#icon-tiktok {
+  content: url('../../assets/img/Icon-tiktok.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 35px;
+}
+
+#icon-instagram {
+  content: url('../../assets/img/Icon-instagram.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#icon-linkedin {
+  content: url('../../assets/img/Icon-linkedin.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#icon-facebook {
+  content: url('../../assets/img/Icon-facebook.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+#icon-youtube {
+  content: url('../../assets/img/Icon-youtube.png');
+  width: 20px;
+  height: 20px;
+  margin-left: 25px;
+}
+
+.footer-media {
+  position: relative;
+  left: 10px;
+}
+
+/* end footer */
+
+/* media news */
+.box-media {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 12px rgba(53, 76, 113, 0.12);
+  border-radius: 20px;
+  width: 190px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.box-media:hover {
+  box-shadow: 0px 4px 12px 8px #DAE5F8;
+  transition: all 0.5s ease;
+}
