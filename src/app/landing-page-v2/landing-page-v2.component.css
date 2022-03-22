@@ -312,7 +312,6 @@
   padding-top: 150px;
   padding-bottom: 40px;
   height: 100%;
-  background-color: #FAFAFA;
 }
 
 .title-blue {
@@ -399,8 +398,6 @@
 
 /* section 3 */
 .parallax-section3 {
-  background-color: antiquewhite;
-  /* height: 130vh; */
   height: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -424,7 +421,6 @@
 
 /* section 4 */
 .parallax-section4 {
-  background-color: #F7F9FF;
   height: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -444,7 +440,6 @@
 
 /* end section 5 */
 .parallax-section5 {
-  background-color: aquamarine;
   height: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -538,14 +533,6 @@
 /* end section 5 */
 
 /* end section 4 */
-
-/* end section 5 */
-.parallax-section5 {
-  background-color: aquamarine;
-  height: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
 
 .collab {
   font-family: 'Montserrat';
@@ -755,7 +742,6 @@
 
 /* section 8 */
 .parallax-section8 {
-  background-color: antiquewhite;
   padding: 40px 0px;
 }
 
@@ -776,12 +762,6 @@
 .box-foot {
   position: relative;
   top: 25%;
-}
-
-/* section 8 */
-.parallax-section8 {
-  background-color: antiquewhite;
-  padding: 40px 0px;
 }
 
 .img-s8 {
@@ -848,7 +828,9 @@
 .border-box {
   border: 1px solid #BCCDEB;
   width: 100%;
+  outline: none;
   text-align: center;
+  background: #BCCDEB;
 }
 
 .logo-rantai-footer {
@@ -1043,4 +1025,12 @@
 .box-media:hover {
   box-shadow: 0px 4px 12px 8px #DAE5F8;
   transition: all 0.5s ease;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
 }

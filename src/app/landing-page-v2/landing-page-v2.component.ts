@@ -30,7 +30,7 @@ declare var $: any;
 @Component({
   selector: 'app-landing-page-v2',
   templateUrl: './landing-page-v2.component.html',
-  styleUrls: ['./landing-page-v2.component.css']
+  styleUrls: ['./landing-page-v2.component.css'],
 })
 export class LandingPageV2Component implements OnInit {
   faqPage = false;
@@ -39,13 +39,14 @@ export class LandingPageV2Component implements OnInit {
   alive: boolean = true;
   languageChange: string = '';
   agreementShow = false;
+  privacyPage = false;
   constructor(
     public langService: LangService,
     public translate: TranslateService,
     private testimoniService: TestimoniService,
     private router: Router,
-    private activatedRoute: ActivatedRoute,
-  ) { 
+    private activatedRoute: ActivatedRoute
+  ) {
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
     this.router.events.subscribe((res: any) => {
@@ -54,9 +55,13 @@ export class LandingPageV2Component implements OnInit {
         : 'id';
       this.faqPage = false;
       this.agreementShow = false;
+      this.privacyPage = false;
       this.faqPage = res.url?.includes('/faq');
+      this.privacyPage = res.url?.includes('/privacy');
       this.agreementShow = res.url?.includes('/agreements');
-      if (this.agreementShow) this.faqPage = false;
+
+      if (this.agreementShow || this.privacyPage) this.faqPage = false;
+      if (this.agreementShow || this.faqPage) this.privacyPage = false;
       if (this.faqPage) {
         this.agreementShow = false;
         document.getElementById('block').classList.add('display-none');
@@ -77,6 +82,18 @@ export class LandingPageV2Component implements OnInit {
         );
       }
 
+      if (this.privacyPage) {
+        this.activatedRoute.queryParams.subscribe((re) => {
+          if (re['lang'] === 'en' || re['lang'] === 'id') {
+            $('html, body').animate(
+              {
+                scrollTop: 0,
+              },
+              'slow'
+            );
+          }
+        });
+      }
       if (this.agreementShow) {
         this.activatedRoute.queryParams.subscribe((re) => {
           if (re['lang'] === 'en' || re['lang'] === 'id') {
@@ -98,7 +115,7 @@ export class LandingPageV2Component implements OnInit {
     });
   }
 
-  ngOnInit(): void {   
+  ngOnInit(): void {
     this.loadTestimoniImage();
   }
   loadTestimoniImage() {
@@ -166,5 +183,4 @@ export class LandingPageV2Component implements OnInit {
       queryParamsHandling: 'merge',
     });
   }
-
 }
