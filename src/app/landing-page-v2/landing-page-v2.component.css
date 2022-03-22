@@ -403,9 +403,39 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     height: auto;
     content: url('../../assets/img/logo-bukalapak.png');
   }
-  .img-s5{
+  .box-s5{
     width: 100%;
-    content: url('../../assets/img/img-s5.png');
+    height: 420px;
+    left: 100px;
+    top: 3935px;
+    background: linear-gradient(180deg, #DFEBFE 0%, #DEF4FE 100%);
+    border-radius: 40px;
+  }
+  .img-foot-s5{
+    width: 100%;
+    height: auto;
+    content: url('../../assets/img/img-foot-s5.png');
+  }
+  .title-s5{
+    width: 504px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 32px;
+    color: #0B69FD;
+  }
+  .content-s5{
+    width: 504px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 22px;
+    color: #1A1E25;
+  }
+  .box-content-s5{
+    padding-top:96px;
   }
   /* end section 5 */
 
@@ -563,6 +593,23 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     position: relative;
     top: 25%;
   }
+  .title-s8{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.125rem;
+    line-height: 120%;
+    color: #1A1E25;
+  }
+  .content-s8{
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 22px;
+    color: #1A1E25;
+  }
 /* end section 8 */
 
 /* footer */
@@ -577,7 +624,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     font-family: Montserrat;
   }
   .border-box {
-    border: 1px solid #FFFFFF;
+    border: 1px solid #BCCDEB;
     width: 100%;
     text-align: center;
   }
@@ -585,6 +632,10 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     width: 170px;
     height: auto;
     content: url('../../assets/img/Logo-foot-blue.png');
+  }
+  .set-rantai{
+    position: relative;
+    top: 35px;
   }
   .title-content-footer {
     font-family: 'Montserrat';
@@ -649,25 +700,28 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   }
   .img-phone {
     content: url('../../assets/img/icon-phone.png');
-    width: 5%;
+    width: 20px;
     height: auto;
   }
   .img-email {
     content: url('../../assets/img/Icon-email.png');
-    width: 5%;
+    width: 20px;
     height: auto;
   }
   .img-location {
     content: url('../../assets/img/Icon-location.png');
-    width: 5%;
+    width: 20px;
     height: 25px;
     position: relative;
     top: 5px;
   }
   .last-footer {
-    font-size: 12px;
-    font-family: montserrat;
-    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 15px;
+    color: #0B69FD;
     cursor: pointer;
   }
   .last-foot {
@@ -677,32 +731,42 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     font-family: montserrat;
     color: #FFFFFF;
   }
+  .follow-me{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 22px;
+    color: #1A1E25;
+    position: relative;
+    left: 45px;
+  }
   #icon-tiktok {
-    content: url('../../assets/images/tiktok2.svg');
+    content: url('../../assets/img/Icon-tiktok.png');
     width: 20px;
     height: 20px;
     margin-left: 35px;
   }
   #icon-instagram {
-    content: url('../../assets/images/ig.svg');
+    content: url('../../assets/img/Icon-instagram.png');
     width: 20px;
     height: 20px;
     margin-left: 25px;
   }
   #icon-linkedin {
-    content: url('../../assets/images/link.svg');
+    content: url('../../assets/img/Icon-linkedin.png');
     width: 20px;
     height: 20px;
     margin-left: 25px;
   }
   #icon-facebook {
-    content: url('../../assets/images/fb.svg');
+    content: url('../../assets/img/Icon-facebook.png');
     width: 20px;
     height: 20px;
     margin-left: 25px;
   }
   #icon-youtube {
-    content: url('../../assets/images/ytb.svg');
+    content: url('../../assets/img/Icon-youtube.png');
     width: 20px;
     height: 20px;
     margin-left: 25px;
