@@ -80,38 +80,40 @@
 </header>
 
 <main id="main">
-  <div
+  <div 
     id="block"
     [ngClass]="agreementShow || faqPage || privacyPage ? 'display-none' : ''"
   >
     <!-- section 1 -->
-    <section data-aos="fade-up" class="parallax-section1">
-      <div class="container">
+    <section data-aos="fade-up" class="parallax-section1" >
+      <div class="container" >
         <div class="row gap-3">
-          <div class="row justify-content-center">
-            <div class="title">
-              <div>
-                {{ "Manage_Shop" | translate }} <br />
-                {{ "Free_sub" | translate }}
+          <div class="row gap-3 set-text-s1">
+            <div class="row justify-content-center">
+              <div class="title">
+                <div class="first-title-s1">
+                  {{ "Manage_Shop" | translate }} <br />
+                  {{ "Free_sub" | translate }}
+                </div>
               </div>
             </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="text-content">
-              <div>{{ "Rantai_present" | translate }}</div>
+            <div class="row justify-content-center">
+              <div class="text-content">
+                <div>{{ "Rantai_present" | translate }}</div>
+              </div>
             </div>
-          </div>
-          <div class="row justify-content-center">
-            <div class="text-content">
-              <div>{{ "Signup_now_or" | translate }}</div>
+            <div class="row justify-content-center">
+              <div class="text-content">
+                <div>{{ "Signup_now_or" | translate }}</div>
+              </div>
             </div>
           </div>
 
           <div
-            class="d-flex justify-content-center gap-3"
+            class="d-flex justify-content-center gap-3 set-btn"
             data-aos="fade-right"
           >
-            <div class="">
+            <div class="btn-s1" style="">
               <a href="https://rantai.tech/web/accounts/sign-up">
                 <button class="btn-try-free">
                   {{ "Sign_Up_Now" | translate }}
@@ -137,7 +139,7 @@
           <div class="box-footer-s1">
             <div class="d-flex justify-content-center foot-s1">
               <div class="col-5">
-                <div class="d-flex">
+                <div class="d-flex content-f-s1">
                   <div class="icon-left-s1"></div>
                   <div class="content-footer-s1">
                     <div>
@@ -245,7 +247,7 @@
 
                 <div class="">
                   <div class="sign-free">
-                    <p class="fw-bold f-16">
+                    <p class="sign-free-forever">
                       {{ "Sign" | translate }}
                       <span class="text-blue">{{
                         "Free_Forever" | translate
@@ -259,7 +261,7 @@
                     <div class="col-md-4 col-sm-5">
                       <a
                         href="https://rantai.tech/web/accounts/sign-up"
-                        target="_blank"
+                        target="_blank" class=""
                       >
                         <button class="btn-try-free">
                           {{ "Sign_Up_Now" | translate }}
@@ -360,7 +362,7 @@
 
                 <div class="">
                   <div class="sign-free">
-                    <p class="fw-bold f-16">
+                    <p class="sign-free-forever">
                       {{ "Sign" | translate }}
                       <span class="text-blue">{{
                         "Free_Forever" | translate
@@ -413,7 +415,7 @@
               {{ "Create_Financial" | translate }}
             </div>
 
-            <div class="row gap-3">
+            <div class="row gap-3 box-s4">
               <div class="box-content-s2">
                 <div class="pt-4">
                   <div class="d-flex gap-3">
@@ -432,7 +434,7 @@
             </div>
             <div class="">
               <div class="sign-free">
-                <p class="fw-bold f-16">
+                <p class="sign-free-forever">
                   {{ "Sign" | translate }}
                   <span class="text-blue">{{
                     "Free_Forever" | translate
@@ -482,30 +484,32 @@
               </div>
             </div>
           </div>
-          <div class="box-s5">
-            <div class="d-flex justify-content-center">
-              <div class="d-flex flex-column gap-3 box-content-s5">
-                <div class="title-s5">
-                  {{ "Rantai_is_Available" | translate }}
+          <div class="set-box-s5">
+            <div class="box-s5">
+              <div class="d-flex justify-content-center">
+                <div class="d-flex flex-column gap-3 box-content-s5">
+                  <div class="title-s5">
+                    {{ "Rantai_is_Available" | translate }}
+                  </div>
+                  <div class="content-s5">
+                    {{ "Download_and_register" | translate }}
+                  </div>
+                  <div class="logo-google">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div class="app-store" loading="lazy"></div>
+                    </a>
+                  </div>
                 </div>
-                <div class="content-s5">
-                  {{ "Download_and_register" | translate }}
+                <div>
+                  <div class="img-foot-s5"></div>
                 </div>
-                <div class="logo-google">
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.css.rantai"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <div class="app-store" loading="lazy"></div>
-                  </a>
-                </div>
-              </div>
-              <div>
-                <div class="img-foot-s5"></div>
               </div>
             </div>
-          </div>
+        </div>
         </div>
       </div>
     </section>
@@ -514,13 +518,13 @@
     <!-- SECTION 6 -->
     <section class="parallax-section6">
       <div>
-        <div class="row justify-content-center gap-3 content-S7">
+        <div class="row justify-content-center gap-3 content-S6">
           <div class="title-blue">{{ "RANTAI_​EVENTS" | translate }}</div>
-          <div class="title-section7 col-6">
+          <div class="title-section6 col-6">
             {{ "The_Winners" | translate }}
           </div>
           <div class="row justify-content-center">
-            <div class="p-S7 col-4">{{ "top5" | translate }}</div>
+            <div class="p-S6 col-4">{{ "top5" | translate }}</div>
           </div>
           <div
             id="carouselExampleControls"
@@ -575,7 +579,7 @@
           </div>
         </div>
 
-        <div class="footer-s7">{{ "Check_out_Rantai_Event" | translate }}</div>
+        <div class="footer-s6">{{ "Check_out_Rantai_Event" | translate }}</div>
         <div class="container media-coverage">
           <div class="row gap-4">
             <div
@@ -789,7 +793,7 @@
     <!-- end section 8 -->
   </div>
   <!-- section FAQ -->
-  <section id="readmore" class="paralax-faq" *ngIf="faqPage">
+  <!-- <section id="readmore" class="paralax-faq" *ngIf="faqPage">
     <div class="container">
       <div>
         <p class="title-first">{{ "Frequently" | translate }}</p>
@@ -834,7 +838,7 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- section FAQ -->
 </main>
 
@@ -847,13 +851,13 @@
             <div class="title-foot-s8 col-5">
               {{ "Download_Rantai_Now" | translate }}
             </div>
-            <div class="logo-google">
+            <div class="logo-google-footer">
               <a
                 href="https://play.google.com/store/apps/details?id=com.css.rantai"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div class="app-store" loading="lazy"></div>
+                <div class="app-store-footer" loading="lazy"></div>
               </a>
             </div>
           </div>
