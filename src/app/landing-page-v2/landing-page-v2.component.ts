@@ -60,6 +60,46 @@ export class LandingPageV2Component implements OnInit {
   agreementShow = false;
   faqSideLeft = [];
   faqSideRight = [];
+  all_testimony: any = [
+    {
+      id: 0,
+      desc: 'Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim, ut commodo elit feugiat et. Maecenas nec enim quis diam faucibus tristique.',
+      name: 'Ini nama pelanggan 1',
+      shopName: 'Ini nama toko',
+      img: 'icon-img-testimoni',
+    },
+    {
+      id: 1,
+      desc: 'Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim, ut commodo elit feugiat et. Maecenas nec enim quis diam faucibus tristique.',
+      name: 'Ini nama pelanggan 2',
+      shopName: 'Ini nama toko',
+      img: 'icon-img-testimoni',
+    },
+    {
+      id: 2,
+      desc: 'Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim, ut commodo elit feugiat et. Maecenas nec enim quis diam faucibus tristique.',
+      name: 'Ini nama pelanggan 3',
+      shopName: 'Ini nama toko',
+      img: 'icon-img-testimoni',
+    },
+    {
+      id: 3,
+      desc: 'Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim, ut commodo elit feugiat et. Maecenas nec enim quis diam faucibus tristique.',
+      name: 'Ini nama pelanggan 4',
+      shopName: 'Ini nama toko',
+      img: 'icon-img-testimoni',
+    },
+    {
+      id: 4,
+      desc: 'Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim, ut commodo elit feugiat et. Maecenas nec enim quis diam faucibus tristique.',
+      name: 'Ini nama pelanggan 5',
+      shopName: 'Ini nama toko',
+      img: 'icon-img-testimoni',
+    },
+  ];
+  arr_testimony = [];
+  sectionTestimony: boolean = false;
+
   constructor(
     public langService: LangService,
     public translate: TranslateService,
@@ -139,7 +179,45 @@ export class LandingPageV2Component implements OnInit {
   ngOnInit(): void {
     this.loadTestimoniImage();
     this.loadContentFaq();
+    this.updateArray(0);
+
+    //setting slider
+    const slider = document.querySelector('.slider-testimoni');
+    const indicatorParent = document.querySelector('.dot ul');
+    const indicators = document.querySelectorAll('.dot li');
+
+    indicators.forEach((indicator, i) => {
+      indicator.addEventListener('click', () => {
+        document.querySelector('.dot .selected').classList.remove('selected');
+        indicator.classList.add('selected');
+        (<HTMLElement>slider).style.transform = 'translateX(' + i * -13 + '%)';
+        (<HTMLElement>slider).style.transition = '0.5s ease-out';
+        this.updateArray(i);
+      });
+    });
   }
+
+  updateArray(idx) {
+    this.arr_testimony = [];
+    let looping = idx + 3;
+    for (let c = 0; c < looping; c++) {
+      let getIdx = c + idx;
+      if (getIdx > this.all_testimony.length) {
+        this.resetArray(0);
+      } else {
+        this.arr_testimony.push(this.all_testimony[getIdx]);
+      }
+    }
+  }
+  resetArray(idx) {
+    this.arr_testimony = [];
+    let looping = idx + 3;
+    for (let c = 0; c < looping; c++) {
+      let getIdx = c + idx;
+      this.arr_testimony.push(this.all_testimony[getIdx]);
+    }
+  }
+
   loadTestimoniImage() {
     this.testimoniService
       .getTestimoni()
@@ -147,7 +225,6 @@ export class LandingPageV2Component implements OnInit {
       .subscribe((res: any) => {
         if (res) {
           this.listImageTestimoni = [...res.content];
-          // console.log('data pemenang', this.listImageTestimoni);
           this.imgToBase64();
         }
       });

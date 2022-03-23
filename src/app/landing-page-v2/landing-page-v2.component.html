@@ -512,7 +512,7 @@
     <!-- end section 5 -->
 
     <!-- SECTION 6 -->
-    <section class="parallax-section6">
+    <section class="parallax-section6" [class.padd-b]="!sectionTestimony">
       <div>
         <div class="row justify-content-center gap-3 content-S7">
           <div class="title-blue">{{ "RANTAI_​EVENTS" | translate }}</div>
@@ -662,75 +662,46 @@
     <!-- END SECTION 6 -->
 
     <!-- section 7 -->
-    <!-- <section class="parallax-testimoni">
-      <div>
-        <div class="mt-5">
-          <div class="title-top-testimoni">TESTIMONIAL</div>
-          <div class="title-testimoni">Apa Kata Pelanggan Kami</div>
-        </div>
-        <div class="d-flex justify-content-center gap-3 mt-5 box-testimoni">
-          <div class="col-4 box-testimoni-left">
-            <div class="box-content-testimoni">
-              <div class="petik mt-4">
-                <div class="petik-color">''</div>
-              </div>
-              <div class="content-title-box">
-                <div class="title-content-testimoni">
-                  Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam
-                  non rhoncus magna. Suspendisse aliquet tincidunt enim
+    <section class="parallax-testimoni" *ngIf="sectionTestimony">
+      <div class="mt-5 row justify-content-center content-S7">
+        <div class="title-blue">TESTIMONIAL</div>
+        <div class="title-section7">Apa Kata Pelanggan Kami</div>
+      </div>
+      <div class="container-test">
+        <div class="box-slider-testimoni">
+          <div class="slider-testimoni d-flex justify-content-evenly pt-5">
+            <ng-container *ngFor="let ts of arr_testimony; let i = index">
+              <div class="box-card-testimoni">
+                <div class="card-content-testimoni">
+                  <span class="desc-testimoni">{{ ts.desc }}</span>
+                  <div class="row justify-content-start pt-3">
+                    <div class="col-md-2">
+                      <div class="{{ ts.img }}"></div>
+                    </div>
+                    <div class="col-md-10">
+                      <div>
+                        <span class="desc-testimoni owner-name">{{
+                          ts.name
+                        }}</span>
+                      </div>
+                      <div>
+                        <span class="t-muted">{{ ts.shopName }}</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="row gap-2 footer-box">
-                <div class="title-content-testimoni">INI NAMA PELANGGAN</div>
-                <div class="pelanggan-blue">INI NAMA TOKO</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4 box-testimoni-center">
-            <div class="box-content-testimoni">
-              <div class="petik mt-4">
-                <div class="petik-color">''</div>
-              </div>
-              <div class="content-title-box">
-                <div class="title-content-testimoni">
-                  Maecenas kdnkdf dvkodnvkod dvkndkonvkd snvknv ksnvkdnv
-                  interdum lorem eleifend orci aliquam mollis. Aliquam non
-                  rhoncus magna. Suspendisse aliquet tincidunt enim
-                </div>
-              </div>
-              <div class="row gap-2 footer-box">
-                <div class="title-content-testimoni">INI NAMA PELANGGAN</div>
-                <div class="pelanggan-blue">INI NAMA TOKO</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-4 box-testimoni-right">
-            <div class="box-content-testimoni">
-              <div class="petik mt-4">
-                <div class="petik-color">''</div>
-              </div>
-              <div class="content-title-box">
-                <div class="title-content-testimoni">
-                  iofoknvkonvklnvk vkdnv vmdv ojvdvd dvkodnkv ;asdoij dvnidv
-                  oksjdvd Maecenas interdum lorem eleifend orci aliquam mollis.
-                  Aliquam non rhoncus magna. Suspendisse aliquet tincidunt enim
-                </div>
-              </div>
-              <div class="row gap-2 footer-box">
-                <div class="title-content-testimoni">INI NAMA PELANGGAN</div>
-                <div class="pelanggan-blue">INI NAMA TOKO</div>
-              </div>
-            </div>
+            </ng-container>
           </div>
         </div>
         <div class="dot mt-4">
-          <span class="dot-slide"></span>
-          <span class="dot-slide"></span>
-          <span class="dot-slide"></span>
-          <span class="dot-slide"></span>
+          <ul>
+            <li class="selected"></li>
+            <li></li>
+          </ul>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- end section 7 -->
 
     <!-- section 8 -->

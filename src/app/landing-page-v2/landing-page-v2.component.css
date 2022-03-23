@@ -1026,3 +1026,89 @@
   box-shadow: 0px 4px 12px 8px #DAE5F8;
   transition: all 0.5s ease;
 }
+
+.parallax-testimoni {
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+
+.padd-b {
+  padding-bottom: 150px !important;
+}
+
+.dot-slide {
+  width: 12px;
+  height: 12px;
+  background: #DAE5F8;
+  border-radius: 100px;
+}
+
+.dot {
+  text-align: center;
+}
+
+.dot ul {
+  list-style: none;
+}
+
+.dot ul li {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  background: #DAE5F8;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  transition: background-color 0.6s ease;
+}
+
+.dot ul li.selected {
+  background: #0B69FD;
+}
+
+.dot ul li:hover {
+  background: #0B69FD;
+}
+
+
+.box-slider-testimoni {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.box-card-testimoni {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 24px rgba(53, 76, 113, 0.12);
+  border-radius: 20px;
+  height: 228px;
+  width: 465px;
+  padding: 30px;
+  margin: 0 15px;
+}
+
+.card-content-testimoni .desc-testimoni {
+  font-weight: 600;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 0.875rem;
+}
+
+.icon-img-testimoni {
+  content: url('../../assets/img/testimoni.png');
+  width: 55px;
+  height: auto;
+}
+
+.t-muted {
+  color: #7E91B3;
+}
+
+.owner-name {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
