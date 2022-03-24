@@ -1,7 +1,7 @@
 <header id="home">
   <nav id="navbar" class="navbar navbar-expand-md fixed-top b-navbar">
     <div class="container bg-crumb">
-      <div class="d-flex justify-content-start col-4">
+      <div class="d-flex justify-content-center gap-3">
         <button
           id="navbar-t"
           class="navbar-toggler"
@@ -21,34 +21,60 @@
           <div class="logo-header" loading="lazy"></div>
         </a>
       </div>
-
-      <div class="col-5">
+      <div class="collapse navbar-collapse edit-header" id="collapsibleNavbar">
         <ul class="navbar-nav ms-auto">
-          <!-- <li class="nav-item">
-            <a class="nav-link active fw-bold" href="#section8">{{
-              "why_choose" | translate
-            }}</a>
-          </li> -->
           <li class="nav-item">
             <a class="nav-link active fw-bold" href="#ourfeature">{{
               "feature" | translate
             }}</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#ourfeature">{{
+              "article" | translate
+            }}</a>
+          </li>
+          <li class="nav-item">
+            <div
+              class="nav-link pointer d-flex justify-content-center fw-bold"
+              (click)="download()"
+            >
+              <div>{{ "others" | translate }}</div>
+              &nbsp;
+              <div class="icon-chev pl-2" id="chevron1"></div>
+            </div>
+            <div id="menu-download" class="mt-2">
+              <a
+                class="nav-link text-left fw-bold"
+                href="https://rantai.tech/file/rantaitalk.exe"
+                download
+                >RANTAI TALK</a
+              >
+              <a
+                class="nav-link text-left fw-bold"
+                href="https://rantai.tech/file/auditinstaller.exe"
+                download
+                >AUDIT</a
+              >
+              <a
+                class="nav-link text-left fw-bold"
+                href="https://rantai.tech/file/auditpatch.exe"
+                download
+                >AUDIT PATCH {{ versionPacth }}</a
+              >
+              <a
+                class="nav-link text-left fw-bold"
+                href="https://rantai.tech/file/mysql_wb.exe"
+                download
+                >MySQL WORKBENCH</a
+              >
+            </div>
+          </li>
           <li class="nav-item">
             <a class="nav-link fw-bold" href="#contact">{{
               "kontak" | translate
             }}</a>
           </li>
-        </ul>
-      </div>
-
-      <div
-        class="col-3 collapse navbar-collapse edit-header"
-        id="collapsibleNavbar"
-      >
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
+          <li class="nav-item nav-language">
             <div
               class="nav-link click-lang lang-change"
               (click)="showLanguage()"
@@ -86,7 +112,7 @@
   >
     <!-- section 1 -->
     <section data-aos="fade-up" class="parallax-section1">
-      <div class="container">
+      <div class="container scroller-section">
         <div class="row gap-3">
           <div class="row gap-3 set-text-s1">
             <div class="row justify-content-center">
@@ -181,7 +207,7 @@
 
     <!-- section 2 -->
     <section id="ourfeature" class="parallax-section2">
-      <div class="container">
+      <div class="container scroller-section">
         <div class="row align-items-center justify-content-center gap-4">
           <div class="d-flex justify-content-center">
             <div class="title-blue">
@@ -281,7 +307,7 @@
 
     <!-- section 3 -->
     <section class="parallax-section3">
-      <div class="container">
+      <div class="container scroller-section">
         <div class="col-md-6" data-aos="fade-up">
           <div class="image-mobile" loading="lazy">
             <img src="../../assets/img/img-s3.png" class="image-mobile" />
@@ -402,7 +428,7 @@
 
     <!-- section 4 -->
     <section class="parallax-section4">
-      <div class="container">
+      <div class="container scroller-section">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-6" data-aos="fade-up">
             <div class="img-s4" loading="lazy"></div>
@@ -466,7 +492,7 @@
 
     <!-- section 5 -->
     <section class="parallax-section5">
-      <div class="container">
+      <div class="container scroller-section">
         <div class="row justify-content-start gap-5">
           <div class="row justify-content-start gap-3">
             <div class="collab">{{ "Collaboration" | translate }}</div>
@@ -518,7 +544,7 @@
 
     <!-- SECTION 6 -->
     <section class="parallax-section6" [class.padd-b]="!sectionTestimony">
-      <div>
+      <div class="container scroller-section">
         <div class="row justify-content-center gap-3 content-S6">
           <div class="title-blue">{{ "RANTAI_​EVENTS" | translate }}</div>
           <div class="title-section6 col-6">
@@ -765,8 +791,8 @@
     <!-- end section 8 -->
   </div>
   <!-- section FAQ -->
-  <!-- <section id="readmore" class="paralax-faq" *ngIf="faqPage">
-    <div class="container">
+  <section id="readmore" class="paralax-faq" *ngIf="faqPage">
+    <div class="container scroller-section">
       <div>
         <p class="title-first">{{ "Frequently" | translate }}</p>
         <p class="content-footer-faq">{{ "We_are_here" | translate }}</p>
@@ -810,13 +836,29 @@
         </a>
       </div>
     </div>
-  </section> -->
+  </section>
   <!-- section FAQ -->
+
+  <!-- START AGREEMENT SECTION -->
+  <section id="readmore" class="paralax-faq" *ngIf="agreementShow">
+    <div class="container scroller-section">
+      <app-agreements></app-agreements>
+    </div>
+  </section>
+  <!-- END AGREEMENT SECTION -->
+
+  <!-- START PRIVACY SECTION -->
+  <section id="readmore" class="paralax-faq" *ngIf="privacyPage">
+    <div class="container scroller-section">
+      <app-privacy></app-privacy>
+    </div>
+  </section>
+  <!-- END PRIVACY SECTION -->
 </main>
 
 <footer id="contact">
   <div class="parallax-footer">
-    <div class="container">
+    <div class="container ">
       <div class="row justify-content-center">
         <div class="box-footer">
           <div class="d-flex justify-content-evenly box-foot">
@@ -1007,8 +1049,8 @@
         </div>
         <div class="d-flex gap-5 last-foot">
           <div (click)="selengkapnya()" class="last-footer"><div>FAQ</div></div>
-          <div class="last-footer">
-            <div>{{ "help_center" | translate }}</div>
+          <div class="last-footer" (click)="policyPrivacy()">
+            <div>{{ "Privacy_Policy" | translate }}</div>
           </div>
           <div class="last-footer" (click)="openAgreements()">
             <div>{{ "Terms_of_Service" | translate }}</div>

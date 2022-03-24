@@ -99,6 +99,7 @@ export class LandingPageV2Component implements OnInit {
   ];
   arr_testimony = [];
   sectionTestimony: boolean = false;
+  versionPacth: string;
 
   constructor(
     public langService: LangService,
@@ -122,6 +123,7 @@ export class LandingPageV2Component implements OnInit {
 
       if (this.agreementShow || this.privacyPage) this.faqPage = false;
       if (this.agreementShow || this.faqPage) this.privacyPage = false;
+      if (this.privacyPage || this.faqPage) this.agreementShow = false;
 
       if (this.faqPage) {
         this.agreementShow = false;
@@ -195,8 +197,50 @@ export class LandingPageV2Component implements OnInit {
         this.updateArray(i);
       });
     });
+
+    this.tampilText();
+
+    //scroll efect
+    window.addEventListener('scroll', this.scrollEffect);
+    this.scrollEffect();
   }
 
+  scrollEffect() {
+    var effectscrl = document.querySelectorAll('.scroller-section');
+    for (var i = 0; i < effectscrl.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = effectscrl[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        effectscrl[i].classList.add('active');
+      } else {
+        effectscrl[i].classList.remove('active');
+      }
+    }
+  }
+
+  checkOdd(n: number) {
+    return n % 2;
+  }
+  download() {
+    let id = document.getElementById('menu-download');
+    let y = document.getElementById('chevron1');
+    let x = document.getElementById('lang-hide');
+    if (id.style.display == 'block') {
+      id.style.display = 'none';
+      y.style.transform = 'rotate(0deg)';
+    } else {
+      id.style.display = 'block';
+      y.style.transform = 'rotate(180deg)';
+      x.style.display = 'none';
+    }
+  }
+  tampilText() {
+    const url = 'https://rantai.tech/file/ver.txt';
+    fetch(url)
+      .then((r) => r.text())
+      .then((t) => (this.versionPacth = t));
+  }
   updateArray(idx) {
     this.arr_testimony = [];
     let looping = idx + 3;
@@ -276,6 +320,14 @@ export class LandingPageV2Component implements OnInit {
 
   openAgreements() {
     this.router.navigate(['agreements'], {
+      queryParams: {
+        lang: this.langService.lang,
+      },
+      queryParamsHandling: 'merge',
+    });
+  }
+  policyPrivacy() {
+    this.router.navigate(['privacy'], {
       queryParams: {
         lang: this.langService.lang,
       },

@@ -1,6 +1,7 @@
 {
   "kontak":"HUBUNGI KAMI",
-
+ "others":"LAINNYA",
+ "article": "ARTIKEL",
   "Sign_Up": "Daftar sekarang dan dapatkan GRATIS LANGGANAN SELAMANYA!",
   "Sign": "Daftar sekarang dan dapatkan",
   "Free_Forever":"GRATIS LANGGANAN SELAMANYA!",
@@ -30,7 +31,7 @@
   "Update_Stock_Item": "Tidak perlu ribet update stok barang, stok akan terupdate otomatis sesuai transaksi usaha Anda, dari manapun melalui handphone Anda.",
   "ONLINE_CASHIER": "KASIR ONLINE (POS) SEBAGAI ASISTEN DIGITAL TOKO FISIK KAMU",
   "Integration":"Integrasi setiap transaksi di toko fisik kamu dengan stok barang di gudang secara otomatis dan realtime.",
-  
+
   "MARKETPLACE_INTEGRATION":"INTEGRASI MARKETPLACE",
   "Control": "Kontrol Semua Toko Online Kamu Di Marketplace Hanya dengan Satu Aplikasi",
   "TRANSACTION_INFORMATION": "INFORMASI TRANSAKSI DI MARKETPLACE SECARA REALTIME",
@@ -56,7 +57,7 @@
   "top5":"Top 5 Pemenang event Rantai Bagi-bagi komisi, mendapatkan hadiah uang tunai total ratusan juta rupiah",
   "Check_out_Rantai_Event":"Simak Press Rilis Penyerahan Hadiah Rantai Bagi-bagi Komisi",
 
-  
+
   "WHY_CHOOSE":"MENGAPA MEMILIH RANTAI?",
   "Rantai_Is_Committed": "Gratis Langganan Selamanya, Rantai Berkomitmen untuk Terus Membantu Memajukan Ekonomi Nasional, Dengan Aplikasi Pengelolaan Toko Online Bagi Para Pelaku UMKM",
   "With_an_integrated": "Dengan sistem yang terintegrasi di aplikasi handphone dan dashboard, berbagai fitur unggulan Rantai hadir untuk mempermudah para pelaku UMKM meningkatkan efisiensi pengelolaan toko- toko onlinenya.",
@@ -70,12 +71,13 @@
   "help_center":"Pusat Bantuan",
   "Terms_of_Service":"Persyaratan Layanan",
 
+  "Privacy_Policy": "Kebijakan Privasi",
   "Frequently":"Pertanyaan yang sering diajukan",
   "We_are_here":"Kami hadir dengan beberapa informasi yang mungkin dapat membantu anda untuk lebih mengenal Rantai",
   "Haven't_found":"Belum menemukan pertanyaan Anda di FAQ kami? Anda selalu dapat menghubungi kami. Tim dukungan kami ",
   "Still_have":"Masih ada pertanyaan lain?",
   "Point4":"Jika terdapat 2 pemenang atau lebih dengan point sama, Maka TOTAL Nominal hadiah dari masing-masing peringkat tersebut akan dibagi rata Kepada para pemenang",
   "is_always": "selalu tersedia untuk membantu Anda"
-  
+
 }
 
