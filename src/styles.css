@@ -33,6 +33,7 @@ a:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  
 }
 
 body {
@@ -41,6 +42,7 @@ body {
 
 html, body {
   height: 100%;
+  
 }
 
 .f-8 {
