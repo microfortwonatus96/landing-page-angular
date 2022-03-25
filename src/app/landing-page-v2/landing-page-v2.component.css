@@ -453,7 +453,10 @@
   .btn-footer {
     width: 230px !important;
   }
-
+  .footer-media{
+    position: relative;
+    left: -30px !important;
+  }
   /* end section footer */
   .nav-language {
     position: unset;
@@ -582,6 +585,10 @@
   .btn-footer {
     width: 230px !important;
   }
+  .footer-media{
+    position: relative;
+    left: -30px !important;
+  }
 
   /* end section footer */
   .nav-language {
@@ -595,6 +602,11 @@
     position: relative;
     left: 123px;
   }
+  .btn-try{
+    position: relative;
+    left: 85px !important;
+  }
+  /* section 1 */
   .title-foot-s1{
     font-size:0.625rem !important;
   }
@@ -606,6 +618,7 @@
     position: relative;
     top: 1px !important;
   }
+   /* end section 1 */
 
   /*section 4 */
   .img-s4 {
@@ -693,10 +706,10 @@
 @media only screen and (min-device-width: 540px) and (max-device-width:720px) and (orientation:portrait) {}
 
 /********************************************* Batas Media Query **************************************************/
-/* * {
+* {
   box-sizing: border-box;
-  overflow-x: hidden ;
-} */
+  /* overflow-x: hidden ; */
+}
 
 .pointer {
   cursor: pointer;
