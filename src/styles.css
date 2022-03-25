@@ -41,6 +41,7 @@ html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+
 }
 
 .f-8 {
@@ -112,4 +113,8 @@ html, body {
   height: 42px;
   animation: pulse_01 2s ease infinite;
   border-radius: 5px;
+}
+
+::ng-deep.tawk-mobile{
+  background-color: red;
 }
