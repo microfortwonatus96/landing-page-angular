@@ -34,7 +34,7 @@ import { GaleryService } from '../service/customer-galery.service';
 import { Galery } from '../models/galery.model';
 import { CountdownEventService } from '../service/countdown-event.service';
 import { TestimoniService } from '../service/testimoni.service';
-import { ITestimoni } from '../models/testimoni.model';
+import { ITestimoniv2 } from '../models/testimoni.model';
 declare var $: any;
 
 @Component({
@@ -182,12 +182,12 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
   faqSideLeft = [];
   faqSideRight = [];
   listcontentGalery: string[] = [];
-  listImageTestimoni: ITestimoni[] = [];
-  listGaleryTestimoni: ITestimoni[] = [];
+  listImageTestimoni: ITestimoniv2[] = [];
+  listGaleryTestimoni: ITestimoniv2[] = [];
   setColor: boolean = false;
   showMore: boolean = false;
   timeServer: number;
-  listWinnerImg: ITestimoni[] = [];
+  listWinnerImg: ITestimoniv2[] = [];
   // mainPage: boolean
 
   // countdown event
@@ -222,11 +222,9 @@ export class LandingPageComponent implements OnInit, AfterViewInit, OnDestroy {
     private testimoniService: TestimoniService,
     private countDownService: CountdownEventService
   ) {
-    this.userService
-      .getCurrentUser().subscribe((x :any)=>{
-        if(x && x.content)
-        this.totalMarketplace  = x.content.countMarketplace; 
-    })
+    this.userService.getCurrentUser().subscribe((x: any) => {
+      if (x && x.content) this.totalMarketplace = x.content.countMarketplace;
+    });
     this.translate.addLangs(['en', 'id']);
     this.translate.setDefaultLang(this.langService.lang);
 
