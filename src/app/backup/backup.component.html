@@ -108,10 +108,100 @@
 <main id="main">
   <div
     id="block"
-    [ngClass]="agreementShow || faqPage || privacyPage ? 'display-none' : ''"
+    [class.display-none]="
+      agreementShow || faqPage || privacyPage ? 'display-none' : ''
+    "
   >
     <!-- section 1 -->
-    <section data-aos="fade-up" class="parallax-section1">
+    <section class="parallax-section1">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 col-sm col-xs">
+            <div class="first-title-s1">
+              {{ "Manage_Shop" | translate }} <br />
+              {{ "Free_sub" | translate }}
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center py-3">
+          <div class="col-md-6 col-sm col-xs">
+            <div class="text-content">
+              {{ "Rantai_present" | translate }}
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 col-sm col-xs">
+            <div class="text-content">
+              <div>{{ "Signup_now_or" | translate }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 col-sm col-xs">
+            <div class="d-flex justify-content-center gap-3 py-3 set-btn">
+              <div class="btn-s1">
+                <a href="https://rantai.tech/web/accounts/sign-up">
+                  <button class="btn-try-free">
+                    {{ "Sign_Up_Now" | translate }}
+                  </button>
+                </a>
+              </div>
+              <div class="logo-google">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div class="app-store" loading="lazy"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="box-page-one">
+            <div class="row justify-content-center gap-5">
+              <div class="img-home1"></div>
+              <div class="img-mydashboard1"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="box-footer-s1">
+              <div class="box-footer-div">
+                <div class="col-md-5">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="icon-left-s1"></div>
+                    <div class="box-desc-users">
+                      <div class="title-foot-s1 pb-2">
+                        {{ "Active_Users" | translate }}
+                      </div>
+                      <div class="content-foot-s1">
+                        {{ "more_than" | translate }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="icon-right-s1"></div>
+                    <div class="box-desc-users">
+                      <div class="title-foot-s1 pb-2">
+                        {{ "Online_Stores" | translate }}
+                      </div>
+                      <div class="content-foot-s1">
+                        {{ "Helping_online_stores" | translate }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section data-aos="fade-up" class="parallax-section1">
       <div class="container scroller-section">
         <div class="row gap-3">
           <div class="row gap-3 set-text-s1">
@@ -194,50 +284,14 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="d-flex justify-content-center foot-s1">
-                <div class="col-5">
-                  <div class="d-flex content-f-s1">
-                    <div class="icon-left-s1"></div>
-                    <div class="content-footer-s1">
-                      <div>
-                        <div class="title-foot-s1">
-                          {{ "Active_Users" | translate }}
-                        </div>
-                      </div>
-                      <div>
-                        <div class="content-foot-s1">
-                          {{ "more_than" | translate }}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <div class="d-flex">
-                    <div class="icon-right-s1"></div>
-                    <div class="content-footer-s1">
-                      <div>
-                        <div class="title-foot-s1">
-                          {{ "Online_Stores" | translate }}
-                        </div>
-                      </div>
-                      <div>
-                        <div class="content-foot-s1">
-                          {{ "Helping_online_stores" | translate }}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- end section 1 -->
     <!-- section 2 -->
-    <section id="ourfeature" class="parallax-section2">
+    <!-- <section id="ourfeature" class="parallax-section2">
       <div class="container scroller-section">
         <div class="row align-items-center justify-content-center gap-4">
           <div class="d-flex justify-content-center">
@@ -333,11 +387,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- end section 2 -->
 
     <!-- section 3 -->
-    <section class="parallax-section3">
+    <!-- <section class="parallax-section3">
       <div class="container scroller-section">
         <div class="col-md-6" data-aos="fade-up">
           <div class="image-mobile" loading="lazy">
@@ -454,11 +508,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- end section 3 -->
 
     <!-- section 4 -->
-    <section class="parallax-section4">
+    <!-- <section class="parallax-section4">
       <div class="container scroller-section">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-6" data-aos="fade-up">
@@ -518,11 +572,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- end section 4 -->
 
     <!-- section 5 -->
-    <section class="parallax-section5">
+    <!-- <section class="parallax-section5">
       <div class="container scroller-section">
         <div class="row justify-content-start gap-5">
           <div class="row justify-content-start gap-3">
@@ -570,11 +624,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- end section 5 -->
 
     <!-- SECTION 6 -->
-    <section class="parallax-section6" [class.padd-b]="!sectionTestimony">
+    <!-- <section class="parallax-section6" [class.padd-b]="!sectionTestimony">
       <div class="container scroller-section">
         <div class="row justify-content-center gap-3 content-S6">
           <div class="title-blue">{{ "RANTAI_​EVENTS" | translate }}</div>
@@ -720,11 +774,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- END SECTION 6 -->
 
     <!-- section 7 -->
-    <section class="parallax-testimoni" *ngIf="sectionTestimony">
+    <!-- <section class="parallax-testimoni" *ngIf="sectionTestimony">
       <div class="mt-5 row justify-content-center content-S7">
         <div class="title-blue">TESTIMONIAL</div>
         <div class="title-section7">Apa Kata Pelanggan Kami</div>
@@ -763,7 +817,7 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- end section 7 -->
 
     <!-- section 8 -->
@@ -887,7 +941,7 @@
   <!-- END PRIVACY SECTION -->
 </main>
 
-<footer id="contact">
+<!-- <footer id="contact">
   <div class="parallax-footer">
     <div class="container">
       <div class="row">
@@ -1080,13 +1134,13 @@
         </div>
         <div class="col-md-4">
           <div class="d-flex gap-4 last-foot">
-            <div class="last-footer">
+            <div (click)="selengkapnya()" class="last-footer">
               <div>FAQ</div>
             </div>
-            <div class="last-footer">
+            <div class="last-footer" (click)="policyPrivacy()">
               <div>{{ "Privacy_Policy" | translate }}</div>
             </div>
-            <div class="last-footer">
+            <div class="last-footer" (click)="openAgreements()">
               <div>{{ "Terms_of_Service" | translate }}</div>
             </div>
           </div>
@@ -1094,4 +1148,4 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->

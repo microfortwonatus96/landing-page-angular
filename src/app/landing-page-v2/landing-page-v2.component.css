@@ -40,7 +40,7 @@
   .text-content {
     font-size: 0.9375rem !important;
     text-align: unset !important;
-    width: 100% !important;
+    /* width: 100% !important; */
   }
 
   .set-text-s1 {
@@ -62,8 +62,8 @@
   }
 
   .box-footer-s1 {
-    width: 90% !important;
-    height: 120px !important;
+    width: 100% !important;
+    height: 100px !important;
     margin-bottom: 20px !important;
   }
 
@@ -355,8 +355,8 @@
   }
 
   .box-footer-s1 {
-    width: 90% !important;
-    height: 120px !important;
+    width: 100% !important;
+    height: 100px !important;
     margin-bottom: 20px !important;
   }
 
@@ -489,8 +489,8 @@
   }
 
   .box-footer-s1 {
-    width: 90% !important;
-    height: 120px !important;
+    width: 100% !important;
+    height: 100px !important;
     margin-bottom: 20px !important;
   }
 
@@ -725,10 +725,10 @@
 @media only screen and (min-device-width: 540px) and (max-device-width:720px) and (orientation:portrait) {}
 
 /********************************************* Batas Media Query **************************************************/
-* {
-  /* box-sizing: border-box; */
+/* * {
+  box-sizing: border-box;
   overflow: hidden ;
-}
+} */
 
 .pointer {
   cursor: pointer;
@@ -786,7 +786,7 @@
 }
 
 .navbar-nav .nav-item {
-  padding-left: 30px;
+  margin: 0 20px;
 }
 
 .nav-language {
@@ -931,10 +931,9 @@
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 24px;
+  /* line-height: 24px; */
   text-align: center;
   color: #1A1E25;
-  width: 50%;
 }
 
 /* section 1 */
@@ -1875,4 +1874,17 @@
 .box-copyright {
   position: relative;
   top: 20px;
+}
+
+/* new css */
+section {
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.first-title-s1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0B69FD;
+  text-align: center;
 }
