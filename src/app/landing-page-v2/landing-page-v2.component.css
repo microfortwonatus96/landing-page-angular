@@ -5,22 +5,21 @@
     text-align: center !important;
     padding-bottom: 10px;
   }
-
   .btn-try-free {
     position: relative;
-    left: 80px !important;
-    
+    left: 70px !important;
   }
-
+  .btn-try-free1{
+    position: relative;
+    left: 80px !important;
+  }
   .title-content {
     font-size: 12px !important;
   }
-
   .content-second {
     font-size: 9px !important;
     line-height: 15px !important;
   }
-
   .title-second {
     font-size: 22px !important;
     line-height: 27px !important;
@@ -31,6 +30,10 @@
   /* end global */
 
   /* section 1 */
+  .app-store{
+    position: relative;
+    left: 102px !important;
+  }
   .title {
     padding-top: 50px;
     font-size: 1.875rem !important;
@@ -50,12 +53,6 @@
     display: flex !important;
     flex-direction: column;
   }
-
-  .box {
-    font-family: Franklin Gothic Medium;
-
-  }
-
   .btn-s1 {
     margin-bottom: 20px !important;
   }
@@ -63,7 +60,7 @@
     display: none !important;
   }
   .box-footer-s1 {
-    width: 100% !important;
+    width: 90% !important;
     height: 120px !important;
     margin-bottom: 20px !important;
   }
@@ -79,7 +76,6 @@
     position: relative;
     top: -12px !important;
   }
-
   .title-foot-s1 {
     font-size: 8px !important;
     line-height: 10px !important;
@@ -171,6 +167,28 @@
     width: 80% !important;
     position: relative;
     top: 308px;
+  }
+  .marketplace{
+    position: relative;
+    left: 35px !important;
+  }
+  .logo-tokped{
+    width: 40% !important;
+  }
+  .logo-shopee{
+    width: 40% !important;
+  }
+  .logo-jdid{
+    width: 40% !important;
+  }
+  .logo-blibli{
+    width: 40% !important;
+  }
+  .logo-lazada{
+    width: 40% !important;
+  }
+  .logo-bukalapak{
+    width: 40% !important;
   }
   .title-s5 {
     font-size: 18px !important;
@@ -382,38 +400,66 @@
   .box-s5 {
     height: 300px !important
   }
-
   .img-foot-s5 {
     position: relative;
     top: 61px !important;
     right: 20px !important;
   }
-
   .box-content-s5 {
     position: relative;
     left: 30px !important;
     bottom: 50px;
   }
-
   .title-s5 {
     font-size: 20px !important;
     width: 80% !important;
   }
-
   .content-s5 {
     /* font-size: 20px !important; */
     width: 80% !important;
   }
-
+  .marketplace{
+    position: relative;
+    left: 35px !important;
+  }
+  .logo-tokped{
+    width: 30% !important;
+  }
+  .logo-shopee{
+    width: 30% !important;
+  }
+  .logo-jdid{
+    width: 30% !important;
+  }
+  .logo-blibli{
+    width: 30% !important;
+  }
+  .logo-lazada{
+    width: 30% !important;
+  }
+  .logo-bukalapak{
+    width: 30% !important;
+  }
   /* end section 5 */
 
   /* section 6 */
   .title-section6 {
     width: 100% !important;
   }
-
+  .media-s6{
+    position: relative; 
+    left:25px;
+  }
   .p-S6 {
     width: 80% !important;
+  }
+  .slide-right{
+    position: relative;
+    bottom: 30px;
+  }
+  .slide-left{
+    position: relative;
+    bottom: 30px;
   }
 
   /* end section 6 */
@@ -429,11 +475,9 @@
   .parallax-footer {
     height: 100vh;
   }
-
   .btn-footer {
     width: 230px !important;
   }
-
   .footer-media {
     position: relative;
     left: -30px !important;
@@ -516,38 +560,66 @@
   .box-s5 {
     height: 300px !important
   }
-
   .img-foot-s5 {
     position: relative;
     top: 61px !important;
     right: 20px !important;
   }
-
   .box-content-s5 {
     position: relative;
     left: 30px !important;
     bottom: 50px;
   }
-
   .title-s5 {
     font-size: 20px !important;
     width: 80% !important;
   }
-
   .content-s5 {
     /* font-size: 20px !important; */
     width: 80% !important;
   }
-
+  .marketplace{
+    position: relative;
+    left: 35px !important;
+  }
+  .logo-tokped{
+    width: 30% !important;
+  }
+  .logo-shopee{
+    width: 30% !important;
+  }
+  .logo-jdid{
+    width: 30% !important;
+  }
+  .logo-blibli{
+    width: 30% !important;
+  }
+  .logo-lazada{
+    width: 30% !important;
+  }
+  .logo-bukalapak{
+    width: 30% !important;
+  }
   /* end section 5 */
 
   /* section 6 */
   .title-section6 {
     width: 100% !important;
   }
-
+  .media-s6{
+    position: relative; 
+    left:25px;
+  }
   .p-S6 {
     width: 80% !important;
+  }
+  .slide-right{
+    position: relative;
+    bottom: 30px;
+  }
+  .slide-left{
+    position: relative;
+    bottom: 30px;
   }
 
   /* end section 6 */
@@ -581,29 +653,32 @@
 }
 
 @media only screen and (min-device-width: 400px) and (max-device-width:541px) and (orientation:portrait) {
-  .logo-google {
-    position: relative;
-    left: 123px;
-  }
+ 
 
-  .btn-try {
+  .btn-try-free1 {
     position: relative;
-    left: 85px !important;
+    left: 100px !important;
+  }
+  .btn-try-free {
+    position: relative;
+    left: 95px !important;
   }
 
   /* section 1 */
   .title-foot-s1 {
     font-size: 0.625rem !important;
   }
-
   .content-foot-s1 {
     font-size: 0.5rem !important;
     line-height: 10px !important;
   }
-
   .content-footer-s1 {
     position: relative;
     top: 1px !important;
+  }
+  .app-store{
+    position: relative;
+    left: 125px !important;
   }
 
   /* end section 1 */
@@ -614,7 +689,6 @@
     left: 15px !important;
     top: 30px !important;
   }
-
   .box-s4 {
     width: 95% !important;
   }
@@ -627,44 +701,63 @@
     position: relative;
     left: 10px !important;
   }
-
   .set-box-s5 {
     position: relative;
     left: 17px !important;
     padding-bottom: 150px !important;
   }
-
   .box-s5 {
     width: 90% !important;
     height: 150% !important;
   }
-
   .img-foot-s5 {
     width: 80% !important;
     position: relative;
     top: 288px !important;
   }
-
   .title-s5 {
     font-size: 18px !important;
     width: 280px !important;
     position: relative;
     left: 25px !important;
   }
-
   .content-s5 {
     font-size: 12px !important;
     width: 280px !important;
     position: relative;
     left: 25px !important;
   }
-
   .box-content-s5 {
     position: relative;
     bottom: 50px !important;
     width: 10% !important;
   }
-
+  .marketplace{
+    position: relative;
+    left: 35px !important;
+  }
+  .logo-tokped{
+    width: 40% !important;
+  }
+  .logo-shopee{
+    width: 40% !important;
+  }
+  .logo-jdid{
+    width: 40% !important;
+  }
+  .logo-blibli{
+    width: 40% !important;
+  }
+  .logo-lazada{
+    width: 40% !important;
+  }
+  .logo-bukalapak{
+    width: 40% !important;
+  }
+  .logo-google{
+    position: relative;
+    left: -50px !important;
+  }
   /*end section 5 */
 
   /* section 6 */
@@ -674,7 +767,10 @@
     width: 95% !important;
     text-align: center !important;
   }
-
+  .media-s6{
+    position: relative; 
+    left:0px;
+  }
   .p-S6 {
     width: 90% !important;
     text-align: center !important;
@@ -686,16 +782,13 @@
   .parallax-footer {
     height: 150vh;
   }
-
   .nav-language {
     position: unset;
     left: unset !important;
   }
-
   .title-foot-s8 {
     font-size: 0.75rem !important;
   }
-
   .btn {
     width: 100% !important;
   }
@@ -709,9 +802,6 @@
   box-sizing: border-box;
 }
 
-/* body, section{
-  overflow: hidden;
-} */
 .pointer {
   cursor: pointer;
 }
@@ -738,6 +828,17 @@
   border-radius: 24px;
   width: 190px;
   /* width: 100%; */
+  background-color: #0b69fd;
+  height: 42px;
+  color: #fff;
+  font-size: 12px;
+  align-items: center;
+  font-family: montserrat;
+}
+.btn-try-free1 {
+  border: 1px solid #0b69fd;
+  border-radius: 24px;
+  width: 190px;
   background-color: #0b69fd;
   height: 42px;
   color: #fff;
@@ -1180,37 +1281,43 @@
 }
 
 .logo-tokped {
-  width: 210px;
+  /* width: 210px; */
+  width: 22%;
   height: auto;
   content: url('src/assets/icon-marketplace/tokped_1.svg');
 }
 
 .logo-shopee {
-  width: 210px;
+  width: 22%;
+  /* width: 210px; */
   height: auto;
   content: url('src/assets/icon-marketplace/shopee_1.svg');
 }
 
 .logo-jdid {
-  width: 210px;
+  width: 22%;
+  /* width: 210px; */
   height: auto;
   content: url('src/assets/icon-marketplace/jdid.svg');
 }
 
 .logo-blibli {
-  width: 210px;
+  /* width: 210px; */
+  width: 22%;
   height: auto;
   content: url('src/assets/icon-marketplace/blibli_1.svg');
 }
 
 .logo-lazada {
-  width: 210px;
+  width: 22%;
+  /* width: 210px; */
   height: auto;
   content: url('src/assets/icon-marketplace/lazada_1.svg');
 }
 
 .logo-bukalapak {
-  width: 210px;
+  width: 22%;
+  /* width: 210px; */
   height: auto;
   content: url('src/assets/icon-marketplace/bukalapak_1.svg');
 }
