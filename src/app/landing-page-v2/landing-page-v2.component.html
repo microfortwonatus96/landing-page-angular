@@ -158,39 +158,35 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="row justify-content-center pt-4 gap-5 box-page-one">
-            <div class="img-home1"></div>
-            <div class="img-mydashboard1"></div>
+          <div class="box-page-one">
+            <div class="row justify-content-center gap-5">
+              <div class="img-home1"></div>
+              <div class="img-mydashboard1"></div>
+            </div>
           </div>
-          <div class="box-footer-s1">
-            <div class="d-flex justify-content-center foot-s1">
-              <div class="col-5">
-                <div class="d-flex content-f-s1">
-                  <div class="icon-left-s1"></div>
-                  <div class="content-footer-s1">
-                    <div>
-                      <div class="title-foot-s1">
+          <div class="col-md-12">
+            <div class="box-footer-s1">
+              <div class="box-footer-div">
+                <div class="col-md-5">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="icon-left-s1"></div>
+                    <div class="box-desc-users">
+                      <div class="title-foot-s1 pb-2">
                         {{ "Active_Users" | translate }}
                       </div>
-                    </div>
-                    <div>
                       <div class="content-foot-s1">
                         {{ "more_than" | translate }}
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-5">
-                <div class="d-flex">
-                  <div class="icon-right-s1"></div>
-                  <div class="content-footer-s1">
-                    <div>
-                      <div class="title-foot-s1">
+                <div class="col-md-5">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="icon-right-s1"></div>
+                    <div class="box-desc-users">
+                      <div class="title-foot-s1 pb-2">
                         {{ "Online_Stores" | translate }}
                       </div>
-                    </div>
-                    <div>
                       <div class="content-foot-s1">
                         {{ "Helping_online_stores" | translate }}
                       </div>
@@ -198,6 +194,42 @@
                   </div>
                 </div>
               </div>
+              <!-- <div class="d-flex justify-content-center foot-s1">
+                <div class="col-5">
+                  <div class="d-flex content-f-s1">
+                    <div class="icon-left-s1"></div>
+                    <div class="content-footer-s1">
+                      <div>
+                        <div class="title-foot-s1">
+                          {{ "Active_Users" | translate }}
+                        </div>
+                      </div>
+                      <div>
+                        <div class="content-foot-s1">
+                          {{ "more_than" | translate }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="d-flex">
+                    <div class="icon-right-s1"></div>
+                    <div class="content-footer-s1">
+                      <div>
+                        <div class="title-foot-s1">
+                          {{ "Online_Stores" | translate }}
+                        </div>
+                      </div>
+                      <div>
+                        <div class="content-foot-s1">
+                          {{ "Helping_online_stores" | translate }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -858,11 +890,13 @@
 <footer id="contact">
   <div class="parallax-footer">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="box-footer">
-          <div class="d-flex justify-content-evenly box-foot">
-            <div class="title-foot-s8 col-5">
-              {{ "Download_Rantai_Now" | translate }}
+      <div class="row">
+        <div class="col-md-12 box-footer">
+          <div class="box-footer-div">
+            <div class="col-md-5">
+              <span class="title-foot-s8">
+                {{ "Download_Rantai_Now" | translate }}</span
+              >
             </div>
             <div class="logo-google-footer">
               <a
@@ -876,183 +910,185 @@
           </div>
         </div>
       </div>
-      <div class="row gap-5">
-        <div class="d-flex justify-content-between d-footer gap-4">
-          <div class="col-md-4">
-            <div class="row justify-content-start gap-2">
-              <div
-                class="logo-rantai-footer"
-                loading="lazy"
-                data-aos="fade-left"
-                data-aos-delay="200"
-              ></div>
-              <div class="çontent-footer">{{ "Rantai_Is" | translate }}</div>
-            </div>
+      <div class="row justify-content-start pb-4">
+        <div class="col-md-4 col-sm-6 col-xs-6">
+          <div class="row justify-content-start gap-2">
+            <div
+              class="logo-rantai-footer pb-3"
+              loading="lazy"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            ></div>
+            <div class="çontent-footer">{{ "Rantai_Is" | translate }}</div>
           </div>
-
-          <div class="col-md-4 set-rantai">
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6">
+          <div class="row justify-content-start gap-2">
+            <div class="title-content-footer pt-3 pb-3">
+              {{ "CHECK_OUR_VIDEO" | translate }}
+            </div>
             <div class="row justify-content-start gap-2">
-              <div class="title-content-footer">
-                {{ "CHECK_OUR_VIDEO" | translate }}
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=8JxK--cp9nE"
+                  class="btn col-md-8 col-sm-8 btn-footer"
+                  target="_blank"
+                >
+                  <div class="d-flex justify-content-start gap-3">
+                    <div class="logo-video"></div>
+                    <div class="icon-video-biru"></div>
+                    <div class="btn-footer-text">Rantai Introduction</div>
+                  </div>
+                </a>
               </div>
-              <div class="row justify-content-start gap-2">
-                <div>
-                  <a
-                    href="https://www.youtube.com/watch?v=8JxK--cp9nE"
-                    class="btn col-md-8 col-sm-8 btn-footer"
-                    target="_blank"
-                  >
-                    <div class="d-flex justify-content-start gap-3">
-                      <div class="logo-video"></div>
-                      <div class="icon-video-biru"></div>
-                      <div class="btn-footer-text">Rantai Introduction</div>
-                    </div>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href="https://www.youtube.com/watch?v=E3fK2pUYTts"
-                    class="btn col-md-8 col-sm-8 btn-footer"
-                    target="_blank"
-                  >
-                    <div class="d-flex justify-content-start gap-3">
-                      <div class="logo-video"></div>
-                      <div class="icon-video-biru"></div>
-                      <div class="btn-footer-text">
-                        Marketplace Introduction
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href="https://youtu.be/y-Hc7QWsOd8"
-                    class="btn col-md-8 col-sm-8 btn-footer"
-                    target="_blank"
-                  >
-                    <div class="d-flex justify-content-start gap-3">
-                      <div class="logo-video"></div>
-                      <div class="icon-video-biru"></div>
-                      <div class="btn-footer-text">Marketplace Tutorial</div>
-                    </div>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href="https://www.youtube.com/watch?v=TbvnWpw19kc"
-                    class="btn col-md-8 col-sm-8 btn-footer"
-                    target="_blank"
-                  >
-                    <div class="d-flex justify-content-start gap-3">
-                      <div class="logo-video"></div>
-                      <div class="icon-video-biru"></div>
-                      <div class="btn-footer-text">Rantai Talk</div>
-                    </div>
-                  </a>
-                </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=E3fK2pUYTts"
+                  class="btn col-md-8 col-sm-8 btn-footer"
+                  target="_blank"
+                >
+                  <div class="d-flex justify-content-start gap-3">
+                    <div class="logo-video"></div>
+                    <div class="icon-video-biru"></div>
+                    <div class="btn-footer-text">Marketplace Introduction</div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://youtu.be/y-Hc7QWsOd8"
+                  class="btn col-md-8 col-sm-8 btn-footer"
+                  target="_blank"
+                >
+                  <div class="d-flex justify-content-start gap-3">
+                    <div class="logo-video"></div>
+                    <div class="icon-video-biru"></div>
+                    <div class="btn-footer-text">Marketplace Tutorial</div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=TbvnWpw19kc"
+                  class="btn col-md-8 col-sm-8 btn-footer"
+                  target="_blank"
+                >
+                  <div class="d-flex justify-content-start gap-3">
+                    <div class="logo-video"></div>
+                    <div class="icon-video-biru"></div>
+                    <div class="btn-footer-text">Rantai Talk</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
-
-          <div class="col-md-4 row gap-2 set-rantai">
-            <div class="title-content-footer">
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6">
+          <div class="row justify-content-start gap-2">
+            <div class="title-content-footer pt-3">
               <p>{{ "CONTACT_US" | translate }}</p>
             </div>
-            <div class="row gap-3">
-              <div
-                class="d-flex justify-content-start gap-3"
-                data-aos-delay="200"
-              >
-                <div class="img-phone" loading="lazy"></div>
-                <div class="çontent-footer">021 296 19 712</div>
-              </div>
-              <div
-                class="d-flex justify-content-start gap-3"
-                data-aos-delay="200"
-              >
-                <div class="img-email" loading="lazy"></div>
-                <div class="çontent-footer">support@rantai.tech</div>
-              </div>
-              <div
-                class="d-flex justify-content-start gap-4"
-                data-aos-delay="200"
-              >
-                <div class="img-location" loading="lazy"></div>
-                <div>
-                  <a
-                    class="çontent-footer"
-                    target="_blank"
-                    href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
-                  >
-                    Vinilon Building Jl. Raden Saleh Raya No.kav 13-17,
-                    RT.1/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat, DKI
-                    Jakarta 10430
-                  </a>
-                </div>
-              </div>
-              <div class="follow-me">
-                {{ "follow_me" | translate }}
-              </div>
-              <div
-                class="d-flex justify-content-start align-items-center footer-media"
-              >
+            <div
+              class="d-flex justify-content-start gap-3 pb-2"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="img-phone" loading="lazy"></div>
+              <div class="çontent-footer">021 296 19 712</div>
+            </div>
+            <div
+              class="d-flex justify-content-start gap-3 pb-2"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="img-email" loading="lazy"></div>
+              <div class="çontent-footer">support@rantai.tech</div>
+            </div>
+            <div
+              class="d-flex justify-content-start gap-4 align-items-start pb-3"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="img-location" loading="lazy"></div>
+              <div>
                 <a
-                  href="https://www.tiktok.com/@rantai.tech?lang=en&is_copy_url=1&is_from_webapp=v1"
+                  class="çontent-footer"
                   target="_blank"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
+                  href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
                 >
-                  <i id="icon-tiktok"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/official.rantai/"
-                  target="_blank"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
-                  <i id="icon-instagram"></i>
-                </a>
-                <a
-                  href="https://www.youtube.com/channel/UCtScj1vp9ZV9tOZ1tcZnC4w"
-                  target="_blank"
-                  data-aos="fade-up"
-                  data-aos-delay="500"
-                >
-                  <i id="icon-youtube"></i>
-                </a>
-                <a
-                  href="https://www.facebook.com/RantaiOfficial"
-                  target="_blank"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                >
-                  <i id="icon-facebook"></i>
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/rantai-official"
-                  target="_blank"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <i id="icon-linkedin"></i>
+                  Vinilon Building Jl. Raden Saleh Raya No.kav 13-17, RT.1/RW.2,
+                  Kenari, Kec. Senen, Kota Jakarta Pusat, DKI Jakarta 10430
                 </a>
               </div>
             </div>
+            <div class="follow-me pb-2">
+              {{ "follow_me" | translate }}
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-center footer-media"
+            >
+              <a
+                href="https://www.tiktok.com/@rantai.tech?lang=en&is_copy_url=1&is_from_webapp=v1"
+                target="_blank"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <i id="icon-tiktok"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/official.rantai/"
+                target="_blank"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <i id="icon-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCtScj1vp9ZV9tOZ1tcZnC4w"
+                target="_blank"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <i id="icon-youtube"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/RantaiOfficial"
+                target="_blank"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <i id="icon-facebook"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/rantai-official"
+                target="_blank"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <i id="icon-linkedin"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="border-box"></div>
       </div>
-      <div class="d-flex justify-content-between d-footer">
-        <div class="last-foot">
-          <div class="last-footer">© 2021 PT Cyberindo Sinergi Sistem</div>
-        </div>
-        <div class="d-flex gap-5 last-foot">
-          <div (click)="selengkapnya()" class="last-footer"><div>FAQ</div></div>
-          <div class="last-footer" (click)="policyPrivacy()">
-            <div>{{ "Privacy_Policy" | translate }}</div>
+      <div class="border-box"></div>
+      <div class="d-flex justify-content-center box-copyright">
+        <div class="col-md-8">
+          <div class="last-foot">
+            <div class="last-footer">© 2021 PT Cyberindo Sinergi Sistem</div>
           </div>
-          <div class="last-footer" (click)="openAgreements()">
-            <div>{{ "Terms_of_Service" | translate }}</div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex gap-4 last-foot">
+            <div (click)="selengkapnya()" class="last-footer">
+              <div>FAQ</div>
+            </div>
+            <div class="last-footer" (click)="policyPrivacy()">
+              <div>{{ "Privacy_Policy" | translate }}</div>
+            </div>
+            <div class="last-footer" (click)="openAgreements()">
+              <div>{{ "Terms_of_Service" | translate }}</div>
+            </div>
           </div>
         </div>
       </div>
