@@ -8,6 +8,7 @@
   .btn-try-free {
     position: relative;
     left: 80px !important;
+    
   }
   .title-content {
     font-size: 12px !important;
@@ -34,48 +35,36 @@
     text-align: unset !important;
     width: 100% !important;
   }
-
   .text-content {
     font-size: 0.9375rem !important;
     text-align: unset !important;
     width: 100% !important;
   }
-
   .set-text-s1 {
     position: relative;
     left: 20px;
   }
-
   .set-btn {
     display: flex !important;
     flex-direction: column;
   }
-  .box{
-    font-family: Franklin Gothic Medium;
-
-  }
-
   .btn-s1 {
     margin-bottom: 20px !important;
   }
-
   .img-mydashboard1 {
     display: none !important;
   }
-
   .box-footer-s1 {
-    width: 90% !important;
+    width: 100% !important;
     height: 120px !important;
     margin-bottom: 20px !important;
   }
-
   .icon-left-s1 {
     width: 50px !important;
     height: 50px !important;
     position: relative;
     top: -12px !important;
   }
-
   .icon-right-s1 {
     width: 50px !important;
     height: 50px !important;
@@ -87,12 +76,10 @@
     font-size: 8px !important;
     line-height: 10px !important;
   }
-
   .content-foot-s1 {
     font-size: 7px !important;
     line-height: 10px !important;
   }
-
   .content-footer-s1 {
     position: relative;
     top: 0px !important;
@@ -104,27 +91,22 @@
   .title-first {
     font-size: 30px !important;
   }
-
   .content-first {
     font-size: 15px !important;
   }
-
   .img-s2 {
     position: relative;
     left: 5px;
   }
-
   .title-blue {
     position: relative;
     left: 10px;
   }
-
   .box-content-s2 {
     position: relative;
     left: 20px !important;
     width: 450px !important;
   }
-
   .sign-free {
     position: relative;
     left: 10px !important;
@@ -143,7 +125,6 @@
     left: 15px !important;
     padding-bottom: 20px !important;
   }
-
   .image-media {
     display: none !important;
   }
@@ -156,7 +137,6 @@
     left: 15px !important;
     padding-bottom: 60px !important;
   }
-
   .box-s4 {
     width: 95% !important;
   }
@@ -169,31 +149,26 @@
     position: relative;
     left: 10px !important;
   }
-
   .set-box-s5 {
     position: relative;
     left: 17px !important;
     padding-bottom: 150px !important;
   }
-
   .box-s5 {
     width: 90% !important;
     height: 150% !important;
   }
-
   .img-foot-s5 {
     width: 80% !important;
     position: relative;
     top: 308px;
   }
-
   .title-s5 {
     font-size: 18px !important;
     width: 280px !important;
     position: relative;
     left: 25px !important;
   }
-
   .content-s5 {
     font-size: 12px !important;
     width: 280px !important;
