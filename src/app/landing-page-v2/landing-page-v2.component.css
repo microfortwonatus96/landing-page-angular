@@ -5,7 +5,10 @@
     text-align: center !important;
     padding-bottom: 10px;
   }
-
+  .btn-try-free {
+    position: relative;
+    left: 80px !important;
+  }
   .title-content {
     font-size: 12px !important;
   }
@@ -20,11 +23,6 @@
     line-height: 27px !important;
     position: relative;
     left: 10px;
-  }
-
-  .logo-google {
-    position: relative;
-    left: 102px;
   }
 
   /* end global */
@@ -49,8 +47,12 @@
   }
 
   .set-btn {
-    display: block !important;
-    text-align: center !important;
+    display: flex !important;
+    flex-direction: column;
+  }
+  .box{
+    font-family: Franklin Gothic Medium;
+
   }
 
   .btn-s1 {
@@ -127,12 +129,6 @@
     position: relative;
     left: 10px !important;
   }
-
-  .btn-try {
-    position: relative;
-    left: 60px !important;
-  }
-
   .sign-free-forever {
     font-size: 14px !important;
   }
@@ -725,11 +721,12 @@
 @media only screen and (min-device-width: 540px) and (max-device-width:720px) and (orientation:portrait) {}
 
 /********************************************* Batas Media Query **************************************************/
-/* * {
+* {
   box-sizing: border-box;
-  overflow: hidden ;
+}
+/* body, section{
+  overflow: hidden;
 } */
-
 .pointer {
   cursor: pointer;
 }
@@ -755,6 +752,7 @@
   border: 1px solid #0b69fd;
   border-radius: 24px;
   width: 190px;
+  /* width: 100%; */
   background-color: #0b69fd;
   height: 42px;
   color: #fff;
@@ -916,6 +914,7 @@
 }
 
 /* end header */
+
 .title {
   font-size: 2.625rem;
   color: #0B69FD;
@@ -925,7 +924,6 @@
   width: 55%;
   line-height: 110%;
 }
-
 .text-content {
   font-family: 'Montserrat';
   font-style: normal;
@@ -939,10 +937,8 @@
 /* section 1 */
 .parallax-section1 {
   background-color: #DFEBFE;
-  height: 100%;
+  /* height: 100%; */
   padding-top: 110px;
-  /* padding-bottom: 0px; */
-  /* width: 100vw; */
 }
 
 .box-page-one {
