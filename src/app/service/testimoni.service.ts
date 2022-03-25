@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { ITestimoni, Testimoni } from '../models/Testimoni.model';
+import { ITestimoniv2, Testimoni } from '../models/testimoni.model';
 
 @Injectable({
   providedIn: 'root',
@@ -10,8 +10,8 @@ import { ITestimoni, Testimoni } from '../models/Testimoni.model';
 export class TestimoniService {
   constructor(private http: HttpClient) {}
 
-  getTestimoni(): Observable<ITestimoni[]> {
-    return this.http.get<ITestimoni[]>(
+  getTestimoni(): Observable<ITestimoniv2[]> {
+    return this.http.get<ITestimoniv2[]>(
       `${environment.api_testimoni}/winner-event`
     );
   }

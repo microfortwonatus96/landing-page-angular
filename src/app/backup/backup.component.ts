@@ -1,48 +1,17 @@
-import {
-  AfterViewInit,
-  Component,
-  ElementRef,
-  OnDestroy,
-  OnInit,
-  ViewChild,
-} from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { takeWhile } from 'rxjs/operators';
-import { ICity } from '../models/city.model';
-import { IProspectiveCustomer } from '../models/prospective-customer.model';
-import { IProvince } from '../models/province.model';
-import { LangList, LangService } from '../service/lang.service';
-import { UserService } from '../service/user.service';
-import Swal from 'sweetalert2';
-import { lang } from '../lang/lang.interface';
-import {
-  ActivatedRoute,
-  ActivationEnd,
-  NavigationEnd,
-  Router,
-} from '@angular/router';
-import { SubscriptionService } from '../service/subscribtion.service';
-import { ISubscribe } from '../models/subscribe.model';
-import { RefferalCodeService } from '../service/referral-code.service';
-import {
-  IReferralCode,
-  IReferralEvent,
-  TermCondition,
-} from '../models/referral.model';
-import { GaleryService } from '../service/customer-galery.service';
-import { Galery } from '../models/galery.model';
-import { CountdownEventService } from '../service/countdown-event.service';
-import { TestimoniService } from '../service/testimoni.service';
 import { ITestimoniv2 } from '../models/testimoni.model';
+import { LangList, LangService } from '../service/lang.service';
+import { TestimoniService } from '../service/testimoni.service';
 declare var $: any;
-
 @Component({
-  selector: 'app-landing-page-v2',
-  templateUrl: './landing-page-v2.component.html',
-  styleUrls: ['./landing-page-v2.component.css'],
+  selector: 'app-backup',
+  templateUrl: './backup.component.html',
+  styleUrls: ['./backup.component.css'],
 })
-export class LandingPageV2Component implements OnInit {
+export class BackupComponent implements OnInit {
   faqPage = false;
   privacyPage = false;
   dataContent = [
@@ -100,7 +69,6 @@ export class LandingPageV2Component implements OnInit {
   arr_testimony = [];
   sectionTestimony: boolean = false;
   versionPacth: string;
-
   constructor(
     public langService: LangService,
     public translate: TranslateService,
@@ -204,7 +172,6 @@ export class LandingPageV2Component implements OnInit {
     window.addEventListener('scroll', this.scrollEffect);
     this.scrollEffect();
   }
-
   scrollEffect() {
     var effectscrl = document.querySelectorAll('.scroller-section');
     for (var i = 0; i < effectscrl.length; i++) {

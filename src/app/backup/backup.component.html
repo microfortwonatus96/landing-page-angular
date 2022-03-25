@@ -1,0 +1,1097 @@
+<header id="home">
+  <nav id="navbar" class="navbar navbar-expand-md fixed-top b-navbar">
+    <div class="container bg-crumb">
+      <div class="d-flex justify-content-center gap-3">
+        <button
+          id="navbar-t"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+          aria-controls="collapsibleNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span id="navbar-t" class="navbar-toggler-icon"></span>
+        </button>
+        <a
+          class="navbar-brand fw-bold d-flex justify-content-center align-items-center"
+          href="/"
+        >
+          <div class="logo-header" loading="lazy"></div>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse edit-header" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="#ourfeature">{{
+              "feature" | translate
+            }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#ourfeature">{{
+              "article" | translate
+            }}</a>
+          </li>
+          <li class="nav-item">
+            <div
+              class="nav-link pointer d-flex justify-content-center fw-bold"
+              (click)="download()"
+            >
+              <div>{{ "others" | translate }}</div>
+              &nbsp;
+              <div class="icon-chev pl-2" id="chevron1"></div>
+            </div>
+            <div id="menu-download" class="mt-2">
+              <a
+                class="nav-link text-left fw-bold"
+                href="https://rantai.tech/file/rantaitalk.exe"
+                download
+                >RANTAI TALK</a
+              >
+              <a
+                class="nav-link text-left fw-bold"
+                href="https://rantai.tech/file/auditinstaller.exe"
+                download
+                >AUDIT</a
+              >
+              <a
+                class="nav-link text-left fw-bold"
+                href="https://rantai.tech/file/auditpatch.exe"
+                download
+                >AUDIT PATCH {{ versionPacth }}</a
+              >
+              <a
+                class="nav-link text-left fw-bold"
+                href="https://rantai.tech/file/mysql_wb.exe"
+                download
+                >MySQL WORKBENCH</a
+              >
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold" href="#contact">{{
+              "kontak" | translate
+            }}</a>
+          </li>
+          <li class="nav-item nav-language">
+            <div
+              class="nav-link click-lang lang-change"
+              (click)="showLanguage()"
+            >
+              <div
+                [ngClass]="langService.lang === 'en' ? 'en-flag' : 'id-flag'"
+              ></div>
+              <span class="fw-bold">{{
+                langService.lang === "en" ? "EN" : "ID"
+              }}</span>
+              <div class="icon-chev" id="chevron"></div>
+            </div>
+            <div id="lang-hide" class="mt-2">
+              <div class="menu-lang" (click)="changeLanguage('en')">
+                <div class="en-flag"></div>
+                <span>EN</span>
+              </div>
+              <div class="line"></div>
+              <div class="menu-lang" (click)="changeLanguage('id')">
+                <div class="id-flag"></div>
+                <span>ID</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <div
+    id="block"
+    [ngClass]="agreementShow || faqPage || privacyPage ? 'display-none' : ''"
+  >
+    <!-- section 1 -->
+    <section data-aos="fade-up" class="parallax-section1">
+      <div class="container scroller-section">
+        <div class="row gap-3">
+          <div class="row gap-3 set-text-s1">
+            <div class="row justify-content-center">
+              <div class="title">
+                <div class="first-title-s1">
+                  {{ "Manage_Shop" | translate }} <br />
+                  {{ "Free_sub" | translate }}
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="text-content">
+                <div>{{ "Rantai_present" | translate }}</div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="text-content">
+                <div>{{ "Signup_now_or" | translate }}</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="d-flex justify-content-center gap-3 set-btn"
+            data-aos="fade-right"
+          >
+            <div class="btn-s1">
+              <a href="https://rantai.tech/web/accounts/sign-up">
+                <button class="btn-try-free">
+                  {{ "Sign_Up_Now" | translate }}
+                </button>
+              </a>
+            </div>
+            <div class="logo-google">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="app-store" loading="lazy"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="box-page-one">
+            <div class="row justify-content-center gap-5">
+              <div class="img-home1"></div>
+              <div class="img-mydashboard1"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="box-footer-s1">
+              <div class="box-footer-div">
+                <div class="col-md-5">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="icon-left-s1"></div>
+                    <div class="box-desc-users">
+                      <div class="title-foot-s1 pb-2">
+                        {{ "Active_Users" | translate }}
+                      </div>
+                      <div class="content-foot-s1">
+                        {{ "more_than" | translate }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <div class="icon-right-s1"></div>
+                    <div class="box-desc-users">
+                      <div class="title-foot-s1 pb-2">
+                        {{ "Online_Stores" | translate }}
+                      </div>
+                      <div class="content-foot-s1">
+                        {{ "Helping_online_stores" | translate }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="d-flex justify-content-center foot-s1">
+                <div class="col-5">
+                  <div class="d-flex content-f-s1">
+                    <div class="icon-left-s1"></div>
+                    <div class="content-footer-s1">
+                      <div>
+                        <div class="title-foot-s1">
+                          {{ "Active_Users" | translate }}
+                        </div>
+                      </div>
+                      <div>
+                        <div class="content-foot-s1">
+                          {{ "more_than" | translate }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="d-flex">
+                    <div class="icon-right-s1"></div>
+                    <div class="content-footer-s1">
+                      <div>
+                        <div class="title-foot-s1">
+                          {{ "Online_Stores" | translate }}
+                        </div>
+                      </div>
+                      <div>
+                        <div class="content-foot-s1">
+                          {{ "Helping_online_stores" | translate }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section 1 -->
+    <!-- section 2 -->
+    <section id="ourfeature" class="parallax-section2">
+      <div class="container scroller-section">
+        <div class="row align-items-center justify-content-center gap-4">
+          <div class="d-flex justify-content-center">
+            <div class="title-blue">
+              {{ "OUR_FEATURES" | translate }}
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div class="title-first col-md-7">
+              {{ "Features_The_Right" | translate }}
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div class="content-first col-md-7">
+              {{ "From_the_stock" | translate }}
+            </div>
+          </div>
+
+          <div class="row justify-content-betweenc gap-4">
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="img-s2" loading="lazy"></div>
+            </div>
+
+            <div class="row col-md-6 gap-2" data-aos="fade-right">
+              <div class="title-blue">{{ "STOCK_MANAGEMENT" | translate }}</div>
+              <div class="title-second">
+                {{ "Stock_Control" | translate }}
+              </div>
+
+              <div class="row gap-3">
+                <div class="box-content-s2">
+                  <div class="pt-4">
+                    <div class="d-flex gap-3">
+                      <div id="logo-centang"></div>
+                      <p class="title-content">
+                        {{ "Update_Stock" | translate }}
+                      </p>
+                    </div>
+                    <div>
+                      <p class="content-second col-11">
+                        {{ "No_need" | translate }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-content-s2">
+                  <div class="pt-4">
+                    <div class="d-flex gap-3">
+                      <div id="logo-centang"></div>
+                      <p class="title-content">
+                        {{ "ONLINE_CASHIER" | translate }}
+                      </p>
+                    </div>
+                    <div>
+                      <p class="content-second col-11">
+                        {{ "Integration" | translate }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="">
+                  <div class="sign-free">
+                    <p class="sign-free-forever">
+                      {{ "Sign" | translate }}
+                      <span class="text-blue">{{
+                        "Free_Forever" | translate
+                      }}</span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex justify-content-start btn-try"
+                    data-aos="fade-right"
+                  >
+                    <div class="col-md-4 col-sm-5">
+                      <a
+                        href="https://rantai.tech/web/accounts/sign-up"
+                        target="_blank"
+                        class=""
+                      >
+                        <button class="btn-try-free">
+                          {{ "Sign_Up_Now" | translate }}
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section 2 -->
+
+    <!-- section 3 -->
+    <section class="parallax-section3">
+      <div class="container scroller-section">
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="image-mobile" loading="lazy">
+            <img src="../../assets/img/img-s3.png" class="image-mobile" />
+          </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+          <div class="row justify-content-between">
+            <div class="row col-md-6 gap-3" data-aos="fade-right">
+              <div class="title-blue">
+                {{ "MARKETPLACE_INTEGRATION" | translate }}
+              </div>
+              <div class="title-second">
+                {{ "Control" | translate }}
+              </div>
+
+              <div class="row gap-3">
+                <div class="box-content-s2">
+                  <div class="pt-4">
+                    <div class="d-flex gap-3">
+                      <div id="logo-centang"></div>
+                      <p class="title-content">
+                        {{ "TRANSACTION_INFORMATION" | translate }}
+                      </p>
+                    </div>
+                    <div>
+                      <p class="content-second col-11">
+                        {{ "Access_all_transactions" | translate }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-content-s2">
+                  <div class="pt-4">
+                    <div class="d-flex gap-3">
+                      <div id="logo-centang"></div>
+                      <p class="title-content">
+                        {{ "COPY_ITEMS" | translate }}
+                      </p>
+                    </div>
+                    <div>
+                      <p class="content-second col-11">
+                        {{ "Copy_items_and" | translate }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-content-s2">
+                  <div class="pt-4">
+                    <div class="d-flex gap-3">
+                      <div id="logo-centang"></div>
+                      <p class="title-content">{{ "SAVE_TIME" | translate }}</p>
+                    </div>
+                    <div>
+                      <p class="content-second col-11">
+                        {{ "Importing_items" | translate }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box-content-s2">
+                  <div class="pt-4">
+                    <div class="d-flex gap-3">
+                      <div id="logo-centang"></div>
+                      <p class="title-content">
+                        {{ "CONNECT_WITH_CUSTOMERS" | translate }}
+                      </p>
+                    </div>
+                    <div>
+                      <p class="content-second col-11">
+                        {{ "Reply_to_all" | translate }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="">
+                  <div class="sign-free">
+                    <p class="sign-free-forever">
+                      {{ "Sign" | translate }}
+                      <span class="text-blue">{{
+                        "Free_Forever" | translate
+                      }}</span>
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex justify-content-start btn-try"
+                    data-aos="fade-right"
+                  >
+                    <div class="col-md-4 col-sm-5">
+                      <a
+                        href="https://rantai.tech/web/accounts/sign-up"
+                        target="_blank"
+                      >
+                        <button class="btn-try-free">
+                          {{ "Sign_Up_Now" | translate }}
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="image-size" loading="lazy">
+                <img class="image-media" src="../../assets/img/img-s3.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section 3 -->
+
+    <!-- section 4 -->
+    <section class="parallax-section4">
+      <div class="container scroller-section">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="img-s4" loading="lazy"></div>
+          </div>
+
+          <div class="row col-md-6 gap-3" data-aos="fade-right">
+            <div class="title-blue">
+              {{ "FINANCIAL_STATEMENTS" | translate }}
+            </div>
+            <div class="title-second">
+              {{ "Create_Financial" | translate }}
+            </div>
+
+            <div class="row gap-3 box-s4">
+              <div class="box-content-s2">
+                <div class="pt-4">
+                  <div class="d-flex gap-3">
+                    <div id="logo-centang"></div>
+                    <p class="title-content">
+                      {{ "ONE_CLICK" | translate }}
+                    </p>
+                  </div>
+                  <div>
+                    <p class="content-second col-10">
+                      {{ "More_efficient_in" | translate }}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="sign-free">
+                <p class="sign-free-forever">
+                  {{ "Sign" | translate }}
+                  <span class="text-blue">{{
+                    "Free_Forever" | translate
+                  }}</span>
+                </p>
+              </div>
+              <div
+                class="d-flex justify-content-start btn-try"
+                data-aos="fade-right"
+              >
+                <div class="col-md-4 col-sm-5">
+                  <a
+                    href="https://rantai.tech/web/accounts/sign-up"
+                    target="_blank"
+                  >
+                    <button class="btn-try-free">
+                      {{ "Sign_Up_Now" | translate }}
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section 4 -->
+
+    <!-- section 5 -->
+    <section class="parallax-section5">
+      <div class="container scroller-section">
+        <div class="row justify-content-start gap-5">
+          <div class="row justify-content-start gap-3">
+            <div class="collab">{{ "Collaboration" | translate }}</div>
+            <div>
+              <div class="row justify-content-center">
+                <div class="logo-tokped"></div>
+                <div class="logo-shopee"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="logo-jdid"></div>
+                <div class="logo-blibli"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="logo-lazada"></div>
+                <div class="logo-bukalapak"></div>
+              </div>
+            </div>
+          </div>
+          <div class="set-box-s5">
+            <div class="box-s5">
+              <div class="d-flex justify-content-center">
+                <div class="d-flex flex-column gap-3 box-content-s5">
+                  <div class="title-s5">
+                    {{ "Rantai_is_Available" | translate }}
+                  </div>
+                  <div class="content-s5">
+                    {{ "Download_and_register" | translate }}
+                  </div>
+                  <div class="logo-google">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div class="app-store" loading="lazy"></div>
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <div class="img-foot-s5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section 5 -->
+
+    <!-- SECTION 6 -->
+    <section class="parallax-section6" [class.padd-b]="!sectionTestimony">
+      <div class="container scroller-section">
+        <div class="row justify-content-center gap-3 content-S6">
+          <div class="title-blue">{{ "RANTAI_​EVENTS" | translate }}</div>
+          <div class="title-section6 col-6">
+            {{ "The_Winners" | translate }}
+          </div>
+          <div class="row justify-content-center">
+            <div class="p-S6 col-4">{{ "top5" | translate }}</div>
+          </div>
+          <div
+            id="carouselExampleControls"
+            class="container d-flex justify-content-center carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div
+                class="carousel-item"
+                *ngFor="
+                  let x of listWinnerImg;
+                  let index = index;
+                  let isFirst = first
+                "
+                [ngClass]="{ active: isFirst }"
+              >
+                <div class="box-slider flex-column">
+                  <img
+                    id="imgSlider"
+                    class="d-block img-slider"
+                    [src]="x.imagePath"
+                    loading="lazy"
+                  />
+
+                  <div class="row toko">
+                    <div class="nama-toko">
+                      {{ x.ownerShop ? x.ownerShop : "&nbsp;" }}
+                    </div>
+                    <div class="pemilik-toko">{{ x.ownerName }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span class="slide-right" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span class="slide-left" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-s6">{{ "Check_out_Rantai_Event" | translate }}</div>
+        <div class="container media-coverage">
+          <div class="row gap-4">
+            <div
+              class="col-6 col-sm-3 col-lg-2 box-media"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a
+                href="https://lambeturah.co.id/hot-news/kenalan-dengan-rantai-aplikasi-untuk-tingkatkan-performa-bisnis/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="logo-lambe hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2 box-media"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a
+                href="https://finance.detik.com/foto-bisnis/d-5966078/upaya-meningkatkan-performa-bisnis-secara-digital?_ga=2.268309069.2136663856.1646207413-1917212325.1623755834"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="logo-detik-finance hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2 box-media"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a
+                href="https://www.liputan6.com/bisnis/read/4902028/e-commerce-terbukti-bantu-genjot-penjualan-dari-hulu-ke-hilir"
+                target="_blank"
+              >
+                <div class="logo-liputan hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2 box-media"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a
+                href="https://mediaindonesia.com/teknologi/475525/rantai-tawarkan-aplikasi-terpadu-pengelolaan-toko-online-di-marketplace"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="logo-media-indonesia hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2 box-media"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a
+                href="https://www.suara.com/bisnis/2022/03/03/154059/rantai-siap-tingkatkan-performa-bisnis-lewat-berbagai-fitur-canggih"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="logo-suara hover-media"></div>
+              </a>
+            </div>
+            <div
+              class="col-6 col-sm-3 col-lg-2 box-media"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <a
+                href="https://www.tribunnews.com/images/editorial/view/1915438/aplikasi-rantai-siap-meningkatkan-performa-bisnis-lewat-berbagai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="logo-tribun hover-media"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION 6 -->
+
+    <!-- section 7 -->
+    <section class="parallax-testimoni" *ngIf="sectionTestimony">
+      <div class="mt-5 row justify-content-center content-S7">
+        <div class="title-blue">TESTIMONIAL</div>
+        <div class="title-section7">Apa Kata Pelanggan Kami</div>
+      </div>
+      <div class="container-test">
+        <div class="box-slider-testimoni">
+          <div class="slider-testimoni d-flex justify-content-evenly pt-5">
+            <ng-container *ngFor="let ts of arr_testimony; let i = index">
+              <div class="box-card-testimoni">
+                <div class="card-content-testimoni">
+                  <span class="desc-testimoni">{{ ts.desc }}</span>
+                  <div class="row justify-content-start pt-3">
+                    <div class="col-md-2">
+                      <div class="{{ ts.img }}"></div>
+                    </div>
+                    <div class="col-md-10">
+                      <div>
+                        <span class="desc-testimoni owner-name">{{
+                          ts.name
+                        }}</span>
+                      </div>
+                      <div>
+                        <span class="t-muted">{{ ts.shopName }}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+        <div class="dot mt-4">
+          <ul>
+            <li class="selected"></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end section 7 -->
+
+    <!-- section 8 -->
+    <!-- <section id="section8" class="parallax-section8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="row justify-content-between">
+            <div
+              class="d-flex flex-column gap-3 col-md-6"
+              data-aos="fade-right"
+            >
+              <div>
+                <div class="title-blue">{{ "WHY_CHOOSE" | translate }}</div>
+              </div>
+              <div class="title-s8">
+                {{ "Rantai_Is_Committed" | translate }}
+              </div>
+              <div class="content-s8">
+                {{ "With_an_integrated" | translate }}
+              </div>
+              <div>{{ "UMKM_as_one" | translate }}</div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-up">
+              <div class="image-size" loading="lazy">
+                <img
+                  class="image-media"
+                  src="../../assets/img/img-right-s8.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row justify-content-center">
+            <div class="box-footer">
+              <div class="d-flex justify-content-evenly box-foot">
+                <div class="title-foot-s8 col-5">
+                  {{ "Download_Rantai_Now" | translate }}
+                </div>
+                <div class="logo-google">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <div class="app-store" loading="lazy"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- end section 8 -->
+  </div>
+  <!-- section FAQ -->
+  <section id="readmore" class="paralax-faq" *ngIf="faqPage">
+    <div class="container scroller-section">
+      <div>
+        <p class="title-first">{{ "Frequently" | translate }}</p>
+        <p class="content-footer-faq">{{ "We_are_here" | translate }}</p>
+      </div>
+      <div class="container">
+        <div class="row justify-content-start faq-mediaQ">
+          <div class="col-6">
+            <ng-container *ngFor="let x of dataContent; let d = index">
+              <div *ngIf="checkOdd(e)" class="box">
+                <app-faq [content]="'aaaaa \n bb'"></app-faq>
+              </div>
+              <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat">
+                <app-faq [content]="x"></app-faq>
+              </div>
+            </ng-container>
+          </div>
+          <div class="col-6">
+            <ng-container *ngFor="let x of dataContent; let d = index">
+              <div *ngIf="checkOdd(e)" class="box">
+                <app-faq [content]="'aaaaa \n bb'"></app-faq>
+              </div>
+              <div *ngIf="!checkOdd(e)" class="col-6 box-faq title-montserrat">
+                <app-faq [content]="x"></app-faq>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-start mt-5">
+        <p class="title-footer-faq" data-aos="fade-right">
+          {{ "Still_have" | translate }}
+        </p>
+        <p class="title-silver">
+          {{ "Haven't_found" | translate }}<br />{{ "is_always" | translate }}
+        </p>
+      </div>
+      <div class="d-flex justify-content-center" data-aos="fade-right">
+        <a href="#contact">
+          <button class="btn-faq">{{ "CONTACT_US" | translate }}</button>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- section FAQ -->
+
+  <!-- START AGREEMENT SECTION -->
+  <section id="readmore" class="paralax-faq" *ngIf="agreementShow">
+    <div class="container scroller-section">
+      <app-agreements></app-agreements>
+    </div>
+  </section>
+  <!-- END AGREEMENT SECTION -->
+
+  <!-- START PRIVACY SECTION -->
+  <section id="readmore" class="paralax-faq" *ngIf="privacyPage">
+    <div class="container scroller-section">
+      <app-privacy></app-privacy>
+    </div>
+  </section>
+  <!-- END PRIVACY SECTION -->
+</main>
+
+<footer id="contact">
+  <div class="parallax-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 box-footer">
+          <div class="box-footer-div">
+            <div class="col-md-5">
+              <span class="title-foot-s8">
+                {{ "Download_Rantai_Now" | translate }}</span
+              >
+            </div>
+            <div class="logo-google-footer">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.css.rantai"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="app-store-footer" loading="lazy"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-start pb-4">
+        <div class="col-md-4 col-sm-6 col-xs-6">
+          <div class="row justify-content-start gap-2">
+            <div
+              class="logo-rantai-footer pb-3"
+              loading="lazy"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            ></div>
+            <div class="çontent-footer">{{ "Rantai_Is" | translate }}</div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6">
+          <div class="row justify-content-start gap-2">
+            <div class="title-content-footer pt-3 pb-3">
+              {{ "CHECK_OUR_VIDEO" | translate }}
+            </div>
+            <div class="row justify-content-start gap-2">
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=8JxK--cp9nE"
+                  class="btn col-md-8 col-sm-8 btn-footer"
+                  target="_blank"
+                >
+                  <div class="d-flex justify-content-start gap-3">
+                    <div class="logo-video"></div>
+                    <div class="icon-video-biru"></div>
+                    <div class="btn-footer-text">Rantai Introduction</div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=E3fK2pUYTts"
+                  class="btn col-md-8 col-sm-8 btn-footer"
+                  target="_blank"
+                >
+                  <div class="d-flex justify-content-start gap-3">
+                    <div class="logo-video"></div>
+                    <div class="icon-video-biru"></div>
+                    <div class="btn-footer-text">Marketplace Introduction</div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://youtu.be/y-Hc7QWsOd8"
+                  class="btn col-md-8 col-sm-8 btn-footer"
+                  target="_blank"
+                >
+                  <div class="d-flex justify-content-start gap-3">
+                    <div class="logo-video"></div>
+                    <div class="icon-video-biru"></div>
+                    <div class="btn-footer-text">Marketplace Tutorial</div>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.youtube.com/watch?v=TbvnWpw19kc"
+                  class="btn col-md-8 col-sm-8 btn-footer"
+                  target="_blank"
+                >
+                  <div class="d-flex justify-content-start gap-3">
+                    <div class="logo-video"></div>
+                    <div class="icon-video-biru"></div>
+                    <div class="btn-footer-text">Rantai Talk</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-6">
+          <div class="row justify-content-start gap-2">
+            <div class="title-content-footer pt-3">
+              <p>{{ "CONTACT_US" | translate }}</p>
+            </div>
+            <div
+              class="d-flex justify-content-start gap-3 pb-2"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="img-phone" loading="lazy"></div>
+              <div class="çontent-footer">021 296 19 712</div>
+            </div>
+            <div
+              class="d-flex justify-content-start gap-3 pb-2"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="img-email" loading="lazy"></div>
+              <div class="çontent-footer">support@rantai.tech</div>
+            </div>
+            <div
+              class="d-flex justify-content-start gap-4 align-items-start pb-3"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="img-location" loading="lazy"></div>
+              <div>
+                <a
+                  class="çontent-footer"
+                  target="_blank"
+                  href="https://www.google.com/maps/place/Cyberindo+Sinergi+Sistem/@-6.1909029,106.844157,15z/data=!4m5!3m4!1s0x0:0x72e1a1ba58194f32!8m2!3d-6.1909029!4d106.844157"
+                >
+                  Vinilon Building Jl. Raden Saleh Raya No.kav 13-17, RT.1/RW.2,
+                  Kenari, Kec. Senen, Kota Jakarta Pusat, DKI Jakarta 10430
+                </a>
+              </div>
+            </div>
+            <div class="follow-me pb-2">
+              {{ "follow_me" | translate }}
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-center footer-media"
+            >
+              <a
+                href="https://www.tiktok.com/@rantai.tech?lang=en&is_copy_url=1&is_from_webapp=v1"
+                target="_blank"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <i id="icon-tiktok"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/official.rantai/"
+                target="_blank"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <i id="icon-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCtScj1vp9ZV9tOZ1tcZnC4w"
+                target="_blank"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <i id="icon-youtube"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/RantaiOfficial"
+                target="_blank"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <i id="icon-facebook"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/rantai-official"
+                target="_blank"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <i id="icon-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-box"></div>
+      <div class="d-flex justify-content-center box-copyright">
+        <div class="col-md-8">
+          <div class="last-foot">
+            <div class="last-footer">© 2021 PT Cyberindo Sinergi Sistem</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex gap-4 last-foot">
+            <div class="last-footer">
+              <div>FAQ</div>
+            </div>
+            <div class="last-footer">
+              <div>{{ "Privacy_Policy" | translate }}</div>
+            </div>
+            <div class="last-footer">
+              <div>{{ "Terms_of_Service" | translate }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
