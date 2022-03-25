@@ -1,7 +1,7 @@
 export interface Testimoni {
   content: string[];
 }
-export interface ITestimoni {
+export interface ITestimoniv2 {
   imagePath: string;
   ownerName: string;
   id: number;

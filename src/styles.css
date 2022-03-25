@@ -1,10 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden !important;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -38,16 +32,15 @@ a:hover {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
+
+
 }
 
-body {
-  margin: 0;
-}
 
 html, body {
   height: 100%;
-  
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 .f-8 {

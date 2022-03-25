@@ -111,7 +111,7 @@
     [ngClass]="agreementShow || faqPage || privacyPage ? 'display-none' : ''"
   >
     <!-- section 1 -->
-    <section class="parallax-section1">
+    <section data-aos="fade-up" class="parallax-section1">
       <div class="container scroller-section">
         <div class="row gap-3">
           <div class="row gap-3 set-text-s1">
@@ -137,7 +137,7 @@
 
           <div
             class="d-flex justify-content-center gap-3 set-btn"
-           data-aos="fade-right"
+            data-aos="fade-right"
           >
             <div class="btn-s1">
               <a href="https://rantai.tech/web/accounts/sign-up">
@@ -152,7 +152,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div class="app-store" ></div>
+                <div class="app-store" loading="lazy"></div>
               </a>
             </div>
           </div>
@@ -1080,13 +1080,13 @@
         </div>
         <div class="col-md-4">
           <div class="d-flex gap-4 last-foot">
-            <div (click)="selengkapnya()" class="last-footer">
+            <div class="last-footer">
               <div>FAQ</div>
             </div>
-            <div class="last-footer" (click)="policyPrivacy()">
+            <div class="last-footer">
               <div>{{ "Privacy_Policy" | translate }}</div>
             </div>
-            <div class="last-footer" (click)="openAgreements()">
+            <div class="last-footer">
               <div>{{ "Terms_of_Service" | translate }}</div>
             </div>
           </div>
@@ -1095,4 +1095,3 @@
     </div>
   </div>
 </footer>
-

@@ -31,6 +31,7 @@ import { ViewAllComponent } from './view-all/view-all.component';
 import { HelpCenterComponent } from './help-center/help-center.component';
 import { AgreementsComponent } from './agreements/agreements.component';
 import { LandingPageV2Component } from './landing-page-v2/landing-page-v2.component';
+import { BackupComponent } from './backup/backup.component';
 export function ModuleHttpLoaderFactory(http: HttpClient) {
   const baseTranslateUrl = './assets/i18n';
   const options: IModuleTranslationOptions = {
@@ -54,6 +55,7 @@ export function ModuleHttpLoaderFactory(http: HttpClient) {
     HelpCenterComponent,
     AgreementsComponent,
     LandingPageV2Component,
+    BackupComponent,
   ],
   imports: [
     CommonModule,
