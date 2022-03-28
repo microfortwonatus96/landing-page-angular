@@ -26,7 +26,7 @@
   }
 
   .title-second {
-    font-size: 22px !important;
+    font-size: 20px !important;
     line-height: 27px !important;
     position: relative;
     left: 10px;
@@ -172,8 +172,7 @@
     position: relative;
     left: 10px !important;
   }
-
-  .marketplace {
+  .marketplace{
     position: relative;
     left: 35px !important;
   }
@@ -226,34 +225,41 @@
     font-size: 12px !important;
     width: 100% !important;
   }
+  /*end section 5 */
 
+  /* section 6 */
+  .title-section6 {
+    font-size: 26px !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .p-S6 {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 14px !important;
+  }
   .slide-left {
     position: relative;
     right: 65px;
     bottom: 20px;
     content: url('src/assets/img/slider-left.svg')
   }
-
   .slide-right {
     position: relative;
     left: 65px;
     bottom: 20px;
     content: url('src/assets/img/slider-right.svg')
   }
-
   .img-slider {
     width: 240px !important;
   }
-
   .footer-s6 {
     font-size: 18px !important;
   }
-
   .box-media {
     width: calc(100% - 54%) !important;
     height: 70px !important;
   }
-
   /* end section 6 */
 
 
