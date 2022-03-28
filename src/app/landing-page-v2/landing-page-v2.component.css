@@ -36,8 +36,11 @@
   }
   .title {
     padding-top: 50px;
-    font-size: 1.875rem !important;
+    font-size: 28px !important;
     text-align: unset !important;
+    width: 100% !important;
+  }
+  .first-title-s1{
     width: 100% !important;
   }
   .text-content {
@@ -92,10 +95,10 @@
 
   /* section 2 */
   .title-first {
-    font-size: 30px !important;
+    font-size: 26px !important;
   }
   .content-first {
-    font-size: 15px !important;
+    font-size: 14px !important;
   }
   .img-s2 {
     position: relative;
