@@ -42,17 +42,19 @@
 
   .title {
     padding-top: 50px;
-    font-size: 28px !important;
+    font-size: 26px !important;
     text-align: unset !important;
     width: 100% !important;
   }
   .first-title-s1{
     width: 100% !important;
+    padding-left: 25px !important;
   }
   .text-content {
     font-size: 0.875rem !important;
     text-align: unset !important;
     width: 100% !important;
+    padding-left: 35px !important;
   }
 
   .set-text-s1 {
