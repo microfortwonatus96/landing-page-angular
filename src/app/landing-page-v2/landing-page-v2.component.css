@@ -453,7 +453,7 @@
     width: 100% !important;
   }
   .media-s6{
-    position: relative; 
+    position: relative;
     left:25px;
   }
   .p-S6 {
@@ -608,7 +608,7 @@
     width: 100% !important;
   }
   .media-s6{
-    position: relative; 
+    position: relative;
     left:25px;
   }
   .p-S6 {
@@ -657,7 +657,7 @@
 }
 
 @media only screen and (min-device-width: 400px) and (max-device-width:541px) and (orientation:portrait) {
- 
+
 
   .btn-try-free1 {
     position: relative;
@@ -769,7 +769,7 @@
     text-align: center !important;
   }
   .media-s6{
-    position: relative; 
+    position: relative;
     left:0px;
   }
   .p-S6 {
@@ -1783,7 +1783,7 @@
 .scroller-section {
   position: relative;
   transform: translateY(150px);
-  opacity: 0;
+  /* opacity: 0; */
   transition: 2s all ease;
 }
 .scroller-section.active {

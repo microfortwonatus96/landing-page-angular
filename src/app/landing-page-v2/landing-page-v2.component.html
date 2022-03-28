@@ -416,7 +416,11 @@
 
             <div class="col-md-6" data-aos="fade-up">
               <div class="image-size" loading="lazy">
-                <img class="image-media" src="../../assets/img/img-s3.png" />
+                <img
+                  class="image-media"
+                  src="../../assets/img/img-s3.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -497,7 +501,7 @@
             <div class="collab">{{ "Collaboration" | translate }}</div>
             <div class="row gap-4">
               <div class="row justify-content-center gap-5 marketplace">
-                <div class="logo-tokped"></div>              
+                <div class="logo-tokped"></div>
                 <div class="logo-shopee"></div>
               </div>
               <div class="row justify-content-center gap-5 marketplace">
@@ -573,6 +577,7 @@
                     class="d-block img-slider"
                     [src]="x.imagePath"
                     loading="lazy"
+                    alt=""
                   />
 
                   <div class="row toko">
@@ -1046,7 +1051,7 @@
           <div class="last-footer">© 2021 PT Cyberindo Sinergi Sistem</div>
         </div>
         <div class="d-flex gap-5 last-foot">
-          <div (click)="selengkapnya()" class="last-footer"><div>FAQ</div></div>
+          <div class="last-footer"><div>FAQ</div></div>
           <div class="last-footer" (click)="policyPrivacy()">
             <div>{{ "Privacy_Policy" | translate }}</div>
           </div>
