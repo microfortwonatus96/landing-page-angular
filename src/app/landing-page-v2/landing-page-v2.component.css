@@ -173,23 +173,7 @@
     left: 10px !important;
   }
 
-  .set-box-s5 {
-    padding-left: 40px !important;
-    padding-bottom: 150px !important;
-  }
-
-  .box-s5 {
-    width: 90% !important;
-    height: 150% !important;
-  }
-
-  .img-foot-s5 {
-    width: 80% !important;
-    position: relative;
-    top: 261px !important;
-  }
-
-  .marketplace {
+  .marketplace{
     position: relative;
     left: 35px !important;
   }
@@ -217,49 +201,26 @@
   .logo-bukalapak {
     width: 40% !important;
   }
-
+  .box-content-s5 {
+    justify-content: center !important;
+  }
+  .set-box-s5 {
+    display: block !important;
+  }
+  .box-s5 {
+    width: 90% !important;
+    height: auto !important;
+    margin-left: 20px !important;
+  }
   .title-s5 {
     font-size: 18px !important;
-    width: 280px !important;
-    position: relative;
-    left: 10px !important;
-    line-height: 25px !important;
+    width: 100% !important;
+    line-height:25px !important;
   }
 
   .content-s5 {
     font-size: 12px !important;
-    width: 280px !important;
-    position: relative;
-    left: 10px !important;
   }
-
-  .box-content-s5 {
-    position: relative;
-    bottom: 50px !important;
-    width: 10% !important;
-  }
-
-  .img-foot-s5 {
-    position: relative;
-    top: 300px !important;
-  }
-
-  /*end section 5 */
-
-  /* section 6 */
-  .title-section6 {
-    font-size: 28px !important;
-    text-align: left !important;
-    width: 100% !important;
-    text-align: center !important;
-  }
-
-  .p-S6 {
-    width: 100% !important;
-    text-align: center !important;
-    font-size: 14px !important;
-  }
-
   .slide-left {
     position: relative;
     right: 65px;
@@ -358,16 +319,9 @@
   .parallax-footer {
     height: 150vh;
   }
-
   .nav-language {
     position: unset;
     left: unset !important;
-  }
-
-  .img-foot-s5 {
-    width: 80% !important;
-    position: relative;
-    top: 253px !important;
   }
 }
 
@@ -442,33 +396,7 @@
   /* end section 4 */
 
   /* section 5 */
-  .box-s5 {
-    height: 300px !important
-  }
-
-  .img-foot-s5 {
-    position: relative;
-    top: 61px !important;
-    right: 20px !important;
-  }
-
-  .box-content-s5 {
-    position: relative;
-    left: 30px !important;
-    bottom: 50px;
-  }
-
-  .title-s5 {
-    font-size: 20px !important;
-    width: 80% !important;
-  }
-
-  .content-s5 {
-    /* font-size: 20px !important; */
-    width: 80% !important;
-  }
-
-  .marketplace {
+  .marketplace{
     position: relative;
     left: 35px !important;
   }
@@ -496,11 +424,26 @@
   .logo-bukalapak {
     width: 30% !important;
   }
-
+  .img-foot-s5 {
+    position: relative;
+    top: 61px !important;
+    right: 20px !important;
+  }
+  .box-content-s5 {
+    position: relative;
+    left: 30px !important;
+    bottom: 50px;
+  }
+  .title-s5 {
+    font-size: 20px !important;
+    width: 80% !important;
+  }
+  .content-s5 {
+    width: 80% !important;
+  }
   /* end section 5 */
 
   /* section 6 */
-  .title-section6 {
     width: 100% !important;
   }
 
@@ -612,7 +555,6 @@
     position: relative;
     top: -155px !important;
   }
-
   /* end section 4 */
 
   /* section 5 */
@@ -638,7 +580,6 @@
   }
 
   .content-s5 {
-    /* font-size: 20px !important; */
     width: 80% !important;
   }
 
@@ -786,40 +727,7 @@
     position: relative;
     left: 10px !important;
   }
-
-  .box-s5 {
-    width: 90% !important;
-    height: 150% !important;
-  }
-
-  .img-foot-s5 {
-    width: 70% !important;
-    position: relative;
-    top: 296px !important;
-    left: 0px !important;
-  }
-
-  .title-s5 {
-    font-size: 18px !important;
-    width: 280px !important;
-    position: relative;
-    left: 25px !important;
-  }
-
-  .content-s5 {
-    font-size: 12px !important;
-    width: 280px !important;
-    position: relative;
-    left: 25px !important;
-  }
-
-  .box-content-s5 {
-    position: relative;
-    bottom: 50px !important;
-    width: 10% !important;
-  }
-
-  .marketplace {
+  .marketplace{
     position: relative;
     left: 35px !important;
   }
@@ -853,6 +761,33 @@
     left: -50px !important;
   }
 
+  .set-box-s5 {
+    display: block !important;
+  }
+  .box-s5 {
+    width: 90% !important;
+    height: 100% !important;
+    margin-left: 20px !important;
+  }
+  .title-s5 {
+    font-size: 18px !important;
+    width: 100% !important;
+    line-height:25px !important;
+  }
+  .content-s5 {
+    font-size: 12px !important;
+    width: 100% !important;
+  }
+  .img-foot-s5 {
+    position: relative;
+    top: 0px !important;
+    right: 00px !important;
+  }
+  .box-content-s5 {
+    position: relative;
+    left: 0px !important;
+    bottom: 0px !important;
+  }
   /*end section 5 */
 
   /* section 6 */
