@@ -46,8 +46,7 @@
     width: 100% !important;
   }
   .set-text-s1 {
-    position: relative;
-    left: 20px;
+    justify-content: center !important;  
   }
   .set-btn {
     display: flex !important;
@@ -102,10 +101,6 @@
     position: relative;
     left: 5px;
   }
-  .title-blue {
-    position: relative;
-    left: 10px;
-  }
   .box-content-s2 {
     position: relative;
     left: 20px !important;
@@ -155,8 +150,7 @@
     left: 10px !important;
   }
   .set-box-s5 {
-    position: relative;
-    left: 17px !important;
+    padding-left: 40px !important;
     padding-bottom: 150px !important;
   }
   .box-s5 {
@@ -194,13 +188,14 @@
     font-size: 18px !important;
     width: 280px !important;
     position: relative;
-    left: 25px !important;
+    left: 10px !important;
+    line-height:25px !important;
   }
   .content-s5 {
     font-size: 12px !important;
     width: 280px !important;
     position: relative;
-    left: 25px !important;
+    left: 10px !important;
   }
   .box-content-s5 {
     position: relative;
@@ -209,7 +204,7 @@
   }
   .img-foot-s5{
     position: relative;
-    top: 317px !important;
+    top: 300px !important;
   }
 
   /*end section 5 */
@@ -514,11 +509,6 @@
     font-size: 0.9375rem !important;
     width: 100% !important;
   }
-
-  .set-text-s1 {
-    position: relative;
-  }
-
   .img-mydashboard1 {
     display: none !important;
   }
@@ -679,6 +669,7 @@
   }
 
   /* section 1 */
+
   .title-foot-s1 {
     font-size: 0.625rem !important;
   }
@@ -715,11 +706,6 @@
     position: relative;
     left: 10px !important;
   }
-  .set-box-s5 {
-    position: relative;
-    left: 17px !important;
-    padding-bottom: 150px !important;
-  }
   .box-s5 {
     width: 90% !important;
     height: 150% !important;
@@ -727,7 +713,7 @@
   .img-foot-s5 {
     width: 70% !important;
     position: relative;
-    top: 266px !important;
+    top: 296px !important;
     left: 0px !important;
   }
   .title-s5 {
@@ -1613,8 +1599,7 @@
   font-size: 0.875rem;
   line-height: 22px;
   color: #1A1E25;
-  position: relative;
-  left: 45px;
+  padding-left: 55px;
 }
 #icon-tiktok {
   content: url('src/assets/img/Icon-tiktok.png');
