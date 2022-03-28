@@ -424,6 +424,9 @@
   .logo-bukalapak {
     width: 30% !important;
   }
+  .box-s5 {
+    height: 300px !important
+  }
   .img-foot-s5 {
     position: relative;
     top: 61px !important;
@@ -444,6 +447,7 @@
   /* end section 5 */
 
   /* section 6 */
+  .title-section6 {
     width: 100% !important;
   }
 
