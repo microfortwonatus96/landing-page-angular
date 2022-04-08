@@ -68,10 +68,14 @@
   .img-mydashboard1 {
     display: none !important;
   }
+  .set-s1{
+    position:relative; 
+    left:10px;
+  }
   .box-footer-s1 {
-    width: 90% !important;
+    width: 100% !important;
     height: 120px !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 10px !important;
   }
   .icon-left-s1 {
     width: 50px !important;
@@ -86,11 +90,11 @@
     top: -12px !important;
   }
   .title-foot-s1 {
-    font-size: 8px !important;
+    font-size: 10px !important;
     line-height: 10px !important;
   }
   .content-foot-s1 {
-    font-size: 7px !important;
+    font-size: 8px !important;
     line-height: 10px !important;
   }
   .content-footer-s1 {
@@ -253,13 +257,14 @@
   }
 
   .logo-google-footer {
-    /* position: relative;
-  left: 20px !important; */
+
     padding-left: 50px !important;
   }
 
   .app-store-footer {
     width: 60% !important;
+    position: relative;
+    top: 0px !important;
   }
 
   /* end pertengahan footer */
@@ -694,11 +699,12 @@
   /* section 1 */
 
   .title-foot-s1 {
-    font-size: 0.625rem !important;
+    font-size: 13px !important;
+    line-height: 15px !important;
   }
 
   .content-foot-s1 {
-    font-size: 0.5rem !important;
+    font-size: 8px !important;
     line-height: 10px !important;
   }
 
@@ -706,7 +712,11 @@
     position: relative;
     top: 1px !important;
   }
-
+  .box-footer-s1 {
+    width: 100% !important;
+    height: 120px !important;
+    margin-bottom: 10px !important;
+  }
   .app-store {
     position: relative;
     left: 125px !important;
@@ -922,13 +932,18 @@
 
 .nav-language {
   position: relative;
-  left: 300px;
+  top: 10px;
+}
+
+.nav-link{
+  font-weight: 400 !important;
 }
 
 .nav-link, a {
   color: #000;
   padding: 10px 0px;
   text-align: center;
+  font-weight: 400;
 }
 
 .navbar-toggler-icon {
@@ -970,38 +985,32 @@
   background: rgb(223, 235, 254);
   background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
 }
-
 .menu-lang {
   cursor: pointer;
   align-items: stretch;
   display: flex;
 }
-
 .menu-lang div, span {
   margin: 3px;
   text-align: center;
 }
-
 .menu-lang:hover {
   background-color: #fff;
   color: #000;
   border-radius: 2px;
 }
-
 .en-flag {
   display: inline-block;
   content: url("src/assets/images/english-baru.png");
   width: 20px;
   height: 20px;
 }
-
 .id-flag {
   display: inline-block;
   content: url("src/assets/images/indonesia-baru.png");
   width: 20px;
   height: 20px;
 }
-
 .icon-chev {
   content: url("src/assets/images/chevron-down.svg");
   width: 20px;
@@ -1010,13 +1019,13 @@
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
 }
-
 .logo-header {
   content: url('src/assets/images/logorantaibaru.svg');
   min-width: 100%;
   height: auto;
+  position: relative;
+  bottom: 3px;
 }
-
 #menu-download {
   display: none;
   transition: all 0.5s ease;
@@ -1027,24 +1036,20 @@
   background: rgb(223, 235, 254);
   background: linear-gradient(180deg, rgba(223, 235, 254, 1) 0%, rgba(222, 244, 254, 1) 97%);
 }
-
 #menu-download .text-left {
   text-align: left;
   padding-left: 15px;
 }
-
 #menu-download .nav-link:hover {
   background: #fff;
   color: #000;
 }
-
 .b-navbar {
   background-color: #ffffff;
   box-shadow: 0px 0px 5px 0px #888888;
   font-family: Montserrat, Regular;
   font-size: 12px;
 }
-
 /* end header */
 
 .title {
@@ -1056,7 +1061,6 @@
   width: 55%;
   line-height: 110%;
 }
-
 .text-content {
   font-family: 'Montserrat';
   font-style: normal;
@@ -1071,14 +1075,20 @@
 /* section 1 */
 .parallax-section1 {
   background-color: #DFEBFE;
-  padding-top: 110px;
+  padding-top: 130px;
+  height: 100%;
+  width: 100%;
+}
+
+.set-btn{
+  position: relative;
+  top: 30px;
 }
 
 .box-page-one {
   position: relative;
-  bottom: -80px;
+  bottom: -70px;
 }
-
 .img-home1 {
   content: url('src/assets/img/Home-s1.png');
   width: 223px;
@@ -1089,7 +1099,6 @@
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-
 .img-mydashboard1 {
   content: url('src/assets/img/MyDashboard-s1.png');
   width: 743px;
@@ -1100,7 +1109,6 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
 .box-footer-top {
   width: 100%;
   height: 150px;
@@ -1116,7 +1124,7 @@
   background: #0B69FD;
   border-radius: 40px;
   position: relative;
-  top: 80px;
+  top: 70px;
 }
 
 .icon-left-s1 {
@@ -1210,6 +1218,9 @@
   font-weight: 400;
   text-align: center;
 }
+.set-s2{
+  padding-top:40px;
+}
 
 .box-content-s2 {
   width: 100%;
@@ -1217,13 +1228,13 @@
   background: #FFFFFF;
   box-shadow: 0px 4px 12px rgba(53, 76, 113, 0.12);
   border-radius: 20px;
+  position: relative;
+  left: 15px;
 }
-
 .box-content-s2:hover {
   box-shadow: 0px 4px 12px 8px #DAE5F8;
   transition: all 0.5s ease;
 }
-
 .title-second {
   font-size: 1.5rem;
   font-family: 'Montserrat';
@@ -1232,13 +1243,11 @@
   line-height: 32px;
   color: #1A1E25;
 }
-
 #logo-centang {
   content: url(../../assets/img/icon-centang.png);
   width: 20px;
   height: 20px;
 }
-
 .title-content {
   font-size: 0.9375rem;
   font-family: 'Montserrat';
@@ -1246,7 +1255,6 @@
   line-height: 140%;
   color: #1A1E25;
 }
-
 .content-second {
   font-family: 'Montserrat';
   font-style: normal;
@@ -1254,16 +1262,14 @@
   font-size: 0.875rem;
   line-height: 22px;
   color: #63728C;
-  /* position: relative;
-  left: 36px; */
+  position: relative;
+  top: -12px;
   padding-left: 36px;
 }
-
 .img-s2 {
   width: calc(100% - 10%);
   content: url('src/assets/img/img-s2.png');
 }
-
 /* end section 2 */
 
 /* section 3 */
@@ -1272,20 +1278,18 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
 .image-mobile {
   display: none;
 }
-
 .image-size {
   width: 100%;
   height: auto;
 }
-
 .image-media {
   width: calc(100% - 10%);
+  position:relative; 
+  left:50px;
 }
-
 /* end section 3 */
 
 
@@ -1295,17 +1299,14 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
 .img-s4 {
   width: calc(100% - 10%);
   content: url('src/assets/img/img-s4.png');
 }
-
 .img-s4 {
   width: calc(100% - 10%);
   content: url('src/assets/img/img-s4.png');
 }
-
 /* end section 4 */
 
 /* section 5 */
@@ -1314,7 +1315,6 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
 .collab {
   font-family: 'Montserrat';
   font-style: normal;
@@ -1324,19 +1324,16 @@
   text-align: center;
   color: #1A1E25;
 }
-
 .logo-tokped {
   width: 22%;
   height: auto;
   content: url('src/assets/icon-marketplace/tokped_1.svg');
 }
-
 .logo-shopee {
   width: 22%;
   height: auto;
   content: url('src/assets/icon-marketplace/shopee_1.svg');
 }
-
 .logo-jdid {
   width: 22%;
   height: auto;
@@ -1348,34 +1345,27 @@
   height: auto;
   content: url('src/assets/icon-marketplace/blibli_1.svg');
 }
-
 .logo-lazada {
   width: 22%;
   height: auto;
   content: url('src/assets/icon-marketplace/lazada_1.svg');
 }
-
 .logo-bukalapak {
   width: 22%;
   height: auto;
   content: url('src/assets/icon-marketplace/bukalapak_1.svg');
 }
-
 .box-s5 {
   width: 100%;
   height: 420px;
-  left: 100px;
-  top: 3935px;
   background: linear-gradient(180deg, #DFEBFE 0%, #DEF4FE 100%);
   border-radius: 40px;
 }
-
 .img-foot-s5 {
   width: 100%;
   height: auto;
   content: url('src/assets/img/img-foot-s5.png');
 }
-
 .title-s5 {
   width: 504px;
   font-family: 'Montserrat';
@@ -1385,7 +1375,6 @@
   line-height: 32px;
   color: #0B69FD;
 }
-
 .content-s5 {
   width: 504px;
   font-family: 'Montserrat';
@@ -1395,11 +1384,9 @@
   line-height: 22px;
   color: #1A1E25;
 }
-
 .box-content-s5 {
   padding-top: 96px;
 }
-
 /* end section 5 */
 
 /* section 6 */
@@ -1641,7 +1628,10 @@
   text-align: center;
   background: #BCCDEB;
 }
-
+.app-store-footer{
+  position: relative;
+  top: 20px;
+}
 .logo-rantai-footer {
   width: 170px;
   height: auto;
@@ -1713,34 +1703,36 @@
 
 .icon-video-biru {
   content: url('src/assets/images/video.svg');
-  width: 20px;
-  height: 20px;
-  margin-left: 25px
+  width: 24px;
+  height: 24px;
+  margin-left: 25px;
+  position: relative;
+  bottom: 3px;
 }
 
 .logo-video {
   content: url('src/assets/images/videowhite.svg');
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   margin-left: 25px
 }
 
 .img-phone {
   content: url('src/assets/img/icon-phone.png');
-  width: 20px;
-  height: auto;
+  width: 24px;
+  height: 24px;
 }
 
 .img-email {
   content: url('src/assets/img/Icon-email.png');
-  width: 20px;
-  height: auto;
+  width: 24px;
+  height: 24px;
 }
 
 .img-location {
   content: url('src/assets/img/Icon-location.png');
-  width: 20px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   position: relative;
   top: 5px;
 }
@@ -1775,36 +1767,36 @@
 
 #icon-tiktok {
   content: url('src/assets/img/Icon-tiktok.png');
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   margin-left: 35px;
 }
 
 #icon-instagram {
   content: url('src/assets/img/Icon-instagram.png');
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   margin-left: 25px;
 }
 
 #icon-linkedin {
   content: url('src/assets/img/Icon-linkedin.png');
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   margin-left: 25px;
 }
 
 #icon-facebook {
   content: url('src/assets/img/Icon-facebook.png');
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   margin-left: 25px;
 }
 
 #icon-youtube {
   content: url('src/assets/img/Icon-youtube.png');
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   margin-left: 25px;
 }
 
