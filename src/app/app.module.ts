@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ActivateComponent } from './activate/activate.component';
 import { MatMenuModule } from '@angular/material/menu';
@@ -31,7 +30,6 @@ import { ViewAllComponent } from './view-all/view-all.component';
 import { HelpCenterComponent } from './help-center/help-center.component';
 import { AgreementsComponent } from './agreements/agreements.component';
 import { LandingPageV2Component } from './landing-page-v2/landing-page-v2.component';
-import { BackupComponent } from './backup/backup.component';
 export function ModuleHttpLoaderFactory(http: HttpClient) {
   const baseTranslateUrl = './assets/i18n';
   const options: IModuleTranslationOptions = {
@@ -45,7 +43,6 @@ export function ModuleHttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    LandingPageComponent,
     PrivacyComponent,
     ActivateComponent,
     ResetPasswordComponent,
@@ -54,8 +51,7 @@ export function ModuleHttpLoaderFactory(http: HttpClient) {
     ViewAllComponent,
     HelpCenterComponent,
     AgreementsComponent,
-    LandingPageV2Component,
-    BackupComponent,
+    LandingPageV2Component
   ],
   imports: [
     CommonModule,
