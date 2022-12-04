@@ -33,8 +33,8 @@ import {
 import { GaleryService } from '../service/customer-galery.service';
 import { Galery } from '../models/galery.model';
 import { CountdownEventService } from '../service/countdown-event.service';
-// import { TestimoniService } from '../service/testimoni.service';
-// import { ITestimoniv2 } from '../models/testimoni.model';
+import { TestimoniService } from '../service/testimoni.service';
+import { ITestimoniv2 } from '../models/testimoni.model';
 declare var $: any;
 
 @Component({
@@ -53,8 +53,8 @@ export class LandingPageV2Component implements OnInit {
     'e',
     'f',
   ];
-  // listImageTestimoni: ITestimoniv2[] = [];
-  // listWinnerImg: ITestimoniv2[] = [];
+  listImageTestimoni: ITestimoniv2[] = [];
+  listWinnerImg: ITestimoniv2[] = [];
   alive: boolean = true;
   languageChange: string = '';
   agreementShow = false;
@@ -104,7 +104,7 @@ export class LandingPageV2Component implements OnInit {
   constructor(
     public langService: LangService,
     public translate: TranslateService,
-    // private testimoniService: TestimoniService,
+    private testimoniService: TestimoniService,
     private router: Router,
     private activatedRoute: ActivatedRoute
   ) {
@@ -179,7 +179,7 @@ export class LandingPageV2Component implements OnInit {
   }
 
   ngOnInit(): void {
-    // this.loadTestimoniImage();
+    this.loadTestimoniImage();
     this.loadContentFaq();
     this.updateArray(0);
 
@@ -262,31 +262,31 @@ export class LandingPageV2Component implements OnInit {
     }
   }
 
-  // loadTestimoniImage() {
-  //   this.testimoniService
-  //     .getTestimoni()
-  //     .pipe(takeWhile(() => this.alive))
-  //     .subscribe((res: any) => {
-  //       if (res) {
-  //         this.listImageTestimoni = [...res.content];
-  //         this.imgToBase64();
-  //       }
-  //     });
-  // }
-  // imgToBase64() {
-  //   this.listImageTestimoni.forEach((x, i) => {
-  //     let url = `https://rantai-marketplace.com/storage/api/file/image?directory=${x.imagePath}`;
+  loadTestimoniImage() {
+    this.testimoniService
+      .getTestimoni()
+      .pipe(takeWhile(() => this.alive))
+      .subscribe((res: any) => {
+        if (res) {
+          this.listImageTestimoni = [...res.content];
+          this.imgToBase64();
+        }
+      });
+  }
+  imgToBase64() {
+    this.listImageTestimoni.forEach((x, i) => {
+      let url = `https://rantai-marketplace.com/storage/api/file/image?directory=${x.imagePath}`;
 
-  //     this.testimoniService.getBase64ImageFromUrl(url).then((image: any) => {
-  //       this.listWinnerImg.push({
-  //         id: x.id,
-  //         imagePath: image,
-  //         ownerName: x.ownerName,
-  //         ownerShop: x.ownerShop,
-  //       });
-  //     });
-  //   });
-  // }
+      this.testimoniService.getBase64ImageFromUrl(url).then((image: any) => {
+        this.listWinnerImg.push({
+          id: x.id,
+          imagePath: image,
+          ownerName: x.ownerName,
+          ownerShop: x.ownerShop,
+        });
+      });
+    });
+  }
   showLanguage() {
     let menu_download = document.getElementById('menu-download');
     let x = document.getElementById('lang-hide');
